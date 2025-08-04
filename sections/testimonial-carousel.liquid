@@ -1,0 +1,290 @@
+{%- style -%}
+      .testimonial-carousel-{{ section.id }} {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 0px
+      }
+
+      .testimonial-slide-{{ section.id }} {
+        width: 100%;
+        padding: 0 10px;
+      }
+
+      .black_border {
+        border: black solid 1px !important;
+        font-weight: 400 !important;
+      }
+
+      @media screen and (min-width: 768px) {
+        .testimonial-slide-{{ section.id }} {
+          width: 30%;
+        }
+      }
+
+      @media screen and (min-width: 992px) {
+        .testimonial-slide {
+          width: 33.333%;
+        }
+      }
+
+      .testimonial-content-{{ section.id }} {
+        background: #f9f9f9;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .testimonial-image-{{ section.id }} {
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+        overflow: hidden;
+        margin-bottom: 15px;
+        max-width: 290px;
+      }
+
+      .testimonial-image-{{ section.id }} img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .testimonial-text-{{ section.id }} {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+        margin-top: auto;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      .testimonial-stars-{{ section.id }} {
+        display: flex;
+        margin-bottom: 5px;
+      }
+
+      .star-{{ section.id }} {
+        color: #ffc107;
+        font-size: 18px;
+        margin-right: 2px;
+      }
+
+      /* .star-empty {
+        color: #e0e0e0;
+      } */
+      .section-header-{{ section.id }} {
+        margin-bottom: -25px;
+    }
+
+    .page-width-{{ section.id }} {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .custom-btn-{{ section.id }} {
+      position: relative;
+      top: 45px;
+  }
+  .testimonial-section-{{ section.id }} {
+      padding-top: {{ section.settings.padding-top }}px;
+      padding-bottom: {{ section.settings.padding-bottom }}px
+  }
+{%- endstyle -%}
+<div class="testimonial-section-{{ section.id }}">
+  <div class="page-width-{{ section.id }}">
+    {% if section.settings.title != blank %}
+      <div class="section-header-{{ section.id }} text-center">
+        <h3>{{ section.settings.title }}</h3>
+      </div>
+    {% endif %}
+
+    {% if section.blocks.size > 0 %}
+      <div
+        class="testimonial-carousel-{{ section.id }}"
+      >
+        {% for block in section.blocks %}
+          {% if block.type == 'testimonial' %}
+            <div class="testimonial-slide-{{ section.id }}" {{ block.shopify_attributes }}>
+              <div class="testimonial-content-{{ section.id }}">
+                {% if block.settings.image %}
+                  <div class="testimonial-image-{{ section.id }}">
+                    {{
+                      block.settings.image
+                      | image_url: width: 600, height: 600
+                      | image_tag: alt: block.settings.author
+                    }}
+                    {% comment %}
+                      {% assign img_url = block.settings.image | img_url: '600x' %}
+                      <img src="{{ img_url }}" alt="{{ block.settings.author | escape }}">
+                    {% endcomment %}
+                  </div>
+                {% endif %}
+
+                <div class="testimonial-text-{{ section.id }}">{{ block.settings.quote }}</div>
+
+                <div class="testimonial-footer-{{ section.id }}">
+                  {% comment %}
+                    <div class="testimonial-stars">
+                      {% assign rating = block.settings.rating %}
+                      {% assign rating_integer = rating | floor %}
+                      {% assign rating_decimal = rating | minus: rating_integer %}
+
+                      {% for i in (1..5) %}
+                        {% if i <= rating_integer %}
+                          <span class="star">★</span>
+                        {% elsif i == rating_integer | plus: 1 and rating_decimal >= 0.5 %}
+                          <span class="star">★</span>
+                        {% else %}
+                          <span class="star star-empty">★</span>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                  {% endcomment %}
+
+                  {% if block.settings.author != blank %}
+                    <p class="testimonial-author-{{ section.id }}">- {{ block.settings.author }}</p>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% if section.settings.btn_text != blank %}
+      <div class="rte custom-btn-{{ section.id }}">
+        <a href="{{ section.settings.url }}" class="btn black_border">{{ section.settings.btn_text }}</a>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    let carousel = document.querySelector(".testimonial-carousel-{{ section.id }}");
+    if (carousel) {
+      let flkty = new Flickity(carousel, {
+        cellAlign: "{{ section.settings.cellAlign }}",
+        contain: true,
+        wrapAround: true,
+        prevNextButtons: false,
+        pageDots: {{ section.settings.pageDots }},
+        adaptiveHeight: {{ section.settings.adaptiveHeight}},
+        autoPlay: {{ section.settings.time }},
+        draggable: true ,
+        lazyLoad: true,
+        pauseAutoPlayOnHover: false
+      });
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Testimonial Carousel",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "What Our Customers Say"
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "insert url"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "section button text",
+      "default":"enter button text"
+    },
+     {
+      "type": "text",
+      "id": "cellAlign",
+      "label": "cellAlign",
+      "default":"left"
+    },
+    {
+      "type": "number",
+      "id": "time",
+      "label": "autoplay duration",
+      "default": 5000
+    },
+    {
+      "type": "checkbox",
+      "id": "pageDots",
+      "label": "show page dots",
+      "default":true
+    },
+    {
+      "type": "checkbox",
+      "id": "adaptiveHeight",
+      "label": "Adaptive height",
+      "default":true
+    },
+     {
+      "type": "number",
+      "id": "padding-top",
+      "label": "padding top",
+      "default": 20
+    },
+    {
+      "type": "number",
+      "id": "padding-bottom",
+      "label": "padding bottom",
+      "default": 20
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Testimonial Image"
+        },
+        {
+          "type": "richtext",
+          "id": "quote",
+          "label": "Quote",
+
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author Name",
+          "default": "John Doe"
+        },
+        {
+          "type": "range",
+          "id": "rating",
+          "label": "Rating (out of 5)",
+          "min": 0,
+          "max": 5,
+          "step": 0.5,
+          "default": 5
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonial Carousel",
+      "category": "Custom Content",
+      "blocks": [
+        {
+          "type": "testimonial"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

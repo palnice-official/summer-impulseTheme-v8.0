@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px) {
+  /* .template-collection .collection-grid__wrapper .collection-filter {top: inherit !important; position: fixed; bottom: 0px; width: 100%; left: 0;}
+  .collection-filter .collection-filter__item--drawer {flex: 0 1 50%; margin-bottom:0;}
+  .collection-filter .collection-filter__item--sort {flex: 0 1 50%; margin-bottom:0;}
+  .template-collection a.shp-cnv-shipway-chat {bottom: 40px;}
+  .template-collection .baDropdownStyle .bacurr-choiceDesign{bottom: 30px;} */
+
+  .template-product .product-single__form .payment-buttons{position: fixed; bottom: 0; z-index: 9; width: 100%; left: 0; background: #fff; display: flex; align-items: center;}
+  .template-product a.shp-cnv-shipway-chat {bottom: 50px; left: 0px;}
+  .template-product .baDropdownStyle .bacurr-choiceDesign{bottom: 40px;}
+  .template-product .product-single__form .payment-buttons .shopify-payment-button, .template-product .product-single__form .payment-buttons .add-to-cart{width:50%; margin: 0;}
+
+  .template-product .shopify-payment-button__button:after, .template-product .shopify-payment-button__button:before{display:none !important;}
+  .template-product .product-single__form .payment-buttons .add-to-cart:after, .template-product .product-single__form .payment-buttons .add-to-cart:before{display:none;}
+  .template-product .product-single__form .payment-buttons .add-to-cart{max-width: 100% !important; margin: 0 !important; border: 1px solid #000000;}
+  .template-product .shopify-payment-button__button{margin: 0 !important; max-width: 100% !important;}
+}
+
+/* .template-collection .index-section .theme-block .text-center .rte h2{font-size: 18px;}
+.template-collection .index-section .theme-block .text-center .rte h3{font-size: 15px;}
+.template-collection .index-section .theme-block .text-center .rte p{font-size: 13px;} */
+
+.template-collection .theme-block .rte h2{font-size:18px;}
+.template-collection .theme-block .rte h3{font-size:15px;}
+.template-collection .theme-block .rte p{font-size:13px;}
+.template-collection .theme-block .rte ul li{font-size:13px;}
+.text-left {text-align: left !important;}

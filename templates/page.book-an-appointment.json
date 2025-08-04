@@ -1,0 +1,64 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "advanced_content_ifBRrb": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_P98YGw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/store-6.jpg",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "liquid_69LNdA": {
+          "type": "liquid",
+          "settings": {
+            "code": "<p>To schedule a virtual or an in-store appointment at one of our flagship stores, please fill out your information and our bridal consultant will contact you within 24 hours.</p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_P98YGw",
+        "liquid_69LNdA"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "lazyload_images": false
+      }
+    },
+    "contact_form_qMCKqp": {
+      "type": "contact-form",
+      "name": "t:sections.contact-form.presets.contact_form.name",
+      "settings": {
+        "title": "",
+        "text": "",
+        "show_phone": true,
+        "narrow_column": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "advanced_content_ifBRrb",
+    "contact_form_qMCKqp"
+  ]
+}

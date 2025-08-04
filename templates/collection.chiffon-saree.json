@@ -1,0 +1,329 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "testimonial_carousel_nQWhfi": {
+      "type": "testimonial-carousel",
+      "blocks": {
+        "testimonial_DVc3VV": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Summer by Priyanka Gupta is like a breath of fresh air out of so many designer stores we visited for my sister-in-laws bridal outfit.<br/><br/>Her outfits were a love at first sight! They have a great collection and the store is beautifully decorated and designed. Kanchan ji, who is also the store manager helped us a lot with making correct decisions, as a result we were in love with the final outcome.<br/><br/> We ended up picking up so many sarees and suits. It's a highly recommended store, do visit.</p>",
+            "author": "Vriti Verma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_C44HTf": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>It was an absolute pleasure to wear the outfit by Summer by Priyanka.<br/><br/>Tha tailoring and the outfit is excellent and the service was equally impeccable. Trying and browsing at the beautiful store was made so easy by the staff!<br/><br/>Definitely coming back to the brand</p>",
+            "author": "Nishtha Sharma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_LXjWjr": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/APARNA_ROY.webp",
+            "quote": "<p>We have had a wonderful experience at the Summer store always without fail !!<br/><br/>The outfits are fabulous and so is the store staff. Very accommodating. They customised a dress for me and it turned out lovely. My mom and I now shop regularly.<br/><br/>P.S: the store is so beautiful. My little daughter has a gala time every time we visit.</p>",
+            "author": "Aparna Roy, India",
+            "rating": 5
+          }
+        },
+        "testimonial_z8M366": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/NEENU_NAYYAR.webp",
+            "quote": "<p>Summer by Priyanka gupta was an instagram discovery. I was looking for simple & elegant yet dressy clothes for a family wedding.<br/><br/>I went to the store at def col, met Priyanka and was absolutely in awe of her and her craft. Such simplicity in both :)<br/><br/>Since then, Summer by Priyanka Gupta has become my go to store for any occasion for my daughter and I. Absolutely love it ♥️</p>",
+            "author": "John DoeNeenu Nayyar, India",
+            "rating": 5
+          }
+        },
+        "testimonial_brkft4": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>I had a wonderful shopping experience with Summer by Priyanka Gupta! The saree I purchased exceeded my expectations in both quality and design.<br/><br/>The customer service was exceptional, and the entire process was smooth and enjoyable. I will definitely be shopping with you again and will recommend your store to friends and family.<br/><br/>Thank you for providing such beautiful products and excellent service!</p>",
+            "author": "Sailaja, Chicago, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_kMTHCm": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Well, Summer is all about it’s pastel tones and cute detailed colorful embroideries. Wearing summer always makes you to stand out in the crowd and creates a fresh vibe around you.<br/><br/>I just love the service, the work, the fabric, the embroideries and every bit of it.<br/><br/>They make such unique and chic designs that makes us fall for summer everyday. Always a Summer Girl 🌸</p>",
+            "author": "Nidhi Modi, India",
+            "rating": 5
+          }
+        },
+        "testimonial_yxBdct": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/PAYAL_C_GUPTA.webp",
+            "quote": "<p>I love Summer by Priyanka Gupta for their stunning pastel and embroidered outfits, highlighting their beautiful craftsmanship that consistently impresses her.</p>",
+            "author": "Payal C Gupta, Dubai",
+            "rating": 5
+          }
+        },
+        "testimonial_N73mAY": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Thankyou for sending me the beautiful dresses. I appreciate their quality and fit , they are perfect in every way. I'm eager to place more orders with you.</p>",
+            "author": "Rajwinder Gill, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_jkBRwX": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Great designs and quality. Just loved how our outfits turned out for my daughter’s first birthday making it more memorable.<br/><br/>So dreamy and just the way I envisioned🌸💞💖</p>",
+            "author": "Leena Yerneni, USA",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_DVc3VV",
+        "testimonial_C44HTf",
+        "testimonial_LXjWjr",
+        "testimonial_z8M366",
+        "testimonial_brkft4",
+        "testimonial_kMTHCm",
+        "testimonial_yxBdct",
+        "testimonial_N73mAY",
+        "testimonial_jkBRwX"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "What Our Customers Say",
+        "url": "",
+        "btn_text": "enter button text",
+        "cellAlign": "left",
+        "time": 5000,
+        "pageDots": true,
+        "adaptiveHeight": true,
+        "padding-top": 20,
+        "padding-bottom": 20
+      }
+    },
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h2>Buy Chiffon Sarees Online</h2><p>Introducing the Chiffon Sarees Collection by 'Summer by Priyanka Gupta,' where timeless elegance meets handcrafted artistry. Our exquisite range of chiffon sarees exudes an air of grace and sophistication, perfect for the discerning woman with an eye for luxurious fashion. Each saree in this collection is a testament to our dedication to craftsmanship, featuring intricate hand embroidery, sequins, and zari work that elevate the sheer, flowing chiffon fabric to unparalleled levels of beauty. With a palette that spans from soft pastels to rich jewel tones, our chiffon sarees are designed to complement every complexion and suit various occasions. Whether it's a wedding, an evening soiree, or a festive celebration, our Chiffon Sarees Collection is your gateway to timeless elegance and unparalleled artistry. Elevate your style and embrace the sheer beauty of chiffon with 'Summer by Priyanka Gupta.'</p><h2>About Chiffon Sarees</h2><p>Chiffon sarees are a captivating and iconic category of Indian attire, celebrated for their unmatched elegance and delicate allure. These sarees are crafted from chiffon fabric, a lightweight, sheer, and fine material that drapes like a dream. </p><p>Chiffon fabric is characterized by its fine, closely woven threads, resulting in a smooth and slightly crinkled texture. While chiffon can be made from various materials, including silk, polyester, and nylon, silk chiffon is considered the epitome of luxury due to its exquisite softness and natural sheen. This fabric is known for its ethereal quality, giving it the appearance of floating on air when draped.</p><p>Chiffon sarees are celebrated for their graceful and flowing drape. They effortlessly accentuate the curves of the body, creating a flattering and charming silhouette. The lightweight nature of chiffon ensures comfort even during extended wear, making it a favorite choice for weddings, parties, and formal events. The sheer quality of chiffon adds an element of mystique, allowing for a subtle glimpse of the skin while maintaining a sense of modesty.</p><p>One of the distinctive features of chiffon sarees is their intricate embellishments. They often boast exquisite hand embroidery, sequins, zari work, and stone embellishments that enhance their beauty and make them suitable for special occasions. These embellishments add depth and opulence to the sarees, elevating them to a level of artistry.</p><p>Chiffon sarees are incredibly versatile and adaptable to various occasions. They can be styled in countless ways, from classic drapes to contemporary twists, making them suitable for weddings, festivals, parties, and even casual outings. Whether in soft pastels, rich jewel tones, or classic neutrals, chiffon sarees offer a diverse color palette to cater to every taste and mood.</p><h2>Which other saree collection do we have at Summer?</h2><p>Here are the other sarees we have in our collection</p><h3>Sarees By Fabric</h3><p><a href=\"https://www.lovesummer.in/collections/organza-sarees\"><span style=\"text-decoration:underline\">Organza Sarees</span></a></p><p><a href=\"https://www.lovesummer.in/collections/georgette-sarees\"><span style=\"text-decoration:underline\">Georgette Sarees</span></a></p><p><a href=\"https://www.lovesummer.in/collections/silk-sarees\"><span style=\"text-decoration:underline\">Silk Sarees</span></a></p><h3>Sarees By Design</h3><p><a href=\"https://www.lovesummer.in/collections/printed-sarees\"><span style=\"text-decoration:underline\">Printed Sarees</span></a></p><p><a href=\"https://www.lovesummer.in/collections/embroidered-saree\"><span style=\"text-decoration:underline\">Embroidered Sarees</span></a></p><p><a href=\"https://www.lovesummer.in/collections/luxury-saree\"><span style=\"text-decoration:underline\">Luxury Sarees</span></a></p><h3>Sarees By Occasion</h3><p><a href=\"https://www.lovesummer.in/collections/haldi-sarees\"><span style=\"text-decoration:underline\">Haldi Sarees</span></a></p><p><a href=\"https://www.lovesummer.in/collections/mehendi-sarees\"><span style=\"text-decoration:underline\">Mehendi Sarees</span></a></p><p><a href=\"https://www.lovesummer.in/collections/engagement-sarees\"><span style=\"text-decoration:underline\">Engagement Saree</span></a></p><p><a href=\"https://www.lovesummer.in/collections/reception-sarees\"><span style=\"text-decoration:underline\">Reception Sarees</span></a></p><p><a href=\"https://www.lovesummer.in/collections/partywear-sarees\"><span style=\"text-decoration:underline\">Partywear Sarees</span></a></p><p><a href=\"https://www.lovesummer.in/collections/festive-sarees\"><span style=\"text-decoration:underline\">Festive Sarees</span></a></p><p><a href=\"https://www.lovesummer.in/collections/farewell-sarees\"><span style=\"text-decoration:underline\">Farewell Sarees</span></a></p><p><a href=\"https://www.lovesummer.in/collections/diwali-sarees\"><span style=\"text-decoration:underline\">Diwali Sarees</span></a></p><h2>Occasions to Wear Chiffon Sarees</h2><p>Chiffon sarees are known for their lightweight and sheer nature, making them suitable for a range of occasions. These sarees exude an air of elegance and grace. </p><p>Here are different occasions to wear chiffon sarees:</p><ul><li><strong>Formal Parties</strong>: Chiffon sarees are an excellent choice for formal parties, such as cocktail parties, black-tie events, or gala dinners. Their flowing drape and subtle sheen add a touch of sophistication to your attire.</li><li><strong>Weddings</strong>: Chiffon sarees are often worn by wedding guests, bridesmaids, or family members at weddings. They strike a balance between comfort and style, making them perfect for long wedding ceremonies and receptions.</li><li><strong>Festivals</strong>: Chiffon sarees in vibrant colors and embellished designs are ideal for celebrating festivals and special occasions, such as Diwali, Eid, Navratri, and Christmas.</li><li><strong>Anniversaries</strong>: Mark your special milestones, such as anniversaries or engagement parties, by wearing a chiffon saree. They are both elegant and comfortable for such occasions.</li><li><strong>Cultural Functions</strong>: Chiffon sarees can be a great choice for cultural and religious functions where traditional attire is required. They showcase a sense of reverence and style.</li><li><strong>Office Parties</strong>: When attending office parties or corporate events, a well-chosen chiffon saree can make you stand out. Opt for subtle embellishments and sophisticated colors for a professional yet stylish look.</li><li><strong>Casual Gatherings</strong>: Some lightweight chiffon sarees are suitable for casual gatherings and social events during the daytime or evening. They provide comfort and a touch of elegance.</li><li><strong>Art Exhibitions</strong>: Chiffon sarees can be worn to art exhibitions, cultural shows, theater productions, and other artistic events. They reflect your appreciation for the arts while allowing you to look impeccably stylish.</li><li><strong>Fashion Shows</strong>: Whether you're attending or participating in fashion shows and runway events, chiffon sarees are a favorite among fashion enthusiasts and designers.</li><li><strong>Charity Events</strong>: Wearing a chiffon saree to charity events, fundraisers, and galas adds an element of grace to your support for a good cause.</li><li><strong>Casual Day Out</strong>: Some lightweight and less embellished chiffon sarees can be worn for a casual day out or a relaxed lunch, providing both comfort and chic style.</li><li><strong>Photography Sessions</strong>: Chiffon sarees are often chosen for photography sessions due to their graceful drape and how they capture the play of light. They look stunning in photos, making them perfect for pre-wedding shoots or professional portraits.</li></ul><p>Chiffon sarees are versatile, elegant, and comfortable, making them a suitable choice for a wide range of occasions. Depending on the occasion's formality and your personal style, you can select the appropriate chiffon saree to make a memorable and stylish statement.</p><h2>Chiffon Sarees Fabric Experience</h2><p>Wearing chiffon sarees offers a unique and delightful fabric experience that sets them apart from other types of sarees. </p><p>Here's what you can expect when wearing a chiffon saree:</p><ul><li><strong>Lightweight Comfort</strong>: Chiffon sarees are incredibly lightweight, making them exceptionally comfortable to wear. The fabric gently drapes over your body without weighing you down, allowing for ease of movement and freedom of mobility. You can wear a chiffon saree for extended periods without feeling fatigued.</li><li><strong>Cool and Breathable</strong>: Chiffon fabric is known for its breathability and airiness. It keeps you cool, making chiffon sarees an excellent choice for warm or humid weather. The fabric allows air to circulate, preventing overheating and discomfort.</li><li><strong>Sensual Softness</strong>: Chiffon is soft and smooth to the touch, offering a luxurious and sensual sensation against your skin. The fabric's softness enhances the overall comfort of wearing a chiffon saree.</li><li><strong>Flowing Drape</strong>: Chiffon sarees have a flowing and graceful drape. The fabric gently falls and follows your body's contours, creating an elegant silhouette. The fluidity of chiffon adds an element of sensuality to your attire.</li><li><strong>Subtle Sheen</strong>: Chiffon fabric has a subtle, natural sheen that catches and reflects light delicately. This subtle sheen enhances the saree's overall appearance and adds a touch of sophistication to your look.</li><li><strong>Effortless Movement</strong>: The lightweight and airy nature of chiffon allows you to move with ease and grace. Whether you're dancing, walking, or sitting, the saree flows effortlessly, enhancing your movements and overall presence.</li><li><strong>Perfect for Draping</strong>: Chiffon sarees are relatively easy to drape, and they hold pleats and folds beautifully. This makes it convenient for wearers to style the saree in various ways to suit their preferences and the occasion.</li><li><strong>All-Season Comfort</strong>: Chiffon sarees are versatile and suitable for all seasons. They keep you comfortable in warm weather and can be layered with shawls or jackets in colder months without sacrificing style.</li><li><strong>Delicate Texture</strong>: Chiffon's slightly textured surface adds an interesting dimension to the fabric. The texture is subtle and contributes to the saree's visual appeal.</li></ul><p>Wearing a chiffon saree is a delightful experience characterized by lightweight comfort, softness, breathability, and a flowing drape that enhances your grace and elegance. Whether you're attending a casual gathering or a formal event, chiffon sarees offer both style and comfort, making them a popular choice in Indian fashion.</p><h2>Why should you choose to wear Chiffon Sarees?</h2><p>Choosing to wear a chiffon saree can be a fantastic decision for several compelling reasons:</p><ul><li><strong>Comfortable Elegance</strong>: Chiffon sarees are incredibly lightweight and breathable, ensuring comfort throughout the day or night. Their soft, airy texture drapes comfortably over your body, allowing for ease of movement.</li><li><strong>Graceful Drape</strong>: Chiffon sarees are renowned for their flowing and graceful drape. The fabric's fluidity creates an elegant and flattering silhouette, enhancing your overall appearance.</li><li><strong>Versatility</strong>: Chiffon sarees are versatile and suitable for various occasions, from casual gatherings to formal events. You can choose a chiffon saree with embellishments for a grand affair or opt for a simpler design for everyday wear.</li><li><strong>All-Season Wear</strong>: Chiffon sarees are suitable for all seasons. They keep you cool and comfortable in warm weather, and you can layer them with shawls or jackets in colder months without sacrificing style.</li><li><strong>Sensual Softness</strong>: The soft and smooth texture of chiffon fabric offers a luxurious and sensual sensation against your skin, adding to your overall comfort and confidence.</li><li><strong>Timeless Elegance</strong>: Chiffon sarees never go out of style. They are a symbol of timeless elegance and can be a valuable addition to your wardrobe that remains relevant year after year.</li><li><strong>Photogenic Appeal</strong>: Chiffon sarees are often chosen for photography sessions due to their graceful drape and subtle sheen. They look stunning in photos, making them perfect for capturing special moments and memories.</li><li><strong>Color Variety</strong>: Chiffon sarees come in a wide range of colors, from soft pastels to vibrant hues, allowing you to choose the perfect color to match your personal style and the occasion.</li><li><strong>Effortless Styling</strong>: Chiffon sarees are relatively easy to drape, and they hold pleats and folds beautifully. You can experiment with various draping styles to create unique looks that suit your mood and personality.</li><li><strong>Cultural Significance</strong>: Chiffon sarees are a beloved part of Indian culture and heritage, often worn during festivals, weddings, and other significant occasions, making them a symbol of tradition and grace.</li></ul><p>Choosing to wear a chiffon saree allows you to embrace comfort and elegance simultaneously. Whether you're attending a formal event, a festive celebration, or simply want to elevate your everyday style, a chiffon saree can be a versatile and timeless addition to your wardrobe that makes you feel confident and chic.</p><h2>How to care for your chiffon saree?</h2><p>Caring for a chiffon saree is essential to maintain its delicate beauty and longevity. Chiffon is a lightweight and sheer fabric, and proper care will help preserve its texture and color. </p><p>Here are some tips on how to care for your chiffon saree:</p><ul><li><strong>Dry Cleaning</strong>: Chiffon sarees should be dry cleaned or professionally cleaned to ensure they are treated with the utmost care. Avoid washing them at home, as chiffon is a delicate fabric that can easily get damaged by harsh detergents and agitation.</li><li><strong>Storage</strong>: Proper storage is crucial to prevent damage to your chiffon saree:</li><li>Store your saree in a cool, dark place away from direct sunlight, which can cause color fading.</li><li>Use a padded hanger to hang the saree, if possible. Avoid wire hangers, as they can leave creases.</li><li>If folding the saree, pad the folds with acid-free tissue paper to prevent creasing.</li><li>Store the saree in a saree bag or a cotton pillowcase to protect it from dust and moisture. Avoid using plastic bags, as they can trap moisture and damage the fabric.</li><li><strong>Avoid Moisture</strong>: Keep your chiffon saree away from moisture and humidity, as these can weaken the fabric and cause it to lose its sheen.</li><li><strong>Handle with Care</strong>: When wearing a chiffon saree, be cautious around sharp objects or jewelry that may snag or tear the delicate fabric. Take care not to catch the saree on rough surfaces.</li><li><strong>Ironing</strong>: If your chiffon saree gets wrinkled, use a low-heat iron (set to silk or low temperature) with a pressing cloth (a thin cotton cloth) placed between the iron and the saree. Iron on the reverse side to prevent damaging any embellishments or embroidery.</li><li><strong>Avoid Perfumes and Deodorants</strong>: Perfumes, deodorants, and other sprays may contain chemicals that can harm the delicate chiffon fabric. Apply these products before wearing the saree and ensure they are completely dry before putting it on.</li><li><strong>Rotate Wear</strong>: Avoid wearing the same chiffon saree too frequently to prevent excessive wear and tear. Rotate your sarees to extend their lifespan.</li><li><strong>Professional Storage</strong>: If you plan to store your chiffon saree for an extended period, consider having it professionally cleaned and packed in acid-free tissue paper. This will help preserve the fabric and prevent any potential damage.</li></ul><p>By following these care instructions, you can enjoy the delicate beauty of your chiffon saree for years to come, ensuring that it remains a cherished part of your wardrobe.</p><h2>Chiffon Saree Colors</h2><p>The choice of color for a chiffon saree depends on various factors, including your skin tone, personal style, the occasion, and your preferences. Chiffon sarees come in a wide range of colors, so you have plenty of options to choose from. </p><p>Here are some popular color choices and the occasions they are well-suited for:</p><ul><li><strong>Pastel Shades</strong>: Soft pastel colors like blush pink, baby blue, mint green, and lavender are timeless choices. They exude a sense of elegance and femininity. Pastel chiffon sarees are suitable for daytime events, casual gatherings, and can even be worn as office wear with the right styling.</li><li><strong>Vibrant Hues</strong>: Vibrant colors such as royal blue, emerald green, deep red, and rich purple make a bold and striking statement. These colors are ideal for evening events, parties, weddings, and festivities where you want to stand out.</li><li><strong>Neutral Tones</strong>: Neutral colors like ivory, beige, and gray are versatile and can be worn on various occasions. They create a classic and understated look that can be dressed up or down. Neutral chiffon sarees are suitable for both formal and casual events.</li><li><strong>Traditional Colors</strong>: Colors like red, maroon, and gold hold cultural significance and are often chosen for traditional events, weddings, and religious ceremonies. They symbolize tradition and auspiciousness.</li><li><strong>Monochromatic</strong>: Monochromatic chiffon sarees, where the saree and blouse are in the same color, create a sleek and sophisticated look. They are a great choice for formal events and evening parties.</li><li><strong>Dual-Tone or Ombre</strong>: Dual-tone or ombre chiffon sarees, featuring a gradient of colors, add a touch of modernity and elegance. These sarees are versatile and can be worn for various occasions, depending on the color combination.</li><li><strong>Prints and Patterns</strong>: Chiffon sarees with prints and patterns, such as florals, paisleys, or geometric designs, offer a playful and trendy look. They are suitable for casual events, daytime outings, or parties with a relaxed atmosphere.</li></ul><p>Ultimately, the \"best\" color for a chiffon saree is subjective and varies from person to person. Consider your personal style, the event's formality, and what complements your skin tone when choosing a color. Experimenting with different colors can help you discover which shades make you feel the most confident and elegant in a chiffon saree.</p><h2>FAQs - Chiffon Sarees</h2><h3>What is special about Chiffon Sarees by Summer by Priyanka Gupta?</h3><p>Our Chiffon Sarees collection is meticulously designed with a focus on elegance, comfort, and versatility. We offer a wide range of colors and designs to cater to various occasions and personal styles.</p><h3>What type of chiffon fabric is used in your sarees?</h3><p>We use high-quality chiffon fabric to create our sarees, ensuring a lightweight and breathable drape. Our chiffon sarees are made to provide comfort and style.</p><h3>Can I find both casual and formal chiffon sarees in your collection?</h3><p>Yes, our collection includes both casual and formal chiffon sarees. You can choose from a variety of designs suitable for everyday wear as well as special occasions.</p><h3>Do you offer custom stitching services for blouse designs?</h3><p>Yes, we provide customization services for blouse designs to ensure a perfect fit and complement the saree of your choice. Contact our customer support team for details.</p><h3>How do I care for my chiffon saree from your collection?</h3><p>To maintain the beauty of your chiffon saree, we recommend dry cleaning or professional cleaning. Avoid washing it at home. Please refer to our care instructions for more details.</p><h3>What is the price range of Chiffon Sarees in your collection?</h3><p>Our Chiffon Sarees are available in a range of prices, depending on the design, embellishments, and intricacy of work. We offer options to suit different budgets.</p><h3>Can I find Chiffon Sarees in traditional and contemporary designs?</h3><p>Yes, our collection features a mix of traditional and contemporary designs, allowing you to choose according to your style and the occasion.</p><h3>Is there a return or exchange policy for Chiffon Sarees?</h3><p>We have a flexible return and exchange policy. If you are not satisfied with your purchase, you can contact our customer support team for assistance within the specified return period.</p><h3>Do you offer international shipping for Chiffon Sarees?</h3><p>Yes, we offer international shipping for our Chiffon Sarees. Please check our shipping policies for more information on delivery to your location.</p><h3>Can I book an appointment to visit your physical store in Delhi NCR?</h3><p>Yes, Delhi NCR residents can visit our store located at D6, 1st Floor, Defence Colony, New Delhi, 110024. Appointments can be booked through our website, lovesummer.in, for a personalized shopping experience.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "faq_YEEaAF": {
+      "type": "faq",
+      "blocks": {
+        "question_MpnzAi": {
+          "type": "question",
+          "settings": {
+            "title": "About Chiffon Sarees",
+            "text": "<p>Chiffon sarees are a captivating and iconic category of Indian attire, celebrated for their unmatched elegance and delicate allure. These sarees are crafted from chiffon fabric, a lightweight, sheer, and fine material that drapes like a dream. </p><p>Chiffon fabric is characterized by its fine, closely woven threads, resulting in a smooth and slightly crinkled texture. While chiffon can be made from various materials, including silk, polyester, and nylon, silk chiffon is considered the epitome of luxury due to its exquisite softness and natural sheen. This fabric is known for its ethereal quality, giving it the appearance of floating on air when draped.</p><p>Chiffon sarees are celebrated for their graceful and flowing drape. They effortlessly accentuate the curves of the body, creating a flattering and charming silhouette. The lightweight nature of chiffon ensures comfort even during extended wear, making it a favorite choice for weddings, parties, and formal events. The sheer quality of chiffon adds an element of mystique, allowing for a subtle glimpse of the skin while maintaining a sense of modesty.</p><p>One of the distinctive features of chiffon sarees is their intricate embellishments. They often boast exquisite hand embroidery, sequins, zari work, and stone embellishments that enhance their beauty and make them suitable for special occasions. These embellishments add depth and opulence to the sarees, elevating them to a level of artistry.</p><p>Chiffon sarees are incredibly versatile and adaptable to various occasions. They can be styled in countless ways, from classic drapes to contemporary twists, making them suitable for weddings, festivals, parties, and even casual outings. Whether in soft pastels, rich jewel tones, or classic neutrals, chiffon sarees offer a diverse color palette to cater to every taste and mood.</p>"
+          }
+        },
+        "question_nEHyyN": {
+          "type": "question",
+          "settings": {
+            "title": "Occasions to Wear Chiffon Sarees",
+            "text": "<p>Chiffon sarees are known for their lightweight and sheer nature, making them suitable for a range of occasions. These sarees exude an air of elegance and grace. </p><p>Here are different occasions to wear chiffon sarees:</p><ul><li><strong>Formal Parties</strong>: Chiffon sarees are an excellent choice for formal parties, such as cocktail parties, black-tie events, or gala dinners. Their flowing drape and subtle sheen add a touch of sophistication to your attire.</li><li><strong>Weddings</strong>: Chiffon sarees are often worn by wedding guests, bridesmaids, or family members at weddings. They strike a balance between comfort and style, making them perfect for long wedding ceremonies and receptions.</li><li><strong>Festivals</strong>: Chiffon sarees in vibrant colors and embellished designs are ideal for celebrating festivals and special occasions, such as Diwali, Eid, Navratri, and Christmas.</li><li><strong>Anniversaries</strong>: Mark your special milestones, such as anniversaries or engagement parties, by wearing a chiffon saree. They are both elegant and comfortable for such occasions.</li><li><strong>Cultural Functions</strong>: Chiffon sarees can be a great choice for cultural and religious functions where traditional attire is required. They showcase a sense of reverence and style.</li><li><strong>Office Parties</strong>: When attending office parties or corporate events, a well-chosen chiffon saree can make you stand out. Opt for subtle embellishments and sophisticated colors for a professional yet stylish look.</li><li><strong>Casual Gatherings</strong>: Some lightweight chiffon sarees are suitable for casual gatherings and social events during the daytime or evening. They provide comfort and a touch of elegance.</li><li><strong>Art Exhibitions</strong>: Chiffon sarees can be worn to art exhibitions, cultural shows, theater productions, and other artistic events. They reflect your appreciation for the arts while allowing you to look impeccably stylish.</li><li><strong>Fashion Shows</strong>: Whether you're attending or participating in fashion shows and runway events, chiffon sarees are a favorite among fashion enthusiasts and designers.</li><li><strong>Charity Events</strong>: Wearing a chiffon saree to charity events, fundraisers, and galas adds an element of grace to your support for a good cause.</li><li><strong>Casual Day Out</strong>: Some lightweight and less embellished chiffon sarees can be worn for a casual day out or a relaxed lunch, providing both comfort and chic style.</li><li><strong>Photography Sessions</strong>: Chiffon sarees are often chosen for photography sessions due to their graceful drape and how they capture the play of light. They look stunning in photos, making them perfect for pre-wedding shoots or professional portraits.</li></ul><p>Chiffon sarees are versatile, elegant, and comfortable, making them a suitable choice for a wide range of occasions. Depending on the occasion's formality and your personal style, you can select the appropriate chiffon saree to make a memorable and stylish statement.</p>"
+          }
+        },
+        "question_9KWXUR": {
+          "type": "question",
+          "settings": {
+            "title": "Chiffon Sarees Fabric Experience",
+            "text": "<p>Wearing chiffon sarees offers a unique and delightful fabric experience that sets them apart from other types of sarees. </p><p>Here's what you can expect when wearing a chiffon saree:</p><ul><li><strong>Lightweight Comfort</strong>: Chiffon sarees are incredibly lightweight, making them exceptionally comfortable to wear. The fabric gently drapes over your body without weighing you down, allowing for ease of movement and freedom of mobility. You can wear a chiffon saree for extended periods without feeling fatigued.</li><li><strong>Cool and Breathable</strong>: Chiffon fabric is known for its breathability and airiness. It keeps you cool, making chiffon sarees an excellent choice for warm or humid weather. The fabric allows air to circulate, preventing overheating and discomfort.</li><li><strong>Sensual Softness</strong>: Chiffon is soft and smooth to the touch, offering a luxurious and sensual sensation against your skin. The fabric's softness enhances the overall comfort of wearing a chiffon saree.</li><li><strong>Flowing Drape</strong>: Chiffon sarees have a flowing and graceful drape. The fabric gently falls and follows your body's contours, creating an elegant silhouette. The fluidity of chiffon adds an element of sensuality to your attire.</li><li><strong>Subtle Sheen</strong>: Chiffon fabric has a subtle, natural sheen that catches and reflects light delicately. This subtle sheen enhances the saree's overall appearance and adds a touch of sophistication to your look.</li><li><strong>Effortless Movement</strong>: The lightweight and airy nature of chiffon allows you to move with ease and grace. Whether you're dancing, walking, or sitting, the saree flows effortlessly, enhancing your movements and overall presence.</li><li><strong>Perfect for Draping</strong>: Chiffon sarees are relatively easy to drape, and they hold pleats and folds beautifully. This makes it convenient for wearers to style the saree in various ways to suit their preferences and the occasion.</li><li><strong>All-Season Comfort</strong>: Chiffon sarees are versatile and suitable for all seasons. They keep you comfortable in warm weather and can be layered with shawls or jackets in colder months without sacrificing style.</li><li><strong>Delicate Texture</strong>: Chiffon's slightly textured surface adds an interesting dimension to the fabric. The texture is subtle and contributes to the saree's visual appeal.</li></ul><p>Wearing a chiffon saree is a delightful experience characterized by lightweight comfort, softness, breathability, and a flowing drape that enhances your grace and elegance. Whether you're attending a casual gathering or a formal event, chiffon sarees offer both style and comfort, making them a popular choice in Indian fashion.</p>"
+          }
+        },
+        "question_AwUrxM": {
+          "type": "question",
+          "settings": {
+            "title": "Why should you choose to wear Chiffon Sarees?",
+            "text": "<p>Choosing to wear a chiffon saree can be a fantastic decision for several compelling reasons:</p><ul><li><strong>Comfortable Elegance</strong>: Chiffon sarees are incredibly lightweight and breathable, ensuring comfort throughout the day or night. Their soft, airy texture drapes comfortably over your body, allowing for ease of movement.</li><li><strong>Graceful Drape</strong>: Chiffon sarees are renowned for their flowing and graceful drape. The fabric's fluidity creates an elegant and flattering silhouette, enhancing your overall appearance.</li><li><strong>Versatility</strong>: Chiffon sarees are versatile and suitable for various occasions, from casual gatherings to formal events. You can choose a chiffon saree with embellishments for a grand affair or opt for a simpler design for everyday wear.</li><li><strong>All-Season Wear</strong>: Chiffon sarees are suitable for all seasons. They keep you cool and comfortable in warm weather, and you can layer them with shawls or jackets in colder months without sacrificing style.</li><li><strong>Sensual Softness</strong>: The soft and smooth texture of chiffon fabric offers a luxurious and sensual sensation against your skin, adding to your overall comfort and confidence.</li><li><strong>Timeless Elegance</strong>: Chiffon sarees never go out of style. They are a symbol of timeless elegance and can be a valuable addition to your wardrobe that remains relevant year after year.</li><li><strong>Photogenic Appeal</strong>: Chiffon sarees are often chosen for photography sessions due to their graceful drape and subtle sheen. They look stunning in photos, making them perfect for capturing special moments and memories.</li><li><strong>Color Variety</strong>: Chiffon sarees come in a wide range of colors, from soft pastels to vibrant hues, allowing you to choose the perfect color to match your personal style and the occasion.</li><li><strong>Effortless Styling</strong>: Chiffon sarees are relatively easy to drape, and they hold pleats and folds beautifully. You can experiment with various draping styles to create unique looks that suit your mood and personality.</li><li><strong>Cultural Significance</strong>: Chiffon sarees are a beloved part of Indian culture and heritage, often worn during festivals, weddings, and other significant occasions, making them a symbol of tradition and grace.</li></ul><p>Choosing to wear a chiffon saree allows you to embrace comfort and elegance simultaneously. Whether you're attending a formal event, a festive celebration, or simply want to elevate your everyday style, a chiffon saree can be a versatile and timeless addition to your wardrobe that makes you feel confident and chic.</p>"
+          }
+        },
+        "question_FaJXXb": {
+          "type": "question",
+          "settings": {
+            "title": "How to care for your chiffon saree?",
+            "text": "<p>Caring for a chiffon saree is essential to maintain its delicate beauty and longevity. Chiffon is a lightweight and sheer fabric, and proper care will help preserve its texture and color. </p><p>Here are some tips on how to care for your chiffon saree:</p><ul><li><strong>Dry Cleaning</strong>: Chiffon sarees should be dry cleaned or professionally cleaned to ensure they are treated with the utmost care. Avoid washing them at home, as chiffon is a delicate fabric that can easily get damaged by harsh detergents and agitation.</li><li><strong>Storage</strong>: Proper storage is crucial to prevent damage to your chiffon saree:</li><li>Store your saree in a cool, dark place away from direct sunlight, which can cause color fading.</li><li>Use a padded hanger to hang the saree, if possible. Avoid wire hangers, as they can leave creases.</li><li>If folding the saree, pad the folds with acid-free tissue paper to prevent creasing.</li><li>Store the saree in a saree bag or a cotton pillowcase to protect it from dust and moisture. Avoid using plastic bags, as they can trap moisture and damage the fabric.</li><li><strong>Avoid Moisture</strong>: Keep your chiffon saree away from moisture and humidity, as these can weaken the fabric and cause it to lose its sheen.</li><li><strong>Handle with Care</strong>: When wearing a chiffon saree, be cautious around sharp objects or jewelry that may snag or tear the delicate fabric. Take care not to catch the saree on rough surfaces.</li><li><strong>Ironing</strong>: If your chiffon saree gets wrinkled, use a low-heat iron (set to silk or low temperature) with a pressing cloth (a thin cotton cloth) placed between the iron and the saree. Iron on the reverse side to prevent damaging any embellishments or embroidery.</li><li><strong>Avoid Perfumes and Deodorants</strong>: Perfumes, deodorants, and other sprays may contain chemicals that can harm the delicate chiffon fabric. Apply these products before wearing the saree and ensure they are completely dry before putting it on.</li><li><strong>Rotate Wear</strong>: Avoid wearing the same chiffon saree too frequently to prevent excessive wear and tear. Rotate your sarees to extend their lifespan.</li><li><strong>Professional Storage</strong>: If you plan to store your chiffon saree for an extended period, consider having it professionally cleaned and packed in acid-free tissue paper. This will help preserve the fabric and prevent any potential damage.</li></ul><p>By following these care instructions, you can enjoy the delicate beauty of your chiffon saree for years to come, ensuring that it remains a cherished part of your wardrobe.</p>"
+          }
+        },
+        "question_NDd4MG": {
+          "type": "question",
+          "settings": {
+            "title": "Chiffon Saree Colors",
+            "text": "<p>The choice of color for a chiffon saree depends on various factors, including your skin tone, personal style, the occasion, and your preferences. Chiffon sarees come in a wide range of colors, so you have plenty of options to choose from. </p><p>Here are some popular color choices and the occasions they are well-suited for:</p><ul><li><strong>Pastel Shades</strong>: Soft pastel colors like blush pink, baby blue, mint green, and lavender are timeless choices. They exude a sense of elegance and femininity. Pastel chiffon sarees are suitable for daytime events, casual gatherings, and can even be worn as office wear with the right styling.</li><li><strong>Vibrant Hues</strong>: Vibrant colors such as royal blue, emerald green, deep red, and rich purple make a bold and striking statement. These colors are ideal for evening events, parties, weddings, and festivities where you want to stand out.</li><li><strong>Neutral Tones</strong>: Neutral colors like ivory, beige, and gray are versatile and can be worn on various occasions. They create a classic and understated look that can be dressed up or down. Neutral chiffon sarees are suitable for both formal and casual events.</li><li><strong>Traditional Colors</strong>: Colors like red, maroon, and gold hold cultural significance and are often chosen for traditional events, weddings, and religious ceremonies. They symbolize tradition and auspiciousness.</li><li><strong>Monochromatic</strong>: Monochromatic chiffon sarees, where the saree and blouse are in the same color, create a sleek and sophisticated look. They are a great choice for formal events and evening parties.</li><li><strong>Dual-Tone or Ombre</strong>: Dual-tone or ombre chiffon sarees, featuring a gradient of colors, add a touch of modernity and elegance. These sarees are versatile and can be worn for various occasions, depending on the color combination.</li><li><strong>Prints and Patterns</strong>: Chiffon sarees with prints and patterns, such as florals, paisleys, or geometric designs, offer a playful and trendy look. They are suitable for casual events, daytime outings, or parties with a relaxed atmosphere.</li></ul><p>Ultimately, the \"best\" color for a chiffon saree is subjective and varies from person to person. Consider your personal style, the event's formality, and what complements your skin tone when choosing a color. Experimenting with different colors can help you discover which shades make you feel the most confident and elegant in a chiffon saree.</p>"
+          }
+        },
+        "question_X8KN44": {
+          "type": "question",
+          "settings": {
+            "title": "What is special about Chiffon Sarees by Summer by Priyanka Gupta?",
+            "text": "<p>Our Chiffon Sarees collection is meticulously designed with a focus on elegance, comfort, and versatility. We offer a wide range of colors and designs to cater to various occasions and personal styles.</p>"
+          }
+        },
+        "question_zUYpam": {
+          "type": "question",
+          "settings": {
+            "title": "What type of chiffon fabric is used in your sarees?",
+            "text": "<p>We use high-quality chiffon fabric to create our sarees, ensuring a lightweight and breathable drape. Our chiffon sarees are made to provide comfort and style.</p>"
+          }
+        },
+        "question_hdrwKx": {
+          "type": "question",
+          "settings": {
+            "title": "Can I find both casual and formal chiffon sarees in your collection?",
+            "text": "<p>Yes, our collection includes both casual and formal chiffon sarees. You can choose from a variety of designs suitable for everyday wear as well as special occasions.</p>"
+          }
+        },
+        "question_eYdjzx": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer custom stitching services for blouse designs?",
+            "text": "<p>Yes, we provide customization services for blouse designs to ensure a perfect fit and complement the saree of your choice. Contact our customer support team for details.</p>"
+          }
+        },
+        "question_P9BMHP": {
+          "type": "question",
+          "settings": {
+            "title": "How do I care for my chiffon saree from your collection?",
+            "text": "<p>To maintain the beauty of your chiffon saree, we recommend dry cleaning or professional cleaning. Avoid washing it at home. Please refer to our care instructions for more details.</p>"
+          }
+        },
+        "question_rrxkqn": {
+          "type": "question",
+          "settings": {
+            "title": "What is the price range of Chiffon Sarees in your collection?",
+            "text": "<p>Our Chiffon Sarees are available in a range of prices, depending on the design, embellishments, and intricacy of work. We offer options to suit different budgets.</p>"
+          }
+        },
+        "question_3a38kr": {
+          "type": "question",
+          "settings": {
+            "title": "Can I find Chiffon Sarees in traditional and contemporary designs?",
+            "text": "<p>Yes, our collection features a mix of traditional and contemporary designs, allowing you to choose according to your style and the occasion.</p>"
+          }
+        },
+        "question_dgUW88": {
+          "type": "question",
+          "settings": {
+            "title": "Is there a return or exchange policy for Chiffon Sarees?",
+            "text": "<p>We have a flexible return and exchange policy. If you are not satisfied with your purchase, you can contact our customer support team for assistance within the specified return period.</p>"
+          }
+        },
+        "question_EKVCty": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer international shipping for Chiffon Sarees?",
+            "text": "<p>Yes, we offer international shipping for our Chiffon Sarees. Please check our shipping policies for more information on delivery to your location.</p>"
+          }
+        },
+        "question_mtEGhQ": {
+          "type": "question",
+          "settings": {
+            "title": "Can I book an appointment to visit your physical store in Delhi NCR?",
+            "text": "<p>Yes, Delhi NCR residents can visit our store located at D6, 1st Floor, Defence Colony, New Delhi, 110024. Appointments can be booked through our website, lovesummer.in, for a personalized shopping experience.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_MpnzAi",
+        "question_nEHyyN",
+        "question_9KWXUR",
+        "question_AwUrxM",
+        "question_FaJXXb",
+        "question_NDd4MG",
+        "question_X8KN44",
+        "question_zUYpam",
+        "question_hdrwKx",
+        "question_eYdjzx",
+        "question_P9BMHP",
+        "question_rrxkqn",
+        "question_3a38kr",
+        "question_dgUW88",
+        "question_EKVCty",
+        "question_mtEGhQ"
+      ],
+      "settings": {
+        "title": "FAQs - Chiffon Sarees"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "testimonial_carousel_nQWhfi",
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb",
+    "faq_YEEaAF"
+  ]
+}

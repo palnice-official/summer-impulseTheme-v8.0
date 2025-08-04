@@ -1,0 +1,73 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "t:sections.header-group.name",
+  "sections": {
+    "announcement": {
+      "type": "announcement",
+      "blocks": {
+        "announcement_QYzVtH": {
+          "type": "announcement",
+          "settings": {
+            "text": "SUMMER SALE",
+            "link_text": "DISCOUNT CODE : SUMMERLOVE",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_QYzVtH"
+      ],
+      "custom_css": [],
+      "settings": {
+        "announcement_compact": true
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "header-0": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/summer_logo_3.png",
+            "logo-inverted": "shopify://shop_images/logos1.jpg",
+            "desktop_logo_width": 180,
+            "mobile_logo_width": 110
+          }
+        }
+      },
+      "block_order": [
+        "header-0"
+      ],
+      "custom_css": [
+        ".site-nav__dropdown.megamenu.text-left {background-color: white; z-index: 999;}"
+      ],
+      "settings": {
+        "main_menu_link_list": "main-menu",
+        "hover_menu": true,
+        "mega_menu_images": false,
+        "main_menu_alignment": "center",
+        "header_style": "sticky",
+        "sticky_index": false,
+        "sticky_collection": false,
+        "toolbar_menu": "",
+        "toolbar_social": false,
+        "show_locale_selector": false,
+        "show_currency_selector": false,
+        "show_currency_flags": false
+      }
+    }
+  },
+  "order": [
+    "announcement",
+    "header"
+  ]
+}

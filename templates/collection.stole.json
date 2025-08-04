@@ -1,0 +1,158 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "faq_KVYeNF": {
+      "type": "faq",
+      "blocks": {
+        "question_ptxihg": {
+          "type": "question",
+          "settings": {
+            "title": "About Stoles",
+            "text": "<p>Our collection of hand-embroidered woollen stoles showcases the finest craftsmanship, featuring intricate Kashmiri embroidery and delicate handwork from our Delhi workshop. Made from ultra-soft, warm wool, they offer both comfort and timeless style. Perfect for gifting, they make luxurious Mother’s Day gifts or thoughtful presents for any special occasion. These beautifully embroidered stoles blend tradition with sophistication, making them a cherished addition to any wardrobe.</p><p><strong>WOOLLEN STOLE SIZE : 28” X 80” </strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_ptxihg"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "faq_Y4jjmz": {
+      "type": "faq",
+      "blocks": {
+        "question_hVjagr": {
+          "type": "question",
+          "settings": {
+            "title": "What makes your Pashmina stoles unique?",
+            "text": "<p>Our Pashmina stoles are crafted from the finest Kashmiri Pashmina wool, known for its softness, warmth, and luxurious feel. Each stole features intricate hand embroidery, including Sozni embroidery, Aari embroidery, and Kalamkari embroidery, as well as Kani weaves, making them timeless pieces of art</p>"
+          }
+        },
+        "question_FxagdC": {
+          "type": "question",
+          "settings": {
+            "title": "Are the woollen stoles made of pure wool?",
+            "text": "<p>Yes, our collection includes pure wool embroidered stoles, crafted from the softest wool sourced from Kashmir and woven with expert craftsmanship in our Delhi workshop.</p>"
+          }
+        },
+        "question_bag8M6": {
+          "type": "question",
+          "settings": {
+            "title": "What is the difference between a Pashmina stole and a woollen stole?",
+            "text": "<p>A Pashmina stole is made from the fine undercoat of Himalayan goats, making it ultra-soft and lightweight. A woollen stole, on the other hand, is made from high-quality sheep wool, offering warmth with a slightly thicker texture. Both options feature beautiful hand embroidery and are perfect for all seasons.</p>"
+          }
+        },
+        "question_cTFd8r": {
+          "type": "question",
+          "settings": {
+            "title": "How do I style a Kashmiri Pashmina stole?",
+            "text": "<p>A Kashmiri Pashmina stole can be draped elegantly over ethnic wear for a traditional look or paired with contemporary outfits for a sophisticated avant-garde appeal. The delicate Sozni embroidered shawls and luxury Pashmina wraps add an effortless touch of class to any ensemble.</p>"
+          }
+        },
+        "question_w9hiWa": {
+          "type": "question",
+          "settings": {
+            "title": "Are these stoles good for gifting?",
+            "text": "<p>Absolutely! Our handmade Pashmina scarves and Kashmiri woollen shawls make for exquisite gifts. Their luxurious feel and timeless embroidery make them perfect Mother’s Day gifts, anniversary presents, or special occasion keepsakes.</p>"
+          }
+        },
+        "question_ptRTdC": {
+          "type": "question",
+          "settings": {
+            "title": "How should I care for my embroidered stole?",
+            "text": "<p>To maintain the beauty of your cashmere Pashmina wrap or hand-embroidered woollen stole, dry clean only. Store in a breathable cloth bag, away from direct sunlight and moisture.</p>"
+          }
+        },
+        "question_nVdtBa": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer customization on Pashmina and woollen stoles?",
+            "text": "<p>Unfortunately, making a Kashmiri stole takes months, if not years, and hence we do not offer bespoke Kashmiri embroidery on stoles. Our sequin and hand-embroidered stoles made in Delhi can be customized to a certain extent and are available for large wedding or gifting orders. Please contact us at +91 9899070899 for personalized designs and bulk orders.</p>"
+          }
+        },
+        "question_fHnc4W": {
+          "type": "question",
+          "settings": {
+            "title": "Where do you ship your Pashmina and woollen stoles?",
+            "text": "<p>We ship our luxury Pashmina wraps, Kashmiri woollen shawls, and hand-embroidered stoles worldwide. Delivery times vary based on location.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_hVjagr",
+        "question_FxagdC",
+        "question_bag8M6",
+        "question_cTFd8r",
+        "question_w9hiWa",
+        "question_ptRTdC",
+        "question_nVdtBa",
+        "question_fHnc4W"
+      ],
+      "settings": {
+        "title": "FAQs – Hand-Embroidered Woollen & Pashmina Stoles"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "faq_KVYeNF",
+    "faq_Y4jjmz"
+  ]
+}

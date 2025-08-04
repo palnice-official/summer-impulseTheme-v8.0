@@ -1,0 +1,41 @@
+{% assign has_inventory = false %}
+{% for variant in product.variants %}
+  {% if variant.inventory_quantity > 0 %}
+    {% assign has_inventory = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% assign base_date = 'now' | date: '%s' %}
+{% assign two_days_in_seconds = 2 | times: 24 | times: 60 | times: 60 %}
+{% assign thirty_days_in_seconds = 28 | times: 24 | times: 60 | times: 60 %}
+
+{% assign future_date_seconds = base_date | plus: two_days_in_seconds %}
+{% assign future_date_thirty_seconds = base_date | plus: thirty_days_in_seconds %}
+
+{% assign future_date_two = future_date_seconds | date: '%B %d, %Y' %}
+{% assign future_date_thirty = future_date_thirty_seconds | date: '%B %d, %Y' %}
+
+<div class="shipping-info">
+  {% if has_inventory %}
+    <div class="info-wraper-1">
+      <!-- <div class="bolt-info">{% render 'bolt' %}</div> -->
+      {% render 'bolt' %}
+      <span>Ready to Ship: Product will be Shipped by {{ future_date_two }}</span>
+    </div>
+  {% else %}
+    <span>Product will be Shipped by {{ future_date_thirty }}</span>
+  {% endif %}
+</div>
+
+{% style %}
+  .info-wraper-1{
+    display: block;
+  }
+  .info-wraper-1 svg{
+        width: 21px;
+    position: relative;
+    top: 6px;
+    left: 3px;
+  }
+  }
+{% endstyle %}

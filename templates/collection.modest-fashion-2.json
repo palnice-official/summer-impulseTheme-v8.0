@@ -1,0 +1,346 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "testimonial_carousel_wbWW6f": {
+      "type": "testimonial-carousel",
+      "blocks": {
+        "testimonial_YPxJQp": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nishtha_Sharma.jpg",
+            "quote": "<p>It was an absolute pleasure to wear the outfit by Summer by Priyanka.<br/><br/>Tha tailoring and the outfit is excellent and the service was equally impeccable. Trying and browsing at the beautiful store was made so easy by the staff!<br/><br/>Definitely coming back to the brand</p>",
+            "author": "Nishtha Sharma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_WRMaGe": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/viriti_verma.jpg",
+            "quote": "<p>Summer by Priyanka Gupta is like a breath of fresh air out of so many designer stores we visited for my sister-in-laws bridal outfit.<br/><br/>Her outfits were a love at first sight! They have a great collection and the store is beautifully decorated and designed. Kanchan ji, who is also the store manager helped us a lot with making correct decisions, as a result we were in love with the final outcome.<br/><br/> We ended up picking up so many sarees and suits. It's a highly recommended store, do visit.</p>",
+            "author": "Vriti Verma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_VRyTED": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Leena_Yerneni.webp",
+            "quote": "<p>Great designs and quality. Just loved how our outfits turned out for my daughter’s first birthday making it more memorable.<br/><br/>So dreamy and just the way I envisioned🌸💞💖</p>",
+            "author": "Leena Yerneni, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_3rLN9j": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nidhi_Modi.webp",
+            "quote": "<p>Well, Summer is all about it’s pastel tones and cute detailed colorful embroideries. Wearing summer always makes you to stand out in the crowd and creates a fresh vibe around you.<br/><br/>I just love the service, the work, the fabric, the embroideries and every bit of it.<br/><br/>They make such unique and chic designs that makes us fall for summer everyday. Always a Summer Girl 🌸</p>",
+            "author": "Nidhi Modi, India",
+            "rating": 5
+          }
+        },
+        "testimonial_FmHYNn": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/APARNA_ROY.webp",
+            "quote": "<p>We have had a wonderful experience at the Summer store always without fail !!<br/><br/>The outfits are fabulous and so is the store staff. Very accommodating. They customised a dress for me and it turned out lovely. My mom and I now shop regularly.<br/><br/>P.S: the store is so beautiful. My little daughter has a gala time every time we visit.</p>",
+            "author": "Aparna Roy, India",
+            "rating": 5
+          }
+        },
+        "testimonial_kibXMb": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/NEENU_NAYYAR.webp",
+            "quote": "<p>Summer by Priyanka gupta was an instagram discovery. I was looking for simple & elegant yet dressy clothes for a family wedding.<br/><br/>I went to the store at def col, met Priyanka and was absolutely in awe of her and her craft. Such simplicity in both :)<br/><br/>Since then, Summer by Priyanka Gupta has become my go to store for any occasion for my daughter and I. Absolutely love it ♥️</p>",
+            "author": "Neenu Nayyar, India",
+            "rating": 5
+          }
+        },
+        "testimonial_QNxfHh": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Sailaja.webp",
+            "quote": "<p>I had a wonderful shopping experience with Summer by Priyanka Gupta! The saree I purchased exceeded my expectations in both quality and design.<br/><br/>The customer service was exceptional, and the entire process was smooth and enjoyable. I will definitely be shopping with you again and will recommend your store to friends and family.<br/><br/>Thank you for providing such beautiful products and excellent service!</p>",
+            "author": "Sailaja, Chicago, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_FPEpFm": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/PAYAL_C_GUPTA.webp",
+            "quote": "<p>I love Summer by Priyanka Gupta for their stunning pastel and embroidered outfits, highlighting their beautiful craftsmanship that consistently impresses her.</p>",
+            "author": "Payal C Gupta, Dubai",
+            "rating": 5
+          }
+        },
+        "testimonial_hWe9Je": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rajwinder_Gill.webp",
+            "quote": "<p>Thankyou for sending me the beautiful dresses. I appreciate their quality and fit , they are perfect in every way. I'm eager to place more orders with you.</p>",
+            "author": "Rajwinder Gill, USA",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_YPxJQp",
+        "testimonial_WRMaGe",
+        "testimonial_VRyTED",
+        "testimonial_3rLN9j",
+        "testimonial_FmHYNn",
+        "testimonial_kibXMb",
+        "testimonial_QNxfHh",
+        "testimonial_FPEpFm",
+        "testimonial_hWe9Je"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Don't Take Our Word For It......",
+        "url": "https://www.lovesummer.in/pages/beautiful-girls-of-summer",
+        "btn_text": "VIEW CLIENT DIARY",
+        "cellAlign": "left",
+        "time": 5000,
+        "pageDots": false,
+        "adaptiveHeight": true,
+        "padding-top": 0,
+        "padding-bottom": 50
+      }
+    },
+    "faq_VbaYmx": {
+      "type": "faq",
+      "blocks": {
+        "question_ymQD3X": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Discover the Beauty of Printed Sarees",
+            "text": "<ul><li><strong>Organza Printed Sarees:</strong> Immerse yourself in the sheer charm of Organza with our Organza Printed Sarees. The delicate fabric carries printed motifs that create a whimsical and enchanting look, perfect for grand occasions.</li><li><strong>Chiffon Printed Sarees:</strong> Chiffon sarees are known for their fluidity and grace. Our Chiffon Printed Sarees feature captivating prints that add a contemporary twist to this classic fabric, making them ideal for various events.</li><li><strong>Georgette Printed Sarees:</strong> Georgette sarees are celebrated for their versatility and drapability. Our Georgette Printed Sarees are adorned with prints that reflect both tradition and modernity, offering a stylish edge to your wardrobe.</li><li><strong>Silk Printed Sarees:</strong> Silk, the fabric of royalty, takes on a new avatar in our Silk Printed Sarees. These sarees feature captivating prints combined with the luxurious feel of silk, adding a touch of regal elegance to your look.</li></ul>"
+          }
+        },
+        "question_EWqgJN": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Why Choose Our Printed Sarees",
+            "text": "<ul><li><strong>Vibrant Prints:</strong> Our sarees feature vibrant and captivating prints that make a bold fashion statement.</li><li><strong>Versatile Style:</strong> Printed sarees are versatile and suitable for various occasions, from casual gatherings to festive celebrations.</li><li><strong>Lightweight Comfort:</strong> The lightweight fabrics ensure comfort even during long hours of wear.</li><li><strong>Artistry in Every Thread:</strong> The prints on our sarees are a testament to the artistry and attention to detail that goes into creating each piece.</li></ul>"
+          }
+        },
+        "question_BUUznU": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Are these sarees suitable for formal events?",
+            "text": "<p>Yes, our Printed Sarees can be styled to suit formal events, depending on the choice of fabric and accessories. They offer a contemporary yet elegant look.</p>"
+          }
+        },
+        "question_W3H9X4": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "What is the care routine for printed sarees to maintain their beauty?",
+            "text": "<p>We recommend dry cleaning or professional cleaning to preserve the vibrancy of the prints. Store them in a cool, dry place to prevent damage.</p>"
+          }
+        },
+        "question_zFdRFH": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer customization options for printed sarees?",
+            "text": "<p>While our printed sarees are not customizable, we offer a wide range of prints and designs to cater to diverse preferences.</p>"
+          }
+        },
+        "question_jMNhcA": {
+          "type": "question",
+          "settings": {
+            "title": "Can these sarees be worn during daytime events?",
+            "text": "<p>Absolutely! Many of our printed sarees are suitable for daytime events, and you can choose lighter fabrics for added comfort.</p>"
+          }
+        },
+        "question_YPLWB9": {
+          "type": "question",
+          "settings": {
+            "title": "Do you provide international shipping for printed sarees?",
+            "text": "<p>Yes, we offer international shipping, so you can enjoy the elegance of our printed sarees no matter where you are.</p>"
+          }
+        },
+        "question_GadVQE": {
+          "type": "question",
+          "settings": {
+            "title": "Are these sarees suitable for daily wear?",
+            "text": "<p>While our sarees are versatile, they are designed for occasional and special wear. They are a perfect choice for elevating your style at gatherings and celebrations.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_ymQD3X",
+        "question_EWqgJN",
+        "question_BUUznU",
+        "question_W3H9X4",
+        "question_zFdRFH",
+        "question_jMNhcA",
+        "question_YPLWB9",
+        "question_GadVQE"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "FAQs"
+      }
+    },
+    "faq_6QqNjM": {
+      "type": "faq",
+      "blocks": {
+        "question_adgDF9": {
+          "type": "question",
+          "settings": {
+            "title": "Are all Summer potlis handmade?",
+            "text": "<p>Not all potlis are handmade. While some feature hand-embroidery and artisanal details, others are carefully designed with machine embellishments to maintain consistency and finish.</p>"
+          }
+        },
+        "question_Jpbzar": {
+          "type": "question",
+          "settings": {
+            "title": "How big are the potlis?",
+            "text": "<p>Sizes vary. Some potlis are compact for minimal essentials, while others are more spacious. Please check individual product descriptions before purchasing.</p>"
+          }
+        },
+        "question_wrH7fT": {
+          "type": "question",
+          "settings": {
+            "title": "How should I choose a potli bag?",
+            "text": "<p>Choose based on your functional need—whether you need it for a wedding, gifting, or daily use—and your personal style. You can also curate a collection that complements different outfits and moods.</p>"
+          }
+        },
+        "question_HeYCcq": {
+          "type": "question",
+          "settings": {
+            "title": "Are potlis suitable for gifting?",
+            "text": "<p>Yes! Potlis make for memorable and versatile gifts—perfect for weddings, bridesmaids, festive occasions, or even housewarming return favors.</p>"
+          }
+        },
+        "question_LFVx4d": {
+          "type": "question",
+          "settings": {
+            "title": "Can I carry a potli with Western wear?",
+            "text": "<p>Definitely. A delicately embroidered potli can add a touch of Indian elegance to Western or Indo-Western outfits.</p>"
+          }
+        },
+        "question_zFzETr": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer potlis that match outfits?",
+            "text": "<p>Many of our potlis are designed to coordinate with lehengas, sarees, and kurtas from our collection. You can mix, match, or request guidance from our styling team.</p>"
+          }
+        },
+        "question_XTEKfr": {
+          "type": "question",
+          "settings": {
+            "title": "Can I customize potlis for events or gifting?",
+            "text": "<p>We offer limited customizations and bulk gifting options for weddings and festive occasions. Please reach out via WhatsApp or email for more details.</p>"
+          }
+        },
+        "question_PtixMf": {
+          "type": "question",
+          "settings": {
+            "title": "What materials are your potlis made of?",
+            "text": "<p>Our potlis are crafted using a mix of materials such as raw silk, organza, and cotton silk—embellished with sequins, beads, or threadwork depending on the design.</p>"
+          }
+        },
+        "question_zhVKyE": {
+          "type": "question",
+          "settings": {
+            "title": "How should I clean and store my potli?",
+            "text": "<p>We recommend spot-cleaning with a dry or slightly damp cloth. Store your potli in a muslin bag or pouch to preserve its shape and embroidery.</p>"
+          }
+        },
+        "question_GjGjWT": {
+          "type": "question",
+          "settings": {
+            "title": "Can I use potlis for everyday use?",
+            "text": "<p>Some lightweight, minimal potlis work well for casual or daily wear, but most are designed for festive or occasion-based dressing.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_adgDF9",
+        "question_Jpbzar",
+        "question_wrH7fT",
+        "question_HeYCcq",
+        "question_LFVx4d",
+        "question_zFzETr",
+        "question_XTEKfr",
+        "question_PtixMf",
+        "question_zhVKyE",
+        "question_GjGjWT"
+      ],
+      "disabled": true,
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "title": "FAQs – Designer Potlis By Priyanka Gupta"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "testimonial_carousel_wbWW6f",
+    "faq_VbaYmx",
+    "faq_6QqNjM"
+  ]
+}

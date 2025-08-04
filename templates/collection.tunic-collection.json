@@ -1,0 +1,404 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        },
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "subcollections",
+        "product_grid",
+        "collection_description"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "testimonial_carousel_UnCtMx": {
+      "type": "testimonial-carousel",
+      "blocks": {
+        "testimonial_CdGHzX": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nishtha_Sharma.jpg",
+            "quote": "<p>It was an absolute pleasure to wear the outfit by Summer by Priyanka.<br/><br/>Tha tailoring and the outfit is excellent and the service was equally impeccable. Trying and browsing at the beautiful store was made so easy by the staff!<br/><br/>Definitely coming back to the brand</p>",
+            "author": "Nishtha Sharma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_TtYhw9": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/viriti_verma.jpg",
+            "quote": "<p>Summer by Priyanka Gupta is like a breath of fresh air out of so many designer stores we visited for my sister-in-laws bridal outfit.<br/><br/>Her outfits were a love at first sight! They have a great collection and the store is beautifully decorated and designed. Kanchan ji, who is also the store manager helped us a lot with making correct decisions, as a result we were in love with the final outcome.<br/><br/> We ended up picking up so many sarees and suits. It's a highly recommended store, do visit.</p>",
+            "author": "Vriti Verma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_rYJPrL": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/APARNA_ROY.webp",
+            "quote": "<p>We have had a wonderful experience at the Summer store always without fail !!<br/><br/>The outfits are fabulous and so is the store staff. Very accommodating. They customised a dress for me and it turned out lovely. My mom and I now shop regularly.<br/><br/>P.S: the store is so beautiful. My little daughter has a gala time every time we visit.</p>",
+            "author": "Aparna Roy, India",
+            "rating": 5
+          }
+        },
+        "testimonial_iwndHM": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/NEENU_NAYYAR.webp",
+            "quote": "<p>Summer by Priyanka gupta was an instagram discovery. I was looking for simple & elegant yet dressy clothes for a family wedding.<br/><br/>I went to the store at def col, met Priyanka and was absolutely in awe of her and her craft. Such simplicity in both :)<br/><br/>Since then, Summer by Priyanka Gupta has become my go to store for any occasion for my daughter and I. Absolutely love it ♥️</p>",
+            "author": "Neenu Nayyar, India",
+            "rating": 5
+          }
+        },
+        "testimonial_BGxErF": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Sailaja.webp",
+            "quote": "<p>I had a wonderful shopping experience with Summer by Priyanka Gupta! The saree I purchased exceeded my expectations in both quality and design.<br/><br/>The customer service was exceptional, and the entire process was smooth and enjoyable. I will definitely be shopping with you again and will recommend your store to friends and family.<br/><br/>Thank you for providing such beautiful products and excellent service!</p>",
+            "author": "Sailaja, Chicago, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_nAPfmd": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nidhi_Modi.webp",
+            "quote": "<p>Well, Summer is all about it’s pastel tones and cute detailed colorful embroideries. Wearing summer always makes you to stand out in the crowd and creates a fresh vibe around you.<br/><br/>I just love the service, the work, the fabric, the embroideries and every bit of it.<br/><br/>They make such unique and chic designs that makes us fall for summer everyday. Always a Summer Girl 🌸</p>",
+            "author": "Nidhi Modi, India",
+            "rating": 5
+          }
+        },
+        "testimonial_Cmc6Me": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/PAYAL_C_GUPTA.webp",
+            "quote": "<p>I love Summer by Priyanka Gupta for their stunning pastel and embroidered outfits, highlighting their beautiful craftsmanship that consistently impresses her.</p>",
+            "author": "John Doe",
+            "rating": 5
+          }
+        },
+        "testimonial_KpYGhA": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rajwinder_Gill.webp",
+            "quote": "<p>Thankyou for sending me the beautiful dresses. I appreciate their quality and fit , they are perfect in every way. I'm eager to place more orders with you.</p>",
+            "author": "Rajwinder Gill, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_mVj9wJ": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Leena_Yerneni.webp",
+            "quote": "<p>Great designs and quality. Just loved how our outfits turned out for my daughter’s first birthday making it more memorable.<br/><br/>So dreamy and just the way I envisioned🌸💞💖</p>",
+            "author": "Leena Yerneni, USA",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_CdGHzX",
+        "testimonial_TtYhw9",
+        "testimonial_rYJPrL",
+        "testimonial_iwndHM",
+        "testimonial_BGxErF",
+        "testimonial_nAPfmd",
+        "testimonial_Cmc6Me",
+        "testimonial_KpYGhA",
+        "testimonial_mVj9wJ"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Don't Take Our Word For It......",
+        "url": "https://www.lovesummer.in/pages/beautiful-girls-of-summer",
+        "btn_text": "VIEW CLIENT DIARY",
+        "cellAlign": "left",
+        "time": 5000,
+        "pageDots": false,
+        "adaptiveHeight": true,
+        "padding-top": 20,
+        "padding-bottom": 20
+      }
+    },
+    "971979ff-603c-4f74-9446-a8ba7d6a9c6b": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16728474878188__971979ff-603c-4f74-9446-a8ba7d6a9c6b-1683969206544363e9-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h1>Discover Unique and Fashion-Forward Tunics for Women</h1><p>Welcome to the vibrant world of women’s tunics at \"Summer by Priyanka Gupta\"! We are thrilled to present our exquisite collection of tunics for women, carefully curated to bring you comfort, style, and a touch of elegance.</p><p>Our tunics are designed to embrace the essence of summer, with breezy silhouettes, captivating prints, and luxurious fabrics that will make you feel effortlessly chic and confident. Each tunic is a masterpiece, crafted with meticulous attention to detail and a passion for exceptional design.</p><h2>Different types of Tunics for women</h2><h3>Basic Tunic</h3><p>A simple, classic tunic that can be worn for everyday casual occasions. Preferred fabric: Cotton or jersey for a comfortable and breathable feel.</p><h3>Embroidered Tunic</h3><p>A tunic with intricate embroidery or embellishments, suitable for casual outings or semi-formal events. Preferred fabric: Cotton or linen for a light and airy look.</p><h3>Bohemian Tunic</h3><p>A flowy and relaxed tunic with boho-inspired patterns, perfect for festivals or beach outings. Preferred fabric: Rayon or chiffon for a soft and draping effect.</p><h3>Denim Tunic</h3><p>A tunic made of denim fabric, offering a casual and contemporary style. Can be worn for casual outings or as part of a denim-on-denim look. Preferred fabric: Denim or chambray for a sturdy and versatile feel.</p><h3>Peasant Tunic</h3><p>A loose-fitting tunic with billowy sleeves and a gathered neckline gives off a romantic and vintage vibe. Suitable for casual outings or boho-chic events. Preferred fabric: Cotton or lightweight linen for a comfortable and relaxed fit.</p><h3>Kaftan Tunic</h3><p>A loose and flowing tunic with wide sleeves, often inspired by Middle Eastern or African designs. Perfect for beach cover-ups or resort wear. Preferred fabric: Silk or lightweight chiffon for an elegant and luxurious look.</p><h3>Tunic Blouse</h3><p>A more tailored and structured tunic that can be worn for office settings or dressier occasions. Preferred fabric: Silk or polyester blends for a polished and professional appearance.</p><h3>Lace Tunic</h3><p>A tunic featuring delicate lace patterns, suitable for semi-formal events or evening wear. Can be worn over a camisole or paired with a slip. Preferred fabric: Lace or sheer materials for an ethereal and feminine touch.</p><h3>Sleeveless Tunic</h3><p>A tunic without sleeves, ideal for hot weather or as a layering piece. Can be dressed up or down depending on the fabric and styling. Preferred fabric: Cotton, linen, or lightweight knits for breathability.</p><h3>Printed Tunic</h3><p>A tunic with vibrant and colorful prints, adds a statement element to your outfit. Can be worn for casual outings or dressed up with accessories. Preferred fabric: Polyester or silk blends for vibrant and long-lasting prints.</p><h3>High-Low Tunic</h3><p>A tunic with a shorter front hem and a longer back hem creates a stylish asymmetrical look. Can be worn for various occasions depending on the fabric and design. Preferred fabric: Lightweight fabrics like georgette or chiffon for a graceful drape.</p><h3>Cold Shoulder Tunic</h3><p>A tunic with cut-out shoulder details, adds a trendy and fashionable touch to your outfit. Suitable for casual outings or parties. Preferred fabric: Modal or jersey for a comfortable and stretchy fit.</p><h3>Boho Chic Tunic</h3><p>A tunic with bohemian-inspired prints, embroidery, or tassel details. Perfect for music festivals, beach parties, or casual outings. Preferred fabric: Lightweight fabrics like cotton or rayon for a breezy and free-spirited vibe.</p><h3>Peplum Tunic</h3><p>A tunic with a fitted waist and a flared or ruffled hemline creates a feminine and flattering silhouette. Suitable for semi-formal events or parties. Preferred fabric: Cotton blends or structured knits for a defined shape.</p><h3>Silk Tunic</h3><p>A luxurious tunic made of silk fabric, adds an elegant and sophisticated touch to any outfit. Can be worn for formal events, dinners, or special occasions. Preferred fabric: Pure silk or silk blends for a smooth and lustrous appearance.</p><p>Remember, while the suggested occasions are a general guide, you can always adapt these tunics to suit your personal style and preferences.</p><h2>Women’s Tunics for Summer</h2><p>Tunics or tunic tops for summer are designed to be lightweight, breathable, and comfortable in warm weather. They often feature airy fabrics and designs that allow for better airflow and help to keep you cool. Here are some fabrics commonly used for summer tunics:</p><ul><li>Cotton: Cotton is a popular choice for summer tunics due to its breathability and ability to absorb moisture, keeping you cool and comfortable.</li><li>Linen: Linen is a natural fabric known for its lightweight and breathable properties. It allows air circulation and helps to wick away moisture, making it ideal for hot and humid summer days.</li><li>Rayon: Rayon is a semi-synthetic fabric that is lightweight, soft, and breathable. It has good moisture-wicking properties and drapes nicely, making it suitable for summer tunics.</li><li>Chambray: Chambray is a lightweight and breathable fabric that resembles denim but is lighter in weight. It offers a casual and relaxed look, perfect for summer tunics.</li><li>Silk: While silk is not as breathable as cotton or linen, it is still a popular choice for summer tunics due to its luxurious feel and ability to regulate body temperature.</li><li>Voile: Voile is a lightweight, sheer fabric that provides excellent breathability. It is often used for summer tunics due to its soft and flowy nature.</li><li>Modal: Modal is a type of rayon fabric made from beech tree fibers. It is known for its softness, breathability, and ability to resist shrinking, making it suitable for summer tunics.</li><li>Lightweight Jersey: Jersey fabric is typically made from cotton or a blend of cotton and synthetic fibers. Lightweight jersey is breathable and stretchy, making it comfortable for summer tunics.</li><li>Gauze: Gauze is a loosely woven fabric that allows air to pass through easily, making it a popular choice for lightweight and breathable summer tunics.</li><li>Seersucker: Seersucker is a cotton fabric with a crinkled or puckered texture that helps to keep the fabric away from the skin, allowing air circulation and promoting coolness.</li></ul><p>These fabrics offer comfort and breathability, allowing air to flow and helping to keep you cool during the summer months. When selecting a summer tunic, consider the fabric's weight, breathability, and moisture-wicking properties to ensure maximum comfort in hot weather.</p><h2>Occasions for Wearing Tunics</h2><p>Tunics can be worn for a wide range of occasions, as their versatility allows them to be dressed up or down depending on the styling and accessories. Here are different occasions where you can wear tunics:</p><h3>Casual Outings</h3><p>Tunics are perfect for everyday wear, such as running errands, meeting friends for coffee, or shopping trips. Pair them with leggings or jeans for a comfortable and stylish look.</p><h3>Weekend Brunch</h3><p>Tunics make a great choice for a relaxed brunch with friends or family. Opt for a flowy tunic and pair it with skinny jeans or shorts for a chic and comfortable outfit.</p><h3>Beach Cover-up </h3><p>Lightweight and breezy tunics are ideal as beach cover-ups. Throw one over your swimsuit for a stylish and effortless look that can take you from the beach to a beachside café.</p><h3>Resort Wear</h3><p>When on vacation or at a resort, tunics are perfect for a stylish and comfortable ensemble. Wear them with shorts, sandals, or wide-leg pants for a relaxed yet fashionable outfit.</p><h3>Summer Parties</h3><p>Tunics can be dressed up for summer parties, barbecues, or outdoor events. Choose a tunic with embellishments, lace details, or vibrant prints and pair it with dressier bottoms or accessories for a festive look.</p><h3>Work or Office</h3><p>Depending on the dress code, certain tunics can be worn to work or in office settings. Opt for a tailored tunic and pair it with dress pants or a pencil skirt for a professional yet comfortable outfit.</p><h3>Evening Occasions</h3><p>Tunics with embellishments, sequins, or elegant fabrics can be worn for evening events, parties, or dinners. Pair them with dressier bottoms like tailored pants or a maxi skirt, and accessorize with statement jewelry for a sophisticated look.</p><h3>Date Nights</h3><p>Tunics can create a stylish and romantic outfit for date nights. Opt for a tunic with a flattering silhouette and pair it with skinny jeans or leggings. Add heels and statement accessories to elevate the look.</p><h3>Festivals or Concerts</h3><p>Tunics with a bohemian or hippie-inspired design are perfect for music festivals or outdoor concerts. Pair them with denim shorts or flared pants, and complete the look with boho accessories like fringe bags or floppy hats.</p><h3>Formal Events</h3><p>Some tunics with elegant designs and luxurious fabrics can be worn for formal events such as weddings, cocktail parties, or galas. Look for tunics with intricate embroidery, lace details, or satin fabrics, and pair them with dressier bottoms like tailored pants or a long skirt.</p><p>Remember, the appropriateness of tunics for specific occasions may vary based on the venue, dress code, and personal style preferences. Adapt the style, fabric, and accessories accordingly to suit the specific occasion and create a look that reflects your individual taste.</p><h2>How to choose a tunic top according to body type?</h2><p>When it comes to choosing tunics based on body types, the goal is to find styles that flatter and enhance your unique features. While personal preference and comfort should always be prioritized, here are some general guidelines for selecting tunics based on different body types:</p><h3>Hourglass Body Type</h3><ul><li>Look for tunics that emphasize your waistline. Belted tunics or those with cinching at the waist will highlight your curves.</li><li>Opt for styles that have a slight A-line or fit-and-flare silhouette to enhance your balanced proportions.</li><li>V-neck tunics can help draw attention to your neckline and create a balanced look.</li></ul><h3>Apple Body Type</h3><ul><li>Choose tunics that provide a looser fit around the midsection while still maintaining a flattering shape.</li><li>Look for tunics with empire waistlines or tunics that flow away from the body to camouflage the tummy area.</li><li>Avoid clingy fabrics and opt for materials that drape nicely, such as flowy cotton or lightweight knits.</li></ul><h3>Pear Body Type</h3><ul><li>Opt for tunics that provide balance by drawing attention to the upper body. Look for details like boat necks, embellishments, or interesting necklines.</li><li>Choose tunics that have a looser fit around the hips and thighs to create a flattering silhouette.</li><li>Tunics with side slits can add movement and balance to your overall look.</li></ul><h3>Rectangle Body Type</h3><ul><li>Look for tunics that create the illusion of curves. Consider styles with cinching at the waist or ones that have a defined shape.</li><li>Tunics with patterns, prints, or interesting textures can add dimension and create the illusion of curves.</li><li>Experiment with tunics that have asymmetrical hemlines or draping details to add visual interest.</li></ul><h3>Petite Body Type</h3><ul><li>Opt for shorter-length tunics that won't overwhelm your frame. Choose tunics that fall above the knee or mid-thigh.</li><li>Look for tunics with vertical details like vertical stripes or elongating prints to create the illusion of height.</li><li>Avoid oversized or boxy tunics that can make you appear smaller. Instead, opt for more fitted or tailored styles.</li></ul><h3>Tall Body Type</h3><ul><li>Embrace longer-length tunics that accentuate your height. Tunics that fall below the hip or mid-thigh can create a balanced look.</li><li>Experiment with tunics that have bold prints, horizontal stripes, or interesting patterns to break up the verticality of your frame.</li><li>Look for tunics with drop waists or belts to create definition and add shape to your silhouette.</li></ul><p>Remember, these guidelines are just suggestions, and personal style and comfort should always take precedence. Ultimately, it's important to wear tunics that make you feel confident and reflect your individuality.</p><h2>FAQs - Tunics for Women</h2><p>Q: What is a tunic?</p><p>A: A tunic is a loose-fitting, typically knee-length or longer top that can be worn with various bottoms like leggings, pants, or skirts. It is known for its comfortable and relaxed fit.</p><p>Q: What occasions are tunics suitable for?</p><p>A: Tunics are versatile and can be worn for a range of occasions. They are great for casual outings, brunches, beach cover-ups, parties, work, vacations, and more. The occasion can be easily determined by the fabric, design, and styling of the tunic.</p><p>Q: What body types can wear tunics?</p><p>A: Tunics can be worn by individuals with different body types. They can be styled to flatter hourglass, apple, pear, rectangle, petite, and tall body types. Choosing the right fit and design can help enhance your unique features.</p><p>Q: Can I wear a tunic for formal events?</p><p>A: Yes, certain tunics with elegant designs, luxurious fabrics, and embellishments can be suitable for formal events like weddings, cocktail parties, or galas. Look for styles that have a dressier feel and pair them with appropriate bottoms and accessories.</p><p>Q: How do I style tunics?</p><p>A: Tunics offers a range of styling options. They can be paired with leggings, skinny jeans, trousers, skirts, or shorts. Accessories like belts, scarves, or statement jewelry can be added to complete the look. Layering with jackets or cardigans is also an option.</p><p>Q: What fabrics are commonly used for tunics?</p><p>A: Tunics can be found in various fabrics. Common options include cotton, linen, rayon, chiffon, silk, denim, knit, and more. The choice of fabric depends on the desired comfort, breathability, and occasion.</p><p>Q: Can tunics be worn year-round?</p><p>A: Yes, tunics can be worn throughout the year by layering or choosing appropriate fabrics. Lighter fabrics like cotton or chiffon are suitable for warmer months, while heavier fabrics like wool blends or knits work well for colder seasons.</p><p>Q: Where can I purchase tunics for women?</p><p>A: You can buy women’s tunics online or from a store of Summer By Priyanka Gupta.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16728474878188__971979ff-603c-4f74-9446-a8ba7d6a9c6b-1683969206544363e9-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "faq_tDAJDV": {
+      "type": "faq",
+      "blocks": {
+        "question_zrihQ8": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Different types of Tunics for women",
+            "text": "<h3>Basic Tunic</h3><p>A simple, classic tunic that can be worn for everyday casual occasions. Preferred fabric: Cotton or jersey for a comfortable and breathable feel.</p><h3>Embroidered Tunic</h3><p>A tunic with intricate embroidery or embellishments, suitable for casual outings or semi-formal events. Preferred fabric: Cotton or linen for a light and airy look.</p><h3>Bohemian Tunic</h3><p>A flowy and relaxed tunic with boho-inspired patterns, perfect for festivals or beach outings. Preferred fabric: Rayon or chiffon for a soft and draping effect.</p><h3>Denim Tunic</h3><p>A tunic made of denim fabric, offering a casual and contemporary style. Can be worn for casual outings or as part of a denim-on-denim look. Preferred fabric: Denim or chambray for a sturdy and versatile feel.</p><h3>Peasant Tunic</h3><p>A loose-fitting tunic with billowy sleeves and a gathered neckline gives off a romantic and vintage vibe. Suitable for casual outings or boho-chic events. Preferred fabric: Cotton or lightweight linen for a comfortable and relaxed fit.<br/>Kaftan Tunic<br/>A loose and flowing tunic with wide sleeves, often inspired by Middle Eastern or African designs. Perfect for beach cover-ups or resort wear. Preferred fabric: Silk or lightweight chiffon for an elegant and luxurious look.<br/><br/>Tunic Blouse<br/>A more tailored and structured tunic that can be worn for office settings or dressier occasions. Preferred fabric: Silk or polyester blends for a polished and professional appearance.<br/><br/>Lace Tunic<br/>A tunic featuring delicate lace patterns, suitable for semi-formal events or evening wear. Can be worn over a camisole or paired with a slip. Preferred fabric: Lace or sheer materials for an ethereal and feminine touch.<br/><br/>Sleeveless Tunic<br/>A tunic without sleeves, ideal for hot weather or as a layering piece. Can be dressed up or down depending on the fabric and styling. Preferred fabric: Cotton, linen, or lightweight knits for breathability.<br/>Printed Tunic</p><p>A tunic with vibrant and colorful prints, adds a statement element to your outfit. Can be worn for casual outings or dressed up with accessories. Preferred fabric: Polyester or silk blends for vibrant and long-lasting prints.</p><h3>High-Low Tunic</h3><p>A tunic with a shorter front hem and a longer back hem creates a stylish asymmetrical look. Can be worn for various occasions depending on the fabric and design. Preferred fabric: Lightweight fabrics like georgette or chiffon for a graceful drape.</p><h3>Cold Shoulder Tunic</h3><p>A tunic with cut-out shoulder details, adds a trendy and fashionable touch to your outfit. Suitable for casual outings or parties. Preferred fabric: Modal or jersey for a comfortable and stretchy fit.</p><h3>Boho Chic Tunic</h3><p>A tunic with bohemian-inspired prints, embroidery, or tassel details. Perfect for music festivals, beach parties, or casual outings. Preferred fabric: Lightweight fabrics like cotton or rayon for a breezy and free-spirited vibe.<br/>Peplum Tunic<br/>A tunic with a fitted waist and a flared or ruffled hemline creates a feminine and flattering silhouette. Suitable for semi-formal events or parties. Preferred fabric: Cotton blends or structured knits for a defined shape.<br/><br/>Silk Tunic<br/>A luxurious tunic made of silk fabric, adds an elegant and sophisticated touch to any outfit. Can be worn for formal events, dinners, or special occasions. Preferred fabric: Pure silk or silk blends for a smooth and lustrous appearance.<br/><br/>Remember, while the suggested occasions are a general guide, you can always adapt these tunics to suit your personal style and preferences.</p>"
+          }
+        },
+        "question_TMgtxK": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Women’s Tunics for Summer",
+            "text": "<p>Tunics or tunic tops for summer are designed to be lightweight, breathable, and comfortable in warm weather. They often feature airy fabrics and designs that allow for better airflow and help to keep you cool. Here are some fabrics commonly used for summer tunics:</p><ul><li>Cotton: Cotton is a popular choice for summer tunics due to its breathability and ability to absorb moisture, keeping you cool and comfortable.</li><li>Linen: Linen is a natural fabric known for its lightweight and breathable properties. It allows air circulation and helps to wick away moisture, making it ideal for hot and humid summer days.</li><li>Rayon: Rayon is a semi-synthetic fabric that is lightweight, soft, and breathable. It has good moisture-wicking properties and drapes nicely, making it suitable for summer tunics.</li><li>Chambray: Chambray is a lightweight and breathable fabric that resembles denim but is lighter in weight. It offers a casual and relaxed look, perfect for summer tunics.</li><li>Silk: While silk is not as breathable as cotton or linen, it is still a popular choice for summer tunics due to its luxurious feel and ability to regulate body temperature.</li><li>Voile: Voile is a lightweight, sheer fabric that provides excellent breathability. It is often used for summer tunics due to its soft and flowy nature.</li><li>Modal: Modal is a type of rayon fabric made from beech tree fibers. It is known for its softness, breathability, and ability to resist shrinking, making it suitable for summer tunics.</li><li>Lightweight Jersey: Jersey fabric is typically made from cotton or a blend of cotton and synthetic fibers. Lightweight jersey is breathable and stretchy, making it comfortable for summer tunics.</li><li>Gauze: Gauze is a loosely woven fabric that allows air to pass through easily, making it a popular choice for lightweight and breathable summer tunics.</li><li>Seersucker: Seersucker is a cotton fabric with a crinkled or puckered texture that helps to keep the fabric away from the skin, allowing air circulation and promoting coolness.</li></ul><p>These fabrics offer comfort and breathability, allowing air to flow and helping to keep you cool during the summer months. When selecting a summer tunic, consider the fabric's weight, breathability, and moisture-wicking properties to ensure maximum comfort in hot weather.</p>"
+          }
+        },
+        "question_dTBRBa": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Occasions for Wearing Tunics",
+            "text": "<p>Tunics can be worn for a wide range of occasions, as their versatility allows them to be dressed up or down depending on the styling and accessories. Here are different occasions where you can wear tunics:</p><h3>Casual Outings</h3><p>Tunics are perfect for everyday wear, such as running errands, meeting friends for coffee, or shopping trips. Pair them with leggings or jeans for a comfortable and stylish look.</p><h3>Weekend Brunch</h3><p>Tunics make a great choice for a relaxed brunch with friends or family. Opt for a flowy tunic and pair it with skinny jeans or shorts for a chic and comfortable outfit.</p><h3>Beach Cover-up </h3><p>Lightweight and breezy tunics are ideal as beach cover-ups. Throw one over your swimsuit for a stylish and effortless look that can take you from the beach to a beachside café.</p><h3>Resort Wear</h3><p>When on vacation or at a resort, tunics are perfect for a stylish and comfortable ensemble. Wear them with shorts, sandals, or wide-leg pants for a relaxed yet fashionable outfit.<br/>Summer Parties</p><p>Tunics can be dressed up for summer parties, barbecues, or outdoor events. Choose a tunic with embellishments, lace details, or vibrant prints and pair it with dressier bottoms or accessories for a festive look.</p><h3>Work or Office</h3><p>Depending on the dress code, certain tunics can be worn to work or in office settings. Opt for a tailored tunic and pair it with dress pants or a pencil skirt for a professional yet comfortable outfit.</p><h3>Evening Occasions</h3><p>Tunics with embellishments, sequins, or elegant fabrics can be worn for evening events, parties, or dinners. Pair them with dressier bottoms like tailored pants or a maxi skirt, and accessorize with statement jewelry for a sophisticated look.</p><h3>Date Nights</h3><p>Tunics can create a stylish and romantic outfit for date nights. Opt for a tunic with a flattering silhouette and pair it with skinny jeans or leggings. Add heels and statement accessories to elevate the look.</p><h3>Festivals or Concerts</h3><p>Tunics with a bohemian or hippie-inspired design are perfect for music festivals or outdoor concerts. Pair them with denim shorts or flared pants, and complete the look with boho accessories like fringe bags or floppy hats.<br/>Formal Events</p><p>Some tunics with elegant designs and luxurious fabrics can be worn for formal events such as weddings, cocktail parties, or galas. Look for tunics with intricate embroidery, lace details, or satin fabrics, and pair them with dressier bottoms like tailored pants or a long skirt.</p><p>Remember, the appropriateness of tunics for specific occasions may vary based on the venue, dress code, and personal style preferences. Adapt the style, fabric, and accessories accordingly to suit the specific occasion and create a look that reflects your individual taste.</p>"
+          }
+        },
+        "question_NDRFnE": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "How to choose a tunic top according to body type?",
+            "text": "<p>When it comes to choosing tunics based on body types, the goal is to find styles that flatter and enhance your unique features. While personal preference and comfort should always be prioritized, here are some general guidelines for selecting tunics based on different body types:</p><h3>Hourglass Body Type</h3><ul><li>Look for tunics that emphasize your waistline. Belted tunics or those with cinching at the waist will highlight your curves.</li><li>Opt for styles that have a slight A-line or fit-and-flare silhouette to enhance your balanced proportions.</li><li>V-neck tunics can help draw attention to your neckline and create a balanced look.</li></ul><h3>Apple Body Type</h3><ul><li>Choose tunics that provide a looser fit around the midsection while still maintaining a flattering shape.</li><li>Look for tunics with empire waistlines or tunics that flow away from the body to camouflage the tummy area.</li><li>Avoid clingy fabrics and opt for materials that drape nicely, such as flowy cotton or lightweight knits.</li></ul><h3>Pear Body Type</h3><p>Opt for tunics that provide balance by drawing attention to the upper body. Look for details like boat necks, embellishments, or interesting necklines.</p><p>Choose tunics that have a looser fit around the hips and thighs to create a flattering silhouette.</p><p>Tunics with side slits can add movement and balance to your overall look.<br/>Rectangle Body Type</p><ul><li>Look for tunics that create the illusion of curves. Consider styles with cinching at the waist or ones that have a defined shape.</li><li>Tunics with patterns, prints, or interesting textures can add dimension and create the illusion of curves.</li><li>Experiment with tunics that have asymmetrical hemlines or draping details to add visual interest.</li></ul><h3>Petite Body Type</h3><ul><li>Opt for shorter-length tunics that won't overwhelm your frame. Choose tunics that fall above the knee or mid-thigh.</li><li>Look for tunics with vertical details like vertical stripes or elongating prints to create the illusion of height.</li><li>Avoid oversized or boxy tunics that can make you appear smaller. Instead, opt for more fitted or tailored styles.</li></ul><h3>Tall Body Type</h3><ul><li>Embrace longer-length tunics that accentuate your height. Tunics that fall below the hip or mid-thigh can create a balanced look.</li><li>Experiment with tunics that have bold prints, horizontal stripes, or interesting patterns to break up the verticality of your frame.</li><li>Look for tunics with drop waists or belts to create definition and add shape to your silhouette.</li></ul><p>Remember, these guidelines are just suggestions, and personal style and comfort should always take precedence. Ultimately, it's important to wear tunics that make you feel confident and reflect your individuality.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_zrihQ8",
+        "question_TMgtxK",
+        "question_dTBRBa",
+        "question_NDRFnE"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "About Designer Tunics By Priyanka Gupta"
+      }
+    },
+    "faq_4wmtKU": {
+      "type": "faq",
+      "blocks": {
+        "question_6Ktqzg": {
+          "type": "question",
+          "settings": {
+            "title": "What are summer tunics and co-ords?",
+            "text": "<p>Summer tunics are lightweight, breathable tops designed for hot weather, often made from fabrics like cotton, mul, and Georgette. Co-ords (co-ordinates) are matching sets, usually comprising a top and bottom in the same color or print, perfect for effortless styling during summer.</p>"
+          }
+        },
+        "question_nfwtEK": {
+          "type": "question",
+          "settings": {
+            "title": "What fabrics are best for summer tunics and co-ords?",
+            "text": "<p>The best fabrics for summer are mulmul cotton, Chanderi, georgette, and soft chiffon. These materials are breathable, flowy, and gentle on the skin, making them ideal for warm climates.</p>"
+          }
+        },
+        "question_tQA6Y7": {
+          "type": "question",
+          "settings": {
+            "title": "Designer Tunics For Every Occasion",
+            "text": "<p>Tunics can be worn for a wide range of occasions, as their versatility allows them to be dressed up or down depending on the styling and accessories. Here are different occasions where you can wear tunics:</p><h3>Casual Outings</h3><p>Tunics are perfect for everyday wear, such as running errands, meeting friends for coffee, or shopping trips. Pair them with leggings or jeans for a comfortable and stylish look.</p><h3>Weekend Brunch</h3><p>Tunics make a great choice for a relaxed brunch with friends or family. Opt for a flowy tunic and pair it with skinny jeans or shorts for a chic and comfortable outfit.</p><h3>Beach Cover-up </h3><p>Lightweight and breezy tunics are ideal as beach cover-ups. Throw one over your swimsuit for a stylish and effortless look that can take you from the beach to a beachside café.</p><h3>Resort Wear</h3><p>When on vacation or at a resort, tunics are perfect for a stylish and comfortable ensemble. Wear them with shorts, sandals, or wide-leg pants for a relaxed yet fashionable outfit.<br/>Summer Parties</p><p>Tunics can be dressed up for summer parties, barbecues, or outdoor events. Choose a tunic with embellishments, lace details, or vibrant prints and pair it with dressier bottoms or accessories for a festive look.</p><h3>Work or Office</h3><p>Depending on the dress code, certain tunics can be worn to work or in office settings. Opt for a tailored tunic and pair it with dress pants or a pencil skirt for a professional yet comfortable outfit.</p><h3>Evening Occasions</h3><p>Tunics with embellishments, sequins, or elegant fabrics can be worn for evening events, parties, or dinners. Pair them with dressier bottoms like tailored pants or a maxi skirt, and accessorize with statement jewelry for a sophisticated look.</p><h3>Date Nights</h3><p>Tunics can create a stylish and romantic outfit for date nights. Opt for a tunic with a flattering silhouette and pair it with skinny jeans or leggings. Add heels and statement accessories to elevate the look.</p><h3>Festivals or Concerts</h3><p>Tunics with a bohemian or hippie-inspired design are perfect for music festivals or outdoor concerts. Pair them with denim shorts or flared pants, and complete the look with boho accessories like fringe bags or floppy hats.<br/>Formal Events</p><p>Some tunics with elegant designs and luxurious fabrics can be worn for formal events such as weddings, cocktail parties, or galas. Look for tunics with intricate embroidery, lace details, or satin fabrics, and pair them with dressier bottoms like tailored pants or a long skirt.</p><p>Remember, the appropriateness of tunics for specific occasions may vary based on the venue, dress code, and personal style preferences. Adapt the style, fabric, and accessories accordingly to suit the specific occasion and create a look that reflects your individual taste.</p>"
+          }
+        },
+        "question_pQ38Qd": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Can I wear co-ords for both casual and formal occasions?",
+            "text": "<p>Absolutely! Summer co-ords can be dressed up or down depending on the occasion. Pair them with minimal jewelry and sandals for a relaxed daytime look, or elevate them with heels and statement accessories for a festive or semi-formal event.</p>"
+          }
+        },
+        "question_FFNKhp": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "What body types can wear tunics?",
+            "text": "<p>Tunics can be worn by individuals with different body types. They can be styled to flatter hourglass, apple, pear, rectangle, petite, and tall body types. Choosing the right fit and design can help enhance your unique features.</p>"
+          }
+        },
+        "question_VETXXC": {
+          "type": "question",
+          "settings": {
+            "title": "Are summer tunics suitable for workwear?",
+            "text": "<p>Yes, many summer tunics are designed with structured cuts and elegant embroidery, making them a great choice for workwear in hot weather. Pair them with straight pants or cigarette trousers for a polished yet breathable look.</p>"
+          }
+        },
+        "question_UnKmbR": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "How do I style tunics?",
+            "text": "<p>Tunics offers a range of styling options. They can be paired with leggings, skinny jeans, trousers, skirts, or shorts. Accessories like belts, scarves, or statement jewelry can be added to complete the look. Layering with jackets or cardigans is also an option.</p>"
+          }
+        },
+        "question_fW4djj": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "What fabrics are commonly used for tunics?",
+            "text": "<p>Tunics can be found in various fabrics. Common options include cotton, linen, rayon, chiffon, silk, denim, knit, and more. The choice of fabric depends on the desired comfort, breathability, and occasion.</p>"
+          }
+        },
+        "question_4iHaK4": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Can tunics be worn year-round?",
+            "text": "<p>Yes, tunics can be worn throughout the year by layering or choosing appropriate fabrics. Lighter fabrics like cotton or chiffon are suitable for warmer months, while heavier fabrics like wool blends or knits work well for colder seasons.</p>"
+          }
+        },
+        "question_L9M99Y": {
+          "type": "question",
+          "settings": {
+            "title": "How do I style a summer tunic for a modern look?",
+            "text": "<p>Style a summer tunic with cropped trousers, wide-leg pants, or even denim for a chic fusion look. Add belts, minimal earrings, or juttis to complete the outfit.</p>"
+          }
+        },
+        "question_QQngkR": {
+          "type": "question",
+          "settings": {
+            "title": "What sizes are available in your summer co ords & tunics ?",
+            "text": "<p>Our summer collection is available in sizes XS to 3XL, with custom sizing available for select pieces. Please refer to our size guide for accurate measurements.</p>"
+          }
+        },
+        "question_8AmtRR": {
+          "type": "question",
+          "settings": {
+            "title": "Are the co-ord sets sold as a set or separately?",
+            "text": "<p>Most of our co-ord sets for women are sold as complete ensembles (top and bottom together), but some styles may offer the option to purchase pieces separately for added versatility.</p>"
+          }
+        },
+        "question_pXdmBA": {
+          "type": "question",
+          "settings": {
+            "title": "How should I care for my summer tunics and co-ords?",
+            "text": "<p>To maintain their quality, we recommend dry clean only. Always check the care label for specific instructions.</p>"
+          }
+        },
+        "question_kLNEDi": {
+          "type": "question",
+          "settings": {
+            "title": "Are your summer tunics and co-ords made in India?",
+            "text": "<p>Yes, all our garments are proudly handcrafted in India, using traditional techniques blended with modern aesthetics to create timeless summer styles.</p>"
+          }
+        },
+        "question_3EiACC": {
+          "type": "question",
+          "settings": {
+            "title": "What makes your summer co-ords and tunics unique?",
+            "text": "<p>Our pieces are known for delicate hand embroidery, pastel tones, floral motifs, and thoughtful silhouettes that blend comfort with understated luxury – perfect for brunches, holidays, and summer weddings.</p>"
+          }
+        },
+        "question_EaYyMh": {
+          "type": "question",
+          "settings": {
+            "title": "What makes your hand-embroidered summer tunics unique?",
+            "text": "<p><br/>Each of our <strong>summer tunics</strong> is hand-embroidered by skilled artisans using time-honored techniques. Unlike mass-produced pieces, our tunics feature delicate threadwork, subtle embellishments, and breathable natural fabrics—perfect for warm weather. The result is an heirloom-quality garment that’s as comfortable as it is refined.</p>"
+          }
+        },
+        "question_TdRjeY": {
+          "type": "question",
+          "settings": {
+            "title": "What care instructions do hand-embroidered pieces require?",
+            "text": "<p><br/>To preserve the delicate embroidery on our <strong>embroidered tunics</strong> and <strong>summer co-ords</strong>, we recommend gentle hand washing in cold water or dry cleaning. Avoid wringing or scrubbing, and always air dry in shade to maintain the vibrancy and shape of the garment.</p>"
+          }
+        },
+        "question_MM7Eqi": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "question_6Ktqzg",
+        "question_nfwtEK",
+        "question_tQA6Y7",
+        "question_pQ38Qd",
+        "question_FFNKhp",
+        "question_VETXXC",
+        "question_UnKmbR",
+        "question_fW4djj",
+        "question_4iHaK4",
+        "question_L9M99Y",
+        "question_QQngkR",
+        "question_8AmtRR",
+        "question_pXdmBA",
+        "question_kLNEDi",
+        "question_3EiACC",
+        "question_EaYyMh",
+        "question_TdRjeY",
+        "question_MM7Eqi"
+      ],
+      "settings": {
+        "title": "FAQs – Summer Tunics and Co-ords"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "testimonial_carousel_UnCtMx",
+    "971979ff-603c-4f74-9446-a8ba7d6a9c6b",
+    "faq_tDAJDV",
+    "faq_4wmtKU"
+  ]
+}

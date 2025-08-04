@@ -1,0 +1,453 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "pagefly_section_TryKzr": {
+      "type": "pagefly-section",
+      "disabled": true,
+      "settings": {
+        "section_id": "pf-926eb272"
+      }
+    },
+    "testimonial_carousel_JCYdni": {
+      "type": "testimonial-carousel",
+      "blocks": {
+        "testimonial_UxW9Jz": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/viriti_verma.jpg",
+            "quote": "<p>Summer by Priyanka Gupta is like a breath of fresh air out of so many designer stores we visited for my sister-in-laws bridal outfit.<br/><br/>Her outfits were a love at first sight! They have a great collection and the store is beautifully decorated and designed. Kanchan ji, who is also the store manager helped us a lot with making correct decisions, as a result we were in love with the final outcome.<br/><br/> We ended up picking up so many sarees and suits. It's a highly recommended store, do visit.</p>",
+            "author": "Vriti Verma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_N87k7p": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nishtha_Sharma.jpg",
+            "quote": "<p>It was an absolute pleasure to wear the outfit by Summer by Priyanka.<br/><br/>Tha tailoring and the outfit is excellent and the service was equally impeccable. Trying and browsing at the beautiful store was made so easy by the staff!<br/><br/>Definitely coming back to the brand</p>",
+            "author": "Nishtha Sharma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_ew3Ncc": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/APARNA_ROY.webp",
+            "quote": "<p>We have had a wonderful experience at the Summer store always without fail !!<br/><br/>The outfits are fabulous and so is the store staff. Very accommodating. They customised a dress for me and it turned out lovely. My mom and I now shop regularly.<br/><br/>P.S: the store is so beautiful. My little daughter has a gala time every time we visit.</p>",
+            "author": "Aparna Roy, India",
+            "rating": 5
+          }
+        },
+        "testimonial_9gJBKy": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/NEENU_NAYYAR.webp",
+            "quote": "<p>Summer by Priyanka gupta was an instagram discovery. I was looking for simple & elegant yet dressy clothes for a family wedding.<br/><br/>I went to the store at def col, met Priyanka and was absolutely in awe of her and her craft. Such simplicity in both :)<br/><br/>Since then, Summer by Priyanka Gupta has become my go to store for any occasion for my daughter and I. Absolutely love it ♥️</p>",
+            "author": "Neenu Nayyar, India",
+            "rating": 5
+          }
+        },
+        "testimonial_fMhKHd": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Sailaja.webp",
+            "quote": "<p>I had a wonderful shopping experience with Summer by Priyanka Gupta! The saree I purchased exceeded my expectations in both quality and design.<br/><br/>The customer service was exceptional, and the entire process was smooth and enjoyable. I will definitely be shopping with you again and will recommend your store to friends and family.<br/><br/>Thank you for providing such beautiful products and excellent service!</p>",
+            "author": "Sailaja, Chicago, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_e4mj9B": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nidhi_Modi.webp",
+            "quote": "<p>Well, Summer is all about it’s pastel tones and cute detailed colorful embroideries. Wearing summer always makes you to stand out in the crowd and creates a fresh vibe around you.<br/><br/>I just love the service, the work, the fabric, the embroideries and every bit of it.<br/><br/>They make such unique and chic designs that makes us fall for summer everyday. Always a Summer Girl 🌸</p>",
+            "author": "Nidhi Modi, India",
+            "rating": 5
+          }
+        },
+        "testimonial_kxAniU": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/PAYAL_C_GUPTA.webp",
+            "quote": "<p>I love Summer by Priyanka Gupta for their stunning pastel and embroidered outfits, highlighting their beautiful craftsmanship that consistently impresses her.</p>",
+            "author": "Payal C Gupta, Dubai",
+            "rating": 5
+          }
+        },
+        "testimonial_w6cj8m": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rajwinder_Gill.webp",
+            "quote": "<p>Thankyou for sending me the beautiful dresses. I appreciate their quality and fit , they are perfect in every way. I'm eager to place more orders with you.</p>",
+            "author": "Rajwinder Gill, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_KgxEei": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Leena_Yerneni.webp",
+            "quote": "<p>Great designs and quality. Just loved how our outfits turned out for my daughter’s first birthday making it more memorable.<br/><br/>So dreamy and just the way I envisioned🌸💞💖</p>",
+            "author": "Leena Yerneni, USA",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_UxW9Jz",
+        "testimonial_N87k7p",
+        "testimonial_ew3Ncc",
+        "testimonial_9gJBKy",
+        "testimonial_fMhKHd",
+        "testimonial_e4mj9B",
+        "testimonial_kxAniU",
+        "testimonial_w6cj8m",
+        "testimonial_KgxEei"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Don't Take Our Word For It......",
+        "url": "https://www.lovesummer.in/pages/beautiful-girls-of-summer",
+        "btn_text": "VIEW CLIENT DIARY",
+        "cellAlign": "left",
+        "time": 5000,
+        "pageDots": false,
+        "adaptiveHeight": true,
+        "padding-top": 0,
+        "padding-bottom": 30
+      }
+    },
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h2>Buy Designer Sarees For Every Occasion</h2><p>Sarees are not just garments; they are a canvas of tradition, elegance, and style. At \"Summer by Priyanka Gupta,\" we take immense pride in presenting our exquisite Saree Collection, a celebration of the finest fabrics and occasions. Each saree is a work of art, hand-embroidered with precision and passion. Discover the perfect saree to grace every moment of your life.</p><h2>What is a Saree?</h2><p>A saree, also known as a sari, is a traditional garment that is draped around the body, worn by women in India and other South Asian countries. It is a long piece of fabric, typically measuring around 5 to 9 yards in length and 1 to 1.5 yards in width. The saree is draped over a fitted blouse (choli) and a petticoat (underskirt), with the loose end called the pallu gracefully draped over the shoulder.</p><p>Sarees are known for their versatility and timeless elegance. They come in a wide range of fabrics, colors, prints, and embellishments, allowing for endless variations and styles. The drape of a saree accentuates the natural curves of the body, highlighting the femininity of the wearer.</p><p>The versatility of the saree makes it suitable for various events and settings, ranging from casual gatherings to formal ceremonies. It can be worn at weddings, festivals, parties, religious ceremonies, office events, or even as everyday attire, depending on the fabric, design, and styling.</p><h2>Which saree collections do we have at Summer?</h2><p>Here are the other sarees we have in our collection</p><h3>Sarees By Fabric</h3><ul><li><a href=\"https://www.lovesummer.in/collections/organza-sarees\"><span style=\"text-decoration:underline\">Organza Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/chiffon-sarees\"><span style=\"text-decoration:underline\">Chiffon Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/georgette-sarees\"><span style=\"text-decoration:underline\">Georgette Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/silk-sarees\"><span style=\"text-decoration:underline\">Silk Sarees</span></a></li></ul><h3>Sarees By Design</h3><ul><li><a href=\"https://www.lovesummer.in/collections/printed-sarees\"><span style=\"text-decoration:underline\">Printed Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/embroidered-saree\"><span style=\"text-decoration:underline\">Embroidered Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/luxury-saree\"><span style=\"text-decoration:underline\">Luxury Sarees</span></a></li></ul><h3>Sarees By Occasion</h3><ul><li><a href=\"https://www.lovesummer.in/collections/haldi-sarees\"><span style=\"text-decoration:underline\">Haldi Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/mehendi-sarees\"><span style=\"text-decoration:underline\">Mehendi Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/engagement-sarees\"><span style=\"text-decoration:underline\">Engagement Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/reception-sarees\"><span style=\"text-decoration:underline\">Reception Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/partywear-sarees\"><span style=\"text-decoration:underline\">Partywear Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/festive-sarees\"><span style=\"text-decoration:underline\">Festive Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/farewell-sarees\"><span style=\"text-decoration:underline\">Farewell Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/diwali-sarees\"><span style=\"text-decoration:underline\">Diwali Sarees</span></a></li></ul><h2>Types of Sarees</h2><h3>Here are different types of sarees:<br/><br/><strong>Sarees by Fabrics</strong></h3><ol><li><strong>Organza Sarees:</strong> Immerse yourself in sheer enchantment with our Organza Sarees. The delicate, translucent nature of Organza allows it to capture light, creating a magical glow. Each Organza saree is meticulously hand-embroidered, showcasing the craftsmanship of our artisans.</li><li><strong>Georgette Sarees:</strong> Georgette sarees offer a blend of grace and versatility. Lightweight and drapable, our Georgette Sarees feature intricate Resham embroidery and subtle sequin work, striking a balance between tradition and contemporary style.</li><li><strong>Chiffon Sarees:</strong> Chiffon sarees are known for their fluidity and grace. Our Chiffon Sarees are adorned with delicate hand embroidery that adds a touch of subtle glamour. These sarees are ideal for garden parties, daytime events, or elegant gatherings.</li><li><strong>Silk Sarees:</strong> Silk, the fabric of royalty, takes center stage in our Saree Collection. Our Silk Sarees are embellished with exquisite Zari work and rich patterns, creating a timeless and regal appearance.</li><li><strong>Net Sarees:</strong> The ethereal beauty of Net fabric is brought to life in our Net Sarees. These sarees are adorned with intricate embroidery techniques, adding a touch of sophistication and allure. Perfect for contemporary weddings and grand celebrations.</li></ol><h3><strong>Sarees by Occasions</strong></h3><ol><li><strong>Wedding Sarees:</strong> Make your wedding day truly special with our Wedding Sarees. These sarees are a symphony of elegance and tradition, hand-embroidered with intricate designs and embellishments to make you the center of attention.</li><li><strong>Reception Sarees:</strong> Shine bright at your reception in our opulent Reception Sarees. Crafted from luxurious fabrics and adorned with exquisite embroidery, these sarees are designed to make a lasting impression.</li><li><strong>Engagement Sarees:</strong> Mark the beginning of a beautiful journey with our Engagement Sarees. These sarees capture the essence of love and commitment, featuring intricate hand embroidery and timeless beauty.</li><li><strong>Haldi Sarees:</strong> Celebrate the joyous Haldi ceremony in style with our Haldi Sarees. Vibrant colors and delicate embroidery add to the festivity of this occasion, making it even more memorable.</li><li><strong>Partywear Sarees:</strong> Elevate your party look with our glamorous Partywear Sarees. These sarees are designed to make you shine at every social gathering and special occasion.</li><li><strong>Festive Sarees:</strong> Embrace the spirit of festivals in our Festive Sarees. Vibrant colors, intricate Resham embroidery, and a touch of tradition make these sarees perfect for celebrating joyous occasions.</li><li><strong>Luxury Sarees:</strong> Indulge in opulence with our Luxury Sarees. These sarees redefine sophistication and elegance, featuring intricate hand embroidery and luxurious fabrics.</li></ol><p></p><h2>Shop for different coloured sarees</h2><p>Sarees come in a wide variety of colors, each with its own significance and symbolism.<br/><br/></p><ul><li>Pastel Saree: Pastel shades like light pink, mint green, baby blue, and lavender are soft and soothing. They represent femininity, innocence, and gentleness. Pastel sarees are often chosen for daytime events and casual gatherings. They symbolize subtlety, grace, and elegance.</li><li>Red Saree: Red is a popular color in sarees and holds great cultural significance. It symbolizes love, passion, and prosperity. Red sarees are often worn by brides and married women during auspicious occasions and festivals.</li><li>Pink Saree: Pink represents femininity, grace, and tenderness. Lighter shades of pink are associated with sweetness and innocence, while brighter shades exude vibrancy and energy. Pink sarees are commonly worn during festive events and celebrations.</li><li>Yellow Saree: Yellow is the color of joy, happiness, and optimism. It symbolizes new beginnings and prosperity. Yellow sarees are often worn during religious ceremonies, festivals like Holi, and festive occasions.</li><li>Orange Saree: Orange is a vibrant and energetic color. It represents enthusiasm, warmth, and creativity. Orange sarees are popular during festive seasons and are considered auspicious in many cultures.</li><li>Blue Saree: Blue signifies tranquility, calmness, and spirituality. Lighter shades of blue represent serenity, while darker shades symbolize elegance and sophistication. Blue sarees are suitable for both casual and formal occasions.</li><li>Green Saree: Green is associated with nature, fertility, and harmony. It represents growth, freshness, and prosperity. Green sarees are often worn during religious ceremonies, festivals, and as a symbol of good luck.</li><li>Purple Saree: Purple is a color that exudes royalty, luxury, and creativity. It signifies power, ambition, and individuality. Purple sarees are often chosen for special occasions, parties, and evening events.</li><li>White Saree: White represents purity, simplicity, and peace. It is considered an auspicious color in many cultures and is commonly worn during religious ceremonies and mourning. White sarees are also chosen for their timeless elegance and grace.</li><li>Black Saree: Black is associated with sophistication, mystery, and power. It symbolizes strength and authority. Black sarees are popular for evening events, parties, and formal occasions, adding a touch of elegance and allure.</li><li>Gold Saree: Gold is a color of opulence, wealth, and grandeur. Gold sarees are commonly worn during weddings, festivals, and special occasions. They symbolize prosperity, good fortune, and a sense of richness.</li><li>Multicolored Saree: Multicolored sarees offer a vibrant and lively appeal. They represent diversity, celebration, and joy. These sarees are versatile and suitable for various occasions, allowing you to experiment with different colors and combinations.</li></ul><h2><strong>Craftsmanship Beyond Compare</strong></h2><p>Each saree in our collection is a masterpiece, a testament to the artistry and skill of our talented artisans. The hand-embroidery techniques, including Zari, Resham, Sequin, and Stone work, reflect our commitment to excellence.</p><h2><strong>Celebrate Every Moment</strong></h2><p>From weddings to festivals, from parties to intimate gatherings, our Saree Collection is designed to celebrate every moment of your life with grace and style.</p><h2><strong>Shop with Confidence</strong></h2><p>Explore our Saree Collection online and let our experts assist you in finding the perfect saree for every occasion. We invite you to drape yourself in elegance and tradition, embracing the timeless beauty of our sarees.</p><h2><strong>Elevate Your Style with \"Summer by Priyanka Gupta\"</strong></h2><p>Sarees are not just clothing; they are a reflection of your personality and heritage. Our Saree Collection combines tradition, craftsmanship, and contemporary style to create an ensemble that defines your unique elegance.</p><h2>How to choose a saree according to body type?</h2><p>Choosing the right saree that complements your body type can enhance your overall appearance and flatter your figure. Here are some tips on how to choose a saree for different body types:</p><h3>Hourglass Body Type</h3><p>Saree Choice: Opt for sarees with well-defined waistlines to accentuate your curves. Sarees with heavy borders, embellishments, or bold prints can enhance your figure.</p><p>Draping Style: Try the Nivi drape or the Mermaid drape to highlight your well-defined waist.</p><h3>Pear-shaped Body Type</h3><p>Saree Choice: Choose sarees with lighter fabrics and minimalistic designs for the lower half. Focus on sarees with elaborate or heavily embellished pallus to draw attention upwards.</p><p>Draping Style: Consider the Gujarati drape or the Butterfly drape, which add volume to the shoulder and upper body, balancing the proportions.</p><h3>Apple-shaped Body Type</h3><p>Saree Choice: Opt for sarees with lightweight fabrics and soft drapes that don't add extra volume around the waist. Choose sarees with vertical patterns or small prints to create an illusion of length.</p><p>Draping Style: Go for the Seedha Pallu drape or the Bengali drape, which divert attention from the midsection and create a slimming effect.</p><h3>Rectangle-shaped Body Type</h3><p>Saree Choice: Choose sarees with textures, bold prints, or horizontal patterns to add curves and create the illusion of a fuller figure. Opt for sarees with wide borders or statement pallus.</p><p>Draping Style: Try the Lehenga drape or the Mumtaz drape, which add volume and create the illusion of curves.</p><h3>Petite Body Type</h3><p>Saree Choice: Opt for lightweight fabrics like chiffon, georgette, or organza that drape well and don't overwhelm your frame. Choose sarees with small prints or delicate embroidery.</p><p>Draping Style: Go for the Seedha Pallu drape or the Front Pallu drape, which gives the illusion of height and elongates the body.</p><h3>Tall Body Type</h3><p>Saree Choice: Experiment with a wide range of sarees, including bold prints, large motifs, and heavy borders. Sarees with bold colors and textures can complement your height.</p><p>Draping Style: Try the Gujarati drape or the Nivi drape, which showcase the saree beautifully and accentuate your tall frame.</p><p>Remember, these are general guidelines, and personal preference plays a significant role in choosing a saree. Ultimately, wear what makes you feel confident and comfortable, regardless of your body type. Experiment with different draping styles and saree designs to find what suits you best.</p><h2>What accessories can you pair with a saree?</h2><p>When it comes to accessorizing a saree, there are numerous options to enhance your overall look. Here are some accessories that you can pair with a saree:</p><h3>Jewelry</h3><ul><li>Necklaces: Choose a necklace that complements the neckline of your blouse. Options include chokers, long chains, or statement pendant necklaces.</li><li>Earrings: Select earrings that match the style and occasion. Jhumkas, studs, hoops, or danglers can all be great choices.</li><li>Bangles/Bracelets: Stack bangles or wear a statement bracelet on your wrist. Opt for traditional gold or silver bangles, glass bangles, or beaded bracelets.</li><li>Rings: Add some sparkle with rings on your fingers. Opt for statement rings or delicate designs based on your preference.</li></ul><h3>Handbags/Clutches</h3><ul><li>Potli Bags: These drawstring pouches made of silk or brocade fabric add a touch of elegance to your saree look.</li><li>Clutches: Choose a small or medium-sized clutch in a complementary color or a metallic shade to hold your essentials.</li></ul><h3>Footwear</h3><ul><li>Heels: Opt for heels or stilettos to add height and elegance to your overall appearance. Choose a color that matches or complements your saree.</li><li>Flats: If you prefer comfort, opt for flats or sandals that are stylish and match your saree's color palette.</li></ul><h3>Hair Accessories</h3><ul><li>Hair Jewelry: Decorate your hair with accessories like hairpins, hair chains, or hair combs with embellishments that complement your saree.</li><li>Hair Accessories: Add flowers, hairbands, or decorative clips to your hairstyle for a traditional or contemporary look.</li></ul><h3>Waist Belt</h3><ul><li>A waist belt can add definition to your waistline and give your saree a trendy twist. Choose a slim or broad belt in a contrasting or complementary color.</li><li>Other Accessories:</li><li>Anklets: Wear anklets or payal to add a musical touch to your steps.</li><li>Nose Rings: For a traditional touch, you can wear a nose ring or nath that complements your saree and personal style.</li><li>Watches: Opt for a stylish watch that matches your saree and complements your overall look.</li></ul><p>The choice of accessories depends on the occasion, style of saree, personal preference, and the overall look you want to achieve. Experiment with different combinations to find what suits you best and adds the perfect finishing touches to your saree ensemble.</p><h2>FAQs</h2><h3>Q: How do I choose the right size for a saree?</h3><p>A: Sarees are one-size-fits-all garments. The length and width of the saree are generally standardized. You can refer to the product description for specific measurements and details. If you have any concerns or questions about sizing, please feel free to contact our customer support team for assistance.</p><h3>Q: Are the sarees at Summer by Priyanka Gupta hand-embroidered?</h3><p>A: Yes, all our sarees are meticulously hand-embroidered to perfection. We take pride in the craftsmanship and attention to detail that goes into creating our sarees, ensuring high-quality and exquisite designs.</p><h3>Q: Can I find sarees for special occasions like weddings and parties in your collection?</h3><p>A: Absolutely! Our saree collection includes a variety of sarees suitable for special occasions, including weddings, parties, and festive celebrations</p><h3>Q: What types of sarees are available in the Summer by Priyanka Gupta Collection?</h3><p>A: Our Collection offers a wide range of sarees, including lightweight fabrics like chiffon, georgette, organza, linen, and cotton. You can explore various styles such as floral prints, pastel shades, and vibrant patterns perfect for the summer season</p><h2>Discover More at ‘Summer by Priyanka Gupta’</h2><p>Looking for more stunning outfits to add to your wardrobe? Don't miss out on the amazing collections we have in store for you! Along with our mesmerizing sarees, \"Summer by Priyanka Gupta\" brings you an exquisite range of Lehengas, Summer dresses, Tunics, and kurta sets that will leave you captivated. </p><p>Explore our other collection pages to find the perfect ensembles for every occasion:</p><p><a href=\"https://www.lovesummer.in/collections/lehenga\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/lehenga\">Explore the Lehenga collections now</a></p><p><a href=\"https://www.lovesummer.in/collections/dresses\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/dresses\">Find your perfect Summer dress</a></p><p><a href=\"https://www.lovesummer.in/collections/tunics\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/tunics\">Discover the trendiest Tunics</a></p><p><a href=\"https://www.lovesummer.in/collections/kurta-set\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/kurta-set\">Step into elegance with our Kurta sets</a></p><p>Join us in celebrating fashion and style at \"Summer by Priyanka Gupta.\" Embrace the season, express your individuality, and let our collections bring out the best in you. </p><p>Happy shopping!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "faq_kQjBcJ": {
+      "type": "faq",
+      "blocks": {
+        "question_MKdBHf": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Designer Sarees For Every Occasion",
+            "text": "<p>Sarees are a canvas of tradition, elegance, and style. At \"Summer by Priyanka Gupta,\" we take immense pride in presenting our exquisite Saree Collection, a celebration of the finest fabrics and occasions. Each saree is a work of art, hand-embroidered with precision and passion. Discover the perfect saree to grace every moment of your life.</p><h3><strong>Sarees by Occasions</strong></h3><ol><li><strong>Wedding Sarees:</strong> Make your wedding day truly special with our Wedding Sarees. These sarees are a symphony of elegance and tradition, hand-embroidered with intricate designs and embellishments to make you the center of attention.</li><li><strong>Reception Sarees:</strong> Shine bright at your reception in our opulent Reception Sarees. Crafted from luxurious fabrics and adorned with exquisite embroidery, these sarees are designed to make a lasting impression.</li><li><strong>Engagement Sarees:</strong> Mark the beginning of a beautiful journey with our Engagement Sarees. These sarees capture the essence of love and commitment, featuring intricate hand embroidery and timeless beauty.</li><li><strong>Haldi Sarees:</strong> Celebrate the joyous Haldi ceremony in style with our Haldi Sarees. Vibrant colors and delicate embroidery add to the festivity of this occasion, making it even more memorable.</li><li><strong>Partywear Sarees:</strong> Elevate your party look with our glamorous Partywear Sarees. These sarees are designed to make you shine at every social gathering and special occasion.</li><li><strong>Festive Sarees:</strong> Embrace the spirit of festivals in our Festive Sarees. Vibrant colors, intricate Resham embroidery, and a touch of tradition make these sarees perfect for celebrating joyous occasions.</li><li><strong>Luxury Sarees:</strong> Indulge in opulence with our Luxury Sarees. These sarees redefine sophistication and elegance, featuring intricate hand embroidery and luxurious fabrics.</li></ol><h3>Sarees By Occasion</h3><ul><li><a href=\"https://www.lovesummer.in/collections/haldi-sarees\"><span style=\"text-decoration:underline\">Haldi Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/mehendi-sarees\"><span style=\"text-decoration:underline\">Mehendi Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/engagement-sarees\"><span style=\"text-decoration:underline\">Engagement Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/reception-sarees\"><span style=\"text-decoration:underline\">Reception Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/partywear-sarees\"><span style=\"text-decoration:underline\">Partywear Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/festive-sarees\"><span style=\"text-decoration:underline\">Festive Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/farewell-sarees\"><span style=\"text-decoration:underline\">Farewell Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/diwali-sarees\"><span style=\"text-decoration:underline\">Diwali Sarees</span></a></li></ul>"
+          }
+        },
+        "question_wPpPQF": {
+          "type": "question",
+          "settings": {
+            "title": "Which signature saree styles does Summer by Priyanka Gupta offer?",
+            "text": "<p>At Summer by Priyanka Gupta, our sarees are a reflection of timeless charm, intricate hand embroidery, and effortless grace. We offer a carefully curated range of signature saree styles, each designed to celebrate women across occasions — from intimate functions to grand celebrations.<br/><br/>🌸 Our Signature Saree Styles Include:<br/><br/>1. Embroidered Storytelling Sarees<br/>\t•\tSarees like the Machan Saree and Garden Party Saree feature detailed thread, sequin, and bead embroidery depicting animals, birds, and floral motifs — a whimsical nod to nature.<br/><br/>2. Pastel Sarees<br/>\t•\tSoft-hued, hand-embroidered sarees in colors like fall green, powder pink, and dusty blue, ideal for summer weddings, day functions, or bridesmaids looking for elegant options.<br/><br/>3. Modern Classic Sarees<br/>\t•\tStyles like the Estella Saree blend minimalism with ornate detailing — perfect for cocktail events or engagement ceremonies.<br/><br/>4. Foil Print & Subtle Shimmer Sarees<br/>\t•\tSarees that feature delicate foil prints and subtle glimmer, ideal for those who want a touch of glamour without overpowering embroidery.<br/><br/>5. Customisable Celebration Sarees<br/>\t•\tWe also offer custom sarees tailored for wedding guests, sisters of the bride, or women who prefer bespoke touches on timeless silhouettes.</p>"
+          }
+        },
+        "question_B3EmtE": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "What is a Saree?",
+            "text": "<p>A saree, also known as a sari, is a traditional garment that is draped around the body, worn by women in India and other South Asian countries. It is a long piece of fabric, typically measuring around 5 to 9 yards in length and 1 to 1.5 yards in width. The saree is draped over a fitted blouse (choli) and a petticoat (underskirt), with the loose end called the pallu gracefully draped over the shoulder.</p><p>Sarees are known for their versatility and timeless elegance. They come in a wide range of fabrics, colors, prints, and embellishments, allowing for endless variations and styles. The drape of a saree accentuates the natural curves of the body, highlighting the femininity of the wearer.</p><p>The versatility of the saree makes it suitable for various events and settings, ranging from casual gatherings to formal ceremonies. It can be worn at weddings, festivals, parties, religious ceremonies, office events, or even as everyday attire, depending on the fabric, design, and styling.</p>"
+          }
+        },
+        "question_6AVHJ7": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Which saree collections do we have at Summer?",
+            "text": "<p>Here are the other sarees we have in our collection</p><h3>Sarees By Design</h3><ul><li><a href=\"https://www.lovesummer.in/collections/printed-sarees\"><span style=\"text-decoration:underline\">Printed Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/embroidered-saree\"><span style=\"text-decoration:underline\">Embroidered Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/luxury-saree\"><span style=\"text-decoration:underline\">Luxury Sarees</span></a></li></ul>"
+          }
+        },
+        "question_kmwaFV": {
+          "type": "question",
+          "settings": {
+            "title": "What fabrics do we use for our sarees at Summer by Priyanka Gupta?",
+            "text": "<h3>Here are different types of sarees Fabrics:<br/><br/><strong>Sarees by Fabrics</strong></h3><ol><li><strong>Organza Sarees:</strong> Immerse yourself in sheer enchantment with our Organza Sarees. The delicate, translucent nature of Organza allows it to capture light, creating a magical glow. Each Organza saree is meticulously hand-embroidered, showcasing the craftsmanship of our artisans.</li><li><strong>Georgette Sarees:</strong> Georgette sarees offer a blend of grace and versatility. Lightweight and drapable, our Georgette Sarees feature intricate Resham embroidery and subtle sequin work, striking a balance between tradition and contemporary style.</li><li><strong>Chiffon Sarees:</strong> Chiffon sarees are known for their fluidity and grace. Our Chiffon Sarees are adorned with delicate hand embroidery that adds a touch of subtle glamour. These sarees are ideal for garden parties, daytime events, or elegant gatherings.</li><li><strong>Silk Sarees:</strong> Silk, the fabric of royalty, takes center stage in our Saree Collection. Our Silk Sarees are embellished with exquisite Zari work and rich patterns, creating a timeless and regal appearance.</li><li><strong>Net Sarees:</strong> The ethereal beauty of Net fabric is brought to life in our Net Sarees. These sarees are adorned with intricate embroidery techniques, adding a touch of sophistication and allure. Perfect for contemporary weddings and grand celebrations.</li></ol><h3>Sarees By Fabric</h3><ul><li><a href=\"https://www.lovesummer.in/collections/organza-sarees\"><span style=\"text-decoration:underline\">Organza Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/chiffon-sarees\"><span style=\"text-decoration:underline\">Chiffon Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/georgette-sarees\"><span style=\"text-decoration:underline\">Georgette Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/silk-sarees\"><span style=\"text-decoration:underline\">Silk Sarees</span></a>Fabrics</li></ul>"
+          }
+        },
+        "question_JifkMQ": {
+          "type": "question",
+          "settings": {
+            "title": "What are the trendy colors for sarees for this season?",
+            "text": "<p>Sarees come in a wide variety of colors, each with its own significance and symbolism.</p><ul><li>Pastel Saree: Pastel shades like light pink, mint green, baby blue, and lavender are soft and soothing. They represent femininity, innocence, and gentleness. Pastel sarees are often chosen for daytime events and casual gatherings. They symbolize subtlety, grace, and elegance.</li><li>Red Saree: Red is a popular color in sarees and holds great cultural significance. It symbolizes love, passion, and prosperity. Red sarees are often worn by brides and married women during auspicious occasions and festivals.</li><li>Pink Saree: Pink represents femininity, grace, and tenderness. Lighter shades of pink are associated with sweetness and innocence, while brighter shades exude vibrancy and energy. Pink sarees are commonly worn during festive events and celebrations.</li><li>Yellow Saree: Yellow is the color of joy, happiness, and optimism. It symbolizes new beginnings and prosperity. Yellow sarees are often worn during religious ceremonies, festivals like Holi, and festive occasions.</li><li>Orange Saree: Orange is a vibrant and energetic color. It represents enthusiasm, warmth, and creativity. Orange sarees are popular during festive seasons and are considered auspicious in many cultures.</li><li>Blue Saree: Blue signifies tranquility, calmness, and spirituality. Lighter shades of blue represent serenity, while darker shades symbolize elegance and sophistication. Blue sarees are suitable for both casual and formal occasions.</li><li>Green Saree: Green is associated with nature, fertility, and harmony. It represents growth, freshness, and prosperity. Green sarees are often worn during religious ceremonies, festivals, and as a symbol of good luck.</li><li>Purple Saree: Purple is a color that exudes royalty, luxury, and creativity. It signifies power, ambition, and individuality. Purple sarees are often chosen for special occasions, parties, and evening events.</li><li>White Saree: White represents purity, simplicity, and peace. It is considered an auspicious color in many cultures and is commonly worn during religious ceremonies and mourning. White sarees are also chosen for their timeless elegance and grace.</li><li>Black Saree: Black is associated with sophistication, mystery, and power. It symbolizes strength and authority. Black sarees are popular for evening events, parties, and formal occasions, adding a touch of elegance and allure.</li><li>Gold Saree: Gold is a color of opulence, wealth, and grandeur. Gold sarees are commonly worn during weddings, festivals, and special occasions. They symbolize prosperity, good fortune, and a sense of richness.</li><li>Multicolored Saree: Multicolored sarees offer a vibrant and lively appeal. They represent diversity, celebration, and joy. These sarees are versatile and suitable for various occasions, allowing you to experiment with different colors and combinations.</li></ul>"
+          }
+        },
+        "question_P4pNQh": {
+          "type": "question",
+          "settings": {
+            "title": "Do your sarees come with blouses?",
+            "text": "<p>Yes! Most of our sarees include a designer blouse tailored to your size for a perfect fit and ease of wear.</p>"
+          }
+        },
+        "question_GTqtqj": {
+          "type": "question",
+          "settings": {
+            "title": "Can I get the saree pre-pleated?",
+            "text": "<p>Absolutely. We offer pre-pleating on request for our Prestitched Sarees and Readymade Sarees, making them especially helpful for destination events or for anyone seeking a quick and elegant drape.</p>"
+          }
+        },
+        "question_whF9Um": {
+          "type": "question",
+          "settings": {
+            "title": "Are sarees appropriate for young girls?",
+            "text": "<p>Definitely. Our Farewell Sarees are especially designed for students, young professionals, and Gen Z trendsetters—think soft florals, breezy fabrics, and a hint of sparkle that feels festive yet effortless.<br/><br/>Explore our Farewell Sarees section for lightweight, easy-to-drape styles that celebrate youth and individuality.</p>"
+          }
+        },
+        "question_gbT9dY": {
+          "type": "question",
+          "settings": {
+            "title": "Are sarees suitable for wedding festivities?",
+            "text": "<p>Yes! Sarees are timeless for weddings, and our collections include pre-stitched, embroidered, and fusion sarees ideal for mehendis, haldis, cocktails, and even bridal entries. Whether you’re the sister of the bride or the bride herself, we have statement sarees for every moment.</p>"
+          }
+        },
+        "question_HckNqj": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer sarees with full sleeve or covered blouses?",
+            "text": "<p>Yes, blouses can be customized—full sleeves, closed neck, modest or with dramatic details—as per your style.</p>"
+          }
+        },
+        "question_d6qWYc": {
+          "type": "question",
+          "settings": {
+            "title": "Can sarees be styled with belts or shrugs?",
+            "text": "<p>Yes! Some of our sarees come with matching belts, shrugs, ponchos and capes for a modern twist on tradition.</p>"
+          }
+        },
+        "question_gBmLd8": {
+          "type": "question",
+          "settings": {
+            "title": "What are the trending sarees this season?",
+            "text": "<p>This season, it’s all about:<br/>\t•\tPrinted chiffons with delicate borders<br/>\t•\tHand-embroidered georgettes<br/>\t•\tPastel Tissue Sarees <br/>\t•\tLace Borders sarees <br/>\t•\tSoft mulmuls in romantic florals<br/><br/>These work for both intimate home functions and destination celebrations.</p>"
+          }
+        },
+        "question_T4r8na": {
+          "type": "question",
+          "settings": {
+            "title": "Which is the most popular saree brand in Delhi?",
+            "text": "<p>Summer by Priyanka Gupta is fast becoming a favorite among modern Indian women in Delhi and across the country for its subtle glamour, hand-embroidered details, and easy silhouettes. We blend traditional craft with youthful design—perfect for women who want to make a quiet statement</p>"
+          }
+        },
+        "question_eE4cGj": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer sarees for layering or styling with other Indianwear?",
+            "text": "<p>Yes. Pair our sarees with ponchos, capes, jackets,  shawls, dupattas, odhnis, for a layered, editorial-style look.</p>"
+          }
+        },
+        "question_4UrVHT": {
+          "type": "question",
+          "settings": {
+            "title": "What kind of jewelry looks best with your sarees?",
+            "text": "<p>Depending on the saree’s tone, go for:<br/>\t•\tPolki & Gold for traditional looks <br/>\t•\tVintage diamond jewellery <br/>\t•\tStatement pearls </p>"
+          }
+        },
+        "question_rgT8KD": {
+          "type": "question",
+          "settings": {
+            "title": "What’s the care routine for your sarees?",
+            "text": "<p>•\tDry clean only<br/>•\tStore in muslin bags<br/>•\tAvoid direct sunlight and hanging heavy sarees for long durations.</p>"
+          }
+        },
+        "question_73Bcxf": {
+          "type": "question",
+          "settings": {
+            "title": "Can I shop sarees in person?",
+            "text": "<p>Yes, we’re based in Delhi at our flagship studio. You can also shop via our website or message us on Instagram for personal styling assistance.</p>"
+          }
+        },
+        "question_QTAbYK": {
+          "type": "question",
+          "settings": {
+            "title": "Where can I find designer sarees in Delhi?",
+            "text": "<p>If you’re looking for exclusive designer luxury sarees in Delhi, Summer by Priyanka Gupta is your destination. Known for delicate hand embroidery, soft luxury fabrics, and pastel tones, our sarees are perfect for intimate weddings, festive gatherings, and special celebrations.<br/>We offer custom fits, stitched blouses, pre-pleating options, and modern styling—so your saree feels as effortless as it is elegant.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_MKdBHf",
+        "question_wPpPQF",
+        "question_B3EmtE",
+        "question_6AVHJ7",
+        "question_kmwaFV",
+        "question_JifkMQ",
+        "question_P4pNQh",
+        "question_GTqtqj",
+        "question_whF9Um",
+        "question_gbT9dY",
+        "question_HckNqj",
+        "question_d6qWYc",
+        "question_gBmLd8",
+        "question_T4r8na",
+        "question_eE4cGj",
+        "question_4UrVHT",
+        "question_rgT8KD",
+        "question_73Bcxf",
+        "question_QTAbYK"
+      ],
+      "settings": {
+        "title": "About Designer Sarees By Priyanka Gupta"
+      }
+    },
+    "faq_PwpGVD": {
+      "type": "faq",
+      "blocks": {
+        "question_dzQnCX": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "How to choose a saree according to body type?",
+            "text": "<p>Choosing the right saree that complements your body type can enhance your overall appearance and flatter your figure. Here are some tips on how to choose a saree for different body types:</p><h3>Hourglass Body Type</h3><p>Saree Choice: Opt for sarees with well-defined waistlines to accentuate your curves. Sarees with heavy borders, embellishments, or bold prints can enhance your figure.</p><p>Draping Style: Try the Nivi drape or the Mermaid drape to highlight your well-defined waist.</p><h3>Pear-shaped Body Type</h3><p>Saree Choice: Choose sarees with lighter fabrics and minimalistic designs for the lower half. Focus on sarees with elaborate or heavily embellished pallus to draw attention upwards.</p><p>Draping Style: Consider the Gujarati drape or the Butterfly drape, which add volume to the shoulder and upper body, balancing the proportions.</p><h3>Apple-shaped Body Type</h3><p>Saree Choice: Opt for sarees with lightweight fabrics and soft drapes that don't add extra volume around the waist. Choose sarees with vertical patterns or small prints to create an illusion of length.</p><p>Draping Style: Go for the Seedha Pallu drape or the Bengali drape, which divert attention from the midsection and create a slimming effect.</p><h3>Rectangle-shaped Body Type</h3><p>Saree Choice: Choose sarees with textures, bold prints, or horizontal patterns to add curves and create the illusion of a fuller figure. Opt for sarees with wide borders or statement pallus.</p><p>Draping Style: Try the Lehenga drape or the Mumtaz drape, which add volume and create the illusion of curves.</p><h3>Petite Body Type</h3><p>Saree Choice: Opt for lightweight fabrics like chiffon, georgette, or organza that drape well and don't overwhelm your frame. Choose sarees with small prints or delicate embroidery.</p><p>Draping Style: Go for the Seedha Pallu drape or the Front Pallu drape, which gives the illusion of height and elongates the body.</p><h3>Tall Body Type</h3><p>Saree Choice: Experiment with a wide range of sarees, including bold prints, large motifs, and heavy borders. Sarees with bold colors and textures can complement your height.</p><p>Draping Style: Try the Gujarati drape or the Nivi drape, which showcase the saree beautifully and accentuate your tall frame.</p><p>Remember, these are general guidelines, and personal preference plays a significant role in choosing a saree. Ultimately, wear what makes you feel confident and comfortable, regardless of your body type. Experiment with different draping styles and saree designs to find what suits you best.</p>"
+          }
+        },
+        "question_wnKanR": {
+          "type": "question",
+          "settings": {
+            "title": "What accessories can you pair with a saree?",
+            "text": "<p>When it comes to accessorizing a saree, there are numerous options to enhance your overall look. Here are some accessories that you can pair with a saree:</p><h3>Jewelry</h3><ul><li>Necklaces: Choose a necklace that complements the neckline of your blouse. Options include chokers, long chains, or statement pendant necklaces.</li><li>Earrings: Select earrings that match the style and occasion. Jhumkas, studs, hoops, or danglers can all be great choices.</li><li>Bangles/Bracelets: Stack bangles or wear a statement bracelet on your wrist. Opt for traditional gold or silver bangles, glass bangles, or beaded bracelets.</li><li>Rings: Add some sparkle with rings on your fingers. Opt for statement rings or delicate designs based on your preference.</li></ul><h3>Handbags/Clutches</h3><ul><li>Potli Bags: These drawstring pouches made of silk or brocade fabric add a touch of elegance to your saree look.</li><li>Clutches: Choose a small or medium-sized clutch in a complementary color or a metallic shade to hold your essentials.</li></ul><h3>Footwear</h3><ul><li>Heels: Opt for heels or stilettos to add height and elegance to your overall appearance. Choose a color that matches or complements your saree.</li><li>Flats: If you prefer comfort, opt for flats or sandals that are stylish and match your saree's color palette.</li></ul><h3>Hair Accessories</h3><ul><li>Hair Jewelry: Decorate your hair with accessories like hairpins, hair chains, or hair combs with embellishments that complement your saree.</li><li>Hair Accessories: Add flowers, hairbands, or decorative clips to your hairstyle for a traditional or contemporary look.</li></ul><h3>Waist Belt</h3><ul><li>A waist belt can add definition to your waistline and give your saree a trendy twist. Choose a slim or broad belt in a contrasting or complementary color.</li><li>Other Accessories:</li><li>Anklets: Wear anklets or payal to add a musical touch to your steps.</li><li>Nose Rings: For a traditional touch, you can wear a nose ring or nath that complements your saree and personal style.</li><li>Watches: Opt for a stylish watch that matches your saree and complements your overall look.</li></ul><p>The choice of accessories depends on the occasion, style of saree, personal preference, and the overall look you want to achieve. Experiment with different combinations to find what suits you best and adds the perfect finishing touches to your saree ensemble.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_dzQnCX",
+        "question_wnKanR"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Styling Tips"
+      }
+    },
+    "faq_YtF6gz": {
+      "type": "faq",
+      "blocks": {
+        "question_cMma3K": {
+          "type": "question",
+          "settings": {
+            "title": "How do I choose the right size for a saree?",
+            "text": "<p>Sarees are one-size-fits-all. The length and width of the saree are generally standardized. You can refer to the product description for specific measurements and details. If you have any concerns or questions about sizing, please feel free to contact our customer support team for assistance.</p>"
+          }
+        },
+        "question_K4jxTC": {
+          "type": "question",
+          "settings": {
+            "title": "Are the sarees at Summer by Priyanka Gupta hand-embroidered?",
+            "text": "<p>Yes, all our sarees are meticulously hand-embroidered to perfection. We take pride in the craftsmanship and attention to detail that goes into creating our sarees, ensuring high-quality and exquisite designs.</p>"
+          }
+        },
+        "question_Vzzcab": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Can I find sarees for special occasions like weddings and parties in your collection?",
+            "text": "<p>Absolutely! Our saree collection includes a variety of sarees suitable for special occasions, including weddings, parties, and festive celebrations</p>"
+          }
+        },
+        "question_rGwdz6": {
+          "type": "question",
+          "settings": {
+            "title": "What types of sarees are available in the Summer by Priyanka Gupta Collection?",
+            "text": "<p>Our Collection offers a wide range of sarees, including lightweight fabrics like chiffon, georgette, organza, linen, and cotton. You can explore various styles such as floral prints, pastel shades, and vibrant patterns perfect for the summer season</p>"
+          }
+        },
+        "question_mtVUUF": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Discover More at ‘Summer by Priyanka Gupta",
+            "text": "<p>Looking for more stunning outfits to add to your wardrobe? Don't miss out on the amazing collections we have in store for you! Along with our mesmerizing sarees, \"Summer by Priyanka Gupta\" brings you an exquisite range of Lehengas, Summer dresses, Tunics, and kurta sets that will leave you captivated. </p><p>Explore our other collection pages to find the perfect ensembles for every occasion:</p><p><a href=\"https://www.lovesummer.in/collections/lehenga\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/lehenga\">Explore the Lehenga collections now</a></p><p><a href=\"https://www.lovesummer.in/collections/dresses\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/dresses\">Find your perfect Summer dress</a></p><p><a href=\"https://www.lovesummer.in/collections/tunics\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/tunics\">Discover the trendiest Tunics</a></p><p><a href=\"https://www.lovesummer.in/collections/kurta-set\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/kurta-set\">Step into elegance with our Kurta sets</a></p><p>Join us in celebrating fashion and style at \"Summer by Priyanka Gupta.\" Embrace the season, express your individuality, and let our collections bring out the best in you. </p><p>Happy shopping!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_cMma3K",
+        "question_K4jxTC",
+        "question_Vzzcab",
+        "question_rGwdz6",
+        "question_mtVUUF"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "FAQs"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "pagefly_section_TryKzr",
+    "testimonial_carousel_JCYdni",
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb",
+    "faq_kQjBcJ",
+    "faq_PwpGVD",
+    "faq_YtF6gz"
+  ]
+}

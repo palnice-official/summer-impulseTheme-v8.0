@@ -1,0 +1,392 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {}
+    },
+    "advanced_content_44VJCf": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_9LNVkP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Black_and_White_Wedding_Photographer_Testimonial_Instagram_Post.png",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "liquid_8CCFJF": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h3 style=\"text-align: center;\">How did you discover Summer by Priyanka Gupta?</h3>\n<p style=\"text-align: center;\"><br>Completely by chance—on Instagram! One of their posts popped up on my feed, and the delicate floral work, unlike anything I'd seen in other brands, instantly caught my eye. It happened to be during the time I was searching for bridal outfit inspiration, and the moment I landed on Summer by Priyanka Gupta's page, I knew my search was over.</p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_9LNVkP",
+        "liquid_8CCFJF"
+      ],
+      "custom_css": [
+        "img.image-element {border-radius: 10px;}"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "lazyload_images": false
+      }
+    },
+    "text_columns_C6JQMJ": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_nYLbpb": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Black_and_White_Wedding_Photographer_Testimonial_Instagram_Post.png",
+            "image_mask": "portrait",
+            "image_width": 650,
+            "title": "How did you discover Summer by Priyanka Gupta?",
+            "text": "<p>Completely by chance—on Instagram! One of their posts popped up on my feed, and the delicate floral work, unlike anything I'd seen in other brands, instantly caught my eye. It happened to be during the time I was searching for bridal outfit inspiration, and the moment I landed on Summer by Priyanka Gupta's page, I knew my search was over.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_nYLbpb"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "img.image-element {border-radius: 10px;}"
+      ],
+      "name": "t:sections.text-columns.presets.text_columns_with_images.name",
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "hotspots_bzXHxE": {
+      "type": "hotspots",
+      "blocks": {
+        "product_yVAbcp": {
+          "type": "product",
+          "settings": {
+            "featured_product": "",
+            "vertical": 25,
+            "horizontal": 25
+          }
+        },
+        "product_hmrWY8": {
+          "type": "product",
+          "settings": {
+            "featured_product": "",
+            "vertical": 75,
+            "horizontal": 65
+          }
+        }
+      },
+      "block_order": [
+        "product_yVAbcp",
+        "product_hmrWY8"
+      ],
+      "disabled": true,
+      "name": "t:sections.hotspots.name",
+      "settings": {
+        "title": "Shop the look",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "indent_image": false,
+        "image_position": "left",
+        "hotspot_style": "bag",
+        "hotspot_color": "#000000",
+        "lazyload_images": true
+      }
+    },
+    "advanced_content_9aY7wc": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_mt743U": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h3 style=\"text-align: center;\">What vision did you have for your bridal saree?</h3>\n<p style=\"text-align: center;\"><br>All I knew for certain was that I wanted to wear red. I envisioned something light and flowy to complement the beachside setting, with soft floral elements and youthful pops of colour woven through. I didn’t realise it at the time, but the final saree ended up reflecting the venue perfectly—the Ocean Garden. The coastal breeze played with the fabric like gentle waves, and the delicate floral and sequin detailing created the feeling of a flower garden in motion. It was dreamy, feminine, and exactly on theme.</p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_mt743U"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "testimonial_carousel_p6PqQV": {
+      "type": "testimonial-carousel",
+      "blocks": {
+        "testimonial_MbPtML": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-06-21_at_10.28.48_2.jpg",
+            "quote": "",
+            "author": "",
+            "rating": 5
+          }
+        },
+        "testimonial_cdXibG": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-06-21_at_10.28.50_f3c5ab86-fa1d-4bc0-9f4a-633661bf40f2.jpg",
+            "quote": "",
+            "author": "",
+            "rating": 5
+          }
+        },
+        "testimonial_UpFGqD": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-06-21_at_10.28.49.jpg",
+            "quote": "",
+            "author": "",
+            "rating": 5
+          }
+        },
+        "testimonial_nf66wE": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-06-21_at_10.28.56.jpg",
+            "quote": "",
+            "author": "",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_MbPtML",
+        "testimonial_cdXibG",
+        "testimonial_UpFGqD",
+        "testimonial_nf66wE"
+      ],
+      "name": "Testimonial Carousel",
+      "settings": {
+        "title": "",
+        "url": "",
+        "btn_text": "",
+        "cellAlign": "center",
+        "time": 5000,
+        "pageDots": true,
+        "adaptiveHeight": false,
+        "padding-top": 0,
+        "padding-bottom": 20
+      }
+    },
+    "advanced_content_zYAYQe": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_6L3Un8": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h3 style=\"text-align: center;\">How did the design team help you refine or bring that vision to life?</h3>\n<p style=\"text-align: center;\"><br>The team went above and beyond to create something truly special. Even though I didn’t have a fixed design in mind, they helped me identify the elements I loved most across their collections. Priyanka herself called me to talk through every detail and expanded the vision in ways I hadn’t even imagined.</p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "liquid_qqgUjF": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h3 style=\"text-align: center;\">What kind of feedback did you get when you wore the saree?</h3>\n<p style=\"text-align: center;\"><br>People were struck by how unique it was—the delicate handwork, the graceful way it flowed and caught the breeze. Many guests said it looked ethereal and unlike anything they’d seen before. As someone with North Indian roots, a lot of people weren't expecting a saree, so there were cheeky comments like, “I knew you wouldn’t wear a boring old lehenga!”</p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "liquid_373wGf": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "code": "<h2>Custom content</h2><p>Use this advanced section to build your own layouts or to add custom HTML, Liquid, or scripts.</p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_6L3Un8",
+        "liquid_qqgUjF",
+        "liquid_373wGf"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "advanced_content_mPLUGG": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_wQcDT6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-06-21_at_10.29.05_1.jpg",
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "liquid_MVHnEE": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h3 style=\"text-align: center;\">&nbsp;What advice would you give to other brides looking to customize their outfit?</h3>\n<p style=\"text-align: center;\"><br>Trust your designer. It’s tempting to want to control every detail, but remember why you chose them. They bring the creative expertise to elevate your ideas and translate them into something that truly fits you. Let go a little—you might be surprised by how much magic comes from that trust.</p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "liquid_7kdME8": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h3 style=\"text-align: center;\">Did anything surprise you about the process of creating a bespoke bridal outfit?</h3>\n<p style=\"text-align: center;\"><br>How collaborative and iterative it was! The final saree looked very different from the original concept, and each stage of the process brought in thoughtful tweaks and refinements. I really valued how involved I was throughout.</p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_wQcDT6",
+        "liquid_MVHnEE",
+        "liquid_7kdME8"
+      ],
+      "custom_css": [
+        "img.image-element {border-radius: 10px;}"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "testimonial_carousel_egLJRm": {
+      "type": "testimonial-carousel",
+      "blocks": {
+        "testimonial_QciHLg": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-06-21_at_10.29.05.jpg",
+            "quote": "",
+            "author": "",
+            "rating": 5
+          }
+        },
+        "testimonial_YcKhLb": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-06-21_at_10.29.04_1.jpg",
+            "quote": "",
+            "author": "",
+            "rating": 5
+          }
+        },
+        "testimonial_KBN9FK": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-06-21_at_10.28.49.jpg",
+            "quote": "",
+            "author": "",
+            "rating": 5
+          }
+        },
+        "testimonial_f6KEPM": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-06-21_at_10.28.56.jpg",
+            "quote": "",
+            "author": "",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_QciHLg",
+        "testimonial_YcKhLb",
+        "testimonial_KBN9FK",
+        "testimonial_f6KEPM"
+      ],
+      "name": "Testimonial Carousel",
+      "settings": {
+        "title": "",
+        "url": "",
+        "btn_text": "",
+        "cellAlign": "center",
+        "time": 5000,
+        "pageDots": false,
+        "adaptiveHeight": false,
+        "padding-top": 0,
+        "padding-bottom": 20
+      }
+    },
+    "featured_collection_YamnNw": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.featured_collection.name",
+      "settings": {
+        "title": "Saree collection",
+        "home_featured_products": "designer-pastel-sarees",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "blog_posts_cmdM7j": {
+      "type": "blog-posts",
+      "name": "t:sections.blog-posts.presets.blog_posts.name",
+      "settings": {
+        "title": "Blog posts",
+        "blog": "posts",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "blog_image_size": "portrait",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "advanced_content_44VJCf",
+    "text_columns_C6JQMJ",
+    "hotspots_bzXHxE",
+    "advanced_content_9aY7wc",
+    "testimonial_carousel_p6PqQV",
+    "advanced_content_zYAYQe",
+    "advanced_content_mPLUGG",
+    "testimonial_carousel_egLJRm",
+    "featured_collection_YamnNw",
+    "blog_posts_cmdM7j"
+  ]
+}

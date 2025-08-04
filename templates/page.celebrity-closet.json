@@ -1,0 +1,160 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "b8f9fa24-034e-4f2f-a291-944da09ebc62": {
+      "type": "text-columns",
+      "blocks": {
+        "ad393d42-2a5b-4719-996b-3bc1c10427ff": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/IMG_8730.png",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://collections/weekend-dresses"
+          }
+        },
+        "template--16870565642476__b8f9fa24-034e-4f2f-a291-944da09ebc62-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Ivory_adena_poncho_saree.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/ivory-adena-poncho-saree"
+          }
+        },
+        "774e8249-0719-4dd5-967d-c12a2b1d5651": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/IMG_3189.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/ivory-folliage-kurta-set"
+          }
+        },
+        "template--16870565642476__b8f9fa24-034e-4f2f-a291-944da09ebc62-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/CAP02741-2.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/monsoon-floral-saree-1"
+          }
+        },
+        "text_block_r7Pzyw": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/WhatsApp_Image_2024-02-24_at_16.36.20.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/navy-tier-dress"
+          }
+        },
+        "c70a4e4e-9a2c-491b-86a5-e4278c928b3b": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Pink_dandelion_saree_95c9b37e-6c0a-4a83-ac0b-5182df39dad8.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/pink-dandelion-saree"
+          }
+        },
+        "template--16870565642476__b8f9fa24-034e-4f2f-a291-944da09ebc62-text_block-3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/030A0520.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/beige-citrus-garara-set"
+          }
+        },
+        "e97c5a9e-2328-4a1a-8aa8-d28db25e90f1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/IMG_8992.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/ivory-chandelier-saree"
+          }
+        },
+        "69e53b95-f3ac-4884-b986-678680241d9d": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Uncut_Yellow_Kurta.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/yellow-uncut-rose-kurta-set"
+          }
+        }
+      },
+      "block_order": [
+        "ad393d42-2a5b-4719-996b-3bc1c10427ff",
+        "template--16870565642476__b8f9fa24-034e-4f2f-a291-944da09ebc62-text_block-1",
+        "774e8249-0719-4dd5-967d-c12a2b1d5651",
+        "template--16870565642476__b8f9fa24-034e-4f2f-a291-944da09ebc62-text_block-2",
+        "text_block_r7Pzyw",
+        "c70a4e4e-9a2c-491b-86a5-e4278c928b3b",
+        "template--16870565642476__b8f9fa24-034e-4f2f-a291-944da09ebc62-text_block-3",
+        "e97c5a9e-2328-4a1a-8aa8-d28db25e90f1",
+        "69e53b95-f3ac-4884-b986-678680241d9d"
+      ],
+      "settings": {
+        "title": "Celebrity Closet",
+        "align_text": "center",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b8f9fa24-034e-4f2f-a291-944da09ebc62"
+  ]
+}

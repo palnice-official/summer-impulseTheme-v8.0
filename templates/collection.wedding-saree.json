@@ -1,0 +1,85 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h2>Buy Bridal Sarees for a Perfect Wedding</h2><p>Discover the epitome of elegance and luxury with our hand-embroidered wedding sarees. At \"Summer by Priyanka Gupta,\" we understand that your wedding day is a once-in-a-lifetime celebration, and your attire deserves to be as extraordinary as the occasion itself. That's why we present a breathtaking collection of bridal sarees meticulously crafted from Organza, Chiffon, Georgette, and Silk, each piece a testament to timeless beauty and impeccable craftsmanship.</p><h2>The Essence of Bridal Elegance</h2><h3>Organza Wedding Sarees</h3><p>Immerse yourself in the ethereal charm of Organza sarees. The sheer delicacy of Organza fabric, adorned with intricate hand embroidery, creates an aura of sophistication and grace. These sarees offer a modern twist to traditional bridal wear, allowing you to shine with understated elegance on your special day.</p><h3>Chiffon Wedding Sarees</h3><p>Chiffon sarees are renowned for their lightweight and fluid drape, making them a popular choice for brides seeking comfort and style. Our Chiffon bridal sarees feature delicate hand embroidery that adds a touch of subtle glamour, making them perfect for daytime and evening weddings.</p><h3>Georgette Wedding Sarees</h3><p>Georgette sarees blend comfort with grandeur. These sarees are known for their graceful flow and versatility. Our Georgette bridal sarees are adorned with intricate Resham embroidery and subtle sequin work, striking a harmonious balance between tradition and contemporary elegance.</p><h3>Silk Wedding Sarees</h3><p>Silk has been synonymous with bridal opulence for centuries. Our Silk bridal sarees include the timeless Kanjivaram, Banarasi, and Chanderi varieties, each a masterpiece of design and craftsmanship. Embellished with exquisite Zari work and intricate patterns, these sarees exude grandeur and tradition.</p><h2>Craftsmanship Beyond Compare</h2><p>Our hand-embroidered wedding sarees are a labor of love, where skilled artisans pour their heart and soul into creating intricate motifs, using techniques like Aari, Zari, Resham, Sequin, and Stonework. Each saree tells a unique story, embodying the cultural heritage and artistry of India.</p><h2>Unveil Your Bridal Beauty</h2><p>Step into the spotlight with our bridal sarees, tailored to perfection to enhance your grace and confidence. Our blouse designs are carefully crafted to complement the saree's motifs and embroidery, offering a seamless and flattering fit.</p><h2>A Bridal Legacy</h2><p>Bridal sarees hold sentimental value and are often passed down through generations. Our collection respects this tradition, ensuring that your bridal attire becomes a cherished heirloom, a reminder of your beautiful journey.</p><h2>Make Your Dream Wedding a Reality</h2><p>At \"Summer by Priyanka Gupta,\" we believe that every bride deserves to feel like royalty on her wedding day. Our exquisite bridal sarees are designed to make your dreams come true, combining tradition, craftsmanship, and contemporary style.</p><h2>Shop Wedding Sarees with Confidence</h2><p>Browse our collection online, and let our bridal experts assist you in finding the perfect saree that reflects your unique personality. We offer international shipping, and for those in Delhi NCR, you can visit our store for a personalized shopping experience at D6, 1st Floor, Defence Colony, New Delhi, 110024.</p><p>Elevate your bridal journey with \"Summer by Priyanka Gupta\" and embrace the elegance, grace, and beauty of our hand-embroidered wedding sarees. Your wedding day deserves nothing less than perfection, and we're here to make it extraordinary.</p><h2>Which other saree collections do we have at Summer?</h2><p>Here are the other sarees we have in our collection</p><h3>Sarees By Fabric</h3><ul><li><a href=\"https://www.lovesummer.in/collections/organza-sarees\"><span style=\"text-decoration:underline\">Organza Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/chiffon-sarees\"><span style=\"text-decoration:underline\">Chiffon Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/georgette-sarees\"><span style=\"text-decoration:underline\">Georgette Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/silk-sarees\"><span style=\"text-decoration:underline\">Silk Sarees</span></a></li></ul><h3>Sarees By Design</h3><ul><li><a href=\"https://www.lovesummer.in/collections/printed-sarees\"><span style=\"text-decoration:underline\">Printed Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/embroidered-saree\"><span style=\"text-decoration:underline\">Embroidered Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/luxury-saree\"><span style=\"text-decoration:underline\">Luxury Sarees</span></a></li></ul><h3>Sarees By Occasion</h3><ul><li><a href=\"https://www.lovesummer.in/collections/haldi-sarees\"><span style=\"text-decoration:underline\">Haldi Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/mehendi-sarees\"><span style=\"text-decoration:underline\">Mehendi Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/engagement-sarees\"><span style=\"text-decoration:underline\">Engagement Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/reception-sarees\"><span style=\"text-decoration:underline\">Reception Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/partywear-sarees\"><span style=\"text-decoration:underline\">Partywear Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/festive-sarees\"><span style=\"text-decoration:underline\">Festive Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/farewell-sarees\"><span style=\"text-decoration:underline\">Farewell Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/diwali-sarees\"><span style=\"text-decoration:underline\">Diwali Sarees</span></a></li></ul><h2>FAQs - Wedding Sarees</h2><h3>What makes the Bridal Saree Collection by Summer by Priyanka Gupta unique?</h3><p>Our Bridal Saree Collection is unique for its exquisite hand embroidery, attention to detail, and a wide range of fabric choices, including Organza, Chiffon, Georgette, and Silk. We offer brides a blend of tradition and contemporary elegance.</p><h3>Do you offer customization options for bridal sarees?</h3><p>Yes, we provide customization services for blouse designs and other aspects of the saree to ensure it perfectly suits your preferences. Our experienced team can assist you in creating a bespoke bridal look.</p><h3>What types of hand embroidery are used in your bridal sarees?</h3><p>Our bridal sarees feature a variety of hand embroidery techniques, including Aari, Zari work, Resham embroidery, Sequin work, and Stone embellishments. These techniques add opulence and sophistication to our sarees.</p><h3>How do I care for my bridal saree after the wedding?</h3><p>We recommend professional cleaning or dry cleaning to ensure the longevity and pristine condition of your bridal saree. Please refer to our care instructions for more details on maintaining the saree's beauty.</p><h3>Are bridal sarees available in different color options?</h3><p>Yes, our Bridal Saree Collection offers a wide spectrum of colors, from traditional reds and golds to pastels and contemporary hues. You can select the color that best suits your wedding theme and personal style.</p><h3>What is the price range of bridal sarees in your collection?</h3><p>Our bridal sarees are available in a range of prices, accommodating various budgets. We believe that every bride should have access to exquisite bridal attire, regardless of their budget.</p><h3>Do you offer international shipping for bridal sarees?</h3><p>Yes, we offer international shipping for our bridal sarees. Please check our shipping policies for more information on delivery to your location.</p><h3>Is there a return or exchange policy for bridal sarees?</h3><p>We have a flexible return and exchange policy. If you are not satisfied with your purchase, you can contact our customer support team for assistance within the specified return period.</p><h3>Can I visit your physical store to see the bridal sarees in person?</h3><p>Yes, Delhi NCR residents can visit our store located at D6, 1st Floor, Defence Colony, New Delhi, 110024, for a personalized shopping experience. You can also book an appointment on our website for a one-on-one consultation.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb"
+  ]
+}

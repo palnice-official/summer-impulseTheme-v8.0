@@ -1,0 +1,530 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich_text_fUtCgD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_BDEaN7": {
+          "type": "heading",
+          "settings": {
+            "title": "Business Partners"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BDEaN7"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": true
+      }
+    },
+    "magazine_style_layout_WLt4dN": {
+      "type": "magazine-style-layout",
+      "name": "Magazine Style Layout",
+      "settings": {
+        "feature_image": "shopify://shop_images/images.png",
+        "main_heading": "",
+        "sub_heading": "",
+        "author_name": "",
+        "content_text": "<p>A leading name in luxury fashion retail, Pernia’s Pop-Up Shop is India’s premier multi designers store showcasing curated collections from the country’s top designers. Known for its exquisite edit of bridal wear, designer lehengas, festive ensembles, and contemporary Indian designer clothing with best fashion designers in India, Pernia’s offers a seamless luxury shopping experience both online and across its physical stores in Delhi, Mumbai, and internationally.</p><p>As a trusted stockist of Summer by Priyanka Gupta, Pernia’s Pop-Up Shop brings our signature occasionwear to a global audience, offering clients the ease of made-to-measure services, personalised styling, and access to some of India’s finest handcrafted fashion — all under one roof.</p><p><a href=\"https://www.perniaspopupshop.com/designers/summer-by-priyanka-gupta\" target=\"_blank\" title=\"https://www.perniaspopupshop.com/designers/summer-by-priyanka-gupta\">Shop Summer's</a> latest collections on Pernia’s Pop-Up Shop and discover the effortless elegance of Summer.</p><p><strong>Explore our full collection at:</strong><br/><a href=\"https://www.perniaspopupshop.com/designers/summer-by-priyanka-gupta\" target=\"_blank\" title=\"https://www.perniaspopupshop.com/designers/summer-by-priyanka-gupta\">https://www.perniaspopupshop.com/designers/summer-by-priyanka-gupta</a></p>",
+        "magazine-image-url": "https://www.perniaspopupshop.com/designers/summer-by-priyanka-gupta"
+      }
+    },
+    "magazine_style_layout_gFtNQU": {
+      "type": "magazine-style-layout",
+      "name": "Magazine Style Layout",
+      "settings": {
+        "feature_image": "shopify://shop_images/images_1.png",
+        "main_heading": "",
+        "sub_heading": "",
+        "author_name": "",
+        "content_text": "<p>Aashni + Co is a premier multi-designer luxury boutique based in London, UK, catering to global fashion lovers seeking the best in Indian bridal wear and couture occasionwear. Renowned for its edit of India’s leading designers like Sabyasachi, Manish Malhotra, and more, Aashni + Co is one of the most sought-after Indian designer boutiques in London for brides, bridesmaids, and style-conscious shoppers.</p><p>As an international retail partner, <a href=\"https://aashniandco.com/designers/summer-by-priyanka-gupta.html\" target=\"_blank\" title=\"https://aashniandco.com/designers/summer-by-priyanka-gupta.html\">Summer by Priyanka Gupta</a> showcases its signature hand-embroidered lehengas, festive suits, and versatile sarees to a global audience through aashniandco.com and the London flagship store. Whether you’re planning a destination wedding, a traditional Indian ceremony, or simply love elegant Indian wear with a modern twist, our curated pieces are now available for styling consultations and international orders via Aashni + Co.</p><p><strong>Explore our full collection at: </strong><a href=\"https://aashniandco.com/designers/summer-by-priyanka-gupta.html\" target=\"_blank\" title=\"https://aashniandco.com/designers/summer-by-priyanka-gupta.html\">https://aashniandco.com/designers/summer-by-priyanka-gupta.html</a></p>",
+        "magazine-image-url": "https://aashniandco.com/designers/summer-by-priyanka-gupta.html"
+      }
+    },
+    "magazine_style_layout_iwjwLP": {
+      "type": "magazine-style-layout",
+      "name": "Magazine Style Layout",
+      "settings": {
+        "feature_image": "shopify://shop_images/images_1.jpg",
+        "main_heading": "",
+        "sub_heading": "",
+        "author_name": "",
+        "content_text": "<p>Aza Fashions is one of the most trusted names in the world of multi-designer Indian fashion. As a leading platform for luxury Indian designer wear online, Aza brings together an exclusive edit of bridal lehengas, designer sarees, and contemporary Indian occasionwear from top fashion houses across the country.</p><p>With physical stores in Mumbai, Hyderabad, Ahmedabad, and Kolkata, and a strong online presence through azafashions.com, Aza is a one-stop destination for bridal shopping, festive fashion, and resort wear.</p><p>As a valued partner, <a href=\"https://www.azafashions.com/designers/summer-by-priyanka-gupta\" target=\"_blank\" title=\"https://www.azafashions.com/designers/summer-by-priyanka-gupta\">Summer by Priyanka Gupta </a>retails its signature blend of relaxed elegance and timeless embroidery at Aza. Our collections — perfect for wedding guests, modern brides, and destination celebrations — are available at multiple Aza stores and online for global delivery.</p><p><strong>Explore our full collection at: </strong><a href=\"https://www.azafashions.com/designers/summer-by-priyanka-gupta\" target=\"_blank\" title=\"https://www.azafashions.com/designers/summer-by-priyanka-gupta\">https://www.azafashions.com/designers/summer-by-priyanka-gupta</a></p>",
+        "magazine-image-url": "https://www.azafashions.com/designers/summer-by-priyanka-gupta"
+      }
+    },
+    "magazine_style_layout_xendg8": {
+      "type": "magazine-style-layout",
+      "name": "Magazine Style Layout",
+      "settings": {
+        "feature_image": "shopify://shop_images/images_3.png",
+        "main_heading": "",
+        "sub_heading": "",
+        "author_name": "",
+        "content_text": "<p>Elahe is a refined luxury fashion boutique and a premier online store offering the best in Indian designer wear, bridal couture, and elegant occasionwear. Known for its editorial curation and boutique experience, Elahe showcases collections from India’s top designers across its Hyderabad and Kolkata stores and through its growing online platform, elahe.in.</p><p><a href=\"https://www.elahe.in/collections/summer-by-priyanka-gupta\" target=\"_blank\" title=\"https://www.elahe.in/collections/summer-by-priyanka-gupta\">Summer by Priyanka Gupta</a> is proud to be a part of Elahe’s fashion-forward portfolio. Our occasionwear offerings — including lightweight lehengas, pastel sarees, and intricately embroidered ensembles — are tailored for today’s modern, mindful woman.</p><p>You can shop our pieces on elahe.in or experience them in-store at Elahe Hyderabad and Elahe Kolkata, making it a top choice for those searching for bridal wear boutiques in India and Indian designer fashion online.</p><p><strong>Explore our full collection at: </strong><a href=\"https://www.elahe.in/collections/summer-by-priyanka-gupta\" target=\"_blank\" title=\"https://www.elahe.in/collections/summer-by-priyanka-gupta\">https://www.elahe.in/collections/summer-by-priyanka-gupta</a></p>",
+        "magazine-image-url": "https://www.elahe.in/collections/summer-by-priyanka-gupta"
+      }
+    },
+    "magazine_style_layout_Khbk76": {
+      "type": "magazine-style-layout",
+      "name": "Magazine Style Layout",
+      "settings": {
+        "feature_image": "shopify://shop_images/Screenshot_2025-06-19_175441.png",
+        "main_heading": "",
+        "sub_heading": "",
+        "author_name": "",
+        "content_text": "<p>Taj Khazana – The Curated Gift Shop at Taj Hotels.</p><p>Summer by Priyanka Gupta is now available at Taj Khazana, the signature boutique at Taj Hotels known for celebrating India’s finest design.<br/><br/>Whether you’re picking up something special for your travels or looking for the perfect gift, discover a handpicked selection of our pieces at Taj Hotels in Dehradun and Chennai.</p>",
+        "magazine-image-url": "https://www.tajhotels.com/en-in/gifting-and-shopping/taj-khazana"
+      }
+    },
+    "magazine_style_layout_y4NhFj": {
+      "type": "magazine-style-layout",
+      "name": "Magazine Style Layout",
+      "settings": {
+        "feature_image": "shopify://shop_images/Ensemble-logo.jpg",
+        "main_heading": "",
+        "sub_heading": "",
+        "author_name": "",
+        "content_text": "<p>When it comes to the best places to shop in Delhi and Mumbai for luxury fashion, Ensemble is a name that defines quiet elegance and curation. As one of India’s most iconic multi-designer destinations, Ensemble showcases the crème de la crème of Indian couture — from exquisite bridal wear and statement festive pieces to elevated everyday ensembles.<br/><br/>Nestled in the heart of Mehrauli, Delhi and the art-filled lanes of Kala Ghoda, Mumbai, Ensemble’s flagship stores merge old-world charm with a sharp, modern sensibility. More than just boutiques, these spaces offer a thoughtfully curated fashion experience in two of India’s most stylish cities.</p>",
+        "magazine-image-url": "https://www.ensembleindia.com/"
+      }
+    },
+    "magazine_style_layout_LxCYdA": {
+      "type": "magazine-style-layout",
+      "disabled": true,
+      "name": "Magazine Style Layout",
+      "settings": {
+        "feature_image": "shopify://shop_images/40FA4121-2B65-47B2-9A89-BC5B2898B264__1___1_-removebg-preview.jpg",
+        "main_heading": "",
+        "sub_heading": "",
+        "author_name": "",
+        "content_text": "",
+        "magazine-image-url": "https://floristaabymahek.com/"
+      }
+    },
+    "magazine_style_layout_Cz7hae": {
+      "type": "magazine-style-layout",
+      "name": "Magazine Style Layout",
+      "settings": {
+        "feature_image": "shopify://shop_images/images.jpg",
+        "main_heading": "",
+        "sub_heading": "",
+        "author_name": "",
+        "content_text": "<p>Lilly’s Boutique is a leading multi-designer boutique in London known for its curated selection of contemporary Indian fashion, modest bridal wear, and bespoke South Asian occasionwear. Located in the heart of London, Lilly’s offers a personalized shopping experience for UK-based brides, wedding guests, and fashion-forward clients looking for customized Indian designer outfits.</p><p>As a proud partner of <a href=\"https://www.lillysboutiquelondon.com/collections/love-summer\" target=\"_blank\" title=\"https://www.lillysboutiquelondon.com/collections/love-summer\">Summer by Priyanka Gupta</a>, Lilly’s Boutique showcases our signature pieces that blend elegance with versatility — from light, hand-embroidered lehengas to fully covered saree blouses and modest yet stylish silhouettes perfect for Muslim brides or those seeking covered couture.</p><p>Clients can book a private consultation by appointment at the boutique to discuss customization requests, including alterations to sleeve lengths, necklines, and fabric layering to align with personal, cultural, or religious preferences. From bridal trousseau shopping to bespoke festive wear, Lilly’s Boutique offers a trusted platform for discovering Indian designer fashion in the UK with complete personalization.</p><p><strong>Explore our full collection at: </strong><a href=\"https://www.lillysboutiquelondon.com/collections/love-summer\" target=\"_blank\" title=\"https://www.lillysboutiquelondon.com/collections/love-summer\">https://www.lillysboutiquelondon.com/collections/love-summer</a></p>",
+        "magazine-image-url": "https://www.lillysboutiquelondon.com/collections/love-summer"
+      }
+    },
+    "magazine_style_layout_iEeTDD": {
+      "type": "magazine-style-layout",
+      "name": "Magazine Style Layout",
+      "settings": {
+        "feature_image": "shopify://shop_images/logo-nobackground-1000.webp",
+        "main_heading": "",
+        "sub_heading": "",
+        "author_name": "",
+        "content_text": "<p>Dasmaya is a premium, US-based online platform for luxury Indian designer fashion — bringing South Asia’s finest labels to customers across America. Whether you’re shopping for Diwali party outfits, Indian wedding wear, or festive occasionwear, Dasmaya makes modern Indian fashion effortlessly accessible in the USA.<br/><br/>As a proud retail partner, <a href=\"https://dasmaya.com/acollections/summer-by-priyanka-gupta\" target=\"_blank\" title=\"https://dasmaya.com/acollections/summer-by-priyanka-gupta\">Summer by Priyanka Gupta</a> showcases its signature pieces on Dasmaya — from hand-embroidered lehengas and festive sarees to fusion sets perfect for Diwali parties, pujas, mehendi events, or destination weddings.<br/><br/>What sets Dasmaya apart is its exclusive pop-up events held across major US cities during the festive season — giving American clients the chance to experience Indian craftsmanship up close.<br/><br/>If you’re searching for:<br/>\t•\tDesigner Indian Diwali clothes in the USA<br/>\t•\tElegant outfits for South Asian weddings<br/>\t•\tWhere to shop Indian fashion online in America<br/>— this is the destination for you.</p><p><strong>Explore our full collection at: </strong><a href=\"https://dasmaya.com/collections/summer-by-priyanka-gupta\" target=\"_blank\" title=\"https://dasmaya.com/collections/summer-by-priyanka-gupta\">https://dasmaya.com/collections/summer-by-priyanka-gupta</a></p>",
+        "magazine-image-url": "https://dasmaya.com/collections/summer-by-priyanka-gupta"
+      }
+    },
+    "magazine_style_layout_AA8Kaw": {
+      "type": "magazine-style-layout",
+      "name": "Magazine Style Layout",
+      "settings": {
+        "feature_image": "shopify://shop_images/LOGO_BLACK_WITH_BG_2x-8.png",
+        "main_heading": "",
+        "sub_heading": "",
+        "author_name": "<p><strong>Tejal Khurana</strong></p>",
+        "content_text": "<p>Stocking with Summer has been such a great experience! Our handbags and their gorgeous outfits are a match made in fashion heaven. Plus, being in such a fantastic location means we get to meet so many stylish shoppers. It’s been an effortless, fun collaboration, and we love being part.</p><p>PLODE bags are available to shop at D 6, Defence Colony New Delhi</p>",
+        "magazine-image-url": "https://www.plode.in/"
+      }
+    },
+    "magazine_style_layout_6PfGrY": {
+      "type": "magazine-style-layout",
+      "name": "Magazine Style Layout",
+      "settings": {
+        "feature_image": "shopify://shop_images/EENA.jpg",
+        "main_heading": "",
+        "sub_heading": "",
+        "author_name": "<p><strong>Minakshi Goyal</strong></p>",
+        "content_text": "<p>Working with the Summer by Priyanka Gupta team has been a delight. Their designs are consistently beautiful with soft pastel tones and high-quality craftsmanship that feels timeless and thoughtful. But what truly sets them apart is their kindness, professionalism, and spirit of collaboration. We’re always excited to see what they create next!</p><p>EENA bags are available to shop at D 6, Defence Colony New Delhi</p>",
+        "magazine-image-url": "https://eenaofficial.com/"
+      }
+    },
+    "magazine_style_layout_Xb9EE7": {
+      "type": "magazine-style-layout",
+      "name": "Magazine Style Layout",
+      "settings": {
+        "feature_image": "shopify://shop_images/bharti.jpg",
+        "main_heading": "",
+        "sub_heading": "",
+        "author_name": "<p><strong>Bharti Brahmbhatt <br/>Bharti's at White Solitaire</strong></p>",
+        "content_text": "<p>Summer by Priyanka paints a picture of Summer on their garments with their beautiful hues, sparkling and delicate beadwork, comfortable and soft fabrics. I always love having them at the store since they brighten up the store with their collection. Connecting with the team is also such a breeze. They are always prompt and ever ready to make sure we don't miss out on their new collection. And they never disappoint. Their collection always fly at our store. I feel, having the right kind of connection is very necessary when it comes to a collaboration and we had that connection with Summer by Priyanka. All the best and many more summer years to see with Summer by Priyanka. Thank you.</p>",
+        "magazine-image-url": "https://bhartis.com/"
+      }
+    },
+    "magazine_style_layout_Pk4Uit": {
+      "type": "magazine-style-layout",
+      "disabled": true,
+      "name": "Magazine Style Layout",
+      "settings": {
+        "main_heading": "",
+        "sub_heading": "",
+        "author_name": "",
+        "content_text": "<p>Ensemble – Shop Summer by Priyanka Gupta at Mumbai’s Premier Designer Destination<br/><br/>Ensemble, located in the historic Great Western Building in Kala Ghoda, South Mumbai, is India’s pioneering multi-designer boutique. Since 1987, it has been the go-to destination for discerning shoppers seeking luxury Indian designer wear, bridal couture, and festive occasionwear.<br/><br/>Summer by Priyanka Gupta is proud to be featured at Ensemble’s flagship store. Our collection here embodies understated elegance, featuring handcrafted lehengas, chic sarees, and contemporary ensembles perfect for weddings, Diwali parties, and other special occasions.</p>",
+        "magazine-image-url": ""
+      }
+    },
+    "magazine_style_layout_DffztB": {
+      "type": "magazine-style-layout",
+      "name": "Magazine Style Layout",
+      "settings": {
+        "feature_image": "shopify://shop_images/WhatsApp_Image_2025-04-11_at_20.19.26.png",
+        "main_heading": "",
+        "sub_heading": "",
+        "author_name": "<p><strong>Saniya Sugla<br/>Creative Marketing Agency</strong></p>",
+        "content_text": "<p>I had the opportunity to work with Priyanka for a festive shoot last year, and what started as a small collaboration has bloomed into an everlasting relationship and not just between our brands, but also between us as individuals.</p><p>I have a deep admiration for Priyanka and Summer by Priyanka, as the attention to detail and the passion behind the brand's inception are evident in every element - from the store to the clothes to every thoughtful step they take to celebrate the little things.</p><p>However, what I admire most is how warmly Priyanka and the entire team at Summer embrace you as part of the Summer family. Working with Summer has been both a pleasure and an honor of the highest order. Every time my phone rings and it’s from Summer, my heart does a happy dance, knowing that a wonderful opportunity lies ahead.</p><p>After the photoshoot, my own guest-listing event, and multiple collaborations, I can confidently say that Priyanka, her team, and Summer will always remain at the top of the favorites list for anyone who gets the chance to work with them in any capacity.</p><p>As a brand, they dare to dream, think and execute out of the box, leaving no stone unturned in their mission to build a genuine community.</p><p>It has been an extremely rewarding and fulfilling journey, working with Summer By Priyanka so far, here’s hoping we work together till kingdom come!</p>",
+        "magazine-image-url": "https://www.instagram.com/saniyasugla?igsh=aWdmY2E1cGgzZnI4"
+      }
+    },
+    "contact_form_j4z6yL": {
+      "type": "contact-form",
+      "name": "t:sections.contact-form.presets.contact_form.name",
+      "settings": {
+        "title": "Apply to Partner",
+        "text": "<p><strong>Interested in partnering with us? </strong></p><p>We’d love to learn more about your business.<br/><br/>Please fill out our <strong>Form </strong>or email us at <strong>sales@lovesummer.in</strong> with details such as:<br/>\t•\tYour business name and website/Instagram<br/>\t•\tNature of your store (offline/online/multi-designer)<br/>\t•\tTarget market and customer base<br/>\t•\tApproximate order volume<br/><br/>Our team will review your request and get in touch within 3–5 working days.</p>",
+        "show_phone": true,
+        "narrow_column": true
+      }
+    },
+    "faq_dUqWdL": {
+      "type": "faq",
+      "blocks": {
+        "question_K3rUNE": {
+          "type": "question",
+          "settings": {
+            "title": "Why Partner With Us?",
+            "text": "<p><strong>why partnering with us makes business sense</strong>:</p><p><br/>\t•\t<strong>Proven Product Quality with High Repeat Customer Rates. </strong></p><p>Our collections — rooted in Indian heritage yet modern in appeal — are known for their flawless stitching, elevated aesthetics, and consistent sell-through. We’re proud to be a Delhi-based designer brand that customers ask for again and again.</p><p><br/>\t•\t<strong>Customization and Exclusivity for Select Partners.</strong> </p><p>With our in-house design team and master craftsmen, we offer design customization for varied markets — from modest luxury in the Middle East to contemporary fashion in the USA. We adjust fits, finishes, and price points to meet your clientele’s expectations.</p><p><br/>\t•\t<strong>Ease of Doing Business</strong></p><p><br/>As an experienced Indian exporter and B2B partner, we offer streamlined order processing, transparent pricing, and dedicated account managers to make your experience seamless from sampling to dispatch.</p><p><br/>\t•\t<strong>Flexible MOQs for Global Retailers</strong></p><p><br/>Whether you’re an established fashion retailer or an emerging boutique, our minimum order quantities are designed to be accessible — without ever compromising on the richness of craftsmanship.</p><p><br/>\t•\t<strong>Full-Fledged Design and Production Team in Delhi.</strong></p><p> Our studio and production unit in Delhi houses skilled artisans, designers, merchandisers, and QC professionals — making us one of the few designer manufacturers in Delhi who manage the entire supply chain under one roof.</p><p><br/>\t•\t<strong>Marketing & Visual Support to Boost Your Sales.</strong></p><p> Access our high-quality image bank, look books, campaign videos, and styling assets to elevate your e-commerce and in-store presence — all designed to help you sell better, faster.</p><p><br/>\t•\t<strong>A Brand Built on Beauty, Leisure, and Craft.</strong> </p><p><br/>Summer is not just a name — it’s a lifestyle. Our designs blend ease, elegance, and rich Indian artistry. From detailed embroideries to signature prints, we offer occasion wear that feels like home, and looks like luxury.</p>"
+          }
+        },
+        "question_ABpFiE": {
+          "type": "question",
+          "settings": {
+            "title": "Where can I shop Indian designer wear in the US and UK?",
+            "text": "<p>Looking for Indian designer wear in the US or UK? Summer by Priyanka Gupta is available at:<br/>\t•\tUSA:<br/>\t•\tDASMAYA – ships across the US and hosts festive pop-ups featuring lehengas, festive sarees, and cocktail outfits.<br/>\t•\tUK:<br/>\t•\tLilly’s Boutique London – offers in-store consultations and modest customizations including covered blouses and sleeves. Prior appointment recommended.</p>"
+          }
+        },
+        "question_XPTxMW": {
+          "type": "question",
+          "settings": {
+            "title": "Where can I buy lehengas for destination weddings abroad?",
+            "text": "<p>You can shop bridal and festive lehengas for destination weddings via:<br/>\t•\tUSA & Global Shipping:<br/>\t•\tDASMAYA – US-based<br/>\t•\tUK:<br/>\t•\tLilly’s Boutique London<br/>\t•\tIndia (with international shipping):<br/>\t•\tAza Fashions<br/>\t•\tElahe</p><p>Perfect for weddings in Italy, Thailand, Dubai, Bali, and more.</p>"
+          }
+        },
+        "question_6H6dN8": {
+          "type": "question",
+          "settings": {
+            "title": "Which are the top luxury Indian fashion stores in Mumbai / South Bombay?",
+            "text": "<p>If you’re searching for luxury Indian fashion stores in Mumbai, visit:<br/>\t•\tEnsemble, Kala Ghoda – One of India’s most iconic multi-designer stores known for premium bridal and occasionwear.<br/>Address: Great Western Building, 130/132, Shahid Bhagat Singh Rd, Fort, Mumbai 400023<br/>\t•\tBhartis at White Solitaire, Santacruz – Curated boutique offering luxury festive pieces from Summer by Priyanka Gupta.</p>"
+          }
+        },
+        "question_xxtfXL": {
+          "type": "question",
+          "settings": {
+            "title": "Where can I find Summer by Priyanka Gupta in India?",
+            "text": "<p>You can shop our collections at the following multi-designer boutiques across India:<br/>\t•\tMumbai:<br/>\t•\tEnsemble, Kala Ghoda<br/>\t•\tBhartis at White Solitaire, Santacruz<br/>\t•\tHyderabad:<br/>\t•\tAza Fashions, Banjara Hills<br/>\t•\tElahe, Road No. 10<br/>\t•\tKolkata:<br/>\t•\tAza Fashions, Elgin Road<br/>\t•\tElahe, Alipore<br/>\t•\tAhmedabad:<br/>\t•\tAza Fashions, Sindhu Bhavan Road<br/>\t•\tEnsemble, Ahmedabad<br/><br/>These stores carry lehengas, festive co-ords, embroidered sarees, and custom occasionwear.</p>"
+          }
+        },
+        "question_c8rkrf": {
+          "type": "question",
+          "settings": {
+            "title": "Which multi-designer boutiques offer bridal wear from top Indian brands?",
+            "text": "<p>Explore Summer by Priyanka Gupta’s bridalwear at:<br/>\t•\tIndia: Aza Fashions, Ensemble, Elahe<br/>\t•\tUK: Lilly’s Boutique<br/>\t•\tUS: DASMAYA<br/>\t•\tInternational: Ashni & Co. (London-based, formerly NY presence)<br/><br/>These luxury stores feature handcrafted bridal lehengas, reception outfits, and pre-wedding looks — with styling, customizations, and pan-India or international shipping.</p>"
+          }
+        },
+        "question_EWNKGL": {
+          "type": "question",
+          "settings": {
+            "title": "Where can I shop Indian designer lehengas online in the USA and UK?",
+            "text": "<p>Shop Summer by Priyanka Gupta’s lehenga collections online at:<br/>\t•\tUSA: DASMAYA – US-based, ideal for Diwali parties, wedding guests, or South Asian brides.<br/>\t•\tUK: Lilly’s Boutique London – Offers modest bridalwear and festive Indian outfits for global audiences.</p>"
+          }
+        },
+        "question_UxXLPa": {
+          "type": "question",
+          "settings": {
+            "title": "Who are the top Indian designer brands for weddings and festive occasions?",
+            "text": "<p>If you’re searching for top Indian designer brands for weddings, look no further than:<br/>\t•\tSummer by Priyanka Gupta<br/>Known for breezy festive wear, embroidered lehengas, and elegant Indian silhouettes.<br/><br/>We’re proud to retail alongside leading Indian fashion labels at:<br/>Aza, Elahe, Ensemble, Ashni & Co., DASMAYA, and Lilly’s Boutique London.</p>"
+          }
+        },
+        "question_XTweDK": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        },
+        "question_yGjbea": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Proven Product Quality with High Repeat Customer Rates",
+            "text": "<p>Our collections — rooted in Indian heritage yet modern in appeal — are known for their flawless stitching, elevated aesthetics, and consistent sell-through. We’re proud to be a Delhi-based designer brand that customers ask for again and again.</p>"
+          }
+        },
+        "question_Thpi3B": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Customization and Exclusivity for Select Partners",
+            "text": "<p>With our in-house design team and master craftsmen, we offer design customization for varied markets — from modest luxury in the Middle East to contemporary fashion in the USA. We adjust fits, finishes, and price points to meet your clientele’s expectations.</p>"
+          }
+        },
+        "question_pFXU9d": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Ease of Doing Business",
+            "text": "<p>As an experienced Indian exporter and B2B partner, we offer streamlined order processing, transparent pricing, and dedicated account managers to make your experience seamless from sampling to dispatch.</p>"
+          }
+        },
+        "question_MgqQxY": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Flexible MOQs for Global Retailers",
+            "text": "<p>Whether you’re an established fashion retailer or an emerging boutique, our minimum order quantities are designed to be accessible — without ever compromising on the richness of craftsmanship.</p>"
+          }
+        },
+        "question_npwmfG": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Full-Fledged Design and Production Team in Delhi",
+            "text": "<p>Our studio and production unit in Delhi houses skilled artisans, designers, merchandisers, and QC professionals — making us one of the few designer manufacturers in Delhi who manage the entire supply chain under one roof.</p>"
+          }
+        },
+        "question_drp4in": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Marketing & Visual Support to Boost Your Sales",
+            "text": "<p>Access our high-quality image bank, lookbooks, campaign videos, and styling assets to elevate your e-commerce and in-store presence — all designed to help you sell better, faster.</p>"
+          }
+        },
+        "question_kD9f9g": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "A Brand Built on Beauty, Leisure, and Craft",
+            "text": "<p>Summer is not just a name — it’s a lifestyle. Our designs blend ease, elegance, and rich Indian artistry. From detailed embroideries to signature prints, we offer occasion wear that feels like home, and looks like luxury.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_K3rUNE",
+        "question_ABpFiE",
+        "question_XPTxMW",
+        "question_6H6dN8",
+        "question_xxtfXL",
+        "question_c8rkrf",
+        "question_EWNKGL",
+        "question_UxXLPa",
+        "question_XTweDK",
+        "question_yGjbea",
+        "question_Thpi3B",
+        "question_pFXU9d",
+        "question_MgqQxY",
+        "question_npwmfG",
+        "question_drp4in",
+        "question_kD9f9g"
+      ],
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "title": "FAQs"
+      }
+    },
+    "advanced_content_Uh6Fc7": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_bQJPNx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LOGO_BLACK_WITH_BG_2x-8.png",
+            "link": "https://www.plode.in/",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "liquid_NqWCWj": {
+          "type": "liquid",
+          "settings": {
+            "code": "<p dir=\"ltr\"><meta charset=\"utf-8\">Stocking with Summer has been such a great experience! Our handbags and their gorgeous outfits are a match made in fashion heaven. Plus, being in such a fantastic location means we get to meet so many stylish shoppers. It’s been an effortless, fun collaboration, and we love being part.<b id=\"docs-internal-guid-f8e2063d-7fff-138e-d53d-9fe0bb9e6b14\"><span><br></span></b></p><p>PLODE bags are available to shop at D 6, Defence Colony New Delhi</p>\n<p dir=\"ltr\"><strong>— By <meta charset=\"utf-8\">Tejal Khurana (Co- Founder)</strong></p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_bQJPNx",
+        "liquid_NqWCWj"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "img.image-element {border-radius: 10px;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "advanced_content_8kMPyJ": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_p7PGp3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/EENA.jpg",
+            "link": "https://eenaofficial.com/",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "liquid_yatqhq": {
+          "type": "liquid",
+          "settings": {
+            "code": "<p dir=\"ltr\"><meta charset=\"utf-8\">Working with the Summer by Priyanka Gupta team has been a delight. Their designs are consistently beautiful with soft pastel tones and high-quality craftsmanship that feels timeless and thoughtful. But what truly sets them apart is their kindness, professionalism, and spirit of collaboration. We’re always excited to see what they create next!</p><p>EENA bags are available to shop at D 6, Defence Colony New Delhi</p>\n<p dir=\"ltr\"><br><strong>—Minakshi Goyal (Founder)</strong><br></p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_p7PGp3",
+        "liquid_yatqhq"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "img.image-element {border-radius: 10px;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "advanced_content_btzPqx": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_VqKx4Y": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/bharti.jpg",
+            "link": "https://bhartis.com/",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "liquid_bnLezr": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "code": "<p>Summer by Priyanka paints a picture of Summer on their garments with their beautiful hues, sparkling and delicate beadwork, comfortable and soft fabrics. I always love having them at the store since they brighten up the store with their collection. Connecting with the team is also such a breeze. They are always prompt and ever ready to make sure we don't miss out on their new collection. And they never disappoint. Their collection always fly at our store. I feel, having the right kind of connection is very necessary when it comes to a collaboration and we had that connection with Summer by Priyanka. All the best and many more summer years to see with Summer by Priyanka. Thank you.</p>\n<p><br><strong>- Mrs. Bharti Brahmbhatt&nbsp;</strong><strong>(Founder, Bharti's at White Solitaire)</strong></p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_VqKx4Y",
+        "liquid_bnLezr"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "img.image-element {border-radius: 10px;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "advanced_content_m33h4T": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_Pygzxz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-04-11_at_20.19.26.jpg",
+            "link": "https://www.instagram.com/saniyasugla?igsh=aWdmY2E1cGgzZnI4",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "liquid_benGAj": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "code": "<p dir=\"ltr\"><span>I had the opportunity to work with Priyanka for a festive shoot last year, and what started as a small collaboration has bloomed into an everlasting relationship and not just between our brands, but also between us as individuals.</span><b></b></p>\n<p dir=\"ltr\"><span>I have a deep admiration for Priyanka and Summer by Priyanka, as the attention to detail and the passion behind the brand's inception are evident in every element - from the store to the clothes to every thoughtful step they take to celebrate the little things.</span><b></b></p>\n<p dir=\"ltr\"><span>However, what I admire most is how warmly Priyanka and the entire team at Summer embrace you as part of the Summer family. Working with Summer has been both a pleasure and an honor of the highest order. Every time my phone rings and it’s from Summer, my heart does a happy dance, knowing that a wonderful opportunity lies ahead.</span><b></b></p>\n<p dir=\"ltr\"><span>After the photoshoot, my own guest-listing event, and multiple collaborations, I can confidently say that Priyanka, her team, and Summer will always remain at the top of the favorites list for anyone who gets the chance to work with them in any capacity.</span><b></b></p>\n<p dir=\"ltr\"><span>As a brand, they dare to dream, think and execute out of the box, leaving no stone unturned in their mission to build a genuine community.</span><b></b></p>\n<p dir=\"ltr\"><span>It has been an extremely rewarding and fulfilling journey, working with Summer By Priyanka so far, here’s hoping we work together till kingdom come!</span><b></b></p>\n<p dir=\"ltr\"><strong>— Saniya Sugla</strong></p>\n<p dir=\"ltr\"><strong>— Founder, Creative Marketing Agency</strong></p>\n<p>&nbsp;</p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_Pygzxz",
+        "liquid_benGAj"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "img.image-element {border-radius: 10px;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_fUtCgD",
+    "magazine_style_layout_WLt4dN",
+    "magazine_style_layout_gFtNQU",
+    "magazine_style_layout_iwjwLP",
+    "magazine_style_layout_xendg8",
+    "magazine_style_layout_Khbk76",
+    "magazine_style_layout_y4NhFj",
+    "magazine_style_layout_LxCYdA",
+    "magazine_style_layout_Cz7hae",
+    "magazine_style_layout_iEeTDD",
+    "magazine_style_layout_AA8Kaw",
+    "magazine_style_layout_6PfGrY",
+    "magazine_style_layout_Xb9EE7",
+    "magazine_style_layout_Pk4Uit",
+    "magazine_style_layout_DffztB",
+    "contact_form_j4z6yL",
+    "faq_dUqWdL",
+    "advanced_content_Uh6Fc7",
+    "advanced_content_8kMPyJ",
+    "advanced_content_btzPqx",
+    "advanced_content_m33h4T"
+  ]
+}

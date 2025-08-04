@@ -1,0 +1,35 @@
+{% if template contains 'collection' %}
+  {% if collection.metafields.custom.multiline %}
+    <div class="page-width page-width--narrow">
+  <button
+    type="button"
+    class="collapsible-trigger collapsible-trigger--inline collapsible--auto-height text-left"
+    aria-controls="FAQ-content-question"
+    aria-expanded="false"
+  >
+    <span
+      class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open"
+      role="presentation"
+    >
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        role="presentation"
+        class="icon icon--wide icon-chevron-down"
+        viewBox="0 0 28 16"
+      >
+        <path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"></path>
+      </svg>
+    </span>
+    <span>More</span>
+  </button>
+  <div id="FAQ-content-question" class="collapsible-content collapsible-content--all">
+    <div class="collapsible-content__inner collapsible-content__inner--faq rte">
+       {{ collection.metafields.custom.multiline | metafield_tag }}
+    </div>
+  </div>
+</div>
+  {% endif %}
+{% endif %}
+
+

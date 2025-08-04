@@ -1,0 +1,203 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "advanced_content_iaqwxD": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_nxLwxV": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div style=\"position: relative; width: 100%; height: 0; padding-top: 125.0000%;\n padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;\n border-radius: 8px; will-change: transform;\">\n  <iframe loading=\"lazy\" style=\"position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;\"\n    src=\"https://www.canva.com/design/DAGpYlbY_SY/KxGaMWDvNNzSb-_U0t7b2g/view?embed\" allowfullscreen=\"allowfullscreen\" allow=\"fullscreen\">\n  </iframe>\n</div>\n<a href=\"https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGpYlbY_SY&#x2F;KxGaMWDvNNzSb-_U0t7b2g&#x2F;view?utm_content=DAGpYlbY_SY&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link\" target=\"_blank\" rel=\"noopener\"></a>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "liquid_8hFraY": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div style=\"position: relative; width: 100%; height: 0; padding-top: 56.2500%;\n padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;\n border-radius: 8px; will-change: transform;\">\n  <iframe loading=\"lazy\" style=\"position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;\"\n    src=\"https://www.canva.com/design/DAGpYSS0xx8/5AOQqbBk_kbR5aMa41LTbw/view?embed\" allowfullscreen=\"allowfullscreen\" allow=\"fullscreen\">\n  </iframe>\n</div>\n<a href=\"https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGpYSS0xx8&#x2F;5AOQqbBk_kbR5aMa41LTbw&#x2F;view?utm_content=DAGpYSS0xx8&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link\" target=\"_blank\" rel=\"noopener\"></a>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "liquid_RUKtAf": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div style=\"position: relative; width: 100%; height: 0; padding-top: 141.4286%;\n padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;\n border-radius: 8px; will-change: transform;\">\n  <iframe loading=\"lazy\" style=\"position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;\"\n    src=\"https://www.canva.com/design/DAGpYeKZe6Y/v3DihoYzY33U5Xtn7X3F9Q/view?embed\" allowfullscreen=\"allowfullscreen\" allow=\"fullscreen\">\n  </iframe>\n</div>\n<a href=\"https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGpYeKZe6Y&#x2F;v3DihoYzY33U5Xtn7X3F9Q&#x2F;view?utm_content=DAGpYeKZe6Y&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link\" target=\"_blank\" rel=\"noopener\">White Lookbook Fashion Magazine Cover</a>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_nxLwxV",
+        "liquid_8hFraY",
+        "liquid_RUKtAf"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "advanced_content_eKdQik": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_pDYWyC": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div style=\"position: relative; width: 100%; height: 0; padding-top: 56.2500%;\n padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;\n border-radius: 8px; will-change: transform;\">\n  <iframe loading=\"lazy\" style=\"position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;\"\n    src=\"https://www.canva.com/design/DAGpYus8-BA/_YeEpNx5epNV1FZiYntojA/view?embed\" allowfullscreen=\"allowfullscreen\" allow=\"fullscreen\">\n  </iframe>\n</div>\n<a href=\"https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGpYus8-BA&#x2F;_YeEpNx5epNV1FZiYntojA&#x2F;view?utm_content=DAGpYus8-BA&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link\" target=\"_blank\" rel=\"noopener\">New Fashion Presentation</a>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "liquid_Bj6AWQ": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div style=\"position: relative; width: 100%; height: 0; padding-top: 141.4286%;\n padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;\n border-radius: 8px; will-change: transform;\">\n  <iframe loading=\"lazy\" style=\"position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;\"\n    src=\"https://www.canva.com/design/DAGpYnuBIhE/Xl603SBt-su5PGP2f3_AdQ/view?embed\" allowfullscreen=\"allowfullscreen\" allow=\"fullscreen\">\n  </iframe>\n</div>\n<a href=\"https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGpYnuBIhE&#x2F;Xl603SBt-su5PGP2f3_AdQ&#x2F;view?utm_content=DAGpYnuBIhE&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link\" target=\"_blank\" rel=\"noopener\">Cream Beige Brown Minimalist Elegant Fashion Lookbook Booklet</a>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "liquid_rNLyJt": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div style=\"position: relative; width: 100%; height: 0; padding-top: 177.7778%;\n padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;\n border-radius: 8px; will-change: transform;\">\n  <iframe loading=\"lazy\" style=\"position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;\"\n    src=\"https://www.canva.com/design/DAGpYu5seII/gMpHyjhp8cTlBX7GpSlWMQ/watch?embed\" allowfullscreen=\"allowfullscreen\" allow=\"fullscreen\">\n  </iframe>\n</div>\n<a href=\"https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGpYu5seII&#x2F;gMpHyjhp8cTlBX7GpSlWMQ&#x2F;watch?utm_content=DAGpYu5seII&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link\" target=\"_blank\" rel=\"noopener\">Love Instagram Reel in Pink Style</a>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_pDYWyC",
+        "liquid_Bj6AWQ",
+        "liquid_rNLyJt"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "rich_text_j3AGBF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XHPiMm": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "text_ptNK3p": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>    </p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XHPiMm",
+        "text_ptNK3p"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "1734776649da83532b": {
+      "type": "apps",
+      "blocks": {
+        "hulk_form_builder_form_block_BhQwTh": {
+          "type": "shopify://apps/hulk-form-builder/blocks/form-block/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+          "settings": {
+            "form_uuid": "rtovWkNCMY9NHq3tTNyKTw",
+            "form_settings": false,
+            "font_color": "#000000",
+            "size": 14,
+            "input_background_color": "#ffffff",
+            "input_background_color_focus": "#f4dada",
+            "input_border_radius": 1,
+            "input_border_color": "#ebe9e9",
+            "input_border_color_focus": "#2d2727",
+            "input_font_color": "#3d3131",
+            "input_size": 14,
+            "border_color": "#121212",
+            "border_radius": 2,
+            "border": 1,
+            "fill_color": "#ebe9e9",
+            "padding": 35,
+            "form_width": 600,
+            "btn_text": "Submit",
+            "sub_btn_txt_color": "#f3f3f3",
+            "sub_btn_bg_color": "#3f3333",
+            "sub_btn_font_size": 14,
+            "sub_btn_bdr_color": "#ffffff",
+            "sub_btn_bdr_rad": 3,
+            "sub_btn_bdr_width": 1,
+            "fonts": "Times New Roman"
+          }
+        }
+      },
+      "block_order": [
+        "hulk_form_builder_form_block_BhQwTh"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "map": {
+      "type": "map",
+      "settings": {
+        "map_title": "Our Retail Store",
+        "address": "<p>D6, 1st Floor, Defence Colony, New Delhi, 110024</p><p>Tue - Sun, 10:30 am - 7:30 pm</p>",
+        "map_address": "D6, ist Floor, Defence Colony, New Delhi, 110024",
+        "api_key": "",
+        "show_button": true,
+        "background_image": "shopify://shop_images/Untitled_design_6_d25d616b-53fc-45c6-a4d9-ef573eef2cd2.png",
+        "lazyload_images": true
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "home_featured_products": "new-arrivals",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "advanced_content_iaqwxD",
+    "advanced_content_eKdQik",
+    "rich_text_j3AGBF",
+    "main",
+    "1734776649da83532b",
+    "map",
+    "featured-collection"
+  ]
+}

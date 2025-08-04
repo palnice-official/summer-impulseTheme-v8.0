@@ -1,0 +1,81 @@
+{% style %}
+  .footer-seo-keywords-section-{{ section.id }}{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color:{{section.settings.seo_text_color}};
+    text-align: {{section.settings.seo_text-alignment}};
+
+    .title-{{ section.id }}{
+      font-size: 14px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+  }
+{% endstyle %}
+{% if template.name == "index" %}
+{% if section.settings.show_seo_keywords %}
+  <div class="footer-seo-keywords-section-{{ section.id }} page-width">
+    {% if section.settings.seo_keywords_title != blank %}
+      <h2 class="title-{{ section.id }}">{{ section.settings.seo_keywords_title }}</h2>
+    {% endif %}
+    <div class="footer-seo-keywords-{{ section.id }}">
+      {% if section.settings.seo_keywords != blank %}
+        <p>{{ section.settings.seo_keywords }}</p>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+{% endif %}
+
+{% schema %}
+{
+  "name": "SEO keywords",
+  "settings": [
+    {
+      "type": "header",
+      "content": "SEO keywords Settings"
+    },
+    {
+      "type": "text",
+      "id": "seo_keywords_title",
+      "label": "keywords Section Title",
+      "default": "Popular Searches"
+    },
+    {
+      "type": "color",
+      "id": "seo_text_color",
+      "label": "Text Color",
+      "default": "#000"
+    },
+    {
+      "type": "select",
+      "id": "seo_text-alignment",
+      "label": "Text Alignment",
+      "options": [
+        {"value": "left", "label": "Left"},
+        {"value": "center", "label": "Center"},
+        {"value": "right", "label": "Right"},
+      ],
+      "default": "center"
+    },
+    {
+     "type": "richtext",
+      "id": "seo_keywords",
+      "label": "SEO Keywords",
+    },
+    {
+      "type": "checkbox",
+      "id": "show_seo_keywords",
+      "label": "Show SEO Keywords",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "SEO keywords",
+      "category": "SEO"
+    }
+  ]
+}
+{% endschema %}

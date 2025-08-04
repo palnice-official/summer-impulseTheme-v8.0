@@ -1,0 +1,196 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "blog-template",
+      "settings": {
+        "blog_show_tag_filter": true,
+        "blog_show_rss": true,
+        "blog_show_tags": true,
+        "blog_show_date": true,
+        "blog_show_comments": true,
+        "blog_show_author": true,
+        "blog_show_excerpt": false,
+        "blog_image_size": "natural"
+      }
+    },
+    "blog_posts_pAyHjQ": {
+      "type": "blog-posts",
+      "disabled": true,
+      "settings": {
+        "title": "Summer By Priyanka Gupta's Blog",
+        "blog": "posts",
+        "post_limit": 6,
+        "blog_show_tags": true,
+        "blog_show_date": true,
+        "blog_show_comments": true,
+        "blog_show_author": true,
+        "view_all": false,
+        "blog_image_size": "natural",
+        "divider": true
+      }
+    },
+    "featured_collection_YemEUn": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "home_featured_products": "a-starry-night",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection1": {
+          "type": "collection",
+          "settings": {
+            "collection": "a-beach-holiday",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection2": {
+          "type": "collection",
+          "settings": {
+            "collection": "a-starry-night",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection4": {
+          "type": "collection",
+          "settings": {
+            "collection": "summer-sarees",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "f2f4e338-ae0c-42fa-90e1-2ac306d84f38": {
+          "type": "collection",
+          "settings": {
+            "collection": "weekend-dresses",
+            "title": "",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "collection1",
+        "collection2",
+        "collection4",
+        "f2f4e338-ae0c-42fa-90e1-2ac306d84f38"
+      ],
+      "settings": {
+        "title": "Browse Our Collections",
+        "divider": false,
+        "per_row": 5,
+        "enable_gutter": false
+      }
+    },
+    "text_and_image_tUKCYw": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/IMG_9447.jpg",
+        "image_mask": "none",
+        "image2": "shopify://shop_images/44AA086A-63BC-404F-97C0-EBAF108AFA6F.png",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to tell a story, </p>",
+        "button_label": "View",
+        "button_link": "",
+        "button_style": "secondary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "promo_grid_RxUB3h": {
+      "type": "promo-grid",
+      "blocks": {
+        "advanced_LENwUD": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "image": "shopify://shop_images/w-day-final-banner.png",
+            "video_url": "https://youtube.com/shorts/IicUpmBx9R0?si=3-qe7RD_YaOgmjJu",
+            "width": "100",
+            "height": 320,
+            "text_size": 50,
+            "text_align": "vertical-center horizontal-center",
+            "color_accent": "#6cc197",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "advanced_LENwUD"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true,
+        "lazyload_images": true
+      }
+    },
+    "text_columns_dJ9tMA": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_ixwGHV": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Screenshot-2025-02-27-19-35-53-77_92460851df6f172a4592fca41cc2d2e6.jpg",
+            "image_mask": "none",
+            "image_width": 230,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_ixwGHV"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "blog_posts_pAyHjQ",
+    "featured_collection_YemEUn",
+    "featured-collections",
+    "text_and_image_tUKCYw",
+    "promo_grid_RxUB3h",
+    "text_columns_dJ9tMA"
+  ]
+}

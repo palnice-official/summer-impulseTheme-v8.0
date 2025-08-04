@@ -1,0 +1,317 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "advanced_content_Rb4fwp": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_FyQza6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MG_0898-c-1.jpg",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "liquid_7DQAWM": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "code": "{% style %}\n  custom_btn {\n    \n  }\n{% endstyle %}\n\n<div class=\"custom_btn rte\">\n  <a href=\"/collections/an-indian-summer\" class=\"btn black_border\">\n    An Indian Summer\n  </a>\n</div>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_FyQza6",
+        "liquid_7DQAWM"
+      ],
+      "custom_css": [
+        ".image-wrap.loaded {border-radius: 5px;}",
+        "@media only screen and (max-width: 768px) {.custom-content {margin-bottom: -17px; margin-left: -17px; margin-top: 20px; }}"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "lazyload_images": true
+      }
+    },
+    "rich_text_hpT3BB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_rCmFPr": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Rich text"
+          }
+        },
+        "text_pdRkxW": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Where the wind knows your story.<br/><br/>This collection is an ode to the summers we carry in our bones — the kind only India can offer. It’s the rustle of neem leaves, the cry of parrots at dawn, the scent of rain-soaked earth, and the feeling of sun-warmed skin touched by a familiar breeze.<br/><br/>Shot in the quiet magic of Leh, An Indian Summer captures that rare stillness — when time slows down and the wind begins to whisper your memories back to you.<br/><br/>Breezy kurtas and dresses in airy silhouettes are brought to life with prints of Indian foliage and parrots — vibrant symbols of nature, freedom, and the poetry of everyday life. Delicate hand embroideries trace stories only an Indian summer can tell.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rCmFPr",
+        "text_pdRkxW"
+      ],
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "divider": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "testimonial_carousel_wbWW6f": {
+      "type": "testimonial-carousel",
+      "blocks": {
+        "testimonial_YPxJQp": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nishtha_Sharma.jpg",
+            "quote": "<p>It was an absolute pleasure to wear the outfit by Summer by Priyanka.<br/><br/>Tha tailoring and the outfit is excellent and the service was equally impeccable. Trying and browsing at the beautiful store was made so easy by the staff!<br/><br/>Definitely coming back to the brand</p>",
+            "author": "Nishtha Sharma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_WRMaGe": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/viriti_verma.jpg",
+            "quote": "<p>Summer by Priyanka Gupta is like a breath of fresh air out of so many designer stores we visited for my sister-in-laws bridal outfit.<br/><br/>Her outfits were a love at first sight! They have a great collection and the store is beautifully decorated and designed. Kanchan ji, who is also the store manager helped us a lot with making correct decisions, as a result we were in love with the final outcome.<br/><br/> We ended up picking up so many sarees and suits. It's a highly recommended store, do visit.</p>",
+            "author": "Vriti Verma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_VRyTED": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Leena_Yerneni.webp",
+            "quote": "<p>Great designs and quality. Just loved how our outfits turned out for my daughter’s first birthday making it more memorable.<br/><br/>So dreamy and just the way I envisioned🌸💞💖</p>",
+            "author": "Leena Yerneni, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_3rLN9j": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nidhi_Modi.webp",
+            "quote": "<p>Well, Summer is all about it’s pastel tones and cute detailed colorful embroideries. Wearing summer always makes you to stand out in the crowd and creates a fresh vibe around you.<br/><br/>I just love the service, the work, the fabric, the embroideries and every bit of it.<br/><br/>They make such unique and chic designs that makes us fall for summer everyday. Always a Summer Girl 🌸</p>",
+            "author": "Nidhi Modi, India",
+            "rating": 5
+          }
+        },
+        "testimonial_FmHYNn": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/APARNA_ROY.webp",
+            "quote": "<p>We have had a wonderful experience at the Summer store always without fail !!<br/><br/>The outfits are fabulous and so is the store staff. Very accommodating. They customised a dress for me and it turned out lovely. My mom and I now shop regularly.<br/><br/>P.S: the store is so beautiful. My little daughter has a gala time every time we visit.</p>",
+            "author": "Aparna Roy, India",
+            "rating": 5
+          }
+        },
+        "testimonial_kibXMb": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/NEENU_NAYYAR.webp",
+            "quote": "<p>Summer by Priyanka gupta was an instagram discovery. I was looking for simple & elegant yet dressy clothes for a family wedding.<br/><br/>I went to the store at def col, met Priyanka and was absolutely in awe of her and her craft. Such simplicity in both :)<br/><br/>Since then, Summer by Priyanka Gupta has become my go to store for any occasion for my daughter and I. Absolutely love it ♥️</p>",
+            "author": "Neenu Nayyar, India",
+            "rating": 5
+          }
+        },
+        "testimonial_QNxfHh": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Sailaja.webp",
+            "quote": "<p>I had a wonderful shopping experience with Summer by Priyanka Gupta! The saree I purchased exceeded my expectations in both quality and design.<br/><br/>The customer service was exceptional, and the entire process was smooth and enjoyable. I will definitely be shopping with you again and will recommend your store to friends and family.<br/><br/>Thank you for providing such beautiful products and excellent service!</p>",
+            "author": "Sailaja, Chicago, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_FPEpFm": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/PAYAL_C_GUPTA.webp",
+            "quote": "<p>I love Summer by Priyanka Gupta for their stunning pastel and embroidered outfits, highlighting their beautiful craftsmanship that consistently impresses her.</p>",
+            "author": "Payal C Gupta, Dubai",
+            "rating": 5
+          }
+        },
+        "testimonial_hWe9Je": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rajwinder_Gill.webp",
+            "quote": "<p>Thankyou for sending me the beautiful dresses. I appreciate their quality and fit , they are perfect in every way. I'm eager to place more orders with you.</p>",
+            "author": "Rajwinder Gill, USA",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_YPxJQp",
+        "testimonial_WRMaGe",
+        "testimonial_VRyTED",
+        "testimonial_3rLN9j",
+        "testimonial_FmHYNn",
+        "testimonial_kibXMb",
+        "testimonial_QNxfHh",
+        "testimonial_FPEpFm",
+        "testimonial_hWe9Je"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Don't Take Our Word For It......",
+        "url": "https://www.lovesummer.in/pages/beautiful-girls-of-summer",
+        "btn_text": "VIEW CLIENT DIARY",
+        "cellAlign": "left",
+        "time": 5000,
+        "pageDots": false,
+        "adaptiveHeight": true,
+        "padding-top": 0,
+        "padding-bottom": 50
+      }
+    },
+    "faq_waPjVG": {
+      "type": "faq",
+      "blocks": {
+        "question_xeEYe4": {
+          "type": "question",
+          "settings": {
+            "title": "How versatile are Summer Kurtas for different occasions?",
+            "text": "<p>Summer Kurtas are among the most adaptable pieces in any ethnic wardrobe. Whether you're heading to a brunch, office meeting, festive gathering, or vacation, our Summer Kurta Sets offer effortless elegance. Pair them with denim for a casual vibe, or wear with palazzos and statement earrings for a semi-formal or festive look. Their lightweight fabric and breathable silhouettes make them ideal for both day and evening wear during warmer months.</p>"
+          }
+        },
+        "question_HgTM6p": {
+          "type": "question",
+          "settings": {
+            "title": "What makes our Pastel Kurta Sets unique?",
+            "text": "<p>Our Pastel Kurta Sets are crafted using soft, breathable fabrics like cotton and cotton-silk blends, ensuring maximum comfort in warm weather. What truly sets them apart is the thoughtfully curated pastel palette—think soothing blush pinks, mint greens, sky blues, and buttery yellows. These tones not only keep you cool but also add a modern, refreshing touch to traditional ethnic wear. Each design blends minimal embroidery or print detailing with timeless cuts, making them both elegant and wearable.</p>"
+          }
+        },
+        "question_rNJDpL": {
+          "type": "question",
+          "settings": {
+            "title": "Can these Summer Kurtas be styled for both casual and formal events?",
+            "text": "<p>Absolutely. Our comfortable pastel ethnic wear is designed with versatility in mind. For casual outings, pair your pastel kurta with straight pants and Kolhapuris. To elevate it for formal events, opt for co-ord kurta sets with dupattas, accessorize with jhumkas and metallic flats, and add light makeup. These styles transition seamlessly from a laid-back day look to a refined evening ensemble.</p>"
+          }
+        },
+        "question_yhzFrk": {
+          "type": "question",
+          "settings": {
+            "title": "How do pastel colors enhance summer ethnic wear?",
+            "text": "<p>Pastel shades are ideal for Indian summers—they reflect heat, feel calming to the eye, and exude understated elegance. Our pastel kurta sets are inspired by nature’s summer palette and handpicked to flatter all skin tones. Beyond aesthetics, pastels blend beautifully with traditional motifs and contemporary cuts, making them a favorite for women seeking comfortable pastel ethnic wear with a fresh and youthful vibe.</p>"
+          }
+        },
+        "question_zJMNt7": {
+          "type": "question",
+          "settings": {
+            "title": "What occasions are best suited for wearing Summer Kurta Sets?",
+            "text": "<p>Our Summer Kurta Sets are versatile enough for a wide range of occasions:<br/>Workwear: Go for clean-cut, solid pastel kurtas with minimal prints<br/>Festive Events: Choose sets with subtle embroidery or block prints, paired with a light dupatta<br/><br/><br/>Travel or Brunch: Opt for breezy cotton kurtas styled with juttis and a tote<br/><br/><br/>Home Entertaining: Choose relaxed fits in soft hues, accessorized with handcrafted jewellery<br/> The beauty of this collection lies in how effortlessly it transitions across moods and settings.</p>"
+          }
+        },
+        "question_fYYEwy": {
+          "type": "question",
+          "settings": {
+            "title": "Are these Summer Kurtas comfortable for all-day wear?",
+            "text": "<p>Yes, comfort is central to our design philosophy. These Summer Kurtas are made from breathable, lightweight fabrics that allow easy movement and airflow, making them perfect for all-day wear—even in peak summer heat. Our relaxed fits and thoughtful tailoring ensure that you feel just as good as you look throughout the day.</p>"
+          }
+        },
+        "question_PaGDX6": {
+          "type": "question",
+          "settings": {
+            "title": "How can I accessorize Pastel Kurta Sets to suit different looks?",
+            "text": "<p>Styling pastel kurtas is all about balance. For a minimalist daytime look, pair with nude sandals, dainty studs, and a natural makeup palette. To dress it up, opt for oxidized silver jewelry, bold bangles, and embellished flats. Bags in earthy tones or soft pastels add a cohesive finish. You can even layer your Summer Kurta with a cropped jacket or dupatta for more formal flair.</p>"
+          }
+        },
+        "question_qwBipf": {
+          "type": "question",
+          "settings": {
+            "title": "Why are Summer Kurtas a wardrobe essential?",
+            "text": "<p>A good Summer Kurta is timeless, fuss-free, and endlessly wearable. It’s the go-to solution for those seeking elegant yet comfortable pastel ethnic wear that doesn’t compromise on style. Whether you’re curating a capsule wardrobe or building a festive collection, our pastel kurtas offer the perfect mix of versatility, comfort, and modern ethnic charm.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_xeEYe4",
+        "question_HgTM6p",
+        "question_rNJDpL",
+        "question_yhzFrk",
+        "question_zJMNt7",
+        "question_fYYEwy",
+        "question_PaGDX6",
+        "question_qwBipf"
+      ],
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "title": "FAQs"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "advanced_content_Rb4fwp",
+    "rich_text_hpT3BB",
+    "main-collection",
+    "testimonial_carousel_wbWW6f",
+    "faq_waPjVG"
+  ]
+}

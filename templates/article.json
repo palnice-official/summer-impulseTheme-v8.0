@@ -1,0 +1,106 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "article-template",
+      "custom_css": [
+        "h1.section-header__title {display: none;}",
+        ".article__author {display: none;}",
+        "img {border-radius: 10px;}"
+      ],
+      "settings": {
+        "image_hero": false,
+        "blog_show_tags": false,
+        "blog_show_date": false,
+        "blog_show_comments": true,
+        "blog_show_author": true,
+        "social_sharing_blog": true
+      }
+    },
+    "85efee06-8e5c-4ed9-bd7c-858afd470d2c": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16682307682540__85efee06-8e5c-4ed9-bd7c-858afd470d2c-1678619146c57fd411-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "kurta-sets-women",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "template--16682307682540__85efee06-8e5c-4ed9-bd7c-858afd470d2c-1678619146c57fd411-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "designer-pastel-sarees",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "template--16682307682540__85efee06-8e5c-4ed9-bd7c-858afd470d2c-1678619146c57fd411-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "light-lehengas",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "template--16682307682540__85efee06-8e5c-4ed9-bd7c-858afd470d2c-1678619146c57fd411-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "tunics-for-women",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "20ae22ec-9598-4a1d-aff6-87685b843937": {
+          "type": "collection",
+          "settings": {
+            "collection": "dresses",
+            "title": "",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16682307682540__85efee06-8e5c-4ed9-bd7c-858afd470d2c-1678619146c57fd411-0",
+        "template--16682307682540__85efee06-8e5c-4ed9-bd7c-858afd470d2c-1678619146c57fd411-1",
+        "template--16682307682540__85efee06-8e5c-4ed9-bd7c-858afd470d2c-1678619146c57fd411-2",
+        "template--16682307682540__85efee06-8e5c-4ed9-bd7c-858afd470d2c-1678619146c57fd411-3",
+        "20ae22ec-9598-4a1d-aff6-87685b843937"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Shop By Collection",
+        "divider": false,
+        "per_row": 5,
+        "enable_gutter": true
+      }
+    },
+    "featured_collection_EcFBiF": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "home_featured_products": "anarkali-sets",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "85efee06-8e5c-4ed9-bd7c-858afd470d2c",
+    "featured_collection_EcFBiF"
+  ]
+}

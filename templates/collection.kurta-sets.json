@@ -1,0 +1,358 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 8,
+            "mobile_flush_grid": true
+          }
+        },
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "subcollections",
+        "product_grid",
+        "collection_description"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "testimonial_carousel_rwkVPx": {
+      "type": "testimonial-carousel",
+      "blocks": {
+        "testimonial_h6qTBH": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Aarti_Patel-1.jpg",
+            "quote": "<p>I had an amazing experience working with the Summer by Priyanka team. There were so many outfits I loved I couldn’t decide which one I wanted and then I saw this sari in a teal and asked for it to be customized to this beautiful lilac color I wanted to wear for my pithi. Soon after, my mother in law fell in love with another sari and we ended up getting it for her as well.</p>",
+            "author": "Aarti Patel",
+            "rating": 5
+          }
+        },
+        "testimonial_jzhfX6": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/viriti_verma.jpg",
+            "quote": "<p>Summer by Priyanka Gupta is like a breath of fresh air out of so many designer stores we visited for my sister-in-laws bridal outfit.<br/><br/>Her outfits were a love at first sight! They have a great collection and the store is beautifully decorated and designed. Kanchan ji, who is also the store manager helped us a lot with making correct decisions, as a result we were in love with the final outcome.<br/><br/> We ended up picking up so many sarees and suits. It's a highly recommended store, do visit.</p>",
+            "author": "Vriti Verma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_iGcatU": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nishtha_Sharma.jpg",
+            "quote": "<p>It was an absolute pleasure to wear the outfit by Summer by Priyanka.<br/><br/>Tha tailoring and the outfit is excellent and the service was equally impeccable. Trying and browsing at the beautiful store was made so easy by the staff!<br/><br/>Definitely coming back to the brand.</p>",
+            "author": "Nishtha Sharma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_RhkeVe": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Leena_Yerneni.webp",
+            "quote": "<p>Great designs and quality. Just loved how our outfits turned out for my daughter’s first birthday making it more memorable.<br/><br/>So dreamy and just the way I envisioned🌸💞💖</p>",
+            "author": "Leena Yerneni, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_gP6dWd": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nidhi_Modi.webp",
+            "quote": "<p>Well, Summer is all about it’s pastel tones and cute detailed colorful embroideries. Wearing summer always makes you to stand out in the crowd and creates a fresh vibe around you.<br/><br/>I just love the service, the work, the fabric, the embroideries and every bit of it.<br/><br/>They make such unique and chic designs that makes us fall for summer everyday. Always a Summer Girl 🌸</p>",
+            "author": "Nidhi Modi, India",
+            "rating": 5
+          }
+        },
+        "testimonial_k78PLn": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/APARNA_ROY.webp",
+            "quote": "<p>We have had a wonderful experience at the Summer store always without fail !!</p><p><br/>The outfits are fabulous and so is the store staff. Very accommodating. They customised a dress for me and it turned out lovely. My mom and I now shop regularly.</p><p><br/>P.S: the store is so beautiful. My little daughter has a gala time every time we visit.</p>",
+            "author": "Aparna Roy, India",
+            "rating": 5
+          }
+        },
+        "testimonial_cWfeRG": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/NEENU_NAYYAR.webp",
+            "quote": "<p>Summer by Priyanka gupta was an instagram discovery. I was looking for simple & elegant yet dressy clothes for a family wedding.<br/><br/>I went to the store at def col, met Priyanka and was absolutely in awe of her and her craft. Such simplicity in both :)<br/><br/>Since then, Summer by Priyanka Gupta has become my go to store for any occasion for my daughter and I. Absolutely love it ♥️\"</p>",
+            "author": "Neenu Nayyar, India",
+            "rating": 5
+          }
+        },
+        "testimonial_UPJLCB": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Sailaja.webp",
+            "quote": "<p>I had a wonderful shopping experience with Summer by Priyanka Gupta! The saree I purchased exceeded my expectations in both quality and design.<br/><br/>The customer service was exceptional, and the entire process was smooth and enjoyable. I will definitely be shopping with you again and will recommend your store to friends and family.<br/><br/>Thank you for providing such beautiful products and excellent service!</p>",
+            "author": "Sailaja, Chicago, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_yDzkRa": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/PAYAL_C_GUPTA.webp",
+            "quote": "<p>I love Summer by Priyanka Gupta for their stunning pastel and embroidered outfits, highlighting their beautiful craftsmanship that consistently impresses her.</p>",
+            "author": "Payal C Gupta, Dubai",
+            "rating": 5
+          }
+        },
+        "testimonial_48mdER": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rajwinder_Gill.webp",
+            "quote": "<p>Thankyou for sending me the beautiful dresses. I appreciate their quality and fit , they are perfect in every way. I'm eager to place more orders with you.</p>",
+            "author": "Rajwinder Gill, USA",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_h6qTBH",
+        "testimonial_jzhfX6",
+        "testimonial_iGcatU",
+        "testimonial_RhkeVe",
+        "testimonial_gP6dWd",
+        "testimonial_k78PLn",
+        "testimonial_cWfeRG",
+        "testimonial_UPJLCB",
+        "testimonial_yDzkRa",
+        "testimonial_48mdER"
+      ],
+      "disabled": true,
+      "name": "Testimonial Carousel",
+      "settings": {
+        "title": "Don't Take Our Word For It......",
+        "url": "https://www.lovesummer.in/pages/beautiful-girls-of-summer",
+        "btn_text": "client gallery",
+        "cellAlign": "left",
+        "time": 5000,
+        "pageDots": false,
+        "adaptiveHeight": true,
+        "padding-top": 0,
+        "padding-bottom": 50
+      }
+    },
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h1>Shop Kurta Sets for Women</h1><p>Welcome to our Women's Kurta Sets Collection, where the charm of traditional attire meets the allure of contemporary fashion. Dive into the vastness of our collection, where every piece embodies elegance, comfort, and style. Whether you're seeking timeless classics or trendy designs, our Kurta Sets collection is your go-to destination for finding your perfect ensemble.</p><p></p><h2><strong>Vastness and Freshness</strong></h2><p><br/>Our collection boasts an extensive range of Kurta Sets, offering something for every taste and occasion. From vibrant prints to intricate embroideries, each design is crafted with utmost care to cater to your diverse style needs. Discover the freshness of our latest arrivals, constantly updated to keep your wardrobe up-to-date with the latest trends.</p><h2><strong>Designs</strong></h2><p><br/>Explore a plethora of designs that showcase the richness of Indian craftsmanship. From traditional to contemporary, our Kurta Sets feature a variety of silhouettes, necklines, and embellishments to suit every preference. Whether you prefer the simplicity of straight-cut kurtas or the drama of Anarkali sets, we have it all.</p><h2><strong>Women Kurta Sets by Color</strong></h2><p><br/>Indulge in the soft elegance of pastel hues with our curated collection of Women Kurta Sets by color. Embrace the serenity of pastel shades such as:</p><ol><li><strong>Powder Blue:</strong> Delicate and soothing, perfect for daytime events or casual outings.</li><li><strong>Blush Pink:</strong> Feminine and romantic, ideal for brunches or evening gatherings.</li><li><strong>Mint Green:</strong> Refreshing and vibrant, great for summer occasions or festive celebrations.</li><li><strong>Lilac:</strong> Elegant and sophisticated, suitable for formal occasions or evening events.</li></ol><h2><strong>Women's Kurta Sets by Occasion</strong></h2><p><br/>No matter the occasion, we have the perfect ensemble for you. Choose from our selection of Kurta Sets tailored for various occasions:</p><ol><li><strong>Casual Wear:</strong> Effortlessly chic kurtas for everyday comfort and style.</li><li><strong>Festive Wear:</strong> Embellished and vibrant sets to add glamour to your celebrations.</li><li><strong>Work Wear:</strong> Elegant yet professional kurtas for your office wardrobe.</li><li><strong>Wedding Wear:</strong> Opulent designs adorned with intricate embroideries for the bride and her squad.</li></ol><h2><strong>Women Kurta Sets by Fabric</strong></h2><p><br/>Experience the luxury of premium fabrics with our Women Kurta Sets categorized by fabric:</p><ol><li><strong>Cotton:</strong> Lightweight and breathable, perfect for everyday wear.</li><li><strong>Silk:</strong> Luxurious and regal, ideal for special occasions or festivities.</li><li><strong>Chiffon:</strong> Flowy and elegant, adds a touch of grace to any ensemble.</li><li><strong>Linen:</strong> Crisp and comfortable, great for semi-formal or casual events.</li></ol><p>With such a diverse collection, finding your perfect Kurta Set has never been easier. Explore our range today and elevate your ethnic wardrobe with timeless elegance and modern flair.</p><p><strong>Shop Now and Embrace Tradition with Style!</strong></p><p></p><h2>What are Kurta Sets?</h2><p>Kurta sets for women are traditional Indian outfits that consist of a kurta (a loose-fitting shirt), paired with bottoms such as pajamas, salwar, or churidar, and often accompanied by a dupatta (a long scarf). These sets are designed specifically for women, offering a comfortable and stylish option for various occasions.</p><p>The kurta in a women's kurta set is typically longer in length, reaching below the waist and sometimes even knee-length or longer. It can have various necklines such as round, V-neck, boat neck, or mandarin collar, among others. The sleeves of the kurta can be long, three-fourth, or short, depending on the style and personal preference.</p><p>The bottoms that are paired with the kurta can vary. Pajamas are comfortable and loose-fitting trousers that are commonly worn with kurta sets. Salwar is a type of baggy pants with a fitted waistband and loose-fitting from the hips down. Churidar is a form-fitting legging-style bottom with gathers at the ankles. These bottoms complement the kurta and complete the outfit.</p><p>Dupatta, the long scarf, is often included with women's kurta sets. It can be worn in different ways, draped over the shoulders, or around the neck, adding elegance and completing the ensemble. The dupatta can be matched with the kurta or can be in a contrasting color or design, enhancing the overall look.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "faq_H4Te6L": {
+      "type": "faq",
+      "blocks": {
+        "question_T4FTJg": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Designer Women's Kurta Sets by Occasion",
+            "text": "<p>No matter the occasion, we have the perfect ensemble for you. Choose from our selection of Kurta Sets tailored for various occasions:</p><ol><li><strong>Casual Wear:</strong> Effortlessly chic kurtas for everyday comfort and style.</li><li><strong>Festive Wear:</strong> Embellished and vibrant sets to add glamour to your celebrations.</li><li><strong>Work Wear:</strong> Elegant yet professional kurtas for your office wardrobe.</li><li><strong>Wedding Wear:</strong> Opulent designs adorned with intricate embroideries for the bride and her squad.</li></ol>"
+          }
+        },
+        "question_CYmyJW": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "What are the trendy colors for Kurta Sets for this season?",
+            "text": "<p>Indulge in the soft elegance of pastel hues with our curated collection of Women Kurta Sets by color. Embrace the serenity of pastel shades such as:</p><ol><li><strong>Powder Blue:</strong> Delicate and soothing, perfect for daytime events or casual outings.</li><li><strong>Blush Pink:</strong> Feminine and romantic, ideal for brunches or evening gatherings.</li><li><strong>Mint Green:</strong> Refreshing and vibrant, great for summer occasions or festive celebrations.</li><li><strong>Lilac:</strong> Elegant and sophisticated, suitable for formal occasions or evening events.</li></ol>"
+          }
+        },
+        "question_dNQc46": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "What fabrics do we use for our Kurta Sets at Summer by Priyanka Gupta?",
+            "text": "<p>Experience the luxury of premium fabrics with our Women Kurta Sets categorized by fabric:</p><ol><li><strong>Cotton:</strong> Lightweight and breathable, perfect for everyday wear.</li><li><strong>Silk:</strong> Luxurious and regal, ideal for special occasions or festivities.</li><li><strong>Chiffon:</strong> Flowy and elegant, adds a touch of grace to any ensemble.</li><li><strong>Linen:</strong> Crisp and comfortable, great for semi-formal or casual events.</li></ol>"
+          }
+        },
+        "question_Lz7jEW": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "What are Kurta Sets?",
+            "text": "<p>Kurta sets for women are traditional Indian outfits that consist of a kurta (a loose-fitting shirt), paired with bottoms such as pajamas, salwar, or churidar, and often accompanied by a dupatta (a long scarf). These sets are designed specifically for women, offering a comfortable and stylish option for various occasions.</p><p>The kurta in a women's kurta set is typically longer in length, reaching below the waist and sometimes even knee-length or longer. It can have various necklines such as round, V-neck, boat neck, or mandarin collar, among others. The sleeves of the kurta can be long, three-fourth, or short, depending on the style and personal preference.</p><p>The bottoms that are paired with the kurta can vary. Pajamas are comfortable and loose-fitting trousers that are commonly worn with kurta sets. Salwar is a type of baggy pants with a fitted waistband and loose-fitting from the hips down. Churidar is a form-fitting legging-style bottom with gathers at the ankles. These bottoms complement the kurta and complete the outfit.</p><p>Dupatta, the long scarf, is often included with women's kurta sets. It can be worn in different ways, draped over the shoulders, or around the neck, adding elegance and completing the ensemble. The dupatta can be matched with the kurta or can be in a contrasting color or design, enhancing the overall look.</p>"
+          }
+        },
+        "question_6TYbcF": {
+          "type": "question",
+          "settings": {
+            "title": "What is a kurta set?",
+            "text": "<p>A kurta set typically consists of a kurta (a tunic or long top) paired with a matching or contrasting bottom like churidar, palazzo, sharara, garara, or straight pants, often accompanied by a dupatta. It’s a versatile ensemble that can be styled for everything from daily wear to grand festive occasions.</p>"
+          }
+        },
+        "question_6w9Yhn": {
+          "type": "question",
+          "settings": {
+            "title": "What types of kurta sets are best for everyday wear?",
+            "text": "<p>For everyday comfort and style, opt for:<br/>\t•\tStraight cotton kurtas with tapered pants or leggings.<br/>\t•\tA-line kurtas that provide ease of movement.<br/>\t•\tBreathable fabrics like mul cotton, linen-cotton blends, or rayon.<br/>\t•\tLight prints or minimal embroidery to keep it simple and work-friendly.<br/><br/>Look for kurta sets that are easy to maintain, non-sheer, and have pockets for practicality.</p>"
+          }
+        },
+        "question_LGFTx9": {
+          "type": "question",
+          "settings": {
+            "title": "Are kurta sets suitable for office and workwear?",
+            "text": "<p>Yes! Workwear kurta sets are one of the most functional and graceful outfits you can wear to the office. Choose:<br/>\t•\tMuted tones, solids, or pinstripes for a formal vibe.<br/>\t•\t3/4th sleeves or full-sleeve kurtas for a polished look.<br/>\t•\tComfortable fabrics like Chanderi silk blends, cotton, or modal.<br/>\t•\tMinimal embroidery or lacework to keep things professional.</p>"
+          }
+        },
+        "question_JkpeEC": {
+          "type": "question",
+          "settings": {
+            "title": "What kind of kurta sets are ideal for wedding guests or side functions?",
+            "text": "<p>For attending weddings or side functions like mehendi, haldi, sangeet, or a cocktail night, opt for:<br/>\t•\tSharara sets with mirrorwork or gota patti for mehendi/sangeet.<br/>\t•\tGarara sets with zardozi or sequins for reception or evening wear.<br/>\t•\tAnarkali sets with soft flowy dupattas for the ceremony.<br/>\t•\tStraight-cut silk kurtas with brocade pants for a regal yet understated look.</p>"
+          }
+        },
+        "question_aAa4VA": {
+          "type": "question",
+          "settings": {
+            "title": "How do I choose the right kurta set for Diwali?",
+            "text": "<p>Diwali calls for sparkle without discomfort. Ideal kurta sets include:<br/>\t•\tBright jewel tones like ruby, emerald, and mustard.<br/>\t•\tChikankari or foil print straight kurtas for a blend of subtle and festive.<br/>\t•\tSharara or Anarkali sets with light embroidery and contrast dupattas.<br/>\t•\tLightweight silks or georgettes that are easy to carry during long evenings.</p>"
+          }
+        },
+        "question_QMnDet": {
+          "type": "question",
+          "settings": {
+            "title": "What are the different cuts and styles in kurta sets?",
+            "text": "<p>Some of the most loved cuts include:<br/>\t•\tStraight-cut kurtas: Versatile and slimming.<br/>\t•\tA-line kurtas: Flattering on all body types, flares slightly at the hem.<br/>\t•\tAngarkha-style kurtas: Overlapping neckline, very elegant.<br/>\t•\tAnarkalis: Fitted at the bodice with a dramatic flare.<br/>\t•\tKalidar kurtas: Structured with panels, enhancing movement.</p>"
+          }
+        },
+        "question_pB3MTq": {
+          "type": "question",
+          "settings": {
+            "title": "What’s the difference between Sharara and Garara sets?",
+            "text": "<p>         •\tSharara has a continuous flare from the waist down (like palazzos but more flared).<br/>\t•\tGarara has a distinct joint at the knee, with the flare starting below it — giving a tiered or paneled look.<br/>\t•\tBoth are worn with short or mid-length kurtas and make festive dressing fun and traditional.</p>"
+          }
+        },
+        "question_XhxtF3": {
+          "type": "question",
+          "settings": {
+            "title": "Are kurta sets suitable for Sikh and Gurudwara weddings (Anand Karaj)?",
+            "text": "<p>Yes. Kurta sets are perfect for the Anand Karaj ceremony, which calls for respectful, traditional attire:<br/>\t•\tStraight-cut kurtas or Anarkalis in soft tones or jewel shades.<br/>\t•\tCovered shoulders and modest necklines to respect Gurudwara decorum.<br/>\t•\tDupatta is essential and should be draped on the head during the ceremony.<br/>\t•\tFabrics like Chanderi, silk, or georgette with elegant embroidery work beautifully.</p>"
+          }
+        },
+        "question_JtRBQh": {
+          "type": "question",
+          "settings": {
+            "title": "What colors and styles are appropriate for Gurudwara weddings?",
+            "text": "<p>        •\tPastel tones, ivory, blush pink, sky blue, pistachio, or light gold for day weddings.<br/>\t•\tRoyal blue, saffron, maroon, or forest green for evening functions.<br/>\t•\tEmbellishments like Phulkari embroidery, gota, or mirrorwork are popular yet respectful.<br/>\t•\tAvoid extremely flashy or figure-hugging outfits — grace and dignity are key.</p>"
+          }
+        },
+        "question_76ELR4": {
+          "type": "question",
+          "settings": {
+            "title": "Can kurta sets be worn without a dupatta?",
+            "text": "<p>Yes! While dupatta completes the look for festive or formal occasions, it’s completely okay to skip it for:<br/>\t•\tOffice wear<br/>\t•\tCasual brunch or day outings<br/>\t•\tContemporary styled kurtas with unique necklines, asymmetrical hems, or jackets<br/><br/>When in doubt, use a lightweight dupatta or a statement stole.</p>"
+          }
+        },
+        "question_nN679b": {
+          "type": "question",
+          "settings": {
+            "title": "Are kurta sets age-inclusive?",
+            "text": "<p>Absolutely. Kurta sets are timeless and suit all age groups:<br/>\t•\tYoung women prefer cropped kurtas with shararas or fusion styles.<br/>\t•\tMature women lean towards longer straight kurtas or A-line styles.<br/>\t•\tThe cut, length, and embroidery can be customized to suit personal taste.</p>"
+          }
+        },
+        "question_yQciyx": {
+          "type": "question",
+          "settings": {
+            "title": "What accessories pair well with different types of kurta sets?",
+            "text": "<p>         •\tStraight kurtas: Statement earrings, sleek bangles, and block heels.<br/>\t•\tSharara/Garara sets: Chandbalis or jhumkas, maang tikka, embroidered juttis.<br/>\t•\tAnarkalis: Long danglers, ring clutch, and soft curls in hair for drama.<br/>\t•\tWorkwear sets: Minimal jewelry, leather tote, and comfortable flats.<br/></p>"
+          }
+        },
+        "question_FHM8Bf": {
+          "type": "question",
+          "settings": {
+            "title": "Where can I buy the best designer luxury kurta sets in Delhi?",
+            "text": "<p>If you’re looking for designer luxury kurta sets in Delhi, head to Summer by Priyanka Gupta — a design brand known for its refined craftsmanship, delicate hand embroideries, and breezy yet regal silhouettes. Whether you’re shopping for a Gurudwara wedding, festive wear like Diwali, or a sophisticated office ensemble, their collections offer a perfect balance of tradition and elegance.<br/><br/>From mulmul straight kurtas to chiffon Anarkalis, and festive sharara-garara sets, Summer’s signature touch lies in understated luxury and comfort-first tailoring. Visit their flagship store in Defence Colony to experience personalized styling or browse online for curated edits.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_T4FTJg",
+        "question_CYmyJW",
+        "question_dNQc46",
+        "question_Lz7jEW",
+        "question_6TYbcF",
+        "question_6w9Yhn",
+        "question_LGFTx9",
+        "question_JkpeEC",
+        "question_aAa4VA",
+        "question_QMnDet",
+        "question_pB3MTq",
+        "question_XhxtF3",
+        "question_JtRBQh",
+        "question_76ELR4",
+        "question_nN679b",
+        "question_yQciyx",
+        "question_FHM8Bf"
+      ],
+      "settings": {
+        "title": "About Designer Kurta Sets  By Priyanka Gupta"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "testimonial_carousel_rwkVPx",
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb",
+    "faq_H4Te6L"
+  ]
+}

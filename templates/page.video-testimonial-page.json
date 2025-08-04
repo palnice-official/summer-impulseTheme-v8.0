@@ -1,0 +1,192 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "video_testimonials_BMB6X6": {
+      "type": "video-testimonials",
+      "blocks": {
+        "video_xqXTxn": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Fdd6b873d6b74796addb374c252ead88.mp4",
+            "customer_name": "",
+            "testimonial_text": "Stunning collection of sarees, suits, lehengas with unique embroidery, lovely colors, and friendly staff!Share what this customer had to say about your products or services."
+          }
+        },
+        "video_aA3w9L": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Summer Video Testimonial 1_acba3981-20f5-4098-90aa-509df1306881.mp4",
+            "customer_name": "",
+            "testimonial_text": "Almost My Entire Wedding Wardrobe – Designed to Perfection at Summer."
+          }
+        },
+        "video_AmFYQR": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/71D90f8a9db6455e999032ec09f209ab.mp4",
+            "customer_name": "",
+            "testimonial_text": "Perfect Customization, Beautiful Designs – Why She Keeps Coming Back to Summer."
+          }
+        },
+        "video_azadcr": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/B8be29b94d604f69a2e91d33746ac630.mp4",
+            "customer_name": "",
+            "testimonial_text": "Unique, Stylish, and Worth Returning For – A Shopper’s Love for Summer."
+          }
+        },
+        "video_KTfz3M": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/0E33f74e89c54ba385958aa18c4f0ea2.mp4",
+            "customer_name": "",
+            "testimonial_text": "Sustainable Luxury – Beautiful, Rewearable, and Timeless."
+          }
+        },
+        "video_VXPwK4": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/16B07c0a89cd4b87a041307cfee3c0fb.mp4",
+            "customer_name": "",
+            "testimonial_text": "From Instagram to In-Store – Smitten by the Embroidery, Delighted with the experience, and left with the Perfect Pastel Saree for her Son’s Wedding!"
+          }
+        },
+        "video_yXTLAJ": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Faf4b10cd4174249b13291b1c6cee905.mp4",
+            "customer_name": "",
+            "testimonial_text": "So Many Beautiful Choices, One Perfect Lehenga – A Bridal Dream Come True."
+          }
+        },
+        "video_ft38bz": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/5A0bfe24ca474c5aabb8ecb0c09af3de.mp4",
+            "customer_name": "",
+            "testimonial_text": "Introduced by Family, Staying for the Experience – Perfect Fit, On-Time, and Seamless Service."
+          }
+        },
+        "video_yzpnLT": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/16803B37e8404399b6b22c8aa76cd45d.mp4",
+            "customer_name": "",
+            "testimonial_text": "From Instagram to In-Store – A Collection That Lives Up to the Hype."
+          }
+        },
+        "video_ct96fa": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/9464186914C84d178ecdc335329123f5.mp4",
+            "customer_name": "",
+            "testimonial_text": "Hard to Leave Empty-Handed – A Collection Full of Love and Creativity."
+          }
+        },
+        "video_mt6XfW": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/5907F4dc98eb48baa30cbd6553703c97.mp4",
+            "customer_name": "",
+            "testimonial_text": "First Fitting, Perfect Fit – Ready to Step Out in Style."
+          }
+        },
+        "video_TKbmwT": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/B0f2cd2d395345b79b065e2e3843d8b0.mp4",
+            "customer_name": "",
+            "testimonial_text": "Beautiful Store, Friendly Service – A Shopping Experience to Remember."
+          }
+        },
+        "video_H9Hw8m": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/1c758f27b8574f8481af1b66c302744d.mp4",
+            "customer_name": "",
+            "testimonial_text": "Beautiful Outfits, Impeccable Tailoring – Why Our Clients Love Summer."
+          }
+        },
+        "video_FzQC8H": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/e7a807d6f50f4502a37562f29dafe64f.mp4",
+            "customer_name": "",
+            "testimonial_text": "I’ve come several times, mesmerized by colors and designs. Bought a lehenga, now a saree."
+          }
+        }
+      },
+      "block_order": [
+        "video_xqXTxn",
+        "video_aA3w9L",
+        "video_AmFYQR",
+        "video_azadcr",
+        "video_KTfz3M",
+        "video_VXPwK4",
+        "video_yXTLAJ",
+        "video_ft38bz",
+        "video_yzpnLT",
+        "video_ct96fa",
+        "video_mt6XfW",
+        "video_TKbmwT",
+        "video_H9Hw8m",
+        "video_FzQC8H"
+      ],
+      "custom_css": [
+        "p {text-align: center;}"
+      ],
+      "settings": {
+        "heading": "From the Heart",
+        "text": "<p>The most special part of our work is the people we meet along the way. Here are some heartfelt words from those who’ve made Summer a part of their journey.</p>",
+        "layout": "grid",
+        "desktop_columns": 4
+      }
+    },
+    "blog_posts_hNeDqE": {
+      "type": "blog-posts",
+      "name": "t:sections.blog-posts.presets.blog_posts.name",
+      "settings": {
+        "title": "Blog posts",
+        "blog": "posts",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": false,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "blog_image_size": "portrait",
+        "divider": false
+      }
+    },
+    "contact_form_DXAVnD": {
+      "type": "contact-form",
+      "name": "t:sections.contact-form.presets.contact_form.name",
+      "settings": {
+        "title": "Submit Your Testimonial",
+        "text": "",
+        "show_phone": true,
+        "narrow_column": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_testimonials_BMB6X6",
+    "blog_posts_hNeDqE",
+    "contact_form_DXAVnD"
+  ]
+}

@@ -1,0 +1,383 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "testimonial_carousel_cHdXWf": {
+      "type": "testimonial-carousel",
+      "blocks": {
+        "testimonial_jMy9bi": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nishtha_Sharma.jpg",
+            "quote": "<p>It was an absolute pleasure to wear the outfit by Summer by Priyanka.<br/><br/>Tha tailoring and the outfit is excellent and the service was equally impeccable. Trying and browsing at the beautiful store was made so easy by the staff!<br/><br/>Definitely coming back to the brand</p>",
+            "author": "Nishtha Sharma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_czJHGw": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/viriti_verma.jpg",
+            "quote": "<p>Summer by Priyanka Gupta is like a breath of fresh air out of so many designer stores we visited for my sister-in-laws bridal outfit.<br/><br/>Her outfits were a love at first sight! They have a great collection and the store is beautifully decorated and designed. Kanchan ji, who is also the store manager helped us a lot with making correct decisions, as a result we were in love with the final outcome.<br/><br/> We ended up picking up so many sarees and suits. It's a highly recommended store, do visit.</p>",
+            "author": "Vriti Verma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_wDyfB4": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/APARNA_ROY.webp",
+            "quote": "<p>We have had a wonderful experience at the Summer store always without fail !!<br/><br/>The outfits are fabulous and so is the store staff. Very accommodating. They customised a dress for me and it turned out lovely. My mom and I now shop regularly.<br/><br/>P.S: the store is so beautiful. My little daughter has a gala time every time we visit.</p>",
+            "author": "Aparna Roy, India",
+            "rating": 5
+          }
+        },
+        "testimonial_VqbbrE": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/NEENU_NAYYAR.webp",
+            "quote": "<p>Summer by Priyanka gupta was an instagram discovery. I was looking for simple & elegant yet dressy clothes for a family wedding.<br/><br/>I went to the store at def col, met Priyanka and was absolutely in awe of her and her craft. Such simplicity in both :)<br/><br/>Since then, Summer by Priyanka Gupta has become my go to store for any occasion for my daughter and I. Absolutely love it ♥️</p>",
+            "author": "Neenu Nayyar, India",
+            "rating": 5
+          }
+        },
+        "testimonial_xfaDJT": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Sailaja.webp",
+            "quote": "<p>I had a wonderful shopping experience with Summer by Priyanka Gupta! The saree I purchased exceeded my expectations in both quality and design.<br/><br/>The customer service was exceptional, and the entire process was smooth and enjoyable. I will definitely be shopping with you again and will recommend your store to friends and family.<br/><br/>Thank you for providing such beautiful products and excellent service!</p>",
+            "author": "Sailaja, Chicago, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_aGa6GA": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nidhi_Modi.webp",
+            "quote": "<p>Well, Summer is all about it’s pastel tones and cute detailed colorful embroideries. Wearing summer always makes you to stand out in the crowd and creates a fresh vibe around you.<br/><br/>I just love the service, the work, the fabric, the embroideries and every bit of it.<br/><br/>They make such unique and chic designs that makes us fall for summer everyday. Always a Summer Girl 🌸</p>",
+            "author": "Nidhi Modi, India",
+            "rating": 5
+          }
+        },
+        "testimonial_6h8TT9": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/PAYAL_C_GUPTA.webp",
+            "quote": "<p>I love Summer by Priyanka Gupta for their stunning pastel and embroidered outfits, highlighting their beautiful craftsmanship that consistently impresses her.</p>",
+            "author": "Payal C Gupta, Dubai",
+            "rating": 5
+          }
+        },
+        "testimonial_gWynpF": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rajwinder_Gill.webp",
+            "quote": "<p>Thankyou for sending me the beautiful dresses. I appreciate their quality and fit , they are perfect in every way. I'm eager to place more orders with you.</p>",
+            "author": "Rajwinder Gill, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_W3JNWX": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Leena_Yerneni.webp",
+            "quote": "<p>Great designs and quality. Just loved how our outfits turned out for my daughter’s first birthday making it more memorable.<br/><br/>So dreamy and just the way I envisioned🌸💞💖</p>",
+            "author": "Leena Yerneni, USA",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_jMy9bi",
+        "testimonial_czJHGw",
+        "testimonial_wDyfB4",
+        "testimonial_VqbbrE",
+        "testimonial_xfaDJT",
+        "testimonial_aGa6GA",
+        "testimonial_6h8TT9",
+        "testimonial_gWynpF",
+        "testimonial_W3JNWX"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Don't Take Our Word For It......",
+        "url": "https://www.lovesummer.in/pages/beautiful-girls-of-summer",
+        "btn_text": "VIEW CLIENT DIARY",
+        "cellAlign": "left",
+        "time": 5000,
+        "pageDots": true,
+        "adaptiveHeight": true,
+        "padding-top": 20,
+        "padding-bottom": 20
+      }
+    },
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h2>Buy Haldi Sarees</h2><p>The Haldi ceremony is a joyous and colorful pre-wedding ritual that celebrates the bride's journey to a new chapter in her life. At \"Summer by Priyanka Gupta,\" we are delighted to present our hand-embroidered Haldi Saree Collection, carefully crafted from luxurious fabrics – Organza, Chiffon, Georgette, and Silk. Our haldi sarees are designed to make this special occasion even more memorable, radiating elegance and vibrancy.</p><h2>Elevate Your Haldi Look With Our Sarees</h2><h3>Organza Haldi Sarees</h3><p>Embrace sheer enchantment with our Organza Haldi Sarees. The lightweight and delicate nature of Organza perfectly complements the vibrancy of the Haldi ceremony. These sarees feature intricate hand embroidery, capturing the spirit of this joyful occasion.</p><h3>Chiffon Haldi Sarees</h3><p>Chiffon sarees provide comfort and elegance, making them an excellent choice for the Haldi ceremony. Our Chiffon Haldi Sarees feature delicate hand embroidery, adding a touch of subtle glamour to your look.</p><h3>Georgette Haldi Sarees</h3><p>Georgette sarees offer versatility and grace. Our Georgette Haldi Sarees are adorned with intricate Resham embroidery and subtle sequin work, striking a balance between tradition and contemporary style.</p><h3>Silk Haldi Sarees</h3><p>For a touch of grandeur, our Silk Haldi Sarees, including Kanjivaram, Banarasi, and Chanderi varieties, are embellished with exquisite Zari work and intricate patterns, creating a timeless and regal appearance.</p><h2>Make Your Haldi Memorable</h2><p>Make the haldi ceremony a memorable one with:</p><ul><li>Vibrant Colors: The Haldi ceremony is all about vibrant colors. Opt for sarees in yellows, oranges, pinks, or greens to complement the festive atmosphere.</li><li>Intricate Embroidery: Our hand-embroidered Haldi Sarees feature intricate Resham, Sequin, and Stonework. These details capture the essence of tradition and celebration.</li><li>Comfort and Style: Georgette, Chiffon, Organza, and Silk sarees provide comfort and ease of movement, allowing you to fully enjoy the festivities.</li><li>Photogenic Elegance: These sarees are not only comfortable but also photogenic. They ensure you look stunning in every photograph, preserving the memories of your Haldi ceremony.</li></ul><h2>Craftsmanship Beyond Compare</h2><p>Our Haldi Saree Collection is a testament to the artistry and skill of our talented artisans. Each saree is meticulously embroidered to ensure you shine with elegance and grace on your special day.</p><h2>Shop with Confidence</h2><p>Browse our Haldi Saree Collection online, and let our experts assist you in finding the perfect saree that complements the vibrancy of your Haldi ceremony. Whether you prefer traditional or contemporary styles, we have the saree that will make your Haldi memorable.</p><h2>Elevate Your Haldi Celebrations with ‘Summer by Priyanka Gupta’</h2><p>The Haldi ceremony is a time of laughter, joy, and blessings. Your attire should reflect the happiness of this occasion. Our Haldi Saree Collection combines tradition, craftsmanship, and contemporary style to create an ensemble that will make your Haldi ceremony truly memorable.</p><h2>Which other saree collections do we have at Summer?</h2><p>Here are the other sarees we have in our collection</p><h3>Sarees By Fabric</h3><ul><li><a href=\"https://www.lovesummer.in/collections/organza-sarees\"><span style=\"text-decoration:underline\">Organza Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/chiffon-sarees\"><span style=\"text-decoration:underline\">Chiffon Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/georgette-sarees\"><span style=\"text-decoration:underline\">Georgette Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/silk-sarees\"><span style=\"text-decoration:underline\">Silk Sarees</span></a></li></ul><h3>Sarees By Design</h3><ul><li><a href=\"https://www.lovesummer.in/collections/printed-sarees\"><span style=\"text-decoration:underline\">Printed Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/embroidered-saree\"><span style=\"text-decoration:underline\">Embroidered Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/luxury-saree\"><span style=\"text-decoration:underline\">Luxury Sarees</span></a></li></ul><h3>Sarees By Occasion</h3><ul><li><a href=\"https://www.lovesummer.in/collections/mehendi-sarees\"><span style=\"text-decoration:underline\">Mehendi Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/engagement-sarees\"><span style=\"text-decoration:underline\">Engagement Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/reception-sarees\"><span style=\"text-decoration:underline\">Reception Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/partywear-sarees\"><span style=\"text-decoration:underline\">Partywear Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/festive-sarees\"><span style=\"text-decoration:underline\">Festive Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/farewell-sarees\"><span style=\"text-decoration:underline\">Farewell Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/diwali-sarees\"><span style=\"text-decoration:underline\">Diwali Sarees</span></a></li></ul><h2>FAQs - Haldi Sarees</h2><h3>What is the Haldi Saree Collection by Summer by Priyanka Gupta?</h3><p>Our Haldi Saree Collection features a range of hand-embroidered sarees crafted from luxurious fabrics, including Organza, Chiffon, Georgette, and Silk. These sarees are specially designed to make your Haldi ceremony a vibrant and memorable occasion.</p><h3>Why choose a specific saree for the Haldi ceremony?</h3><p>The Haldi ceremony is a traditional and colorful pre-wedding ritual. Choosing a Haldi saree adds to the festivity and significance of the occasion, making it even more special for the bride.</p><h3>What are the recommended colors for Haldi sarees?</h3><p>Vibrant and cheerful colors like bright yellow, orange, pink, and green are popular choices for Haldi sarees. These colors symbolize the joy and auspiciousness of the ceremony.</p><h3>Do you offer customization options for Haldi sarees?</h3><p>Yes, we offer customization options for blouse designs, colors, and embellishments to ensure your Haldi saree aligns perfectly with your personal style and preferences.</p><h3>Can I wear my Haldi saree for other occasions as well?</h3><p>While Haldi sarees are traditionally chosen for the ceremony, the elegant designs and vibrant colors of our collection make them versatile enough to be worn for other festive events and celebrations.</p><h3>Do you provide international shipping for Haldi sarees?</h3><p>Yes, we offer international shipping services, allowing brides worldwide to access our exquisite Haldi Saree Collection and celebrate their pre-wedding rituals with elegance.</p><h3>How do I care for my Haldi saree after the ceremony?</h3><p>To preserve the vibrant colors and intricate embroidery of your Haldi saree, we recommend professional cleaning or dry cleaning. Please refer to our care instructions for detailed guidance on saree maintenance.</p><h3>Is there a return or exchange policy for Haldi sarees?</h3><p>We have a flexible return and exchange policy. If you have any concerns about your Haldi saree purchase, please contact our customer support team within the specified return period for assistance.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "faq_K436Dk": {
+      "type": "faq",
+      "blocks": {
+        "question_dGin4C": {
+          "type": "question",
+          "settings": {
+            "title": "Elevate Your Haldi Look With Our Sarees",
+            "text": "<h3>Organza Haldi Sarees</h3><p>Embrace sheer enchantment with our Organza Haldi Sarees. The lightweight and delicate nature of Organza perfectly complements the vibrancy of the Haldi ceremony. These sarees feature intricate hand embroidery, capturing the spirit of this joyful occasion.</p><h3>Chiffon Haldi Sarees</h3><p>Chiffon sarees provide comfort and elegance, making them an excellent choice for the Haldi ceremony. Our Chiffon Haldi Sarees feature delicate hand embroidery, adding a touch of subtle glamour to your look.</p><h3>Georgette Haldi Sarees</h3><p>Georgette sarees offer versatility and grace. Our Georgette Haldi Sarees are adorned with intricate Resham embroidery and subtle sequin work, striking a balance between tradition and contemporary style.</p><h3>Silk Haldi Sarees</h3><p>For a touch of grandeur, our Silk Haldi Sarees, including Kanjivaram, Banarasi, and Chanderi varieties, are embellished with exquisite Zari work and intricate patterns, creating a timeless and regal appearance.</p>"
+          }
+        },
+        "question_RwJya8": {
+          "type": "question",
+          "settings": {
+            "title": "Make Your Haldi Memorable",
+            "text": "<p>Make the haldi ceremony a memorable one with:</p><ul><li>Vibrant Colors: The Haldi ceremony is all about vibrant colors. Opt for sarees in yellows, oranges, pinks, or greens to complement the festive atmosphere.</li><li>Intricate Embroidery: Our hand-embroidered Haldi Sarees feature intricate Resham, Sequin, and Stonework. These details capture the essence of tradition and celebration.</li><li>Comfort and Style: Georgette, Chiffon, Organza, and Silk sarees provide comfort and ease of movement, allowing you to fully enjoy the festivities.</li><li>Photogenic Elegance: These sarees are not only comfortable but also photogenic. They ensure you look stunning in every photograph, preserving the memories of your Haldi ceremony.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "question_dGin4C",
+        "question_RwJya8"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": ""
+      }
+    },
+    "faq_9egNHR": {
+      "type": "faq",
+      "blocks": {
+        "question_rdcgYr": {
+          "type": "question",
+          "settings": {
+            "title": "What is the Haldi Saree Collection by Summer by Priyanka Gupta?",
+            "text": "<p>Our Haldi Saree Collection features a range of hand-embroidered sarees crafted from luxurious fabrics, including Organza, Chiffon, Georgette, and Silk. These sarees are specially designed to make your Haldi ceremony a vibrant and memorable occasion.</p>"
+          }
+        },
+        "question_d99QKa": {
+          "type": "question",
+          "settings": {
+            "title": "Why choose a specific saree for the Haldi ceremony?",
+            "text": "<p>The Haldi ceremony is a traditional and colorful pre-wedding ritual. Choosing a Haldi saree adds to the festivity and significance of the occasion, making it even more special for the bride.</p>"
+          }
+        },
+        "question_fDP8eK": {
+          "type": "question",
+          "settings": {
+            "title": "What are the recommended colors for Haldi sarees?",
+            "text": "<p>Vibrant and cheerful colors like bright yellow, orange, pink, and green are popular choices for Haldi sarees. These colors symbolize the joy and auspiciousness of the ceremony.</p>"
+          }
+        },
+        "question_GNY6zL": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer customization options for Haldi sarees?",
+            "text": "<p>Yes, we offer customization options for blouse designs, colors, and embellishments to ensure your Haldi saree aligns perfectly with your personal style and preferences.</p>"
+          }
+        },
+        "question_aHUQLL": {
+          "type": "question",
+          "settings": {
+            "title": "Can I wear my Haldi saree for other occasions as well?",
+            "text": "<p>While Haldi sarees are traditionally chosen for the ceremony, the elegant designs and vibrant colors of our collection make them versatile enough to be worn for other festive events and celebrations.</p>"
+          }
+        },
+        "question_tjKR8m": {
+          "type": "question",
+          "settings": {
+            "title": "Do you provide international shipping for Haldi sarees?",
+            "text": "<p>Yes, we offer international shipping services, allowing brides worldwide to access our exquisite Haldi Saree Collection and celebrate their pre-wedding rituals with elegance.</p>"
+          }
+        },
+        "question_tYyGNV": {
+          "type": "question",
+          "settings": {
+            "title": "How do I care for my Haldi saree after the ceremony?",
+            "text": "<p>To preserve the vibrant colors and intricate embroidery of your Haldi saree, we recommend professional cleaning or dry cleaning. Please refer to our care instructions for detailed guidance on saree maintenance.</p>"
+          }
+        },
+        "question_CwtXY7": {
+          "type": "question",
+          "settings": {
+            "title": "Is there a return or exchange policy for Haldi sarees?",
+            "text": "<p>We have a flexible return and exchange policy. If you have any concerns about your Haldi saree purchase, please contact our customer support team within the specified return period for assistance.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_rdcgYr",
+        "question_d99QKa",
+        "question_fDP8eK",
+        "question_GNY6zL",
+        "question_aHUQLL",
+        "question_tjKR8m",
+        "question_tYyGNV",
+        "question_CwtXY7"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "FAQs - Haldi Sarees"
+      }
+    },
+    "faq_jj4qh3": {
+      "type": "faq",
+      "blocks": {
+        "question_xrYRwj": {
+          "type": "question",
+          "settings": {
+            "title": "What is the best outfit to wear for a Haldi ceremony?",
+            "text": "<p>The best Haldi ceremony outfits are lightweight, festive, and easy to carry. Most brides and bridesmaids prefer yellow lehengas, sarees, or kurta sets in breathable fabrics with floral or playful embroidery.</p>"
+          }
+        },
+        "question_PFeq3L": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer yellow lehengas specifically for Haldi ceremonies?",
+            "text": "<p>Yes, our Marigold Haldi collection features yellow lehengas that are specially designed for pre-wedding festivities like Haldi. These include hand-embroidered pieces, mirror work, and floral motifs in cheerful tones of turmeric, sunflower, and pastel yellow.</p>"
+          }
+        },
+        "question_Q9VPyz": {
+          "type": "question",
+          "settings": {
+            "title": "Are your Haldi sarees comfortable for daytime outdoor events?",
+            "text": "<p>Absolutely. Our sarees are made with lightweight fabrics like chiffon, organza, and Georgette, which are ideal for daytime Haldi events, especially in outdoor or garden settings.</p>"
+          }
+        },
+        "question_cLMyaQ": {
+          "type": "question",
+          "settings": {
+            "title": "Can I wear your Haldi outfits for other occasions too?",
+            "text": "<p>Yes! While these pieces are designed with the Haldi function in mind, they work beautifully for pujas, mehendi ceremonies, festive brunches, Raksha Bandhan, or any summer celebration.</p>"
+          }
+        },
+        "question_nPfa69": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer matching accessories for Haldi looks?",
+            "text": "<p>We do! Pair your outfit with coordinating embroidered potlis, floral jewelry, floral hair accessories, or juttis.</p>"
+          }
+        },
+        "question_bD7MH4": {
+          "type": "question",
+          "settings": {
+            "title": "Can I style a tunic or a dress instead of a lehenga for my Haldi?",
+            "text": "<p>Of course. Many modern brides and guests opt for breezy tunics or stylish kurtas with palazzos or long sun dresses. It’s perfect for a more relaxed, playful Haldi vibe.</p>"
+          }
+        },
+        "question_k36Jyt": {
+          "type": "question",
+          "settings": {
+            "title": "What sizes are available in your Haldi collection?",
+            "text": "<p>Our pieces come in standard sizes XS to XXXL, and we also offer custom sizing upon request. You can reach out to our team for guidance on measurements and fit.</p>"
+          }
+        },
+        "question_GkxWV9": {
+          "type": "question",
+          "settings": {
+            "title": "Can I get a custom Haldi outfit made to match my theme?",
+            "text": "<p>Yes, we accept custom orders depending on the timeline. If you have a color scheme, embroidery style, or fabric preference in mind, our design team would love to create something special for you.</p>"
+          }
+        },
+        "question_yawyXm": {
+          "type": "question",
+          "settings": {
+            "title": "What makes your Haldi outfits different from others?",
+            "text": "<p>Each outfit is crafted with attention to detail, using signature Summer embroidery styles—be it floral, threadwork, or mirrorwork. We design with real Indian celebrations in mind, ensuring that every outfit is photogenic, comfortable, and timeless.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_xrYRwj",
+        "question_PFeq3L",
+        "question_Q9VPyz",
+        "question_cLMyaQ",
+        "question_nPfa69",
+        "question_bD7MH4",
+        "question_k36Jyt",
+        "question_GkxWV9",
+        "question_yawyXm"
+      ],
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "title": "FAQs- Designer Haldi Sarees By Priyanka Gupta"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "testimonial_carousel_cHdXWf",
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb",
+    "faq_K436Dk",
+    "faq_9egNHR",
+    "faq_jj4qh3"
+  ]
+}

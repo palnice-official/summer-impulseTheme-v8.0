@@ -1,0 +1,259 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "testimonial_carousel_dLGYMY": {
+      "type": "testimonial-carousel",
+      "blocks": {
+        "testimonial_6N6iLQ": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nishtha_Sharma.jpg",
+            "quote": "<p>It was an absolute pleasure to wear the outfit by Summer by Priyanka.<br/><br/>Tha tailoring and the outfit is excellent and the service was equally impeccable. Trying and browsing at the beautiful store was made so easy by the staff!<br/><br/>Definitely coming back to the brand</p>",
+            "author": "Nishtha Sharma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_DhrAzQ": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/viriti_verma.jpg",
+            "quote": "<p>Summer by Priyanka Gupta is like a breath of fresh air out of so many designer stores we visited for my sister-in-laws bridal outfit.<br/><br/>Her outfits were a love at first sight! They have a great collection and the store is beautifully decorated and designed. Kanchan ji, who is also the store manager helped us a lot with making correct decisions, as a result we were in love with the final outcome.<br/><br/> We ended up picking up so many sarees and suits. It's a highly recommended store, do visit.</p>",
+            "author": "Vriti Verma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_ij8Bck": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/APARNA_ROY.webp",
+            "quote": "<p>We have had a wonderful experience at the Summer store always without fail !!<br/><br/>The outfits are fabulous and so is the store staff. Very accommodating. They customised a dress for me and it turned out lovely. My mom and I now shop regularly.<br/><br/>P.S: the store is so beautiful. My little daughter has a gala time every time we visit.</p>",
+            "author": "Aparna Roy, India",
+            "rating": 5
+          }
+        },
+        "testimonial_JzLj6c": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/NEENU_NAYYAR.webp",
+            "quote": "<p>Summer by Priyanka gupta was an instagram discovery. I was looking for simple & elegant yet dressy clothes for a family wedding.<br/><br/>I went to the store at def col, met Priyanka and was absolutely in awe of her and her craft. Such simplicity in both :)<br/><br/>Since then, Summer by Priyanka Gupta has become my go to store for any occasion for my daughter and I. Absolutely love it ♥️</p>",
+            "author": "Neenu Nayyar, India",
+            "rating": 5
+          }
+        },
+        "testimonial_qm8UPc": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Sailaja.webp",
+            "quote": "<p>I had a wonderful shopping experience with Summer by Priyanka Gupta! The saree I purchased exceeded my expectations in both quality and design.<br/><br/>The customer service was exceptional, and the entire process was smooth and enjoyable. I will definitely be shopping with you again and will recommend your store to friends and family.<br/><br/>Thank you for providing such beautiful products and excellent service!</p>",
+            "author": "Sailaja, Chicago, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_4LGGYX": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nidhi_Modi.webp",
+            "quote": "<p>Well, Summer is all about it’s pastel tones and cute detailed colorful embroideries. Wearing summer always makes you to stand out in the crowd and creates a fresh vibe around you.<br/><br/>I just love the service, the work, the fabric, the embroideries and every bit of it.<br/><br/>They make such unique and chic designs that makes us fall for summer everyday. Always a Summer Girl 🌸</p>",
+            "author": "Nidhi Modi, India",
+            "rating": 5
+          }
+        },
+        "testimonial_pKjJrR": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/PAYAL_C_GUPTA.webp",
+            "quote": "<p>I love Summer by Priyanka Gupta for their stunning pastel and embroidered outfits, highlighting their beautiful craftsmanship that consistently impresses her.</p>",
+            "author": "Payal C Gupta, Dubai",
+            "rating": 5
+          }
+        },
+        "testimonial_dghQeF": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rajwinder_Gill.webp",
+            "quote": "<p>Thankyou for sending me the beautiful dresses. I appreciate their quality and fit , they are perfect in every way. I'm eager to place more orders with you.</p>",
+            "author": "Rajwinder Gill, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_bJUbJ8": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Leena_Yerneni.webp",
+            "quote": "<p>Great designs and quality. Just loved how our outfits turned out for my daughter’s first birthday making it more memorable.<br/><br/>So dreamy and just the way I envisioned🌸💞💖</p>",
+            "author": "Leena Yerneni, USA",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_6N6iLQ",
+        "testimonial_DhrAzQ",
+        "testimonial_ij8Bck",
+        "testimonial_JzLj6c",
+        "testimonial_qm8UPc",
+        "testimonial_4LGGYX",
+        "testimonial_pKjJrR",
+        "testimonial_dghQeF",
+        "testimonial_bJUbJ8"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Don't Take Our Word For It......",
+        "url": "https://www.lovesummer.in/pages/beautiful-girls-of-summer",
+        "btn_text": "VIEW CLIENT DIARY",
+        "cellAlign": "left",
+        "time": 5000,
+        "pageDots": false,
+        "adaptiveHeight": true,
+        "padding-top": 20,
+        "padding-bottom": 20
+      }
+    },
+    "faq_VbaYmx": {
+      "type": "faq",
+      "blocks": {
+        "question_ymQD3X": {
+          "type": "question",
+          "settings": {
+            "title": "What makes your summer sarees perfect for hot weather?",
+            "text": "<p>Our summer sarees are crafted from breathable, lightweight fabrics like mul, Chanderi, chiffon, and georgette, ensuring you stay comfortable and stylish even in peak summer. Designed in soothing pastel hues, they’re perfect for everything from casual outings to summer weddings.</p>"
+          }
+        },
+        "question_EWqgJN": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer summer kurta sets in different styles?",
+            "text": "<p>Yes! Our collection of summer kurta sets includes elegant straight-cut kurtas, breezy A-line silhouettes, and comfortable tunics, all made from soft, airy fabrics that keep you cool while exuding effortless grace.</p>"
+          }
+        },
+        "question_BUUznU": {
+          "type": "question",
+          "settings": {
+            "title": "How do I style my beautiful summer clothes for different occasions?",
+            "text": "<p>Pair our summer sarees with minimal jewelry for a chic day look or dress them up with statement pieces for a wedding. Our summer kurta sets and tunics can be styled with palazzos or slim pants for a refined, modern take on Indian fashion.</p>"
+          }
+        },
+        "question_W3H9X4": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer outfit suggestions for summer weddings?",
+            "text": "<p>Absolutely! Whether you’re a guest or part of the bridal party, our pastel summer sarees and elegant summer kurta sets make the perfect choice. Delicate embroidery and flowy fabrics ensure you look sophisticated while staying cool.</p>"
+          }
+        },
+        "question_dzYg8d": {
+          "type": "question",
+          "settings": {
+            "title": "Why choose Priyanka Gupta for your summer wardrobe?",
+            "text": "<p>Our designs reflect timeless elegance, using beautiful summer clothes in delicate pastels with intricate hand-embroidery. With a focus on quality craftsmanship, on-time delivery, and excellent customer service, we ensure a seamless shopping experience.</p>"
+          }
+        },
+        "question_HiRmNL": {
+          "type": "question",
+          "settings": {
+            "title": "How long does shipping take?",
+            "text": "<p>We offer on-time delivery across India and worldwide. Ready to ship products ship within 48 hours. Customized or made to order pieces require 3 - 4 weeks. If you need immediate delivery, pick-up or express shipping, kindly contact our team at 9899070899. </p>"
+          }
+        },
+        "question_xGpGtb": {
+          "type": "question",
+          "settings": {
+            "title": "Can I get assistance with sizing and styling?",
+            "text": "<p>Yes! Our team provides excellent customer service, offering personalized styling advice to help you choose the perfect summer sarees, summer kurta sets, and tunics for your wardrobe. We also provide bespoke tailoring for perfect fits and comfort. Feel free to reach us at 9899070899 for recommendations!</p>"
+          }
+        },
+        "question_c6nXwh": {
+          "type": "question",
+          "settings": {
+            "title": "How do I care for my summer essentials?",
+            "text": "<p>To maintain the softness and longevity of your beautiful summer clothes, we recommend dry cleaning for embroidered pieces. Store them in a cool, dry place to keep the colors fresh and vibrant.</p>"
+          }
+        },
+        "rich_text_dknVpm": {
+          "type": "rich-text",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "text": "<p><em>For any questions or concerns, please reach our CRM team at 9899070899.<br/><br/>Explore our collection and embrace effortless summer elegance with Priyanka Gupta!</em></p>",
+            "align_text": "left"
+          }
+        }
+      },
+      "block_order": [
+        "question_ymQD3X",
+        "question_EWqgJN",
+        "question_BUUznU",
+        "question_W3H9X4",
+        "question_dzYg8d",
+        "question_HiRmNL",
+        "question_xGpGtb",
+        "question_c6nXwh",
+        "rich_text_dknVpm"
+      ],
+      "custom_css": [],
+      "settings": {
+        "title": "FAQs"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "testimonial_carousel_dLGYMY",
+    "faq_VbaYmx"
+  ]
+}

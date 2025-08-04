@@ -1,0 +1,84 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h2>Luxury Sarees for the Discerning Woman - Buy Now</h2><p>Luxury is not just a word; it's an experience. At ‘Summer by Priyanka Gupta,’ we invite you to indulge in the world of opulence with our hand-embroidered Luxury Saree Collection. Each masterpiece is meticulously crafted from sumptuous fabrics – Organza, Chiffon, Georgette, and Silk, exuding a timeless charm that captivates hearts.</p><h2>Elevate Your Style With Our Luxury Sarees</h2><h3>Organza Luxury Sarees</h3><p>Immerse yourself in sheer elegance with our Organza Luxury Sarees. The fabric's ethereal quality, combined with intricate hand embroidery, creates a magical aura. These sarees are a splendid choice for grand events, galas, and upscale parties.</p><h3>Chiffon Luxury Sarees</h3><p>Our Chiffon Luxury Sarees embody a perfect blend of comfort and style. Delicate hand embroidery graces these sarees, offering a touch of understated glamour. Wear them with grace at soirées, formal dinners, or elegant gatherings.</p><h3>Georgette Luxury Sarees</h3><p>Georgette sarees epitomize versatility and grace. Our Georgette Luxury Sarees feature exquisite Resham embroidery and subtle sequin work, striking a balance between tradition and contemporary elegance. Ideal for weddings, festivities, and upscale functions.</p><h3>Silk Luxury Sarees</h3><p>Silk, a fabric of royalty, takes center stage in our Luxury Saree Collection. Our Silk sarees are adorned with exquisite Zari work and rich patterns. Perfect for grand celebrations, receptions, and special occasions.</p><h2>Luxury Saree Craftsmanship Beyond Compare</h2><p>Every saree in our Luxury Collection is a masterpiece. Our artisans pour their heart and soul into creating intricate designs with Zari, Resham, Sequin, and Stonework. These sarees are a tribute to the artistry that transcends time.</p><h2>Unveil Timeless Beauty</h2><p><strong>Opulent Designs</strong>: Our Luxury Sarees feature opulent designs that tell a story of timeless beauty. Every motif and detail is a work of art, making each saree a collector's item.</p><p><strong>Luxurious Fabrics</strong>: Indulge in the finest fabrics known for their luxurious feel and captivating drape. Our sarees are a symbol of refined taste and sophistication.</p><p><strong>Exquisite Embroidery</strong>: The hand embroidery on these sarees is unparalleled, showcasing intricate craftsmanship that reflects our commitment to excellence.</p><h2>Shop with Confidence</h2><p>Browse our Luxury Saree Collection online and experience the epitome of elegance. Our experts are ready to assist you in finding the perfect saree for your special occasions, ensuring you radiate timeless beauty and luxury.</p><h2>Elevate Your Presence with \"Summer by Priyanka Gupta\"</h2><p>Luxury is not just what you wear; it's how you feel when you wear it. Our Luxury Saree Collection combines tradition, artistry, and contemporary style to create an ensemble that defines opulence.</p><h2>Which other saree collections do we have at Summer?</h2><p>Here are the other sarees we have in our collection</p><h3>Sarees By Fabric</h3><ul><li><a href=\"https://www.lovesummer.in/collections/organza-sarees\"><span style=\"text-decoration:underline\">Organza Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/chiffon-sarees\"><span style=\"text-decoration:underline\">Chiffon Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/georgette-sarees\"><span style=\"text-decoration:underline\">Georgette Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/silk-sarees\"><span style=\"text-decoration:underline\">Silk Sarees</span></a></li></ul><h3>Sarees By Design</h3><ul><li><a href=\"https://www.lovesummer.in/collections/printed-sarees\"><span style=\"text-decoration:underline\">Printed Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/embroidered-saree\"><span style=\"text-decoration:underline\">Embroidered Sarees</span></a></li></ul><h3>Sarees By Occasion</h3><ul><li><a href=\"https://www.lovesummer.in/collections/haldi-sarees\"><span style=\"text-decoration:underline\">Haldi Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/mehendi-sarees\"><span style=\"text-decoration:underline\">Mehendi Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/engagement-sarees\"><span style=\"text-decoration:underline\">Engagement Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/reception-sarees\"><span style=\"text-decoration:underline\">Reception Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/partywear-sarees\"><span style=\"text-decoration:underline\">Partywear Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/festive-sarees\"><span style=\"text-decoration:underline\">Festive Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/farewell-sarees\"><span style=\"text-decoration:underline\">Farewell Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/diwali-sarees\"><span style=\"text-decoration:underline\">Diwali Sarees</span></a></li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb"
+  ]
+}

@@ -1,0 +1,232 @@
+<script src="{{ 'flickity.js' | asset_url }}" async></script>
+{{ 'flickity.css' | asset_url | stylesheet_tag }}
+
+{% comment %}
+  {% style %}
+    -->
+      /* Container for the carousel */
+    .carousel-{{ section.id }} {
+      width: 100%;
+      height: 262px;
+      overflow: hidden;
+    }
+
+    /* Each carousel item */
+    .carousel-cell-{{ section.id }} {
+      width: 190px; /* Fixed width for consistency */
+      height: 240px; /* Adjust height as needed */
+      margin-right: 10px; /* Space between items */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #fff; /* Optional: background for visibility */
+      border-radius: 8px;
+      overflow-y: auto;
+    }
+
+    /* Responsive images */
+    .carousel-cell-{{ section.id }} img {
+      border-radius: 4px;
+      width: 500px;
+      height: 500px;
+      /* border-radius: 100%; */
+      object-fit: cover;
+      }
+
+    .carousel-cell-{{ section.id }} li {
+        list-style: none;
+    }
+
+    /* Text styling */
+    .carousel-cell-{{ section.id }} p {
+      margin: 5px 0 0;
+      font-size: 16px;
+      text-align: center;
+      font-weight: bold
+    }
+    .flickity-prev-next-button{
+        display: none
+      }
+
+    /* Mobile-specific adjustments */
+    @media (max-width: 768px) {
+
+    .carousel-{{ section.id }} {
+      width: 100%;
+      height: auto;
+      /* height: 500px; */
+      /* overflow: hidden; */
+      background-color: red;
+      /* overflow-y: auto; */
+
+    }
+      .carousel-cell-{{ section.id }} {
+        width:100%; /* Slightly smaller for mobile */
+        height: auto;
+        /* height: 600px; */
+        background-color: blue;
+      }
+    .carousel-{{ section.id }} img{
+      height: 370px;
+      width: 100%;
+      background-color: green;
+    }
+
+    .carousel-cell-{{ section.id }} > p{
+          font-size: 12px;
+          /* padding-left: 30px;
+          padding-right: 30px;
+          padding-top: 10px;
+          padding-bottom: 10px; */
+       width: 90vw; /* Set a fixed width */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      }
+      .carousel-waper-{{ section.id }} > h2 {
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+      }
+    }
+  {% endstyle %}
+{% endcomment %}
+
+{% style %}
+    .carousel-wrapper-{{ section.id }} {
+      position: relative;
+      max-width: 100%;
+      margin: 0 auto;
+      padding-bottom: 50px; /* Space for pagination */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 20px;
+    }
+     .carousel-{{ section.id }} {
+      width: 100%;
+    }
+     .carousel-cell-{{ section.id }} {
+       width: 100%;
+       display: flex;
+       flex-direction:column;
+       justify-content: center;
+       align-items: center;
+     }
+    .testimonial-text {
+      overflow: visible;
+      height: auto;
+      margin-top: 15px;
+      width: 80vw;
+      text-align: center;
+
+    }
+    .testimonial-text p {
+      margin: 0;
+      line-height: 1.6
+    }
+     .carousel-pagination-{{ section.id }} {
+       position: absolute;
+       bottom: 10px;
+       left:0;
+       right:0;
+       text-align: center;
+     }
+    .carousel-{{ section.id }} .flickity-page-dots {
+      bottom: -40px;
+    }
+    .custom-image {
+      height: 40vh;
+      width: 80vw;
+  }
+  .title-{{ section.id }} {
+     text-align: center;
+  }
+{% endstyle %}
+
+<div class="carousel-waper-{{ section.id }}">
+  <h3 class="title-{{ section.id }}">{{ section.settings.heading }}</h3>
+  <div class="carousel-{{ section.id }}">
+    {% for block in section.blocks %}
+      <div class="carousel-cell-{{ section.id }}">
+        <a href="{{ block.settings.link }}">
+          {{
+            block.settings.image
+            | image_url: width: 800
+            | image_tag: alt: block.settings.text, class: 'custom-image'
+          }}
+        </a>
+        <div class="testimonial-text">
+          <p>{{ block.settings.text }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="carousel-pagination-{{ section.id }}"></div>
+  <button type="button"><a href="#">View Client Diary</a></button>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var carousel = document.querySelector('.carousel-{{ section.id }}');
+    if (carousel) {
+      var flkty = new Flickity(carousel, {
+        cellAlign: 'left',
+        contain: true,
+        wrapAround: true,
+        pageDots: true,
+        adaptiveHeight: true,
+        autoPlay: true,
+        groupCells: true,
+        appendDots: document.querySelector('.carousel-pagination-{{ section.id }}')
+      });
+       // Refresh carousel layout after images load for accurate height calculation
+        carousel.querySelectorAll('.custom-image').forEach(function(img){
+          img.onload = function(){
+            flkty.resize();
+          }
+        })
+    }
+  });
+</script>
+{% schema %}
+{
+  "name": "image carousal",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default":"write something",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "colection_image",
+      "name": "colection_image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "insert url",
+
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "collection text"
+        }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "image carousal"
+  }]
+}
+{% endschema %}

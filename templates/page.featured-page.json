@@ -1,0 +1,133 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "eada92f1-d6b4-4476-98f0-fd1d59d0a16d": {
+      "type": "logo-list",
+      "blocks": {
+        "template--16807068664044__eada92f1-d6b4-4476-98f0-fd1d59d0a16d-logo_image-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/NY-Weekly-Black.webp",
+            "link": "https://nyweekly.com/fashion/summer-by-priyanka-gupta-embracing-the-new-era-of-indian-bridal-fashion/"
+          }
+        },
+        "87823610-7c52-499f-aa5b-b4fc673fb58c": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/mid-day.png",
+            "link": "https://www.mid-day.com/amp/brand-media/article/summer-by-priyanka-elegantly-promises-a-combination-of-evolving-designs-and-23274550"
+          }
+        },
+        "template--16807068664044__eada92f1-d6b4-4476-98f0-fd1d59d0a16d-logo_image-2": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/TheDailyGuardian.png",
+            "link": "https://thedailyguardian.com/a-collection-inspired-by-old-world-grandeur-and-exquisite-celebrations/"
+          }
+        },
+        "1c3363ba-bc37-4eb2-b432-e26a331f291e": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/News18.svg",
+            "link": "https://www.news18.com/lifestyle/monsoon-chic-monsoon-fashion-tips-to-beat-the-rain-8387491.html"
+          }
+        }
+      },
+      "block_order": [
+        "template--16807068664044__eada92f1-d6b4-4476-98f0-fd1d59d0a16d-logo_image-1",
+        "87823610-7c52-499f-aa5b-b4fc673fb58c",
+        "template--16807068664044__eada92f1-d6b4-4476-98f0-fd1d59d0a16d-logo_image-2",
+        "1c3363ba-bc37-4eb2-b432-e26a331f291e"
+      ],
+      "custom_css": [],
+      "settings": {
+        "title": "As Featured In",
+        "logo_opacity": 100,
+        "divider": false
+      }
+    },
+    "6382ff58-4f58-4ec2-a44d-3869eb5071eb": {
+      "type": "logo-list",
+      "blocks": {
+        "template--16807068664044__6382ff58-4f58-4ec2-a44d-3869eb5071eb-logo_image-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/zd-logo.png",
+            "link": "https://zoomdelhi.in/?page_id=59"
+          }
+        },
+        "c7009f52-2b4c-4054-8efe-2cffd22f6dca": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/the-news-strike.png",
+            "link": "https://thenewsstrike.com/citrus-rose-ss23-collection-from-summer-by-priyanka-gupta"
+          }
+        },
+        "template--16807068664044__6382ff58-4f58-4ec2-a44d-3869eb5071eb-logo_image-4": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/The-news-watch-jpeg.webp",
+            "link": "https://thenewswatch.co.in/2023/08/24/step-into-the-timeless-elegance-of-engagement-at-the-estate-from-summer-by-priyanka-gupta/"
+          }
+        },
+        "20c9beff-4a51-4f62-a703-1b0ae532873c": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/deccan-chronicle-logo-block.webp",
+            "link": "https://www.deccanchronicle.com/entertainment/bollywood/130723/timeless-beauties-turn-new-age-digital-influencers.html"
+          }
+        }
+      },
+      "block_order": [
+        "template--16807068664044__6382ff58-4f58-4ec2-a44d-3869eb5071eb-logo_image-3",
+        "c7009f52-2b4c-4054-8efe-2cffd22f6dca",
+        "template--16807068664044__6382ff58-4f58-4ec2-a44d-3869eb5071eb-logo_image-4",
+        "20c9beff-4a51-4f62-a703-1b0ae532873c"
+      ],
+      "settings": {
+        "title": "",
+        "logo_opacity": 100,
+        "divider": false
+      }
+    },
+    "4fd2a648-2de8-4131-b586-1be84b83857f": {
+      "type": "logo-list",
+      "blocks": {
+        "template--16807068664044__4fd2a648-2de8-4131-b586-1be84b83857f-logo_image-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Society-Achievers.svg",
+            "link": "https://societyachievers.com/gorgeous-dress-from-summer-by-priyanka-gupta/"
+          }
+        }
+      },
+      "block_order": [
+        "template--16807068664044__4fd2a648-2de8-4131-b586-1be84b83857f-logo_image-3"
+      ],
+      "settings": {
+        "title": "",
+        "logo_opacity": 100,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "eada92f1-d6b4-4476-98f0-fd1d59d0a16d",
+    "6382ff58-4f58-4ec2-a44d-3869eb5071eb",
+    "4fd2a648-2de8-4131-b586-1be84b83857f"
+  ]
+}

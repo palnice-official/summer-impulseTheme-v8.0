@@ -1,0 +1,218 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "separator_7DBenr": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "9a9d6fce-39cd-4c4f-b73c-fab524aaa302": {
+          "type": "size_chart",
+          "disabled": true,
+          "settings": {
+            "size_chart": "size-chart"
+          }
+        },
+        "e844bfc1-cd55-4f66-9696-081575bcd82f": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<body>\n    <p>Product will be Shipped by <span id=\"delivery-date\"></span></p>\n    <script>\n        function updateDeliveryDate() {\n            var today = new Date();\n            var deliveryDate = new Date();\n            deliveryDate.setDate(today.getDate() + 7); // Adding 7 days\n\n            var options = { year: 'numeric', month: 'long', day: 'numeric' };\n            var formattedDate = deliveryDate.toLocaleDateString(undefined, options);\n            document.getElementById('delivery-date').textContent = formattedDate;\n        }\n\n        document.addEventListener(\"DOMContentLoaded\", updateDeliveryDate);\n    </script>\n</body>"
+          }
+        },
+        "784c8724-f94c-4754-bdfe-fdee738799be": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "2c492c33-1eb0-4162-b6d5-f042aaa1bf07": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "Our sales assistant are now available to help you on a click via WhatsApp or Video Call at <a href=\"https://wa.link/yz8u10\" style=\"color:Blue\"; target=\"_blank\">+919899070899</a>"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": true
+          }
+        },
+        "c841f375-e9d8-412c-9b6b-82f987b27098": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping",
+            "content": "",
+            "page": "shipping-information"
+          }
+        },
+        "sales_point_x6jKtm": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "globe",
+            "text": "Shipping Worldwide"
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "separator_7DBenr",
+        "variant_picker",
+        "9a9d6fce-39cd-4c4f-b73c-fab524aaa302",
+        "e844bfc1-cd55-4f66-9696-081575bcd82f",
+        "784c8724-f94c-4754-bdfe-fdee738799be",
+        "separator",
+        "buy_buttons",
+        "2c492c33-1eb0-4162-b6d5-f042aaa1bf07",
+        "description",
+        "c841f375-e9d8-412c-9b6b-82f987b27098",
+        "sales_point_x6jKtm"
+      ],
+      "custom_css": [
+        ".product-block {padding-top: 10px;}"
+      ],
+      "settings": {
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_height": "flexible",
+        "thumbnail_arrows": true,
+        "mobile_layout": "full",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "featured_collection_A7PQFD": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a.btn.btn--secondary.btn--small.section-header__link {display: none;}",
+        "h2.section-header__title {font-size: 22px;}"
+      ],
+      "name": "t:sections.featured-collection.presets.featured_collection.name",
+      "settings": {
+        "title": "Similar Products",
+        "home_featured_products": "accessories",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "featured_collection_VC4abk": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a.btn.btn--secondary.btn--small.section-header__link {display: none;}",
+        "h2.section-header__title {font-size: 22px;}"
+      ],
+      "name": "t:sections.featured-collection.presets.featured_collection.name",
+      "settings": {
+        "title": "Customers Also Bought",
+        "home_featured_products": "designer-pastel-sarees",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "You may also like{{ product.metafields[\"shopify--discovery--product_recommendation\"].related_products_display.value }}",
+        "related_count": 5,
+        "products_per_row": 5
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "recent_count": 5
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "settings": {
+        "max_width": true
+      }
+    },
+    "pagefly_section_j8BC7Y": {
+      "type": "pagefly-section",
+      "settings": {
+        "section_id": "pf-926eb272"
+      }
+    },
+    "background-image-text": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "Love Summer Philosophy",
+        "text": "<p>A good design should have the power to move you! At summer, we’re always chasing that happy feeling and try to pass it on to our customers by delighting them with our products and service.</p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify://shop_images/summer-by-priyanka-gupta-11111.jpg",
+        "layout": "left",
+        "height": 450,
+        "framed": true,
+        "parallax": false,
+        "parallax_direction": "top",
+        "lazyload_images": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "featured_collection_A7PQFD",
+    "featured_collection_VC4abk",
+    "product-recommendations",
+    "recently-viewed",
+    "sub",
+    "pagefly_section_j8BC7Y",
+    "background-image-text",
+    "collection-return"
+  ]
+}

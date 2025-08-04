@@ -1,0 +1,96 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        ".page-width.page-width--narrow.page-content {padding-bottom: 0px;}",
+        ".section-header {margin-bottom: 0px;}"
+      ],
+      "settings": {}
+    },
+    "featured_collection_jpMrRn": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a.btn.btn--secondary.btn--small.section-header__link {display: none;}",
+        "h2.section-header__title {font-size: 22px;}"
+      ],
+      "name": "t:sections.featured-collection.presets.featured_collection.name",
+      "settings": {
+        "title": "Designer Summer Sarees",
+        "home_featured_products": "designer-pastel-sarees",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "featured_collection_AmRBEx": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a.btn.btn--secondary.btn--small.section-header__link {display: none;}",
+        "h2.section-header__title {font-size: 22px;}"
+      ],
+      "name": "t:sections.featured-collection.presets.featured_collection.name",
+      "settings": {
+        "title": "Kurta Sets for Women",
+        "home_featured_products": "kurta-sets-women",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "featured_collection_e3CrQU": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a.btn.btn--secondary.btn--small.section-header__link {display: none;}",
+        "h2.section-header__title {font-size: 22px;}"
+      ],
+      "name": "t:sections.featured-collection.presets.featured_collection.name",
+      "settings": {
+        "title": "Co-ord sets & tunics for women",
+        "home_featured_products": "tunics-for-women",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "featured_collection_cLXheB": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a.btn.btn--secondary.btn--small.section-header__link {display: none;}",
+        "h2.section-header__title {font-size: 22px;}"
+      ],
+      "name": "t:sections.featured-collection.presets.featured_collection.name",
+      "settings": {
+        "title": "Summer Dresses",
+        "home_featured_products": "dresses",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "featured_collection_jpMrRn",
+    "featured_collection_AmRBEx",
+    "featured_collection_e3CrQU",
+    "featured_collection_cLXheB"
+  ]
+}

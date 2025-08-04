@@ -1,0 +1,83 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich_text_jwmrCK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_f7HkNa": {
+          "type": "heading",
+          "settings": {
+            "title": "From the Heart"
+          }
+        },
+        "text_GKkqj8": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>The most special part of our work is the people we meet along the way. Here are some heartfelt words from those who’ve made Summer a part of their journey.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_f7HkNa",
+        "text_GKkqj8"
+      ],
+      "custom_css": [
+        "{margin-bottom: 0px !important;}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "pagefly_section_NkaCpa": {
+      "type": "pagefly-section",
+      "custom_css": [
+        "h3{font-size: medium}"
+      ],
+      "settings": {
+        "section_id": "pf-746f4766"
+      }
+    },
+    "rich_text_MjUyE4": {
+      "type": "rich-text",
+      "blocks": {
+        "text_LhWDed": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>The Most Comfortable Bridal Shopping Experience at One of the Best Designer Stores in Delhi<br/><br/>Finding the perfect bridal lehenga, wedding saree, or trousseau pieces isn’t just about choosing a beautiful outfit—it’s about feeling confident, comfortable, and stress-free throughout the process. That’s exactly what brides love most about Summer by Priyanka Gupta, one of the best designer stores in Delhi for luxury bridalwear.<br/><br/>From the moment they step into our store, brides discover a collection of exquisite, hand-embroidered bridal lehengas and <a href=\"/collections/sarees\" title=\"Hand-Embroidered Designer Sarees\">sarees</a>, thoughtfully designed with a unique, timeless touch. But what truly makes their experience special is the care and attention we give—from perfecting every fit to ensuring on-time deliveries. Whether it’s a customized wedding lehenga or a pastel saree for their bridal trousseau, we make sure every piece is as beautiful as their big day.<br/><br/>Our clients often tell us how effortless we make their wedding shopping—stress-free trials, a warm and helpful team, and the comfort of knowing their outfit will be flawless. With fittings tailored until they are truly happy, shopping with us feels seamless and enjoyable, just as it should be.<br/><br/>At Summer by Priyanka Gupta, we believe that the last thing a bride should worry about is the hassle of multiple trials, delayed timelines, or last-minute alterations. That’s why we focus on making every detail just right, so they can cherish the experience as much as the outfit itself.<br/><br/>This is why so many brides consider Summer by Priyanka Gupta the best designer store in Delhi for <a href=\"/collections/lehenga\" title=\"Lehengas\">bridal lehengas</a>, <a href=\"/collections/day-wedding-ensembles\" title=\"Indian Day Wedding Outfit Ideas\">wedding sarees</a>, and trousseau shopping. But don’t just take our word for it—our client testimonials speak for themselves.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_LhWDed"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_jwmrCK",
+    "pagefly_section_NkaCpa",
+    "rich_text_MjUyE4"
+  ]
+}

@@ -1,0 +1,264 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "testimonial_carousel_wbWW6f": {
+      "type": "testimonial-carousel",
+      "blocks": {
+        "testimonial_YPxJQp": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nishtha_Sharma.jpg",
+            "quote": "<p>It was an absolute pleasure to wear the outfit by Summer by Priyanka.<br/><br/>Tha tailoring and the outfit is excellent and the service was equally impeccable. Trying and browsing at the beautiful store was made so easy by the staff!<br/><br/>Definitely coming back to the brand</p>",
+            "author": "Nishtha Sharma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_WRMaGe": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/viriti_verma.jpg",
+            "quote": "<p>Summer by Priyanka Gupta is like a breath of fresh air out of so many designer stores we visited for my sister-in-laws bridal outfit.<br/><br/>Her outfits were a love at first sight! They have a great collection and the store is beautifully decorated and designed. Kanchan ji, who is also the store manager helped us a lot with making correct decisions, as a result we were in love with the final outcome.<br/><br/> We ended up picking up so many sarees and suits. It's a highly recommended store, do visit.</p>",
+            "author": "Vriti Verma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_VRyTED": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Leena_Yerneni.webp",
+            "quote": "<p>Great designs and quality. Just loved how our outfits turned out for my daughter’s first birthday making it more memorable.<br/><br/>So dreamy and just the way I envisioned🌸💞💖</p>",
+            "author": "Leena Yerneni, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_3rLN9j": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nidhi_Modi.webp",
+            "quote": "<p>Well, Summer is all about it’s pastel tones and cute detailed colorful embroideries. Wearing summer always makes you to stand out in the crowd and creates a fresh vibe around you.<br/><br/>I just love the service, the work, the fabric, the embroideries and every bit of it.<br/><br/>They make such unique and chic designs that makes us fall for summer everyday. Always a Summer Girl 🌸</p>",
+            "author": "Nidhi Modi, India",
+            "rating": 5
+          }
+        },
+        "testimonial_FmHYNn": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/APARNA_ROY.webp",
+            "quote": "<p>We have had a wonderful experience at the Summer store always without fail !!<br/><br/>The outfits are fabulous and so is the store staff. Very accommodating. They customised a dress for me and it turned out lovely. My mom and I now shop regularly.<br/><br/>P.S: the store is so beautiful. My little daughter has a gala time every time we visit.</p>",
+            "author": "Aparna Roy, India",
+            "rating": 5
+          }
+        },
+        "testimonial_kibXMb": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/NEENU_NAYYAR.webp",
+            "quote": "<p>Summer by Priyanka gupta was an instagram discovery. I was looking for simple & elegant yet dressy clothes for a family wedding.<br/><br/>I went to the store at def col, met Priyanka and was absolutely in awe of her and her craft. Such simplicity in both :)<br/><br/>Since then, Summer by Priyanka Gupta has become my go to store for any occasion for my daughter and I. Absolutely love it ♥️</p>",
+            "author": "Neenu Nayyar, India",
+            "rating": 5
+          }
+        },
+        "testimonial_QNxfHh": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Sailaja.webp",
+            "quote": "<p>I had a wonderful shopping experience with Summer by Priyanka Gupta! The saree I purchased exceeded my expectations in both quality and design.<br/><br/>The customer service was exceptional, and the entire process was smooth and enjoyable. I will definitely be shopping with you again and will recommend your store to friends and family.<br/><br/>Thank you for providing such beautiful products and excellent service!</p>",
+            "author": "Sailaja, Chicago, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_FPEpFm": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/PAYAL_C_GUPTA.webp",
+            "quote": "<p>I love Summer by Priyanka Gupta for their stunning pastel and embroidered outfits, highlighting their beautiful craftsmanship that consistently impresses her.</p>",
+            "author": "Payal C Gupta, Dubai",
+            "rating": 5
+          }
+        },
+        "testimonial_hWe9Je": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rajwinder_Gill.webp",
+            "quote": "<p>Thankyou for sending me the beautiful dresses. I appreciate their quality and fit , they are perfect in every way. I'm eager to place more orders with you.</p>",
+            "author": "Rajwinder Gill, USA",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_YPxJQp",
+        "testimonial_WRMaGe",
+        "testimonial_VRyTED",
+        "testimonial_3rLN9j",
+        "testimonial_FmHYNn",
+        "testimonial_kibXMb",
+        "testimonial_QNxfHh",
+        "testimonial_FPEpFm",
+        "testimonial_hWe9Je"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Don't Take Our Word For It......",
+        "url": "https://www.lovesummer.in/pages/beautiful-girls-of-summer",
+        "btn_text": "VIEW CLIENT DIARY",
+        "cellAlign": "left",
+        "time": 5000,
+        "pageDots": false,
+        "adaptiveHeight": true,
+        "padding-top": 0,
+        "padding-bottom": 50
+      }
+    },
+    "faq_DjrNrc": {
+      "type": "faq",
+      "blocks": {
+        "question_MmhFQi": {
+          "type": "question",
+          "settings": {
+            "title": "What is Chikankari embroidery?",
+            "text": "<p>Chikankari is a centuries-old hand embroidery technique that originated in Lucknow, India. Known for its delicate, poetic needlework—often done in white on light fabrics—it is one of India’s most refined textile arts, evoking a quiet sense of grace, luxury, and heritage.</p>"
+          }
+        },
+        "question_YCNEAG": {
+          "type": "question",
+          "settings": {
+            "title": "What is the history behind Chikankari?",
+            "text": "<p>Chikankari dates back to the Mughal era, with Empress Noor Jahan said to have played a key role in its popularization. Over time, the craft evolved across generations of artisans in and around Lucknow, becoming a symbol of timeless Indian elegance and artisanal finesse.</p>"
+          }
+        },
+        "question_wRYhCE": {
+          "type": "question",
+          "settings": {
+            "title": "Where is your Chikankari embroidery done?",
+            "text": "<p>All our Chikankari pieces are hand-embroidered in and around Lucknow by skilled artisans who have inherited this legacy. For authenticity and artistry, the work is not done in our factory but coordinated through trusted hands in the heartland of this tradition.</p>"
+          }
+        },
+        "question_Cdtyxx": {
+          "type": "question",
+          "settings": {
+            "title": "Why does it take time to deliver Chikankari garments?",
+            "text": "<p>Because of the slow, careful nature of this craft, timelines can’t be rushed. Each piece goes through intricate embroidery, coordination across towns, thorough fabric cleaning (as materials often get soiled during handwork), and multiple rounds of quality checks. This results in occasional delays—but we believe the final garment is always worth the wait.</p>"
+          }
+        },
+        "question_8CiXUj": {
+          "type": "question",
+          "settings": {
+            "title": "How do you ensure quality?",
+            "text": "<p>Our Chikankari collection is a blend of heritage and high standards. While embroidery is done by hand in Lucknow, stitching and finishing are handled in our Delhi workshop to ensure consistent sizing, structure, and impeccable tailoring. Several pieces are rejected during quality checks because we accept only the finest craftsmanship.</p>"
+          }
+        },
+        "question_we9G3P": {
+          "type": "question",
+          "settings": {
+            "title": "What fabrics do you use in your Chikankari garments?",
+            "text": "<p>We use a carefully curated selection of luxurious, breathable fabrics to complement the embroidery, including:</p><p>\t•\tMulmul</p><p>\t•\tChanderi</p><p>\t•\tPure Cotton</p><p>\t•\tCotton-Silk</p><p>\t•\tSilk Organza</p><p>\t•\tSilk Georgette</p><p>These fabrics lend a feather-light grace and enhance the beauty of the embroidery.</p>"
+          }
+        },
+        "question_C97gnh": {
+          "type": "question",
+          "settings": {
+            "title": "How is your Chikankari different from cheaper options in the market?",
+            "text": "<p>While mass-produced Chikan kurtas can be found for ₹200–₹300, our pieces are defined by:</p><p>\t•\tFabric quality – Handpicked luxurious bases that drape beautifully</p><p>\t•\tBlock and motif selection – Custom, curated designs for subtle sophistication</p><p>\t•\tEmbroidery fineness – Inclusion of rare techniques like ek taar, do taar, and jaali done only by skilled karigars</p><p>\t•\tColour palettes – Soft, romantic shades chosen by our design team</p><p>\t•\tTailoring – Fine finishing in our own Delhi workshop with perfect fits</p><p>Every detail—from thread to trim—reflects the luxury of slow fashion and artisanal excellence.</p>"
+          }
+        },
+        "question_FzJ7Wk": {
+          "type": "question",
+          "settings": {
+            "title": "Why is Chikankari an art worth preserving?",
+            "text": "<p>With younger generations moving to cities and taking up alternate professions, fewer artisans are practicing Chikankari. Every piece you buy helps sustain a fragile, fading art form. It is a tribute to Indian patience, poetry, and quiet craftsmanship.</p>"
+          }
+        },
+        "question_iWfBKw": {
+          "type": "question",
+          "settings": {
+            "title": "Can Chikankari Dresses be worn for different occasions?",
+            "text": "<p>Absolutely. <strong>Chikankari dresses</strong> and kurtas are versatile and suit a range of occasions—from casual daytime outings to festive events. Pair a simple <strong>Chikankari Kurti</strong> with palazzos for an elegant everyday look, or opt for an embellished <strong>Chikankari embroidered kurta</strong> with statement jewelry for weddings or celebrations. Their timeless elegance makes them wardrobe essentials.</p>"
+          }
+        },
+        "question_dcBA9P": {
+          "type": "question",
+          "settings": {
+            "title": "What silhouettes are available in your Chikankari collection?",
+            "text": "<p>We offer a wide array of timeless styles including:</p><p>\t•\tChikankari Kurtas – Everyday elegance with artisanal charm</p><p>\t•\tChikankari Tunics – Easy, youthful separates for versatile wear</p><p>\t•\tChikankari Sarees – Lightweight drapes for festive and formal occasions</p><p>\t•\tChikankari Lehengas – Delicate bridal and festive wear with heirloom appeal</p><p>\t•\tChikankari Co-ords – Contemporary matching sets for the modern woman</p><p>\t•\tChikankari  Shararas – Graceful flares with intricate handwork</p><p>\t•\tChikankari Anarkalis – Regal silhouettes perfect for weddings and soirees</p><p>Each silhouette is a quiet nod to tradition, tailored with love and detail.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_MmhFQi",
+        "question_YCNEAG",
+        "question_wRYhCE",
+        "question_Cdtyxx",
+        "question_8CiXUj",
+        "question_we9G3P",
+        "question_C97gnh",
+        "question_FzJ7Wk",
+        "question_iWfBKw",
+        "question_dcBA9P"
+      ],
+      "settings": {
+        "title": "FAQs"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "testimonial_carousel_wbWW6f",
+    "faq_DjrNrc"
+  ]
+}

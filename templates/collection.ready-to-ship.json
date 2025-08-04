@@ -1,0 +1,279 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h2><strong>Ready-to-Ship Designer Ensembles</strong></h2> <p>Discover ready-to-ship designer wear at Summer by Priyanka Gupta, crafted for those who seek quick luxury with fast delivery. Whether you’re shopping for an imminent wedding function, Eid, or other festive celebrations, our collection of ready-to-ship sarees, lehengas, kurtas, and elegant ensembles ensures you never have to wait long for couture-level craftsmanship.</p> <p>Our ready-to-ship designer wear is available in multiple sizes with worldwide shipping, so you can experience the ease of shopping exquisite hand-embroidered pieces from anywhere in the world.</p> <p>For personalized assistance, reach our CRM team at +91 9899070899 to consult a sales agent about your order.</p> <h2><strong>FAQs – Ready-to-Ship Designer Wear Collection</strong></h2> <h3><strong>1. What is the Ready-to-Ship Designer Wear collection?</strong></h3> <p>Our ready-to-ship designer wear features luxury pieces in stock at our store, ready for immediate dispatch, ensuring fast delivery for your special occasions.</p> <h3><strong>2. How fast will my order be shipped?</strong></h3> <p>Orders are typically shipped within 24-48 hours of purchase. Delivery times vary based on your location.</p> <h3><strong>3. Do you offer worldwide delivery?</strong></h3> <p>Yes! We offer worldwide shipping, so you can enjoy Summer by Priyanka Gupta’s ready-to-ship designer wear no matter where you are. International shipping times depend on your region.</p> <h3><strong>4. Do you offer express or next-day delivery?</strong></h3> <p>Yes! Express and next-day delivery is available for metro cities in India at an extra charge. For urgent deliveries, please contact our CRM team at +91 9899070899 before placing your order.</p> <h3><strong>5. Are the sarees in this collection pre-stitched?</strong></h3> <p>Some ready-to-ship sarees come with stitched blouses in sizes that are indicated, while others come with unstitched blouses, which can be tailored as per your size and preference by your local tailor. This allows for custom fittings and plus-size options. Petticoats can also be arranged on request and can be made to size within 4 - 5 days.</p> <h3><strong>6. What sizes are available in the Ready-to-Ship Designer Wear collection?</strong></h3> <p>Our ready-to-ship pieces are available in multiple sizes, with detailed size charts included in each product listing to help you find the perfect fit.</p> <h3><strong>7. Can I return or exchange a Ready-to-Ship product?</strong></h3> <p>Since these items are available for immediate dispatch, our return and exchange policy applies as per our standard guidelines.</p> <h3><strong>8. How do I track my order?</strong></h3> <p>Once your order is shipped, you will receive a tracking link via email or WhatsApp to monitor its delivery status in real time.</p> <h3><strong>9. Can I get assistance before placing my order?</strong></h3> <p>Absolutely! Our CRM team is available at +91 9899070899 to assist you with any queries regarding size, styling, or delivery timelines.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "testimonial_carousel_by9gp9": {
+      "type": "testimonial-carousel",
+      "blocks": {
+        "testimonial_7VTJe4": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nishtha_Sharma.jpg",
+            "quote": "<p>It was an absolute pleasure to wear the outfit by Summer by Priyanka.<br/><br/>Tha tailoring and the outfit is excellent and the service was equally impeccable. Trying and browsing at the beautiful store was made so easy by the staff!<br/><br/>Definitely coming back to the brand</p>",
+            "author": "Nishtha Sharma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_HCNqJk": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/viriti_verma.jpg",
+            "quote": "<p>Summer by Priyanka Gupta is like a breath of fresh air out of so many designer stores we visited for my sister-in-laws bridal outfit.<br/><br/>Her outfits were a love at first sight! They have a great collection and the store is beautifully decorated and designed. Kanchan ji, who is also the store manager helped us a lot with making correct decisions, as a result we were in love with the final outcome.<br/><br/> We ended up picking up so many sarees and suits. It's a highly recommended store, do visit.</p>",
+            "author": "Vriti Verma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_Xpxtwi": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/APARNA_ROY.webp",
+            "quote": "<p>We have had a wonderful experience at the Summer store always without fail !!<br/><br/>The outfits are fabulous and so is the store staff. Very accommodating. They customised a dress for me and it turned out lovely. My mom and I now shop regularly.<br/><br/>P.S: the store is so beautiful. My little daughter has a gala time every time we visit.</p>",
+            "author": "Aparna Roy, India",
+            "rating": 5
+          }
+        },
+        "testimonial_BLcfBT": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/NEENU_NAYYAR.webp",
+            "quote": "<p>Summer by Priyanka gupta was an instagram discovery. I was looking for simple & elegant yet dressy clothes for a family wedding.<br/><br/>I went to the store at def col, met Priyanka and was absolutely in awe of her and her craft. Such simplicity in both :)<br/><br/>Since then, Summer by Priyanka Gupta has become my go to store for any occasion for my daughter and I. Absolutely love it ♥️</p>",
+            "author": "Neenu Nayyar, India",
+            "rating": 5
+          }
+        },
+        "testimonial_BmqFyr": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Sailaja.webp",
+            "quote": "<p>I had a wonderful shopping experience with Summer by Priyanka Gupta! The saree I purchased exceeded my expectations in both quality and design.<br/><br/>The customer service was exceptional, and the entire process was smooth and enjoyable. I will definitely be shopping with you again and will recommend your store to friends and family.<br/><br/>Thank you for providing such beautiful products and excellent service!</p>",
+            "author": "Sailaja, Chicago, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_kEAEd4": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nidhi_Modi.webp",
+            "quote": "<p>Well, Summer is all about it’s pastel tones and cute detailed colorful embroideries. Wearing summer always makes you to stand out in the crowd and creates a fresh vibe around you.<br/><br/>I just love the service, the work, the fabric, the embroideries and every bit of it.<br/><br/>They make such unique and chic designs that makes us fall for summer everyday. Always a Summer Girl 🌸</p>",
+            "author": "Nidhi Modi, India",
+            "rating": 5
+          }
+        },
+        "testimonial_VkBci9": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/PAYAL_C_GUPTA.webp",
+            "quote": "<p>I love Summer by Priyanka Gupta for their stunning pastel and embroidered outfits, highlighting their beautiful craftsmanship that consistently impresses her.</p>",
+            "author": "Payal C Gupta, Dubai",
+            "rating": 5
+          }
+        },
+        "testimonial_WfGyBH": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rajwinder_Gill.webp",
+            "quote": "<p>Thankyou for sending me the beautiful dresses. I appreciate their quality and fit , they are perfect in every way. I'm eager to place more orders with you.</p>",
+            "author": "Rajwinder Gill, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_DgVKhq": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Leena_Yerneni.webp",
+            "quote": "<p>Great designs and quality. Just loved how our outfits turned out for my daughter’s first birthday making it more memorable.<br/><br/>So dreamy and just the way I envisioned🌸💞💖</p>",
+            "author": "Leena Yerneni, USA",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_7VTJe4",
+        "testimonial_HCNqJk",
+        "testimonial_Xpxtwi",
+        "testimonial_BLcfBT",
+        "testimonial_BmqFyr",
+        "testimonial_kEAEd4",
+        "testimonial_VkBci9",
+        "testimonial_WfGyBH",
+        "testimonial_DgVKhq"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Don't Take Our Word For It......",
+        "url": "https://www.lovesummer.in/pages/beautiful-girls-of-summer",
+        "btn_text": "VIEW CLIENT DIARY",
+        "cellAlign": "left",
+        "time": 5000,
+        "pageDots": false,
+        "adaptiveHeight": true,
+        "padding-top": 5,
+        "padding-bottom": 20
+      }
+    },
+    "faq_cGWhQ6": {
+      "type": "faq",
+      "blocks": {
+        "question_YbaRdN": {
+          "type": "question",
+          "settings": {
+            "title": "What is the Ready-to-Ship Designer Wear collection?",
+            "text": "<p>Our ready-to-ship designer wear features luxury pieces in stock at our store, ready for immediate dispatch, ensuring fast delivery for your special occasions.</p>"
+          }
+        },
+        "question_xfjfTi": {
+          "type": "question",
+          "settings": {
+            "title": "How fast will my order be shipped?",
+            "text": "<p>Orders are typically shipped within 24-48 hours of purchase. Delivery times vary based on your location.</p>"
+          }
+        },
+        "question_QwqBEF": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer worldwide delivery?",
+            "text": "<p>Yes! We offer worldwide shipping, so you can enjoy Summer by Priyanka Gupta’s ready-to-ship designer wear no matter where you are. International shipping times depend on your region.</p>"
+          }
+        },
+        "question_tKHNJG": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer express or next-day delivery?",
+            "text": "<p>Yes! Express and next-day delivery is available for metro cities in India at an extra charge. For urgent deliveries, please contact our CRM team at +91 9899070899 before placing your order.</p>"
+          }
+        },
+        "question_iRAjV9": {
+          "type": "question",
+          "settings": {
+            "title": "Are the sarees in this collection pre-stitched?",
+            "text": "<p>Some ready-to-ship sarees come with stitched blouses in sizes that are indicated, while others come with unstitched blouses, which can be tailored as per your size and preference by your local tailor.</p>"
+          }
+        },
+        "question_PMiVr9": {
+          "type": "question",
+          "settings": {
+            "title": "What sizes are available in the Ready-to-Ship Designer Wear collection?",
+            "text": "<p>Our ready-to-ship pieces are available in multiple sizes, with detailed size charts included in each product listing to help you find the perfect fit.</p>"
+          }
+        },
+        "question_E6h6cr": {
+          "type": "question",
+          "settings": {
+            "title": "Can I return or exchange a Ready-to-Ship product?",
+            "text": "<p>Since these items are available for immediate dispatch, our return and exchange policy applies as per our standard guidelines.</p>"
+          }
+        },
+        "question_F6R7tU": {
+          "type": "question",
+          "settings": {
+            "title": "How do I track my order?",
+            "text": "<p>Once your order is shipped, you will receive a tracking link via email or WhatsApp to monitor its delivery status in real time.</p>"
+          }
+        },
+        "question_7Qf6i9": {
+          "type": "question",
+          "settings": {
+            "title": "Can I get assistance before placing my order?",
+            "text": "<p>Absolutely! Our CRM team is available at +91 9899070899 to assist you with any queries regarding size, styling, or delivery timelines.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_YbaRdN",
+        "question_xfjfTi",
+        "question_QwqBEF",
+        "question_tKHNJG",
+        "question_iRAjV9",
+        "question_PMiVr9",
+        "question_E6h6cr",
+        "question_F6R7tU",
+        "question_7Qf6i9"
+      ],
+      "settings": {
+        "title": "FAQs"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb",
+    "testimonial_carousel_by9gp9",
+    "faq_cGWhQ6"
+  ]
+}

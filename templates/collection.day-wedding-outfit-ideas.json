@@ -1,0 +1,218 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h2><strong>Day Wedding Outfit Ideas for Indian, South Asian & Sikh Weddings</strong></h2><p>A day wedding is a celebration of love in bright sunlight, calling for outfits that feel light, elegant, and joyful. Whether you’re attending an Indian, South Asian, or Sikh wedding, the right colors, fabrics, and silhouettes can make all the difference. Pastels like blush pink, mint green, sky blue, and lavender are timeless choices that photograph beautifully, while neon shades like coral and lime add a lively touch for daytime festivities.<p>Floral prints, breezy fabrics like chiffon, organza, and georgette, and graceful silhouettes such as shararas, lehengas, and sarees create a chic yet effortless look. For Gurudwara Anand Karaj ceremonies, a lightweight salwar suit or an elegant lehenga with a draped dupatta ensures both style and respect for traditions.<p>For wedding guests looking for the perfect day wedding outfit, Summer by Priyanka Gupta’s pastel-hued ensembles and easy, timeless silhouettes are excellent picks. With delicate embroidery and a relaxed elegance, these outfits strike the perfect balance between tradition and modern charm, making them ideal for celebrating love under the sun.<h2><strong>FAQs - Day Wedding Outfit Ideas for Indian, South Asian & Sikh Weddings</strong></h2><h3>What are the best colors to wear for a day wedding?</h3><p>For a day wedding, opt for pleasing pastel tones like blush pink, mint green, sky blue, and lavender for a soft, radiant look. If you prefer bold colors, neon shades like coral, lime, and fuchsia add vibrancy, making them perfect for mehendi or haldi celebrations.<h3>Are floral prints suitable for a day wedding?</h3><p>Yes! Floral prints bring a cheerful and youthful vibe to any day wedding outfit. Whether embroidered on a saree, printed on an anarkali, or woven into a lehenga, florals create an effortlessly elegant look.<h3>What fabrics work best for a day wedding?</h3><p>For maximum comfort and elegance, opt for breathable and flowy fabrics like chiffon, organza, georgette, and chanderi. Chiffon sarees and lehengas are especially popular as they drape beautifully and allow easy movement.<h3>What silhouettes are best for repeat value?</h3><p>Timeless silhouettes such as shararas, lightweight lehengas, and sarees are perfect for day weddings. These can be easily restyled for multiple occasions, making them a great investment.<h3>What should I wear to a Gurudwara Anand Karaj day wedding?</h3><p>For a Gurudwara Anand Karaj, opt for a modest yet elegant outfit like a pastel-colored salwar kameez, sharara, or a lightweight lehenga with a dupatta draped over your head as a mark of respect. Soft fabrics like chiffon and organza work beautifully for this occasion.<h3>How should I style my accessories for a day wedding?</h3><p>Keep accessories minimal yet elegant—opt for delicate earrings, bangles, and a small clutch. Avoid heavy jewelry that may feel overwhelming in daylight.<h3>What is the best makeup look for a day wedding?</h3><p>A dewy, fresh makeup look is ideal for a day wedding. Stick to light foundation, soft blush, nude or pink lips, and subtle eye makeup for a radiant glow.<h3>Are neon colors appropriate for a day wedding?</h3><p>Yes! Neon shades like coral, lime green, and fuchsia can add a fun and lively energy to a day wedding outfit, especially for pre-wedding functions like mehendi and haldi.<h3>Can I wear a saree to a day wedding?</h3><p>Absolutely! Chiffon, georgette, and organza sarees are great choices for a day wedding, offering a light and graceful drape while keeping you comfortable throughout the celebrations.<h3>How can I ensure my day wedding outfit is comfortable yet stylish?</h3><p>Pick breathable fabrics, timeless silhouettes, and minimal accessories to achieve a perfect balance of style and comfort. A chiffon saree, a floral lehenga, or a pastel anarkali paired with elegant jewelry and soft curls will ensure a polished yet relaxed look.<p>By following these day wedding outfit ideas, you can be sure to look graceful and festive while staying comfortable at any Indian, South Asian, or Sikh day wedding."
+          }
+        }
+      },
+      "block_order": [
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "faq_Y7pXfz": {
+      "type": "faq",
+      "blocks": {
+        "question_a3Hcac": {
+          "type": "question",
+          "settings": {
+            "title": "What should I wear to a summer day wedding as an Indian guest?",
+            "text": "<p>Skip the costume drama. Choose chiffon sarees with delicate threadwork, soft brocade anarkalis, or silk kurtas in calming pastels. These Indian wedding guest outfits are breathable, photograph beautifully in daylight, and won’t leave you with regrets years later.</p>"
+          }
+        },
+        "question_CceWHU": {
+          "type": "question",
+          "settings": {
+            "title": "Are sarees too formal for a daytime Indian wedding?",
+            "text": "<p>Not at all. Sarees for Indian wedding guests are timeless. A pastel chiffon saree with subtle embroidery, paired with a plain silk blouse, is the definition of quiet luxury.<br/>Bonus: You won’t look like a reality show contestant at a billionaire’s sangeet.</p>"
+          }
+        },
+        "question_rkF3EU": {
+          "type": "question",
+          "settings": {
+            "title": "Can I wear a lehenga to a day wedding?",
+            "text": "<p>Yes — as long as it’s not weighed down with layers of net, gimmicks, or unnecessary drama. Choose lightweight lehengas with minimal embroidery in fresh colours. Think graceful, not theatrical.</p>"
+          }
+        },
+        "question_tPVewe": {
+          "type": "question",
+          "settings": {
+            "title": "What’s trending for Indian day weddings in 2025?",
+            "text": "<p>Three words: Simplicity. Silhouette. Sanity.<br/><br/>Trending right now:<br/>\t•\tSleeveless silk blouses with chiffon sarees<br/>\t•\tTraditional brocade with a soft sheen<br/>\t•\tKurta sets that don’t try too hard<br/>\t•\tPastel lehengas that let your smile shine<br/><br/>Not trending:<br/>\t•\tGimmicky drapes<br/>\t•\tLoud prints<br/>\t•\tOver-constructed fusion pieces that confuse everyone</p>"
+          }
+        },
+        "question_giWnTe": {
+          "type": "question",
+          "settings": {
+            "title": "Can I wear a kurta set or an anarkali as a wedding guest?",
+            "text": "<p>Absolutely. A well-fitted kurta or anarkali in chanderi, silk, or organza is elegant and timeless.<br/>Pair it with a good pair of jhumkas and a confident walk — you’re good to go.</p>"
+          }
+        },
+        "question_MzfcLA": {
+          "type": "question",
+          "settings": {
+            "title": "What’s the biggest mistake guests make when dressing for Indian weddings?",
+            "text": "<p>Confusing loudness with impact. Avoid rushed, trendy pieces that don’t photograph well or age well. Loud prints, exaggerated cuts, and experimental silhouettes rarely become heirlooms — or good memories.</p>"
+          }
+        },
+        "question_qrzFVQ": {
+          "type": "question",
+          "settings": {
+            "title": "What are the best colours to wear to a day wedding in India?",
+            "text": "<p>Stick with tones that flatter you and the sun. Top choices include:<br/>\t•\tFall green<br/>\t•\tIvory, blush pink<br/>\t•\tPowder blue<br/>\t•\tSoft gold or beige<br/><br/>These look graceful and photograph beautifully in natural light.</p>"
+          }
+        },
+        "question_jKQU8d": {
+          "type": "question",
+          "settings": {
+            "title": "Can I look stylish without looking overdressed?",
+            "text": "<p>Yes — the answer is intentional elegance. You don’t need to dress like the bridal party or outshine the décor. Focus on great cuts, quality fabrics, and accessories that don’t scream for attention.<br/>A touch of gajra or a good pair of earrings does more than any shoulder feather ever could.</p>"
+          }
+        },
+        "question_g7ByjJ": {
+          "type": "question",
+          "settings": {
+            "title": "What does Summer by Priyanka Gupta recommend for wedding guests?",
+            "text": "<p>Always timeless, always graceful:<br/>\t•\tChiffon sarees with soft embroidery<br/>\t•\tSleeveless silk or raw silk blouses<br/>\t•\tTraditional brocade sarees<br/>\t•\tClassic anarkalis and well-tailored kurta sets<br/><br/>These pieces don’t chase trends — they create memories.</p>"
+          }
+        },
+        "question_KRWPwD": {
+          "type": "question",
+          "settings": {
+            "title": "What colours should I wear for a Haldi or Mehendi ceremony?",
+            "text": "<p>Haldi: Yellow is tradition — try marigold, mustard, or turmeric tones.<br/>Mehendi: Vibrant colours shine — leafy green, rani pink, orange, and peacock blue work wonderfully.<br/>Just make sure your outfit is easy to move in, especially if there’s dancing or floor seating involved.</p>"
+          }
+        },
+        "question_WwArdT": {
+          "type": "question",
+          "settings": {
+            "title": "What should I wear to a Sikh wedding?",
+            "text": "<p>Always wear a kurta set or suit with a dupatta — you’ll need it to respectfully cover your head inside the gurdwara.<br/>Avoid revealing cuts or flashy pieces. Sikh weddings are serene, and elegance goes a long way.</p>"
+          }
+        },
+        "question_tGrWcU": {
+          "type": "question",
+          "settings": {
+            "title": "I’m not Indian. What should I wear as a guest to an Indian wedding?",
+            "text": "<p>You’ll be welcomed with open arms — and probably fed second helpings.<br/><br/>You can wear:<br/>\t•\tA sari, lehenga, or kurta set (we’ll help you drape)<br/>\t•\tA fusion outfit in festive colours<br/>\t•\tA modern, elegant western dress (great for cocktails or Christian ceremonies)<br/><br/>For Haldi or Mehendi: choose happy colours like yellow, green, pink, or even orange — anything vibrant that feels celebratory.</p>"
+          }
+        },
+        "question_beDQmk": {
+          "type": "question",
+          "settings": {
+            "title": "Can I wear a Western dress?",
+            "text": "<p>Yes — especially if it’s elegant and thoughtfully styled.<br/>A deep jewel-tone midi, a pastel silk maxi, or a well-tailored dress in festive hues can fit right in. Just avoid casual fabrics or beachwear vibes.</p>"
+          }
+        },
+        "question_qbHLJe": {
+          "type": "question",
+          "settings": {
+            "title": "Can I wear a traditional outfit from my own culture?",
+            "text": "<p>Absolutely. Indian families love when guests bring their own culture to the celebration — it makes the wedding feel even more special.<br/><br/>Silk kimono? Nigerian headwrap? Hanbok? Yes, yes, and yes.<br/>Just make it festive, respectful, and joyful — you’ll be complimented all night.</p>"
+          }
+        },
+        "question_YpXAc8": {
+          "type": "question",
+          "settings": {
+            "title": "Is it too much to wear a lehenga?",
+            "text": "<p>Nothing is too much at an Indian wedding. But at Summer, we believe that a good lehenga is one that can be worn again — at another wedding, a Diwali party, or even re-styled separately.<br/><br/>Because timeless design always gets the last word.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_a3Hcac",
+        "question_CceWHU",
+        "question_rkF3EU",
+        "question_tPVewe",
+        "question_giWnTe",
+        "question_MzfcLA",
+        "question_qrzFVQ",
+        "question_jKQU8d",
+        "question_g7ByjJ",
+        "question_KRWPwD",
+        "question_WwArdT",
+        "question_tGrWcU",
+        "question_beDQmk",
+        "question_qbHLJe",
+        "question_YpXAc8"
+      ],
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "title": "FAQs"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb",
+    "faq_Y7pXfz"
+  ]
+}

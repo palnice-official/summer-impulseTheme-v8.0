@@ -1,0 +1,195 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "t:sections.footer-group.name",
+  "sections": {
+    "footer-promotions": {
+      "type": "footer-promotions",
+      "disabled": true,
+      "settings": {
+        "hide_homepage": false
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "be65b1ca-af69-4b23-8b20-d4cbdbc66989": {
+          "type": "menu",
+          "settings": {
+            "show_footer_title": true,
+            "menu": "footer-menu",
+            "container_width": 25
+          }
+        },
+        "menu_nAw9JB": {
+          "type": "menu",
+          "settings": {
+            "show_footer_title": true,
+            "menu": "footer",
+            "container_width": 25
+          }
+        },
+        "f7c817e7-d686-44c4-b7fa-1680659bdba8": {
+          "type": "menu",
+          "settings": {
+            "show_footer_title": true,
+            "menu": "navingation-menu",
+            "container_width": 15
+          }
+        },
+        "footer2": {
+          "type": "newsletter",
+          "settings": {
+            "show_footer_title": true,
+            "title": "Subscribe",
+            "text": "<p>Be the first one to know about flash sales, limited edition & new products. Join our FIRST LOOK CLUB</p>",
+            "container_width": 25
+          }
+        },
+        "custom_nbAxYG": {
+          "type": "custom",
+          "settings": {
+            "show_footer_title": true,
+            "title": "BEST PRICE",
+            "text": "<p>Discover timeless elegance at exceptional value with Summer by Priyanka Gupta. Enjoy exclusive discounts across our curated collections of women’s clothing, jewelry, and accessories—each piece thoughtfully crafted for every celebration.<br/><br/>Shop with confidence: we offer worldwide shipping, prompt delivery, personalized styling, responsive customer support, and swift grievance redressal.<br/><br/></p>",
+            "container_width": 25
+          }
+        },
+        "custom_fBxb9T": {
+          "type": "custom",
+          "settings": {
+            "show_footer_title": true,
+            "title": "Top Categories",
+            "text": "<p>Top Categories in Jewellery & Accessories</p><p>Necklace | Neckpiece | Clutch | Hathphool | Hand Harness | Earrings | Ring | Gajra | Pin | Bracelet | Potli | Bag | Stole | Wristlet | Maang Tikka | Maangtikka | Maangtika</p><p>Top Categories in Girls And Womenswear</p><p>Girls Designer Clothes | <a href=\"https://www.lovesummer.in/collections/festivities\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/festivities\">Lehenga </a>| <a href=\"https://www.lovesummer.in/collections/festivities\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/festivities\">Embroidered Lehenga</a> | <a href=\"https://www.lovesummer.in/collections/sharara-sets\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/sharara-sets\">Sharara Suits</a> | <a href=\"https://www.lovesummer.in/collections/kurta-sets-women\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/kurta-sets-women\">Kurta Set</a> | <a href=\"https://www.lovesummer.in/collections/kurta-sets-women\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/kurta-sets-women\">Kurtas </a>| <a href=\"https://www.lovesummer.in/collections/anarkali-sets\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/anarkali-sets\">Anarkali Dresses</a> | <a href=\"https://www.lovesummer.in/collections/dresses\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/dresses\">Dresses </a>| <a href=\"https://www.lovesummer.in/collections/accessories\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/accessories\">Accessories</a></p>",
+            "container_width": 25
+          }
+        },
+        "custom_KiiK8x": {
+          "type": "custom",
+          "settings": {
+            "show_footer_title": true,
+            "title": "More",
+            "text": "<p><strong>Customer-Centric Services for a Hassle-Free Shopping Experience test</strong></p><p>Experience effortless and personalized shopping with <strong>Summer’s exclusive services</strong>. Chat directly with our expert personal stylists to find the perfect <strong>saree, lehenga, or festive outfit</strong> tailored to your style. Need help? Our customer support team is available from <strong>10:00 AM to 7:00 PM</strong> to assist you with styling tips, outfit selection, and order placement.</p><p>Visit our <strong>Delhi store</strong> for a luxurious in-store experience or shop online for <strong>ready-to-ship lehengas, sarees, and more</strong> — delivered quickly.. Whether you're dressing for weddings, festivals, or special occasions, count on Summer for <strong>timely, glamorous, and hassle-free fashion</strong>.</p><p>Designer Wear for Every Celebration</p><p>At Summer by Priyanka Gupta, we celebrate every reason to dress up. Whether it’s a wedding, a ritual, or a joyful farewell, our handcrafted pieces are made for your most cherished moments.<br/><br/>Perfect for:<br/>Weddings – Haldi, Mehendi, Sangeet, Cocktail, Anand Karaj, Reception<br/>Cultural Festivals – Diwali, Eid, Karwa Chauth, Holi, Navaratri, Dussehra, Durga Puja, Ganesh Chaturthi, Christmas, New Year, Pongal, Onam, Vishu, Baisakhi, Ugadi<br/>Life Celebrations – Roka, Engagements, Baby Showers, Grah Pravesh, Housewarming, Anniversaries, Birthdays<br/>Spiritual Occasions – Sunderkand, Pooja, Satyanarayan Katha, Mata Ki Chowki, Jagran, Satsang<br/>Everyday Indian Traditions – Raksha Bandhan, Mother’s Day, Independence Day, Farewells, College Festivities & First Festivals After Marriage<br/><br/>Because every moment deserves something beautiful.</p>",
+            "container_width": 25
+          }
+        }
+      },
+      "block_order": [
+        "be65b1ca-af69-4b23-8b20-d4cbdbc66989",
+        "menu_nAw9JB",
+        "f7c817e7-d686-44c4-b7fa-1680659bdba8",
+        "footer2",
+        "custom_nbAxYG",
+        "custom_fBxb9T",
+        "custom_KiiK8x"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 769px) {.footer__item-padding {display: none; }}"
+      ],
+      "settings": {
+        "show_locale_selector": false,
+        "show_currency_selector": false,
+        "show_currency_flags": false,
+        "show_payment_icons": true,
+        "show_copyright": true,
+        "copyright_text": "is owned by Love Summer Private Limited"
+      }
+    },
+    "seo_keywords_ChPRRL": {
+      "type": "seo-keywords",
+      "disabled": true,
+      "settings": {
+        "seo_keywords_title": "Customer-Centric Services for a Hassle-Free Shopping Experience test",
+        "seo_text_color": "#000000",
+        "seo_text-alignment": "left",
+        "seo_keywords": "{{ metaobjects.home_page_keywords[\"home-page-keywords-n87hzyho\"].keywords | metafield_tag }}",
+        "show_seo_keywords": true
+      }
+    },
+    "seo_keywords_FF8D38": {
+      "type": "seo-keywords",
+      "disabled": true,
+      "settings": {
+        "seo_keywords_title": "BEST PRICE AND ADDED BENEFITS",
+        "seo_text_color": "#000000",
+        "seo_text-alignment": "left",
+        "seo_keywords": "<p>Discover timeless elegance at exceptional value with Summer by Priyanka Gupta. Enjoy exclusive discounts across our curated collections of women’s clothing, jewelry, and accessories—each piece thoughtfully crafted for every celebration.<br/><br/>Shop with confidence: we offer worldwide shipping, prompt delivery, personalized styling, responsive customer support, and swift grievance redressal.</p>",
+        "show_seo_keywords": true
+      }
+    },
+    "seo_keywords_W744PD": {
+      "type": "seo-keywords",
+      "disabled": true,
+      "settings": {
+        "seo_keywords_title": "Top Categories in Jewellery & Accessories",
+        "seo_text_color": "#000000",
+        "seo_text-alignment": "left",
+        "seo_keywords": "<p>Necklace | Neckpiece | Clutch | Hathphool | Hand Harness | Earrings | Ring | Gajra | Pin | Bracelet | Potli | Bag | Stole | Wristlet | Maang Tikka | Maangtikka | Maangtika</p>",
+        "show_seo_keywords": true
+      }
+    },
+    "seo_keywords_E3Q9PN": {
+      "type": "seo-keywords",
+      "disabled": true,
+      "settings": {
+        "seo_keywords_title": "Top Categories in Girls And Womenswear",
+        "seo_text_color": "#000000",
+        "seo_text-alignment": "left",
+        "seo_keywords": "<p>Girls Designer Clothes | <a href=\"https://www.lovesummer.in/collections/festivities\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/festivities\">Lehenga </a>| <a href=\"https://www.lovesummer.in/collections/festivities\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/festivities\">Embroidered Lehenga</a> | <a href=\"https://www.lovesummer.in/collections/sharara-sets\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/sharara-sets\">Sharara Suits</a> | <a href=\"https://www.lovesummer.in/collections/kurta-sets-women\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/kurta-sets-women\">Kurta Set</a> | <a href=\"https://www.lovesummer.in/collections/kurta-sets-women\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/kurta-sets-women\">Kurtas </a>| <a href=\"https://www.lovesummer.in/collections/anarkali-sets\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/anarkali-sets\">Anarkali Dresses</a> | <a href=\"https://www.lovesummer.in/collections/dresses\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/dresses\">Dresses </a> | <a href=\"https://www.lovesummer.in/collections/accessories\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/accessories\">Accessories</a></p>",
+        "show_seo_keywords": true
+      }
+    },
+    "seo_keywords_tHMdGe": {
+      "type": "seo-keywords",
+      "disabled": true,
+      "settings": {
+        "seo_keywords_title": "Designer Wear for Every Celebration",
+        "seo_text_color": "#000000",
+        "seo_text-alignment": "left",
+        "seo_keywords": "<p>At Summer by Priyanka Gupta, we celebrate every reason to dress up. Whether it’s a wedding, a ritual, or a joyful farewell, our handcrafted pieces are made for your most cherished moments.<br/><br/>Perfect for:<br/>Weddings – Haldi, Mehendi, Sangeet, Cocktail, Anand Karaj, Reception<br/>Cultural Festivals – Diwali, Eid, Karwa Chauth, Holi, Navaratri, Dussehra, Durga Puja, Ganesh Chaturthi, Christmas, New Year, Pongal, Onam, Vishu, Baisakhi, Ugadi<br/>Life Celebrations – Roka, Engagements, Baby Showers, Grah Pravesh, Housewarming, Anniversaries, Birthdays<br/>Spiritual Occasions – Sunderkand, Pooja, Satyanarayan Katha, Mata Ki Chowki, Jagran, Satsang<br/>Everyday Indian Traditions – Raksha Bandhan, Mother’s Day, Independence Day, Farewells, College Festivities & First Festivals After Marriage<br/><br/>Because every moment deserves something beautiful.</p>",
+        "show_seo_keywords": true
+      }
+    },
+    "seo_keywords_HjFbbz": {
+      "type": "seo-keywords",
+      "disabled": true,
+      "settings": {
+        "seo_keywords_title": "Top Categories in Womenswear",
+        "seo_text_color": "#000000",
+        "seo_text-alignment": "left",
+        "seo_keywords": "<p><a href=\"https://www.lovesummer.in/collections/lehenga\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/lehenga\">Lehengas </a>| <a href=\"https://www.lovesummer.in/collections/anarkali-sets\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/anarkali-sets\">Anarkalis </a>| <a href=\"https://www.lovesummer.in/collections/kurta-sets-women\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/kurta-sets-women\">Kurta Sets</a> | <a href=\"https://www.lovesummer.in/collections/designer-sarees\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/designer-sarees\">Sarees </a>| <a href=\"https://www.lovesummer.in/collections/designer-sarees\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/designer-sarees\">Kurtas for Women</a> | <a href=\"https://www.lovesummer.in/collections/dresses\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/dresses\">Dresses </a>| <a href=\"https://www.lovesummer.in/collections/sharara-sets\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/sharara-sets\">Sharara Sets</a> | <a href=\"https://www.lovesummer.in/collections/tops\" title=\"https://www.lovesummer.in/collections/tops\">Tops </a>| <a href=\"https://www.lovesummer.in/collections/tunics\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/tunics\">Tunics </a>| <a href=\"https://www.lovesummer.in/collections/lehenga\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/lehenga\">Bridesmaid Lehengas</a>  | <a href=\"https://www.lovesummer.in/collections/blouse\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/blouse\">Blouses </a>| <a href=\"https://www.lovesummer.in/collections/lehenga\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/lehenga\">Lehenga </a><a href=\"https://www.lovesummer.in/collections/designer-sarees\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/designer-sarees\">Saree </a> | <a href=\"https://www.lovesummer.in/collections/ready-to-ship\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/ready-to-ship\">Ready to Ship </a>| <a href=\"https://www.lovesummer.in/collections/festivities\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/festivities\">Festive Offers</a></p>",
+        "show_seo_keywords": true
+      }
+    },
+    "seo_keywords_BzarhJ": {
+      "type": "seo-keywords",
+      "disabled": true,
+      "settings": {
+        "seo_keywords_title": "",
+        "seo_text_color": "#000000",
+        "seo_text-alignment": "left",
+        "seo_keywords": "",
+        "show_seo_keywords": true
+      }
+    }
+  },
+  "order": [
+    "footer-promotions",
+    "footer",
+    "seo_keywords_ChPRRL",
+    "seo_keywords_FF8D38",
+    "seo_keywords_W744PD",
+    "seo_keywords_E3Q9PN",
+    "seo_keywords_tHMdGe",
+    "seo_keywords_HjFbbz",
+    "seo_keywords_BzarhJ"
+  ]
+}

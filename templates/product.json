@@ -1,0 +1,309 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "9a9d6fce-39cd-4c4f-b73c-fab524aaa302": {
+          "type": "size_chart",
+          "settings": {
+            "size_chart": "size-chart"
+          }
+        },
+        "e844bfc1-cd55-4f66-9696-081575bcd82f": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<body>\n    <p>Product will be Shipped by <span id=\"delivery-date\"></span></p>\n    <script>\n        function updateDeliveryDate() {\n            var today = new Date();\n            var deliveryDate = new Date();\n            deliveryDate.setDate(today.getDate() + 28); // Adding 28 days\n\n            var options = { year: 'numeric', month: 'long', day: 'numeric' };\n            var formattedDate = deliveryDate.toLocaleDateString(undefined, options);\n            document.getElementById('delivery-date').textContent = formattedDate;\n        }\n\n        document.addEventListener(\"DOMContentLoaded\", updateDeliveryDate);\n    </script>\n</body>"
+          }
+        },
+        "784c8724-f94c-4754-bdfe-fdee738799be": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "2c492c33-1eb0-4162-b6d5-f042aaa1bf07": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "Our sales assistant are now available to help you on a click via WhatsApp or Video Call at <a href=\"https://wa.link/yz8u10\" style=\"color:Blue\"; target=\"_blank\">+919899070899</a>"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": true
+          }
+        },
+        "c841f375-e9d8-412c-9b6b-82f987b27098": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping",
+            "content": "",
+            "page": "shipping-information"
+          }
+        },
+        "sales_point_x6jKtm": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "globe",
+            "text": "Shipping Worldwide"
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "separator",
+        "variant_picker",
+        "9a9d6fce-39cd-4c4f-b73c-fab524aaa302",
+        "e844bfc1-cd55-4f66-9696-081575bcd82f",
+        "784c8724-f94c-4754-bdfe-fdee738799be",
+        "buy_buttons",
+        "2c492c33-1eb0-4162-b6d5-f042aaa1bf07",
+        "description",
+        "c841f375-e9d8-412c-9b6b-82f987b27098",
+        "sales_point_x6jKtm"
+      ],
+      "settings": {
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_height": "flexible",
+        "thumbnail_arrows": true,
+        "mobile_layout": "full",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "featured_collection_NjRffa": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a.btn.btn--secondary.btn--small.section-header__link {display: none;}",
+        "h2.section-header__title {font-size: 22px;}"
+      ],
+      "name": "Similar Products",
+      "settings": {
+        "title": "Similar Products",
+        "home_featured_products": "kurta-sets-women",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "featured_collection_eJn9nQ": {
+      "type": "featured-collection",
+      "custom_css": [
+        "a.btn.btn--secondary.btn--small.section-header__link {display: none;}",
+        "h2.section-header__title {font-size: 22px;}"
+      ],
+      "name": "t:sections.featured-collection.presets.featured_collection.name",
+      "settings": {
+        "title": "Customers Also Bought",
+        "home_featured_products": "accessories",
+        "per_row": 5,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "You may also like{{ product.metafields[\"shopify--discovery--product_recommendation\"].related_products_display.value }}",
+        "related_count": 5,
+        "products_per_row": 5
+      }
+    },
+    "testimonial_carousel_bUUPhM": {
+      "type": "testimonial-carousel",
+      "blocks": {
+        "testimonial_hFmbLL": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nishtha_Sharma.jpg",
+            "quote": "<p>It was an absolute pleasure to wear the outfit by Summer by Priyanka.<br/><br/>Tha tailoring and the outfit is excellent and the service was equally impeccable. Trying and browsing at the beautiful store was made so easy by the staff!<br/><br/>Definitely coming back to the brand</p>",
+            "author": "Nishtha Sharma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_8wamUc": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/viriti_verma.jpg",
+            "quote": "<p>Summer by Priyanka Gupta is like a breath of fresh air out of so many designer stores we visited for my sister-in-laws bridal outfit.<br/><br/>Her outfits were a love at first sight! They have a great collection and the store is beautifully decorated and designed. Kanchan ji, who is also the store manager helped us a lot with making correct decisions, as a result we were in love with the final outcome.<br/><br/> We ended up picking up so many sarees and suits. It's a highly recommended store, do visit.</p>",
+            "author": "Vriti Verma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_b4y889": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/APARNA_ROY.webp",
+            "quote": "<p>We have had a wonderful experience at the Summer store always without fail !!<br/><br/>The outfits are fabulous and so is the store staff. Very accommodating. They customised a dress for me and it turned out lovely. My mom and I now shop regularly.<br/><br/>P.S: the store is so beautiful. My little daughter has a gala time every time we visit.</p>",
+            "author": "Aparna Roy, India",
+            "rating": 5
+          }
+        },
+        "testimonial_MFTMVr": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/NEENU_NAYYAR.webp",
+            "quote": "<p>Summer by Priyanka gupta was an instagram discovery. I was looking for simple & elegant yet dressy clothes for a family wedding.<br/><br/>I went to the store at def col, met Priyanka and was absolutely in awe of her and her craft. Such simplicity in both :)<br/><br/>Since then, Summer by Priyanka Gupta has become my go to store for any occasion for my daughter and I. Absolutely love it ♥️\"</p>",
+            "author": "Neenu Nayyar, India",
+            "rating": 5
+          }
+        },
+        "testimonial_RHQ66C": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Sailaja.webp",
+            "quote": "<p>I had a wonderful shopping experience with Summer by Priyanka Gupta! The saree I purchased exceeded my expectations in both quality and design.<br/><br/>The customer service was exceptional, and the entire process was smooth and enjoyable. I will definitely be shopping with you again and will recommend your store to friends and family.<br/><br/>Thank you for providing such beautiful products and excellent service!</p>",
+            "author": "Sailaja, Chicago, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_YR3RFB": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nidhi_Modi.webp",
+            "quote": "<p>Well, Summer is all about it’s pastel tones and cute detailed colorful embroideries. Wearing summer always makes you to stand out in the crowd and creates a fresh vibe around you.<br/><br/>I just love the service, the work, the fabric, the embroideries and every bit of it.<br/><br/>They make such unique and chic designs that makes us fall for summer everyday. Always a Summer Girl 🌸</p>",
+            "author": "Nidhi Modi, India",
+            "rating": 5
+          }
+        },
+        "testimonial_yPj4hE": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/PAYAL_C_GUPTA.webp",
+            "quote": "<p>I love Summer by Priyanka Gupta for their stunning pastel and embroidered outfits, highlighting their beautiful craftsmanship that consistently impresses her.</p>",
+            "author": "Payal C Gupta, Dubai",
+            "rating": 5
+          }
+        },
+        "testimonial_MayNkq": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rajwinder_Gill.webp",
+            "quote": "<p>Thankyou for sending me the beautiful dresses. I appreciate their quality and fit , they are perfect in every way. I'm eager to place more orders with you.</p>",
+            "author": "Rajwinder Gill, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_Nga3xt": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Leena_Yerneni.webp",
+            "quote": "<p>Great designs and quality. Just loved how our outfits turned out for my daughter’s first birthday making it more memorable.<br/><br/>So dreamy and just the way I envisioned🌸💞💖</p>",
+            "author": "Leena Yerneni, USA",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_hFmbLL",
+        "testimonial_8wamUc",
+        "testimonial_b4y889",
+        "testimonial_MFTMVr",
+        "testimonial_RHQ66C",
+        "testimonial_YR3RFB",
+        "testimonial_yPj4hE",
+        "testimonial_MayNkq",
+        "testimonial_Nga3xt"
+      ],
+      "name": "Testimonial Carousel",
+      "settings": {
+        "title": "Don't Take Our Word For It......",
+        "url": "https://www.lovesummer.in/pages/beautiful-girls-of-summer",
+        "btn_text": "client gallery",
+        "cellAlign": "left",
+        "time": 5000,
+        "pageDots": false,
+        "adaptiveHeight": true,
+        "padding-top": 0,
+        "padding-bottom": 60
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "recent_count": 5
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "settings": {
+        "max_width": true
+      }
+    },
+    "background-image-text": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "Love Summer Philosophy",
+        "text": "<p>A good design should have the power to move you! At summer, we’re always chasing that happy feeling and try to pass it on to our customers by delighting them with our products and service.</p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify://shop_images/summer-by-priyanka-gupta-11111.jpg",
+        "layout": "left",
+        "height": 450,
+        "framed": true,
+        "parallax": false,
+        "parallax_direction": "top",
+        "lazyload_images": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "featured_collection_NjRffa",
+    "featured_collection_eJn9nQ",
+    "product-recommendations",
+    "testimonial_carousel_bUUPhM",
+    "recently-viewed",
+    "sub",
+    "background-image-text",
+    "collection-return"
+  ]
+}

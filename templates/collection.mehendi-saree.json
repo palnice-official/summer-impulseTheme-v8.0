@@ -1,0 +1,241 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h2>Buy Mehendi Sarees Online</h2><p>The Mehendi ceremony, a vibrant and joyous prelude to weddings, deserves a touch of elegance and grace. At \"Summer by Priyanka Gupta,\" we present our exclusive Mehendi Saree Collection, designed to infuse your special day with tradition and style. Crafted on luxurious fabrics like Organza, Chiffon, Georgette, and Silk, our Mehendi sarees are an ode to the artistry and beauty of this cherished occasion.</p><h2><strong>Elegance in Every Drape</strong></h2><ul><li><strong>Organza Mehendi Sarees:</strong> Draped in the sheer charm of Organza, our Organza Mehendi Sarees add an ethereal touch to your celebration. The delicate fabric and intricate detailing create a whimsical aura that's perfect for this joyful event.</li><li><strong>Chiffon Mehendi Sarees:</strong> Chiffon sarees, known for their fluidity and grace, are a delightful choice for your Mehendi. Our Chiffon Mehendi Sarees feature captivating designs and subtle embellishments that enhance your pre-wedding look.</li><li><strong>Georgette Mehendi Sarees:</strong> Celebrate tradition with a contemporary twist in our Georgette Mehendi Sarees. The exquisite Resham embroidery and chic patterns combine to add style and grace to your Mehendi ensemble.</li></ul><h2><strong>Why Choose Our Mehendi Sarees:</strong></h2><ul><li><strong>Mehendi-Perfect:</strong> Our sarees are tailored for Mehendi celebrations, capturing the essence of the occasion with intricate designs and vibrant colors.</li><li><strong>Tradition Meets Style:</strong> Each saree reflects the perfect blend of tradition and contemporary style, ensuring you look radiant on your special day.</li><li><strong>Chic Embellishments:</strong> Subtle sequins, Zari work, and intricate embroidery add a touch of glamour to your Mehendi look.</li><li><strong>Comfort and Style:</strong> Lightweight fabrics ensure you stay comfortable and stylish throughout the day.</li></ul><h2><strong>FAQs - Mehendi Sarees</strong></h2><h3>Can I customize the design of my Mehendi saree?</h3><p>While our sarees are not customizable, we offer a wide range of designs to cater to diverse preferences.</p><h3><br/>What is the care routine for Mehendi sarees to maintain their beauty?</h3><p>We recommend dry cleaning or professional cleaning to preserve the vibrancy of your Mehendi saree. Store them in a cool, dry place to prevent damage.</p><h3>Do you provide international shipping for Mehendi sarees?</h3><p>Yes, we offer international shipping, allowing brides from around the world to embrace the elegance of our Mehendi sarees.</p><h3>Can I book an appointment to visit your physical store in Delhi NCR?</h3><p>Yes, residents of Delhi NCR can visit our store at D6, 1st Floor, Defence Colony, New Delhi, 110024. You can book an appointment on our website to explore our Mehendi saree collection in person.</p><h3>Are these sarees suitable for other pre-wedding ceremonies as well?</h3><p>Our Mehendi sarees are versatile and can be worn for other pre-wedding events like Sangeet, making them a valuable addition to your bridal trousseau.</p><p>Step into the world of tradition and elegance with \"Summer by Priyanka Gupta's\" Mehendi Saree Collection. Celebrate this cherished occasion with grace and style as you embrace the artistry and beauty of our sarees. Shop now and make your Mehendi day unforgettable.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "faq_fPUGAe": {
+      "type": "faq",
+      "blocks": {
+        "question_i4K3w8": {
+          "type": "question",
+          "settings": {
+            "title": "Elegance in Every Drape",
+            "text": "<ul><li><strong>Organza Mehendi Sarees:</strong> Draped in the sheer charm of Organza, our Organza Mehendi Sarees add an ethereal touch to your celebration. The delicate fabric and intricate detailing create a whimsical aura that's perfect for this joyful event.</li><li><strong>Chiffon Mehendi Sarees:</strong> Chiffon sarees, known for their fluidity and grace, are a delightful choice for your Mehendi. Our Chiffon Mehendi Sarees feature captivating designs and subtle embellishments that enhance your pre-wedding look.</li><li><strong>Georgette Mehendi Sarees:</strong> Celebrate tradition with a contemporary twist in our Georgette Mehendi Sarees. The exquisite Resham embroidery and chic patterns combine to add style and grace to your Mehendi ensemble.</li></ul>"
+          }
+        },
+        "question_eCDkYg": {
+          "type": "question",
+          "settings": {
+            "title": "Why Choose Our Mehendi Sarees:",
+            "text": "<ul><li><strong>Mehendi-Perfect:</strong> Our sarees are tailored for Mehendi celebrations, capturing the essence of the occasion with intricate designs and vibrant colors.</li><li><strong>Tradition Meets Style:</strong> Each saree reflects the perfect blend of tradition and contemporary style, ensuring you look radiant on your special day.</li><li><strong>Chic Embellishments:</strong> Subtle sequins, Zari work, and intricate embroidery add a touch of glamour to your Mehendi look.</li><li><strong>Comfort and Style:</strong> Lightweight fabrics ensure you stay comfortable and stylish throughout the day.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "question_i4K3w8",
+        "question_eCDkYg"
+      ],
+      "settings": {
+        "title": "Mehendi Sarees"
+      }
+    },
+    "faq_ayxGrE": {
+      "type": "faq",
+      "blocks": {
+        "question_JQWXyg": {
+          "type": "question",
+          "settings": {
+            "title": "Can I customize the design of my Mehendi saree?",
+            "text": "<p>While our sarees are not customizable, we offer a wide range of designs to cater to diverse preferences.</p>"
+          }
+        },
+        "question_F83xNb": {
+          "type": "question",
+          "settings": {
+            "title": "What is the care routine for Mehendi sarees to maintain their beauty?",
+            "text": "<p>We recommend dry cleaning or professional cleaning to preserve the vibrancy of your Mehendi saree. Store them in a cool, dry place to prevent damage.</p>"
+          }
+        },
+        "question_4tgjXf": {
+          "type": "question",
+          "settings": {
+            "title": "Do you provide international shipping for Mehendi sarees?",
+            "text": "<p>Yes, we offer international shipping, allowing brides from around the world to embrace the elegance of our Mehendi sarees.</p>"
+          }
+        },
+        "question_xbEYD7": {
+          "type": "question",
+          "settings": {
+            "title": "Are these sarees suitable for other pre-wedding ceremonies as well?",
+            "text": "<p>Our Mehendi sarees are versatile and can be worn for other pre-wedding events like Sangeet, making them a valuable addition to your bridal trousseau.</p><p>Step into the world of tradition and elegance with \"Summer by Priyanka Gupta's\" Mehendi Saree Collection. Celebrate this cherished occasion with grace and style as you embrace the artistry and beauty of our sarees. Shop now and make your Mehendi day unforgettable.</p>"
+          }
+        },
+        "question_fcpgYF": {
+          "type": "question",
+          "settings": {
+            "title": "Can I book an appointment to visit your physical store in Delhi NCR?",
+            "text": "<p>Yes, residents of Delhi NCR can visit our store at D6, 1st Floor, Defence Colony, New Delhi, 110024. You can book an appointment on our website to explore our Mehendi saree collection in person.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_JQWXyg",
+        "question_F83xNb",
+        "question_4tgjXf",
+        "question_xbEYD7",
+        "question_fcpgYF"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "FAQs - Mehendi Sarees"
+      }
+    },
+    "faq_thHJyC": {
+      "type": "faq",
+      "blocks": {
+        "question_yjmFPN": {
+          "type": "question",
+          "settings": {
+            "title": "What colors are ideal for mehendi ceremony outfits?",
+            "text": "<p>Green is a traditional favorite, but shades like lime, mustard, aqua, and floral prints are also perfect for a joyful mehendi look.</p>"
+          }
+        },
+        "question_tFxhAb": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer mehendi outfits for bridesmaids and guests?",
+            "text": "<p>Yes, our collection includes light lehengas, tunics, and kurta sets that are ideal for the entire bridal party.</p>"
+          }
+        },
+        "question_T7bEeP": {
+          "type": "question",
+          "settings": {
+            "title": "Are your mehendi lehengas comfortable for dancing and outdoor functions?",
+            "text": "<p>Absolutely. We design our mehendi lehengas to be breathable, lightweight, and perfect for celebration—even outdoors.</p>"
+          }
+        },
+        "question_PpmdRx": {
+          "type": "question",
+          "settings": {
+            "title": "Can I customize my outfit for the mehendi?",
+            "text": "<p>Yes, customizations are available. Our team can assist you with fit, color tweaks, or even embroidery changes for a personalized look.</p>"
+          }
+        },
+        "question_rqBMFJ": {
+          "type": "question",
+          "settings": {
+            "title": "What styles of outfits are best for mehendi functions?",
+            "text": "<p>Sarees, voluminous dresses, vibrant gararas, festive shararas, and embroidered tunics are all great picks—especially in bright or natural tones.</p>"
+          }
+        },
+        "question_cnGk94": {
+          "type": "question",
+          "settings": {
+            "title": "Are these mehendi outfits ready to ship?",
+            "text": "<p>Some pieces are ready to ship, while others are made to order. Each product listing mentions its specific timeline.</p>"
+          }
+        },
+        "question_yWQ6Bc": {
+          "type": "question",
+          "settings": {
+            "title": "Do you have matching accessories for mehendi looks?",
+            "text": "<p>Yes! Explore our embroidered potlis, dupattas, and floral jewelry to complete your look.</p>"
+          }
+        },
+        "question_WLfFbb": {
+          "type": "question",
+          "settings": {
+            "title": "Do you ship internationally?",
+            "text": "<p>Yes, we ship worldwide including the US, UK, UAE, Canada, and Australia. International brides love our festive wear for destination weddings.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_yjmFPN",
+        "question_tFxhAb",
+        "question_T7bEeP",
+        "question_PpmdRx",
+        "question_rqBMFJ",
+        "question_cnGk94",
+        "question_yWQ6Bc",
+        "question_WLfFbb"
+      ],
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "title": "FAQs"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb",
+    "faq_fPUGAe",
+    "faq_ayxGrE",
+    "faq_thHJyC"
+  ]
+}

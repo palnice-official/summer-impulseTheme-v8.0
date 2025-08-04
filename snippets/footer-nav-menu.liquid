@@ -1,0 +1,207 @@
+{% style %}
+          .custom-menu-toggle {
+            background: none;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+          }
+
+          .no-scroll {
+          overflow: hidden; /* Prevents scrolling */
+          height: 100%; /* Ensures body doesn’t collapse */
+          position: fixed; /* Prevents jumpiness on some devices */
+          width: 100%; /* Maintains full width */
+        }
+
+          .icon__fallback-text {
+            position: absolute;
+            clip: rect(0 0 0 0); /*remove it*/
+          }
+
+          .text {
+            font-size: 16px;
+            margin-top: 5px;
+          }
+
+          .custom-menu {
+            position: fixed; /* Changed from absolute for mobile */
+            top: 0;
+            left: -100%; /* Slide in from left */
+            width: 80%; /* Mobile-friendly width */
+            height: 100%; /* Full height for mobile */
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            opacity: 0;
+            visibility: hidden;
+            transition: left 0.3s ease, opacity 0.3s ease;
+            z-index: 1000; /* Ensure it’s above other content */
+          }
+
+          .custom-menu.is-open {
+            left: 0; /* Slide into view */
+            opacity: 1;
+            visibility: visible;
+            top: 80px
+          }
+
+          .custom-menu__list,
+          .custom-menu__sublist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+
+          .custom-menu__sublist {
+            padding-left: 15px;
+          }
+
+          .custom-menu__item {
+            margin: 10px 0; /* More spacing for mobile */
+            border-bottom: 1px solid #ccc;
+          }
+
+          .custom-menu__link {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 10px;
+          }
+
+          .custom-menu__link:hover {
+            background: #f5f5f5;
+          }
+
+          .custom-menu__item--active .custom-menu__link {
+            font-weight: bold;
+            color: #000;
+          }
+
+        .custom-menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition:transform .25s cubic-bezier(.165,.84,.44,1);
+        /* transition: opacity 0.3s ease; */
+        z-index: 1000!important;
+      }
+
+      .custom-menu-overlay.is-open {
+        opacity: 1;
+        visibility: visible;
+      }
+
+  #CustomMenuClose {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      right: calc(65vw* -1);
+}
+{% endstyle %}
+<div class="footer-nav-menu">
+  <!-- toggle button -->
+  <div class="button active">
+    <button
+      type="button"
+      class="custom-menu-toggle"
+      aria-controls="CustomMenu"
+      aria-expanded="false"
+    >
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        role="presentation"
+        class="icon icon-hamburger"
+        viewBox="0 0 64 64"
+      >
+        <title>Menu</title>
+        <path d="M7 15h51M7 32h43M7 49h51" />
+      </svg>
+      <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
+    </button>
+    <!-- <div class="text">Custom Menu</div> -->
+  </div>
+  <!-- dynamic custom menu with linklist -->
+  <div id="CustomMenuOverlay" class="custom-menu-overlay" aria-hidden="true"></div>
+  <div class="custom-menu" id="CustomMenu" aria-hidden="true">
+    <div id="CustomMenuClose">{% render 'close-icon' %}</div>
+    {% if linklists['custom-menu'].links %}
+      <ul class="custom-menu__list">
+        {% for link in linklists['custom-menu'].links %}
+          <li
+            class="custom-menu__item {% if link.active %}custom-menu__item--active{% endif %}"
+          >
+            <a href="{{ link.url }}" class="custom-menu__link mobile-nav__link mobile-nav__link--top-level">{{ link.title }}</a>
+            {% if link.links != blank %}
+              <ul class="custom-menu__sublist">
+                {% for child_link in link.links %}
+                  <li class="custom-menu__item {% if child_link.active %}custom-menu__item--active{% endif %}">
+                    <a href="{{ child_link.url }}" class="custom-menu__link mobile-nav__link mobile-nav__link--top-level ">{{ child_link.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No Menu items avilable</p>
+    {% endif %}
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.querySelector('.custom-menu-toggle');
+    const menu = document.querySelector('#CustomMenu');
+    const overlay = document.querySelector('#CustomMenuOverlay');
+    const closeButton = document.querySelector('#CustomMenuClose')
+    const body = document.body; // Reference to body
+
+    // Function to the menu
+
+    const closeMenu = () => {
+      menu.classList.remove('is-open');
+      overlay.classList.remove('is-open');
+      menu.setAttribute('aria-hidden', 'true');
+      toggleButton.setAttribute('aria-expanded', 'false');
+      body.classList.remove('no-scroll');
+    }
+
+    // Toggle button click event
+    toggleButton.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = menu.classList.contains('is-open');
+      menu.classList.toggle('is-open');
+      overlay.classList.toggle('is-open'); // Toggle overlay
+      menu.setAttribute('aria-hidden', !menu.classList.contains('is-open'));
+      toggleButton.setAttribute('aria-expanded', !isOpen);
+
+      // Toggle no-scroll class on body
+      if (menu.classList.contains('is-open')) {
+        body.classList.add('no-scroll');
+      } else {
+        body.classList.remove('no-scroll');
+      }
+    });
+
+    // Click outside to close
+    if(closeButton) {
+      closeButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closeMenu();
+      });
+    }
+
+    document.addEventListener('click', (event) => {
+      if (!toggleButton.contains(event.target) && !menu.contains(event.target)) {
+        closeMenu();
+      }
+    });
+  });
+</script>

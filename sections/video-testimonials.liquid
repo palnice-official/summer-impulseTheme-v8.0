@@ -1,0 +1,303 @@
+{% style %}
+  .video-testimonials {
+    padding: 17px 0;
+  }
+  
+  .video-testimonials__heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .video-testimonials__heading-text {
+    margin-bottom: 10px; 
+  }
+  
+  .video-testimonials__grid {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .video-testimonials__item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .video-testimonials__item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .video-testimonials__video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 170%; /* 1:1 Aspect Ratio for Instagram-like feel */
+    overflow: hidden;
+  }
+  
+  .video-testimonials__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  .video-testimonials__info {
+    padding: 15px;
+    background-color: #fff;
+  }
+  
+  .video-testimonials__name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  .video-testimonials__text {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #555;
+  }
+  
+  /* Mobile styles for Instagram-like experience */
+  @media screen and (max-width: 767px) {
+    .video-testimonials__grid {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .video-testimonials__item {
+      margin-bottom: 15px;
+    }
+    
+    .video-testimonials__video-container {
+      padding-bottom: 170%; /* Taller aspect ratio on mobile */
+    }
+  }
+  
+  /* Desktop grid layout */
+  @media screen and (min-width: 768px) {
+    .video-testimonials__grid[data-columns="2"] {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .video-testimonials__grid[data-columns="3"] {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .video-testimonials__grid[data-columns="4"] {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Slider layout */
+  .video-testimonials__slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .video-testimonials__slider .video-testimonials__item {
+    scroll-snap-align: start;
+    min-width: 280px;
+    width: 280px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .video-testimonials__slider .video-testimonials__item {
+      min-width: 320px;
+      width: 320px;
+    }
+  }
+{% endstyle %}
+
+<section class="video-testimonials">
+  <div class="page-width">
+    {% if section.settings.heading != blank %}
+      <h2 class="video-testimonials__heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+
+   {% if section.settings.heading != blank %}
+      <p class="video-testimonials__heading-text">{{ section.settings.text }}</p>
+    {% endif %}
+    
+{% if section.settings.layout == 'grid' %}
+  {% assign layout_class = 'video-testimonials__grid' %}
+{% else %}
+  {% assign layout_class = 'video-testimonials__slider' %}
+{% endif %}
+
+<div class="{{ layout_class }}" {% if section.settings.layout == 'grid' %} data-columns="{{ section.settings.desktop_columns }}" {% endif %}> 
+    
+    {% for block in section.blocks %}
+      {% if block.settings.video != blank %}
+        <div class="video-testimonials__item" {{ block.shopify_attributes }}>
+          <div class="video-testimonials__video-container">
+            {{ block.settings.video | video_tag: controls: true, class: 'video-testimonials__video', autoplay: true,loop: true, muted: false, image_size: '400x' }}
+          </div>
+          <div class="video-testimonials__info">
+            {% if block.settings.customer_name != blank %}
+              <h3 class="video-testimonials__name">{{ block.settings.customer_name }}</h3>
+            {% endif %}
+            {% if block.settings.testimonial_text != blank %}
+              <p class="video-testimonials__text">{{ block.settings.testimonial_text }}</p>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+    
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  // Get all testimonial videos
+  const testimonialVideos = document.querySelectorAll('.video-testimonials__video');
+  
+  // Set up IntersectionObserver to detect when videos are visible
+  const videoObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const video = entry.target;
+      
+      // If video is at least 20% visible
+      if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+        // Pause all other videos first
+        testimonialVideos.forEach(otherVideo => {
+          if (otherVideo !== video && !otherVideo.paused) {
+            otherVideo.pause();
+          }
+        });
+        
+        // Then play this video if it was paused
+        if (video.paused) {
+          // Try to play and handle any autoplay restrictions
+          const playPromise = video.play();
+          
+          if (playPromise !== undefined) {
+            playPromise.catch(error => {
+              // Auto-play was prevented by browser
+              console.log("Auto-play prevented by browser:", error);
+            });
+          }
+        }
+      } else {
+        // Less than 20% visible, pause the video
+        if (!video.paused) {
+          video.pause();
+        }
+      }
+    });
+  }, {
+    threshold: [0.5] // Trigger when 20% visible
+  });
+  
+  // Observe all videos
+  testimonialVideos.forEach(video => {
+    videoObserver.observe(video);
+    
+    // Keep existing click handler for manual playback control
+    video.addEventListener('play', function() {
+      // Pause all other videos when this one plays
+      testimonialVideos.forEach(otherVideo => {
+        if (otherVideo !== video && !otherVideo.paused) {
+          otherVideo.pause();
+        }
+      });
+    });
+  });
+});
+</script>
+
+{% schema %}
+{
+  "name": "Video Testimonials",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "Customer Testimonials"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Section test"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Desktop Layout",
+      "options": [
+        {
+          "value": "grid",
+          "label": "Grid"
+        },
+        {
+          "value": "slider",
+          "label": "Slider"
+        }
+      ],
+      "default": "grid"
+    },
+    {
+      "type": "range",
+      "id": "desktop_columns",
+      "label": "Columns on Desktop",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 3
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Testimonial Video",
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video"
+        },
+        {
+          "type": "text",
+          "id": "customer_name",
+          "label": "Customer Name",
+          "default": "Customer Name"
+        },
+        {
+          "type": "textarea",
+          "id": "testimonial_text",
+          "label": "Testimonial Text",
+          "default": "Share what this customer had to say about your products or services."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video Testimonials",
+      "blocks": [
+        {
+          "type": "video"
+        },
+        {
+          "type": "video"
+        },
+        {
+          "type": "video"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

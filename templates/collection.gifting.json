@@ -1,0 +1,287 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "testimonial_carousel_mJMPVt": {
+      "type": "testimonial-carousel",
+      "blocks": {
+        "testimonial_J87jRY": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nishtha_Sharma.jpg",
+            "quote": "<p>It was an absolute pleasure to wear the outfit by Summer by Priyanka.<br/><br/>Tha tailoring and the outfit is excellent and the service was equally impeccable. Trying and browsing at the beautiful store was made so easy by the staff!<br/><br/>Definitely coming back to the brand</p>",
+            "author": "Nishtha Sharma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_FKb4P4": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/viriti_verma.jpg",
+            "quote": "<p>Summer by Priyanka Gupta is like a breath of fresh air out of so many designer stores we visited for my sister-in-laws bridal outfit.<br/><br/>Her outfits were a love at first sight! They have a great collection and the store is beautifully decorated and designed. Kanchan ji, who is also the store manager helped us a lot with making correct decisions, as a result we were in love with the final outcome.<br/><br/> We ended up picking up so many sarees and suits. It's a highly recommended store, do visit.</p>",
+            "author": "Vriti Verma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_iNK8Hz": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/APARNA_ROY.webp",
+            "quote": "<p>We have had a wonderful experience at the Summer store always without fail !!<br/><br/>The outfits are fabulous and so is the store staff. Very accommodating. They customised a dress for me and it turned out lovely. My mom and I now shop regularly.<br/><br/>P.S: the store is so beautiful. My little daughter has a gala time every time we visit.</p>",
+            "author": "Aparna Roy, India",
+            "rating": 5
+          }
+        },
+        "testimonial_KxRNXV": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/NEENU_NAYYAR.webp",
+            "quote": "<p>Summer by Priyanka gupta was an instagram discovery. I was looking for simple & elegant yet dressy clothes for a family wedding.<br/><br/>I went to the store at def col, met Priyanka and was absolutely in awe of her and her craft. Such simplicity in both :)<br/><br/>Since then, Summer by Priyanka Gupta has become my go to store for any occasion for my daughter and I. Absolutely love it ♥️</p>",
+            "author": "Neenu Nayyar, India",
+            "rating": 5
+          }
+        },
+        "testimonial_efYtXe": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Sailaja.webp",
+            "quote": "<p>I had a wonderful shopping experience with Summer by Priyanka Gupta! The saree I purchased exceeded my expectations in both quality and design.<br/><br/>The customer service was exceptional, and the entire process was smooth and enjoyable. I will definitely be shopping with you again and will recommend your store to friends and family.<br/><br/>Thank you for providing such beautiful products and excellent service!</p>",
+            "author": "Sailaja, Chicago, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_U4cqYd": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nidhi_Modi.webp",
+            "quote": "<p>Well, Summer is all about it’s pastel tones and cute detailed colorful embroideries. Wearing summer always makes you to stand out in the crowd and creates a fresh vibe around you.<br/><br/>I just love the service, the work, the fabric, the embroideries and every bit of it.<br/><br/>They make such unique and chic designs that makes us fall for summer everyday. Always a Summer Girl 🌸</p>",
+            "author": "Nidhi Modi, India",
+            "rating": 5
+          }
+        },
+        "testimonial_nigEKX": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/PAYAL_C_GUPTA.webp",
+            "quote": "<p>I love Summer by Priyanka Gupta for their stunning pastel and embroidered outfits, highlighting their beautiful craftsmanship that consistently impresses her.</p>",
+            "author": "Payal C Gupta, Dubai",
+            "rating": 5
+          }
+        },
+        "testimonial_Jx6Vrp": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rajwinder_Gill.webp",
+            "quote": "<p>Thankyou for sending me the beautiful dresses. I appreciate their quality and fit , they are perfect in every way. I'm eager to place more orders with you.</p>",
+            "author": "Rajwinder Gill, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_3yAeE3": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Leena_Yerneni.webp",
+            "quote": "<p>Great designs and quality. Just loved how our outfits turned out for my daughter’s first birthday making it more memorable.<br/><br/>So dreamy and just the way I envisioned🌸💞💖</p>",
+            "author": "Leena Yerneni, USA",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_J87jRY",
+        "testimonial_FKb4P4",
+        "testimonial_iNK8Hz",
+        "testimonial_KxRNXV",
+        "testimonial_efYtXe",
+        "testimonial_U4cqYd",
+        "testimonial_nigEKX",
+        "testimonial_Jx6Vrp",
+        "testimonial_3yAeE3"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Don't Take Our Word For It......",
+        "url": "https://www.lovesummer.in/pages/beautiful-girls-of-summer",
+        "btn_text": "VIEW CLIENT DIARY",
+        "cellAlign": "left",
+        "time": 5000,
+        "pageDots": false,
+        "adaptiveHeight": true,
+        "padding-top": 0,
+        "padding-bottom": 20
+      }
+    },
+    "faq_RETRUy": {
+      "type": "faq",
+      "blocks": {
+        "question_MQMMp8": {
+          "type": "question",
+          "settings": {
+            "title": "What are the best luxury gifts for sophisticated women?",
+            "text": "<p>If you’re looking for elegant and timeless gifts for classy ladies, explore our collection of hand-embroidered luxury stoles, designer potlis, statement jewelry, and exquisite bags. Each piece is thoughtfully crafted to add grace and charm to any occasion.</p>"
+          }
+        },
+        "question_eEcWp6": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer gifts that are size-free?",
+            "text": "<p>Yes! Our gifting collection features non-size-specific gifts like stoles, bags, potlis, and jewelry, making them perfect for effortless gifting without worrying about fit.</p>"
+          }
+        },
+        "question_PPBGk3": {
+          "type": "question",
+          "settings": {
+            "title": "What makes your gifts special?",
+            "text": "<p>Each item at Summer by Priyanka Gupta is designed with intricate hand embroidery, fine craftsmanship, and a touch of luxury, ensuring that your gift is unique and cherished. Whether for birthdays, anniversaries, or special moments, our pieces are timeless, feminine, and luxurious.</p>"
+          }
+        },
+        "question_zG3kzP": {
+          "type": "question",
+          "settings": {
+            "title": "Do you provide shipping within 48 hours?",
+            "text": "<p>Yes! We offer fast dispatch within 48 hours on all ready-to-ship products, ensuring that your gifts arrive on time for any special occasion.</p>"
+          }
+        },
+        "question_6DAcRH": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer worldwide shipping?",
+            "text": "<p>Absolutely! We provide secure worldwide shipping, so you can send a beautiful handcrafted gift to your loved ones, no matter where they are.</p>"
+          }
+        },
+        "question_TEimqb": {
+          "type": "question",
+          "settings": {
+            "title": "What are the best thoughtful gifts for my wife?",
+            "text": "<p>Surprise your wife with a luxurious hand-embroidered stole, an artisanal potli, or handcrafted jewelry—gifts that speak of elegance, love, and timeless beauty.</p>"
+          }
+        },
+        "question_XrLnme": {
+          "type": "question",
+          "settings": {
+            "title": "What are the best Mother’s Day gifts?",
+            "text": "<p>Celebrate your mom with a beautiful stole or a stylish embroidered bag. Our collection is designed for graceful, sophisticated women who appreciate fine craftsmanship and thoughtful gifts.</p>"
+          }
+        },
+        "question_pYfXhY": {
+          "type": "question",
+          "settings": {
+            "title": "Can I include a personalized note with my gift?",
+            "text": "<p>Yes! We offer a complimentary personalized message service to make your gift extra special. Just add your message at checkout, and we’ll include it with your beautifully wrapped gift.</p>"
+          }
+        },
+        "question_zVWeYf": {
+          "type": "question",
+          "settings": {
+            "title": "Do you have premium packaging for gifts?",
+            "text": "<p>Yes, our gifts come in luxury packaging, making them ready to be presented to your loved ones in a refined and elegant way.</p>"
+          }
+        },
+        "question_DzzDFD": {
+          "type": "question",
+          "settings": {
+            "title": "Where can I shop your luxury gifts?",
+            "text": "<p>You can explore our exclusive gifting collection online at www.lovesummer.in and have your gifts delivered worldwide.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_MQMMp8",
+        "question_eEcWp6",
+        "question_PPBGk3",
+        "question_zG3kzP",
+        "question_6DAcRH",
+        "question_TEimqb",
+        "question_XrLnme",
+        "question_pYfXhY",
+        "question_zVWeYf",
+        "question_DzzDFD"
+      ],
+      "settings": {
+        "title": "FAQs Luxury Gifting "
+      }
+    },
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h2><strong>Frequently Asked Questions (FAQs) – Luxury Gifting at Summer by Priyanka Gupta</strong></h2> <h3><strong>1. What are the best luxury gifts for sophisticated women?</strong></h3> <p>If you’re looking for elegant and timeless gifts for classy ladies, explore our collection of hand-embroidered luxury stoles, designer potlis, statement jewelry, and exquisite bags. Each piece is thoughtfully crafted to add grace and charm to any occasion.</p> <h3><strong>2. Do you offer gifts that are size-free?</strong></h3> <p>Yes! Our gifting collection features non-size-specific gifts like stoles, bags, potlis, and jewelry, making them perfect for effortless gifting without worrying about fit.</p> <h3><strong>3. What makes your gifts special?</strong></h3> <p>Each item at Summer by Priyanka Gupta is designed with intricate hand embroidery, fine craftsmanship, and a touch of luxury, ensuring that your gift is unique and cherished. Whether for birthdays, anniversaries, or special moments, our pieces are timeless, feminine, and luxurious.</p> <h3><strong>4. Do you provide shipping within 48 hours?</strong></h3> <p>Yes! We offer fast dispatch within 48 hours on all ready-to-ship products, ensuring that your gifts arrive on time for any special occasion.</p> <h3><strong>5. Do you offer worldwide shipping?</strong></h3> <p>Absolutely! We provide secure worldwide shipping, so you can send a beautiful handcrafted gift to your loved ones, no matter where they are.</p> <h3><strong>6. What are the best thoughtful gifts for my wife?</strong></h3> <p>Surprise your wife with a luxurious hand-embroidered stole, an artisanal potli, or handcrafted jewelry—gifts that speak of elegance, love, and timeless beauty.</p> <h3><strong>7. What are the best Mother’s Day gifts?</strong></h3> <p>Celebrate your mom with a beautiful stole or a stylish embroidered bag. Our collection is designed for graceful, sophisticated women who appreciate fine craftsmanship and thoughtful gifts.</p> <h3><strong>8. Can I include a personalized note with my gift?</strong></h3> <p>Yes! We offer a complimentary personalized message service to make your gift extra special. Just add your message at checkout, and we’ll include it with your beautifully wrapped gift.</p> <h3><strong>9. Do you have premium packaging for gifts?</strong></h3> <p>Yes, our gifts come in luxury packaging, making them ready to be presented to your loved ones in a refined and elegant way.</p> <h3><strong>10. Where can I shop your luxury gifts?</strong></h3> <p>You can explore our exclusive gifting collection online at www.lovesummer.in and have your gifts delivered worldwide.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "testimonial_carousel_mJMPVt",
+    "faq_RETRUy",
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb"
+  ]
+}

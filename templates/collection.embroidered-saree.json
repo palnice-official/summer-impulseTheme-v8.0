@@ -1,0 +1,322 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "testimonial_carousel_PmVecJ": {
+      "type": "testimonial-carousel",
+      "blocks": {
+        "testimonial_pVDY6c": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nishtha_Sharma.jpg",
+            "quote": "<p>It was an absolute pleasure to wear the outfit by Summer by Priyanka.<br/><br/>Tha tailoring and the outfit is excellent and the service was equally impeccable. Trying and browsing at the beautiful store was made so easy by the staff!<br/><br/>Definitely coming back to the brand</p>",
+            "author": "Nishtha Sharma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_iBAtHX": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/viriti_verma.jpg",
+            "quote": "<p>Summer by Priyanka Gupta is like a breath of fresh air out of so many designer stores we visited for my sister-in-laws bridal outfit.<br/><br/>Her outfits were a love at first sight! They have a great collection and the store is beautifully decorated and designed. Kanchan ji, who is also the store manager helped us a lot with making correct decisions, as a result we were in love with the final outcome.<br/><br/> We ended up picking up so many sarees and suits. It's a highly recommended store, do visit.</p>",
+            "author": "Vriti Verma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_gVGkJY": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/APARNA_ROY.webp",
+            "quote": "<p>We have had a wonderful experience at the Summer store always without fail !!<br/><br/>The outfits are fabulous and so is the store staff. Very accommodating. They customised a dress for me and it turned out lovely. My mom and I now shop regularly.<br/><br/>P.S: the store is so beautiful. My little daughter has a gala time every time we visit.</p>",
+            "author": "Aparna Roy, India",
+            "rating": 5
+          }
+        },
+        "testimonial_8GgPXE": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/NEENU_NAYYAR.webp",
+            "quote": "<p>Summer by Priyanka gupta was an instagram discovery. I was looking for simple & elegant yet dressy clothes for a family wedding.<br/><br/>I went to the store at def col, met Priyanka and was absolutely in awe of her and her craft. Such simplicity in both :)<br/><br/>Since then, Summer by Priyanka Gupta has become my go to store for any occasion for my daughter and I. Absolutely love it ♥️</p>",
+            "author": "Neenu Nayyar, India",
+            "rating": 5
+          }
+        },
+        "testimonial_8NWGbX": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Sailaja.webp",
+            "quote": "<p>I had a wonderful shopping experience with Summer by Priyanka Gupta! The saree I purchased exceeded my expectations in both quality and design.<br/><br/>The customer service was exceptional, and the entire process was smooth and enjoyable. I will definitely be shopping with you again and will recommend your store to friends and family.<br/><br/>Thank you for providing such beautiful products and excellent service!</p>",
+            "author": "Sailaja, Chicago, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_p8BA8h": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nidhi_Modi.webp",
+            "quote": "<p>Well, Summer is all about it’s pastel tones and cute detailed colorful embroideries. Wearing summer always makes you to stand out in the crowd and creates a fresh vibe around you.<br/><br/>I just love the service, the work, the fabric, the embroideries and every bit of it.<br/><br/>They make such unique and chic designs that makes us fall for summer everyday. Always a Summer Girl 🌸</p>",
+            "author": "Nidhi Modi, India",
+            "rating": 5
+          }
+        },
+        "testimonial_Dd7fyP": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/PAYAL_C_GUPTA.webp",
+            "quote": "<p>I love Summer by Priyanka Gupta for their stunning pastel and embroidered outfits, highlighting their beautiful craftsmanship that consistently impresses her.</p>",
+            "author": "Payal C Gupta, Dubai",
+            "rating": 5
+          }
+        },
+        "testimonial_LYHwVf": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rajwinder_Gill.webp",
+            "quote": "<p>Thankyou for sending me the beautiful dresses. I appreciate their quality and fit , they are perfect in every way. I'm eager to place more orders with you.</p>",
+            "author": "Rajwinder Gill, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_rAf67K": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Leena_Yerneni.webp",
+            "quote": "<p>Great designs and quality. Just loved how our outfits turned out for my daughter’s first birthday making it more memorable.<br/><br/>So dreamy and just the way I envisioned🌸💞💖</p>",
+            "author": "Leena Yerneni, USA",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_pVDY6c",
+        "testimonial_iBAtHX",
+        "testimonial_gVGkJY",
+        "testimonial_8GgPXE",
+        "testimonial_8NWGbX",
+        "testimonial_p8BA8h",
+        "testimonial_Dd7fyP",
+        "testimonial_LYHwVf",
+        "testimonial_rAf67K"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Don't Take Our Word For It......",
+        "url": "https://www.lovesummer.in/pages/beautiful-girls-of-summer",
+        "btn_text": "VIEW CLIENT DIARY",
+        "cellAlign": "left",
+        "time": 5000,
+        "pageDots": false,
+        "adaptiveHeight": true,
+        "padding-top": 0,
+        "padding-bottom": 20
+      }
+    },
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h2>Buy Latest Emboidered Sarees</h2><p>Sarees are not just garments; they are works of art that tell stories of tradition, craftsmanship, and elegance. At \"Summer by Priyanka Gupta,\" we are thrilled to unveil our Hand-Embroidered Saree Collection, a tribute to the timeless allure of handcrafted beauty. Each saree in this collection is meticulously adorned with intricate embroidery, using sumptuous fabrics such as Organza, Chiffon, Georgette, and Silk. Explore the elegance and grace that our sarees bring to every occasion.</p><h2><strong>Types of Embroidered Sarees</strong></h2><p><strong>Organza Embroidered Sarees</strong>: Immerse yourself in the delicate charm of Organza. Our Organza Embroidered Sarees are a symphony of sheer elegance. Hand-embroidered motifs and patterns on this fabric create an ethereal look, perfect for grand events, soirées, and upscale parties.</p><p><strong>Chiffon Embroidered Sarees</strong>: Chiffon sarees offer fluidity and grace. Our Chiffon Embroidered Sarees feature intricate hand embroidery that adds a touch of subtle glamour. These sarees are versatile, making them ideal for garden parties, daytime events, or elegant gatherings.</p><p><strong>Georgette Embroidered Sarees</strong>: Georgette sarees are known for their versatility and drapability. Our Georgette Embroidered Sarees showcase intricate Resham embroidery and subtle sequin work, striking a balance between tradition and contemporary style. Perfect for weddings, festivities, and upscale functions.</p><p><strong>Silk Embroidered Sarees</strong>: Silk, the fabric of royalty, takes center stage in our Saree Collection. Our Silk Embroidered Sarees are adorned with exquisite Zari work and rich patterns, creating a timeless and regal appearance.</p><h2><strong>Craftsmanship Beyond Compare</strong></h2><p>Each saree in our Hand-Embroidered Saree Collection is a masterpiece, a testament to the artistry and skill of our talented artisans. Our embroidery techniques, including Zari, Resham, Sequin, and Stone work, reflect our commitment to excellence.</p><h2><strong>Elegant Details on our Embroidered Sarees</strong></h2><ul><li><strong>Intricate Embroidery:</strong> The hand-embroidery on these sarees is unparalleled, featuring motifs and patterns that showcase the timeless beauty of tradition.</li><li><strong>Vibrant Colors:</strong> Our sarees come in a range of vibrant colors, from classic reds and regal blues to contemporary pastels, ensuring there's a saree for every taste and occasion.</li><li><strong>Photogenic Grace:</strong> These sarees are designed not just to be worn but to be celebrated. The intricate embroidery and luxurious fabrics make every moment picture-perfect.</li></ul><h2><strong>Shop with Confidence</strong></h2><p>Browse our Hand-Embroidered Saree Collection online and let our experts assist you in finding the perfect saree for every occasion. Our sarees are more than clothing; they are an embodiment of elegance and heritage.</p><h2>Which other saree collections do we have at Summer?</h2><p>Here are the other sarees we have in our collection</p><h3>Sarees By Fabric</h3><ul><li><a href=\"https://www.lovesummer.in/collections/organza-sarees\"><span style=\"text-decoration:underline\">Organza Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/chiffon-sarees\"><span style=\"text-decoration:underline\">Chiffon Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/georgette-sarees\"><span style=\"text-decoration:underline\">Georgette Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/silk-sarees\"><span style=\"text-decoration:underline\">Silk Sarees</span></a></li></ul><h3>Sarees By Design</h3><ul><li><a href=\"https://www.lovesummer.in/collections/printed-sarees\"><span style=\"text-decoration:underline\">Printed Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/luxury-saree\"><span style=\"text-decoration:underline\">Luxury Sarees</span></a></li></ul><h3>Sarees By Occasion</h3><ul><li><a href=\"https://www.lovesummer.in/collections/haldi-sarees\"><span style=\"text-decoration:underline\">Haldi Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/mehendi-sarees\"><span style=\"text-decoration:underline\">Mehendi Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/engagement-sarees\"><span style=\"text-decoration:underline\">Engagement Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/reception-sarees\"><span style=\"text-decoration:underline\">Reception Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/partywear-sarees\"><span style=\"text-decoration:underline\">Partywear Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/festive-sarees\"><span style=\"text-decoration:underline\">Festive Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/farewell-sarees\"><span style=\"text-decoration:underline\">Farewell Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/diwali-sarees\"><span style=\"text-decoration:underline\">Diwali Sarees</span></a></li></ul><h2><strong>FAQs - Embroidered Sarees</strong></h2><h3><strong>What makes \"Summer by Priyanka Gupta\" Embroidered Sarees unique?</strong></h3><p>Our Embroidered Sarees are a fusion of tradition and contemporary style. They are hand-embroidered by skilled artisans on luxurious fabrics like Organza, Chiffon, Georgette, and Silk, creating unique and elegant pieces.</p><h3><strong>What types of embroidery techniques are used on your sarees?</strong></h3><p>We employ various embroidery techniques, including Zari work, Aari embroidery, Sequin work, and Stone embellishments, to create intricate and exquisite designs on our sarees.</p><h3><strong>Are these sarees suitable for weddings and special occasions?</strong></h3><p>Yes, our Embroidered Sarees are perfect for weddings, receptions, engagements, and other special occasions. The opulent designs and rich fabrics make them ideal for celebratory events.</p><h3><strong>Are your sarees suitable for gifting?</strong></h3><p>Yes, our Embroidered Sarees make exquisite gifts for loved ones. The timeless beauty and craftsmanship of our sarees make them a memorable and thoughtful present for special occasions.</p><h3><strong>Can I customize the design or color of a saree?</strong></h3><p>We offer customization options for certain sarees. You can discuss your preferences with our experts, and we will strive to create a saree that aligns with your vision.</p><h3><strong>How do I care for my Embroidered Saree to maintain its beauty?</strong></h3><p>To preserve the beauty of your saree, we recommend dry cleaning or professional cleaning. Avoid exposure to direct sunlight and store it in a cool, dry place to prevent damage.</p><h3><strong>Are these sarees suitable for daytime and evening events?</strong></h3><p>Our sarees are versatile and can be worn for both daytime and evening events. The choice of fabric and embroidery design can make them appropriate for various occasions.</p><h3><strong>Do you offer international shipping for your sarees?</strong></h3><p>Yes, we provide international shipping services, allowing customers from around the world to experience the elegance of our Embroidered Saree Collection.</p><h3><strong>What is the return policy for saree purchases?</strong></h3><p>We have a flexible return and exchange policy. If you have any concerns about your saree purchase, please contact our customer support team within the specified return period for assistance.</p><h3><strong>Can I book an appointment to visit your physical store in Delhi NCR?</strong></h3><p>Yes, residents of Delhi NCR can visit our store located at <strong>D6, 1st Floor, Defence Colony, New Delhi, 110024</strong>. You can book an appointment on our website to explore our saree collection in person.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "faq_GcWJ9z": {
+      "type": "faq",
+      "blocks": {
+        "question_LKWJYp": {
+          "type": "question",
+          "settings": {
+            "title": "Types of Embroidered Sarees",
+            "text": "<p><strong>Organza Embroidered Sarees</strong>: Immerse yourself in the delicate charm of Organza. Our Organza Embroidered Sarees are a symphony of sheer elegance. Hand-embroidered motifs and patterns on this fabric create an ethereal look, perfect for grand events, soirées, and upscale parties.</p><p><strong>Chiffon Embroidered Sarees</strong>: Chiffon sarees offer fluidity and grace. Our Chiffon Embroidered Sarees feature intricate hand embroidery that adds a touch of subtle glamour. These sarees are versatile, making them ideal for garden parties, daytime events, or elegant gatherings.</p><p><strong>Georgette Embroidered Sarees</strong>: Georgette sarees are known for their versatility and drapability. Our Georgette Embroidered Sarees showcase intricate Resham embroidery and subtle sequin work, striking a balance between tradition and contemporary style. Perfect for weddings, festivities, and upscale functions.</p><p><strong>Silk Embroidered Sarees</strong>: Silk, the fabric of royalty, takes center stage in our Saree Collection. Our Silk Embroidered Sarees are adorned with exquisite Zari work and rich patterns, creating a timeless and regal appearance.</p>"
+          }
+        },
+        "question_HwbLfH": {
+          "type": "question",
+          "settings": {
+            "title": "Craftsmanship Beyond Compare",
+            "text": "<p>Each saree in our Hand-Embroidered Saree Collection is a masterpiece, a testament to the artistry and skill of our talented artisans. Our embroidery techniques, including Zari, Resham, Sequin, and Stone work, reflect our commitment to excellence.</p>"
+          }
+        },
+        "question_T4zDrw": {
+          "type": "question",
+          "settings": {
+            "title": "Elegant Details on our Embroidered Sarees",
+            "text": "<ul><li><strong>Intricate Embroidery:</strong> The hand-embroidery on these sarees is unparalleled, featuring motifs and patterns that showcase the timeless beauty of tradition.</li><li><strong>Vibrant Colors:</strong> Our sarees come in a range of vibrant colors, from classic reds and regal blues to contemporary pastels, ensuring there's a saree for every taste and occasion.</li><li><strong>Photogenic Grace:</strong> These sarees are designed not just to be worn but to be celebrated. The intricate embroidery and luxurious fabrics make every moment picture-perfect.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "question_LKWJYp",
+        "question_HwbLfH",
+        "question_T4zDrw"
+      ],
+      "settings": {
+        "title": "About Embroidered Sarees"
+      }
+    },
+    "faq_NiBx7Y": {
+      "type": "faq",
+      "blocks": {
+        "question_VezFhG": {
+          "type": "question",
+          "settings": {
+            "title": "What makes \"Summer by Priyanka Gupta\" Embroidered Sarees unique?",
+            "text": "<p>Our Embroidered Sarees are a fusion of tradition and contemporary style. They are hand-embroidered by skilled artisans on luxurious fabrics like Organza, Chiffon, Georgette, and Silk, creating unique and elegant pieces.</p>"
+          }
+        },
+        "question_QGWYJJ": {
+          "type": "question",
+          "settings": {
+            "title": "What types of embroidery techniques are used on your sarees?",
+            "text": "<p>We employ various embroidery techniques, including Zari work, Aari embroidery, Sequin work, and Stone embellishments, to create intricate and exquisite designs on our sarees.</p>"
+          }
+        },
+        "question_QCCkrb": {
+          "type": "question",
+          "settings": {
+            "title": "Are these sarees suitable for weddings and special occasions?",
+            "text": "<p>Yes, our Embroidered Sarees are perfect for weddings, receptions, engagements, and other special occasions. The opulent designs and rich fabrics make them ideal for celebratory events.</p>"
+          }
+        },
+        "question_8hQ43C": {
+          "type": "question",
+          "settings": {
+            "title": "Are your sarees suitable for gifting?",
+            "text": "<p>Yes, our Embroidered Sarees make exquisite gifts for loved ones. The timeless beauty and craftsmanship of our sarees make them a memorable and thoughtful present for special occasions.</p>"
+          }
+        },
+        "question_Ngj6wr": {
+          "type": "question",
+          "settings": {
+            "title": "Can I customize the design or color of a saree?",
+            "text": "<p>We offer customization options for certain sarees. You can discuss your preferences with our experts, and we will strive to create a saree that aligns with your vision.</p>"
+          }
+        },
+        "question_pVP9G6": {
+          "type": "question",
+          "settings": {
+            "title": "How do I care for my Embroidered Saree to maintain its beauty?",
+            "text": "<p>To preserve the beauty of your saree, we recommend dry cleaning or professional cleaning. Avoid exposure to direct sunlight and store it in a cool, dry place to prevent damage.</p>"
+          }
+        },
+        "question_JD7xCp": {
+          "type": "question",
+          "settings": {
+            "title": "Are these sarees suitable for daytime and evening events?",
+            "text": "<p>Our sarees are versatile and can be worn for both daytime and evening events. The choice of fabric and embroidery design can make them appropriate for various occasions.</p>"
+          }
+        },
+        "question_RgWp9A": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer international shipping for your sarees?",
+            "text": "<p>Yes, we provide international shipping services, allowing customers from around the world to experience the elegance of our Embroidered Saree Collection.</p>"
+          }
+        },
+        "question_YFpLdD": {
+          "type": "question",
+          "settings": {
+            "title": "What is the return policy for saree purchases?",
+            "text": "<p>We have a flexible return and exchange policy. If you have any concerns about your saree purchase, please contact our customer support team within the specified return period for assistance.</p>"
+          }
+        },
+        "question_EHbVWX": {
+          "type": "question",
+          "settings": {
+            "title": "Can I book an appointment to visit your physical store in Delhi NCR?",
+            "text": "<p>Yes, residents of Delhi NCR can visit our store located at <strong>D6, 1st Floor, Defence Colony, New Delhi, 110024</strong>. You can book an appointment on our website to explore our saree collection in person.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_VezFhG",
+        "question_QGWYJJ",
+        "question_QCCkrb",
+        "question_8hQ43C",
+        "question_Ngj6wr",
+        "question_pVP9G6",
+        "question_JD7xCp",
+        "question_RgWp9A",
+        "question_YFpLdD",
+        "question_EHbVWX"
+      ],
+      "settings": {
+        "title": "FAQs"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "testimonial_carousel_PmVecJ",
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb",
+    "faq_GcWJ9z",
+    "faq_NiBx7Y"
+  ]
+}

@@ -1,0 +1,1000 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_p4EyEp": {
+      "type": "slideshow",
+      "blocks": {
+        "image_RKGKNc": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/w-day-final-banner.png",
+            "image_mobile": "shopify://shop_images/Women_Instagram_Post_International_women_s_day_5c233e63-98f7-4714-bf97-dd7e693357b2.png",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_RKGKNc"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_height": "natural",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "minimal",
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "circular_collection_navigation_7wCxca": {
+      "type": "circular-collection-navigation",
+      "blocks": {
+        "colection_image_Ymj8RW": {
+          "type": "colection_image",
+          "settings": {
+            "image": "shopify://shop_images/READY_TO_SHIP_0310d37e-bbcd-47db-a8b4-356ec9ae80e6.webp",
+            "link": "shopify://collections/ready-to-ship",
+            "text": "Ready To Ship"
+          }
+        },
+        "colection_image_FxECLQ": {
+          "type": "colection_image",
+          "settings": {
+            "image": "shopify://shop_images/BESTPRICES_c97d61bc-e3aa-4f71-89a1-f8615287c11b.webp",
+            "link": "shopify://collections/sale",
+            "text": "Special Prices"
+          }
+        },
+        "colection_image_QHBzdi": {
+          "type": "colection_image",
+          "settings": {
+            "image": "shopify://shop_images/SAREES_65e2585d-5b25-4a7d-84dc-509d5dc182dc.webp",
+            "link": "shopify://collections/designer-pastel-sarees",
+            "text": "Sarees"
+          }
+        },
+        "colection_image_YDLNhD": {
+          "type": "colection_image",
+          "settings": {
+            "image": "shopify://shop_images/KURTA_SETS_57807a2c-8138-42b9-9e1e-f27c566e1e5f.webp",
+            "link": "shopify://collections/kurta-sets-women",
+            "text": "Kurta Sets"
+          }
+        },
+        "colection_image_F6qJgt": {
+          "type": "colection_image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0429.webp",
+            "link": "shopify://collections/tunics-for-women",
+            "text": "Tunics"
+          }
+        },
+        "colection_image_Yh4rnV": {
+          "type": "colection_image",
+          "settings": {
+            "image": "shopify://shop_images/DRESSES_d506eda4-994d-4de5-ae87-f8841585f16c.webp",
+            "link": "shopify://collections/dresses",
+            "text": "Dresses"
+          }
+        },
+        "colection_image_Ukp344": {
+          "type": "colection_image",
+          "settings": {
+            "image": "shopify://shop_images/LEHENGA.webp",
+            "link": "shopify://collections/light-lehengas",
+            "text": "Lehenga"
+          }
+        },
+        "colection_image_qAm4RR": {
+          "type": "colection_image",
+          "settings": {
+            "image": "shopify://shop_images/BESTSELLERS.webp",
+            "link": "shopify://collections/bestseller",
+            "text": "Bestseller"
+          }
+        },
+        "colection_image_beGwPg": {
+          "type": "colection_image",
+          "settings": {
+            "image": "shopify://shop_images/CLIENT_DIARIES_99d88124-19e8-4dda-aa7f-6649ee6b6a84.webp",
+            "link": "shopify://pages/beautiful-girls-of-summer",
+            "text": "Client Diaries"
+          }
+        }
+      },
+      "block_order": [
+        "colection_image_Ymj8RW",
+        "colection_image_FxECLQ",
+        "colection_image_QHBzdi",
+        "colection_image_YDLNhD",
+        "colection_image_F6qJgt",
+        "colection_image_Yh4rnV",
+        "colection_image_Ukp344",
+        "colection_image_qAm4RR",
+        "colection_image_beGwPg"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Title of this section",
+        "cellAlign": "left"
+      }
+    },
+    "slideshow_BHXNmF": {
+      "type": "slideshow",
+      "blocks": {
+        "image_7GDFwt": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "An Indian Summer",
+            "title_size": 60,
+            "subheading": "",
+            "link": "shopify://collections/an-indian-summer",
+            "link_text": "View Collection",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#fdfbfb",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/indian_summer_holiday.jpg",
+            "image_mobile": "shopify://shop_images/MG_0877_aaf63b7c-684b-488e-9591-a37d78e43010.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "image_PNAaTY": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Summer Sarees",
+            "title_size": 60,
+            "subheading": "",
+            "link": "shopify://collections/summer-sarees",
+            "link_text": "View Collection",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#fdfbfb",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/Untitled_design_10.png",
+            "image_mobile": "shopify://shop_images/Summer_Sarees_cropted_1.webp",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "image_Pg6eww": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Bridesmaid Edit",
+            "title_size": 60,
+            "subheading": "",
+            "link": "shopify://collections/indian-bridesmaid-outfits",
+            "link_text": "View Collection",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/IMG_0405.jpg",
+            "image_mobile": "shopify://shop_images/Bridemaid_2.webp",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "image_xXiBrg": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Summer Essentials",
+            "title_size": 60,
+            "subheading": "",
+            "link": "shopify://collections/summer-esstentials",
+            "link_text": "View Collection",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/IMG_1214.jpg",
+            "image_mobile": "shopify://shop_images/RRG1797_1.webp",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_7GDFwt",
+        "image_PNAaTY",
+        "image_Pg6eww",
+        "image_xXiBrg"
+      ],
+      "custom_css": [
+        ".btn {border: #ffffff solid 1px !important; line-height: 16px !important; font-size: 11px !important; color: #404040 !important;}"
+      ],
+      "settings": {
+        "section_height": "natural",
+        "mobile_height": "500px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "lazyload_images": true
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "2ef12131-0e0e-42e9-b2e8-dd18e52ecbd3": {
+          "type": "collection",
+          "settings": {
+            "collection": "bestseller",
+            "title": "Bestsellers",
+            "focal_point": "center center"
+          }
+        },
+        "featured-collections-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "designer-pastel-sarees",
+            "title": "Sarees",
+            "focal_point": "center center"
+          }
+        },
+        "df8ca15d-9660-4f06-826b-0768c34c8913": {
+          "type": "collection",
+          "settings": {
+            "collection": "dresses",
+            "title": "Dresses",
+            "focal_point": "center center"
+          }
+        },
+        "featured-collections-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "kurta-sets-women",
+            "title": "Kurta Sets",
+            "focal_point": "center center"
+          }
+        },
+        "featured-collections-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "tunics-for-women",
+            "title": "Tunics",
+            "focal_point": "center center"
+          }
+        },
+        "featured-collections-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "light-lehengas",
+            "title": "Lehengas",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "2ef12131-0e0e-42e9-b2e8-dd18e52ecbd3",
+        "featured-collections-1",
+        "df8ca15d-9660-4f06-826b-0768c34c8913",
+        "featured-collections-0",
+        "featured-collections-3",
+        "featured-collections-2"
+      ],
+      "settings": {
+        "title": "Shop by Category",
+        "divider": false,
+        "per_row": 3,
+        "enable_gutter": true
+      }
+    },
+    "featured_collection_CrcpFH": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Celebrities In Summer",
+        "home_featured_products": "celebrities-in-summer",
+        "per_row": 5,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": true
+      }
+    },
+    "featured_collection_w7Qz8W": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New Arrivals",
+        "home_featured_products": "new-arrivals",
+        "per_row": 5,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "rich_text_TFhVf4": {
+      "type": "rich-text",
+      "blocks": {
+        "button_T49ppY": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://collections/new-arrivals",
+            "link_text": "View Collection"
+          }
+        }
+      },
+      "block_order": [
+        "button_T49ppY"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "divider": false
+      }
+    },
+    "advanced_content_n3HPWA": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_apWdkK": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>An Indian Summer</h2>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "image_TQDq4b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/kmk_8e726b49-8315-45b3-baf0-03df81c7659c.png",
+            "link": "shopify://collections/an-indian-summer",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "liquid_C4B4bF": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"custom_btn rte\">\n  <a href=\"/collections/an-indian-summer\" class=\"btn black_border\">\n    VIEW COLLECTION\n  </a>\n</div>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_apWdkK",
+        "image_TQDq4b",
+        "liquid_C4B4bF"
+      ],
+      "custom_css": [
+        ".custom__item-inner.custom__item-inner--liquid {text-align: center;}",
+        ".image-wrap img {height: 80%; -o-object-fit: cover; object-fit: cover; width: 100%;}",
+        "@media only screen and (max-width: 768px) {.custom__item {flex: 0 0 auto; margin-bottom: -40px; padding-left: 17px; padding-top: 40px; }}"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "lazyload_images": true
+      }
+    },
+    "featured_collection_m4nUMa": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "New Arrivals",
+      "settings": {
+        "title": "New Arrivals",
+        "home_featured_products": "new-arrivals",
+        "per_row": 5,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "featured_collection_ed9TLd": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".section-header {margin-bottom: 30px; margin-top: 90px;}"
+      ],
+      "settings": {
+        "title": "Summer Essentials",
+        "home_featured_products": "summer-esstentials",
+        "per_row": 5,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "rich_text_DNdb88": {
+      "type": "rich-text",
+      "blocks": {
+        "button_rXMXwa": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://collections/summer-esstentials",
+            "link_text": "View Collection"
+          }
+        }
+      },
+      "block_order": [
+        "button_rXMXwa"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "divider": false
+      }
+    },
+    "featured_collections_CaGQVH": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_CJFC3m": {
+          "type": "collection",
+          "settings": {
+            "collection": "petals-sunshine",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection_dDzWzb": {
+          "type": "collection",
+          "settings": {
+            "collection": "zaraafi-muse",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection_NhF8fx": {
+          "type": "collection",
+          "settings": {
+            "collection": "midnight-pearls",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection_q8PNaB": {
+          "type": "collection",
+          "settings": {
+            "collection": "beary-much-in-love",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection_mJi6JV": {
+          "type": "collection",
+          "settings": {
+            "collection": "rose-reverie",
+            "title": "Rose Reverie",
+            "focal_point": "center center"
+          }
+        },
+        "collection_9XrB6p": {
+          "type": "collection",
+          "settings": {
+            "collection": "sale",
+            "title": "Summer Steals",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "collection_CJFC3m",
+        "collection_dDzWzb",
+        "collection_NhF8fx",
+        "collection_q8PNaB",
+        "collection_mJi6JV",
+        "collection_9XrB6p"
+      ],
+      "disabled": true,
+      "name": "Handpicked by Summer",
+      "settings": {
+        "title": "Handpicked by Summer",
+        "divider": false,
+        "per_row": 3,
+        "enable_gutter": true
+      }
+    },
+    "circular_collection_navigation_nDBD3H": {
+      "type": "circular-collection-navigation",
+      "blocks": {
+        "colection_image_fjrX47": {
+          "type": "colection_image",
+          "settings": {
+            "image": "shopify://shop_images/lily.png",
+            "link": "https://www.lovesummer.in/collections/a-summer-in-lucknow",
+            "text": "A Summer In Lucknow"
+          }
+        },
+        "colection_image_pwK9TV": {
+          "type": "colection_image",
+          "settings": {
+            "image": "shopify://shop_images/rose-new.png",
+            "link": "https://www.lovesummer.in/collections/a-saree-lover",
+            "text": "A Saree Lover"
+          }
+        },
+        "colection_image_4AtTdq": {
+          "type": "colection_image",
+          "settings": {
+            "image": "shopify://shop_images/rose.png",
+            "link": "https://www.lovesummer.in/collections/sale",
+            "text": "Summer Steals"
+          }
+        },
+        "colection_image_bYMFHG": {
+          "type": "colection_image",
+          "settings": {
+            "image": "shopify://shop_images/marigold.png",
+            "link": "https://www.lovesummer.in/collections/petals-sunshine",
+            "text": "Petals & Sunshine"
+          }
+        },
+        "colection_image_yV4pVg": {
+          "type": "colection_image",
+          "name": "Handpicked",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/rn-image_picker_lib_temp_6b14bb26-9d5c-43e3-9c73-97e9b20c7b0b.png",
+            "link": "https://www.lovesummer.in/collections/zaraafi-muse",
+            "text": "Zaraafi Muse"
+          }
+        },
+        "colection_image_cX8PTd": {
+          "type": "colection_image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/rn-image_picker_lib_temp_1d22dc00-7019-4cbd-8cb2-efb3e05ee2f0.png",
+            "link": "https://www.lovesummer.in/collections/a-saree-lover",
+            "text": "Saree Lover"
+          }
+        },
+        "colection_image_JQyJLc": {
+          "type": "colection_image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/F6A1AAD2-4877-4E56-84F8-F3211584800A_bbfbb26d-dad4-4edf-8d04-912c1c4a4e1a.png",
+            "link": "https://www.lovesummer.in/collections/beary-much-in-love",
+            "text": "Beary Much In Love"
+          }
+        },
+        "colection_image_rBVmTC": {
+          "type": "colection_image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/rn-image_picker_lib_temp_679b1249-03fa-4458-92e3-96d43f831774.jpg",
+            "link": "shopify://collections/sale",
+            "text": "Summer Steals"
+          }
+        },
+        "colection_image_jmpgtr": {
+          "type": "colection_image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/rn-image_picker_lib_temp_2b284cd8-f6c2-40c6-ae2c-73eb41d1e26c.png",
+            "link": "https://www.lovesummer.in/collections/petals-sunshine",
+            "text": "Petals & Sunshine"
+          }
+        }
+      },
+      "block_order": [
+        "colection_image_fjrX47",
+        "colection_image_pwK9TV",
+        "colection_image_4AtTdq",
+        "colection_image_bYMFHG",
+        "colection_image_yV4pVg",
+        "colection_image_cX8PTd",
+        "colection_image_JQyJLc",
+        "colection_image_rBVmTC",
+        "colection_image_jmpgtr"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (max-width: 768px) {.carousel-template--19817685418220__circular_collection_navigation_nDBD3H img {height: 100px !important; width: 90px !important; }}"
+      ],
+      "name": "circular-nav",
+      "settings": {
+        "title": "Handpicked By Summer",
+        "cellAlign": "center"
+      }
+    },
+    "8e86185c-b95b-46f2-9e65-85a0d156c5e9": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "My Summer Pret",
+        "home_featured_products": "my-summer",
+        "per_row": 5,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "pagefly_section_tgqcYU": {
+      "type": "pagefly-section",
+      "disabled": true,
+      "settings": {
+        "section_id": "pf-926eb272"
+      }
+    },
+    "821c6f2c-5857-4bfa-b43b-6463ef4b5516": {
+      "type": "scrolling-text",
+      "disabled": true,
+      "settings": {
+        "text": "Follow Summer by Priyanka Gupta on Instagram",
+        "link": "https://www.instagram.com/summerbypriyankagupta/",
+        "text_size": 20,
+        "text_spacing": false,
+        "direction": "left",
+        "speed": 300
+      }
+    },
+    "1746528885ff5bc448": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_FpKzhN": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "Follow Summer on Instagram",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": true,
+            "link_alignment": "center",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_FpKzhN"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "testimonial_carousel_fVr7EX": {
+      "type": "testimonial-carousel",
+      "blocks": {
+        "testimonial_rLXHLq": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Mrs_Monica_Yadav_in_the_Blossom_Bows_Saree.jpg",
+            "quote": "",
+            "author": "Mrs Monica Yadav",
+            "rating": 5
+          }
+        },
+        "testimonial_jwXCtm": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Aarti_Patel-1.jpg",
+            "quote": "<p>I had an amazing experience working with the Summer by Priyanka team. There were so many outfits I loved I couldn’t decide which one I wanted and then I saw this sari in a teal and asked for it to be customized to this beautiful lilac color I wanted to wear for my pithi. Soon after, my mother in law fell in love with another sari and we ended up getting it for her as well.</p>",
+            "author": "Aarti Patel",
+            "rating": 5
+          }
+        },
+        "testimonial_enK9Cd": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/viriti_verma.jpg",
+            "quote": "<p>Summer by Priyanka Gupta is like a breath of fresh air out of so many designer stores we visited for my sister-in-laws bridal outfit.<br/><br/>Her outfits were a love at first sight! They have a great collection and the store is beautifully decorated and designed. Kanchan ji, who is also the store manager helped us a lot with making correct decisions, as a result we were in love with the final outcome.<br/><br/> We ended up picking up so many sarees and suits. It's a highly recommended store, do visit.</p>",
+            "author": "Vriti Verma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_emmitC": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nishtha_Sharma.jpg",
+            "quote": "<p>It was an absolute pleasure to wear the outfit by Summer by Priyanka.<br/><br/>Tha tailoring and the outfit is excellent and the service was equally impeccable. Trying and browsing at the beautiful store was made so easy by the staff!<br/><br/>Definitely coming back to the brand.</p>",
+            "author": "Nishtha Sharma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_PNA6Fp": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Leena_Yerneni.webp",
+            "quote": "<p>Great designs and quality. Just loved how our outfits turned out for my daughter’s first birthday making it more memorable.<br/><br/>So dreamy and just the way I envisioned🌸💞💖</p>",
+            "author": "Leena Yerneni, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_CWXeBQ": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nidhi_Modi.webp",
+            "quote": "<p>Well, Summer is all about it’s pastel tones and cute detailed colorful embroideries. Wearing summer always makes you to stand out in the crowd and creates a fresh vibe around you.<br/><br/>I just love the service, the work, the fabric, the embroideries and every bit of it.<br/><br/>They make such unique and chic designs that makes us fall for summer everyday. Always a Summer Girl 🌸</p>",
+            "author": "Nidhi Modi, India",
+            "rating": 5
+          }
+        },
+        "testimonial_ckLCHj": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/APARNA_ROY.webp",
+            "quote": "<p>We have had a wonderful experience at the Summer store always without fail !!</p><p><br/>The outfits are fabulous and so is the store staff. Very accommodating. They customised a dress for me and it turned out lovely. My mom and I now shop regularly.</p><p><br/>P.S: the store is so beautiful. My little daughter has a gala time every time we visit.</p>",
+            "author": "Aparna Roy, India",
+            "rating": 5
+          }
+        },
+        "testimonial_XUcQVF": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/NEENU_NAYYAR.webp",
+            "quote": "<p>Summer by Priyanka gupta was an instagram discovery. I was looking for simple & elegant yet dressy clothes for a family wedding.<br/><br/>I went to the store at def col, met Priyanka and was absolutely in awe of her and her craft. Such simplicity in both :)<br/><br/>Since then, Summer by Priyanka Gupta has become my go to store for any occasion for my daughter and I. Absolutely love it ♥️\"</p>",
+            "author": "Neenu Nayyar, India",
+            "rating": 5
+          }
+        },
+        "testimonial_3FBC9R": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Sailaja.webp",
+            "quote": "<p>I had a wonderful shopping experience with Summer by Priyanka Gupta! The saree I purchased exceeded my expectations in both quality and design.<br/><br/>The customer service was exceptional, and the entire process was smooth and enjoyable. I will definitely be shopping with you again and will recommend your store to friends and family.<br/><br/>Thank you for providing such beautiful products and excellent service!</p>",
+            "author": "Sailaja, Chicago, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_Mkpbge": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/PAYAL_C_GUPTA.webp",
+            "quote": "<p>I love Summer by Priyanka Gupta for their stunning pastel and embroidered outfits, highlighting their beautiful craftsmanship that consistently impresses her.</p>",
+            "author": "Payal C Gupta, Dubai",
+            "rating": 5
+          }
+        },
+        "testimonial_TJHg7q": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rajwinder_Gill.webp",
+            "quote": "<p>Thankyou for sending me the beautiful dresses. I appreciate their quality and fit , they are perfect in every way. I'm eager to place more orders with you.</p>",
+            "author": "Rajwinder Gill, USA",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_rLXHLq",
+        "testimonial_jwXCtm",
+        "testimonial_enK9Cd",
+        "testimonial_emmitC",
+        "testimonial_PNA6Fp",
+        "testimonial_CWXeBQ",
+        "testimonial_ckLCHj",
+        "testimonial_XUcQVF",
+        "testimonial_3FBC9R",
+        "testimonial_Mkpbge",
+        "testimonial_TJHg7q"
+      ],
+      "settings": {
+        "title": "Don't Take Our Word For It......",
+        "url": "https://www.lovesummer.in/pages/beautiful-girls-of-summer",
+        "btn_text": "client gallery",
+        "cellAlign": "left",
+        "time": 0,
+        "pageDots": false,
+        "adaptiveHeight": true,
+        "padding-top": 20,
+        "padding-bottom": 50
+      }
+    },
+    "pagefly_section_rcwgfq": {
+      "type": "pagefly-section",
+      "disabled": true,
+      "settings": {
+        "section_id": "pf-38a4fd9f"
+      }
+    },
+    "logo_list_f8M3pE": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_image_3RetPC": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/NY-Weekly-Black.webp",
+            "link": "https://nyweekly.com/fashion/summer-by-priyanka-gupta-embracing-the-new-era-of-indian-bridal-fashion/"
+          }
+        },
+        "logo_image_ibxEbV": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/mid-day.png",
+            "link": "https://www.mid-day.com/amp/brand-media/article/summer-by-priyanka-elegantly-promises-a-combination-of-evolving-designs-and-23274550"
+          }
+        },
+        "logo_image_TtGjUB": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/TheDailyGuardian.png",
+            "link": "https://thedailyguardian.com/others/a-collection-inspired-by-old-world-grandeur-and-exquisite-celebrations/"
+          }
+        },
+        "logo_image_WfK8Ar": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/News18.svg",
+            "link": "https://www.news18.com/lifestyle/monsoon-chic-monsoon-fashion-tips-to-beat-the-rain-8387491.html"
+          }
+        },
+        "logo_image_izWprq": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/the-news-strike.png",
+            "link": "https://thenaewsstrike.com/citrus-rose-ss23-collection-from-summer-by-priyanka-gupta"
+          }
+        },
+        "logo_image_JqciDt": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/zd-logo.png",
+            "link": "https://zoomdelhi.in/?page_id=59"
+          }
+        },
+        "logo_image_hT4KG4": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/The-news-watch-jpeg.webp",
+            "link": "https://thenewswatch.co.in/2023/08/24/step-into-the-timeless-elegance-of-engagement-at-the-estate-from-summer-by-priyanka-gupta/"
+          }
+        },
+        "logo_image_49rbyj": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/deccan-chronicle-logo-block.webp",
+            "link": "https://www.deccanchronicle.com/entertainment/bollywood/130723/timeless-beauties-turn-new-age-digital-influencers.html"
+          }
+        },
+        "logo_image_jiGRGb": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Society-Achievers.svg",
+            "link": "https://societyachievers.com/gorgeous-dress-from-summer-by-priyanka-gupta/"
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_3RetPC",
+        "logo_image_ibxEbV",
+        "logo_image_TtGjUB",
+        "logo_image_WfK8Ar",
+        "logo_image_izWprq",
+        "logo_image_JqciDt",
+        "logo_image_hT4KG4",
+        "logo_image_49rbyj",
+        "logo_image_jiGRGb"
+      ],
+      "name": "t:sections.logo-list.presets.logo_list.name",
+      "settings": {
+        "title": "FEATURED IN",
+        "logo_opacity": 100,
+        "divider": false
+      }
+    },
+    "blog_posts_ENWFAJ": {
+      "type": "blog-posts",
+      "name": "t:sections.blog-posts.presets.blog_posts.name",
+      "settings": {
+        "title": "Blog posts",
+        "blog": "posts",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": false,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "blog_image_size": "portrait",
+        "divider": false
+      }
+    },
+    "ddca1aea-ebf0-4c8b-923f-0bdb4d1f7a09": {
+      "type": "logo-list",
+      "blocks": {
+        "template--16682307911916__ddca1aea-ebf0-4c8b-923f-0bdb4d1f7a09-1678821830150a8106-0": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logos1.jpg",
+            "link": "https://www.lovesummer.in/"
+          }
+        }
+      },
+      "block_order": [
+        "template--16682307911916__ddca1aea-ebf0-4c8b-923f-0bdb4d1f7a09-1678821830150a8106-0"
+      ],
+      "settings": {
+        "title": "",
+        "logo_opacity": 100,
+        "divider": false
+      }
+    },
+    "74ae4932-d5e8-401c-af02-99bd482c79b1": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16775067926764__74ae4932-d5e8-401c-af02-99bd482c79b1-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Visit Our Flagship Store"
+          }
+        },
+        "template--16775067926764__74ae4932-d5e8-401c-af02-99bd482c79b1-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>D6, Defence Colony, New Delhi, India</p><p>Monday - Sunday, 10:30 am - 7:30 pm</p>"
+          }
+        },
+        "eac8ed8e-0238-47c5-9653-379e3f54b2a6": {
+          "type": "button",
+          "settings": {
+            "link": "https://wa.me/919899070899?text=Hi%20I%E2%80%99m%20interested%20in%20scheduling%20an%20appointment%20to%20visit%C2%A0your%C2%A0studio.",
+            "link_text": "Book An Appointment"
+          }
+        }
+      },
+      "block_order": [
+        "template--16775067926764__74ae4932-d5e8-401c-af02-99bd482c79b1-heading-1",
+        "template--16775067926764__74ae4932-d5e8-401c-af02-99bd482c79b1-text-1",
+        "eac8ed8e-0238-47c5-9653-379e3f54b2a6"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "slideshow_p4EyEp",
+    "circular_collection_navigation_7wCxca",
+    "slideshow_BHXNmF",
+    "featured-collections",
+    "featured_collection_CrcpFH",
+    "featured_collection_w7Qz8W",
+    "rich_text_TFhVf4",
+    "advanced_content_n3HPWA",
+    "featured_collection_m4nUMa",
+    "featured_collection_ed9TLd",
+    "rich_text_DNdb88",
+    "featured_collections_CaGQVH",
+    "circular_collection_navigation_nDBD3H",
+    "8e86185c-b95b-46f2-9e65-85a0d156c5e9",
+    "pagefly_section_tgqcYU",
+    "821c6f2c-5857-4bfa-b43b-6463ef4b5516",
+    "1746528885ff5bc448",
+    "testimonial_carousel_fVr7EX",
+    "pagefly_section_rcwgfq",
+    "logo_list_f8M3pE",
+    "blog_posts_ENWFAJ",
+    "ddca1aea-ebf0-4c8b-923f-0bdb4d1f7a09",
+    "74ae4932-d5e8-401c-af02-99bd482c79b1"
+  ]
+}

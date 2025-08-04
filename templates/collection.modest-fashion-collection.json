@@ -1,0 +1,191 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "drawer",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text"
+          }
+        },
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-0",
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "faq_8bY3VV": {
+      "type": "faq",
+      "blocks": {
+        "question_caHBrf": {
+          "type": "question",
+          "settings": {
+            "title": "Are your dresses modest and suitable for girls and women?",
+            "text": "<p>Yes, our dresses are thoughtfully designed to provide modest coverage for girls and women alike. They feature long sleeves, high necklines, and ankle-length hems using non-transparent fabrics, making them ideal for those following Islamic dress codes.</p>"
+          }
+        },
+        "question_rjfTeg": {
+          "type": "question",
+          "settings": {
+            "title": "Is your modest clothing appropriate for ladies in the Middle East?",
+            "text": "<p>Absolutely. We cater specifically to customers in countries like UAE, Saudi Arabia, Qatar, and beyond, offering elegant Islamic clothing that blends tradition with modern style.</p>"
+          }
+        },
+        "question_XmRJGJ": {
+          "type": "question",
+          "settings": {
+            "title": "What fabrics do you use in your modest dresses for women?",
+            "text": "<p>Our jalabiyas, caftans, and long modest dresses are crafted from premium, breathable fabrics such as:<br/>\t•\tChiffon and georgette for a breezy, elegant drape<br/>\t•\tCotton Silk blends for breathable, all-day comfort<br/>\t•\tSilk and satin for a luxurious touch<br/>\t•\tModal silk and opaque blends that maintain full coverage<br/>\t•\tEmbroidered or embellished materials for special occasions</p>"
+          }
+        },
+        "question_78zcnx": {
+          "type": "question",
+          "settings": {
+            "title": "Are your long sleeve dresses designed for Middle Eastern climates?",
+            "text": "<p>Yes. Our long sleeve dresses for Muslim women are crafted from lightweight, breathable materials that are ideal for hot and humid climates, while still ensuring full coverage.</p>"
+          }
+        },
+        "question_RXXCWR": {
+          "type": "question",
+          "settings": {
+            "title": "Can I wear your clothing for formal occasions or Eid celebrations?",
+            "text": "<p>Yes! Many of our jalabiyas and caftans feature luxurious fabrics, intricate embroidery, and flattering yet modest cuts, making them perfect for Eid, weddings, and special occasions.</p>"
+          }
+        },
+        "question_LGHpDA": {
+          "type": "question",
+          "settings": {
+            "title": "What makes your faith-friendly clothing unique?",
+            "text": "<p>We blend modest silhouettes with luxurious fabrics and hand-finished details to offer clothing that respects Islamic values while celebrating femininity, grace, and elegance.</p>"
+          }
+        },
+        "question_xj8DYe": {
+          "type": "question",
+          "settings": {
+            "title": "How do I choose the right size for a long modest dress?",
+            "text": "<p>To choose the perfect fit for your modest dress, jalabiya, or caftan:<br/>\t•\tRefer to our detailed size guide on the product page<br/>\t•\tCheck the bust, waist, and hip measurements<br/>\t•\tIf in doubt, size up for a more relaxed, flowy look</p>"
+          }
+        },
+        "question_UKdtqa": {
+          "type": "question",
+          "settings": {
+            "title": "Can I customize my modest dress?",
+            "text": "<p>Yes! We offer customization options, including bigger sizes and personalized touches. Please call our sales team at 9899070899 to discuss your preferences.</p>"
+          }
+        },
+        "question_Q9ifM7": {
+          "type": "question",
+          "settings": {
+            "title": "How can Middle Eastern boutiques and designers collaborate with you?",
+            "text": "<p>We love working with Middle Eastern boutiques and designers! For B2B orders, collaborations, or design partnerships, please contact our merchandising team at sales@lovesummer.in. We’d be delighted to explore exciting possibilities with you.</p>"
+          }
+        },
+        "question_UtgFdh": {
+          "type": "question",
+          "settings": {
+            "title": "Do you ship to the Middle East?",
+            "text": "<p>Yes! We proudly ship our modest fashion collections to customers across the Middle East, including Saudi Arabia, UAE, Qatar, Kuwait, and more.</p>"
+          }
+        },
+        "question_UQ8FmR": {
+          "type": "question",
+          "settings": {
+            "title": "Where can I find new arrivals and exclusive designs?",
+            "text": "<p>Check out our New Arrivals section regularly for the latest trends in jalabiyas, caftans, and long dresses designed for modern, fashionable Middle Eastern girls and women. Follow us on Instagram and Facebook for exclusive previews.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_caHBrf",
+        "question_rjfTeg",
+        "question_XmRJGJ",
+        "question_78zcnx",
+        "question_RXXCWR",
+        "question_LGHpDA",
+        "question_xj8DYe",
+        "question_UKdtqa",
+        "question_Q9ifM7",
+        "question_UtgFdh",
+        "question_UQ8FmR"
+      ],
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "title": "FAQs-Modest Fashion"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb",
+    "faq_8bY3VV"
+  ]
+}

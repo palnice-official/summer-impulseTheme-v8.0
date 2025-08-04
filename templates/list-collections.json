@@ -1,0 +1,78 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "list-collections-template",
+      "blocks": {
+        "collection_BqRbjA": {
+          "type": "collection",
+          "settings": {
+            "collection": "sweet-gypsy-song"
+          }
+        },
+        "collection_wEXjxc": {
+          "type": "collection",
+          "settings": {
+            "collection": "meet-me-in-the-garden"
+          }
+        },
+        "collection_TChfgT": {
+          "type": "collection",
+          "settings": {
+            "collection": "the-forbidden-fruit"
+          }
+        },
+        "collection_9pqNQc": {
+          "type": "collection",
+          "settings": {
+            "collection": "engagement-at-the-estate"
+          }
+        },
+        "8e31a987-8775-420e-854d-158a3ba8e4f7": {
+          "type": "collection",
+          "settings": {
+            "collection": "citrus-rose"
+          }
+        },
+        "a1c5d3d1-e294-4b8b-8c94-bda4a3204b45": {
+          "type": "collection",
+          "settings": {
+            "collection": "persian"
+          }
+        },
+        "a3367bdd-d21e-4158-8163-9a51e6156ecc": {
+          "type": "collection",
+          "settings": {
+            "collection": "ambar"
+          }
+        }
+      },
+      "block_order": [
+        "collection_BqRbjA",
+        "collection_wEXjxc",
+        "collection_TChfgT",
+        "collection_9pqNQc",
+        "8e31a987-8775-420e-854d-158a3ba8e4f7",
+        "a1c5d3d1-e294-4b8b-8c94-bda4a3204b45",
+        "a3367bdd-d21e-4158-8163-9a51e6156ecc"
+      ],
+      "settings": {
+        "title_enable": true,
+        "display_type": "selected",
+        "sort": "alphabetical",
+        "grid": "3"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

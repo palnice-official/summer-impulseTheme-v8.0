@@ -1,0 +1,63 @@
+{% style %}
+  .collection-keywords-text {
+    padding: 0 25px;
+    font-size: 12px;
+    margin: 0 0 15px;
+    color: #000;
+    text-align: left;
+  }
+
+  .data-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    background: #f0f0f0;
+    padding: 0 10px
+  }
+
+  .data-container.open {
+     max-height: 1000px;
+    padding: 10px;
+  }
+
+  button: {
+    margin: 10px 0;
+    padding: 10px 20px;
+    pointer-event: none
+    /* cursor: pointer; */
+    
+  }
+
+  
+  .expandable-section{
+    margin-bottom: 80px;
+    padding: 0 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+  }
+  
+{% endstyle %}
+
+{% if template contains 'collection' %}
+  {% if collection.metafields.custom.multiline %}
+    <div class="expandable-section" onclick="toggleData()">
+    <button >More</button>
+      <!-- <h3>Know more</h3> -->
+    <div id="data" class="collection-keywords-text data-container">{{ collection.metafields.custom.multiline | metafield_tag }}</div>
+      </div>
+  {% endif %}
+{% endif %}
+
+<script>
+  function toggleData() {
+    const container = document.getElementById("data");
+    container.classList.toggle("open");
+  if(container.style.maxHeight){
+    container.style.maxHeight = null
+  } else {
+    container.style.maxHeight = container.style.scrollHeight + "px"
+  }
+  }
+</script>

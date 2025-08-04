@@ -1,0 +1,84 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h2><strong>Shop Mulmul Sarees Online – The Perfect Blend of Comfort, Style & Modern Elegance</strong></h2> <p>Breezy, lightweight, and effortlessly stylish, mulmul sarees are a must-have for every modern wardrobe. Our collection features digitally printed sarees on soft mulmul fabric, a luxurious blend of silk and cotton that drapes beautifully while keeping you cool. Whether you’re dressing up for a farewell party, brunch, office wear, or a summer day function, these modern sarees offer the perfect balance of sophistication and ease.</p> <p>Designed for both young girls and sophisticated women, our mulmul sarees online collection is versatile and timeless. Pair them with oversized sunglasses, delicate jewelry, and a soft mini bag for a chic, effortless look. Whether you prefer subtle pastels or bold prints, these summer sarees are perfect for every mood and occasion.</p> <p>Explore our collection and shop the best printed sarees and mulmul sarees online—where tradition meets contemporary elegance!</p> <h2><strong>FAQs – Mulmul Sarees Online</strong></h2> <h3><strong>1. What is a mulmul saree?</strong></h3> <p>Mulmul sarees are lightweight, breathable sarees made from a soft blend of silk and cotton. Known for their effortless drape and comfort, they are perfect for warm weather and all-day wear.</p> <h3><strong>2. Are your mulmul sarees suitable for summer?</strong></h3> <p>Absolutely! Our summer sarees are designed to be light and airy, making them ideal for hot and humid weather. The silk-cotton blend ensures a soft touch with a breezy feel.</p> <h3><strong>3. Can mulmul sarees be worn casually and formally?</strong></h3> <p>Yes! Our modern sarees can be styled for multiple occasions—wear them to office meetings, brunches, farewell parties, or even intimate day functions. Just accessorize accordingly!</p> <h3><strong>4. How do I style a mulmul saree for a chic look?</strong></h3> <p>Pair your printed saree with dainty jewelry, oversized sunglasses, and a soft mini bag for an effortlessly stylish look. Whether you’re going for a youthful vibe or a sophisticated appeal, mulmul sarees work for all.</p> <h3><strong>5. How do I care for my mulmul saree?</strong></h3> <p>To maintain the softness and print quality of your mulmul saree, we recommend dry cleaning only.</p> <h3><strong>6. Do you offer mulmul sarees online?</strong></h3> <p>Yes, you can shop our curated collection of mulmul sarees online for the perfect blend of tradition and modern elegance. We also ship worldwide!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb"
+  ]
+}

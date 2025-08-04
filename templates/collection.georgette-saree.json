@@ -1,0 +1,429 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "pagefly_section_H7Eaqk": {
+      "type": "pagefly-section",
+      "disabled": true,
+      "settings": {
+        "section_id": "pf-926eb272"
+      }
+    },
+    "testimonial_carousel_e7TnAT": {
+      "type": "testimonial-carousel",
+      "blocks": {
+        "testimonial_hLbbUY": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nishtha_Sharma.jpg",
+            "quote": "<p>It was an absolute pleasure to wear the outfit by Summer by Priyanka.<br/><br/>Tha tailoring and the outfit is excellent and the service was equally impeccable. Trying and browsing at the beautiful store was made so easy by the staff!<br/><br/>Definitely coming back to the brand</p>",
+            "author": "Nishtha Sharma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_wzkLJM": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/viriti_verma.jpg",
+            "quote": "<p>Summer by Priyanka Gupta is like a breath of fresh air out of so many designer stores we visited for my sister-in-laws bridal outfit.<br/><br/>Her outfits were a love at first sight! They have a great collection and the store is beautifully decorated and designed. Kanchan ji, who is also the store manager helped us a lot with making correct decisions, as a result we were in love with the final outcome.<br/><br/> We ended up picking up so many sarees and suits. It's a highly recommended store, do visit.</p>",
+            "author": "Vriti Verma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_PzEBwi": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/APARNA_ROY.webp",
+            "quote": "<p>We have had a wonderful experience at the Summer store always without fail !!<br/><br/>The outfits are fabulous and so is the store staff. Very accommodating. They customised a dress for me and it turned out lovely. My mom and I now shop regularly.<br/><br/>P.S: the store is so beautiful. My little daughter has a gala time every time we visit.</p>",
+            "author": "Aparna Roy, India",
+            "rating": 5
+          }
+        },
+        "testimonial_VM4txK": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/APARNA_ROY.webp",
+            "quote": "<p>Summer by Priyanka gupta was an instagram discovery. I was looking for simple & elegant yet dressy clothes for a family wedding.<br/><br/>I went to the store at def col, met Priyanka and was absolutely in awe of her and her craft. Such simplicity in both :)<br/><br/>Since then, Summer by Priyanka Gupta has become my go to store for any occasion for my daughter and I. Absolutely love it ♥️</p>",
+            "author": "Neenu Nayyar, India",
+            "rating": 5
+          }
+        },
+        "testimonial_iK6dmj": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Sailaja.webp",
+            "quote": "<p>I had a wonderful shopping experience with Summer by Priyanka Gupta! The saree I purchased exceeded my expectations in both quality and design.<br/><br/>The customer service was exceptional, and the entire process was smooth and enjoyable. I will definitely be shopping with you again and will recommend your store to friends and family.<br/><br/>Thank you for providing such beautiful products and excellent service!</p>",
+            "author": "Sailaja, Chicago, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_LFzxDp": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nidhi_Modi.webp",
+            "quote": "<p>Well, Summer is all about it’s pastel tones and cute detailed colorful embroideries. Wearing summer always makes you to stand out in the crowd and creates a fresh vibe around you.<br/><br/>I just love the service, the work, the fabric, the embroideries and every bit of it.<br/><br/>They make such unique and chic designs that makes us fall for summer everyday. Always a Summer Girl 🌸</p>",
+            "author": "Nidhi Modi, India",
+            "rating": 5
+          }
+        },
+        "testimonial_iBdyki": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/PAYAL_C_GUPTA.webp",
+            "quote": "<p>I love Summer by Priyanka Gupta for their stunning pastel and embroidered outfits, highlighting their beautiful craftsmanship that consistently impresses her.</p>",
+            "author": "Payal C Gupta, Dubai",
+            "rating": 5
+          }
+        },
+        "testimonial_MhxWCp": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rajwinder_Gill.webp",
+            "quote": "<p>Thankyou for sending me the beautiful dresses. I appreciate their quality and fit , they are perfect in every way. I'm eager to place more orders with you.</p>",
+            "author": "Rajwinder Gill, USA",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_hLbbUY",
+        "testimonial_wzkLJM",
+        "testimonial_PzEBwi",
+        "testimonial_VM4txK",
+        "testimonial_iK6dmj",
+        "testimonial_LFzxDp",
+        "testimonial_iBdyki",
+        "testimonial_MhxWCp"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Don't Take Our Word For It......",
+        "url": "https://www.lovesummer.in/pages/beautiful-girls-of-summer",
+        "btn_text": "VIEW CLIENT DIARY",
+        "cellAlign": "left",
+        "time": 3000,
+        "pageDots": false,
+        "adaptiveHeight": true,
+        "padding-top": 0,
+        "padding-bottom": 20
+      }
+    },
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h2>Buy Georgette Sarees: Elegance in Every Drape</h2><p>Introducing the Georgette Sarees Collection by 'Summer by Priyanka Gupta,' where luxury and elegance unite effortlessly. Our exquisite range of georgette sarees embodies the timeless charm of this versatile fabric. Each saree is a masterpiece, meticulously crafted with attention to detail, featuring intricate embroidery, sequins, and zari work that adds a touch of opulence. With a color palette ranging from delicate pastels to vibrant jewel tones, our collection ensures you'll find the perfect saree for any occasion. Whether it's a wedding, a festive celebration, or an evening soirée, our georgette sarees promise to make you feel and look your best. Explore the epitome of grace and sophistication with 'Summer by Priyanka Gupta' and embrace the elegance of georgette sarees.</p><h2>About Georgette Sarees</h2><p>Georgette sarees are a type of traditional Indian attire known for their graceful and flowing appearance. These sarees are crafted from georgette fabric, which is characterized by its lightweight, sheer, and slightly rough texture. Georgette is typically made from silk, synthetic fibers, or a blend of both, with silk georgette being more luxurious and expensive.</p><p>The unique crinkled texture of georgette fabric gives it a distinctive, bouncy drape, making it an excellent choice for sarees. Georgette sarees are cherished for their elegant and flattering drape, which enhances the wearer's silhouette. They are versatile and can be worn for various occasions, including parties, weddings, festivals, formal events, and even as casual daywear, depending on their design and embellishments.</p><p>Georgette sarees often feature intricate embroidery, sequins, zari work, or stone embellishments that add to their beauty and make them suitable for special occasions. The color range for georgette sarees is extensive, encompassing soft pastels, vibrant jewel tones, and everything in between, allowing wearers to choose according to their personal style and the event's theme. Overall, georgette sarees are a symbol of timeless elegance and remain a popular choice in Indian fashion.</p><h2>Which other saree collections do we have at Summer?</h2><p>Here are the other sarees we have in our collection</p><h3>Sarees By Fabric</h3><ul><li><a href=\"https://www.lovesummer.in/collections/organza-sarees\"><span style=\"text-decoration:underline\">Organza Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/chiffon-sarees\"><span style=\"text-decoration:underline\">Chiffon Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/silk-sarees\"><span style=\"text-decoration:underline\">Silk Sarees</span></a></li></ul><h3>Sarees By Design</h3><ul><li><a href=\"https://www.lovesummer.in/collections/printed-sarees\"><span style=\"text-decoration:underline\">Printed Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/embroidered-saree\"><span style=\"text-decoration:underline\">Embroidered Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/luxury-saree\"><span style=\"text-decoration:underline\">Luxury Sarees</span></a></li></ul><h3>Sarees By Occasion</h3><ul><li><a href=\"https://www.lovesummer.in/collections/haldi-sarees\"><span style=\"text-decoration:underline\">Haldi Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/mehendi-sarees\"><span style=\"text-decoration:underline\">Mehendi Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/engagement-sarees\"><span style=\"text-decoration:underline\">Engagement Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/reception-sarees\"><span style=\"text-decoration:underline\">Reception Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/partywear-sarees\"><span style=\"text-decoration:underline\">Partywear Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/festive-sarees\"><span style=\"text-decoration:underline\">Festive Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/farewell-sarees\"><span style=\"text-decoration:underline\">Farewell Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/diwali-sarees\"><span style=\"text-decoration:underline\">Diwali Sarees</span></a></li></ul><h2>Occasions to Wear Georgette Sarees</h2><p>Georgette sarees are versatile and suitable for a wide range of occasions due to their elegant and flowing nature. Here are different occasions where you can wear georgette sarees:</p><ul><li><strong>Weddings</strong>: Georgette sarees are a popular choice for weddings, both for brides and wedding guests. Their lightweight and graceful drape make them ideal for various wedding events, from the ceremony to the reception.</li><li><strong>Parties and Cocktail Events</strong>: Georgette sarees are often chosen for parties, cocktail parties, and evening gatherings due to their sophisticated and elegant appearance. They are perfect for making a stylish statement.</li><li><strong>Festivals:</strong> Celebrate festivals like Diwali, Eid, Navratri, and other cultural celebrations in style with georgette sarees. Their rich and vibrant designs are well-suited for festive occasions.</li><li><strong>Formal Functions</strong>: Georgette sarees are suitable for formal events such as corporate gatherings, award ceremonies, and business dinners. They strike a balance between formal and fashionable.</li><li><strong>Casual Outings</strong>: Lightweight georgette sarees with minimal embellishments can be worn for casual outings, lunch with friends, or shopping trips, providing comfort and style.</li><li><strong>Anniversaries and Special Occasions</strong>: Mark special milestones in your life, such as anniversaries and milestone birthdays, by donning a beautiful georgette saree to commemorate the occasion.</li><li><strong>Cultural and Religious Functions</strong>: Georgette sarees are often chosen for cultural and religious functions, where they symbolize tradition, grace, and respect for the occasion.</li><li><strong>Date Nights</strong>: For a romantic evening out, georgette sarees with a touch of glamour and elegance can make you feel confident and attractive.</li><li><strong>Art Exhibitions and Cultural Shows</strong>: Attend art exhibitions, cultural shows, or theater productions in a georgette saree to showcase your appreciation for the arts while looking impeccable.</li><li><strong>Fashion Events and Runway Shows</strong>: Georgette sarees are a favorite choice for fashion enthusiasts and designers attending or participating in fashion events and runway shows.</li><li><strong>Charity Galas and Fundraisers</strong>: Georgette sarees can also be a symbol of grace and philanthropy. Wearing one to charity galas and fundraisers adds an element of elegance to your support for a good cause.</li><li><strong>Casual Day-to-Day Wear</strong>: Some lightweight georgette sarees with minimal embellishments can be incorporated into your regular wardrobe for comfortable and stylish day-to-day wear.</li></ul><h2>Georgette Sarees Fabric Experience</h2><p>The fabric experience of wearing georgette sarees is a delightful blend of comfort, elegance, and grace. Here's what you can expect when wearing a georgette saree:</p><ul><li><strong>Soft Texture</strong>: Georgette fabric has a soft and smooth texture that feels gentle against the skin. It is known for its comfortable feel, allowing you to wear the saree for extended periods without discomfort.</li><li><strong>Lightweight</strong>: Georgette sarees are exceptionally lightweight, which makes them easy to drape and carry. You won't feel weighed down, even if you wear them all day or night.</li><li><strong>Flowing Drape</strong>: Georgette sarees drape beautifully and flow gracefully with every movement. The fabric's unique crinkled texture adds to the saree's visual appeal and gives it a natural bounce as you walk or dance.</li><li><strong>Sheer and Airy</strong>: Georgette fabric is slightly sheer, creating an ethereal quality. It allows a subtle glimpse of the skin while maintaining modesty, making it perfect for various occasions.</li><li><strong>Breathable</strong>: Georgette is a breathable fabric, ensuring that you stay comfortable in warm weather. It allows air circulation, preventing overheating.</li><li><strong>Elegant Look</strong>: Georgette sarees exude an elegant and sophisticated appearance. Their lightweight and sheer nature give the saree an effortless grace that enhances your overall look.</li><li><strong>Versatile Draping</strong>: Georgette sarees can be draped in various styles to suit your preference and the occasion. Whether you prefer a traditional drape or a modern twist, georgette allows for versatility in styling.</li><li><strong>Comfortable for All-Day Wear</strong>: Due to their lightweight and comfortable nature, georgette sarees are suitable for events that require you to wear the saree for extended periods, such as weddings and festivals.</li><li><strong>Minimal Wrinkling</strong>: Georgette fabric tends to resist wrinkling to some extent, helping you maintain a neat appearance throughout the day or evening.</li><li><strong>Photogenic Quality</strong>: The flowing and sheer nature of georgette sarees makes them photogenic. They capture light beautifully, making you look stunning in photographs.</li></ul><h2>Why should you choose to wear Georgette Sarees?</h2><p>Choosing to wear georgette sarees comes with several compelling reasons that make them a popular and desirable choice in Indian fashion:</p><ul><li><strong>Elegance</strong>: Georgette sarees exude elegance and sophistication. Their lightweight and sheer texture lend an air of grace, making the wearer look effortlessly chic and stylish.</li><li><strong>Comfort</strong>: Despite their elegant appearance, georgette sarees are incredibly comfortable to wear. The lightweight fabric drapes smoothly and allows for easy movement, making them suitable for long hours at events.</li><li><strong>Versatility</strong>: Georgette sarees are highly versatile and adaptable. They can be styled in various ways to suit different occasions, whether it's a wedding, festival, party, or casual outing.</li><li><strong>Intricate Embroidery</strong>: Georgette sarees often feature intricate embroidery, sequins, zari work, or stone embellishments that add a touch of opulence and make them suitable for special events.</li><li><strong>Timeless Appeal</strong>: Georgette sarees possess a timeless quality. They never go out of style, ensuring that your investment remains relevant and can be worn for years to come.</li><li><strong>Sheer Beauty</strong>: The slightly sheer nature of georgette fabric adds to its visual allure. It allows for a subtle glimpse of the skin while maintaining modesty, creating an ethereal and charming effect.</li><li><strong>Photogenic Quality</strong>: Georgette sarees are photogenic, capturing light beautifully and making you look stunning in photographs, whether you're at a wedding, party, or any other event.</li><li><strong>Variety of Designs</strong>: Georgette sarees are available in a wide range of designs, colors, and embellishments, allowing you to choose according to your personal style and the theme of the occasion.</li><li><strong>Cultural Significance</strong>: Georgette sarees are often chosen for cultural and religious functions, where they symbolize tradition, grace, and respect for the occasion.</li><li><strong>Flattering Drape</strong>: Georgette sarees drape gracefully and enhance the wearer's silhouette, making them flattering for individuals of different body types.</li><li><strong>Adaptable to All Seasons</strong>: Georgette sarees are suitable for all seasons. They are breathable and comfortable in warm weather and can be layered with shawls or jackets in colder months.</li><li><strong>Ease of Maintenance</strong>: Georgette sarees are relatively easy to maintain. They resist wrinkles to some extent, and proper care ensures their longevity.</li></ul><p>Georgette sarees offer a combination of elegance, comfort, versatility, and timeless appeal that makes them a favored choice for various occasions. Whether you're attending a wedding, festival, party, or simply looking for comfortable and stylish daywear, choosing to wear georgette sarees allows you to make a fashion statement with confidence and poise.</p><h2>Caring for Your Georgette Saree</h2><p>Caring for a georgette saree is essential to maintain its delicate beauty and ensure its longevity. Georgette fabric is lightweight and requires special attention to keep it in pristine condition. Here's how to care for your georgette saree:</p><ul><li><strong>Dry Cleaning</strong>: Georgette sarees should be dry cleaned or professionally cleaned to ensure that they are treated with the utmost care. Avoid washing them at home, as georgette fabric can be easily damaged by harsh detergents and rough handling.</li><li><strong>Spot Cleaning</strong>: In case of minor stains or spills, address them immediately by blotting the stain gently with a clean, dry cloth. Do not rub the stain, as it can spread or damage the fabric. Take the saree to a professional cleaner as soon as possible for proper stain removal.</li><li><strong>Avoid Direct Sunlight</strong>: Georgette fabric is susceptible to color fading when exposed to direct sunlight for extended periods. Store your saree in a cool, dark place away from sunlight to preserve its vibrant colors.</li><li><strong>Storage</strong>: Proper storage is crucial to prevent your georgette saree from getting damaged:</li><li>Use a padded hanger to hang the saree. Avoid using wire hangers, as they can leave creases.</li><li>If folding the saree, pad the folds with acid-free tissue paper to prevent creasing.</li><li>Store in a saree bag or a cotton pillowcase to protect it from dust and moisture. Avoid plastic bags, as they can trap moisture and damage the fabric.</li><li><strong>Avoid Perfume and Deodorant</strong>: Perfumes, deodorants, and other sprays can contain chemicals that may harm the delicate georgette fabric. Apply these products before wearing your saree and ensure they are completely dry before putting it on.</li><li><strong>Handle with Clean Hands</strong>: Always handle your georgette saree with clean hands to prevent transferring oils, dirt, or other substances onto the fabric.</li><li><strong>Avoid Sharp Objects</strong>: Be cautious around sharp objects or jewelry that can snag or tear the delicate georgette fabric. When wearing jewelry like bracelets or rings, take care not to catch them on the saree.</li><li><strong>Ironing</strong>: If your georgette saree gets wrinkled, use a low-heat iron (set to silk or low temperature) with a pressing cloth (a thin cotton cloth) placed between the iron and the saree to prevent direct contact. Iron on the reverse side to avoid damaging any embroidery or embellishments.</li><li><strong>Rotate Wear</strong>: Avoid wearing the same georgette saree frequently to prevent excessive wear and tear. Rotate your sarees to extend their lifespan.</li><li><strong>Professional Storage</strong>: If you plan to store your georgette saree for an extended period, consider having it professionally cleaned and packed in acid-free tissue paper. This will help preserve the fabric and prevent any potential damage.</li></ul><h2>Amazing Colors for Georgette Sarees</h2><p>Georgette sarees come in a wide range of colors, making it versatile and allowing you to choose hues that complement your skin tone and suit the occasion. Here are some colors that tend to look particularly stunning on georgette sarees:</p><ul><li>Pastel Shades: Soft pastel colors like powder blue, blush pink, mint green, and lavender create a delicate and feminine look. They are perfect for daytime events, casual gatherings, and summer occasions.</li><li>Rich Jewel Tones: Deep jewel tones such as emerald green, royal blue, ruby red, and amethyst purple add a touch of opulence and are ideal for evening events, weddings, and formal parties.</li><li>Classic Neutrals: Neutral shades like ivory, beige, and champagne exude timeless elegance. They are versatile and can be dressed up or down for various occasions.</li><li>Bold and Vibrant Colors: Bold and vibrant colors like fiery orange, electric blue, hot pink, and sunshine yellow make a bold fashion statement. They are excellent choices for festive celebrations and lively gatherings.</li><li>Monochromatic Hues: Staying within one color family, such as various shades of blue, green, or pink, can create a visually appealing and harmonious look. Monochromatic georgette sarees are modern and stylish.</li><li>Gold and Silver: Georgette sarees with gold or silver accents, whether in the form of embroidery, sequins, or zari work, exude luxury and are perfect for weddings, parties, and grand events.</li><li>Contrast Combinations: Pairing contrasting colors, such as black and white, navy and coral, or teal and maroon, can create a striking and eye-catching effect, making you stand out.</li><li>Earth Tones: Earthy colors like olive green, terracotta, and deep brown add a touch of natural beauty and are suitable for daytime events, especially in outdoor settings.</li><li>Ombre and Gradient: Georgette sarees with ombre or gradient color patterns provide a visually captivating look. They transition from one color to another, adding depth and dimension to your attire.</li><li>Metallic Tones: Metallic shades like bronze, copper, and pewter can lend a glamorous and modern edge to your georgette saree, making them ideal for parties and fashion-forward events.</li></ul><h2>FAQs - Georgette Sarees at Summer by Priyanka Gupta</h2><h3>Can I find traditional as well as contemporary Georgette saree designs in your collection?</h3><p>Yes, our Georgette Saree Collection offers a wide range of designs, including traditional and contemporary styles. You'll find sarees suitable for both classic and modern tastes.</p><h3>Do you offer customization options for Georgette sarees?</h3><p>We offer limited customization options for our Georgette sarees, including adjustments to the blouse design or length. Please contact our customer service for more details.</p><h3>What makes 'Summer by Priyanka Gupta's Georgette Saree Collection' unique?</h3><p>Our collection stands out for its meticulous craftsmanship, intricate embroidery, and attention to detail. Each saree is a testament to our commitment to offering elegant and high-quality Georgette sarees.</p><h3>Do you offer international shipping for your Georgette sarees?</h3><p>Yes, we offer international shipping for our Georgette sarees. Please visit our website or contact our customer service team for shipping details and charges.</p><h3>Can I visit your physical store to view the Georgette sarees in person?</h3><p>Yes, for those in the Delhi NCR region, you can visit our store located at D6, 1st Floor, Defence Colony, New Delhi, 110024. We recommend booking an appointment through our website for a personalized shopping experience.</p><h3>What is the price range of Georgette sarees in your collection?</h3><p>Our Georgette sarees are available in a range of price points, catering to various budgets. You can explore the collection on our website to find sarees that fit your budget and style preferences.</p><h3>How can I place an order for a Georgette saree from your collection online?</h3><p>To purchase a Georgette saree from 'Summer by Priyanka Gupta,' you can visit our website and browse the collection. Select the saree you like, choose your size if applicable, and proceed to the checkout page to place your order.</p><h3>Do you offer any discounts or promotions on Georgette sarees?</h3><p>We occasionally offer discounts and promotions on our saree collection. Please subscribe to our newsletter to stay updated on our latest offers.</p><p>Feel free to reach out to our customer service team for any further inquiries or assistance regarding our Georgette saree collection.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "faq_awJiJw": {
+      "type": "faq",
+      "blocks": {
+        "question_NaCqA7": {
+          "type": "question",
+          "settings": {
+            "title": "Buy Georgette Sarees: Elegance in Every Drape",
+            "text": "<p>Introducing the Georgette Sarees Collection by 'Summer by Priyanka Gupta,' where luxury and elegance unite effortlessly. Our exquisite range of georgette sarees embodies the timeless charm of this versatile fabric. Each saree is a masterpiece, meticulously crafted with attention to detail, featuring intricate embroidery, sequins, and zari work that adds a touch of opulence. With a color palette ranging from delicate pastels to vibrant jewel tones, our collection ensures you'll find the perfect saree for any occasion. Whether it's a wedding, a festive celebration, or an evening soirée, our georgette sarees promise to make you feel and look your best. Explore the epitome of grace and sophistication with 'Summer by Priyanka Gupta' and embrace the elegance of georgette sarees.</p>"
+          }
+        },
+        "question_Y8HEbq": {
+          "type": "question",
+          "settings": {
+            "title": "About Georgette Sarees",
+            "text": "<p>Georgette sarees are a type of traditional Indian attire known for their graceful and flowing appearance. These sarees are crafted from georgette fabric, which is characterized by its lightweight, sheer, and slightly rough texture. Georgette is typically made from silk, synthetic fibers, or a blend of both, with silk georgette being more luxurious and expensive.</p><p>The unique crinkled texture of georgette fabric gives it a distinctive, bouncy drape, making it an excellent choice for sarees. Georgette sarees are cherished for their elegant and flattering drape, which enhances the wearer's silhouette. They are versatile and can be worn for various occasions, including parties, weddings, festivals, formal events, and even as casual daywear, depending on their design and embellishments.</p><p>Georgette sarees often feature intricate embroidery, sequins, zari work, or stone embellishments that add to their beauty and make them suitable for special occasions. The color range for georgette sarees is extensive, encompassing soft pastels, vibrant jewel tones, and everything in between, allowing wearers to choose according to their personal style and the event's theme. Overall, georgette sarees are a symbol of timeless elegance and remain a popular choice in Indian fashion.</p>"
+          }
+        },
+        "question_ybfjkF": {
+          "type": "question",
+          "settings": {
+            "title": "Occasions to Wear Georgette Sarees",
+            "text": "<p>Georgette sarees are versatile and suitable for a wide range of occasions due to their elegant and flowing nature. Here are different occasions where you can wear georgette sarees:</p><ul><li><strong>Weddings</strong>: Georgette sarees are a popular choice for weddings, both for brides and wedding guests. Their lightweight and graceful drape make them ideal for various wedding events, from the ceremony to the reception.</li><li><strong>Parties and Cocktail Events</strong>: Georgette sarees are often chosen for parties, cocktail parties, and evening gatherings due to their sophisticated and elegant appearance. They are perfect for making a stylish statement.</li><li><strong>Festivals:</strong> Celebrate festivals like Diwali, Eid, Navratri, and other cultural celebrations in style with georgette sarees. Their rich and vibrant designs are well-suited for festive occasions.</li><li><strong>Formal Functions</strong>: Georgette sarees are suitable for formal events such as corporate gatherings, award ceremonies, and business dinners. They strike a balance between formal and fashionable.</li><li><strong>Casual Outings</strong>: Lightweight georgette sarees with minimal embellishments can be worn for casual outings, lunch with friends, or shopping trips, providing comfort and style.</li><li><strong>Anniversaries and Special Occasions</strong>: Mark special milestones in your life, such as anniversaries and milestone birthdays, by donning a beautiful georgette saree to commemorate the occasion.</li><li><strong>Cultural and Religious Functions</strong>: Georgette sarees are often chosen for cultural and religious functions, where they symbolize tradition, grace, and respect for the occasion.</li><li><strong>Date Nights</strong>: For a romantic evening out, georgette sarees with a touch of glamour and elegance can make you feel confident and attractive.</li><li><strong>Art Exhibitions and Cultural Shows</strong>: Attend art exhibitions, cultural shows, or theater productions in a georgette saree to showcase your appreciation for the arts while looking impeccable.</li><li><strong>Fashion Events and Runway Shows</strong>: Georgette sarees are a favorite choice for fashion enthusiasts and designers attending or participating in fashion events and runway shows.</li><li><strong>Charity Galas and Fundraisers</strong>: Georgette sarees can also be a symbol of grace and philanthropy. Wearing one to charity galas and fundraisers adds an element of elegance to your support for a good cause.</li><li><strong>Casual Day-to-Day Wear</strong>: Some lightweight georgette sarees with minimal embellishments can be incorporated into your regular wardrobe for comfortable and stylish day-to-day wear.</li></ul>"
+          }
+        },
+        "question_BTqLBn": {
+          "type": "question",
+          "settings": {
+            "title": "Georgette Sarees Fabric Experience",
+            "text": "<p>The fabric experience of wearing georgette sarees is a delightful blend of comfort, elegance, and grace. Here's what you can expect when wearing a georgette saree:</p><ul><li><strong>Soft Texture</strong>: Georgette fabric has a soft and smooth texture that feels gentle against the skin. It is known for its comfortable feel, allowing you to wear the saree for extended periods without discomfort.</li><li><strong>Lightweight</strong>: Georgette sarees are exceptionally lightweight, which makes them easy to drape and carry. You won't feel weighed down, even if you wear them all day or night.</li><li><strong>Flowing Drape</strong>: Georgette sarees drape beautifully and flow gracefully with every movement. The fabric's unique crinkled texture adds to the saree's visual appeal and gives it a natural bounce as you walk or dance.</li><li><strong>Sheer and Airy</strong>: Georgette fabric is slightly sheer, creating an ethereal quality. It allows a subtle glimpse of the skin while maintaining modesty, making it perfect for various occasions.</li><li><strong>Breathable</strong>: Georgette is a breathable fabric, ensuring that you stay comfortable in warm weather. It allows air circulation, preventing overheating.</li><li><strong>Elegant Look</strong>: Georgette sarees exude an elegant and sophisticated appearance. Their lightweight and sheer nature give the saree an effortless grace that enhances your overall look.</li><li><strong>Versatile Draping</strong>: Georgette sarees can be draped in various styles to suit your preference and the occasion. Whether you prefer a traditional drape or a modern twist, georgette allows for versatility in styling.</li><li><strong>Comfortable for All-Day Wear</strong>: Due to their lightweight and comfortable nature, georgette sarees are suitable for events that require you to wear the saree for extended periods, such as weddings and festivals.</li><li><strong>Minimal Wrinkling</strong>: Georgette fabric tends to resist wrinkling to some extent, helping you maintain a neat appearance throughout the day or evening.</li><li><strong>Photogenic Quality</strong>: The flowing and sheer nature of georgette sarees makes them photogenic. They capture light beautifully, making you look stunning in photographs.</li></ul>"
+          }
+        },
+        "question_m4MhwK": {
+          "type": "question",
+          "settings": {
+            "title": "Why should you choose to wear Georgette Sarees?",
+            "text": "<p>Choosing to wear georgette sarees comes with several compelling reasons that make them a popular and desirable choice in Indian fashion:</p><ul><li><strong>Elegance</strong>: Georgette sarees exude elegance and sophistication. Their lightweight and sheer texture lend an air of grace, making the wearer look effortlessly chic and stylish.</li><li><strong>Comfort</strong>: Despite their elegant appearance, georgette sarees are incredibly comfortable to wear. The lightweight fabric drapes smoothly and allows for easy movement, making them suitable for long hours at events.</li><li><strong>Versatility</strong>: Georgette sarees are highly versatile and adaptable. They can be styled in various ways to suit different occasions, whether it's a wedding, festival, party, or casual outing.</li><li><strong>Intricate Embroidery</strong>: Georgette sarees often feature intricate embroidery, sequins, zari work, or stone embellishments that add a touch of opulence and make them suitable for special events.</li><li><strong>Timeless Appeal</strong>: Georgette sarees possess a timeless quality. They never go out of style, ensuring that your investment remains relevant and can be worn for years to come.</li><li><strong>Sheer Beauty</strong>: The slightly sheer nature of georgette fabric adds to its visual allure. It allows for a subtle glimpse of the skin while maintaining modesty, creating an ethereal and charming effect.</li><li><strong>Photogenic Quality</strong>: Georgette sarees are photogenic, capturing light beautifully and making you look stunning in photographs, whether you're at a wedding, party, or any other event.</li><li><strong>Variety of Designs</strong>: Georgette sarees are available in a wide range of designs, colors, and embellishments, allowing you to choose according to your personal style and the theme of the occasion.</li><li><strong>Cultural Significance</strong>: Georgette sarees are often chosen for cultural and religious functions, where they symbolize tradition, grace, and respect for the occasion.</li><li><strong>Flattering Drape</strong>: Georgette sarees drape gracefully and enhance the wearer's silhouette, making them flattering for individuals of different body types.</li><li><strong>Adaptable to All Seasons</strong>: Georgette sarees are suitable for all seasons. They are breathable and comfortable in warm weather and can be layered with shawls or jackets in colder months.</li><li><strong>Ease of Maintenance</strong>: Georgette sarees are relatively easy to maintain. They resist wrinkles to some extent, and proper care ensures their longevity.</li></ul><p>Georgette sarees offer a combination of elegance, comfort, versatility, and timeless appeal that makes them a favored choice for various occasions. Whether you're attending a wedding, festival, party, or simply looking for comfortable and stylish daywear, choosing to wear georgette sarees allows you to make a fashion statement with confidence and poise.</p>"
+          }
+        },
+        "question_hyEkRd": {
+          "type": "question",
+          "settings": {
+            "title": "Caring for Your Georgette Saree",
+            "text": "<p>Caring for a georgette saree is essential to maintain its delicate beauty and ensure its longevity. Georgette fabric is lightweight and requires special attention to keep it in pristine condition. Here's how to care for your georgette saree:</p><ul><li><strong>Dry Cleaning</strong>: Georgette sarees should be dry cleaned or professionally cleaned to ensure that they are treated with the utmost care. Avoid washing them at home, as georgette fabric can be easily damaged by harsh detergents and rough handling.</li><li><strong>Spot Cleaning</strong>: In case of minor stains or spills, address them immediately by blotting the stain gently with a clean, dry cloth. Do not rub the stain, as it can spread or damage the fabric. Take the saree to a professional cleaner as soon as possible for proper stain removal.</li><li><strong>Avoid Direct Sunlight</strong>: Georgette fabric is susceptible to color fading when exposed to direct sunlight for extended periods. Store your saree in a cool, dark place away from sunlight to preserve its vibrant colors.</li><li><strong>Storage</strong>: Proper storage is crucial to prevent your georgette saree from getting damaged:</li><li>Use a padded hanger to hang the saree. Avoid using wire hangers, as they can leave creases.</li><li>If folding the saree, pad the folds with acid-free tissue paper to prevent creasing.</li><li>Store in a saree bag or a cotton pillowcase to protect it from dust and moisture. Avoid plastic bags, as they can trap moisture and damage the fabric.</li><li><strong>Avoid Perfume and Deodorant</strong>: Perfumes, deodorants, and other sprays can contain chemicals that may harm the delicate georgette fabric. Apply these products before wearing your saree and ensure they are completely dry before putting it on.</li><li><strong>Handle with Clean Hands</strong>: Always handle your georgette saree with clean hands to prevent transferring oils, dirt, or other substances onto the fabric.</li><li><strong>Avoid Sharp Objects</strong>: Be cautious around sharp objects or jewelry that can snag or tear the delicate georgette fabric. When wearing jewelry like bracelets or rings, take care not to catch them on the saree.</li><li><strong>Ironing</strong>: If your georgette saree gets wrinkled, use a low-heat iron (set to silk or low temperature) with a pressing cloth (a thin cotton cloth) placed between the iron and the saree to prevent direct contact. Iron on the reverse side to avoid damaging any embroidery or embellishments.</li><li><strong>Rotate Wear</strong>: Avoid wearing the same georgette saree frequently to prevent excessive wear and tear. Rotate your sarees to extend their lifespan.</li><li><strong>Professional Storage</strong>: If you plan to store your georgette saree for an extended period, consider having it professionally cleaned and packed in acid-free tissue paper. This will help preserve the fabric and prevent any potential damage.</li></ul>"
+          }
+        },
+        "question_TPENBU": {
+          "type": "question",
+          "settings": {
+            "title": "Amazing Colors for Georgette Sarees",
+            "text": "<p>Georgette sarees come in a wide range of colors, making it versatile and allowing you to choose hues that complement your skin tone and suit the occasion. Here are some colors that tend to look particularly stunning on georgette sarees:</p><ul><li>Pastel Shades: Soft pastel colors like powder blue, blush pink, mint green, and lavender create a delicate and feminine look. They are perfect for daytime events, casual gatherings, and summer occasions.</li><li>Rich Jewel Tones: Deep jewel tones such as emerald green, royal blue, ruby red, and amethyst purple add a touch of opulence and are ideal for evening events, weddings, and formal parties.</li><li>Classic Neutrals: Neutral shades like ivory, beige, and champagne exude timeless elegance. They are versatile and can be dressed up or down for various occasions.</li><li>Bold and Vibrant Colors: Bold and vibrant colors like fiery orange, electric blue, hot pink, and sunshine yellow make a bold fashion statement. They are excellent choices for festive celebrations and lively gatherings.</li><li>Monochromatic Hues: Staying within one color family, such as various shades of blue, green, or pink, can create a visually appealing and harmonious look. Monochromatic georgette sarees are modern and stylish.</li><li>Gold and Silver: Georgette sarees with gold or silver accents, whether in the form of embroidery, sequins, or zari work, exude luxury and are perfect for weddings, parties, and grand events.</li><li>Contrast Combinations: Pairing contrasting colors, such as black and white, navy and coral, or teal and maroon, can create a striking and eye-catching effect, making you stand out.</li><li>Earth Tones: Earthy colors like olive green, terracotta, and deep brown add a touch of natural beauty and are suitable for daytime events, especially in outdoor settings.</li><li>Ombre and Gradient: Georgette sarees with ombre or gradient color patterns provide a visually captivating look. They transition from one color to another, adding depth and dimension to your attire.</li><li>Metallic Tones: Metallic shades like bronze, copper, and pewter can lend a glamorous and modern edge to your georgette saree, making them ideal for parties and fashion-forward events.</li></ul>"
+          }
+        },
+        "question_eAe9Y6": {
+          "type": "question",
+          "settings": {
+            "title": "Can I find traditional as well as contemporary Georgette saree designs in your collection?",
+            "text": "<p>Yes, our Georgette Saree Collection offers a wide range of designs, including traditional and contemporary styles. You'll find sarees suitable for both classic and modern tastes.</p>"
+          }
+        },
+        "question_gRcmdA": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer customization options for Georgette sarees?",
+            "text": "<p>We offer limited customization options for our Georgette sarees, including adjustments to the blouse design or length. Please contact our customer service for more details.</p>"
+          }
+        },
+        "question_qzWK9P": {
+          "type": "question",
+          "settings": {
+            "title": "What makes 'Summer by Priyanka Gupta's Georgette Saree Collection' unique?",
+            "text": "<p>Our collection stands out for its meticulous craftsmanship, intricate embroidery, and attention to detail. Each saree is a testament to our commitment to offering elegant and high-quality Georgette sarees.</p>"
+          }
+        },
+        "question_WWxkCE": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer international shipping for your Georgette sarees?",
+            "text": "<p>Yes, we offer international shipping for our Georgette sarees. Please visit our website or contact our customer service team for shipping details and charges.</p>"
+          }
+        },
+        "question_bfrgnx": {
+          "type": "question",
+          "settings": {
+            "title": "Can I visit your physical store to view the Georgette sarees in person?",
+            "text": "<p>Yes, for those in the Delhi NCR region, you can visit our store located at D6, 1st Floor, Defence Colony, New Delhi, 110024. We recommend booking an appointment through our website for a personalized shopping experience.</p>"
+          }
+        },
+        "question_HiQzeX": {
+          "type": "question",
+          "settings": {
+            "title": "What is the price range of Georgette sarees in your collection?",
+            "text": "<p>Our Georgette sarees are available in a range of price points, catering to various budgets. You can explore the collection on our website to find sarees that fit your budget and style preferences.</p>"
+          }
+        },
+        "question_cUpLzW": {
+          "type": "question",
+          "settings": {
+            "title": "How can I place an order for a Georgette saree from your collection online?",
+            "text": "<p>To purchase a Georgette saree from 'Summer by Priyanka Gupta,' you can visit our website and browse the collection. Select the saree you like, choose your size if applicable, and proceed to the checkout page to place your order.</p>"
+          }
+        },
+        "question_gLCbQV": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer any discounts or promotions on Georgette sarees?",
+            "text": "<p>We occasionally offer discounts and promotions on our saree collection. Please subscribe to our newsletter to stay updated on our latest offers.</p><p>Feel free to reach out to our customer service team for any further inquiries or assistance regarding our Georgette saree collection.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_NaCqA7",
+        "question_Y8HEbq",
+        "question_ybfjkF",
+        "question_BTqLBn",
+        "question_m4MhwK",
+        "question_hyEkRd",
+        "question_TPENBU",
+        "question_eAe9Y6",
+        "question_gRcmdA",
+        "question_qzWK9P",
+        "question_WWxkCE",
+        "question_bfrgnx",
+        "question_HiQzeX",
+        "question_cUpLzW",
+        "question_gLCbQV"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "FAQs"
+      }
+    },
+    "faq_CwcUKe": {
+      "type": "faq",
+      "blocks": {
+        "question_aB7V3x": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer customization options for Georgette sarees?",
+            "text": "<p>Yes, we offer bespoke customization for our embroidered Georgette sarees. Whether you’d like to alter blouse patterns, add personalized embroidery, or adjust the drape and finish, our sales and design team will work closely with you to bring your vision to life. Please note that customizations are chargeable and vary depending on the scope of work. To begin your customization journey, please reach out to our sales team at +91 98990 70899.</p>"
+          }
+        },
+        "question_KUiwgT": {
+          "type": "question",
+          "settings": {
+            "title": "What makes the ‘Summer by Priyanka Gupta’ Georgette Saree Collection unique?",
+            "text": "<p>Our Georgette saree collection blends hand-embroidery, contemporary silhouettes, and a refined pastel colour palette to create sarees that are both beautiful and modern. Each piece is designed to feel light, luxurious, and effortlessly elegant—ideal for wedding guests, celebrations, and quiet moments of style.</p>"
+          }
+        },
+        "question_hEdcxc": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer international shipping for your Georgette sarees?",
+            "text": "<p>Yes, we ship our Georgette sarees worldwide. Whether you’re ordering from the US, UK, Middle East, or elsewhere, you can enjoy our signature pastel Georgette sarees and hand-embroidered drapes delivered right to your doorstep.</p>"
+          }
+        },
+        "question_AgEbhc": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Do you offer any discounts or promotions on Georgette sarees?",
+            "text": "<p>We occasionally offer special discounts on selected beautiful Georgette sarees during seasonal sales. To stay updated, keep an eye on our website or follow us on Instagram. You can also apply active discount codes at checkout if applicable.</p>"
+          }
+        },
+        "question_F3tVTj": {
+          "type": "question",
+          "settings": {
+            "title": "Can I visit your physical store to view the Georgette sarees in person?",
+            "text": "<p>Absolutely. We invite you to experience our Georgette sarees in person at our flagship store in Defence Colony, New Delhi. It’s the best way to explore the texture, embroidery, and timeless feel of our sarees before you make a purchase.</p>"
+          }
+        },
+        "question_nMcty4": {
+          "type": "question",
+          "settings": {
+            "title": "What styles of Georgette sarees do you offer?",
+            "text": "<p>From intricately embroidered Georgette sarees to minimal, flowing pastel sarees, our collection features a thoughtful balance between tradition and modernity. Whether you’re looking for a soft, modern saree or a statement piece that feels like heirloom art, you’ll find something unique in our range.</p>"
+          }
+        },
+        "question_8FTC8r": {
+          "type": "question",
+          "settings": {
+            "title": "How do I place an order for a Georgette saree online?",
+            "text": "<p>You can place your order directly through our website www.lovesummer.in. Simply choose your preferred Georgette saree, select size/customization options if applicable, and proceed to checkout. If you need assistance, our team is just a WhatsApp message away.</p>"
+          }
+        },
+        "question_F7RT4q": {
+          "type": "question",
+          "settings": {
+            "title": "What is the price range of your Georgette sarees?",
+            "text": "<p>Our Georgette sarees range from ₹18,000 to ₹65,000, depending on the level of hand embroidery, fabric layering, and customization involved. Each saree is made with utmost care and attention to detail.</p>"
+          }
+        },
+        "question_3aRzfM": {
+          "type": "question",
+          "settings": {
+            "title": "Are your Georgette sarees suitable for weddings and festive occasions?",
+            "text": "<p>Yes! Our embroidered Georgette sarees are especially loved by wedding guests and bridesmaids. The lightness of the fabric, paired with delicate threadwork and timeless design, makes them perfect for day weddings, mehendi functions, or elegant evening affairs.</p>"
+          }
+        },
+        "question_fhb3ne": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Is an embroidered Georgette saree a good gifting option?",
+            "text": "<p>Absolutely. A beautifully embroidered Georgette saree makes a thoughtful and elegant gift for the discerning woman. Especially popular as gifts for mothers and mothers-in-law, these timeless sarees combine grace, craftsmanship, and sentiment—making them perfect for birthdays, anniversaries, or festive celebrations.</p>"
+          }
+        },
+        "question_TwDXRJ": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Are your Georgette sarees timeless and versatile enough to be worn again?",
+            "text": "<p>Yes, our Georgette sarees are designed with longevity and repeat value in mind. With hand-embroidery, pastel tones, and refined silhouettes, these sarees transcend trends. Whether styled for weddings, intimate gatherings, or formal events, each piece is a timeless investment you’ll find yourself reaching for season after season.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_aB7V3x",
+        "question_KUiwgT",
+        "question_hEdcxc",
+        "question_AgEbhc",
+        "question_F3tVTj",
+        "question_nMcty4",
+        "question_8FTC8r",
+        "question_F7RT4q",
+        "question_3aRzfM",
+        "question_fhb3ne",
+        "question_TwDXRJ"
+      ],
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "title": "FAQs"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "pagefly_section_H7Eaqk",
+    "testimonial_carousel_e7TnAT",
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb",
+    "faq_awJiJw",
+    "faq_CwcUKe"
+  ]
+}

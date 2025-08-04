@@ -1,0 +1,85 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h2>Explore Our Glamorous Partywear Saree Collection</h2><p>Every party is an opportunity to shine, and your attire plays a pivotal role in making a lasting impression. At \"Summer by Priyanka Gupta,\" we are thrilled to present our hand-embroidered Partywear Saree Collection, meticulously crafted from luxurious fabrics – Organza, Chiffon, Georgette, and Silk. Our partywear sarees are designed to make your social gatherings and special occasions truly memorable, radiating glamour and elegance.</p><h2>Elevate Your Party Look With Partywear Sarees</h2><h3>Organza Partywear Sarees</h3><p>Embrace sheer enchantment with our Organza Partywear Sarees. The ethereal delicacy of Organza fabric, paired with intricate hand embroidery, creates a captivating and modern look. These sarees effortlessly blend tradition with contemporary charm, making them ideal for cocktail parties and upscale soirées.</p><h3>Chiffon Partywear Sarees</h3><p>Lightweight and graceful, Chiffon sarees offer both comfort and elegance. Our Chiffon Partywear Sarees feature delicate hand embroidery that adds a touch of subtle glamour. They are perfect for garden parties, daytime events, or evening gatherings.</p><h3>Georgette Partywear Sarees</h3><p>Georgette sarees are known for their versatility and drape. Our Georgette Partywear Sarees are adorned with intricate Resham embroidery and subtle sequin work, striking a harmonious balance between tradition and contemporary style. They are ideal for birthday celebrations, family gatherings, and semi-formal occasions.</p><h3>Silk Partywear Sarees</h3><p>For formal and grand parties, our Silk Partywear Sarees, including Kanjivaram, Banarasi, and Chanderi varieties, are the epitome of opulence. Embellished with exquisite Zari work and intricate patterns, these sarees exude timeless elegance. They are perfect for weddings, gala events, and black-tie affairs.</p><h2>Partywear Sarees for Every Occasion</h2><p>You can celebrate a wide range of parties and special occasions with Partywear Sarees crafted from Georgette, Chiffon, Organza, and Silk fabrics. Here are some types of parties and the recommended saree fabric for each:</p><ul><li><strong>Cocktail Parties</strong>: For glamorous cocktail parties, consider wearing a lightweight and elegant Organza or Chiffon saree. These sarees are designed to keep you comfortable while you shine at the event. Sequin or crystal embellishments add that extra sparkle.</li><li><strong>Garden Parties</strong>: Opt for a Georgette saree with floral motifs and pastel hues for garden parties. Georgette's drape and breathability make it an ideal choice for outdoor gatherings where you want to look graceful and stay comfortable.</li><li><strong>Birthday Celebrations</strong>: Celebrate your special day in style with a resplendent Georgette or Silk saree. These sarees often feature subtle embroidery that strikes a balance between traditional and contemporary, perfect for marking a milestone birthday.</li><li><strong>Weddings and Gala Events</strong>: Make a grand entrance at weddings, gala events, or black-tie affairs with a luxurious Silk saree. The intricate Zari work and opulent designs of Silk sarees are tailored for formal and luxurious events.</li><li><strong>Anniversary Celebrations</strong>: Honor your love story with an elegant Georgette or Silk saree. These sarees reflect timeless beauty and sophistication, making them suitable for anniversary celebrations that are filled with romance.</li><li><strong>Festive Parties</strong>: Whether it's Diwali, Navratri, or Eid, festive parties call for sarees that capture the spirit of celebration. You can choose from a range of fabrics like Chiffon, Georgette, and Organza, each adorned with traditional motifs and embroidery.</li><li><strong>Family Gatherings</strong>: Stay stylish and comfortable at family gatherings with Georgette sarees featuring subtle embroidery. These sarees are versatile enough to wear for intimate family occasions.</li><li><strong>Baby Showers</strong>: Radiate elegance at baby showers with a lightweight Chiffon or Organza saree. Soft colors and delicate designs complement the joyous atmosphere of such events.</li><li><strong>Engagement Parties</strong>: Dress to impress at your engagement party with a chic Organza or Georgette saree. These fabrics offer a modern twist to traditional styles, making them perfect for this special occasion.</li><li><strong>Graduation Parties</strong>: Celebrate your academic achievements in a sophisticated Silk saree. The richness of Silk reflects your accomplishments and the bright future ahead.</li><li><strong>Black-Tie Affairs</strong>: For formal and upscale events, Silk sarees are the epitome of opulence. Choose Silk sarees with exquisite Zari work to shine at black-tie affairs and gala evenings.</li><li><strong>New Year's Eve Parties</strong>: Ring in the New Year in style with a partywear saree crafted from Organza or Silk. Opt for bold colors and shimmering embellishments to welcome the year with elegance.</li></ul><h2>Craftsmanship Beyond Compare</h2><p>Our hand-embroidered Partywear Sarees are a testament to the artistry and craftsmanship of our skilled artisans. Each saree is meticulously embroidered with Zari, Resham, Sequin, and Stonework, ensuring that you radiate confidence and style at every party.</p><h2>Make Your Parties Memorable</h2><p>Our Partywear Sarees are designed to make your social gatherings truly memorable. These sarees provide comfort, elegance, and a touch of glamour, allowing you to celebrate life's moments in style.</p><h2>Shop with Confidence</h2><p>Browse our Partywear Saree Collection online and let our experts assist you in finding the perfect saree that complements the type of party you'll be attending. Whether it's a cocktail party, a birthday bash, or a grand wedding reception, we have the saree that will make your party unforgettable.</p><h2>Elevate Your Party Appearances with ‘Summer by Priyanka Gupta’</h2><p>Every party is a chance to create cherished memories. Your attire should reflect the glamour and grace of the occasion. Our Partywear Saree Collection combines tradition, craftsmanship, and contemporary style to create an ensemble that will make your parties truly unforgettable.</p><h2>Which other saree collections do we have at Summer?</h2><p>Here are the other sarees we have in our collection</p><h3>Sarees By Fabric</h3><ul><li><a href=\"https://www.lovesummer.in/collections/organza-sarees\"><span style=\"text-decoration:underline\">Organza Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/chiffon-sarees\"><span style=\"text-decoration:underline\">Chiffon Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/georgette-sarees\"><span style=\"text-decoration:underline\">Georgette Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/silk-sarees\"><span style=\"text-decoration:underline\">Silk Sarees</span></a></li></ul><h3>Sarees By Design</h3><ul><li><a href=\"https://www.lovesummer.in/collections/printed-sarees\"><span style=\"text-decoration:underline\">Printed Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/embroidered-saree\"><span style=\"text-decoration:underline\">Embroidered Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/luxury-saree\"><span style=\"text-decoration:underline\">Luxury Sarees</span></a></li></ul><h3>Sarees By Occasion</h3><ul><li><a href=\"https://www.lovesummer.in/collections/haldi-sarees\"><span style=\"text-decoration:underline\">Haldi Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/mehendi-sarees\"><span style=\"text-decoration:underline\">Mehendi Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/engagement-sarees\"><span style=\"text-decoration:underline\">Engagement Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/reception-sarees\"><span style=\"text-decoration:underline\">Reception Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/festive-sarees\"><span style=\"text-decoration:underline\">Festive Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/farewell-sarees\"><span style=\"text-decoration:underline\">Farewell Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/diwali-sarees\"><span style=\"text-decoration:underline\">Diwali Sarees</span></a></li></ul><h2>FAQs - Partywear Sarees</h2><h3>What is the Partywear Saree Collection by Summer by Priyanka Gupta?</h3><p>Our Partywear Saree Collection features a stunning range of hand-embroidered sarees crafted from luxurious fabrics, including Georgette, Chiffon, Organza, and Silk. These sarees are designed to elevate your look for various social gatherings and parties.</p><h3>How are partywear sarees different from other sarees?</h3><p>Partywear sarees are specially designed for parties and social gatherings. They often feature intricate hand embroidery, exquisite colors, and glamorous designs that make them ideal for making a statement on special occasions.</p><h3>Can I customize the partywear saree to match my party's theme or personal preferences?</h3><p>Yes, we offer customization options for blouse designs, colors, and embellishments to ensure your partywear saree aligns perfectly with your personal style and the theme of your party.</p><h3>Do you offer international shipping for Partywear Sarees?</h3><p>Yes, we provide international shipping services, allowing customers worldwide to access our exquisite Partywear Saree Collection and make a stylish statement at parties and gatherings.</p><h3>What is the price range of partywear sarees in your collection?</h3><p>Our Partywear Saree Collection offers a wide range of price points to accommodate various budgets. We believe that everyone should have the opportunity to shine at their special events.</p><h3>How do I care for my partywear saree after wearing it to a party?</h3><p>To maintain the pristine condition of your partywear saree, we recommend professional cleaning or dry cleaning. Please refer to our care instructions for detailed guidance on saree maintenance.</p><h3>Can I visit your physical store to see the partywear sarees in person?</h3><p>Yes, if you are in the Delhi NCR region, you can visit our store located at D6, 1st Floor, Defence Colony, New Delhi, 110024, to explore our partywear saree collection in person and receive personalized assistance.</p><h3>Is there a return or exchange policy for partywear sarees?</h3><p>We have a flexible return and exchange policy. If you are not satisfied with your purchase, you can contact our customer support team for assistance within the specified return period.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb"
+  ]
+}

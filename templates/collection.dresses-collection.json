@@ -1,0 +1,163 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {}
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h1>Buy Summer Dresses for Women</h1><p>Welcome to Summer by Priyanka Gupta’s collection of exquisite summer dresses. Prepare to embrace the sun-kissed season in style with our wide range of fashionable and comfortable dresses designed specifically for the summer. Whether you're attending a wedding, going on a vacation, hitting the beach, or simply enjoying a casual day out, we have the perfect summer dress to suit your needs. Our dresses are available in various sizes, lengths, sleeve options, and fabrics, ensuring a diverse selection to cater to every preference. Let's explore the wonderful world of summer dresses together.</p><h2><strong>Top 3 Reasons Why Buy These Summer Dresses for Women</strong></h2><ul><li><strong>Breathtaking Designs:</strong> Our Summer Dresses blend comfort and style effortlessly. From flowy maxis to playful minis, each piece is crafted to make you stand out.</li><li><strong>Cool and Comfy Fabrics:</strong> Embrace the heat with our breathable fabrics! We use lightweight cotton, airy linen, and other skin-friendly materials to ensure you stay fresh all day long.</li><li><strong>Versatile Styles for Every Occasion:</strong> Whether it's a beach day, brunch, or a casual evening out, our dresses are perfect for any summer activity. Dress up or down – you're ready for anything!</li></ul><h2><strong>How to Order These Summer Dresses for Women</strong></h2><ul><li>Step 1: Browse our collection and select your favorite styles.</li><li>Step 2: Choose your size and color preference.</li><li>Step 3: Add to cart and proceed to checkout.</li><li>Step 4: Fill in your shipping details and payment information.</li><li>Step 5: Confirm your order, and voila! Your summer wardrobe upgrade is on its way!</li></ul><h2><strong>Types of Summer Dresses</strong></h2><p>Our collection features an array of summer dress styles to suit every taste and preference. From breezy sundresses to elegant and flowy maxi dresses, we have it all. You'll find flirty A-line dresses, chic wrap dresses, playful fit-and-flare dresses, and sophisticated sheath dresses. Each dress is carefully designed to flatter your figure and enhance your natural beauty.</p><p>A-line Dress: This classic silhouette features a fitted bodice that gradually flares out from the waist, creating an elegant and universally flattering look. A-line dresses are a go-to choice for any summer occasion, as they offer a balance between comfort and style.</p><p>Maxi Dress: Floor-length and flowy, maxi dresses exude effortless grace. They are perfect for creating a statement look at summer weddings or evening parties. With their loose fit and breathable fabrics, maxi dresses keep you cool and comfortable even in the warmest weather.</p><p>Wrap Dress: Wrap dresses are known for their adjustable fit and feminine charm. They feature a crossover front that can be tied at the waist, creating a flattering shape. This versatile style suits all body types and is an excellent choice for both casual and formal summer events.</p><p>Sundress: The epitome of summer dresses, sundresses are lightweight, playful, and perfect for a day at the beach or a casual outing. They typically have a relaxed fit and come in various patterns and vibrant colors, making them a must-have in every summer wardrobe.</p><p>Sheath Dress: Sheath summer dresses are a fashionable choice for those seeking a sleek and tailored look. With their fitted silhouette, breathable fabrics, and versatile styling options, sheath dresses offer a sophisticated and timeless appeal that can elevate your summer wardrobe.</p><h2>Fabrics for Summer Dresses</h2><p>We understand the importance of breathable fabrics during the hot summer months. That's why our summer dresses are crafted from lightweight and airy materials ensuring optimal comfort and allowing your skin to breathe. Our cotton dresses are soft, cool, and perfect for staying comfortable even on the hottest days.</p><p>Cotton: Cotton is a highly breathable fabric that keeps you cool and comfortable during hot summer days. It absorbs moisture, allowing your skin to breathe and preventing you from feeling sweaty. Our cotton summer dresses offer a soft and gentle touch against your skin, ensuring maximum comfort.</p><p>Chiffon: Chiffon is a sheer and lightweight fabric that drapes beautifully. It is known for its airy feel and delicate appearance, making it an ideal choice for summer dresses. Chiffon dresses offer an elegant and ethereal look while keeping you cool in the heat.</p><p>Mul Silk: Mul silk, also known as mulsilk or muslin silk, is a luxurious and lightweight fabric with a smooth texture. It offers excellent breathability and moisture-wicking properties, making it perfect for summer dresses. Mul silk dresses provide a sophisticated and classy appeal.</p><p>Chanderi: Chanderi is a traditional Indian fabric known for its lightweight nature and rich texture. It blends cotton with silk or zari threads, creating a fabric that is breathable and perfect for summer wear. Chanderi summer dresses combine elegance with comfort, making them a popular choice.</p><p>Soy Fiber: Soy fiber is a sustainable and eco-friendly fabric derived from the byproducts of soybean processing. It is soft, breathable, and has excellent moisture-wicking properties, making it an excellent choice for summer dresses. Soy fiber dresses offer both comfort and environmental consciousness.</p><p>Georgette: Georgette is a lightweight and semi-sheer fabric with a slightly crinkled texture. It has a flowing drape and is perfect for creating breezy summer looks. Georgette dresses are elegant and versatile, suitable for various occasions.</p><h2>Occasions to Wear Summer Dresses</h2><p>Our summer dresses are suitable for a range of occasions. If you're attending a wedding, opt for our long summer dresses with elegant details that will make you stand out as a stylish guest. For a casual day out or a beach trip, our casual summer dresses are perfect, providing a laid-back and effortless charm. Hosting a summer party? Our dresses offer a variety of outfit options to ensure you're the center of attention.</p><p>Weddings: Our summer dresses are ideal for attending weddings, whether it's a garden ceremony, a beach wedding, or a chic city celebration. Choose from our collection of elegant and stylish dresses to make a statement while staying comfortable.</p><p>Vacations: Planning a tropical getaway? Our summer dresses are the perfect addition to your vacation wardrobe. From vibrant prints to flowy silhouettes, these dresses will keep you feeling cool and looking fabulous during your adventures.</p><p>Beach: Embrace the beach vibes with our selection of beach-friendly summer dresses. Opt for lightweight fabrics, playful prints, and breezy styles that allow you to soak up the sun while staying effortlessly chic.</p><p>Parties: Whether it's a daytime gathering or an evening soirée, our summer dresses have you covered. From casual backyard parties to sophisticated events, our dresses offer versatility and style to help you stand out.</p><h2>Hand Embroidered summer dresses</h2><p>One of the standout features of our summer dresses is the exquisite hand embroidery. Our skilled artisans put their heart and soul into every stitch, ensuring that each dress is a true work of art. The intricate embroidery adds a touch of elegance and uniqueness to our summer dresses, making them stand out from the crowd.</p><h2>Summer Dresses by Size and Sleeve Length</h2><p>Discover our collection of summer dresses available in a variety of lengths to suit your style and preference. Whether you're looking for a flirty mini dress, a versatile midi dress, or an elegant long dress, we have the perfect options to keep you cool and stylish all summer long.</p><p>Mini Summer Dresses</p><p>Our mini summer dresses are designed to embrace a playful and youthful vibe. These dresses typically hit above the knee, creating a fun and flirty look. Perfect for casual outings, beach parties, or daytime adventures, our mini dresses offer a carefree and effortless style. Pair them with sandals or sneakers for a laid-back vibe, or dress them up with wedges or heels for a chic summer party look.</p><p>Midi Summer Dresses</p><p>For those seeking a versatile and timeless option, our midi summer dresses are the perfect choice. Falling somewhere between the knee and the ankle, these dresses strike a balance between sophistication and comfort. Ideal for brunches, garden parties, or even semi-formal occasions, our midi dresses can be dressed up with statement accessories and heels or dressed down with flats or sandals for a more relaxed look.</p><p>Long Summer Dresses</p><p>If you prefer an elegant and graceful silhouette, our long summer dresses are the epitome of summer chic. These floor-length dresses exude an air of sophistication and can be worn for special occasions, evening events, or even as a stylish beach cover-up. Our long dresses are available in various styles, including flowy maxis, empire waistlines, or fitted column dresses. Add a touch of glamour with strappy sandals or dress them up with heels and statement jewelry.</p><p>No matter the length you choose, our summer dresses are designed with attention to detail, using lightweight and breathable fabrics to ensure your comfort in the heat.</p><h3>Sleeve Options</h3><p>Our summer dresses come in a range of sleeve options, allowing you to find the perfect balance between style and comfort. Whether you prefer sleeveless, half sleeves, 3/4 sleeves, or a variety of sleeveless options, we have you covered. Here's a brief description of each sleeve option:</p><p>Sleeveless: Ideal for hot summer days, sleeveless dresses keep you cool and allow for easy movement. They offer a flattering and feminine look, showcasing your shoulders and arms. Perfect for both casual and dressier occasions, sleeveless dresses are versatile and can be paired with accessories to create different looks.</p><p>Half Sleeves: For those who prefer a little arm coverage, half sleeves are a great option. They provide a modest and balanced look, offering coverage while still allowing your arms to breathe. Half sleeves are suitable for various occasions, from daytime outings to evening events, and can be easily layered with a light cardigan or jacket when needed.</p><p>3/4 Sleeves: Offering more coverage than half sleeves, 3/4 sleeves are a popular choice for summer dresses. They provide a flattering length that falls between the elbow and the wrist. 3/4 sleeves add a touch of elegance and sophistication to your outfit, making them suitable for semi-formal or formal occasions. They strike the perfect balance between comfort and style, allowing you to enjoy the summer breeze while feeling confident.</p><p>Long: We understand that some individuals prefer more coverage during the summer months. That's why we offer a selection of long summer dresses with sleeves, typically made from lightweight and breathable cotton fabric. These dresses ensure you stay cool while providing coverage to the arms. They are a great choice for those who prefer a more modest yet fashionable summer look.</p><h2>Summer Outfits for Plus Size</h2><p>Inclusivity is at the heart of our brand, and we believe that every woman deserves to look and feel fabulous in our summer dresses. </p><p>Therefore, we also offer a wide range of sizes, ensuring that our collection caters to a diverse range of body types. Our plus size summer dresses are available in sizes that go beyond the conventional fashion industry standards, embracing inclusivity and celebrating body positivity.</p><p>When designing our summer dresses for plus size women, we pay attention to every detail. From the cut and silhouette to the placement of patterns and embellishments, our goal is to create dresses that accentuate your best features and make you feel beautiful from within. We carefully select fabrics that drape beautifully and provide a comfortable fit, ensuring that you can embrace the season with confidence.</p><p>Shop with us and let \"Summer by Priyanka Gupta\" be your go-to destination for fashionable and stylish summer dresses, designed with you in mind.</p><h2>Buy Summer dresses</h2><p>Step into the sunshine and elevate your summer style with our exquisite collection of dresses. Whether you're attending a beach party, exploring new destinations, or simply enjoying a day out with loved ones, our dresses will ensure you make a lasting impression. Embrace the spirit of summer and let \"Summer by Priyanka Gupta\" be your go-to destination for all your summer dress needs.</p><p>Shop now and experience the perfect blend of style, comfort, and elegance with \"Summer by Priyanka Gupta.\" Let us be a part of your summer story.</p><h2>Other collections you can explore</h2><p>As you explore our collection of summer dresses, we invite you to also discover our other collection pages. If you're looking for traditional Indian attire, browse our exquisite sarees, lehengas, kurta sets, and tunics. These versatile pieces will add a touch of cultural richness to your wardrobe. Simply click the links below to explore our stunning collection and find the perfect outfit for any occasion.</p><p><a href=\"https://www.lovesummer.in/collections/sarees\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/sarees\">Sarees</a></p><p><a href=\"https://www.lovesummer.in/collections/lehenga\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/lehenga\">Lehengas</a></p><p><a href=\"https://www.lovesummer.in/collections/kurta-set\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/kurta-set\">Kurta Sets</a></p><p><a href=\"https://www.lovesummer.in/collections/tunics\" target=\"_blank\" title=\"https://www.lovesummer.in/collections/tunics\">Tunics</a></p><p>Get ready to embrace the sunny season in style with our fabulous range of summer dresses. Shop now and create unforgettable summer memories while looking effortlessly chic and comfortable.</p><h2><strong>FAQs</strong></h2><h3><strong>Can I return or exchange my dress if it doesn't fit?</strong></h3><p><br/>Yes, we offer hassle-free returns and exchanges. Check our Returns Policy for details.</p><h3><strong>Are these dresses suitable for plus-size women?</strong></h3><p><br/>Absolutely! Our collection includes a range of sizes to cater to all body types.</p><p></p><h3>Do you provide international shipping for Summer Dresses?</h3><p></p><p>Yes, we offer international shipping.</p><h3>Can I book an appointment to visit your physical store in Delhi NCR?</h3><p></p><p>Yes, residents of Delhi NCR can visit our store at D6, 1st Floor, Defence Colony, New Delhi, 110024. You can book an appointment on our website to explore our Summer Dresses collection in person.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "faq_FknPUj": {
+      "type": "faq",
+      "blocks": {
+        "question_trnkEn": {
+          "type": "question",
+          "settings": {
+            "title": "Summer Dresses",
+            "text": "<p>We understand the importance of breathable fabrics during the hot summer months. That's why our summer dresses are crafted from lightweight and airy materials ensuring optimal comfort and allowing your skin to breathe. Our cotton dresses are soft, cool, and perfect for staying comfortable even on the hottest days.</p><p>Cotton: Cotton is a highly breathable fabric that keeps you cool and comfortable during hot summer days. It absorbs moisture, allowing your skin to breathe and preventing you from feeling sweaty. Our cotton summer dresses offer a soft and gentle touch against your skin, ensuring maximum comfort.</p><p>Chiffon: Chiffon is a sheer and lightweight fabric that drapes beautifully. It is known for its airy feel and delicate appearance, making it an ideal choice for summer dresses. Chiffon dresses offer an elegant and ethereal look while keeping you cool in the heat.</p><p>Mul Silk: Mul silk, also known as mulsilk or muslin silk, is a luxurious and lightweight fabric with a smooth texture. It offers excellent breathability and moisture-wicking properties, making it perfect for summer dresses. Mul silk dresses provide a sophisticated and classy appeal.</p><p>Chanderi: Chanderi is a traditional Indian fabric known for its lightweight nature and rich texture. It blends cotton with silk or zari threads, creating a fabric that is breathable and perfect for summer wear. Chanderi summer dresses combine elegance with comfort, making them a popular choice.</p><p>Soy Fiber: Soy fiber is a sustainable and eco-friendly fabric derived from the byproducts of soybean processing. It is soft, breathable, and has excellent moisture-wicking properties, making it an excellent choice for summer dresses. Soy fiber dresses offer both comfort and environmental consciousness.</p><p>Georgette: Georgette is a lightweight and semi-sheer fabric with a slightly crinkled texture. It has a flowing drape and is perfect for creating breezy summer looks. Georgette dresses are elegant and versatile, suitable for various occasions.</p>"
+          }
+        },
+        "question_NkiKzC": {
+          "type": "question",
+          "settings": {
+            "title": "Types of Summer Dresses",
+            "text": "<p>Our collection features an array of summer dress styles to suit every taste and preference. From breezy sundresses to elegant and flowy maxi dresses, we have it all. You'll find flirty A-line dresses, chic wrap dresses, playful fit-and-flare dresses, and sophisticated sheath dresses. Each dress is carefully designed to flatter your figure and enhance your natural beauty.</p><p>A-line Dress: This classic silhouette features a fitted bodice that gradually flares out from the waist, creating an elegant and universally flattering look. A-line dresses are a go-to choice for any summer occasion, as they offer a balance between comfort and style.</p><p>Maxi Dress: Floor-length and flowy, maxi dresses exude effortless grace. They are perfect for creating a statement look at summer weddings or evening parties. With their loose fit and breathable fabrics, maxi dresses keep you cool and comfortable even in the warmest weather.</p><p>Wrap Dress: Wrap dresses are known for their adjustable fit and feminine charm. They feature a crossover front that can be tied at the waist, creating a flattering shape. This versatile style suits all body types and is an excellent choice for both casual and formal summer events.</p><p>Sundress: The epitome of summer dresses, sundresses are lightweight, playful, and perfect for a day at the beach or a casual outing. They typically have a relaxed fit and come in various patterns and vibrant colors, making them a must-have in every summer wardrobe.</p><p>Sheath Dress: Sheath summer dresses are a fashionable choice for those seeking a sleek and tailored look. With their fitted silhouette, breathable fabrics, and versatile styling options, sheath dresses offer a sophisticated and timeless appeal that can elevate your summer wardrobe.</p>"
+          }
+        },
+        "question_4j8QrT": {
+          "type": "question",
+          "settings": {
+            "title": "Occasions to Wear Summer Dresses",
+            "text": "<p>Our summer dresses are suitable for a range of occasions. If you're attending a wedding, opt for our long summer dresses with elegant details that will make you stand out as a stylish guest. For a casual day out or a beach trip, our casual summer dresses are perfect, providing a laid-back and effortless charm. Hosting a summer party? Our dresses offer a variety of outfit options to ensure you're the center of attention.</p><p>Weddings: Our summer dresses are ideal for attending weddings, whether it's a garden ceremony, a beach wedding, or a chic city celebration. Choose from our collection of elegant and stylish dresses to make a statement while staying comfortable.</p><p>Vacations: Planning a tropical getaway? Our summer dresses are the perfect addition to your vacation wardrobe. From vibrant prints to flowy silhouettes, these dresses will keep you feeling cool and looking fabulous during your adventures.</p><p>Beach: Embrace the beach vibes with our selection of beach-friendly summer dresses. Opt for lightweight fabrics, playful prints, and breezy styles that allow you to soak up the sun while staying effortlessly chic.</p><p>Parties: Whether it's a daytime gathering or an evening soirée, our summer dresses have you covered. From casual backyard parties to sophisticated events, our dresses offer versatility and style to help you stand out.</p>"
+          }
+        },
+        "question_AJfTYK": {
+          "type": "question",
+          "settings": {
+            "title": "Hand Embroidered summer dresses",
+            "text": "<p>One of the standout features of our summer dresses is the exquisite hand embroidery. Our skilled artisans put their heart and soul into every stitch, ensuring that each dress is a true work of art. The intricate embroidery adds a touch of elegance and uniqueness to our summer dresses, making them stand out from the crowd.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_trnkEn",
+        "question_NkiKzC",
+        "question_4j8QrT",
+        "question_AJfTYK"
+      ],
+      "settings": {
+        "title": "About Summer Dresses"
+      }
+    },
+    "faq_YYkKNa": {
+      "type": "faq",
+      "blocks": {
+        "question_wtcgXp": {
+          "type": "question",
+          "settings": {
+            "title": "Can I return or exchange my dress if it doesn't fit?",
+            "text": "<p>Yes, we offer hassle-free returns and exchanges. Check our Returns Policy for details.</p>"
+          }
+        },
+        "question_rmh79g": {
+          "type": "question",
+          "settings": {
+            "title": "Are these dresses suitable for plus-size women?",
+            "text": "<p>Absolutely! Our collection includes a range of sizes to cater to all body types</p>"
+          }
+        },
+        "question_gU64fc": {
+          "type": "question",
+          "settings": {
+            "title": "Do you provide international shipping for Summer Dresses?",
+            "text": "<p>Yes, we offer international shipping.</p>"
+          }
+        },
+        "question_JPXnDL": {
+          "type": "question",
+          "settings": {
+            "title": "Can I book an appointment to visit your physical store in Delhi NCR?",
+            "text": "<p>Yes, residents of Delhi NCR can visit our store at D6, 1st Floor, Defence Colony, New Delhi, 110024. You can book an appointment on our website to explore our Summer Dresses collection in person.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_wtcgXp",
+        "question_rmh79g",
+        "question_gU64fc",
+        "question_JPXnDL"
+      ],
+      "settings": {
+        "title": "FAQs"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb",
+    "faq_FknPUj",
+    "faq_YYkKNa"
+  ]
+}

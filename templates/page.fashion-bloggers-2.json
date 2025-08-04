@@ -1,0 +1,244 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "71fe897d-2caa-4fb4-93c3-a361839f7bfc": {
+      "type": "text-columns",
+      "blocks": {
+        "template--16853624357100__71fe897d-2caa-4fb4-93c3-a361839f7bfc-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/pink-dandelion-saree-natasha-luthra.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/pink-dandelion-saree"
+          }
+        },
+        "template--16853624357100__71fe897d-2caa-4fb4-93c3-a361839f7bfc-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/CITRUSSTRAIGHTKURTA_AKRITI_ANUSHKA.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/blue-citrus-straight-kurta-set-for-women"
+          }
+        },
+        "template--16853624357100__71fe897d-2caa-4fb4-93c3-a361839f7bfc-text_block-3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/YELLOWFOILPRINTSAREE_hOUSEOFMISU_1728a873-0811-48a8-9a5a-5f8a63def32b.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/yellow-foil-print-saree"
+          }
+        },
+        "6dda36ce-e8f9-40ef-8aaa-f993b8410ab4": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/PINKMIRELLAKURTASET_4dc9bb75-ba81-46ea-b1e5-e375078cc2b9.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/pink-mirella-kurta-set"
+          }
+        },
+        "5460484e-bc5c-4627-b793-9ffaef01f493": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Ivorylavedrees_Embroideredcape_VaishaliJain.jpg",
+            "image_mask": "none",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/ivory-lace-dress"
+          }
+        },
+        "9077e6e3-a852-4ab1-a4f7-9a9cdde534ed": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/PINKFOLLIAGEKURTA.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/pink-folliage-kurta-set-for-women"
+          }
+        },
+        "9bb5b200-8752-4b19-a634-9160e56afcfd": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/ASTERIASTRAIGHTKURTASET_VAISHALIJAIN.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/teal-asteria-straight-kurta-set"
+          }
+        },
+        "74162a78-b092-43cc-b6a0-93e5e7bca385": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/TEALCHANDELIERSAREE_8637289c-b713-4311-85ed-dd1e0c650b74.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/teal-chandelier-saree"
+          }
+        },
+        "15c06f04-6f15-4717-a6eb-a9209fb5f063": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/AsteriaStraightKurta_HANNAKHAN.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/pink-asteria-straight-kurta-set"
+          }
+        },
+        "c85157b0-2ba2-4baf-a230-bfbad0bda742": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/BLUECITRUSROSELEHENGA.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/blue-citrus-rose-lehenga"
+          }
+        },
+        "d6771cd9-a8ee-4c1d-85be-b0a56e388760": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/LEAFBLOOMSAREE_PINKWINTERGARDENSAREE.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/blue-leaf-bloom-hand-embroidered-organza-saree-cutdana"
+          }
+        },
+        "9d54da15-d94f-4eaf-8999-f548ec3dfb99": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/UNCUT_SAREE.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/pink-uncut-saree"
+          }
+        },
+        "d8571482-2933-4fd5-8cb9-01a7b1340f76": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/TEALADENAPONCHOSAREE.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/teal-adena-poncho-saree"
+          }
+        },
+        "f0625b5e-8708-4456-85bf-a300a73553fe": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Amaria_A_Line_short_Kurta.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/teal-amaria-a-line-short-kurta-set"
+          }
+        },
+        "76a5ba5e-2339-4b8e-a2d9-0100ebb15b2c": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/PINK_DANDELION_SAREE.jpg",
+            "image_mask": "portrait",
+            "image_width": 400,
+            "title": "",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/pink-dandelion-saree"
+          }
+        }
+      },
+      "block_order": [
+        "template--16853624357100__71fe897d-2caa-4fb4-93c3-a361839f7bfc-text_block-1",
+        "template--16853624357100__71fe897d-2caa-4fb4-93c3-a361839f7bfc-text_block-2",
+        "template--16853624357100__71fe897d-2caa-4fb4-93c3-a361839f7bfc-text_block-3",
+        "6dda36ce-e8f9-40ef-8aaa-f993b8410ab4",
+        "5460484e-bc5c-4627-b793-9ffaef01f493",
+        "9077e6e3-a852-4ab1-a4f7-9a9cdde534ed",
+        "9bb5b200-8752-4b19-a634-9160e56afcfd",
+        "74162a78-b092-43cc-b6a0-93e5e7bca385",
+        "15c06f04-6f15-4717-a6eb-a9209fb5f063",
+        "c85157b0-2ba2-4baf-a230-bfbad0bda742",
+        "d6771cd9-a8ee-4c1d-85be-b0a56e388760",
+        "9d54da15-d94f-4eaf-8999-f548ec3dfb99",
+        "d8571482-2933-4fd5-8cb9-01a7b1340f76",
+        "f0625b5e-8708-4456-85bf-a300a73553fe",
+        "76a5ba5e-2339-4b8e-a2d9-0100ebb15b2c"
+      ],
+      "settings": {
+        "title": "Fashion Bloggers in Summer",
+        "align_text": "center",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "71fe897d-2caa-4fb4-93c3-a361839f7bfc"
+  ]
+}

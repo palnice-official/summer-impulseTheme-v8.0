@@ -1,0 +1,280 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "rich_text_hpT3BB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_rCmFPr": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Rich text"
+          }
+        },
+        "text_pdRkxW": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Where the wind knows your story.<br/><br/>This collection is an ode to the summers we carry in our bones — the kind only India can offer. It’s the rustle of neem leaves, the cry of parrots at dawn, the scent of rain-soaked earth, and the feeling of sun-warmed skin touched by a familiar breeze.<br/><br/>Shot in the quiet magic of Leh, An Indian Summer captures that rare stillness — when time slows down and the wind begins to whisper your memories back to you.<br/><br/>Breezy kurtas and dresses in airy silhouettes are brought to life with prints of Indian foliage and parrots — vibrant symbols of nature, freedom, and the poetry of everyday life. Delicate hand embroideries trace stories only an Indian summer can tell.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rCmFPr",
+        "text_pdRkxW"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "divider": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "testimonial_carousel_wbWW6f": {
+      "type": "testimonial-carousel",
+      "blocks": {
+        "testimonial_YPxJQp": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nishtha_Sharma.jpg",
+            "quote": "<p>It was an absolute pleasure to wear the outfit by Summer by Priyanka.<br/><br/>Tha tailoring and the outfit is excellent and the service was equally impeccable. Trying and browsing at the beautiful store was made so easy by the staff!<br/><br/>Definitely coming back to the brand</p>",
+            "author": "Nishtha Sharma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_WRMaGe": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/viriti_verma.jpg",
+            "quote": "<p>Summer by Priyanka Gupta is like a breath of fresh air out of so many designer stores we visited for my sister-in-laws bridal outfit.<br/><br/>Her outfits were a love at first sight! They have a great collection and the store is beautifully decorated and designed. Kanchan ji, who is also the store manager helped us a lot with making correct decisions, as a result we were in love with the final outcome.<br/><br/> We ended up picking up so many sarees and suits. It's a highly recommended store, do visit.</p>",
+            "author": "Vriti Verma, India",
+            "rating": 5
+          }
+        },
+        "testimonial_VRyTED": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Leena_Yerneni.webp",
+            "quote": "<p>Great designs and quality. Just loved how our outfits turned out for my daughter’s first birthday making it more memorable.<br/><br/>So dreamy and just the way I envisioned🌸💞💖</p>",
+            "author": "Leena Yerneni, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_3rLN9j": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Nidhi_Modi.webp",
+            "quote": "<p>Well, Summer is all about it’s pastel tones and cute detailed colorful embroideries. Wearing summer always makes you to stand out in the crowd and creates a fresh vibe around you.<br/><br/>I just love the service, the work, the fabric, the embroideries and every bit of it.<br/><br/>They make such unique and chic designs that makes us fall for summer everyday. Always a Summer Girl 🌸</p>",
+            "author": "Nidhi Modi, India",
+            "rating": 5
+          }
+        },
+        "testimonial_FmHYNn": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/APARNA_ROY.webp",
+            "quote": "<p>We have had a wonderful experience at the Summer store always without fail !!<br/><br/>The outfits are fabulous and so is the store staff. Very accommodating. They customised a dress for me and it turned out lovely. My mom and I now shop regularly.<br/><br/>P.S: the store is so beautiful. My little daughter has a gala time every time we visit.</p>",
+            "author": "Aparna Roy, India",
+            "rating": 5
+          }
+        },
+        "testimonial_kibXMb": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/NEENU_NAYYAR.webp",
+            "quote": "<p>Summer by Priyanka gupta was an instagram discovery. I was looking for simple & elegant yet dressy clothes for a family wedding.<br/><br/>I went to the store at def col, met Priyanka and was absolutely in awe of her and her craft. Such simplicity in both :)<br/><br/>Since then, Summer by Priyanka Gupta has become my go to store for any occasion for my daughter and I. Absolutely love it ♥️</p>",
+            "author": "Neenu Nayyar, India",
+            "rating": 5
+          }
+        },
+        "testimonial_QNxfHh": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Sailaja.webp",
+            "quote": "<p>I had a wonderful shopping experience with Summer by Priyanka Gupta! The saree I purchased exceeded my expectations in both quality and design.<br/><br/>The customer service was exceptional, and the entire process was smooth and enjoyable. I will definitely be shopping with you again and will recommend your store to friends and family.<br/><br/>Thank you for providing such beautiful products and excellent service!</p>",
+            "author": "Sailaja, Chicago, USA",
+            "rating": 5
+          }
+        },
+        "testimonial_FPEpFm": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/PAYAL_C_GUPTA.webp",
+            "quote": "<p>I love Summer by Priyanka Gupta for their stunning pastel and embroidered outfits, highlighting their beautiful craftsmanship that consistently impresses her.</p>",
+            "author": "Payal C Gupta, Dubai",
+            "rating": 5
+          }
+        },
+        "testimonial_hWe9Je": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rajwinder_Gill.webp",
+            "quote": "<p>Thankyou for sending me the beautiful dresses. I appreciate their quality and fit , they are perfect in every way. I'm eager to place more orders with you.</p>",
+            "author": "Rajwinder Gill, USA",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_YPxJQp",
+        "testimonial_WRMaGe",
+        "testimonial_VRyTED",
+        "testimonial_3rLN9j",
+        "testimonial_FmHYNn",
+        "testimonial_kibXMb",
+        "testimonial_QNxfHh",
+        "testimonial_FPEpFm",
+        "testimonial_hWe9Je"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Don't Take Our Word For It......",
+        "url": "https://www.lovesummer.in/pages/beautiful-girls-of-summer",
+        "btn_text": "VIEW CLIENT DIARY",
+        "cellAlign": "left",
+        "time": 5000,
+        "pageDots": false,
+        "adaptiveHeight": true,
+        "padding-top": 0,
+        "padding-bottom": 50
+      }
+    },
+    "faq_AaYYmY": {
+      "type": "faq",
+      "blocks": {
+        "question_cBhM8X": {
+          "type": "question",
+          "settings": {
+            "title": "What can I shop in the sale on premium women’s ethnic & designer outfits online?",
+            "text": "<p>Our online sale features a luxurious curation of premium women’s ethnic and designer outfits, including hand embroidered sarees, kurta sets, lehenga sets, and pret wear — perfect for wedding guests, festive occasions, or as part of your trousseau. Each piece brings together comfort, craftsmanship, and timeless style.</p>"
+          }
+        },
+        "question_49HgM3": {
+          "type": "question",
+          "settings": {
+            "title": "Are the sarees, kurta sets, lehengas & pret on sale ready to ship?",
+            "text": "<p>Yes, all sarees, kurta sets, lehengas & pret on sale are ready to ship within 48 hours. This makes them ideal for last-minute Indian wedding shopping, styling needs, or wedding gifting. Need it faster? Contact our sales team at +91 98990 70899 for express delivery options.</p>"
+          }
+        },
+        "question_4FKzA4": {
+          "type": "question",
+          "settings": {
+            "title": "Are the sale items new and quality-checked?",
+            "text": "<p>All products in our sale on premium women’s ethnic & designer outfits online are genuine and quality-checked. Some may show minor aging as they are from previous collections, but they are not defected. In the rare case of a major defect like a tear, we do accept returns.</p>"
+          }
+        },
+        "question_pfJVHn": {
+          "type": "question",
+          "settings": {
+            "title": "Are returns or exchanges allowed on sale products?",
+            "text": "<p>Due to the nature of our exclusive sale online, all discounted items are final sale. We do not offer returns or exchanges unless the product has a significant defect. Please inspect your piece upon receipt and contact us within 24 hours if needed.</p>"
+          }
+        },
+        "question_78H4yG": {
+          "type": "question",
+          "settings": {
+            "title": "What kind of discounts can I expect?",
+            "text": "<p>Enjoy 10% to 60% off on select hand embroidered sarees, elegant kurta sets, lehenga sets, and ready-to-wear pret styles. Our lehenga sale in particular is a great opportunity to own statement bridal or pre-wedding pieces at remarkable prices.</p>"
+          }
+        },
+        "question_M4PanU": {
+          "type": "question",
+          "settings": {
+            "title": "Is this sale ideal for wedding shopping or gifting?",
+            "text": "<p>Absolutely. This is the perfect time to shop Indian wedding trousseau pieces, wedding guest outfits, or thoughtful wedding gifting from our designer collection — now at special prices. These pieces also make beautiful additions to your wedding wardrobe or a loved one’s.</p>"
+          }
+        },
+        "question_9Tzeit": {
+          "type": "question",
+          "settings": {
+            "title": "Can I get assistance with sizing or styling?",
+            "text": "<p>Yes! If you have any questions about sizing, styling for a wedding function, or choosing the right fit, please contact our sales team at +91 98990 70899. We’re happy to guide you personally.</p>"
+          }
+        },
+        "question_9pWRde": {
+          "type": "question",
+          "settings": {
+            "title": "Where can I shop the sarees, kurta sets & lehengas on sale?",
+            "text": "<p>Shop directly on our official website at www.lovesummer.in for our sale on premium women’s ethnic & designer outfits online. Limited sizes, limited pieces — don’t miss this chance to own handcrafted Indian luxury at exceptional value.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_cBhM8X",
+        "question_49HgM3",
+        "question_4FKzA4",
+        "question_pfJVHn",
+        "question_78H4yG",
+        "question_M4PanU",
+        "question_9Tzeit",
+        "question_9pWRde"
+      ],
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "title": "FAQs"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "rich_text_hpT3BB",
+    "main-collection",
+    "testimonial_carousel_wbWW6f",
+    "faq_AaYYmY"
+  ]
+}

@@ -1,0 +1,203 @@
+{% style %}
+  .magazine-layout-section {
+    padding: 60px 0;
+  }
+  
+  .page-width {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .magazine-wrap-container {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+  }
+  
+  .magazine-image-float {
+    float: left;
+    width: 280px;
+    margin: 0 30px 20px 0;
+    position: relative;
+    
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+  }
+  
+  .magazine-image,
+  .magazine-image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .magazine-image-placeholder {
+    padding-top: 140%;
+    background-color: #f5f5f5;
+  }
+  
+  .magazine-author {
+    /* text-align: centre; */
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 5px;
+    /* text-decoration: underline; */
+  }
+  
+  .magazine-content-wrap {
+    /* overflow: hidden; /* Creates block formatting context */ */
+  }
+  
+  .magazine-main-heading {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+  }
+  
+  .magazine-sub-heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+    line-height: 1.3;
+  }
+  
+  .magazine-body-text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* .magazine-body-text p:first-child {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 24px;
+  } */
+  
+  /* Responsive styles - maintaining float behavior on mobile */
+  @media screen and (max-width: 768px) {
+    .magazine-layout-section {
+      padding: 0 0;
+    }
+    
+    .magazine-image-float {
+      width: 40%;
+      margin: 0 20px 15px 0;
+    }
+    
+    .magazine-main-heading {
+      font-size: 24px;
+    }
+    
+    .magazine-sub-heading {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .magazine-body-text {
+      font-size: 15px;
+    }
+  }
+  
+  /* Extra small devices */
+  @media screen and (max-width: 480px) {
+    .magazine-image-float {
+      width: 50%;
+      margin: 0 10px 10px 0;
+    }
+    
+    .magazine-author {
+      font-size: 15px;
+    }
+  }
+{% endstyle %}
+
+<div class="magazine-layout-section">
+  <div class="page-width">
+    <div class="magazine-wrap-container">
+      <!-- Floating left image with author caption -->
+      <div class="magazine-image-float">
+        {% if section.settings.feature_image %}
+          <a href= "{{ section.settings.magazine-image-url }}" target="_blank">
+            {{ section.settings.feature_image | image_url: width:500, height: 500, crop:"top" | image_tag: class:"magazine-image", loading: 'lazy', alt: section.settings.author_name }}
+          </a>
+        {% else %}
+          <div class="magazine-image-placeholder">
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          </div>
+        {% endif %}
+        
+        {% if section.settings.author_name != blank %}
+          <div class="magazine-author">{{ section.settings.author_name }}</div>
+        {% endif %}
+      </div>
+      
+      <!-- Content that wraps around the image -->
+      <div class="magazine-content-wrap">
+        {% if section.settings.main_heading != blank %}
+          <h1 class="magazine-main-heading">{{ section.settings.main_heading }}</h1>
+        {% endif %}
+        
+        {% if section.settings.sub_heading != blank %}
+          <h2 class="magazine-sub-heading">{{ section.settings.sub_heading }}</h2>
+        {% endif %}
+        
+        {% if section.settings.content_text != blank %}
+          <div class="magazine-body-text">
+            {{ section.settings.content_text }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+      <hr />
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Magazine Style Layout",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "feature_image",
+      "label": "Feature Image"
+    },
+    {
+      "type": "text",
+      "id": "main_heading",
+      "label": "Main Heading",
+      "default": "A LIFESTYLE OF PRAYER :"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading",
+      "label": "Sub Heading",
+      "default": "THE ART OF TITHING TIME"
+    },
+    {
+      "type": "richtext",
+      "id": "author_name",
+      "label": "Author Name",
+    },
+    {
+      "type": "richtext",
+      "id": "content_text",
+      "label": "Content Text"
+    },
+    {
+      "type": "url",
+      "id": "magazine-image-url",
+      "label": "Image link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Magazine Style Layout",
+      "category": "Custom Content"
+    }
+  ]
+}
+{% endschema %}

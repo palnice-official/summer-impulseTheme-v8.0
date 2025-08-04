@@ -1,0 +1,152 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h2>Engagement Saree Collection</h2><p>Your engagement ceremony marks the beginning of a beautiful journey, and it deserves an outfit that radiates love and elegance. At \"Summer by Priyanka Gupta,\" we are delighted to present our hand-embroidered Engagement Saree Collection, meticulously crafted from the finest fabrics – Organza, Chiffon, Georgette, and Silk. Our engagement sarees are designed to make your special day truly memorable, capturing the essence of love and celebration.</p><h2>Elevate Your Engagement Look With Our Sarees</h2><h3>Organza Engagement Sarees</h3><p>Embrace sheer enchantment with our Organza Engagement Sarees. The ethereal delicacy of Organza fabric, paired with intricate hand embroidery, creates an alluring and modern look. These sarees effortlessly blend tradition with contemporary charm, making them the perfect choice for engagement ceremonies.</p><h3>Chiffon Engagement Sarees</h3><p>Lightweight and graceful, Chiffon sarees are known for their fluid drape. Our Chiffon Engagement Sarees feature delicate hand embroidery that adds a touch of subtle glamour, making them ideal for daytime and evening engagements.</p><h3>Georgette Engagement Sarees</h3><p>Georgette sarees offer a blend of comfort and elegance. Our Georgette Engagement Sarees are adorned with intricate Resham embroidery and subtle sequin work, striking a harmonious balance between tradition and modern style.</p><h3>Silk Engagement Sarees</h3><p>Silk is synonymous with grace and opulence. Our Silk Engagement Sarees are embellished with exquisite Zari work and intricate patterns, creating a timeless and regal appearance.</p><h2>Craftsmanship Beyond Compare</h2><p>Our hand-embroidered Engagement Sarees are a testament to the artistry and skill of our talented artisans. Each saree is meticulously embroidered with Zari, Resham, Sequin, and Stonework, ensuring that your engagement attire captures the essence of love and celebration.</p><h2>Colors that Reflect Your Joy</h2><p>Choose from a mesmerizing spectrum of colors that mirror your happiness and the celebratory spirit of your engagement. From traditional hues to contemporary shades, our collection offers something for every bride.</p><h2>Make Your Engagement Memorable</h2><p>Our Engagement Sarees are designed to make your engagement ceremony an unforgettable affair. These sarees provide comfort, elegance, and a touch of glamour, allowing you to celebrate your love story in style.</p><h2>Shop with Confidence</h2><p>Browse our Engagement Saree Collection online, and let our experts assist you in finding the perfect saree that complements your engagement theme and personal style. Whether you prefer a traditional or contemporary look, we have the saree that will make your engagement truly magical.</p><h2>Which other saree collections do we have at Summer?</h2><p>Here are the other sarees we have in our collection</p><h3>Sarees By Fabric</h3><ul><li><a href=\"https://www.lovesummer.in/collections/organza-sarees\"><span style=\"text-decoration:underline\">Organza Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/chiffon-sarees\"><span style=\"text-decoration:underline\">Chiffon Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/georgette-sarees\"><span style=\"text-decoration:underline\">Georgette Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/silk-sarees\"><span style=\"text-decoration:underline\">Silk Sarees</span></a></li></ul><h3>Sarees By Design</h3><ul><li><a href=\"https://www.lovesummer.in/collections/printed-sarees\"><span style=\"text-decoration:underline\">Printed Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/embroidered-saree\"><span style=\"text-decoration:underline\">Embroidered Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/luxury-saree\"><span style=\"text-decoration:underline\">Luxury Sarees</span></a></li></ul><h3>Sarees By Occasion</h3><ul><li><a href=\"https://www.lovesummer.in/collections/haldi-sarees\"><span style=\"text-decoration:underline\">Haldi Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/mehendi-sarees\"><span style=\"text-decoration:underline\">Mehendi Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/reception-sarees\"><span style=\"text-decoration:underline\">Reception Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/partywear-sarees\"><span style=\"text-decoration:underline\">Partywear Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/festive-sarees\"><span style=\"text-decoration:underline\">Festive Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/farewell-sarees\"><span style=\"text-decoration:underline\">Farewell Sarees</span></a></li><li><a href=\"https://www.lovesummer.in/collections/diwali-sarees\"><span style=\"text-decoration:underline\">Diwali Sarees</span></a></li></ul><h2>Elevate Your Engagement Ceremony with \"Summer by Priyanka Gupta\"</h2><p>Your engagement marks a moment of joy and anticipation, and your attire should reflect the love and elegance of the occasion. Our Engagement Saree Collection combines tradition, craftsmanship, and contemporary style to create an ensemble that will make your engagement ceremony truly memorable.</p><h2>FAQs - Engagement Sarees</h2><h3>What is the Engagement Saree Collection by Summer by Priyanka Gupta?</h3><p>Our Engagement Saree Collection features a captivating range of hand-embroidered sarees crafted from luxurious fabrics like Organza, Chiffon, Georgette, and Silk. These sarees are designed to make your engagement ceremony truly memorable.</p><h3>How are engagement sarees different from bridal sarees?</h3><p>Engagement sarees are typically lighter and less elaborate than bridal sarees, making them ideal for the pre-wedding ceremony. They often feature intricate hand embroidery and embellishments that capture the spirit of celebration and love.</p><h3>Can I customize the engagement saree to match my engagement theme or preferences?</h3><p>Yes, we offer customization options for blouse designs, colors, and embellishments to ensure your engagement saree aligns perfectly with your personal style and the theme of your engagement ceremony.</p><h3>Do you offer international shipping for Engagement Sarees?</h3><p>Yes, we provide international shipping services, allowing brides worldwide to access our exquisite Engagement Saree Collection and celebrate their love in style.</p><h3>What is the price range of engagement sarees in your collection?</h3><p>Our Engagement Saree Collection offers a wide range of price points to accommodate various budgets. We believe that every bride should have access to a beautiful engagement saree.</p><h3>How do I care for my engagement saree after the engagement ceremony?</h3><p>To maintain the pristine condition of your engagement saree, we recommend professional cleaning or dry cleaning. Please refer to our care instructions for detailed guidance.</p><h3>Can I visit your physical store to see the engagement sarees in person?</h3><p>Yes, if you are in the Delhi NCR region, you can visit our store located at D6, 1st Floor, Defence Colony, New Delhi, 110024, to explore our engagement saree collection in person and receive personalized assistance.</p><h3>Is there a return or exchange policy for engagement sarees?</h3><p>We have a flexible return and exchange policy. If you are not satisfied with your purchase, you can contact our customer support team for assistance within the specified return period.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16728474812652__0829d804-3b0c-4ec0-8786-ae427fd7b2eb-1683969206544363e9-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "faq_AX4w8i": {
+      "type": "faq",
+      "blocks": {
+        "question_BqwKGT": {
+          "type": "question",
+          "settings": {
+            "title": "What is the Engagement Saree Collection by Summer by Priyanka Gupta?",
+            "text": "<p>Our Engagement Saree Collection features a captivating range of hand-embroidered sarees crafted from luxurious fabrics like Organza, Chiffon, Georgette, and Silk. These sarees are designed to make your engagement ceremony truly memorable.</p>"
+          }
+        },
+        "question_QBNpqe": {
+          "type": "question",
+          "settings": {
+            "title": "How are engagement sarees different from bridal sarees?",
+            "text": "<p>Engagement sarees are typically lighter and less elaborate than bridal sarees, making them ideal for the pre-wedding ceremony. They often feature intricate hand embroidery and embellishments that capture the spirit of celebration and love.</p>"
+          }
+        },
+        "question_UQzNrE": {
+          "type": "question",
+          "settings": {
+            "title": "Can I customize the engagement saree to match my engagement theme or preferences?",
+            "text": "<p>Yes, we offer customization options for blouse designs, colors, and embellishments to ensure your engagement saree aligns perfectly with your personal style and the theme of your engagement ceremony.</p>"
+          }
+        },
+        "question_MHQz4d": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer international shipping for Engagement Sarees?",
+            "text": "<p>Yes, we provide international shipping services, allowing brides worldwide to access our exquisite Engagement Saree Collection and celebrate their love in style.</p>"
+          }
+        },
+        "question_E7bWMX": {
+          "type": "question",
+          "settings": {
+            "title": "What is the price range of engagement sarees in your collection?",
+            "text": "<p>Our Engagement Saree Collection offers a wide range of price points to accommodate various budgets. We believe that every bride should have access to a beautiful engagement saree.</p>"
+          }
+        },
+        "question_8VUgM4": {
+          "type": "question",
+          "settings": {
+            "title": "How do I care for my engagement saree after the engagement ceremony?",
+            "text": "<p>To maintain the pristine condition of your engagement saree, we recommend professional cleaning or dry cleaning. Please refer to our care instructions for detailed guidance.</p>"
+          }
+        },
+        "question_wMfaTY": {
+          "type": "question",
+          "settings": {
+            "title": "Can I visit your physical store to see the engagement sarees in person?",
+            "text": "<p>Yes, if you are in the Delhi NCR region, you can visit our store located at D6, 1st Floor, Defence Colony, New Delhi, 110024, to explore our engagement saree collection in person and receive personalized assistance.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_BqwKGT",
+        "question_QBNpqe",
+        "question_UQzNrE",
+        "question_MHQz4d",
+        "question_E7bWMX",
+        "question_8VUgM4",
+        "question_wMfaTY"
+      ],
+      "settings": {
+        "title": "FAQs - Engagement Sarees"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "0829d804-3b0c-4ec0-8786-ae427fd7b2eb",
+    "faq_AX4w8i"
+  ]
+}
