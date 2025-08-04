@@ -140,31 +140,69 @@
         "cellAlign": "left"
       }
     },
-    "slideshow_BHXNmF": {
+    "slideshow_KyU4bU": {
       "type": "slideshow",
       "blocks": {
-        "image_7GDFwt": {
+        "image_Ub6QiF": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "top_subheading": "",
-            "title": "An Indian Summer",
+            "title": "New Arrivals",
             "title_size": 60,
             "subheading": "",
-            "link": "shopify://collections/an-indian-summer",
+            "link": "shopify://collections/new-arrivals",
             "link_text": "View Collection",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#fdfbfb",
             "text_align": "vertical-bottom horizontal-center",
-            "image": "shopify://shop_images/indian_summer_holiday.jpg",
-            "image_mobile": "shopify://shop_images/MG_0877_aaf63b7c-684b-488e-9591-a37d78e43010.jpg",
+            "image": "shopify://shop_images/IMG_8918.png",
+            "image_mobile": "shopify://shop_images/MFSBPG0P05597_1_e6cec304-4167-4696-a7aa-d81978f26329.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
         },
-        "image_PNAaTY": {
+        "image_bTLtid": {
           "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Shop For Rakhi",
+            "title_size": 60,
+            "subheading": "",
+            "link": "shopify://collections/rakhi-outfits-for-women",
+            "link_text": "View Collection",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#fdfbfb",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/IMG_8918.png",
+            "image_mobile": "shopify://shop_images/MFSBPG0P06794_1.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "image_yCPteM": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Shop Rakhis",
+            "title_size": 60,
+            "subheading": "",
+            "link": "shopify://collections/rakhi",
+            "link_text": "View Collection",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/rn-image_picker_lib_temp_e140315c-3ec5-4cc9-b515-16ebe873d07f.jpg",
+            "image_mobile": "shopify://shop_images/rn-image_picker_lib_temp_e140315c-3ec5-4cc9-b515-16ebe873d07f.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "image_gNDwcM": {
+          "type": "image",
+          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "Summer Sarees",
@@ -177,32 +215,14 @@
             "color_accent": "#fdfbfb",
             "text_align": "vertical-bottom horizontal-center",
             "image": "shopify://shop_images/Untitled_design_10.png",
-            "image_mobile": "shopify://shop_images/Summer_Sarees_cropted_1.webp",
+            "image_mobile": "shopify://shop_images/Summer_Sarees_cropted_1.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
         },
-        "image_Pg6eww": {
+        "image_G8xbwa": {
           "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "Bridesmaid Edit",
-            "title_size": 60,
-            "subheading": "",
-            "link": "shopify://collections/indian-bridesmaid-outfits",
-            "link_text": "View Collection",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-bottom horizontal-center",
-            "image": "shopify://shop_images/IMG_0405.jpg",
-            "image_mobile": "shopify://shop_images/Bridemaid_2.webp",
-            "parallax_direction": "top",
-            "overlay_opacity": 0
-          }
-        },
-        "image_xXiBrg": {
-          "type": "image",
+          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "Summer Essentials",
@@ -215,17 +235,18 @@
             "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-center",
             "image": "shopify://shop_images/IMG_1214.jpg",
-            "image_mobile": "shopify://shop_images/RRG1797_1.webp",
+            "image_mobile": "shopify://shop_images/RRG1797_1_f421c9ff-f755-46b7-be68-76ab5740f011.webp",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
         }
       },
       "block_order": [
-        "image_7GDFwt",
-        "image_PNAaTY",
-        "image_Pg6eww",
-        "image_xXiBrg"
+        "image_Ub6QiF",
+        "image_bTLtid",
+        "image_yCPteM",
+        "image_gNDwcM",
+        "image_G8xbwa"
       ],
       "custom_css": [
         ".btn {border: #ffffff solid 1px !important; line-height: 16px !important; font-size: 11px !important; color: #404040 !important;}"
@@ -234,76 +255,10 @@
         "section_height": "natural",
         "mobile_height": "500px",
         "parallax": false,
-        "style": "bars",
+        "style": "minimal",
         "autoplay": true,
-        "lazyload_images": true
-      }
-    },
-    "featured-collections": {
-      "type": "featured-collections",
-      "blocks": {
-        "2ef12131-0e0e-42e9-b2e8-dd18e52ecbd3": {
-          "type": "collection",
-          "settings": {
-            "collection": "bestseller",
-            "title": "Bestsellers",
-            "focal_point": "center center"
-          }
-        },
-        "featured-collections-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "designer-pastel-sarees",
-            "title": "Sarees",
-            "focal_point": "center center"
-          }
-        },
-        "df8ca15d-9660-4f06-826b-0768c34c8913": {
-          "type": "collection",
-          "settings": {
-            "collection": "dresses",
-            "title": "Dresses",
-            "focal_point": "center center"
-          }
-        },
-        "featured-collections-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "kurta-sets-women",
-            "title": "Kurta Sets",
-            "focal_point": "center center"
-          }
-        },
-        "featured-collections-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "tunics-for-women",
-            "title": "Tunics",
-            "focal_point": "center center"
-          }
-        },
-        "featured-collections-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "light-lehengas",
-            "title": "Lehengas",
-            "focal_point": "center center"
-          }
-        }
-      },
-      "block_order": [
-        "2ef12131-0e0e-42e9-b2e8-dd18e52ecbd3",
-        "featured-collections-1",
-        "df8ca15d-9660-4f06-826b-0768c34c8913",
-        "featured-collections-0",
-        "featured-collections-3",
-        "featured-collections-2"
-      ],
-      "settings": {
-        "title": "Shop by Category",
-        "divider": false,
-        "per_row": 3,
-        "enable_gutter": true
+        "autoplay_speed": 7,
+        "lazyload_images": false
       }
     },
     "featured_collection_CrcpFH": {
@@ -319,36 +274,93 @@
         "divider": true
       }
     },
-    "featured_collection_w7Qz8W": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "New Arrivals",
-        "home_featured_products": "new-arrivals",
-        "per_row": 5,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": false,
-        "divider": false
-      }
-    },
-    "rich_text_TFhVf4": {
-      "type": "rich-text",
+    "featured_collections_PFXL7i": {
+      "type": "featured-collections",
       "blocks": {
-        "button_T49ppY": {
-          "type": "button",
+        "collection_wdh3tH": {
+          "type": "collection",
           "settings": {
-            "link": "shopify://collections/new-arrivals",
-            "link_text": "View Collection"
+            "collection": "designer-pastel-sarees",
+            "title": "Sarees",
+            "focal_point": "center center"
+          }
+        },
+        "collection_WQeg6C": {
+          "type": "collection",
+          "settings": {
+            "collection": "kurta-sets-women",
+            "title": "Kurta Sets",
+            "focal_point": "center center"
+          }
+        },
+        "collection_XnDxyn": {
+          "type": "collection",
+          "settings": {
+            "collection": "dresses",
+            "title": "Dresses",
+            "focal_point": "center center"
+          }
+        },
+        "collection_jwEnYW": {
+          "type": "collection",
+          "settings": {
+            "collection": "tunics-for-women",
+            "title": "Tunics",
+            "focal_point": "center center"
+          }
+        },
+        "collection_Pqhzgn": {
+          "type": "collection",
+          "settings": {
+            "collection": "coord-sets-women",
+            "title": "Coord Sets",
+            "focal_point": "center center"
+          }
+        },
+        "collection_iUTR8i": {
+          "type": "collection",
+          "settings": {
+            "collection": "ready-to-ship",
+            "title": "Ready To Ship",
+            "focal_point": "center center"
           }
         }
       },
       "block_order": [
-        "button_T49ppY"
+        "collection_wdh3tH",
+        "collection_WQeg6C",
+        "collection_XnDxyn",
+        "collection_jwEnYW",
+        "collection_Pqhzgn",
+        "collection_iUTR8i"
       ],
       "settings": {
-        "align_text": "center",
-        "narrow_column": false,
-        "divider": false
+        "title": "Shop by Category",
+        "divider": false,
+        "per_row": 3,
+        "enable_gutter": true
+      }
+    },
+    "advanced_content_c6KKQU": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_yDfaXt": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2 style=\"text-align: center\">An Indian Summer</h2>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_yDfaXt"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "lazyload_images": false
       }
     },
     "advanced_content_n3HPWA": {
@@ -356,6 +368,7 @@
       "blocks": {
         "liquid_apWdkK": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "code": "<h2>An Indian Summer</h2>",
             "width": "100%",
@@ -388,7 +401,7 @@
       "custom_css": [
         ".custom__item-inner.custom__item-inner--liquid {text-align: center;}",
         ".image-wrap img {height: 80%; -o-object-fit: cover; object-fit: cover; width: 100%;}",
-        "@media only screen and (max-width: 768px) {.custom__item {flex: 0 0 auto; margin-bottom: -40px; padding-left: 17px; padding-top: 40px; }}"
+        "@media only screen and (max-width: 768px) {.custom__item {flex: 0 0 auto; margin-bottom: -1px; padding-left: 17px; padding-top: 2px; }}"
       ],
       "name": "t:sections.advanced-content.presets.custom_content.name",
       "settings": {
@@ -397,13 +410,15 @@
         "lazyload_images": true
       }
     },
-    "featured_collection_m4nUMa": {
+    "featured_collection_FKbm4Y": {
       "type": "featured-collection",
-      "disabled": true,
-      "name": "New Arrivals",
+      "custom_css": [
+        "@media only screen and (max-width: 768px) {.section-header {margin-bottom: 30px; margin-top: 70px; } .grid__image-ratio.grid__image-ratio--portrait {width: 70vw; } .grid__item.grid-product.small--one-half.medium-up--one-fifth.grid-product__has-quick-shop.aos-init.aos-animate {width: 70vw; }}"
+      ],
+      "name": "t:sections.featured-collection.presets.featured_collection.name",
       "settings": {
-        "title": "New Arrivals",
-        "home_featured_products": "new-arrivals",
+        "title": "Shop celebrity looks",
+        "home_featured_products": "celebrities-in-summer",
         "per_row": 5,
         "rows": 1,
         "mobile_scrollable": true,
@@ -411,35 +426,63 @@
         "divider": false
       }
     },
-    "featured_collection_ed9TLd": {
-      "type": "featured-collection",
-      "custom_css": [
-        ".section-header {margin-bottom: 30px; margin-top: 90px;}"
+    "rich_text_yaC67F": {
+      "type": "rich-text",
+      "blocks": {
+        "button_f6yNrU": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://collections/celebrities-in-summer",
+            "link_text": "View All Looks"
+          }
+        }
+      },
+      "block_order": [
+        "button_f6yNrU"
       ],
       "settings": {
-        "title": "Summer Essentials",
-        "home_featured_products": "summer-esstentials",
+        "align_text": "center",
+        "narrow_column": false,
+        "divider": false
+      }
+    },
+    "featured_collection_w7Qz8W": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".section-header {margin-bottom: 30px; /* margin-top: 90px; */}"
+      ],
+      "settings": {
+        "title": "Shop For Rakhi",
+        "home_featured_products": "rakhi-outfits-for-women",
         "per_row": 5,
         "rows": 1,
         "mobile_scrollable": true,
         "view_all": false,
+        "divider": false
+      }
+    },
+    "rich_text_TFhVf4": {
+      "type": "rich-text",
+      "blocks": {
+        "button_T49ppY": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://collections/rakhi-outfits-for-women",
+            "link_text": "Rakhi Recommendations"
+          }
+        }
+      },
+      "block_order": [
+        "button_T49ppY"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
         "divider": false
       }
     },
     "rich_text_DNdb88": {
       "type": "rich-text",
-      "blocks": {
-        "button_rXMXwa": {
-          "type": "button",
-          "settings": {
-            "link": "shopify://collections/summer-esstentials",
-            "link_text": "View Collection"
-          }
-        }
-      },
-      "block_order": [
-        "button_rXMXwa"
-      ],
       "settings": {
         "align_text": "center",
         "narrow_column": false,
@@ -626,15 +669,28 @@
         "per_row": 5,
         "rows": 1,
         "mobile_scrollable": true,
-        "view_all": true,
+        "view_all": false,
         "divider": false
       }
     },
-    "pagefly_section_tgqcYU": {
-      "type": "pagefly-section",
-      "disabled": true,
+    "rich_text_mwE6Ef": {
+      "type": "rich-text",
+      "blocks": {
+        "button_wpBxFA": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://collections/my-summer",
+            "link_text": "View Collection"
+          }
+        }
+      },
+      "block_order": [
+        "button_wpBxFA"
+      ],
       "settings": {
-        "section_id": "pf-926eb272"
+        "align_text": "center",
+        "narrow_column": false,
+        "divider": false
       }
     },
     "821c6f2c-5857-4bfa-b43b-6463ef4b5516": {
@@ -808,13 +864,6 @@
         "padding-bottom": 50
       }
     },
-    "pagefly_section_rcwgfq": {
-      "type": "pagefly-section",
-      "disabled": true,
-      "settings": {
-        "section_id": "pf-38a4fd9f"
-      }
-    },
     "logo_list_f8M3pE": {
       "type": "logo-list",
       "blocks": {
@@ -975,23 +1024,23 @@
   "order": [
     "slideshow_p4EyEp",
     "circular_collection_navigation_7wCxca",
-    "slideshow_BHXNmF",
-    "featured-collections",
+    "slideshow_KyU4bU",
     "featured_collection_CrcpFH",
+    "featured_collections_PFXL7i",
+    "advanced_content_c6KKQU",
+    "advanced_content_n3HPWA",
+    "featured_collection_FKbm4Y",
+    "rich_text_yaC67F",
     "featured_collection_w7Qz8W",
     "rich_text_TFhVf4",
-    "advanced_content_n3HPWA",
-    "featured_collection_m4nUMa",
-    "featured_collection_ed9TLd",
     "rich_text_DNdb88",
     "featured_collections_CaGQVH",
     "circular_collection_navigation_nDBD3H",
     "8e86185c-b95b-46f2-9e65-85a0d156c5e9",
-    "pagefly_section_tgqcYU",
+    "rich_text_mwE6Ef",
     "821c6f2c-5857-4bfa-b43b-6463ef4b5516",
     "1746528885ff5bc448",
     "testimonial_carousel_fVr7EX",
-    "pagefly_section_rcwgfq",
     "logo_list_f8M3pE",
     "blog_posts_ENWFAJ",
     "ddca1aea-ebf0-4c8b-923f-0bdb4d1f7a09",

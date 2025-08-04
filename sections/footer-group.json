@@ -100,7 +100,8 @@
         "show_currency_flags": false,
         "show_payment_icons": true,
         "show_copyright": true,
-        "copyright_text": "is owned by Love Summer Private Limited"
+        "copyright_text": "is owned by Love Summer Private Limited",
+        "footer_img": "shopify://shop_images/Untitled_design_1_4848d96b-8b8a-4ad2-a731-3a5996c99889.png"
       }
     },
     "seo_keywords_ChPRRL": {
