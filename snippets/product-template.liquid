@@ -327,6 +327,20 @@
                         {%- endfor -%}
                       {%- endunless -%}
                     </div>
+                    {% comment %}---------------------------------------------------------------------------------{% endcomment %}
+                    {% assign total_inventory = 0 %}
+                    {% for variant in product.variants %}
+                      {% assign total_inventory = total_inventory | plus: variant.inventory_quantity %}
+                    {% endfor %}
+                    {% if product.tags contains 'limited-edition' %}
+                      {% if total_inventory > 0 %}
+                        {% render 'shipping-info', product: product %}
+                      {% endif %}
+                    {% else %}
+                      {% render 'shipping-info', product: product %}
+                    {% endif %}
+                    {% comment %}---------------------------------------------------------------------------------{% endcomment %}
+
                   {%- when 'buy_buttons' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
                       {%- unless product.empty? -%}

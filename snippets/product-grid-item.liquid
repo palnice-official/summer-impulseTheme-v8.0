@@ -1,10 +1,39 @@
 {% comment %}
-Arguments
-- product: product object
-- [per_row]: number of items per row
-- [quick_shop_enable]: boolean
-- [collection]: collection object
+  Arguments
+  - product: product object
+  - [per_row]: number of items per row
+  - [quick_shop_enable]: boolean
+  - [collection]: collection object
 {% endcomment %}
+
+{% style %}
+    .rts-{{ section.id }} {
+      display: flex;
+      position: absolute;
+      z-index: 2;
+      background-color: white;
+      border: 0.5px solid black;
+      padding: 0 5px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      bottom: 1px;
+      left: 1px;
+  }
+    .bold_text-{{ section.id }} {
+      font-weight: 500;
+      font-size: 10px;
+      text-align: center;
+  }
+    .bolt-{{ section.id }}{
+      width:15px;
+    }
+
+    .subtitle_product_grid-{{ section.id }} {
+      color: #1c1d1d;
+      font-size: 10px;
+    }
+{% endstyle %}
 
 {%- liquid
   unless per_row
@@ -45,8 +74,16 @@ Arguments
     endfor
   endif
 -%}
-
-<div class="grid__item grid-product {{ gridView }} {% if quick_shop_enable %} grid-product__has-quick-shop{% endif %}" data-aos="row-of-{{ per_row }}" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
+{% assign inventory_quantity = 0 %}
+{% for variant in product.variants %}
+  {% assign inventory_quantity = inventory_quantity | plus: variant.inventory_quantity %}
+{% endfor %}
+<div
+  class="grid__item grid-product {{ gridView }} {% if quick_shop_enable %} grid-product__has-quick-shop{% endif %}"
+  data-aos="row-of-{{ per_row }}"
+  data-product-handle="{{ product.handle }}"
+  data-product-id="{{ product.id }}"
+>
   <div class="grid-product__content">
     {%- if has_custom_label -%}
       <div class="grid-product__tag grid-product__tag--custom">
@@ -84,26 +121,36 @@ Arguments
       <div class="grid-product__image-mask">
         {%- if fixed_aspect_ratio -%}
           <div
-            class="grid__image-ratio grid__image-ratio--{% if image_style == 'circle' %}square{% else %}{{ settings.product_grid_image_size }}{% endif %}">
+            class="grid__image-ratio grid__image-ratio--{% if image_style == 'circle' %}square{% else %}{{ settings.product_grid_image_size }}{% endif %}"
+          >
             {%- capture image_classes -%}
               {% unless settings.product_grid_image_fill %} grid__image-contain{% endunless %} image-style--{{ image_style }}
             {%- endcapture -%}
             {%- if preview_image != blank -%}
-              {%- render 'image-element',
+              {%-
+                render 'image-element',
                 img: preview_image,
                 classes: image_classes,
                 sizes: sizes,
                 sizeVariable: sizeVariable,
                 fallback: fallback,
                 widths: '360, 540, 720, 900, 1080',
+                alt: product.title;
               -%}
             {%- else -%}
               {%- capture placeholder -%}product-{% cycle 1, 2, 3, 4, 5, 6 %}{%- endcapture -%}
               <div class="product-image--placeholder">{{ placeholder | placeholder_svg_tag: 'placeholder-svg' }}</div>
             {%- endif -%}
+            {% if inventory_quantity > 0 %}
+              <div class="rts-{{ section.id }}">
+                <div class="bolt-{{ section.id }}">{% render 'bolt' %}</div>
+                <span class="bold_text-{{ section.id }}">READY TO SHIP</span>
+              </div>
+            {% endif %}
           </div>
         {%- else -%}
-          <div class="image-wrap"
+          <div
+            class="image-wrap"
             {% if preview_image != blank %}
               style="height: 0; padding-bottom: {{ 100 | divided_by: preview_image.aspect_ratio }}%;"
             {% endif %}
@@ -119,6 +166,7 @@ Arguments
                 sizeVariable: sizeVariable,
                 fallback: fallback,
                 widths: '360, 540, 720, 900, 1080',
+                alt: product.title
               -%}
             {%- else -%}
               {%- capture placeholder -%}product-{% cycle 1, 2, 3, 4, 5, 6 %}{%- endcapture -%}
@@ -142,10 +190,10 @@ Arguments
               sizeVariable: sizeVariable,
               fallback: fallback,
               widths: '360, 540, 720, 1000',
+              alt: product.title
             -%}
           </div>
         {%- endif -%}
-
         {%- if settings.enable_swatches -%}
           {%- assign swatch_trigger = 'products.general.color_swatch_trigger' | t | downcase -%}
           {%- for option in product.options_with_values -%}
@@ -170,8 +218,8 @@ Arguments
 
                   {%- if variant.image -%}
                     <div
-                      class="grid-product__color-image grid-product__color-image--{{ variant.id }} small--hide">
-                    </div>
+                      class="grid-product__color-image grid-product__color-image--{{ variant.id }} small--hide"
+                    ></div>
                   {%- endif -%}
                 {%- endunless -%}
               {%- endfor -%}
@@ -180,7 +228,7 @@ Arguments
         {%- endif -%}
 
         {%- if quick_shop_enable and type == blank -%}
-          <button class="quick-product__btn btn--not-ready js-modal-open-quick-modal-{{ product.id }} small--hide">
+          <button class="quick-product__btn quick-product__btn--not-ready js-modal-open-quick-modal-{{ product.id }} small--hide">
             {{ settings.quick_shop_text }}
           </button>
         {%- endif -%}
@@ -188,7 +236,12 @@ Arguments
 
       <a href="{{ product.url | within: collection }}" class="grid-product__link">
         <div class="grid-product__meta">
-          <div class="grid-product__title grid-product__title--{{ settings.type_product_style }}">{{ product.title }}</div>
+          <div class="grid-product__title grid-product__title--{{ settings.type_product_style }}">
+            {{ product.title }}
+          </div>
+          <!--
+            <div class="subtitle_product_grid-{{ section.id }}">{{ product.metafields.custom.subtitle1 | metafield_text }}</div>
+          -->
           {%- if settings.vendor_enable -%}
             <div class="grid-product__vendor">{{ product.vendor }}</div>
           {%- endif -%}
@@ -202,7 +255,11 @@ Arguments
               {%- assign price = product.price_min | money -%}
               {{ 'products.general.from_text_html' | t: price: price }}
             {%- else -%}
-              {{ product.price | money }}
+              {% if product.tags contains 'Summer Archives' %}
+                <span class="price-on-request">Price on Request</span>
+              {% else %}
+                <span class="product-price">{{ product.price | money }}</span>
+              {% endif %}
             {%- endif -%}
             {%- if on_sale -%}
               {%- if settings.product_save_amount -%}
@@ -274,7 +331,8 @@ Arguments
                           data-variant-image="{{ variant.image | img_url: '400x' }}"
                         {% endif %}
                         aria-label="{{ product.title }} - {{ value }}"
-                        style="background-color: {{ color_swatch_fallback }};{% if images[color_file_name] != blank %}  background-image: url({{ color_image }});{% endif %}">
+                        style="background-color: {{ color_swatch_fallback }};{% if images[color_file_name] != blank %}  background-image: url({{ color_image }});{% endif %}"
+                      >
                         <span class="visually-hidden">{{ value }}</span>
                       </span>
                     {%- endunless -%}
@@ -289,6 +347,10 @@ Arguments
                 {%- endif -%}
               {%- endif -%}
             {%- endfor -%}
+          {%- endif -%}
+
+          {%- if settings.enable_product_reviews and type == 'horizontal' -%}
+            <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
           {%- endif -%}
         </div>
       </a>
@@ -335,7 +397,8 @@ Arguments
                   data-variant-image="{{ variant.image | img_url: '400x' }}"
                 {% endif %}
                 aria-label="{{ product.title }} - {{ value }}"
-                style="background-color: {{ color_swatch_fallback }};{% if images[color_file_name] != blank %}  background-image: url({{ color_image }});{% endif %}">
+                style="background-color: {{ color_swatch_fallback }};{% if images[color_file_name] != blank %}  background-image: url({{ color_image }});{% endif %}"
+              >
                 <span class="visually-hidden">{{ value }}</span>
               </a>
             {%- endunless -%}
@@ -350,6 +413,10 @@ Arguments
         {%- endif -%}
       {%- endif -%}
     {%- endfor -%}
+  {%- endif -%}
+
+  {%- if settings.enable_product_reviews and type == blank -%}
+    <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
   {%- endif -%}
 
   {%- if quick_shop_enable and type == blank -%}
