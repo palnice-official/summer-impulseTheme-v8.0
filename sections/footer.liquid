@@ -1,39 +1,38 @@
 {% style %}
   .img_text-wraper {
     display: flex;
-  flex-direction: column;
-  align-items: center;     
-  justify-content: center;
-  width: 100%;
-  position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
     top: 155px;
   }
-  @media only screen and (min-width:770px ){
-.footer_image{
-  display: none
-}
+  @media only screen and (min-width: 770px) {
+    .footer_image {
+      display: none;
+    }
   }
-  @media only screen and (max-width: 768px ){
-  footer.site-footer {
-    padding-bottom: 220px;
-}
-  .footer_image {
-    position: relative;
-    margin-top: -168px;
-}
-  .footer_image img {
-    height: 27vh;
-    width: 98vw
+  @media only screen and (max-width: 768px) {
+    footer.site-footer {
+      padding-bottom: 220px;
+    }
+    .footer_image {
+      position: relative;
+      margin-top: -168px;
+    }
+    .footer_image img {
+      height: 27vh;
+      width: 98vw;
+    }
+    p.footer__small-text {
+      font-size: 10px;
+      padding: 0px;
+    }
+    .footer_text {
+      position: relative;
+    }
   }
-  p.footer__small-text {
-    font-size: 10px;
-    padding: 0px
-}
-  .footer_text {
-    position: relative;
-}
-  }
-  
 {% endstyle %}
 
 {%- liquid
@@ -64,7 +63,6 @@
 
 <footer class="site-footer" data-section-id="{{ section.id }}" data-section-type="footer-section">
   <div class="page-width">
-
     <div class="grid">
       {%- assign row_width = 0 -%}
       {%- for block in section.blocks -%}
@@ -74,7 +72,11 @@
           {%- assign row_width = row_width | minus: 100 -%}
         {%- endif -%}
 
-        <div {{ block.shopify_attributes }} class="grid__item footer__item--{{ block.id }}" data-type="{{ block.type }}">
+        <div
+          {{ block.shopify_attributes }}
+          class="grid__item footer__item--{{ block.id }}"
+          data-type="{{ block.type }}"
+        >
           {%- style -%}
             @media only screen and (min-width: 769px) and (max-width: 959px) {
               .footer__item--{{ block.id }} {
@@ -116,7 +118,7 @@
         {%- render 'multi-selectors',
           locale_selector: locale_selector,
           currency_selector: currency_selector,
-          show_currency_flags: section.settings.show_currency_flags
+          show_currency_flags: section.settings.show_currency_flags,
           location: 'footer'
         -%}
       </div>
@@ -134,16 +136,25 @@
       {%- endunless -%}
     {%- endif -%}
 
-    {%- if section.settings.show_copyright -%}
-      <p class="footer__small-text">
-        &copy; {{ 'now' | date: '%Y' }} {{ shop.name }}
-        {%- if section.settings.copyright_text != blank -%}
-          {{ section.settings.copyright_text }}
-        {%- endif -%}
-      </p>
-    {%- endif -%}
-    {% comment %} <p class="footer__small-text">{{ powered_by_link }}</p> {% endcomment %}
+    <div class="img_text-wraper">
+      {%  if section.settings.footer_img != blank %}  
+      <div class="footer_image">
+        {{ section.settings.footer_img | image_url: width: 400 | image_tag }}
+      </div>
+      {% endif %}
 
+      <div class="footer_text">
+        {%- if section.settings.show_copyright -%}
+          <p class="footer__small-text">
+            &copy; {{ 'now' | date: '%Y' }}
+            {{ shop.name }}
+            {%- if section.settings.copyright_text != blank -%}
+              {{ section.settings.copyright_text }}
+            {%- endif -%}
+          </p>
+        {%- endif -%}
+      </div>
+    </div>
   </div>
   {% render 'footer-nav' %}
 </footer>
@@ -200,6 +211,11 @@
       "type": "text",
       "id": "copyright_text",
       "label": "t:sections.footer.settings.copyright_text.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "footer_img",
+      "label": "put image"
     }
   ],
   "blocks": [
