@@ -73,8 +73,35 @@
     }
   {%- endif -%}
 </style>
+{% style %}
+  .nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 29;
+    /* Improved transition properties */
+    transition: transform 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+    will-change: transform;
+    /* Add backface visibility to help with performance */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  
+  .nav-hidden {
+    transform: translateY(-100%);
+  }
+  
+  @media screen and (min-width: 768px) {
+    /* Optional: keep the nav always visible on desktop */
+    .nav-container.nav-hidden {
+      transform: translateY(0);
+    }
+  }
+  
+{% endstyle %}
 
-<div data-section-id="{{ section.id }}" data-section-type="header">
+<div data-section-id="{{ section.id }}" data-section-type="header" class="nav-container">
 
   {%- unless overlay_header -%}
     {%- if section.settings.show_locale_selector or section.settings.show_currency_selector or section.settings.toolbar_social or section.settings.toolbar_menu != blank -%}
@@ -181,6 +208,61 @@
     </div>
   </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Target our navigation container
+    const navContainer = document.querySelector('.nav-container');
+    let lastScrollTop = 0;
+    let scrollThreshold = 10; // Minimum scroll amount before triggering hide/show
+    let scrollTimer;
+    
+    function handleScroll() {
+      // Get current scroll position
+      const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      // Check if mobile/tablet view (adjust the breakpoint as needed)
+      const isMobile = window.innerWidth < 768;
+      
+      if (isMobile) {
+        // Clear any pending timer
+        clearTimeout(scrollTimer);
+        
+        // Determine scroll direction and apply appropriate class
+        if (currentScrollTop > lastScrollTop && currentScrollTop > scrollThreshold) {
+          // Scrolling down & past threshold - hide the navbar
+          requestAnimationFrame(() => {
+            navContainer.classList.add('nav-hidden');
+          });
+        } else {
+          // Scrolling up or at top - show the navbar
+          requestAnimationFrame(() => {
+            navContainer.classList.remove('nav-hidden');
+          });
+        }
+        
+        // Debounce scroll handling for smoother transitions
+        scrollTimer = setTimeout(() => {
+          // Save the scroll position after the debounce
+          lastScrollTop = currentScrollTop;
+        }, 10);
+      } else {
+        // On desktop, always show navbar
+        navContainer.classList.remove('nav-hidden');
+        lastScrollTop = currentScrollTop;
+      }
+    }
+    
+    // Use passive event listener for better performance
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    
+    // Handle resize events
+    window.addEventListener('resize', function() {
+      // Reset on resize
+      navContainer.classList.remove('nav-hidden');
+    }, { passive: true });
+  });
+</script>
 
 {% schema %}
 {
