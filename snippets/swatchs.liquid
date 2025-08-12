@@ -1,0 +1,157 @@
+{% comment %} {% style %}
+  /* @media screen and (max-width: 767px) {
+    .beyours-image-swatches {
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+    }
+  }
+  .beyours-image-swatches {
+    display: flex;
+    gap: 5px;
+  }
+  .image-swatch-name {
+    visibility: hidden;
+    width: 110px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .beyours-image-swatches div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  @media screen and (max-width: 767px) {
+    .beyours-image-swatches div {
+      flex: 0 0 14%;
+      scroll-snap-align: start;
+    }
+  } */
+  /* .swatch {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+  } */
+ {% endstyle %} {% endcomment %}
+{% comment  %}  
+<color-metafield>
+  {% assign product_urls = product.metafields.custom.product_url_list.value %}
+  {% assign color_swatch_hex = product.metafields.custom.product_color %}
+  {% assign color_swatch_name = product.metafields.custom.color_name %}
+
+  <div class="swatch_wrapper beyours-image-swatches">
+    <div class="swatch_text ">
+      <div class="swatch" style="background: {{ color_swatch_hex}}"></div>
+      <span>{{ color_swatch_name }}</span>
+    </div>
+
+    {% for product_url in product_urls %}
+        <div>
+          <a href="https://www.lovesummer.in{{product_url.url}}" target="_blank">
+            <div class="swatch_wrapper">
+              <div class="swatch" style="background: {{ product_url.metafields.custom.product_color.value }}"></div>
+              <span>{{ product_url.metafields.custom.color_name.value }}</span>
+            </div>
+          </a>
+        </div>
+      
+    {% endfor %}
+  </div>
+</color-metafield>
+{% endcomment %}
+
+{% style  %} 
+    /* --- Color Swatch Styling --- */
+
+.color-swatch-selector {
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; */
+  margin-bottom: 20px;
+}
+
+.color-swatch-label {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  color: #121212;
+}
+
+.swatch-container {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Spacing between swatches */
+}
+
+.swatch-link {
+  display: block;
+  /* Add padding to make the clickable area slightly larger than the swatch itself */
+  padding: 2px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.swatch {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  /* A subtle border helps white/light swatches stand out */
+  border: 1px solid #d1d1d1;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* --- Hover Effect --- */
+.swatch-link:hover .swatch {
+  transform: scale(1.15);
+}
+
+/* --- Active State Styling (to match the image) --- */
+.swatch-link.is-active {
+  /* This creates the double-border effect shown in your image */
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #3b424f;
+}
+{% endstyle %}
+
+{% comment %}
+  Place this code in your product template, a custom section, or a snippet.
+  e.g., sections/product-color-swatches.liquid
+{% endcomment %}
+
+{%- liquid
+  assign current_color_name = product.metafields.custom.color_name.value
+  assign current_color_hex = product.metafields.custom.product_color.value
+  assign related_products = product.metafields.custom.product_url_list.value
+-%}
+
+{%- if current_color_hex or related_products.size > 0 -%}
+  <div class="color-swatch-selector">
+    <p class="color-swatch-label">Color- {{ current_color_name | escape }}</p>
+
+    <div class="swatch-container">
+      
+      {% comment %} Swatch for the CURRENT product {% endcomment %}
+      <a href="{{ product.url }}" class="swatch-link is-active" aria-label="Current Color: {{ current_color_name | escape }}">
+        <span class="swatch" style="background-color: {{ current_color_hex }};"></span>
+      </a>
+
+      {% comment %} Swatches for the RELATED products from the list {% endcomment %}
+      {%- for related_product in related_products -%}
+        {%- assign related_hex = related_product.metafields.custom.product_color.value -%}
+        {%- if related_hex -%}
+          <a href="{{ related_product.url }}" class="swatch-link" aria-label="View Color: {{ related_product.metafields.custom.color_name.value | escape }}" target="_blank">
+            <span class="swatch" style="background-color: {{ related_hex }};"></span>
+          </a>
+        {%- endif -%}
+      {%- endfor -%}
+
+    </div>
+  </div>
+{%- endif -%}

@@ -44,7 +44,7 @@
         border-radius: 6px;
         overflow: hidden;
         margin-bottom: 15px;
-        max-width: 290px;
+        max-width: 90vh;
       }
 
       .testimonial-image-{{ section.id }} img {
@@ -73,9 +73,6 @@
         margin-right: 2px;
       }
 
-      /* .star-empty {
-        color: #e0e0e0;
-      } */
       .section-header-{{ section.id }} {
         margin-bottom: -25px;
     }
@@ -114,7 +111,7 @@
                   <div class="testimonial-image-{{ section.id }}">
                     {{
                       block.settings.image
-                      | image_url: width: 600, height: 600
+                      | image_url: width: 600
                       | image_tag: alt: block.settings.author
                     }}
                     {% comment %}
