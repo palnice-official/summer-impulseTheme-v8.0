@@ -1,0 +1,456 @@
+{% stylesheet %}
+    .shop-the-look-section{
+        padding: 40px 0;
+        background: #f8f8f8;
+    }
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .section-heading{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 30px;
+        color: #333;
+    }
+    .carousel-wrapper{
+        position: relative;
+    }
+    .carousel-container{
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        background: white;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .carousel-track{
+        display: flex;
+        transition: transform 0.3s ease;
+    }
+    .carousel-slide{
+        min-width: 100%;
+        position: relative;
+    }
+    .slide-image{
+        position: relative;
+        aspect-ratio: 4/3;
+        overflow: hidden;
+    }
+    .slide-image img{
+        width: 100%;
+        height: 100;
+        object-fit: cover;
+    }
+    .product-dots{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .product-dot{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.9);
+        border: 2px solid #333;
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+    .product-dot:nth-child(1) {top: 20%; left: 15%;}
+    .product-dot:nth-child(2) {top: 30%; right: 20%;}
+    .product-dot:nth-child(3) {bottom: 25%; left: 25%;}
+    .product-dot:hover {
+        background: #333;
+        color: white;
+        transform: scale(1.1);
+    }
+    .product-popup{
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+        transform: translateX(-50%);
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        min-width: 200px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 10;
+    }
+    .product-dot:hover .product-popup{
+        opacity: 1;
+        visibility: visible;
+    }
+    .product-popup img{
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 4px;
+        float: left;
+        margin-right: 10px;
+    }
+    .product-info h4{
+        font-size: 14px;
+        margin: 0 0 5px 0;
+        font-weight: 600;
+    }
+    product-info p {
+        font-size: 14px;
+        color: #666;
+        margin: 0 0 10px 0;
+    }
+    .shop-btn{
+        background: #333;
+        color: white;
+        padding: 6px 12px;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 12px;
+        display: inline-block;
+    }
+    .carousel-nav{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.9);
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        z-index: 5;
+    }
+    .carousel-nav:hover {
+        background: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    .carousel-nav.prev{
+        left: 20px;
+    }
+    .carousel-nav.next{
+        right: 20px;
+    }
+    .carousel-dots{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50px;
+        border: none;
+        background: #ccc;
+        cursor: pointer;
+        transition: background 0.3s ease ;
+    }
+    .dot.active, .dot:hover{
+        background: #333;
+    }
+    .slide-content{
+        padding: 20px;
+        text-align: center;
+    }
+    .slide-content h3{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    .slide-content p{
+        color: #666;
+        line-height: 1.6;
+    }
+
+    @media (max-widrh: 768px){
+        .shop-the-look-section{
+            padding: 20px 0;
+        }
+        .container{
+            padding: 0 15px;
+        }
+        .section-heading{
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .carousel-nav{
+            width: 40px;
+            height: 40px
+        }
+        .carousel-nav.next{
+            right: 10px;
+        }
+        .carousel-nav.prev{
+            left: 10px;
+        }
+        .product-dot{
+            width: 35px;
+            height: 35px;
+        }
+        .slide-content {
+            padding: 15px;
+        }
+        .slide-content h3{
+            font-size: 1.25rem
+        }
+        @media (max-width: 480px){
+            .product-popup{
+                position: fixed;
+                bottom: 20px;
+                left: 20px;
+                right: 20px;
+                transform: none;
+            }
+        }
+    }
+{% endstylesheet %}
+
+<div class="shop-the-look-section">
+  <div class="container">
+    {% if section.settings.heading != blank %}
+      <h2 class="section-heading">
+        {{ section.settings.heading }}
+      </h2>
+    {% endif %}
+    <div class="carousel-wrapper">
+      <div class="carousel-container" id="shopTheLookCarousel">
+        <div class="carousel-track" id="carouselTrack">
+          {% for block in section.blocks %}
+            <div class="carousel-slide" data-slide="{{ forloop.index0 }}">
+              {% if block.settings.image != blank %}
+                <div class="slide-image">
+                  <img
+                    src="{{ block.settings.image | img_url: '800x600' }}"
+                    alt="{{ block.settings.image.alt | default: block.settings.heading }}"
+                    loading="lazy"
+                  >
+
+                  {% if block.settings.products != blank %}
+                    <div class="product-dots">
+                      {% assign products = block.settings.products | split: ',' %}
+                      {% for product_handle in products limit: 3 %}
+                        {% assign product = all_products[product_handle] %}
+                        {% if product != blank %}
+                          <button class="product-dot" data-product="{{ product_handle }}">
+                            <span class="dot-icon">+</span>
+                            <div class="product-popup">
+                              <img src="{{ product.featured_image | img_url: '100x100' }}" alt="{{ product.title }}">
+                              <div class="product-info">
+                                <h4>{{ product.title }}</h4>
+                                <p>{{ product.price | money }}</p>
+                                <a href="{{ product.url }}" class="shop-btn">Shop Now</a>
+                              </div>
+                            </div>
+                          </button>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.heading != blank or block.settings.description != blank %}
+                    <div class="slide-content">
+                      {% if block.settings.heading != blank %}
+                        <h3>{{ block.settings.heading }}</h3>
+                      {% endif %}
+                      {% if block.settings.description != block %}
+                        <p>{{ block.settings.description }}</p>
+                      {% endif %}
+                    </div>
+                  {% endif %}
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+
+        <button class="carousel-nav prev" id="prevBtn" aria-label="Previous slide">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="carousel-nav next" id="nextBtn" aria-label="Next slide">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <!-- Dot Indicators -->
+      {% if section.blocks.size > 1 %}
+        <div class="carousel-dots">
+          {% for block in section.blocks %}
+            <button class="dot {% if forloop.first %} active {% endif %}" data-slide="{{ forloop.index0 }}"></button>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        const track = document.getElementById('carouselTrack');
+        const slides = track.querySelectorAll('.carousel-slide');
+        const prevBtn =document.getElementById('prevBtn');
+        const nextBtn =document.getElementById('nextBtn');
+        const dots = document.querySelectorAll('.dot');
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+        function updateCarousel(){
+          const translateX = -currentSlide * 100;
+          track.style.transform = `translateX(${translateX})`;
+
+          //update dots
+          dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentSlide);
+          });
+        }
+
+        function prevSlide() {
+          currentSlide =(currentSlide -1 + totalSlides) % totalSlides;
+          //currentSlide = 3 → (3 - 1 + 5) % 5 = 7 % 5 = 2 ✅ → slide 2
+          updateCarousel()
+        }
+
+        function nextSlide() {
+          currentSlide =(currentSlide +1 ) % totalSlides;
+          //currentSlide = 3 → (3 + 1) % 5 = 4 ✅ → slide 4
+          updateCarousel()
+        } 
+
+        //Event listeners
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+
+        dots.forEach((dot, index) => {
+          dot.addEventListener('click', () => {
+            currentSlide = index;
+            updateCarousel();
+          });
+        });
+
+        //Touch/Swipe support for mobile
+        let startX = 0;
+        let isDragging = false;
+
+        track.addEventListener('touchstart', (e) => {
+          startX = e.touches[0].clientX;
+          isDragging = true;
+        });
+
+        track.addEventListener('touchmove', (e) => {
+          if(!isDragging) return;
+          e.preventDefault();
+        });
+        track.addEventListener('touchend', (e) => {
+          if(!isDragging) return;
+
+          const endX = e.changedTouches[0].clientX;
+          const diff = startX - endX;
+
+          if (Math.abs(diff) > 50) {
+            if (diff > 0){
+              nextSlide();
+            } else {
+              prevSlide();
+            }
+          }
+          isDragging = false;
+        })
+
+        //Autoplay (optional)
+        {%  if section.settings.autoplay %} 
+          setInterval(nextSlide, {{ section.settings.autoplay_speed |  default: 5000 }})  
+        {% endif %} %}
+
+    });
+</script>
+
+{% schema %}
+{
+    "name": "Shop The Look Carousel",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Shop The Look"
+        },
+        {
+            "type": "checkbox",
+            "id": "autoplay",
+            "label": "Auto-play Slide",
+            "default": true
+        },
+        {
+            "type": "range",
+            "id": "autoplay_speed",
+            "min": 3000,
+            "max": 9000,
+            "step": 1000,
+            "unit": "ms",
+            "label": "Auto-play speed",
+            "default": 5000
+        }
+        ],
+        "blocks": [
+            {
+                "type": "slide",
+                "name": "Slide",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "Slide Heading"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "description",
+                        "label": "Slide Description"
+                    },
+                    {
+                        "type": "text",
+                        "id": "products",
+                        "label": "Product Handles",
+                        "info": "Enter product handeles separated by commas (eg, product-1, product-2, product-3)"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Shop The Look Carousel",
+                "blocks": [
+                    {
+                        "type": "slide"
+                    },
+                    {
+                        "type": "slide"
+                    },
+                    {
+                        "type": "slide"
+                    }
+                ]
+            }
+        ]
+}
+{% endschema %}

@@ -146,7 +146,7 @@
       {%- for related_product in related_products -%}
         {%- assign related_hex = related_product.metafields.custom.product_color.value -%}
         {%- if related_hex -%}
-          <a href="{{ related_product.url }}" class="swatch-link" aria-label="View Color: {{ related_product.metafields.custom.color_name.value | escape }}" target="_blank">
+          <a href="{{ related_product.url }}" class="swatch-link" aria-label="View Color: {{ related_product.metafields.custom.color_name.value | escape }}">
             <span class="swatch" style="background-color: {{ related_hex }};"></span>
           </a>
         {%- endif -%}

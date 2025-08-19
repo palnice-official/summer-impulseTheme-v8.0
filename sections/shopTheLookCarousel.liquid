@@ -1,0 +1,463 @@
+{% comment %}
+  Shop the Look — Hotspots with slide-up product card
+  - Add this file to sections/
+  - OS 2.0 compatible
+  - No external assets required (CSS + JS included)
+{% endcomment %}
+
+<section id="stl-{{ section.id }}" class="stl">
+  {% assign locale_code = request.locale.iso_code | default: shop.locale %}
+  {% assign currency_code = localization.country.currency.iso_code | default: shop.currency %}
+
+  <div class="stl__inner page-width">
+    {% if section.settings.heading != blank %}
+      <h2 class="stl__heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="stl__image-wrap">
+      {% if section.settings.image %}
+        {{
+          section.settings.image
+          | image_url: width: 2000
+          | image_tag:
+            loading: 'lazy',
+            widths: '800, 1200, 1600, 2000',
+            sizes: '(min-width: 990px) 1200px, 100vw',
+            alt: section.settings.image.alt
+          | escape
+        }}
+      {% else %}
+        {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder' }}
+      {% endif %}
+
+      {% for block in section.blocks %}
+        {% liquid
+          assign p = block.settings.product
+          assign x = block.settings.pos_x | default: 50
+          assign y = block.settings.pos_y | default: 50
+        %}
+        {% if p %}
+          <button
+            class="stl__dot"
+            style="left: {{ x }}%; top: {{ y }}%;"
+            data-hotspot="{{ block.id }}"
+            aria-controls="stl-drawer-{{ section.id }}"
+            aria-label="{{ 'sections.shop_the_look.open_product' | t: product: p.title | default: 'Open ' | append: p.title }}"
+          >
+            {% if block.settings.dot_label != blank %}
+              <span class="stl__dot-label">{{ block.settings.dot_label }}</span>
+            {% else %}
+              <span class="stl__dot-core" aria-hidden="true"></span>
+            {% endif %}
+          </button>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <!-- Backdrop + Bottom Sheet Drawer -->
+    <button class="stl__backdrop" data-stl-backdrop hidden aria-hidden="true" tabindex="-1"></button>
+
+    <div class="stl__drawer" id="stl-drawer-{{ section.id }}" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="stl__drawer-header">
+        <button class="stl__close" type="button" aria-label="Close">✕</button>
+      </div>
+      <div class="stl__drawer-content" data-stl-content></div>
+    </div>
+
+    {%- comment -%}
+      Hidden product card templates (one per hotspot) that we inject into the drawer on click.
+    {%- endcomment -%}
+    {% for block in section.blocks %}
+      {% assign p = block.settings.product %}
+      {% if p %}
+        <div id="stl-card-{{ block.id }}" class="stl__card-template" hidden>
+          <div class="stl__card-head">
+            <a href="{{ p.url }}" class="stl__thumb">
+              {% if p.featured_image %}
+                {{ p.featured_image | image_url: width: 300 | image_tag: loading: 'lazy', alt: p.title }}
+              {% endif %}
+            </a>
+            <div class="stl__meta">
+              {% if section.settings.show_vendor and p.vendor %}
+                <p class="stl__vendor">{{ p.vendor }}</p>
+              {% endif %}
+              <a href="{{ p.url }}" class="stl__title">{{ p.title }}</a>
+              <div class="stl__price" data-stl-price>
+                {{ p.selected_or_first_available_variant.price | money }}
+              </div>
+              <a href="{{ p.url }}" class="stl__view-link">
+                {{- 'products.product.view_full_details' | t | default: 'View details' -}}
+              </a>
+            </div>
+          </div>
+
+          <form class="stl__form" data-product-id="{{ p.id }}" data-block-id="{{ block.id }}">
+            <input type="hidden" name="id" value="{{ p.selected_or_first_available_variant.id }}" data-variant-id>
+
+            {% unless p.has_only_default_variant %}
+              {% for option in p.options_with_values %}
+                <fieldset class="stl__option" data-position="{{ option.position }}">
+                  <legend class="stl__option-name">{{ option.name }}:</legend>
+                  <div class="stl__swatches">
+                    {% for value in option.values %}
+                      {% assign is_selected = false %}
+                      {% if p.selected_or_first_available_variant.options[forloop.parentloop.index0] == value %}
+                        {% assign is_selected = true %}
+                      {% endif %}
+
+                      {% assign input_id = block.id
+                        | append: '-'
+                        | append: option.position
+                        | append: '-'
+                        | append: forloop.index0
+                      %}
+                      <input
+                        id="{{ input_id }}"
+                        class="stl__radio"
+                        type="radio"
+                        name="options[{{ option.name | escape }}]"
+                        value="{{ value | escape }}"
+                        {% if is_selected %}
+                          checked
+                        {% endif %}
+                        data-option-input
+                      >
+                      <label class="stl__swatch{% if is_selected %} is-selected{% endif %}" for="{{ input_id }}">
+                        {{- value -}}
+                      </label>
+                    {% endfor %}
+                  </div>
+                </fieldset>
+              {% endfor %}
+            {% endunless %}
+
+            <div class="stl__qty">
+              <button type="button" class="stl__qty-btn" data-action="decrease" aria-label="Decrease quantity">
+                −
+              </button>
+              <input
+                type="number"
+                name="quantity"
+                min="1"
+                value="1"
+                class="stl__qty-input"
+                inputmode="numeric"
+                pattern="[0-9]*"
+              >
+              <button type="button" class="stl__qty-btn" data-action="increase" aria-label="Increase quantity">
+                +
+              </button>
+            </div>
+
+            <button class="stl__add-to-cart" type="submit" data-add-to-cart>
+              {{ 'products.product.add_to_cart' | t | default: 'Add to cart' }}
+            </button>
+
+            <p class="stl__status" data-stl-status aria-live="polite"></p>
+            <script type="application/json" data-product-json>
+              {{ p | json }}
+            </script>
+          </form>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <style>
+    .stl { --dot-size: {{ section.settings.dot_size | default: 34 }}px; --dot-color: {{ section.settings.dot_color | default: '#ffffff' }}; --dot-border: {{ section.settings.dot_border | default: '#111111' }}; --accent: {{ section.settings.accent_color | default: '#111111' }}; }
+    .stl * { box-sizing: border-box; }
+    .stl__heading { text-align: center; margin: 0 0 1rem; }
+    .stl__image-wrap { position: relative; overflow: hidden; border-radius: 6px; }
+    .stl__image-wrap img { width: 100%; height: auto; display: block; }
+    .stl__dot {
+      position: absolute; transform: translate(-50%, -50%); width: var(--dot-size); height: var(--dot-size);
+      border-radius: 50%; background: var(--dot-color); border: 2px solid var(--dot-border);
+      display: grid; place-items: center; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,.15);
+      transition: transform .1s ease, box-shadow .2s;
+    }
+    .stl__dot:hover { box-shadow: 0 4px 14px rgba(0,0,0,.2); }
+    .stl__dot-core { width: 8px; height: 8px; border-radius: 50%; background: var(--dot-border); position: relative; }
+    .stl__dot-core::before, .stl__dot-core::after { content: ""; position: absolute; inset: -8px; border-radius: 999px; border: 1px solid rgba(0,0,0,.15); animation: stl-pulse 1.8s infinite; }
+    .stl__dot-core::after { animation-delay: .9s; }
+    .stl__dot-label { font-size: 12px; line-height: 1; color: #111; }
+    @keyframes stl-pulse { 0% { transform: scale(0.8); opacity: .8 } 100% { transform: scale(1.3); opacity: 0 } }
+
+    .stl__backdrop {
+      position: fixed; inset: 0; background: rgba(0,0,0,.45); opacity: 0; transition: opacity .25s ease; z-index: 40;
+    }
+    .stl__backdrop.is-open { opacity: 1; }
+
+    .stl__drawer {
+      position: fixed; left: 0; right: 0; bottom: 0; transform: translateY(105%);
+      background: #fff; max-height: 85vh; overflow: auto; z-index: 50; border-radius: 12px 12px 0 0;
+      box-shadow: 0 -10px 30px rgba(0,0,0,.2); transition: transform .35s ease;
+    }
+    .stl__drawer.is-open { transform: translateY(0%); }
+    .stl__drawer-header { display: flex; justify-content: flex-end; padding: 12px 14px; border-bottom: 1px solid #eee; }
+    .stl__close { background: transparent; border: none; font-size: 20px; cursor: pointer; }
+    .stl__drawer-content { padding: 18px 18px 22px; }
+
+    .stl__card-head { display: grid; grid-template-columns: 88px 1fr; gap: 14px; align-items: start; margin-bottom: 14px; }
+    .stl__thumb img { width: 88px; height: auto; border-radius: 6px; }
+    .stl__vendor { font-size: 12px; letter-spacing: .02em; margin: 0 0 2px; color: #666; text-transform: uppercase; }
+    .stl__title { display: block; font-weight: 600; margin: 0 0 6px; color: inherit; text-decoration: none; }
+    .stl__price { font-weight: 600; margin-bottom: 6px; }
+    .stl__view-link { font-size: 13px; color: var(--accent); text-decoration: underline; }
+
+    .stl__option { margin: 12px 0; }
+    .stl__option-name { font-size: 13px; margin-bottom: 6px; }
+    .stl__swatches { display: flex; flex-wrap: wrap; gap: 8px; }
+    .stl__radio { display: none; }
+    .stl__swatch {
+      display: inline-flex; align-items: center; justify-content: center; min-width: 36px; height: 36px; padding: 0 10px;
+      border: 1px solid #d9d9d9; border-radius: 6px; cursor: pointer; background: #fff; font-size: 13px;
+      transition: all .15s ease;
+    }
+    .stl__swatch.is-selected, .stl__radio:checked + .stl__swatch { border-color: #111; background: #111; color: #fff; }
+    .stl__swatch[aria-disabled="true"] { opacity: .4; cursor: not-allowed; }
+
+    .stl__qty { display: inline-flex; align-items: center; gap: 6px; border: 1px solid #e4e4e4; border-radius: 8px; padding: 4px; margin: 6px 0 12px; }
+    .stl__qty-input { width: 42px; text-align: center; border: none; outline: none; background: transparent; }
+    .stl__qty-btn { width: 30px; height: 30px; border: none; background: #f4f4f4; border-radius: 6px; cursor: pointer; }
+    .stl__qty-btn:active { transform: translateY(1px); }
+
+    .stl__add-to-cart {
+      display: inline-block; width: 100%; padding: 12px 14px; border-radius: 8px; border: 1px solid #111; background: #111; color: #fff;
+      font-weight: 600; cursor: pointer; transition: filter .15s ease;
+    }
+    .stl__add-to-cart[disabled] { opacity: .6; cursor: not-allowed; }
+    .stl__status { font-size: 13px; margin-top: 8px; min-height: 18px; }
+
+    /* Hide templates */
+    .stl__card-template[hidden] { display: none; }
+    .stl__image-wrap .placeholder { width: 100%; aspect-ratio: 16 / 9; }
+  </style>
+
+  <script>
+    (function() {
+      const root = document.getElementById('stl-{{ section.id }}');
+      if (!root) return;
+
+      const drawer = root.querySelector('.stl__drawer');
+      const backdrop = root.querySelector('[data-stl-backdrop]');
+      const content = root.querySelector('[data-stl-content]');
+      const closeBtn = root.querySelector('.stl__close');
+
+      const moneyFmt = new Intl.NumberFormat({{ locale_code | json }}, { style: 'currency', currency: {{ currency_code | json }} });
+
+      function openDrawer(blockId) {
+        const tpl = root.querySelector('#stl-card-' + blockId);
+        if (!tpl) return;
+
+        // Inject fresh content each time
+        content.innerHTML = '';
+        const clone = tpl.cloneNode(true);
+        clone.hidden = false;
+        content.appendChild(clone);
+
+        // Wire up logic for this card
+        initCard(clone);
+
+        drawer.classList.add('is-open');
+        backdrop.hidden = false;
+        // Force style to apply before adding class (for transition)
+        requestAnimationFrame(() => backdrop.classList.add('is-open'));
+        drawer.setAttribute('aria-hidden', 'false');
+      }
+
+      function closeDrawer() {
+        drawer.classList.remove('is-open');
+        backdrop.classList.remove('is-open');
+        drawer.setAttribute('aria-hidden', 'true');
+        setTimeout(() => { backdrop.hidden = true; content.innerHTML = ''; }, 250);
+      }
+
+      // Dot click -> open
+      root.querySelectorAll('.stl__dot').forEach(dot => {
+        dot.addEventListener('click', () => openDrawer(dot.dataset.hotspot));
+        dot.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openDrawer(dot.dataset.hotspot); }
+        });
+      });
+
+      // Close actions
+      closeBtn.addEventListener('click', closeDrawer);
+      backdrop.addEventListener('click', closeDrawer);
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && drawer.classList.contains('is-open')) closeDrawer();
+      });
+
+      function initCard(scope) {
+        const form = scope.querySelector('.stl__form');
+        const productJson = scope.querySelector('[data-product-json]');
+        const priceEl = scope.querySelector('[data-stl-price]');
+        const statusEl = scope.querySelector('[data-stl-status]');
+        const addBtn = scope.querySelector('[data-add-to-cart]');
+        const hiddenId = scope.querySelector('[data-variant-id]');
+
+        let product;
+        try { product = JSON.parse(productJson.textContent); } catch(e) { product = null; }
+
+        // Option UI click -> toggle selected class
+        scope.querySelectorAll('[data-option-input]').forEach(input => {
+          input.addEventListener('change', () => {
+            scope.querySelectorAll('[name="' + input.name + '"] + .stl__swatch').forEach(l => l.classList.remove('is-selected'));
+            const label = scope.querySelector('label[for="' + input.id + '"]');
+            if (label) label.classList.add('is-selected');
+
+            if (product) {
+              const selected = getSelectedVariant(product, form);
+              updateUIForVariant(selected);
+            }
+          });
+        });
+
+        // Quantity steppers
+        scope.querySelectorAll('.stl__qty-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const input = scope.querySelector('.stl__qty-input');
+            let v = parseInt(input.value || '1', 10);
+            if (btn.dataset.action === 'increase') v++;
+            if (btn.dataset.action === 'decrease') v = Math.max(1, v - 1);
+            input.value = v;
+          });
+        });
+
+        // Initial UI set
+        if (product) updateUIForVariant(product.variants.find(v => v.id == hiddenId.value));
+
+        function getSelectedVariant(product, formEl) {
+          const opts = [];
+          // Ensure options are collected by position order (1..n)
+          const fieldsets = [...formEl.querySelectorAll('.stl__option')].sort((a,b)=> (a.dataset.position||0) - (b.dataset.position||0));
+          fieldsets.forEach(fs => {
+            const checked = fs.querySelector('[data-option-input]:checked');
+            if (checked) opts.push(checked.value.trim());
+          });
+          const match = product.variants.find(v => JSON.stringify(v.options) === JSON.stringify(opts));
+          return match || null;
+        }
+
+        function updateUIForVariant(variant) {
+          if (!variant) {
+            addBtn.disabled = true;
+            hiddenId.value = '';
+            priceEl.textContent = '{{ "products.product.unavailable" | t | default: "Unavailable" }}';
+            return;
+          }
+          hiddenId.value = variant.id;
+          priceEl.textContent = moneyFmt.format((variant.price || 0) / 100);
+          addBtn.disabled = !variant.available;
+          if (!variant.available) {
+            statusEl.textContent = '{{ "products.product.sold_out" | t | default: "Sold out" }}';
+          } else {
+            statusEl.textContent = '';
+          }
+
+          // Disable visually impossible options (basic)
+          // For each option position, compute which values produce any available variant with current partial selection
+          const optionCount = product.options.length;
+          for (let pos = 1; pos <= optionCount; pos++) {
+            const fs = form.querySelector('.stl__option[data-position="'+pos+'"]');
+            if (!fs) continue;
+            const radios = fs.querySelectorAll('[data-option-input]');
+            radios.forEach(radio => {
+              const candidate = getOptionsIfSwitching(pos, radio.value);
+              const possible = product.variants.some(v => arraysEqual(v.options, candidate) && v.available);
+              const label = fs.querySelector('label[for="'+radio.id+'"]');
+              if (label) label.setAttribute('aria-disabled', possible ? 'false' : 'true');
+            });
+          }
+
+          function getOptionsIfSwitching(position, value) {
+            const current = [];
+            const fieldsets = [...form.querySelectorAll('.stl__option')].sort((a,b)=> (a.dataset.position||0) - (b.dataset.position||0));
+            fieldsets.forEach((fs, idx) => {
+              const checked = fs.querySelector('[data-option-input]:checked');
+              current.push(checked ? checked.value.trim() : '');
+            });
+            current[position - 1] = value.trim();
+            return current;
+          }
+          function arraysEqual(a,b){ return JSON.stringify(a) === JSON.stringify(b); }
+        }
+
+        // Add to cart
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          statusEl.textContent = '';
+          addBtn.disabled = true;
+
+          const id = hiddenId.value;
+          const qty = parseInt(form.querySelector('input[name="quantity"]').value || '1', 10);
+
+          if (!id) {
+            statusEl.textContent = '{{ "products.product.unavailable" | t | default: "Please select a valid combination" }}';
+            addBtn.disabled = false;
+            return;
+          }
+
+          try {
+            const res = await fetch('{{ routes.cart_add_url }}', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+              body: JSON.stringify({ id: Number(id), quantity: qty })
+            });
+            if (!res.ok) throw new Error('Cart add failed');
+            const data = await res.json();
+            statusEl.textContent = '{{ "sections.cart.added_to_cart" | t | default: "Added to cart" }}';
+            // Try to let theme open its cart drawer if it listens to this event
+            document.documentElement.dispatchEvent(new CustomEvent('cart:updated', { detail: data }));
+          } catch (err) {
+            statusEl.textContent = '{{ "products.product.add_to_cart_error" | t | default: "Could not add to cart. Try again." }}';
+          } finally {
+            addBtn.disabled = false;
+          }
+        });
+      }
+    })();
+  </script>
+</section>
+
+{% schema %}
+{
+  "name": "Shop the Look (Hotspots)",
+  "class": "section-shop-the-look",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Shop The Look" },
+    { "type": "image_picker", "id": "image", "label": "Main image" },
+    { "type": "checkbox", "id": "show_vendor", "label": "Show vendor", "default": true },
+    { "type": "range", "id": "dot_size", "label": "Dot size (px)", "min": 20, "max": 56, "step": 2, "default": 34 },
+    { "type": "color", "id": "dot_color", "label": "Dot fill", "default": "#ffffff" },
+    { "type": "color", "id": "dot_border", "label": "Dot border", "default": "#111111" },
+    { "type": "color", "id": "accent_color", "label": "Accent color", "default": "#111111" }
+  ],
+  "blocks": [
+    {
+      "type": "product_hotspot",
+      "name": "Hotspot",
+      "limit": 12,
+      "settings": [
+        { "type": "product", "id": "product", "label": "Product" },
+        { "type": "text", "id": "dot_label", "label": "Dot label (optional)" },
+        {
+          "type": "range",
+          "id": "pos_x",
+          "label": "Position: Left (%)",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 50
+        },
+        { "type": "range", "id": "pos_y", "label": "Position: Top (%)", "min": 0, "max": 100, "step": 1, "default": 50 }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop the Look — Hotspots",
+      "blocks": [{ "type": "product_hotspot" }, { "type": "product_hotspot" }, { "type": "product_hotspot" }]
+    }
+  ]
+}
+{% endschema %}
