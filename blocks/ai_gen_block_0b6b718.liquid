@@ -1,0 +1,307 @@
+{% doc %}
+  @prompt
+    Create an infinite running logo section with continuously scrolling logos that can be customized with multiple logo images, adjustable scroll speed, and smooth animation
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-logo-scroller-{{ ai_gen_id }} {
+    width: 100%;
+    overflow: hidden;
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.padding_vertical }}px 0;
+  }
+
+  .ai-logo-scroller__track-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    animation: ai-logo-scroll-{{ ai_gen_id }} {{ block.settings.scroll_speed }}s linear infinite;
+    width: max-content;
+  }
+
+  .ai-logo-scroller__item-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: {{ block.settings.logo_spacing }}px;
+    height: {{ block.settings.logo_height }}px;
+    width: auto;
+  }
+
+  .ai-logo-scroller__item-{{ ai_gen_id }} img {
+    max-height: 100%;
+    max-width: 200px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale({{ block.settings.grayscale_amount }}%);
+    opacity: {{ block.settings.opacity | divided_by: 100.0 }};
+    transition: filter 0.3s ease, opacity 0.3s ease;
+  }
+
+  {% if block.settings.hover_effect %}
+    .ai-logo-scroller__item-{{ ai_gen_id }}:hover img {
+      filter: grayscale(0%);
+      opacity: 1;
+    }
+  {% endif %}
+
+  .ai-logo-scroller__placeholder-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: {{ block.settings.logo_height }}px;
+    width: 150px;
+    background-color: #f4f4f4;
+    border: 2px dashed #cccccc;
+    border-radius: 8px;
+    position: relative;
+  }
+
+  .ai-logo-scroller__placeholder-{{ ai_gen_id }} svg {
+    width: 60px;
+    height: 60px;
+    color: #999999;
+  }
+
+  .ai-logo-scroller__empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  {% if block.settings.pause_on_hover %}
+    .ai-logo-scroller-{{ ai_gen_id }}:hover .ai-logo-scroller__track-{{ ai_gen_id }} {
+      animation-play-state: paused;
+    }
+  {% endif %}
+
+  @keyframes ai-logo-scroll-{{ ai_gen_id }} {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-logo-scroller__item-{{ ai_gen_id }} {
+      height: {{ block.settings.logo_height | times: 0.8 }}px;
+      margin-right: {{ block.settings.logo_spacing | times: 0.8 }}px;
+    }
+
+    .ai-logo-scroller__placeholder-{{ ai_gen_id }} {
+      height: {{ block.settings.logo_height | times: 0.8 }}px;
+      width: 120px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-logo-scroller-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-logo-scroller__track-{{ ai_gen_id }}">
+    {% liquid
+      assign logo_count = 0
+      for i in (1..8)
+        assign logo_key = 'logo_' | append: i
+        if block.settings[logo_key] != blank
+          assign logo_count = logo_count | plus: 1
+        endif
+      endfor
+    %}
+
+    {% if logo_count > 0 %}
+      {% for duplicate in (1..2) %}
+        {% for i in (1..8) %}
+          {% liquid
+            assign logo_key = 'logo_' | append: i
+            assign logo = block.settings[logo_key]
+          %}
+          {% if logo != blank %}
+            <div class="ai-logo-scroller__item-{{ ai_gen_id }}">
+              <img
+                src="{{ logo | image_url: width: 400 }}"
+                alt="{{ logo.alt | escape }}"
+                loading="lazy"
+                width="{{ logo.width }}"
+                height="{{ logo.height }}"
+              >
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    {% else %}
+      {% for i in (1..6) %}
+        <div class="ai-logo-scroller__item-{{ ai_gen_id }}">
+          <div class="ai-logo-scroller__placeholder-{{ ai_gen_id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21,15 16,10 5,21"/>
+            </svg>
+            {% if i == 3 %}
+              <div class="ai-logo-scroller__empty-state-{{ ai_gen_id }}">
+                Add logo images
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Infinite logo scroller",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Logo images"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_1",
+      "label": "Logo 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_2",
+      "label": "Logo 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_3",
+      "label": "Logo 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_4",
+      "label": "Logo 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_5",
+      "label": "Logo 5"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_6",
+      "label": "Logo 6"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_7",
+      "label": "Logo 7"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_8",
+      "label": "Logo 8"
+    },
+    {
+      "type": "header",
+      "content": "Animation settings"
+    },
+    {
+      "type": "range",
+      "id": "scroll_speed",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "s",
+      "label": "Scroll speed",
+      "default": 30
+    },
+    {
+      "type": "checkbox",
+      "id": "pause_on_hover",
+      "label": "Pause on hover",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "logo_height",
+      "min": 40,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "label": "Logo height",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "logo_spacing",
+      "min": 20,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "label": "Logo spacing",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_vertical",
+      "min": 20,
+      "max": 80,
+      "step": 10,
+      "unit": "px",
+      "label": "Vertical padding",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "opacity",
+      "min": 30,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Logo opacity",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "grayscale_amount",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Grayscale amount",
+      "default": 100
+    },
+    {
+      "type": "checkbox",
+      "id": "hover_effect",
+      "label": "Show color on hover",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Infinite logo scroller"
+    }
+  ],
+  "tag": null
+}
+{% endschema %}

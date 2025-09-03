@@ -9,139 +9,8 @@
  */
 {
   "sections": {
-    "slideshow_p4EyEp": {
-      "type": "slideshow",
-      "blocks": {
-        "image_RKGKNc": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "",
-            "title": "",
-            "title_size": 80,
-            "subheading": "",
-            "link": "",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify://shop_images/w-day-final-banner.png",
-            "image_mobile": "shopify://shop_images/Women_Instagram_Post_International_women_s_day_5c233e63-98f7-4714-bf97-dd7e693357b2.png",
-            "parallax_direction": "top",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_RKGKNc"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_height": "natural",
-        "mobile_height": "auto",
-        "parallax": false,
-        "style": "minimal",
-        "autoplay": false,
-        "autoplay_speed": 5,
-        "lazyload_images": true
-      }
-    },
-    "circular_collection_navigation_7wCxca": {
-      "type": "circular-collection-navigation",
-      "blocks": {
-        "colection_image_Ymj8RW": {
-          "type": "colection_image",
-          "settings": {
-            "image": "shopify://shop_images/READY_TO_SHIP_0310d37e-bbcd-47db-a8b4-356ec9ae80e6.webp",
-            "link": "shopify://collections/ready-to-ship",
-            "text": "Ready To Ship"
-          }
-        },
-        "colection_image_FxECLQ": {
-          "type": "colection_image",
-          "settings": {
-            "image": "shopify://shop_images/BESTPRICES_c97d61bc-e3aa-4f71-89a1-f8615287c11b.webp",
-            "link": "shopify://collections/sale",
-            "text": "Special Prices"
-          }
-        },
-        "colection_image_QHBzdi": {
-          "type": "colection_image",
-          "settings": {
-            "image": "shopify://shop_images/SAREES_65e2585d-5b25-4a7d-84dc-509d5dc182dc.webp",
-            "link": "shopify://collections/designer-pastel-sarees",
-            "text": "Sarees"
-          }
-        },
-        "colection_image_YDLNhD": {
-          "type": "colection_image",
-          "settings": {
-            "image": "shopify://shop_images/KURTA_SETS_57807a2c-8138-42b9-9e1e-f27c566e1e5f.webp",
-            "link": "shopify://collections/kurta-sets-women",
-            "text": "Kurta Sets"
-          }
-        },
-        "colection_image_F6qJgt": {
-          "type": "colection_image",
-          "settings": {
-            "image": "shopify://shop_images/IMG_0429.webp",
-            "link": "shopify://collections/tunics-for-women",
-            "text": "Tunics"
-          }
-        },
-        "colection_image_Yh4rnV": {
-          "type": "colection_image",
-          "settings": {
-            "image": "shopify://shop_images/DRESSES_d506eda4-994d-4de5-ae87-f8841585f16c.webp",
-            "link": "shopify://collections/dresses",
-            "text": "Dresses"
-          }
-        },
-        "colection_image_Ukp344": {
-          "type": "colection_image",
-          "settings": {
-            "image": "shopify://shop_images/LEHENGA.webp",
-            "link": "shopify://collections/light-lehengas",
-            "text": "Lehenga"
-          }
-        },
-        "colection_image_qAm4RR": {
-          "type": "colection_image",
-          "settings": {
-            "image": "shopify://shop_images/BESTSELLERS.webp",
-            "link": "shopify://collections/bestseller",
-            "text": "Bestseller"
-          }
-        },
-        "colection_image_beGwPg": {
-          "type": "colection_image",
-          "settings": {
-            "image": "shopify://shop_images/CLIENT_DIARIES_99d88124-19e8-4dda-aa7f-6649ee6b6a84.webp",
-            "link": "shopify://pages/beautiful-girls-of-summer",
-            "text": "Client Diaries"
-          }
-        }
-      },
-      "block_order": [
-        "colection_image_Ymj8RW",
-        "colection_image_FxECLQ",
-        "colection_image_QHBzdi",
-        "colection_image_YDLNhD",
-        "colection_image_F6qJgt",
-        "colection_image_Yh4rnV",
-        "colection_image_Ukp344",
-        "colection_image_qAm4RR",
-        "colection_image_beGwPg"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Title of this section",
-        "cellAlign": "left"
-      }
-    },
     "slideshow_KyU4bU": {
-      "type": "slideshow",
+      "type": "slideshow-1",
       "blocks": {
         "image_Ub6QiF": {
           "type": "image",
@@ -261,18 +130,79 @@
         "lazyload_images": false
       }
     },
-    "featured_collection_CrcpFH": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Celebrities In Summer",
-        "home_featured_products": "celebrities-in-summer",
-        "per_row": 5,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": true
-      }
+    "17555972937d02cb02": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_f289fa3_GxNwyk": {
+          "type": "custom-shop-look",
+          "settings": {
+            "image_height": 500,
+            "section_padding": 40,
+            "border_radius": 12,
+            "background_color": "#ffffff",
+            "hotspot_size": 32,
+            "hotspot_color": "#ffffff",
+            "hotspot_border_color": "#000000",
+            "overlay_position": "top",
+            "overlay_width": 280,
+            "overlay_bg_color": "#ffffff",
+            "overlay_text_color": "#000000",
+            "quick_add_text": "Quick add",
+            "button_color": "#000000",
+            "button_text_color": "#ffffff",
+            "button_hover_color": "#333333",
+            "nav_button_color": "#ffffff",
+            "nav_button_text_color": "#000000",
+            "nav_button_hover_color": "#f5f5f5",
+            "dot_color": "#cccccc",
+            "dot_active_color": "#000000",
+            "slide_1_image": "shopify://shop_images/ASH_1134_1_013c60b1-da89-46d2-836c-626c9b2c7865.png",
+            "slide_1_hotspot_1_enabled": true,
+            "slide_1_hotspot_1_x": 30,
+            "slide_1_hotspot_1_y": 40,
+            "slide_1_hotspot_1_product": "adena-anarkali",
+            "slide_1_hotspot_2_enabled": true,
+            "slide_1_hotspot_2_x": 60,
+            "slide_1_hotspot_2_y": 60,
+            "slide_1_hotspot_2_product": "aari-floral-coord",
+            "slide_1_hotspot_3_enabled": false,
+            "slide_1_hotspot_3_x": 80,
+            "slide_1_hotspot_3_y": 30,
+            "slide_1_hotspot_3_product": "",
+            "slide_2_image": "shopify://shop_images/IMG_2028.jpg",
+            "slide_2_hotspot_1_enabled": true,
+            "slide_2_hotspot_1_x": 25,
+            "slide_2_hotspot_1_y": 50,
+            "slide_2_hotspot_1_product": "amaria-tissue-lehenga",
+            "slide_2_hotspot_2_enabled": true,
+            "slide_2_hotspot_2_x": 70,
+            "slide_2_hotspot_2_y": 35,
+            "slide_2_hotspot_2_product": "alia-silk-embroidered-potli",
+            "slide_2_hotspot_3_enabled": false,
+            "slide_2_hotspot_3_x": 50,
+            "slide_2_hotspot_3_y": 75,
+            "slide_2_hotspot_3_product": "",
+            "slide_3_image": "shopify://shop_images/IMG_2035.jpg",
+            "slide_3_hotspot_1_enabled": true,
+            "slide_3_hotspot_1_x": 40,
+            "slide_3_hotspot_1_y": 30,
+            "slide_3_hotspot_1_product": "ambar-blue-muse-kurta-set",
+            "slide_3_hotspot_2_enabled": true,
+            "slide_3_hotspot_2_x": 65,
+            "slide_3_hotspot_2_y": 55,
+            "slide_3_hotspot_2_product": "anushka-pink-citrus-straight-kurta",
+            "slide_3_hotspot_3_enabled": false,
+            "slide_3_hotspot_3_x": 20,
+            "slide_3_hotspot_3_y": 70,
+            "slide_3_hotspot_3_product": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_f289fa3_GxNwyk"
+      ],
+      "settings": {}
     },
     "featured_collections_PFXL7i": {
       "type": "featured-collections",
@@ -1019,13 +949,221 @@
         "narrow_column": false,
         "divider": false
       }
+    },
+    "1755596301f98057c8": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_0ffb7f9_DJhmi3": {
+          "type": "ai_gen_block_0ffb7f9",
+          "settings": {
+            "title": "Shop the Look",
+            "subtitle": "Discover our curated outfit collections",
+            "look_1_image": "shopify://shop_images/ASH_1134_1.png",
+            "look_1_product_1": "adena-anarkali",
+            "look_1_hotspot_1_x": 30,
+            "look_1_hotspot_1_y": 40,
+            "look_1_product_2": "ambar-ari-tunic",
+            "look_1_hotspot_2_x": 60,
+            "look_1_hotspot_2_y": 70,
+            "look_1_product_3": "",
+            "look_1_hotspot_3_x": 80,
+            "look_1_hotspot_3_y": 30,
+            "look_2_image": "shopify://shop_images/IMG_2032_0d8f5edd-3209-42b6-a7d8-80c83e47381a.jpg",
+            "look_2_product_1": "ambar-blue-ari-long-dress-2",
+            "look_2_hotspot_1_x": 25,
+            "look_2_hotspot_1_y": 35,
+            "look_2_product_2": "ambar-beach-dress",
+            "look_2_hotspot_2_x": 55,
+            "look_2_hotspot_2_y": 65,
+            "look_2_product_3": "",
+            "look_2_hotspot_3_x": 75,
+            "look_2_hotspot_3_y": 25,
+            "look_3_image": "shopify://shop_images/ASH_0684_1.webp",
+            "look_3_product_1": "ambar-blue-muse-kurta-set",
+            "look_3_hotspot_1_x": 35,
+            "look_3_hotspot_1_y": 45,
+            "look_3_product_2": "amaria-tissue-lehenga",
+            "look_3_hotspot_2_x": 65,
+            "look_3_hotspot_2_y": 75,
+            "look_3_product_3": "",
+            "look_3_hotspot_3_x": 85,
+            "look_3_hotspot_3_y": 35,
+            "look_4_product_1": "",
+            "look_4_hotspot_1_x": 40,
+            "look_4_hotspot_1_y": 50,
+            "look_4_product_2": "",
+            "look_4_hotspot_2_x": 70,
+            "look_4_hotspot_2_y": 80,
+            "look_4_product_3": "",
+            "look_4_hotspot_3_x": 90,
+            "look_4_hotspot_3_y": 40,
+            "look_5_product_1": "",
+            "look_5_hotspot_1_x": 45,
+            "look_5_hotspot_1_y": 55,
+            "look_5_product_2": "",
+            "look_5_hotspot_2_x": 75,
+            "look_5_hotspot_2_y": 85,
+            "look_5_product_3": "",
+            "look_5_hotspot_3_x": 95,
+            "look_5_hotspot_3_y": 45,
+            "background_color": "#ffffff",
+            "text_color": "#000000",
+            "title_size": 32,
+            "subtitle_size": 16,
+            "section_padding": 60,
+            "carousel_border_radius": 12,
+            "hotspot_size": 40,
+            "hotspot_color": "#ffffff",
+            "hotspot_border_color": "#000000",
+            "hotspot_icon_color": "#000000",
+            "nav_button_color": "#ffffff",
+            "nav_button_hover_color": "#f0f0f0",
+            "nav_icon_color": "#000000",
+            "dot_color": "#cccccc",
+            "dot_active_color": "#000000",
+            "overlay_color": "#000000",
+            "popup_bg_color": "#ffffff",
+            "popup_text_color": "#000000",
+            "popup_price_color": "#000000",
+            "popup_border_radius": 16,
+            "button_color": "#000000",
+            "button_text_color": "#ffffff",
+            "button_hover_color": "#333333",
+            "button_border_radius": 6
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_0ffb7f9_DJhmi3"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "175568967070dbdf89": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_0b6b718_GpabDC": {
+          "type": "ai_gen_block_0b6b718",
+          "settings": {
+            "logo_1": "shopify://shop_images/News18.svg",
+            "logo_2": "shopify://shop_images/the-news-strike.png",
+            "logo_3": "shopify://shop_images/The-news-watch-jpeg.webp",
+            "logo_4": "shopify://shop_images/NY-Weekly-Black.webp",
+            "scroll_speed": 10,
+            "pause_on_hover": true,
+            "logo_height": 60,
+            "logo_spacing": 60,
+            "padding_vertical": 40,
+            "background_color": "#ffffff",
+            "opacity": 70,
+            "grayscale_amount": 100,
+            "hover_effect": true
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_0b6b718_GpabDC"
+      ],
+      "settings": {}
+    },
+    "1755690243a5bcf8de": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_513ec71_p8M8ja": {
+          "type": "ai_gen_block_513ec71",
+          "settings": {
+            "blog": "posts",
+            "heading": "Latest from our blog",
+            "subheading": "Stay updated with our latest news and insights",
+            "posts_to_show": 2,
+            "read_more_text": "Read more",
+            "columns_desktop": "2",
+            "columns_mobile": "1",
+            "grid_gap": 30,
+            "image_height": 250,
+            "show_meta": true,
+            "show_excerpt": true,
+            "excerpt_length": 150,
+            "background_color": "#ffffff",
+            "heading_color": "#000000",
+            "text_color": "#666666",
+            "post_title_color": "#000000",
+            "meta_color": "#999999",
+            "link_color": "#007acc",
+            "link_hover_color": "#005999",
+            "card_background": "#ffffff",
+            "card_border_color": "#e0e0e0",
+            "heading_size": 36,
+            "subheading_size": 18,
+            "post_title_size": 20,
+            "excerpt_size": 16,
+            "section_padding": 60,
+            "card_padding": 25,
+            "card_border_radius": 8
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_513ec71_p8M8ja"
+      ],
+      "settings": {}
+    },
+    "1755690483c785f797": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_8840a09_dxCeak": {
+          "type": "ai_gen_block_8840a09",
+          "settings": {
+            "blog": "posts",
+            "posts_limit": 3,
+            "heading": "Latest from our blog",
+            "subtitle": "Stay updated with our latest news and insights",
+            "text_alignment": "left",
+            "slides_desktop": 3,
+            "slides_mobile": "1",
+            "card_gap": 20,
+            "image_height": 200,
+            "show_excerpt": false,
+            "excerpt_length": 100,
+            "show_meta": true,
+            "show_date": true,
+            "show_author": true,
+            "background_color": "#ffffff",
+            "text_color": "#000000",
+            "accent_color": "#007acc",
+            "card_background": "#ffffff",
+            "nav_button_color": "#f4f4f4",
+            "nav_button_text_color": "#000000",
+            "nav_button_hover_color": "#e0e0e0",
+            "heading_size": 32,
+            "subtitle_size": 16,
+            "article_title_size": 20,
+            "excerpt_size": 14,
+            "section_padding": 50,
+            "card_padding": 20,
+            "carousel_border_radius": 8,
+            "card_border_radius": 8,
+            "hover_lift": 4,
+            "card_shadow_x": 0,
+            "card_shadow_y": 2,
+            "card_shadow_blur": 8,
+            "card_shadow_opacity": 10
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_8840a09_dxCeak"
+      ],
+      "settings": {}
     }
   },
   "order": [
-    "slideshow_p4EyEp",
-    "circular_collection_navigation_7wCxca",
     "slideshow_KyU4bU",
-    "featured_collection_CrcpFH",
+    "17555972937d02cb02",
     "featured_collections_PFXL7i",
     "advanced_content_c6KKQU",
     "advanced_content_n3HPWA",
@@ -1044,6 +1182,10 @@
     "logo_list_f8M3pE",
     "blog_posts_ENWFAJ",
     "ddca1aea-ebf0-4c8b-923f-0bdb4d1f7a09",
-    "74ae4932-d5e8-401c-af02-99bd482c79b1"
+    "74ae4932-d5e8-401c-af02-99bd482c79b1",
+    "1755596301f98057c8",
+    "175568967070dbdf89",
+    "1755690243a5bcf8de",
+    "1755690483c785f797"
   ]
 }

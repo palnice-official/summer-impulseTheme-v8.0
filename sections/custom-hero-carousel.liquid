@@ -1,0 +1,240 @@
+{% comment %}
+  Flickity Hero Carousel (assets-based)
+  - Loads Flickity from theme assets: flickity.min.css + flickity.pkgd.min.js
+  - One slide visible at a time (mobile + desktop).
+  - Per-slide mobile (portrait) and desktop (landscape) images.
+{% endcomment %}
+
+<section id="flickity-hero-{{ section.id }}" class="f-hero" data-section-id="{{ section.id }}">
+  <div class="f-hero__carousel"
+       id="carousel-{{ section.id }}"
+       data-autoplay="{{ section.settings.autoplay_ms }}"
+       data-wraparound="{{ section.settings.wrap_around }}"
+       data-dots="{{ section.settings.show_dots }}"
+       data-arrows="{{ section.settings.show_arrows }}"
+       data-adaptive="{{ section.settings.adaptive_height }}">
+    {% for block in section.blocks %}
+      {% comment %} {% assign desktop_img = block.settings.desktop_image %} {% endcomment %}
+      {% assign mobile_img = block.settings.mobile_image | default: block.settings.desktop_image %}
+
+      <div class="carousel-cell" {{ block.shopify_attributes }}>
+        <div class="hero__media-wrap">
+          <picture>
+            {% comment %} {% if desktop_img != blank %}
+              <source media="(min-width: 750px)"
+                srcset="
+                  {{ desktop_img | image_url: width: 2400 }} 2400w,
+                  {{ desktop_img | image_url: width: 1800 }} 1800w,
+                  {{ desktop_img | image_url: width: 1400 }} 1400w,
+                  {{ desktop_img | image_url: width: 1200 }} 1200w"
+                sizes="100vw">
+            {% endif %} {% endcomment %}
+            {% comment %} <img class="hero__media"
+                 src="{{ mobile_img | image_url: width: 1200 }}"
+                 srcset="
+                   {{ mobile_img | image_url: width: 800 }} 800w,
+                   {{ mobile_img | image_url: width: 1000 }} 1000w,
+                   {{ mobile_img | image_url: width: 1200 }} 1200w"
+                 sizes="100vw"
+                 alt="{{ block.settings.alt_text | escape }}"
+                 loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"> {% endcomment %}
+
+                  {{
+            mobile_img
+            | image_url: width: 1200
+            | image_tag: alt: block.settings.text, class: 'hero__media'
+          }}
+          </picture>
+        </div>
+
+        {% if block.settings.show_content %}
+          <div class="hero__content is-{{ block.settings.horizontal_align }} is-{{ block.settings.vertical_align }}"
+               style="
+                 --text-color: {{ block.settings.text_color }};
+                 --btn-bg: {{ block.settings.button_bg }};
+                 --btn-color: {{ block.settings.button_color }};
+                 --caption-bg-opacity: {{ block.settings.caption_bg_opacity | divided_by: 100.0 }};
+               ">
+            <div class="caption-box">
+              {% if block.settings.kicker != blank %}
+                <div class="hero__kicker">{{ block.settings.kicker }}</div>
+              {% endif %}
+              {% if block.settings.heading != blank %}
+                <h2 class="hero__headline">{{ block.settings.heading }}</h2>
+              {% endif %}
+              {% if block.settings.subheading != blank %}
+                <div class="hero__sub">{{ block.settings.subheading }}</div>
+              {% endif %}
+              {% if block.settings.button_text != blank and block.settings.button_link != blank %}
+                <a class="hero__btn" href="{{ block.settings.button_link }}" aria-label="{{ block.settings.button_text | escape }}">
+                  {{ block.settings.button_text }}
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</section>
+  <style>
+    #flickity-hero-{{ section.id }} { position: relative; }
+    #flickity-hero-{{ section.id }} .f-hero__carousel { width: 100%; }
+
+    /* One slide per viewport */
+    #flickity-hero-{{ section.id }} .carousel-cell {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    #flickity-hero-{{ section.id }} .hero__media { display: block; width: 100%; height: auto; }
+
+    /* Overlay content */
+    #flickity-hero-{{ section.id }} .hero__content {
+      position: absolute; inset: 0; display: grid;
+      padding: clamp(12px, 4vw, 48px); color: var(--text-color, #fff);
+    }
+    #flickity-hero-{{ section.id }} .caption-box {
+      background: rgba(0,0,0,var(--caption-bg-opacity, 0));
+      padding: clamp(8px, 2vw, 24px); border-radius: 6px;
+      max-width: min(90vw, 900px);
+    }
+    #flickity-hero-{{ section.id }} .hero__kicker { font-weight: 600; letter-spacing: .04em; opacity: .95; margin-bottom: .35em; }
+    #flickity-hero-{{ section.id }} .hero__headline {
+      margin: 0 0 .25em 0; font-size: clamp(28px, 6vw, 64px); line-height: 1.1; text-wrap: balance;
+      color: var(--text-color, #fff); text-shadow: 0 2px 12px rgba(0,0,0,.35);
+    }
+    #flickity-hero-{{ section.id }} .hero__sub { margin: 0 0 1em 0; font-size: clamp(14px, 2.5vw, 20px); opacity: .95; }
+    #flickity-hero-{{ section.id }} .hero__btn {
+      display: inline-block; background: var(--btn-bg, #fff); color: var(--btn-color, #111);
+      padding: .75em 1.25em; border-radius: 4px; text-decoration: none; font-weight: 600;
+    }
+
+    /* Positioning helpers */
+    #flickity-hero-{{ section.id }} .is-left { justify-items: start; text-align: left; }
+    #flickity-hero-{{ section.id }} .is-center { justify-items: center; text-align: center; }
+    #flickity-hero-{{ section.id }} .is-right { justify-items: end; text-align: right; }
+    #flickity-hero-{{ section.id }} .is-top { align-content: start; }
+    #flickity-hero-{{ section.id }} .is-middle { align-content: center; }
+    #flickity-hero-{{ section.id }} .is-bottom { align-content: end; }
+
+    /* Flickity UI tweaks */
+    #flickity-hero-{{ section.id }} .flickity-button { background: rgba(255,255,255,.75); }
+    #flickity-hero-{{ section.id }} .flickity-button:hover { background: rgba(255,255,255,.95); }
+    #flickity-hero-{{ section.id }} .flickity-page-dots .dot { width: 8px; height: 8px; }
+  </style>
+
+  <script>
+    (function() {
+      var rootId = 'carousel-{{ section.id }}';
+      var cssUrl = "{{ 'flickity.css' | asset_url }}";
+      var jsUrl  = "{{ 'flickity.js' | asset_url }}";
+
+      function loadCSSOnce(href) {
+        if (!href) return;
+        if (!document.querySelector('link[href="' + href + '"]')) {
+          var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = href; document.head.appendChild(l);
+        }
+      }
+      function loadJSOnce(src, cb) {
+        if (window.Flickity) { cb && cb(); return; }
+        var exists = Array.prototype.some.call(document.scripts, function(s){ return s.src.indexOf(src) > -1; });
+        if (exists) {
+          var t = setInterval(function(){ if (window.Flickity) { clearInterval(t); cb && cb(); } }, 50);
+          return;
+        }
+        var s = document.createElement('script'); s.src = src; s.onload = function(){ cb && cb(); }; document.head.appendChild(s);
+      }
+
+      function init() {
+        var el = document.getElementById(rootId);
+        if (!el || !window.Flickity) return;
+
+        var autoplay = parseInt(el.getAttribute('data-autoplay'), 10) || 0;
+        var opts = {
+          cellAlign: 'left',
+          contain: false,
+          groupCells: 1,
+          wrapAround: el.getAttribute('data-wraparound') === 'true',
+          prevNextButtons: el.getAttribute('data-arrows') === 'true',
+          pageDots: el.getAttribute('data-dots') === 'true',
+          adaptiveHeight: el.getAttribute('data-adaptive') === 'true',
+          imagesLoaded: true,
+          setGallerySize: true,
+          draggable: true,
+          autoPlay: autoplay > 0 ? autoplay : false,
+          pauseAutoPlayOnHover: true
+        };
+        new Flickity(el, opts);
+      }
+
+      function boot() {
+        loadCSSOnce(cssUrl);
+        if (window.Flickity) { init(); }
+        else { loadJSOnce(jsUrl, init); }
+      }
+
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
+      else boot();
+    })();
+  </script>
+
+  {% schema %}
+  {
+    "name": "Flickity Hero Carousel",
+    "class": "section-flickity-hero",
+    "settings": [
+      { "type": "checkbox", "id": "wrap_around", "label": "Loop slides", "default": true },
+      { "type": "checkbox", "id": "show_arrows", "label": "Show arrows", "default": true },
+      { "type": "checkbox", "id": "show_dots", "label": "Show dots", "default": true },
+      { "type": "checkbox", "id": "adaptive_height", "label": "Adaptive height", "default": true },
+      { "type": "range", "id": "autoplay_ms", "min": 0, "max": 9000, "step": 500, "unit": "ms", "label": "Autoplay", "default": 5000 }
+    ],
+    "blocks": [
+      {
+        "type": "slide",
+        "name": "Slide",
+        "settings": [
+          { "type": "image_picker", "id": "desktop_image", "label": "Desktop image (landscape)" },
+          { "type": "image_picker", "id": "mobile_image", "label": "Mobile image (portrait, optional)" },
+          { "type": "text", "id": "alt_text", "label": "Image alt text" },
+
+          { "type": "checkbox", "id": "show_content", "label": "Show overlay content", "default": true },
+          { "type": "text", "id": "kicker", "label": "Kicker (small label)" },
+          { "type": "text", "id": "heading", "label": "Heading", "default": "Headline" },
+          { "type": "text", "id": "subheading", "label": "Subheading" },
+
+          { "type": "text", "id": "button_text", "label": "Button text", "default": "Shop Now" },
+          { "type": "url", "id": "button_link", "label": "Button link" },
+
+          { "type": "select", "id": "horizontal_align", "label": "Horizontal align", "default": "center",
+            "options": [
+              { "value": "left", "label": "Left" },
+              { "value": "center", "label": "Center" },
+              { "value": "right", "label": "Right" }
+            ]
+          },
+          { "type": "select", "id": "vertical_align", "label": "Vertical align", "default": "middle",
+            "options": [
+              { "value": "top", "label": "Top" },
+              { "value": "middle", "label": "Middle" },
+              { "value": "bottom", "label": "Bottom" }
+            ]
+          },
+          { "type": "color", "id": "text_color", "label": "Text color", "default": "#ffffff" },
+          { "type": "color", "id": "button_bg", "label": "Button background", "default": "#ffffff" },
+          { "type": "color", "id": "button_color", "label": "Button text color", "default": "#111111" },
+          { "type": "range", "id": "caption_bg_opacity", "min": 0, "max": 80, "step": 5, "unit": "%", "label": "Caption background opacity", "default": 0 }
+        ]
+      }
+    ],
+    "max_blocks": 8,
+    "presets": [
+      {
+        "name": "Flickity Hero Carousel",
+        "category": "Hero banners",
+        "blocks": [{ "type": "slide" }, { "type": "slide" }]
+      }
+    ]
+  }
+  {% endschema %}

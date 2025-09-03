@@ -133,7 +133,7 @@
 
 {%- if current_color_hex or related_products.size > 0 -%}
   <div class="color-swatch-selector">
-    <p class="color-swatch-label">Color- {{ current_color_name | escape }}</p>
+    {% comment %} <p class="color-swatch-label">Color- {{ current_color_name | escape }}</p> {% endcomment %}
 
     <div class="swatch-container">
       

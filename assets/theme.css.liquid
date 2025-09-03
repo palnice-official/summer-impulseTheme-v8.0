@@ -8652,8 +8652,8 @@ html[dir=rtl] .social-sharing__title{
   }
 
 .slideshow__slide:not(.animate-out) .hero__image,[data-aos=hero__animation]:not(.animate-out) .hero__image{
-    opacity:0;
-    transition:none;
+    opacity:0; */
+    transition:none; 
   }
 
 .slideshow__slide .hero__link .btn,[data-aos=hero__animation] .hero__link .btn{
@@ -8663,7 +8663,8 @@ html[dir=rtl] .social-sharing__title{
 
 .slideshow__slide .hero__image-wrapper,[data-aos=hero__animation] .hero__image-wrapper{
     opacity:0;
-    transform:translateX(200px);
+    transform:translateX(0px);
+    /* transform:translateX(200px); */
     transition:none;
   }
 
@@ -8690,11 +8691,11 @@ html[dir=rtl] .social-sharing__title{
   }
 
 .loaded .slideshow__slide.is-selected .hero__link .btn,.loaded[data-aos=hero__animation] .hero__link .btn{
-    animation:fade-in 2s ease 1.3s forwards;
+    animation:fade-in 2s ease 0.5s forwards;
   }
 
 .loaded .slideshow__slide.is-selected .hero__link .btn:nth-child(2),.loaded[data-aos=hero__animation] .hero__link .btn:nth-child(2){
-    animation:fade-in 2s ease 1.6s forwards;
+    animation:fade-in 2s ease .5s forwards;
   }
 
 .loaded .slideshow__slide.is-selected .hero__image,.loaded .slideshow__slide.is-selected .hero__image--svg,.loaded .slideshow__slide.is-selected .hero__media,.loaded[data-aos=hero__animation] .hero__image,.loaded[data-aos=hero__animation] .hero__image--svg,.loaded[data-aos=hero__animation] .hero__media{
@@ -8704,12 +8705,12 @@ html[dir=rtl] .social-sharing__title{
 
 .loaded .slideshow__slide.is-selected .hero__image-wrapper,.loaded[data-aos=hero__animation] .hero__image-wrapper{
     opacity:1;
-    transform:translateX(0px);
-    transition:transform 0.7s ease,opacity 0.7s ease;
+    /* transform:translateX(0px); */
+    /* transition:transform 0.7s ease,opacity 0.7s ease; */
   }
 
 .loaded[data-aos=hero__animation] .hero__image-wrapper{
-    transition:opacity 0.7s ease !important;
+    /* transition:opacity 0.7s ease !important; */
   }
 
 .no-js .hero__image,.no-js .hero__image-wrapper{
@@ -8727,8 +8728,10 @@ html[dir=rtl] .social-sharing__title{
 
 .slideshow__slide.animate-out .hero__image-wrapper{
     opacity:0;
-    transform:translateX(-200px);
-    transition:transform 0.5s ease-in 0.05s,opacity 0.5s ease-in 0.05s;
+    /* transform:translateX(-200px);
+    transition:transform 0.5s ease-in 0.05s,opacity 0.5s ease-in 0.05s; */
+    /* transform:translateX(0px); */
+
   }
 
 .slideshow__slide.animate-out .hero__link{

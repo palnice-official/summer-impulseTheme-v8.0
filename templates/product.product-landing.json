@@ -93,7 +93,7 @@
       "settings": {}
     },
     "slideshow": {
-      "type": "slideshow",
+      "type": "slideshow-1",
       "blocks": {
         "slideshow-0": {
           "type": "image",

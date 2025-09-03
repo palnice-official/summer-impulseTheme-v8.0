@@ -23,9 +23,10 @@
 {%- for filter in filters -%}
   {%- capture filter_id -%}filter-{{ filter.label | handleize }}{%- endcapture -%}
   {%- assign filter_index = forloop.index -%}
-
   <div class="collection-sidebar__group--{{ filter_index }}">
+    
     <div class="collection-sidebar__group">
+    {% if filter.label == 'Size' %}
       <button
           type="button"
           class="collapsible-trigger collapsible-trigger-btn collapsible--auto-height{% unless collapsed %} is-open{% endunless %} tag-list__header"
@@ -34,6 +35,8 @@
           {{ filter.label | escape }}
           {%- render 'collapsible-icons' -%}
       </button>
+             {%endif%}
+
       <div
       id="{{ location }}-{{ filter_index }}-{{ filter_id }}"
       class="collapsible-content collapsible-content--sidebar{% unless collapsed %} is-open{% endunless %}"
@@ -54,7 +57,7 @@
                         <label for="tag-{{ filter_value.value | handle }}" class="tag__checkbox-wrapper text-label">
                           <input
                           id="tag-{{ filter_value.value | handle }}"
-                          type="checkbox"
+                          type="radio"
                           class="tag__input"
                           name="{{ filter_value.param_name }}"
                           value="{{ filter_value.value }}"
@@ -109,7 +112,7 @@
                         <label id="tag-{{ filter_value.value | handle }}" class="tag__checkbox-wrapper text-label" for="tagInput-{{ filter_value.param_name }}-{{ filter_value_index }}">
                             <input
                             id="tagInput-{{ filter_value.param_name }}-{{ filter_value_index }}"
-                            type="checkbox"
+                            type="radio"
                             class="tag__input"
                             name="{{ filter_value.param_name }}"
                             value="{{ filter_value.value }}"
@@ -154,7 +157,7 @@
                           <label for="tag-{{ filter_value.value | handle }}" class="tag__checkbox-wrapper text-label">
                             <input
                             id="tag-{{ filter_value.value | handle }}"
-                            type="checkbox"
+                            type="radio"
                             class="tag__input"
                             name="{{ filter_value.param_name }}"
                             value="{{ filter_value.value }}"
@@ -179,12 +182,13 @@
                       assign tag_count = tag_count | plus: 1
                       assign filter_value_index = forloop.index
                     -%}
+                    test--{{filter_value.count}}
 
                       <li class="tag{% if filter_value.active %} tag--active{% endif %}{% if filter_value.count == 0 %} hide{% endif %}">
                         <label id="tag-{{ filter_value.value | handle }}" class="tag__checkbox-wrapper text-label" for="tagInput-{{ filter_value.param_name }}-{{ filter_value_index }}">
                             <input
                             id="tagInput-{{ filter_value.param_name }}-{{ filter_value_index }}"
-                            type="checkbox"
+                            type="radio"
                             class="tag__input"
                             name="{{ filter_value.param_name }}"
                             value="{{ filter_value.value }}"
@@ -263,7 +267,8 @@
           {%- endcase -%}
         </div>
       </div>
-    </div>
+
+      </div>
   </div>
 {%- endfor -%}
 </form>

@@ -1,0 +1,1094 @@
+{% doc %}
+  @prompt
+    Create a "Shop The Look" carousel section with interactive hotspots. 
+    The section should have three slides that can be navigated with arrow buttons.
+    Each slide displays a lifestyle image with clickable hotspot dots that reveal product information overlays showing 
+    product name, price, and quick add functionality. Include customizable settings for images, hotspot positions, 
+    linked products, and styling options. The carousel should be responsive and include smooth transitions between slides.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-shop-look-carousel-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.section_padding }}px 0;
+  }
+
+  .ai-shop-look-carousel__container-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: {{ block.settings.border_radius }}px;
+  }
+
+  .ai-shop-look-carousel__slides-{{ ai_gen_id }} {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%;
+  }
+
+  .ai-shop-look-carousel__slide-{{ ai_gen_id }} {
+    position: relative;
+    width: 33.333%;
+    flex-shrink: 0;
+  }
+
+  .ai-shop-look-carousel__image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    height: {{ block.settings.image_height }}px;
+    overflow: hidden;
+  }
+
+  .ai-shop-look-carousel__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-shop-look-carousel__placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-shop-look-carousel__placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    opacity: 0.3;
+  }
+
+  .ai-shop-look-carousel__empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+  }
+
+  .ai-shop-look-carousel__hotspot-{{ ai_gen_id }} {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .ai-shop-look-carousel__hotspot-button-{{ ai_gen_id }} {
+    width: {{ block.settings.hotspot_size }}px;
+    height: {{ block.settings.hotspot_size }}px;
+    border-radius: 50%;
+    background-color: {{ block.settings.hotspot_color }};
+    border: 2px solid {{ block.settings.hotspot_border_color }};
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .ai-shop-look-carousel__hotspot-button-{{ ai_gen_id }}:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .ai-shop-look-carousel__hotspot-button-{{ ai_gen_id }}::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: {{ block.settings.hotspot_border_color }};
+    border-radius: 50%;
+  }
+
+  .ai-shop-look-carousel__product-overlay-{{ ai_gen_id }} {
+    position: absolute;
+    width: {{ block.settings.overlay_width }}px;
+    background-color: {{ block.settings.overlay_bg_color }};
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+  }
+
+  .ai-shop-look-carousel__product-overlay-{{ ai_gen_id }}.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .ai-shop-look-carousel__product-overlay-{{ ai_gen_id }}--top {
+    bottom: calc(100% + 15px);
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+  }
+
+  .ai-shop-look-carousel__product-overlay-{{ ai_gen_id }}--top.active {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .ai-shop-look-carousel__product-overlay-{{ ai_gen_id }}--bottom {
+    top: calc(100% + 15px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+  }
+
+  .ai-shop-look-carousel__product-overlay-{{ ai_gen_id }}--bottom.active {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .ai-shop-look-carousel__product-content-{{ ai_gen_id }} {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .ai-shop-look-carousel__product-image-{{ ai_gen_id }} {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .ai-shop-look-carousel__product-image-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .ai-shop-look-carousel__product-info-{{ ai_gen_id }} {
+    flex-grow: 1;
+    min-width: 0;
+  }
+
+  .ai-shop-look-carousel__product-title-{{ ai_gen_id }} {
+    font-size: 14px;
+    font-weight: 600;
+    color: {{ block.settings.overlay_text_color }};
+    margin: 0 0 4px;
+    line-height: 1.3;
+  }
+
+  .ai-shop-look-carousel__product-price-{{ ai_gen_id }} {
+    font-size: 14px;
+    color: {{ block.settings.overlay_text_color }};
+    margin-bottom: 8px;
+  }
+
+  .ai-shop-look-carousel__quick-add-{{ ai_gen_id }} {
+    background-color: {{ block.settings.button_color }};
+    color: {{ block.settings.button_text_color }};
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .ai-shop-look-carousel__quick-add-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_color }};
+  }
+
+  .ai-shop-look-carousel__close-{{ ai_gen_id }} {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    color: {{ block.settings.overlay_text_color }};
+    opacity: 0.7;
+  }
+
+  .ai-shop-look-carousel__close-{{ ai_gen_id }}:hover {
+    opacity: 1;
+  }
+
+  .ai-shop-look-carousel__navigation-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: {{ block.settings.nav_button_color }};
+    color: {{ block.settings.nav_button_text_color }};
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .ai-shop-look-carousel__navigation-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.nav_button_hover_color }};
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  .ai-shop-look-carousel__navigation-{{ ai_gen_id }}--prev {
+    left: 20px;
+  }
+
+  .ai-shop-look-carousel__navigation-{{ ai_gen_id }}--next {
+    right: 20px;
+  }
+
+  /* .ai-shop-look-carousel__dots-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+  } */
+
+  .ai-shop-look-carousel__dot-{{ ai_gen_id }} {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: {{ block.settings.dot_color }};
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .ai-shop-look-carousel__dot-{{ ai_gen_id }}.active {
+    background-color: {{ block.settings.dot_active_color }};
+    transform: scale(1.2);
+  }
+
+  .ai-shop-look-carousel__empty-product-{{ ai_gen_id }} {
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    font-style: italic;
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-shop-look-carousel__image-wrapper-{{ ai_gen_id }} {
+      height: {{ block.settings.image_height | times: 0.7 }}px;
+    }
+
+    .ai-shop-look-carousel__hotspot-button-{{ ai_gen_id }} {
+      width: {{ block.settings.hotspot_size | times: 0.8 }}px;
+      height: {{ block.settings.hotspot_size | times: 0.8 }}px;
+    }
+
+    .ai-shop-look-carousel__product-overlay-{{ ai_gen_id }} {
+      width: {{ block.settings.overlay_width | times: 0.8 }}px;
+      padding: 12px;
+    }
+
+    .ai-shop-look-carousel__navigation-{{ ai_gen_id }}--prev {
+      left: 10px;
+    }
+
+    .ai-shop-look-carousel__navigation-{{ ai_gen_id }}--next {
+      right: 10px;
+    }
+  }
+{% endstyle %}
+
+<shop-look-carousel-{{ ai_gen_id }}
+  class="ai-shop-look-carousel-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-shop-look-carousel__container-{{ ai_gen_id }}">
+    <div class="ai-shop-look-carousel__slides-{{ ai_gen_id }}" data-slides>
+      {% for i in (1..3) %}
+        {% liquid
+          assign image_key = 'slide_' | append: i | append: '_image'
+          assign image = block.settings[image_key]
+        %}
+
+        <div class="ai-shop-look-carousel__slide-{{ ai_gen_id }}" data-slide="{{ forloop.index0 }}">
+          <div class="ai-shop-look-carousel__image-wrapper-{{ ai_gen_id }}">
+            {% if image %}
+              <img
+                src="{{ image | image_url: width: 1200 }}"
+                alt="{{ image.alt | escape }}"
+                class="ai-shop-look-carousel__image-{{ ai_gen_id }}"
+                loading="lazy"
+                width="{{ image.width }}"
+                height="{{ image.height }}"
+              >
+            {% else %}
+              <div class="ai-shop-look-carousel__placeholder-{{ ai_gen_id }}">
+                {{ 'hero-apparel-1' | placeholder_svg_tag }}
+                <div class="ai-shop-look-carousel__empty-state-{{ ai_gen_id }}">Add slide {{ i }} image</div>
+              </div>
+            {% endif %}
+
+            {% for j in (1..3) %}
+              {% liquid
+                assign hotspot_enabled_key = 'slide_' | append: i | append: '_hotspot_' | append: j | append: '_enabled'
+                assign hotspot_x_key = 'slide_' | append: i | append: '_hotspot_' | append: j | append: '_x'
+                assign hotspot_y_key = 'slide_' | append: i | append: '_hotspot_' | append: j | append: '_y'
+                assign product_key = 'slide_' | append: i | append: '_hotspot_' | append: j | append: '_product'
+
+                assign hotspot_enabled = block.settings[hotspot_enabled_key]
+                assign hotspot_x = block.settings[hotspot_x_key]
+                assign hotspot_y = block.settings[hotspot_y_key]
+                assign product = block.settings[product_key]
+              %}
+
+              {% if hotspot_enabled %}
+                <div
+                  class="ai-shop-look-carousel__hotspot-{{ ai_gen_id }}"
+                  style="left: {{ hotspot_x }}%; top: {{ hotspot_y }}%; transform: translate(-50%, -50%);"
+                  data-hotspot-id="{{ i }}-{{ j }}"
+                >
+                  <button
+                    class="ai-shop-look-carousel__hotspot-button-{{ ai_gen_id }} js-modal-open-quick-modal-{{ product.id }}"
+                    aria-label="View product details"
+                    data-hotspot-button
+                  ></button> 
+                  {%- render 'quick-shop-modal', product: product -%}
+                  
+                  {% comment %} <div
+                    class="ai-shop-look-carousel__product-overlay-{{ ai_gen_id }} ai-shop-look-carousel__product-overlay-{{ ai_gen_id }}--{{ block.settings.overlay_position }}"
+                    data-product-overlay
+                  >
+                    {% if product != blank %}
+                      <div class="ai-shop-look-carousel__product-content-{{ ai_gen_id }}">
+                        <div class="ai-shop-look-carousel__product-image-{{ ai_gen_id }}">
+                          {% if product.featured_image %}
+                            <img
+                              src="{{ product.featured_image | image_url: width: 120 }}"
+                              alt="{{ product.featured_image.alt | escape }}"
+                              loading="lazy"
+                            >
+                          {% endif %}
+                        </div>
+                        <div class="ai-shop-look-carousel__product-info-{{ ai_gen_id }}">
+                          <h3 class="ai-shop-look-carousel__product-title-{{ ai_gen_id }}">{{ product.title }}</h3>
+                          <div class="ai-shop-look-carousel__product-price-{{ ai_gen_id }}">
+                            {{ product.price | money }}
+                          </div>
+                          <button
+                            class="ai-shop-look-carousel__quick-add-{{ ai_gen_id }}"
+                            data-product-id="{{ product.id }}"
+                            data-variant-id="{{ product.selected_or_first_available_variant.id }}"
+                            data-quick-add
+                          >
+                            {{ block.settings.quick_add_text }}
+                          </button>
+                        </div>
+                      </div>
+                    {% else %}
+                      <div class="ai-shop-look-carousel__empty-product-{{ ai_gen_id }}">
+                        Select a product for this hotspot
+                      </div>
+                    {% endif %}
+                    <button
+                      class="ai-shop-look-carousel__close-{{ ai_gen_id }}"
+                      data-close-overlay
+                      aria-label="Close"
+                    >
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                      </svg>
+                    </button>
+                  </div> {% endcomment %}
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <button
+      class="ai-shop-look-carousel__navigation-{{ ai_gen_id }} ai-shop-look-carousel__navigation-{{ ai_gen_id }}--prev"
+      data-nav="prev"
+      aria-label="Previous slide"
+    >
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="15,18 9,12 15,6"></polyline>
+      </svg>
+    </button>
+
+    <button
+      class="ai-shop-look-carousel__navigation-{{ ai_gen_id }} ai-shop-look-carousel__navigation-{{ ai_gen_id }}--next"
+      data-nav="next"
+      aria-label="Next slide"
+    >
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="9,18 15,12 9,6"></polyline>
+      </svg>
+    </button>
+  </div>
+
+  {% comment %} {%- render 'quick-shop-modal', product: product -%} {% endcomment %}
+
+  {% comment %} <div class="ai-shop-look-carousel__dots-{{ ai_gen_id }}" data-dots>
+    {% for i in (1..3) %}
+      <button
+        class="ai-shop-look-carousel__dot-{{ ai_gen_id }}{% if forloop.first %} active{% endif %}"
+        data-dot="{{ forloop.index0 }}"
+        aria-label="Go to slide {{ forloop.index }}"
+      ></button>
+    {% endfor %}
+  </div> {% endcomment %}
+</shop-look-carousel-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ShopLookCarousel{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.currentSlide = 0;
+        this.totalSlides = 3;
+      }
+
+      connectedCallback() {
+        this.slidesContainer = this.querySelector('[data-slides]');
+        this.navButtons = this.querySelectorAll('[data-nav]');
+        // this.dots = this.querySelectorAll('[data-dot]');
+        this.hotspotButtons = this.querySelectorAll('[data-hotspot-button]');
+        this.overlays = this.querySelectorAll('[data-product-overlay]');
+        this.closeButtons = this.querySelectorAll('[data-close-overlay]');
+        this.quickAddButtons = this.querySelectorAll('[data-quick-add]');
+
+        this.setupNavigation();
+        this.setupHotspots();
+        this.setupQuickAdd();
+        this.updateSlide();
+      }
+
+      setupNavigation() {
+        this.navButtons.forEach(button => {
+          button.addEventListener('click', (e) => {
+            const direction = e.currentTarget.dataset.nav;
+            if (direction === 'next') {
+              this.nextSlide();
+            } else {
+              this.prevSlide();
+            }
+          });
+        });
+
+        // this.dots.forEach(dot => {
+        //   dot.addEventListener('click', (e) => {
+        //     const slideIndex = parseInt(e.currentTarget.dataset.dot);
+        //     this.goToSlide(slideIndex);
+        //   });
+        // });
+      }
+
+      setupHotspots() {
+        this.hotspotButtons.forEach(button => {
+          button.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const hotspot = e.currentTarget.closest('[data-hotspot-id]');
+            const overlay = hotspot.querySelector('[data-product-overlay]');
+            
+            this.closeAllOverlays();
+            overlay.classList.add('active');
+            button.setAttribute('aria-expanded', 'true');
+          });
+        });
+
+        this.closeButtons.forEach(button => {
+          button.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.closeAllOverlays();
+          });
+        });document.addEventListener('click', (e) => {
+          if (!e.target.closest('[data-product-overlay]') && !e.target.closest('[data-hotspot-button]')) {
+            this.closeAllOverlays();
+          }
+        });
+      }
+
+      setupQuickAdd() {
+        this.quickAddButtons.forEach(button => {
+          button.addEventListener('click', (e) => {
+            e.preventDefault();
+            const variantId = e.currentTarget.dataset.variantId;
+            this.addToCart(variantId);
+          });
+        });
+      }
+
+      closeAllOverlays() {
+        this.overlays.forEach(overlay => {
+          overlay.classList.remove('active');
+        });
+        this.hotspotButtons.forEach(button => {
+          button.setAttribute('aria-expanded', 'false');
+        });
+      }
+
+      nextSlide() {
+        this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
+        this.updateSlide();
+      }
+
+      prevSlide() {
+        this.currentSlide = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
+        this.updateSlide();
+      }
+
+      goToSlide(index) {
+        this.currentSlide = index;
+        this.updateSlide();
+      }
+
+      updateSlide() {
+        const translateX = -this.currentSlide * 33.333;
+        this.slidesContainer.style.transform = `translateX(${translateX}%)`;
+        
+        // this.dots.forEach((dot, index) => {
+        //   dot.classList.toggle('active', index === this.currentSlide);
+        // });
+
+        this.closeAllOverlays();
+      }
+
+      async addToCart(variantId) {
+        try {
+          const response = await fetch('/cart/add.js', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              id: variantId,
+              quantity: 1
+            })
+          });
+
+          if (response.ok) {
+            document.dispatchEvent(new CustomEvent('cart:refresh'));
+            this.showAddedToCartMessage();
+          }
+        } catch (error) {
+          console.error('Error adding to cart:', error);
+        }
+      }
+
+      showAddedToCartMessage() {
+        this.quickAddButtons.forEach(button => {
+          const originalText = button.textContent;
+          button.textContent = 'Added!';
+          button.disabled = true;
+          
+          setTimeout(() => {
+            button.textContent = originalText;
+            button.disabled = false;
+          }, 2000);
+        });
+      }
+    }
+
+    customElements.define('shop-look-carousel-{{ ai_gen_id }}', ShopLookCarousel{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Custom Shop look carousel",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "image_height",
+      "min": 300,
+      "max": 800,
+      "step": 50,
+      "unit": "px",
+      "label": "Image height",
+      "default": 500
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Hotspots"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_size",
+      "min": 20,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "label": "Hotspot size",
+      "default": 32
+    },
+    {
+      "type": "color",
+      "id": "hotspot_color",
+      "label": "Hotspot color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "hotspot_border_color",
+      "label": "Hotspot border color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Product overlay"
+    },
+    {
+      "type": "select",
+      "id": "overlay_position",
+      "label": "Overlay position",
+      "options": [
+        {
+          "value": "top",
+          "label": "Top"
+        },
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        }
+      ],
+      "default": "top"
+    },
+    {
+      "type": "range",
+      "id": "overlay_width",
+      "min": 200,
+      "max": 350,
+      "step": 10,
+      "unit": "px",
+      "label": "Overlay width",
+      "default": 280
+    },
+    {
+      "type": "color",
+      "id": "overlay_bg_color",
+      "label": "Overlay background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "overlay_text_color",
+      "label": "Overlay text color",
+      "default": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "quick_add_text",
+      "label": "Quick add button text",
+      "default": "Quick add"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_color",
+      "label": "Button hover color",
+      "default": "#333333"
+    },
+    {
+      "type": "header",
+      "content": "Navigation"
+    },
+    {
+      "type": "color",
+      "id": "nav_button_color",
+      "label": "Navigation button color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "nav_button_text_color",
+      "label": "Navigation button icon color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "nav_button_hover_color",
+      "label": "Navigation button hover color",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "color",
+      "id": "dot_color",
+      "label": "Dot color",
+      "default": "#cccccc"
+    },
+    {
+      "type": "color",
+      "id": "dot_active_color",
+      "label": "Active dot color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Slide 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_1_hotspot_1_enabled",
+      "label": "Enable hotspot 1",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "slide_1_hotspot_1_x",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Hotspot 1 horizontal position",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "slide_1_hotspot_1_y",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Hotspot 1 vertical position",
+      "default": 40
+    },
+    {
+      "type": "product",
+      "id": "slide_1_hotspot_1_product",
+      "label": "Hotspot 1 product"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_1_hotspot_2_enabled",
+      "label": "Enable hotspot 2"
+    },
+    {
+      "type": "range",
+      "id": "slide_1_hotspot_2_x",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Hotspot 2 horizontal position",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "slide_1_hotspot_2_y",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Hotspot 2 vertical position",
+      "default": 60
+    },
+    {
+      "type": "product",
+      "id": "slide_1_hotspot_2_product",
+      "label": "Hotspot 2 product"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_1_hotspot_3_enabled",
+      "label": "Enable hotspot 3"
+    },
+    {
+      "type": "range",
+      "id": "slide_1_hotspot_3_x",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Hotspot 3 horizontal position",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "slide_1_hotspot_3_y",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Hotspot 3 vertical position",
+      "default": 30
+    },
+    {
+      "type": "product",
+      "id": "slide_1_hotspot_3_product",
+      "label": "Hotspot 3 product"
+    },
+    {
+      "type": "header",
+      "content": "Slide 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_2_hotspot_1_enabled",
+      "label": "Enable hotspot 1"
+    },
+    {
+      "type": "range",
+      "id": "slide_2_hotspot_1_x",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Hotspot 1 horizontal position",
+      "default": 25
+    },
+    {
+      "type": "range",
+      "id": "slide_2_hotspot_1_y",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Hotspot 1 vertical position",
+      "default": 50
+    },
+    {
+      "type": "product",
+      "id": "slide_2_hotspot_1_product",
+      "label": "Hotspot 1 product"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_2_hotspot_2_enabled",
+      "label": "Enable hotspot 2"
+    },
+    {
+      "type": "range",
+      "id": "slide_2_hotspot_2_x",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Hotspot 2 horizontal position",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "slide_2_hotspot_2_y",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Hotspot 2 vertical position",
+      "default": 35
+    },
+    {
+      "type": "product",
+      "id": "slide_2_hotspot_2_product",
+      "label": "Hotspot 2 product"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_2_hotspot_3_enabled",
+      "label": "Enable hotspot 3"
+    },
+    {
+      "type": "range",
+      "id": "slide_2_hotspot_3_x",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Hotspot 3 horizontal position",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "slide_2_hotspot_3_y",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Hotspot 3 vertical position",
+      "default": 75
+    },
+    {
+      "type": "product",
+      "id": "slide_2_hotspot_3_product",
+      "label": "Hotspot 3 product"
+    },
+    {
+      "type": "header",
+      "content": "Slide 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_3_image",
+      "label": "Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_3_hotspot_1_enabled",
+      "label": "Enable hotspot 1"
+    },
+    {
+      "type": "range",
+      "id": "slide_3_hotspot_1_x",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Hotspot 1 horizontal position",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "slide_3_hotspot_1_y",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Hotspot 1 vertical position",
+      "default": 30
+    },
+    {
+      "type": "product",
+      "id": "slide_3_hotspot_1_product",
+      "label": "Hotspot 1 product"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_3_hotspot_2_enabled",
+      "label": "Enable hotspot 2"
+    },
+    {
+      "type": "range",
+      "id": "slide_3_hotspot_2_x",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Hotspot 2 horizontal position",
+      "default": 65
+    },
+    {
+      "type": "range",
+      "id": "slide_3_hotspot_2_y",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Hotspot 2 vertical position",
+      "default": 55
+    },
+    {
+      "type": "product",
+      "id": "slide_3_hotspot_2_product",
+      "label": "Hotspot 2 product"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_3_hotspot_3_enabled",
+      "label": "Enable hotspot 3"
+    },
+    {
+      "type": "range",
+      "id": "slide_3_hotspot_3_x",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Hotspot 3 horizontal position",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "slide_3_hotspot_3_y",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Hotspot 3 vertical position",
+      "default": 70
+    },
+    {
+      "type": "product",
+      "id": "slide_3_hotspot_3_product",
+      "label": "Hotspot 3 product"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Shop look carousel"
+    }
+  ]
+}
+{% endschema %}

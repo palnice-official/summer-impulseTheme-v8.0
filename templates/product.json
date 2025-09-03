@@ -293,6 +293,85 @@
     "collection-return": {
       "type": "collection-return",
       "settings": {}
+    },
+    "1755595562ca9ce2d9": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_de13111_AE7Ufi": {
+          "type": "ai_gen_block_de13111",
+          "settings": {
+            "title": "Shop the Look",
+            "subtitle": "Discover styled outfits and shop the pieces",
+            "button_text": "Shop now",
+            "background_color": "#ffffff",
+            "text_color": "#000000",
+            "section_padding": 60,
+            "title_size": 36,
+            "subtitle_size": 16,
+            "image_max_width": 600,
+            "image_border_radius": 12,
+            "hotspot_size": 40,
+            "hotspot_color": "#ffffff",
+            "hotspot_border_color": "#000000",
+            "hotspot_icon_color": "#000000",
+            "popup_position": "top",
+            "popup_width": 300,
+            "popup_bg_color": "#ffffff",
+            "popup_text_color": "#000000",
+            "button_color": "#000000",
+            "button_text_color": "#ffffff",
+            "button_hover_color": "#333333",
+            "nav_button_color": "#ffffff",
+            "nav_button_hover_color": "#f5f5f5",
+            "nav_button_icon_color": "#000000",
+            "indicator_color": "#000000",
+            "look_1_image": "shopify://shop_images/IMG_2028.jpg",
+            "look_1_hotspot_1_enabled": true,
+            "look_1_hotspot_1_x": 30,
+            "look_1_hotspot_1_y": 40,
+            "look_1_hotspot_1_product": "ambar-blue-muse-kurta-set",
+            "look_1_hotspot_2_enabled": true,
+            "look_1_hotspot_2_x": 60,
+            "look_1_hotspot_2_y": 70,
+            "look_1_hotspot_2_product": "alia-silk-embroidered-potli",
+            "look_1_hotspot_3_enabled": false,
+            "look_1_hotspot_3_x": 80,
+            "look_1_hotspot_3_y": 30,
+            "look_1_hotspot_3_product": "",
+            "look_2_image": "shopify://shop_images/ASH_0670_1.webp",
+            "look_2_hotspot_1_enabled": true,
+            "look_2_hotspot_1_x": 40,
+            "look_2_hotspot_1_y": 50,
+            "look_2_hotspot_1_product": "ambar-blue-muse-kurta-set",
+            "look_2_hotspot_2_enabled": true,
+            "look_2_hotspot_2_x": 70,
+            "look_2_hotspot_2_y": 80,
+            "look_2_hotspot_2_product": "aqua-blush-petal-kurta-set",
+            "look_2_hotspot_3_enabled": false,
+            "look_2_hotspot_3_x": 20,
+            "look_2_hotspot_3_y": 25,
+            "look_2_hotspot_3_product": "",
+            "look_3_image": "shopify://shop_images/ASH_0684_1.webp",
+            "look_3_hotspot_1_enabled": true,
+            "look_3_hotspot_1_x": 50,
+            "look_3_hotspot_1_y": 60,
+            "look_3_hotspot_1_product": "adena-anarkali",
+            "look_3_hotspot_2_enabled": true,
+            "look_3_hotspot_2_x": 25,
+            "look_3_hotspot_2_y": 35,
+            "look_3_hotspot_2_product": "ambar-beach-dress",
+            "look_3_hotspot_3_enabled": false,
+            "look_3_hotspot_3_x": 75,
+            "look_3_hotspot_3_y": 45,
+            "look_3_hotspot_3_product": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_de13111_AE7Ufi"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -304,6 +383,7 @@
     "recently-viewed",
     "sub",
     "background-image-text",
-    "collection-return"
+    "collection-return",
+    "1755595562ca9ce2d9"
   ]
 }
