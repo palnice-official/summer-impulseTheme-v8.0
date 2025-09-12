@@ -1,0 +1,77 @@
+<style>
+  .basic-render {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+  }
+  .button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+</style>
+
+<div class="basic-render">
+  <button data-render class="button">Render</button>
+  <div class="basic-render-content">
+      <div class="basic-render_hello-world">
+        <p>Lorem ipsum dolor sit.</p>
+      </div>
+      <span>----------------------------</span>
+      <div class="basic-render_hello-world2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ullam!</p>
+      </div>
+  </div>
+</div>
+
+{% comment %} <script>
+  const renderButton = document.querySelector('[data-render]');
+  renderButton.addEventListener('click', () => {
+    fetch(`${window.Shopify.routes.root}?section_id=hello-world`)
+      .then((response) => response.text())  // Changed from .json() to .text()
+      .then((html) => {
+        // console.log(html);
+        document.querySelector('.basic-render').innerHTML = html;
+      })
+      .catch((error) => {
+        console.error('Error fetching section:', error);
+      });
+  });  // Added missing closing braces
+</script> {% endcomment %}
+
+<script>
+    const btn = document.querySelector('[data-render]');
+    btn.addEventListener('click', () => {
+        fetch(`${window.Shopify.routes.root}product/lime-mirror-scallop-saree?sections=product`)
+        .then(res => res.json())
+        .then(data => { 
+            // console.log(data)
+            
+            document.querySelector('.basic-render-content').innerHTML = data["product"]
+
+        })
+    })
+
+</script>
+
+{% schema %}
+{
+  "name": "Section Render",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Section Render"
+    }
+  ]
+}
+{% endschema %}
