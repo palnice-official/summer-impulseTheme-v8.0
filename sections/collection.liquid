@@ -85,7 +85,7 @@
   <h1>{{ collection.title }}</h1>
 
   <div class="collection-inner">
-    <collection-filters class="collection-filters" data-section-id="{{ section.id }}">
+    {% comment %} <collection-filters class="collection-filters" data-section-id="{{ section.id }}">
       <div class="collection-filters__heading">
         <h2>Filters</h2>
       </div>
@@ -113,7 +113,7 @@
           </div>
         {% endfor %}
       </div>
-    </collection-filters>
+    </collection-filters> {% endcomment %}
 
     <div class="collection-grid">
       {% paginate collection.products by section.settings.pagination_limit %}
@@ -129,6 +129,7 @@
               </div>
               <div class="collection-product__quick-view">
                 <button data-quick-view data-product-handle="{{ product.handle }}" class="button">Quick View</button>
+                {% render "quick-view" %}
               </div>
             </div>
           {% endfor %}
@@ -183,6 +184,11 @@
       "step": 2,
       "default": 2
     }
+  ],
+  "presets": [
+    {
+      "name": "Custom-Collection"
+     }
   ]
 }
 {% endschema %}

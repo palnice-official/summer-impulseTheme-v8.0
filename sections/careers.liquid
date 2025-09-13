@@ -1,0 +1,538 @@
+<style>
+  #shopify-section-{{ section.id }} .dropdown {
+    display: inline-block;
+    padding: 0px 8px;
+    background: #8080802e;
+    margin-bottom: 20px;
+  }
+
+  #shopify-section-{{ section.id }} .filter-cat .form-control {
+    border: none;
+    width: 200px;
+    background: none;
+    font-size: 17px;
+    padding: 5px;
+    box-shadow: none;
+  }
+
+  #shopify-section-{{ section.id }} .career-box {
+    display: grid;
+    grid-template-columns: repeat({{ section.settings.desktop_columns }}, 1fr);
+    grid-gap: {{ section.settings.grid_gap }}px;
+    position: relative;
+  }
+
+  #shopify-section-{{ section.id }} .career-item {
+    padding: {{ section.settings.item_padding }}px;
+    background: {{ section.settings.item_background }};
+    border-radius: {{ section.settings.item_border_radius }}px;
+    position: relative;
+  }
+
+  /* Lower z-index for all career items when popup is active */
+  body.popup-open #shopify-section-{{ section.id }} .career-item {
+    z-index: 1;
+  }
+
+  #shopify-section-{{ section.id }} .career-heading {
+    font-size: {{ section.settings.heading_font_size }}px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  #shopify-section-{{ section.id }} .career-description {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+
+  #shopify-section-{{ section.id }} .open_popup {
+    background: {{ section.settings.button_background }};
+    color: {{ section.settings.button_text_color }};
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+  }
+
+  #shopify-section-{{ section.id }} .open_popup:hover {
+    opacity: 0.9;
+  }
+
+  /* Popup Styles - Move popup outside of career-item context */
+  .popup {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 99999 !important;
+    display: none;
+  }
+
+  .popup.active {
+    display: block !important;
+  }
+
+  .popup .overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: rgba(0, 0, 0, 0.8) !important;
+    z-index: 99999 !important;
+  }
+
+  .popup .content {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) scale(0);
+    background: #ffffff !important;
+    width: 45%;
+    max-width: 600px;
+    z-index: 100000 !important;
+    padding: 40px 20px 20px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 10px;
+    opacity: 0;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .popup.active .content {
+    transform: translate(-50%, -50%) scale(1) !important;
+    opacity: 1 !important;
+    transition: all 300ms ease-in-out;
+  }
+
+  .popup .content::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .popup .content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  .popup .content::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+  }
+
+  .popup .content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .popup .close-btn {
+    cursor: pointer;
+    position: absolute !important;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 100001 !important;
+  }
+
+  .popup .close-btn:hover {
+    background: #444;
+  }
+
+  /* Ensure popup content has proper background */
+  .jobfull_description {
+    background: #ffffff;
+    position: relative;
+  }
+
+  /* Body scroll lock */
+  body.popup-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
+
+  #shopify-section-{{ section.id }} .form_btn_cs {
+    margin: 25px auto;
+    width: fit-content;
+    font-size: 18px;
+    background: {{ section.settings.form_button_background }};
+    color: {{ section.settings.form_button_text_color }};
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  #shopify-section-{{ section.id }} .form_btn_cs a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* Filter Animation */
+  #shopify-section-{{ section.id }} .filter-cat-results .f-cat {
+    opacity: 0;
+    display: none;
+  }
+
+  #shopify-section-{{ section.id }} .filter-cat-results .f-cat.active {
+    opacity: 1;
+    display: block;
+    animation: fadeIn 0.65s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  /* Mobile Styles */
+  @media only screen and (max-width: 768px) {
+    #shopify-section-{{ section.id }} .career-box {
+      grid-template-columns: repeat({{ section.settings.mobile_columns }}, 1fr);
+    }
+
+    .popup .content {
+      width: 90% !important;
+      padding: 30px 15px 15px;
+    }
+  }
+</style>
+
+<div class="container filtering">
+  {% if section.settings.enable_filter %}
+    <div class="filter-cat row">
+      <div class="col col-md-3 col-xs-6">
+        <p>{{ section.settings.filter_label }}</p>
+        <div class="dropdown">
+          <select class="form-control" id="department-filter-{{ section.id }}">
+            <option value="cat-all">{{ section.settings.filter_default_text }}</option>
+            <option value="cat-all">All</option>
+            {% assign departments = '' %}
+            {% for block in section.blocks %}
+              {% unless departments contains block.settings.department %}
+                <option value="{{ block.settings.department }}">{{ block.settings.department }}</option>
+                {% assign departments = departments | append: block.settings.department | append: ',' %}
+              {% endunless %}
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="filter-cat-results career-box">
+    {% for block in section.blocks %}
+      <div class="f-cat career-item" data-cat="{{ block.settings.department }}" {{ block.shopify_attributes }}>
+        <div class="career-heading">{{ block.settings.job_title }}</div>
+        <div class="career-description">{{ block.settings.job_summary }}</div>
+        <button class="open_popup" onclick="togglePopup('popup-{{ block.id }}')">
+          {{ section.settings.view_more_text }}
+        </button>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- Move all popups outside the main container -->
+{% for block in section.blocks %}
+  <div class="popup" id="popup-{{ block.id }}">
+    <div class="overlay" onclick="togglePopup('popup-{{ block.id }}')"></div>
+    <div class="content">
+      <div class="close-btn" onclick="togglePopup('popup-{{ block.id }}')">×</div>
+      <div class="career-heading" style="text-align: center;">{{ block.settings.job_title }}</div>
+      <div class="jobfull_description">
+        {{ block.settings.job_description }}
+      </div>
+      {% if block.settings.form_link != blank %}
+        <div class="form_btn_cs">
+          <a class="form_in_link" target="_blank" href="{{ block.settings.form_link }}">
+            {{ section.settings.form_button_text }}
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const sectionId = '{{ section.id }}';
+    const filterSelect = document.querySelector(`#department-filter-${sectionId}`);
+    const filterItems = document.querySelectorAll(`#shopify-section-${sectionId} .f-cat`);
+    
+    // Show all items initially
+    filterItems.forEach(el => el.classList.add('active'));
+    
+    if (filterSelect) {
+      filterSelect.addEventListener('change', function() {
+        const selectedValue = this.value;
+        console.log('Selected Value:', selectedValue);
+        
+        filterItems.forEach(el => {
+          el.classList.remove('active');
+          
+          if (selectedValue === 'cat-all' || el.dataset.cat === selectedValue) {
+            el.classList.add('active');
+          }
+        });
+      });
+    }
+  });
+
+  // Store scroll position
+  let scrollPosition = 0;
+  let currentOpenPopup = null;
+
+  function togglePopup(idname) {
+    const popup = document.getElementById(idname);
+    const body = document.body;
+    // console.log('body >>', body)
+    console.log('popup >>', popup)
+    // If clicking the same popup that's already open, close it
+    if (popup.classList.contains('active')) {
+      closePopup(popup);
+      currentOpenPopup = null;
+    } else {
+      // Close any currently open popup
+      if (currentOpenPopup && currentOpenPopup !== popup) {
+        closePopup(currentOpenPopup);
+      }
+      
+      // Open the new popup
+      openPopup(popup);
+      currentOpenPopup = popup;
+    }
+  }
+
+  function openPopup(popup) {
+    scrollPosition = window.pageYOffset;
+    console.log('scrollPosition >>', scrollPosition)
+    popup.classList.add('active');
+    document.body.classList.add('popup-open');
+    document.body.style.top = `-${scrollPosition}px`;
+  }
+
+  function closePopup(popup) {
+    popup.classList.remove('active');
+    document.body.classList.remove('popup-open');
+    document.body.style.top = '';
+    window.scrollTo(0, scrollPosition);
+  }
+
+  // Close popup with Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && currentOpenPopup) {
+      closePopup(currentOpenPopup);
+      currentOpenPopup = null;
+    }
+  });
+
+  // Close popup when clicking outside
+  document.addEventListener('click', function(e) {
+    if (currentOpenPopup && !e.target.closest('.popup .content') && !e.target.closest('.open_popup')) {
+      closePopup(currentOpenPopup);
+      currentOpenPopup = null;
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Career Section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "range",
+      "id": "desktop_columns",
+      "label": "Desktop Columns",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "mobile_columns",
+      "label": "Mobile Columns",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "label": "Grid Gap (px)",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Filter Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_filter",
+      "label": "Enable Department Filter",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "filter_label",
+      "label": "Filter Label",
+      "default": "Filter by Department"
+    },
+    {
+      "type": "text",
+      "id": "filter_default_text",
+      "label": "Filter Default Text",
+      "default": "Select"
+    },
+    {
+      "type": "header",
+      "content": "Style Settings"
+    },
+    {
+      "type": "color",
+      "id": "item_background",
+      "label": "Job Item Background",
+      "default": "#8080801f"
+    },
+    {
+      "type": "range",
+      "id": "item_padding",
+      "label": "Item Padding (px)",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "item_border_radius",
+      "label": "Item Border Radius (px)",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size",
+      "label": "Heading Font Size (px)",
+      "min": 20,
+      "max": 40,
+      "step": 2,
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Button Settings"
+    },
+    {
+      "type": "text",
+      "id": "view_more_text",
+      "label": "View More Button Text",
+      "default": "View More"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "View More Button Background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "View More Button Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "text",
+      "id": "form_button_text",
+      "label": "Form Button Text",
+      "default": "Fill Form"
+    },
+    {
+      "type": "color",
+      "id": "form_button_background",
+      "label": "Form Button Background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "form_button_text_color",
+      "label": "Form Button Text Color",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "job_listing",
+      "name": "Job Listing",
+      "settings": [
+        {
+          "type": "text",
+          "id": "job_title",
+          "label": "Job Title",
+          "default": "Job Title"
+        },
+        {
+          "type": "text",
+          "id": "department",
+          "label": "Department",
+          "default": "General",
+          "info": "Used for filtering"
+        },
+        {
+          "type": "textarea",
+          "id": "job_summary",
+          "label": "Job Summary",
+          "default": "Brief job description that appears in the card"
+        },
+        {
+          "type": "richtext",
+          "id": "job_description",
+          "label": "Full Job Description",
+          "default": "<p>Detailed job description that appears in the popup</p>"
+        },
+        {
+          "type": "url",
+          "id": "form_link",
+          "label": "Application Form Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Career Section",
+      "blocks": [
+        {
+          "type": "job_listing",
+          "settings": {
+            "job_title": "Store Stylist",
+            "department": "CRM",
+            "job_summary": "Fashion Enthusiast with excellent communication and pleasing personality. Experience: 0-1 years. Multiple Locations.",
+            "form_link": "https://forms.gle/LRpoA8vFENhiZEiH7"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
