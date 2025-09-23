@@ -52,6 +52,7 @@
                   -%}
 
                   <ul class="no-bullets tag-list {% if tags_combine %} tag-list--checkboxes{% endif %} tag-list--swatches">
+                    
                     {%- for filter_value in filter.values -%}
                       <li class="tag tag--swatch {% if filter_value.active %}tag--active{% endif %} {% if enable_swatch_labels %}tag--show-label{% endif %}">
                         <label for="tag-{{ filter_value.value | handle }}" class="tag__checkbox-wrapper text-label">
@@ -116,6 +117,7 @@
                             class="tag__input"
                             name="{{ filter_value.param_name }}"
                             value="{{ filter_value.value }}"
+                            data-add-url="{{ filter_value.url_to_add }}"
                             {% if filter_value.active %}checked{% endif %}>
                             {%- if is_color -%}
                             <span
@@ -182,20 +184,19 @@
                       assign tag_count = tag_count | plus: 1
                       assign filter_value_index = forloop.index
                     -%}
-                    test--{{filter_value.count}}
-
                       <li class="tag{% if filter_value.active %} tag--active{% endif %}{% if filter_value.count == 0 %} hide{% endif %}">
-                        <label id="tag-{{ filter_value.value | handle }}" class="tag__checkbox-wrapper text-label" for="tagInput-{{ filter_value.param_name }}-{{ filter_value_index }}">
+                        <label id="tag-{{ filter_value.value | handle }}" class="test tag__checkbox-wrapper text-label" for="tagInput-{{ filter_value.param_name }}-{{ filter_value_index }}">
                             <input
                             id="tagInput-{{ filter_value.param_name }}-{{ filter_value_index }}"
                             type="radio"
                             class="tag__input"
                             name="{{ filter_value.param_name }}"
+                            data-add-url="{{ filter_value.url_to_add }}"
                             value="{{ filter_value.value }}"
-                            {% if filter_value.active %}checked{% endif %}>
+                            {% if filter_value.active %}checked test{% endif %}>
                             <span class="tag__checkbox"></span>
                             <span>
-                              <span class="tag__text">{{ filter_value.label }}</span> ({{ filter_value.count }})
+                              <span class="tag__text">{{ filter_value.label }}-test</span> ({{ filter_value.count }})
                             </span>
 
                         </label>

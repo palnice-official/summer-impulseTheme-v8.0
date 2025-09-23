@@ -38,7 +38,7 @@ class PaginationComponent extends HTMLElement {
     fetch(url.toString())
       .then((response) => response.text())
       .then((html) => {
-        // console.log("Fetched HTML:", html);
+        console.log("Fetched HTML:", html);
         // console.log("Target Selector:", this.target);
         const tempDiv = document.createElement("div");
         tempDiv.innerHTML = html;
@@ -57,28 +57,7 @@ class PaginationComponent extends HTMLElement {
         top: 0,
         behavior: "instant"
       })
-      });
-
-if (theme && typeof theme.Collection === "function") {
-  try {
-    const container = document.querySelector(this.target);
-    if (container) {
-      const newCollection = new theme.Collection(container);
-      if (typeof newCollection.initFilters === "function") {
-        newCollection.initFilters();
-        console.log("Pagination: Collection filters reinitialized");
-      } else if (typeof newCollection.init === "function") {
-        newCollection.init();
-        console.log("Pagination: Collection fully reinitialized");
-      }
-    }
-  } catch (err) {
-    console.error("Pagination: error reinitializing theme.Collection", err);
-  }
-}
-
-
-     
+      });     
   }
   
 }

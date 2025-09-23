@@ -85,7 +85,7 @@
   <h1>{{ collection.title }}</h1>
 
   <div class="collection-inner">
-    {% comment %} <collection-filters class="collection-filters" data-section-id="{{ section.id }}">
+    <collection-filters class="collection-filters" data-section-id="{{ section.id }}">
       <div class="collection-filters__heading">
         <h2>Filters</h2>
       </div>
@@ -99,7 +99,9 @@
                 <div class="collection-filter__option">
                   <input
                     type="checkbox"
-                    {% if option.active %}checked{% endif %}
+                    {% if option.active %}
+                      checked
+                    {% endif %}
                     id="{{ filter.label | handle }}-{{ option.value | handle }}"
                     name="{{ filter.label | handle }}"
                     value="{{ option.value | handle }}"
@@ -113,7 +115,7 @@
           </div>
         {% endfor %}
       </div>
-    </collection-filters> {% endcomment %}
+    </collection-filters>
 
     <div class="collection-grid">
       {% paginate collection.products by section.settings.pagination_limit %}
@@ -129,7 +131,7 @@
               </div>
               <div class="collection-product__quick-view">
                 <button data-quick-view data-product-handle="{{ product.handle }}" class="button">Quick View</button>
-                {% render "quick-view" %}
+                {% render 'quick-view' %}
               </div>
             </div>
           {% endfor %}
@@ -188,7 +190,7 @@
   "presets": [
     {
       "name": "Custom-Collection"
-     }
+    }
   ]
 }
 {% endschema %}

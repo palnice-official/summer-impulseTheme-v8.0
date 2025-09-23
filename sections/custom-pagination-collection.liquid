@@ -1,26 +1,13 @@
 <script src="{{ 'pagination.js' | asset_url }}" defer></script>
+<script src="{{ 'collection-filters.js' | asset_url }}" defer></script>
+
 {% stylesheet %}
   .collection-products {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: var(--grid-gap);
   }
-
-  .collection-inner {
-    display: flex;
-    gap: 2rem;
-  }
-
-  .collection-filters {
-    flex-shrink: 0;
-    padding: 1rem;
-    border: 1px solid rgb(0, 0, 0, 0.2);
-  }
-
-  .collection-filter__option {
-    font-size: 1.4rem;
-  }
-
+  
   @media (max-width: 768px) {
     .collection-products {
       grid-template-columns: 1fr 1fr;
@@ -81,13 +68,16 @@
 -%}
 
 <div
-  class="collection collection-content"
+  class="collection-content"
+  {% comment %} class="collection collection-content" {% endcomment %}
   data-section-id="{{ section.id }}"
   data-section-type="collection-grid"
 >
   <div id="CollectionAjaxContent">
     <div class="page-width">
-      <div class="grid">
+      <div class="grid collection-inner-1">
+        
+        <collection-filters class="collection-filters" data-section-id="{{ section.id }}">
         <div class="grid__item medium-up--one-fifth grid__item--sidebar">
           {%- render 'collection-grid-filters',
             collection: collection,
@@ -96,7 +86,8 @@
             collapsed: section.settings.collapsed,
             enable_color_swatches: section.settings.enable_color_swatches
           -%}
-        </div>
+          </div>
+          </collection-filters>
         <div class="grid__item medium-up--four-fifths grid__item--content">
           {%- liquid
             for block in section.blocks
