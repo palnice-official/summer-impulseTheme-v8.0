@@ -1,14 +1,50 @@
-{% comment %} {% style %}
+{% comment %}  Use this css inside shopify customizer
+  {% style %}
+  @media only screen and (min-width: 769px){
   .grid--uniform {
-    display: flex;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: center;
   }
-{% endstyle %} {% endcomment %}
+    .medium-up--one-half {
+      width: 25%;
+    }
+    .section-header {
+      margin-left: 15vw;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .collection-item__title span {
+      position: relative;
+      top: -30px;
+      border: #ffffff solid 1px !important;
+      line-height: 18px !important;
+      color: #000 !important;
+      background: white;
+      border-radius: 2px;
+      padding: 1px 5px;
+      font-size: 13px !important;
+    }
+    .grid--uniform {
+      margin-bottom: -25px;
+    }
+      .medium-up--one-half {
+      width: 50%;
+    }
+  }
+  {% endstyle %}
+{% endcomment %}
 
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
 <div class="page-width">
   <div class="grid grid--uniform{% unless section.settings.enable_gutter %} grid--no-gutters{% endunless %}">
     {%- if section.settings.title != blank -%}
+      test-{% assign my_array = "a, b, c, d" %}
+{{my_array}}
+
       <div class="section-header">
         <h2 class="section-header__title">{{ section.settings.title }}</h2>
       </div>

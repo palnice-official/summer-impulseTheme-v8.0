@@ -6427,6 +6427,7 @@ theme.recentlyViewed = {
         Collection filters
       ====================*/
       initFilters: function() {
+        console.log("Filters initialized!")
         var tags = document.querySelectorAll(selectors.tags);
   
         if (!tags.length) {
@@ -8350,3 +8351,4 @@ theme.recentlyViewed = {
   });
 
 })();
+window.collectionInstance = new Collection();

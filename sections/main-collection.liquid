@@ -25,53 +25,32 @@
           -%}
         </div>
         <div class="grid__item medium-up--four-fifths grid__item--content">
-          {%- liquid
-            for block in section.blocks
-              case block.type
-              when 'product_grid'
-                assign paginate_by = block.settings.per_row | times: block.settings.rows_per_page
-              endcase
-            endfor
-          -%}
-          {%- paginate collection.products by paginate_by -%}
-          {%- for block in section.blocks -%}
-            <div {{ block.shopify_attributes }} {%- if block.type == 'product-grid' -%}data-scroll-to{%- endif -%}>
-              {%- case block.type -%}
-              {%- when 'collection_description' -%}
-                {%- if collection.description != blank and current_filter_size == 0 -%}
-                  <div class="rte collection__description">
-                    {{ collection.description }}
-                  </div>
-                {%- endif -%}
-              {%- when 'subcollections' -%}
-                {%- if paginate.current_page == 1 and current_filter_size == 0 -%}
-                  {%- render 'subcollections', per_row: block.settings.subcollections_per_row -%}
-                {%- endif -%}
-              {%- when 'product_grid' -%}
-                <div data-scroll-to>
+       
+              {%- liquid
+                for block in section.blocks
+                  case block.type
+                  when 'product_grid'
+                    assign paginate_by = block.settings.per_row | times: block.settings.rows_per_page
+                  endcase
+                endfor
+              -%}
+              {%- paginate collection.products by paginate_by -%}
+                <div id="CollectionProductGrid" data-scroll-to>
                   {% render 'collection-grid',
                     collection: collection,
-                    items: collection.products,
-                    enable_sidebar: section.settings.enable_sidebar,
-                    filter_style: section.settings.filter_style,
-                    enable_sort: section.settings.enable_sort,
-                    enable_collection_count: block.settings.enable_collection_count,
-                    per_row: block.settings.per_row,
-                    mobile_flush_grid: block.settings.mobile_flush_grid,
-                    quick_shop_enable: settings.quick_shop_enable
+                    items: collection.products
                   %}
-                  {%- if paginate.pages > 1 -%}
-                    {%- render 'pagination', paginate: paginate -%}
-                  {%- endif -%}
+                  {% if paginate.next %}
+                    <div id="InfiniteScrollPagination" data-next-url="{{paginate.next.url}}">
+                      <span class="infinite-scroll-spinner" style="display:inline-block;width:32px;height:32px;vertical-align:middle;">
+                        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none"><circle cx="16" cy="16" r="14" stroke="#999" stroke-width="4" opacity="0.2"/><path d="M30 16c0-7.732-6.268-14-14-14" stroke="#999" stroke-width="4" stroke-linecap="round"><animateTransform attributeName="transform" type="rotate" from="0 16 16" to="360 16 16" dur="0.8s" repeatCount="indefinite"/></path></svg>
+                      </span>
+                    </div>
+                  {% endif %}
                 </div>
-              {%- endcase -%}
-            </div>
-          {%- endfor -%}
-
-          {%- endpaginate -%}
+              {%- endpaginate -%}
         </div>
       </div>
-    </div>
   </div>
 </div>
 
@@ -85,6 +64,128 @@
   .grid__item--sidebar { position: static; overflow: hidden; }
 {% endstyle %}
 {%- endif -%}
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  let loading = false;
+  let currentPage = parseInt(new URLSearchParams(window.location.search).get('page')) || 1;
+
+  const productGrid = document.querySelector("#CollectionProductGrid");
+  if (!productGrid) return;
+
+  // Remove default pagination links if present
+  document.querySelectorAll('.pagination, .pagination-wrapper').forEach(el => el.remove());
+
+  // Helper: get current filter/sort params
+  function getFilterParams() {
+    const params = new URLSearchParams(window.location.search);
+    params.delete('page'); // We'll set page manually
+    return params.toString();
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        loadMoreProducts();
+      }
+    });
+  });
+
+
+  async function loadMoreProducts() {
+    console.log('[InfiniteScroll] loadMoreProducts called');
+    if (loading) return;
+    loading = true;
+
+    const paginationDiv = document.querySelector("#InfiniteScrollPagination");
+    if (!paginationDiv) { console.log('[InfiniteScroll] No paginationDiv'); return; }
+
+    const nextUrl = paginationDiv.getAttribute("data-next-url");
+    if (!nextUrl) { console.log('[InfiniteScroll] No nextUrl'); return; }
+
+    // Get next page number from nextUrl
+    const nextPageMatch = nextUrl.match(/page=(\d+)/);
+    if (nextPageMatch) {
+      currentPage = parseInt(nextPageMatch[1]);
+    } else {
+      currentPage++;
+    }
+
+    // Build the Section Rendering API URL, including filters/sorts
+    const collectionHandle = window.location.pathname.split("/collections/")[1]?.split("/")[0];
+    const sectionId = "main-collection";
+    if (!collectionHandle) { console.log('[InfiniteScroll] No collectionHandle'); return; }
+    let url = `${window.Shopify.routes.root}collections/${collectionHandle}?section_id=${sectionId}&page=${currentPage}`;
+    const filterParams = getFilterParams();
+    if (filterParams) url += `&${filterParams}`;
+
+    try {
+      const response = await fetch(url);
+      const html = await response.text();
+      console.log('[InfiniteScroll] AJAX HTML:', html);
+      const doc = new DOMParser().parseFromString(html, "text/html");
+
+      // Extract new product items only (fix: select #CollectionProductGrid first, then .grid--uniform inside it)
+      const newProductGrid = doc.querySelector('#CollectionProductGrid');
+      const newGrid = newProductGrid ? newProductGrid.querySelector('.grid--uniform') : null;
+      const currentGrid = productGrid.querySelector('.grid--uniform');
+      console.log('[InfiniteScroll] newProductGrid:', newProductGrid);
+      console.log('[InfiniteScroll] newGrid:', newGrid);
+      console.log('[InfiniteScroll] currentGrid:', currentGrid);
+      if (newGrid && currentGrid) {
+        // Append each new product item as HTML string
+        Array.from(newGrid.children).forEach(item => {
+          currentGrid.insertAdjacentHTML('beforeend', item.outerHTML);
+        });
+        console.log('[InfiniteScroll] Appended new product items:', newGrid.children.length);
+      } else {
+        console.log('[InfiniteScroll] Could not find newGrid or currentGrid');
+      }
+
+      // Extract next pagination
+      const newPagination = doc.querySelector("#InfiniteScrollPagination");
+
+      // Remove old pagination and add new if exists
+      paginationDiv.remove();
+      if (newPagination) {
+        productGrid.insertAdjacentElement("afterend", newPagination);
+        observer.observe(newPagination);
+      }
+
+      // Re-initialize images / theme JS
+      if (window.lazySizes) lazySizes.loader.checkElems();
+      if (window.theme && typeof theme.init === "function") theme.init();
+      productGrid.querySelectorAll("image-element img").forEach(img => {
+        img.style.opacity = 1;
+      });
+
+      // Update URL for SEO/history
+      if (nextUrl) {
+        window.history.pushState(null, '', nextUrl);
+      }
+
+    } catch (err) {
+      console.error("Infinite scroll error:", err);
+    }
+
+    loading = false;
+  }
+
+  // Start observing
+  const paginationDiv = document.querySelector("#InfiniteScrollPagination");
+  if (paginationDiv) observer.observe(paginationDiv);
+
+  // Listen for filter/sort changes and reset infinite scroll
+  document.body.addEventListener('change', function(e) {
+    if (e.target.closest('.filter, .sort, .collection-grid-filters')) {
+      // On filter/sort, reload page (Shopify default behavior)
+      // Optionally, you can implement AJAX filtering here for a full AJAX experience
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  });
+});
+</script>
 
 <script type="application/ld+json">
 {

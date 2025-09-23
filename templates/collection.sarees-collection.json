@@ -56,13 +56,6 @@
         "enable_sort": true
       }
     },
-    "pagefly_section_TryKzr": {
-      "type": "pagefly-section",
-      "disabled": true,
-      "settings": {
-        "section_id": "pf-926eb272"
-      }
-    },
     "testimonial_carousel_JCYdni": {
       "type": "testimonial-carousel",
       "blocks": {
@@ -443,7 +436,6 @@
   "order": [
     "collection-header",
     "main-collection",
-    "pagefly_section_TryKzr",
     "testimonial_carousel_JCYdni",
     "0829d804-3b0c-4ec0-8786-ae427fd7b2eb",
     "faq_kQjBcJ",

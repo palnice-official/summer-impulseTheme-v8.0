@@ -47,30 +47,31 @@
     justify-content: center;
     margin-top: 2rem;
     gap: 1rem;
+  }
 
-    .pagination__page,
-    .pagination__next,
-    .pagination__prev {
-      display: flex;
-      align-items: center;
-    }
+  .pagination__page,
+  .pagination__next,
+  .pagination__prev {
+    display: flex;
+    align-items: center;
+  }
 
-    .pagination__page {
-      background-color: rgb(255, 255, 255);
-      border-radius: 0.5rem;
-      border: 1px solid rgb(0, 0, 0, 0.05);
-    }
+  .pagination__page {
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    border: 1px solid rgb(0, 0, 0, 0.05);
+  }
 
-    .pagination__page--current {
-      background-color: rgb(0, 0, 0, 0.05) !important;
-    }
+  .pagination__page--current {
+    background-color: rgb(0, 0, 0, 0.05) !important;
+  }
 
-    .pagination__page.current,
-    .pagination__page {
-      padding: 0.5rem 1rem;
-    }
+  .pagination__page.current,
+  .pagination__page {
+    padding: 0.5rem 1rem;
   }
 {% endstylesheet %}
+
 {%- liquid
   assign current_filter_size = 0
 
@@ -80,7 +81,7 @@
 -%}
 
 <div
-  class="collection"
+  class="collection collection-content"
   data-section-id="{{ section.id }}"
   data-section-type="collection-grid"
 >

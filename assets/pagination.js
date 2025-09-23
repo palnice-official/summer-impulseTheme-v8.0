@@ -4,14 +4,17 @@ class PaginationComponent extends HTMLElement {
   }
 
   get sectionId() {
+    console.log("section-id",this.getAttribute("data-section-id"));
     return this.getAttribute("data-section-id");
   }
 
   get target() {
+    console.log('target > ',this.getAttribute("data-target"));
     return this.getAttribute("data-target");
   }
 
   connectedCallback() {
+    // console.log("connectedCallback >>", this);
     this.links = this.querySelectorAll("a");
     this.handlePaginationButton = this.handlePaginationButton.bind(this);
 
@@ -21,6 +24,7 @@ class PaginationComponent extends HTMLElement {
   }
 
   disconnectedCallback() {
+    // console.log("disconnectedCallback >>", this);
     this.links.forEach((link) => {
       link.removeEventListener("click", this.handlePaginationButton);
     });
@@ -34,6 +38,8 @@ class PaginationComponent extends HTMLElement {
     fetch(url.toString())
       .then((response) => response.text())
       .then((html) => {
+        // console.log("Fetched HTML:", html);
+        // console.log("Target Selector:", this.target);
         const tempDiv = document.createElement("div");
         tempDiv.innerHTML = html;
         document.querySelector(this.target).innerHTML = tempDiv.querySelector(
@@ -42,8 +48,39 @@ class PaginationComponent extends HTMLElement {
 
         url.searchParams.delete("section_id");
         window.history.pushState({}, "", url.toString());
+
+        document.querySelectorAll("image-element img").forEach(img => {
+        img.style.opacity = 1;
       });
+
+      window.scrollTo({
+        top: 0,
+        behavior: "instant"
+      })
+      });
+
+if (theme && typeof theme.Collection === "function") {
+  try {
+    const container = document.querySelector(this.target);
+    if (container) {
+      const newCollection = new theme.Collection(container);
+      if (typeof newCollection.initFilters === "function") {
+        newCollection.initFilters();
+        console.log("Pagination: Collection filters reinitialized");
+      } else if (typeof newCollection.init === "function") {
+        newCollection.init();
+        console.log("Pagination: Collection fully reinitialized");
+      }
+    }
+  } catch (err) {
+    console.error("Pagination: error reinitializing theme.Collection", err);
   }
+}
+
+
+     
+  }
+  
 }
 
 customElements.define("pagination-component", PaginationComponent);

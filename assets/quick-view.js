@@ -5,7 +5,7 @@ class QuickView extends HTMLElement {
 
   connectedCallback() {
     this.content = this.querySelector(".quick-view__content");
-    this.openButtons = document.querySelectorAll("[data-quick-view]");
+    this.openButtons = this.parentElement.querySelectorAll("[data-quick-view]");
     this.closeButton = this.querySelector("[data-close]");
     this.handleClick = this.handleClick.bind(this);
     this.closeDrawer = this.closeDrawer.bind(this);
