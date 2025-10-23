@@ -12,9 +12,15 @@
     "main": {
       "type": "main-page",
       "settings": {}
+    },
+    "custom_wishlist_tpUHwB": {
+      "type": "custom-wishlist",
+      "name": "custom whislist page",
+      "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_wishlist_tpUHwB"
   ]
 }
