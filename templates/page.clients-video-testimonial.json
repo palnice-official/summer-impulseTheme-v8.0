@@ -44,15 +44,6 @@
         "divider": false
       }
     },
-    "pagefly_section_NkaCpa": {
-      "type": "pagefly-section",
-      "custom_css": [
-        "h3{font-size: medium}"
-      ],
-      "settings": {
-        "section_id": "pf-746f4766"
-      }
-    },
     "rich_text_MjUyE4": {
       "type": "rich-text",
       "blocks": {
@@ -77,7 +68,6 @@
   "order": [
     "main",
     "rich_text_jwmrCK",
-    "pagefly_section_NkaCpa",
     "rich_text_MjUyE4"
   ]
 }

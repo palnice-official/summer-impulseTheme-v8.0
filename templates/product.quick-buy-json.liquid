@@ -1,0 +1,19 @@
+{%- comment -%}
+  ============================================================================
+  File: product.quick-buy-json.liquid
+  ----------------------------------------------------------------------------
+  Description:
+  This template serves as a data endpoint for the Quick Buy modal.
+  It renders the `quick-buy-product-form` snippet, captures its HTML output,
+  and returns it as a JSON object. The `layout none` tag prevents the
+  theme's header and footer from being included in the response.
+  ============================================================================
+{%- endcomment -%}
+{%- layout none -%}
+{%- capture product_form_html -%}
+  {%- render 'quick-buy-product-form', product: product -%}
+{%- endcapture -%}
+
+{
+  "html": {{ product_form_html | json }}
+}

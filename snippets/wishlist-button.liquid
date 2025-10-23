@@ -1,0 +1,15 @@
+<button
+class = "wishlist-button"
+data-variant-id = "{{product.selected_or_first_available_variant.id}}"
+data-product-json="{
+ 'id':'{{product.id}}',
+ 'handel':'{{product.handle}}',
+ 'title':'{{product.title}}',
+ 'variant_id':'{{product.selected_or_first_available_variant.id}}',
+ 'price':'{{product.price}}',
+ 'compare_at_price':'{{product.compare_at_price}}',
+ 'image':'{{product.featured_image |  image_url: 300 }}'
+}"
+>
+    <span class="wishlist-heart">❤️</span>
+</button>

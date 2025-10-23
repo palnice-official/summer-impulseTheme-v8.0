@@ -176,12 +176,6 @@
         "max_width": true
       }
     },
-    "pagefly_section_j8BC7Y": {
-      "type": "pagefly-section",
-      "settings": {
-        "section_id": "pf-926eb272"
-      }
-    },
     "background-image-text": {
       "type": "background-image-text",
       "settings": {
@@ -211,7 +205,6 @@
     "product-recommendations",
     "recently-viewed",
     "sub",
-    "pagefly_section_j8BC7Y",
     "background-image-text",
     "collection-return"
   ]

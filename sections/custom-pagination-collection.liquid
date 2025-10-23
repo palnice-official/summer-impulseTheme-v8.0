@@ -7,7 +7,22 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: var(--grid-gap);
   }
-  
+
+  .collection-inner {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .collection-filters {
+    flex-shrink: 0;
+    padding: 1rem;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+  }
+
+  .collection-filter__option {
+    font-size: 1.4rem;
+  }
+
   @media (max-width: 768px) {
     .collection-products {
       grid-template-columns: 1fr 1fr;
@@ -34,28 +49,28 @@
     justify-content: center;
     margin-top: 2rem;
     gap: 1rem;
-  }
 
-  .pagination__page,
-  .pagination__next,
-  .pagination__prev {
-    display: flex;
-    align-items: center;
-  }
+    .pagination__page,
+    .pagination__next,
+    .pagination__prev {
+      display: flex;
+      align-items: center;
+    }
 
-  .pagination__page {
-    background-color: rgb(255, 255, 255);
-    border-radius: 0.5rem;
-    border: 1px solid rgb(0, 0, 0, 0.05);
-  }
+    .pagination__page {
+      background-color: rgb(255, 255, 255);
+      border-radius: 0.5rem;
+      border: 1px solid rgb(0, 0, 0, 0.05);
+    }
 
-  .pagination__page--current {
-    background-color: rgb(0, 0, 0, 0.05) !important;
-  }
+    .pagination__page--current {
+      background-color: rgb(0, 0, 0, 0.05) !important;
+    }
 
-  .pagination__page.current,
-  .pagination__page {
-    padding: 0.5rem 1rem;
+    .pagination__page.current,
+    .pagination__page {
+      padding: 0.5rem 1rem;
+    }
   }
 {% endstylesheet %}
 
@@ -76,18 +91,17 @@
   <div id="CollectionAjaxContent">
     <div class="page-width">
       <div class="grid collection-inner-1">
-        
         <collection-filters class="collection-filters" data-section-id="{{ section.id }}">
-        <div class="grid__item medium-up--one-fifth grid__item--sidebar">
-          {%- render 'collection-grid-filters',
-            collection: collection,
-            enable_sidebar: section.settings.enable_sidebar,
-            filter_style: section.settings.filter_style,
-            collapsed: section.settings.collapsed,
-            enable_color_swatches: section.settings.enable_color_swatches
-          -%}
+          <div class="grid__item medium-up--one-fifth grid__item--sidebar">
+            {%- render 'collection-grid-filters',
+              collection: collection,
+              enable_sidebar: section.settings.enable_sidebar,
+              filter_style: section.settings.filter_style,
+              collapsed: section.settings.collapsed,
+              enable_color_swatches: section.settings.enable_color_swatches
+            -%}
           </div>
-          </collection-filters>
+        </collection-filters>
         <div class="grid__item medium-up--four-fifths grid__item--content">
           {%- liquid
             for block in section.blocks
@@ -130,9 +144,9 @@
                         quick_shop_enable: settings.quick_shop_enable
                       %}
                       {%- if paginate.pages > 1 -%}
-                        {% comment %} {%- render 'pagination', paginate: paginate -%} {% endcomment %}
                         <pagination-component data-section-id="{{ section.id }}" data-target=".collection">
-                          <div class="collection-products__pagination">
+                          {%- render 'pagination', paginate: paginate -%}
+                          {% comment %} <div id="pagination-links" class="collection-products__pagination">
                             {%- if paginate.previous -%}
                               <a href="{{ paginate.previous.url }}" class="pagination__prev">Previous</a>
                             {%- endif -%}
@@ -148,7 +162,7 @@
                             {%- if paginate.next -%}
                               <a href="{{ paginate.next.url }}" class="pagination__next">Next</a>
                             {%- endif -%}
-                          </div>
+                          </div> {% endcomment %}
                         </pagination-component>
                       {%- endif -%}
                     </div>

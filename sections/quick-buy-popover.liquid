@@ -1,0 +1,246 @@
+{% comment %}
+  by chatgpt
+  Quick Buy Popover Section
+  Reusable modal for product quick view (used on collection pages)
+{% endcomment %}
+<script src="{{ 'quick-view-init.js' | asset_url }}" defer></script>
+{% stylesheet %}
+  quick-buy-popover {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    overflow-y: auto;
+  }
+  quick-buy-popover.active {
+    display: block;
+  }
+  .quick-buy-popover__content {
+    background: #fff;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 6px;
+  }
+  .popover__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+  }
+  .trust-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+  }
+  .trust-icons .icon-item {
+    text-align: center;
+    font-size: 14px;
+  }
+{% endstylesheet %}
+<quick-buy-popover
+  id="quick-buy-popover-{{ section.id }}-{{ product.id }}"
+  class="quick-buy-popover"
+>
+  <span class="popover__overlay" data-action="close">X</span>
+  <div class="quick-buy-popover__content">
+    <div data-product-blocks>
+      {% assign unique_section_id = section.id | append: '-' | append: product.id %}
+      {%- capture form_id -%}AddToCartForm-{{unique_section_id}}{%- endcapture -%}
+      {% assign current_variant = product.selected_or_first_available_variant %}
+      <div class="grid__item medium-up--one-half product-single__sticky">
+            {%- render 'product-images',
+              section_id: unique_section_id,
+              product: product,
+              isModal: false,
+              image_position: 'left',
+              product_zoom_enable: false,
+              product_zoom_size: false,
+              product_image_size: 'small',
+              thumbnail_arrows: true,
+              thumbnail_position: 'beside',
+              video_looping: true,
+              video_style: 'muted',
+              context: 'main-product',
+              sizes: '(min-width: 1000px) 50vw, 100vw',
+              sizeVariable: '50vw',
+              fallback: '600x600',
+              mobile_layout: 'partial'
+            -%}
+          </div>
+      {% comment %} price {% endcomment %}
+      <div class="product-block product-block--price">
+        {%- assign hide_sale_price = true -%}
+        {%- if product.compare_at_price_max > product.price -%}
+          {%- if current_variant.compare_at_price > current_variant.price -%}
+            {%- assign hide_sale_price = false -%}
+          {%- endif -%}
+          <span
+            data-a11y-price
+            class="visually-hidden"
+            aria-hidden="{{ hide_sale_price }}"
+          >
+            {{ 'products.general.regular_price' | t }}
+          </span>
+          <span data-product-price-wrap class="{% if hide_sale_price %} hide{% endif %}">
+            <span data-compare-price class="product__price product__price--compare">
+              {%- if current_variant.compare_at_price > current_variant.price -%}
+                {{ current_variant.compare_at_price | money }}
+              {%- endif -%}
+            </span>
+          </span>
+          <span data-compare-price-a11y class="visually-hidden">
+            {{- 'products.general.sale_price' | t -}}
+          </span>
+        {%- else -%}
+          <span data-a11y-price class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
+        {%- endif -%}
+
+        <span
+          data-product-price
+          class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}"
+        >
+          {%- unless product.empty? -%}
+            {{ current_variant.price | money }}
+          {%- else -%}
+            {{ 1999 | money }}
+          {%- endunless -%}
+        </span>
+
+        {%- if settings.product_save_amount -%}
+          {%- if settings.product_save_type == 'dollar' -%}
+            {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | money }}{%- endcapture -%}
+          {%- else -%}
+            {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | times: 100.0 | divided_by: current_variant.compare_at_price | round }}%{%- endcapture -%}
+          {%- endif -%}
+          <span data-save-price class="product__price-savings{% if hide_sale_price %} hide{% endif %}">
+            {%- unless hide_sale_price -%}
+              {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
+            {%- endunless -%}
+          </span>
+        {%- endif -%}
+
+        <div
+          data-unit-price-wrapper
+          class="product__unit-price product__unit-price--spacing {% unless current_variant.unit_price_measurement %} hide{% endunless %}"
+        >
+          {%- capture unit_price_base_unit -%}
+                          <span data-unit-base>
+                            {%- if current_variant.unit_price_measurement -%}
+                              {%- if current_variant.unit_price_measurement.reference_value != 1 -%}
+                                {{ current_variant.unit_price_measurement.reference_value }}
+                              {%- endif -%}
+                              {{ current_variant.unit_price_measurement.reference_unit }}
+                            {%- endif -%}
+                          </span>
+          {%- endcapture -%}
+
+          <span data-unit-price>{{ current_variant.unit_price | money }}</span>/{{ unit_price_base_unit }}
+        </div>
+
+        {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+          <div class="product__policies rte small--text-center">
+            {%- if shop.taxes_included -%}
+              {{ 'products.product.include_taxes' | t }}
+            {%- endif -%}
+            {%- if shop.shipping_policy.body != blank -%}
+              {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      </div>
+      {% render 'swatchs' %}
+      {% comment %} variant_picker {% endcomment %}
+      <div
+        class="product-block"
+        {% if true %}
+          data-dynamic-variants-enabled
+        {% endif %}
+        {% comment %} {{ block.shopify_attributes }} {% endcomment %}
+      >
+        {%- unless product.has_only_default_variant -%}
+          {%- for option in product.options_with_values -%}
+            {%- if 'button' == 'button' -%}
+              {%- render 'variant-button',
+                product: product,
+                form_id: form_id,
+                section_id: unique_section_id,
+                option: option,
+                forloop: forloop,
+                variant_labels: false,
+                color_option_index: forloop.index0,
+                connect_to_sizechart: false,
+                sizechart_index: false
+              -%}
+            {%- else -%}
+              {%- render 'variant-dropdown',
+                product: product,
+                form_id: form_id,
+                section_id: unique_section_id,
+                option: option,
+                forloop: forloop,
+                variant_labels: false
+              -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endunless -%}
+      </div>
+      {% comment %}---------------------------------------------------------------------------------{% endcomment %}
+      {% assign total_inventory = 0 %}
+      {% for variant in product.variants %}
+        {% assign total_inventory = total_inventory | plus: variant.inventory_quantity %}
+      {% endfor %}
+      {% if product.tags contains 'limited-edition' %}
+        {% if total_inventory > 0 %}
+          {% render 'shipping-info', product: product %}
+        {% endif %}
+      {% else %}
+        {% render 'shipping-info', product: product %}
+      {% endif %}
+      {% comment %}------------------------------------------------------------------------------{% endcomment %}
+
+      {% comment %} buy_buttons {% endcomment %}
+      <div class="product-block">
+        {%- unless product.empty? -%}
+          <div class="product-block">
+            {%- render 'product-form',
+              form_id: form_id,
+              product: product,
+              show_dynamic_checkout: false,
+              current_variant: current_variant
+            -%}
+          </div>
+        {%- endunless -%}
+        <div
+          data-store-availability-holder
+          data-product-name="{{ product.title | escape }}"
+          data-base-url="{{ shop.url }}{{ routes.root_url }}"
+        ></div>
+      </div>
+    </div>
+  </div>
+</quick-buy-popover>
+
+{% schema %}
+{
+  "name": "Quick Buy Popover",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "icon",
+      "name": "Trust Icon",
+      "settings": [
+        { "type": "image_picker", "id": "icon_image", "label": "Icon" },
+        { "type": "text", "id": "icon_text", "label": "Text", "default": "Free Delivery" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Quick Buy Popover" }]
+}
+{% endschema %}

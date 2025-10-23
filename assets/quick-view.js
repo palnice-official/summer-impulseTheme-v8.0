@@ -10,14 +10,14 @@ class QuickView extends HTMLElement {
     this.handleClick = this.handleClick.bind(this);
     this.closeDrawer = this.closeDrawer.bind(this);
 
-    this.openButtons.forEach(button => {
+    this.openButtons.forEach((button) => {
       button.addEventListener("click", this.handleClick);
     });
     this.closeButton.addEventListener("click", this.closeDrawer);
   }
 
   disconnectedCallback() {
-    this.openButtons.forEach(button => {
+    this.openButtons.forEach((button) => {
       button.removeEventListener("click", this.handleClick);
     });
     this.closeButton.removeEventListener("click", this.closeDrawer);
@@ -26,16 +26,16 @@ class QuickView extends HTMLElement {
   handleClick(event) {
     const button = event.currentTarget;
     const productHandle = button.dataset.productHandle;
-
-    fetch(`${window.Shopify.routes.root}products/${productHandle}?section_id=product`)
-      .then(response => response.text())
-      .then(data => {
+    fetch(
+      // `${window.Shopify.routes.root}products/${productHandle}?section_id=product-quickview`
+      `${window.Shopify.routes.root}products/${productHandle}?section_id=quick-buy-product-form`
+    )
+      .then((response) => response.text())
+      .then((data) => {
         this.content.innerHTML = data;
-
         this.openDrawer();
       });
   }
-
   openDrawer() {
     this.setAttribute("open", "");
   }

@@ -144,8 +144,10 @@
             </div>
 
             <div data-product-blocks>
+              {% assign product_blocks = blocks | default: section.blocks %}
               {%- capture form_id -%}AddToCartForm-{{ section_id }}-{{ product.id }}{%- endcapture -%}
-              {%- for block in blocks -%}
+              {% comment %} {%- for block in blocks -%} {% endcomment %}
+              {%- for block in product_blocks -%}
                 {%- case block.type -%}
                   {%- when '@app' -%}
                     {% render block %}
@@ -376,6 +378,9 @@
                         ></div>
                       {%- endif -%}
                     </div>
+
+                    {% render 'wishlist-button' %}
+
                   {%- when 'sales_point' -%}
                     {%- unless block.settings.text == blank -%}
                       <div class="product-block product-block--sales-point" {{ block.shopify_attributes }}>

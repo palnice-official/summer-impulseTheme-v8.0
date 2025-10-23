@@ -72,13 +72,6 @@
         "product_video_style": "muted"
       }
     },
-    "pagefly_section_j8BC7Y": {
-      "type": "pagefly-section",
-      "disabled": true,
-      "settings": {
-        "section_id": "pf-926eb272"
-      }
-    },
     "featured_collection_RGJffT": {
       "type": "featured-collection",
       "custom_css": [
@@ -276,7 +269,6 @@
   },
   "order": [
     "main",
-    "pagefly_section_j8BC7Y",
     "featured_collection_RGJffT",
     "featured_collection_wemx7h",
     "product-recommendations",

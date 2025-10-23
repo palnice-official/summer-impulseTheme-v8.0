@@ -15,13 +15,23 @@ class PaginationComponent extends HTMLElement {
 
   connectedCallback() {
     // console.log("connectedCallback >>", this);
-    this.links = this.querySelectorAll("a");
+    // this.links = this.querySelectorAll("a");
     this.handlePaginationButton = this.handlePaginationButton.bind(this);
+    // this.links.forEach((link) => {
+    //   link.addEventListener("click", this.handlePaginationButton);
+    // });
+    this.trainWorkers();
+  }
 
+  trainWorkers(){
+    this.links = this.querySelectorAll("a");
     this.links.forEach((link) => {
+      link.removeEventListener("click", this.handlePaginationButton);
       link.addEventListener("click", this.handlePaginationButton);
     });
   }
+
+
 
   disconnectedCallback() {
     // console.log("disconnectedCallback >>", this);
@@ -45,6 +55,14 @@ class PaginationComponent extends HTMLElement {
         document.querySelector(this.target).innerHTML = tempDiv.querySelector(
           this.target
         ).innerHTML;
+
+        const newPagination = tempDiv.querySelector("#pagination-links");
+        const currentPagination = document.querySelector("#pagination-links");
+        if (newPagination && currentPagination) {
+          currentPagination.innerHTML = newPagination.innerHTML;
+        }
+
+        this.trainWorkers();
 
         url.searchParams.delete("section_id");
         window.history.pushState({}, "", url.toString());
