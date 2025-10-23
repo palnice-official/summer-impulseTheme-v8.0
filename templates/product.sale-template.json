@@ -271,13 +271,6 @@
         "padding-bottom": 60
       }
     },
-    "pagefly_section_hF4r9m": {
-      "type": "pagefly-section",
-      "disabled": true,
-      "settings": {
-        "section_id": "pf-926eb272"
-      }
-    },
     "background-image-text": {
       "type": "background-image-text",
       "settings": {
@@ -323,7 +316,6 @@
     "recently-viewed",
     "product-recommendations",
     "testimonial_carousel_zQH36q",
-    "pagefly_section_hF4r9m",
     "background-image-text",
     "collection-return",
     "sub"

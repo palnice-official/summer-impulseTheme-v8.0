@@ -7,10 +7,12 @@
 
 <script src="{{ 'pagination.js' | asset_url }}" defer></script>
 <script src="{{ 'collection-filters.js' | asset_url }}" defer></script>
+<script src="{{ 'quick-view-init.js' | asset_url }}" defer></script>
 
 {% stylesheet %}
   .collection-products {
     display: grid;
+
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: var(--grid-gap);
   }
@@ -82,40 +84,42 @@
 {% endstylesheet %}
 
 <div class="collection">
-  <h1>{{ collection.title }}</h1>
+  {% comment %} <h1>{{ collection.title }}</h1> {% endcomment %}
 
   <div class="collection-inner">
-    <collection-filters class="collection-filters" data-section-id="{{ section.id }}">
-      <div class="collection-filters__heading">
-        <h2>Filters</h2>
-      </div>
+    {% comment %}
+      <collection-filters class="collection-filters" data-section-id="{{ section.id }}">
+        <div class="collection-filters__heading">
+          <h2>Filters</h2>
+        </div>
 
-      <div class="collection-filters__content">
-        {% for filter in collection.filters %}
-          <div class="collection-filter">
-            <h3>{{ filter.label }}</h3>
-            <div class="collection-filter__options">
-              {% for option in filter.values %}
-                <div class="collection-filter__option">
-                  <input
-                    type="checkbox"
-                    {% if option.active %}
-                      checked
-                    {% endif %}
-                    id="{{ filter.label | handle }}-{{ option.value | handle }}"
-                    name="{{ filter.label | handle }}"
-                    value="{{ option.value | handle }}"
-                    data-add-url="{{ option.url_to_add }}"
-                    data-remove-url="{{ option.url_to_remove }}"
-                  >
-                  <label for="{{ filter.label | handle }}-{{ option.value | handle }}">{{ option.value }}</label>
-                </div>
-              {% endfor %}
+        <div class="collection-filters__content">
+          {% for filter in collection.filters %}
+            <div class="collection-filter">
+              <h3>{{ filter.label }}</h3>
+              <div class="collection-filter__options">
+                {% for option in filter.values %}
+                  <div class="collection-filter__option">
+                    <input
+                      type="checkbox"
+                      {% if option.active %}
+                        checked
+                      {% endif %}
+                      id="{{ filter.label | handle }}-{{ option.value | handle }}"
+                      name="{{ filter.label | handle }}"
+                      value="{{ option.value | handle }}"
+                      data-add-url="{{ option.url_to_add }}"
+                      data-remove-url="{{ option.url_to_remove }}"
+                    >
+                    <label for="{{ filter.label | handle }}-{{ option.value | handle }}">{{ option.value }}</label>
+                  </div>
+                {% endfor %}
+              </div>
             </div>
-          </div>
-        {% endfor %}
-      </div>
-    </collection-filters>
+          {% endfor %}
+        </div>
+      </collection-filters>
+    {% endcomment %}
 
     <div class="collection-grid">
       {% paginate collection.products by section.settings.pagination_limit %}
@@ -130,8 +134,20 @@
                 <p>{{ product.price | money }}</p>
               </div>
               <div class="collection-product__quick-view">
-                <button data-quick-view data-product-handle="{{ product.handle }}" class="button">Quick View</button>
-                {% render 'quick-view' %}
+                {% comment %}
+                  <button data-quick-view data-product-handle="{{ product.handle }}" class="button">Quick View</button>
+                  {% render 'quick-view' %}
+                {% endcomment %}
+               
+                  <button
+                    type="button"
+                    class="button quick-view-trigger"
+                    data-product-handle="{{ product.handle }}"
+                    data-product="{{ product.id}}"
+                  >
+                    Quick View-test
+                    {% comment %} <div id="QuickViewContainer"></div> {% endcomment %}
+                  </button>
               </div>
             </div>
           {% endfor %}
@@ -146,7 +162,7 @@
 
               {%- for part in paginate.parts -%}
                 {%- if part.is_link -%}
-                  <a href="{{ part.url }}" class="pagination__page">{{ part.title }}</a>
+                  <a href="{{ part.url }}" class="pagination__page ">{{ part.title }}</a>
                 {%- else -%}
                   <span class="pagination__page pagination__page--current">{{ part.title }}</span>
                 {%- endif -%}

@@ -1,0 +1,957 @@
+{% comment %}
+  This section is used in the product template to render product page with
+  media, content, and add-to-cart form.
+
+  https://shopify.dev/docs/storefronts/themes/architecture/templates/product
+{% endcomment %}
+
+<script src="{{ 'variant-selector.js' | asset_url }}" defer></script>
+
+{% stylesheet %}
+  .product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    .product-image {
+      aspect-ratio: 0.6;
+      object-fit: contain;
+      border-radius: 4px;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 4px;
+    }
+
+    .product-content__variant-bubble.active {
+      border: 1px solid #000000;
+    }
+
+    .product-content__variant-bubble-image-wrapper {
+      aspect-ratio: 0.6;
+      object-fit: contain;
+      border-radius: 4px;
+      width: 75px;
+      height: 75px;
+    }
+
+    .product-content__variant-bubble-image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 4px;
+    }
+
+    .product-content {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    .product-content__variant-bubbles-inner {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  }
+{% endstylesheet %}
+
+<div class="product">
+  <div class="product-images">
+    {{ product.images.first | image_url: width: 1000 | image_tag: class: 'product-image' }}
+  </div>
+  <div class="product-content">
+    <div class="product-info">
+      <h1>{{ product.title }}</h1>
+      <p>{{ product.selected_or_first_available_variant.price | money }}</p>
+    </div>
+    {% render 'swatchs' %}
+
+    <div class="variant-inventory">
+      <p>Inventory: {{ product.selected_or_first_available_variant.inventory_quantity }}</p>
+    </div>
+
+    <product-form class="product-form">
+      {% form 'product', product %}
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+        <input type="hidden" name="quantity" min="1" value="1">
+
+        <button type="submit" class="button">Add to cart</button>
+
+        {%- if section.settings.show_payment_button -%}
+          {{ form | payment_button }}
+        {%- endif -%}
+      {% endform %}
+    </product-form>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_payment_button",
+      "label": "Show payment button",
+      "default": false
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  }
+}
+{% endschema %}
+
+<quick-buy-popover
+  id="product-template--17624967249971__main--7624135802931-popover"
+  href="/products/mulmul-lawn-printed-olisha-pink-kurta-with-mulmul-lawn-printed-olisha-pink-pant"
+  class="popover popover--quick-buy hidden-tablet-and-up"
+  open=""
+  ><span class="popover__overlay"></span
+  ><product-rerender
+    id="quick-buy-popover-product-form-quick-buy--7624135802931-template--17624968200243__main"
+    observe-form="product-form-quick-buy--7624135802931-template--17624968200243__main"
+  >
+    <header class="popover__header">
+      <div class="quick-buy-product">
+        <img
+          src="//shopmulmul.com/cdn/shop/files/125_3bc597ec-9aa3-4cd5-9e26-c734120d87b0.jpg?v=1754469762&amp;width=1520"
+          alt="Olisha Lawn Pink Kurta Set"
+          srcset="//shopmulmul.com/cdn/shop/files/125_3bc597ec-9aa3-4cd5-9e26-c734120d87b0.jpg?v=1754469762&amp;width=114 114w, //shopmulmul.com/cdn/shop/files/125_3bc597ec-9aa3-4cd5-9e26-c734120d87b0.jpg?v=1754469762&amp;width=228 228w, //shopmulmul.com/cdn/shop/files/125_3bc597ec-9aa3-4cd5-9e26-c734120d87b0.jpg?v=1754469762&amp;width=342 342w"
+          width="1520"
+          height="2048"
+          loading="lazy"
+          sizes="114px"
+          class="quick-buy-product__image"
+        >
+        <div class="quick-buy-product__info ">
+          <product-meta class="product-item-meta"
+            ><a
+              href="/products/mulmul-lawn-printed-olisha-pink-kurta-with-mulmul-lawn-printed-olisha-pink-pant"
+              class="product-item-meta__title"
+              >Olisha Lawn Pink Kurta Set</a
+            >
+
+            <div class="product-item-meta__price-list-container" role="region" aria-live="polite">
+              <div class="price-list">
+                <span class="price"> <span class="visually-hidden">Sale price</span>₹ 12,950</span>
+              </div>
+              <a
+                href="/products/mulmul-lawn-printed-olisha-pink-kurta-with-mulmul-lawn-printed-olisha-pink-pant"
+                class="link text--subdued"
+                >View details</a
+              >
+            </div>
+            <p class="product-meta__taxes-included text--small">Inclusive Of All Taxes .</p>
+          </product-meta>
+        </div>
+      </div>
+      <button type="button" class="popover__close-button tap-area tap-area--large" data-action="close" title="Close">
+        <svg focusable="false" width="14" height="14" class="icon icon--close   " viewBox="0 0 14 14">
+          <path d="M13 13L1 1M13 1L1 13" stroke="currentColor" stroke-width="2" fill="none"></path>
+        </svg>
+      </button>
+    </header>
+
+    <div class="popover__content popover__content--no-padding">
+      <div class="product-form">
+        <div data-block-type="inventory" data-block-id="inventory_QBAhjk">
+          <product-inventory
+            form-id="product-form-quick-buy--7624135802931-template--17624968200243__main"
+            class="product-form__inventory-wrapper"
+          >
+            <span class="inventory inventory--low">Only 2 units left</span>
+
+            <script type="application/json">
+             
+            </script>
+          </product-inventory>
+        </div>
+
+        <div class="new-custom-color-box">
+          <p class="othercolorproducttitle" style="margin-bottom:5px;">
+            <span class="product-form__option-name">Select Colour</span>
+          </p>
+          <div class="new-custom-color">
+            <a href="/products/mulmul-lawn-printed-olisha-denim-kurta-with-mulmul-lawn-printed-olisha-denim-pant">
+              <img src="//shopmulmul.com/cdn/shop/files/STUDIORESIZERAKHI_large.jpg?v=1753787169" style="width:70px;">
+            </a>
+          </div>
+        </div>
+
+        <variant-picker
+          data-block-type="variant-picker"
+          data-block-id="template--17624968200243__main"
+          handle="mulmul-lawn-printed-olisha-pink-kurta-with-mulmul-lawn-printed-olisha-pink-pant"
+          section-id="template--17624968200243__main"
+          form-id="product-form-quick-buy--7624135802931-template--17624968200243__main"
+          class="product-form__variants"
+        >
+          <script data-variant="" type="application/json">
+           
+          </script>
+          <div class="product-form__option-selector" data-selector-type="block">
+            <div class="product-form__option-info sizetoptop sizebottomsagelehenga sizekurta size -top size-">
+              <span class="product-form__option-name">top size:</span
+              ><span
+                id="option-template--17624968200243__main--7624135802931-1-quick-buy-value"
+                class="product-form__option-value"
+                >XS</span
+              >
+              <button
+                type="button"
+                is="toggle-button"
+                class="product-form__option-link link text--subdued hidden-phone"
+                aria-controls="product-template--17624968200243__main-7624135802931-size-chart-drawer"
+                aria-expanded="false"
+              >
+                Size chart
+              </button>
+              <button
+                type="button"
+                is="toggle-button"
+                class="product-form__option-link link text--subdued hidden-tablet-and-up"
+                aria-controls="product-template--17624968200243__main-7624135802931-size-chart-popover"
+                aria-expanded="false"
+              >
+                Size chart
+              </button>
+            </div>
+            <div class="block-swatch-list">
+              <div class="block-swatch ">
+                <input
+                  class="block-swatch__radio visually-hidden"
+                  type="radio"
+                  data-option-position="1"
+                  name="option1"
+                  form="product-form-quick-buy--7624135802931-template--17624968200243__main"
+                  id="option-template--17624968200243__main--7624135802931-1-quick-buy-1"
+                  value="3181887258675"
+                  checked="checked"
+                >
+                <label
+                  class="block-swatch__item"
+                  for="option-template--17624968200243__main--7624135802931-1-quick-buy-1"
+                  >XS</label
+                >
+              </div>
+              <div class="block-swatch ">
+                <input
+                  class="block-swatch__radio visually-hidden"
+                  type="radio"
+                  data-option-position="1"
+                  name="option1"
+                  form="product-form-quick-buy--7624135802931-template--17624968200243__main"
+                  id="option-template--17624968200243__main--7624135802931-1-quick-buy-2"
+                  value="3181887291443"
+                >
+                <label
+                  class="block-swatch__item"
+                  for="option-template--17624968200243__main--7624135802931-1-quick-buy-2"
+                  >S</label
+                >
+              </div>
+              <div class="block-swatch ">
+                <input
+                  class="block-swatch__radio visually-hidden"
+                  type="radio"
+                  data-option-position="1"
+                  name="option1"
+                  form="product-form-quick-buy--7624135802931-template--17624968200243__main"
+                  id="option-template--17624968200243__main--7624135802931-1-quick-buy-3"
+                  value="3181887324211"
+                >
+                <label
+                  class="block-swatch__item"
+                  for="option-template--17624968200243__main--7624135802931-1-quick-buy-3"
+                  >M</label
+                >
+              </div>
+              <div class="block-swatch ">
+                <input
+                  class="block-swatch__radio visually-hidden"
+                  type="radio"
+                  data-option-position="1"
+                  name="option1"
+                  form="product-form-quick-buy--7624135802931-template--17624968200243__main"
+                  id="option-template--17624968200243__main--7624135802931-1-quick-buy-4"
+                  value="3181887356979"
+                >
+                <label
+                  class="block-swatch__item"
+                  for="option-template--17624968200243__main--7624135802931-1-quick-buy-4"
+                  >L</label
+                >
+              </div>
+              <div class="block-swatch ">
+                <input
+                  class="block-swatch__radio visually-hidden"
+                  type="radio"
+                  data-option-position="1"
+                  name="option1"
+                  form="product-form-quick-buy--7624135802931-template--17624968200243__main"
+                  id="option-template--17624968200243__main--7624135802931-1-quick-buy-5"
+                  value="3181887389747"
+                >
+                <label
+                  class="block-swatch__item"
+                  for="option-template--17624968200243__main--7624135802931-1-quick-buy-5"
+                  >XL</label
+                >
+              </div>
+              <div class="block-swatch ">
+                <input
+                  class="block-swatch__radio visually-hidden"
+                  type="radio"
+                  data-option-position="1"
+                  name="option1"
+                  form="product-form-quick-buy--7624135802931-template--17624968200243__main"
+                  id="option-template--17624968200243__main--7624135802931-1-quick-buy-6"
+                  value="3181887422515"
+                >
+                <label
+                  class="block-swatch__item"
+                  for="option-template--17624968200243__main--7624135802931-1-quick-buy-6"
+                  >XXL</label
+                >
+              </div>
+              <div class="block-swatch ">
+                <input
+                  class="block-swatch__radio visually-hidden"
+                  type="radio"
+                  data-option-position="1"
+                  name="option1"
+                  form="product-form-quick-buy--7624135802931-template--17624968200243__main"
+                  id="option-template--17624968200243__main--7624135802931-1-quick-buy-7"
+                  value="3255072882739"
+                >
+                <label
+                  class="block-swatch__item"
+                  for="option-template--17624968200243__main--7624135802931-1-quick-buy-7"
+                  >3XL</label
+                >
+              </div>
+              <div class="block-swatch ">
+                <input
+                  class="block-swatch__radio visually-hidden"
+                  type="radio"
+                  data-option-position="1"
+                  name="option1"
+                  form="product-form-quick-buy--7624135802931-template--17624968200243__main"
+                  id="option-template--17624968200243__main--7624135802931-1-quick-buy-8"
+                  value="3255072915507"
+                >
+                <label
+                  class="block-swatch__item"
+                  for="option-template--17624968200243__main--7624135802931-1-quick-buy-8"
+                  >4XL</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="product-form__option-selector" data-selector-type="block">
+            <div class="product-form__option-info sizetoptop sizebottomsagelehenga sizekurta size -bottom size-">
+              <span class="product-form__option-name">bottom size:</span
+              ><span
+                id="option-template--17624968200243__main--7624135802931-2-quick-buy-value"
+                class="product-form__option-value"
+                >XS</span
+              >
+              <span style="display:none;">.</span>
+            </div>
+            <div class="block-swatch-list">
+              <div class="block-swatch ">
+                <input
+                  class="block-swatch__radio visually-hidden"
+                  type="radio"
+                  data-option-position="2"
+                  name="option2"
+                  form="product-form-quick-buy--7624135802931-template--17624968200243__main"
+                  id="option-template--17624968200243__main--7624135802931-2-quick-buy-1"
+                  value="3181887520819"
+                  checked="checked"
+                >
+                <label
+                  class="block-swatch__item"
+                  for="option-template--17624968200243__main--7624135802931-2-quick-buy-1"
+                  >XS</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="product-form__option-selector" data-selector-type="block">
+            <div class="product-form__option-info sizetoptop sizebottomsagelehenga sizekurta size -dupatta-">
+              <span class="product-form__option-name">dupatta:</span
+              ><span
+                id="option-template--17624968200243__main--7624135802931-3-quick-buy-value"
+                class="product-form__option-value"
+                >Without Dupatta</span
+              >
+              <span style="display:none;">.</span>
+            </div>
+            <div class="block-swatch-list">
+              <div class="block-swatch ">
+                <input
+                  class="block-swatch__radio visually-hidden"
+                  type="radio"
+                  data-option-position="3"
+                  name="option3"
+                  form="product-form-quick-buy--7624135802931-template--17624968200243__main"
+                  id="option-template--17624968200243__main--7624135802931-3-quick-buy-1"
+                  value="3181887815731"
+                  checked="checked"
+                >
+                <label
+                  class="block-swatch__item"
+                  for="option-template--17624968200243__main--7624135802931-3-quick-buy-1"
+                  >Without Dupatta</label
+                >
+              </div>
+              <div class="block-swatch ">
+                <input
+                  class="block-swatch__radio visually-hidden"
+                  type="radio"
+                  data-option-position="3"
+                  name="option3"
+                  form="product-form-quick-buy--7624135802931-template--17624968200243__main"
+                  id="option-template--17624968200243__main--7624135802931-3-quick-buy-2"
+                  value="3181887848499"
+                >
+                <label
+                  class="block-swatch__item"
+                  for="option-template--17624968200243__main--7624135802931-3-quick-buy-2"
+                  >Mulmul Organza Printed Olisha Pink Dupatta</label
+                >
+              </div>
+            </div>
+          </div>
+          <noscript>
+            <label class="input__block-label" for="product-select-template--17624968200243__main-7624135802931"
+              >Variant</label
+            >
+
+            <div class="select-wrapper">
+              <select
+                class="select"
+                autocomplete="off"
+                id="product-select-template--17624968200243__main-7624135802931"
+                name="id"
+                form="product-form-quick-buy--7624135802931-template--17624968200243__main"
+              >
+                <option selected="selected" value="43457206485043" data-sku="RPR2501B-1">
+                  XS / XS / Without Dupatta - ₹ 12,950
+                </option>
+                <option value="43457206517811" data-sku="RPR2501B-2">
+                  XS / XS / Mulmul Organza Printed Olisha Pink Dupatta - ₹ 16,900
+                </option>
+                
+              </select>
+              <svg focusable="false" width="12" height="8" class="icon icon--chevron   " viewBox="0 0 12 8">
+                <path fill="none" d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="2"></path>
+              </svg>
+            </div>
+          </noscript>
+        </variant-picker>
+        <div data-block-type="quantity-selector" data-block-id="quantity_selector" class="product-form__quantity">
+          <span class="product-form__quantity-label">Quantity:</span>
+
+          <quantity-selector class="quantity-selector">
+            <button type="button" class="quantity-selector__button">
+              <span class="visually-hidden">Decrease quantity</span>
+              <svg focusable="false" width="10" height="2" class="icon icon--minus-big   " viewBox="0 0 10 2">
+                <path fill="currentColor" d="M0 0h10v2H0z"></path>
+              </svg>
+            </button>
+
+            <input
+              type="number"
+              form="product-form-quick-buy--7624135802931-template--17624968200243__main"
+              is="input-number"
+              class="quantity-selector__input"
+              inputmode="numeric"
+              name="quantity"
+              autocomplete="off"
+              value="1"
+              step="1"
+              min="1"
+              aria-label="Quantity"
+            >
+
+            <button type="button" class="quantity-selector__button">
+              <span class="visually-hidden">Increase quantity</span>
+              <svg focusable="false" width="10" height="10" class="icon icon--plus-big   " viewBox="0 0 10 10">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6v4h2V6h4V4H6V0H4v4H0v2h4z" fill="currentColor"></path>
+              </svg>
+            </button>
+          </quantity-selector>
+        </div>
+        <div class="blispoint_popup">
+          <div class="custom-model-inner">
+            <div class="close-btn">×</div>
+            <div class="custom-model-wrap">
+              <div class="pop-up-content-wrap">
+                <img src="https://cdn.shopify.com/s/files/1/0088/4031/4931/files/3_652fe36f-ef5b-4a4e-beb7-a4f4acca0582.png?v=1721375415">
+              </div>
+            </div>
+          </div>
+          <div class="bg-overlay"></div>
+        </div>
+        <script id="VariantMetafieldsJSON" type="application/json">
+        
+        </script>
+
+        <div data-block-type="buy-buttons" data-block-id="buy_buttons" class="product-form__buy-buttons">
+          <form
+            method="post"
+            action="/cart/add"
+            id="product-form-quick-buy--7624135802931-template--17624968200243__main"
+            accept-charset="UTF-8"
+            class="shopify-product-form"
+            enctype="multipart/form-data"
+            is="product-form"
+          >
+            <input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
+            <div class="tooltipbox hideclasssssss">
+              <span data-product-bliss-points=""
+                >You will earn <b id="variant-price-container">12950 bliss points</b> on this purchase</span
+              >
+              <span class="tooltip Click-here" id="">?</span>
+            </div>
+
+            <input type="hidden" name="id" value="43457206485043">
+
+            <product-payment-container class="product-form__payment-container">
+              <button
+                id="AddToCart"
+                type="submit"
+                is="loader-button"
+                data-product-add-to-cart-button=""
+                data-button-content="Add to cart"
+                class="product-form__add-button button button--secondary button--full"
+              >
+                <span class="loader-button__text">Add to cart</span>
+                <span class="loader-button__loader" hidden="">
+                  <div class="spinner">
+                    <svg focusable="false" width="24" height="24" class="icon icon--spinner" viewBox="25 25 50 50">
+                      <circle cx="50" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="5"></circle>
+                    </svg>
+                  </div>
+                </span>
+              </button>
+              <div data-shopify="payment-button" class="shopify-payment-button">
+                <shopify-accelerated-checkout
+                  recommended="null"
+                  fallback="{&quot;name&quot;:&quot;buy_it_now&quot;,&quot;wallet_params&quot;:{}}"
+                  access-token="917a2002112047446dafb2aed4f4dabb"
+                  buyer-country="IN"
+                  buyer-locale="en"
+                  buyer-currency="INR"
+                  variant-params="[{&quot;id&quot;:43457206485043,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457206517811,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457206550579,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457206583347,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457206616115,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457206648883,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457206681651,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457206714419,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457206747187,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457206779955,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538199642163,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538199674931,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457206878259,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457206911027,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457206943795,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457206976563,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207009331,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207042099,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207074867,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207107635,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207140403,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207173171,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538199707699,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538199740467,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534280261683,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534280294451,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207337011,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207369779,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207402547,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207435315,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207468083,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207500851,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207533619,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207566387,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207599155,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207631923,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538199773235,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538199806003,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534280392755,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534280425523,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207795763,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207828531,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207861299,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207894067,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207926835,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207959603,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457207992371,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457208025139,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538199838771,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538199871539,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534280523827,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534280556595,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534280589363,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534280622131,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457208254515,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457208287283,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457208320051,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457208352819,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457208385587,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43457208418355,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538199904307,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538199937075,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534280720435,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534280753203,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534280785971,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534280818739,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538199969843,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538200002611,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538200035379,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538200068147,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538200100915,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538200133683,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538200166451,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538200199219,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538200231987,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538200264755,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538200297523,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538200330291,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534281244723,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534281277491,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534281310259,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534281343027,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538200363059,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538200395827,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534281441331,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534281474099,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534281506867,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534281539635,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534281572403,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534281605171,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534281637939,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534281670707,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538200428595,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43538200461363,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534281769011,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534281801779,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534281834547,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534281867315,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534281900083,&quot;requiresShipping&quot;:true},{&quot;id&quot;:43534281932851,&quot;requiresShipping&quot;:true}]"
+                  shop-id="8840314931"
+                  enabled-flags="[&quot;2d75a54c&quot;]"
+                  requires-shipping=""
+                  ><template shadowrootmode="closed">
+                    <style>
+                      * {
+                        box-sizing: border-box;
+                      }
+                      .wallet-button-fade-in {
+                        animation: animation-fade-in 0.3s cubic-bezier(0.1, 0.79, 1, 1);
+                      }
+                      @keyframes animation-fade-in {
+                        0% {
+                          opacity: 0;
+                        }
+                        to {
+                          opacity: 1;
+                        }
+                      }
+                      button[aria-disabled='true'] {
+                        opacity: 0.5;
+                        cursor: not-allowed;
+                      }
+                    </style>
+                    <div class="wallet-button-fade-in wallet-button-wrapper">
+                      <slot name="button"></slot><slot name="promise"></slot><slot name="more-options"></slot>
+                    </div></template
+                  ><shopify-buy-it-now-button
+                    access-token="917a2002112047446dafb2aed4f4dabb"
+                    buyer-country="IN"
+                    buyer-currency="INR"
+                    wallet-params="{}"
+                    page-type="product"
+                    slot="button"
+                    requires-shipping=""
+                    call-to-action=""
+                    ><button
+                      type="button"
+                      class="shopify-payment-button__button shopify-payment-button__button--unbranded"
+                    >
+                      Buy it now
+                    </button></shopify-buy-it-now-button
+                  ></shopify-accelerated-checkout
+                >
+                <small id="shopify-buyer-consent" class="hidden" aria-hidden="true" data-consent-type="subscription">
+                  This item is a recurring or deferred purchase. By continuing, I agree to the
+                  <span id="shopify-subscription-policy-button">cancellation policy</span> and authorize you to charge
+                  my payment method at the prices, frequency and dates listed on this page until my order is fulfilled
+                  or I cancel, if permitted.
+                </small>
+              </div></product-payment-container
+            ><input type="hidden" name="product-id" value="7624135802931"
+            ><input type="hidden" name="section-id" value="template--17624968200243__main">
+          </form>
+        </div>
+        <style>
+          .pd_iconlist {
+            display: flex;
+            justify-content: space-around;
+            gap: 19px;
+            margin-top: 20px;
+          }
+          .pd_iconitem {
+            text-align: center;
+            line-height: 15px;
+          }
+          .pd_iconitem img {
+            margin-bottom: 15px;
+          }
+        </style>
+        <div class="pd_iconlist">
+          <div class="pd_iconitem">
+            <img src="https://cdn.shopify.com/s/files/1/0088/4031/4931/files/Untitled_design_2_66af4bbf-0d3e-4377-8960-44d3327a14d0.png?v=1755848964">
+            <div>Made In India</div>
+          </div>
+          <div class="pd_iconitem">
+            <img src="https://cdn.shopify.com/s/files/1/0088/4031/4931/files/2_695ad29c-80b3-4968-a935-4a8d23864d12.png?v=1732969625">
+            <div>Free Delivery</div>
+          </div>
+
+          <div class="pd_iconitem">
+            <img src="https://cdn.shopify.com/s/files/1/0088/4031/4931/files/3_b33ad3ec-d797-4ddd-9091-255ea6504280.png?v=1732969625">
+            <div>COD Available</div>
+          </div>
+        </div>
+
+        <style>
+          .giftboxkabelclass {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          }
+          .gift_image {
+            width: 30%;
+          }
+          .gift__content {
+            width: 70%;
+          }
+          .add {
+            border: 1px solid;
+            width: fit-content;
+            padding: 2px 49px;
+            cursor: pointer;
+          }
+          input#giftboxdesign2:checked ~ label img {
+            border: 1px solid black;
+          }
+          input#giftboxdesign2 {
+            display: none;
+          }
+          .gift_image img {
+            border-radius: 10px;
+          }
+          .giftboxmainblock {
+            background: #fcf7f0;
+            padding: 20px;
+            border-radius: 10px;
+          }
+          @media only screen and (max-width: 600px) {
+            .giftboxmainblock {
+              padding: 10px;
+            }
+            .gift-title {
+              line-height: 16px;
+            }
+            .gift_image {
+              width: 35%;
+            }
+            .gift__content {
+              width: 65%;
+            }
+          }
+        </style>
+
+        <div style="margin: 20px auto;" class="tohide_for_mobilequick">
+          <b>Free Potli</b> Bag Worth Rs 1000 on Orders Above Rs 9900
+        </div>
+
+        <div
+          id="letscooee-289"
+          class="letscooee letscooee-engagement engagement-289 lc-cart-recovery"
+          data-engagement-id="289"
+          style="display: block; min-height: 0.5px; min-width: 0.5px;"
+        >
+          <div
+            class="lc-container"
+            style="gap: 0px; flex-flow: row; justify-content: flex-start; align-items: flex-start; width: 100%; background-color: rgb(252, 247, 240); padding: 20px 20px 10px 10px; margin: 0px 0px 20px; display: block; object-fit: cover; box-sizing: border-box; outline: none; position: relative; overflow: hidden;"
+          >
+            <div
+              class="lc-text"
+              style="padding: 10px 0px; margin: 0px 0px 20px; display: block; box-sizing: border-box; outline: none; letter-spacing: normal; font-size: 14px; line-height: 1.2; font-family: inherit; text-align: center; font-weight: 500; text-decoration: none; color: rgb(0, 0, 0);"
+            >
+              <span style="overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; color: inherit; font-size: inherit; font-weight: inherit; font-family: inherit;"
+                >Your Cart is Waiting with your favourite Mulmul</span
+              >
+            </div>
+            <div
+              class="lc-product-list"
+              style="gap: 15px; flex-flow: row; justify-content: safe center; align-items: flex-start; width: 100%; padding: 0px; margin: 0px; display: flex; box-sizing: border-box; outline: none; max-width: 100%; overflow-y: auto;"
+            >
+              <div
+                class="lc-single-product"
+                style="width: 130px; height: auto; padding: 0px; margin: 0px; display: block; box-sizing: border-box; outline: none; flex-shrink: 0;"
+              >
+                <img
+                  class="lc-image"
+                  alt="Hesi Cupro Satin Mustard Kurta Set"
+                  src="https://cdn.shopify.com/s/files/1/0088/4031/4931/files/38_b03e1b64-1a37-4c4e-817b-0135d6e7e204.jpg?v=1757011830"
+                  style="width: 100%; height: auto; padding: 0px; margin: 0px 0px 5px; object-fit: cover; box-sizing: border-box; outline: none;"
+                >
+                <div
+                  class="lc-text"
+                  style="width: auto; height: 40px; padding: 0px; margin: 10px 0px; display: block; box-sizing: border-box; outline: none; letter-spacing: normal; font-size: 13px; line-height: 1.2; font-family: inherit; text-align: center; font-weight: 400; text-decoration: none; color: rgb(0, 0, 0);"
+                >
+                  <span style="overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; color: inherit; font-size: inherit; font-weight: inherit; font-family: inherit;"
+                    >Hesi Cupro Satin Mustard Kurta Set</span
+                  >
+                </div>
+                <div
+                  class="lc-flexbox"
+                  style="gap: 5px; flex-flow: row; justify-content: center; align-items: center; width: 100%; padding: 0px; margin: 0px; display: flex; object-fit: cover; box-sizing: border-box; outline: none;"
+                >
+                  <div
+                    class="lc-text"
+                    style="width: auto; height: 30px; padding: 0px; margin: 0px 10px 0px 0px; display: block; box-sizing: border-box; outline: none; letter-spacing: normal; font-size: 14px; line-height: 1.2; font-family: inherit; text-align: center; font-weight: 400; color: rgb(26, 26, 26);"
+                  >
+                    <span style="overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; color: inherit; font-size: inherit; font-weight: inherit; font-family: inherit;"
+                      >₹ 14,950</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="lc-button"
+              style="background-color: rgb(251, 244, 234); border-radius: 2px; border-width: 1px; border-style: solid; border-color: rgb(26, 26, 26); width: 250px; height: auto; padding: 10px; margin: 5px auto; display: block; box-sizing: border-box; outline: none; letter-spacing: normal; font-size: 14px; line-height: 1.2; font-family: inherit; text-align: center; font-weight: 400; text-decoration: none; color: rgb(26, 26, 26); cursor: pointer;"
+            >
+              <span style="overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; color: inherit; font-size: inherit; font-weight: inherit; font-family: inherit;"
+                >Checkout Now</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="giftboxmainblock">
+          <div class="giftboxinnerblock">
+            <input
+              type="checkbox"
+              name="giftboxdesign"
+              id="giftboxdesign2"
+              value="Pink"
+              otherid="31568276324403"
+              class="radioBtnClass"
+              aria-invalid="false"
+              style=""
+            >
+            <label for="giftboxdesign2" class="giftboxkabelclass ">
+              <div class="gift_image">
+                <img src="https://cdn.shopify.com/s/files/1/0088/4031/4931/files/IMG_0860.jpg?v=1752148804">
+              </div>
+              <div class="gift__content">
+                <div class="gift-title">Make it special with Mulmul gift box</div>
+                <span class="price price--large">₹ 295</span>
+                <div class="add">Add</div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            var giftboxDesignInputs = document.querySelectorAll("input[name='giftboxdesign']");
+
+            giftboxDesignInputs.forEach(function (input) {
+              input.addEventListener('click', function (event) {
+                var checkedInput = event.target;
+                var giftboxidother = parseInt(checkedInput.getAttribute('otherid'));
+                var giftboxname = checkedInput.value;
+
+                fetch('/cart/add.js', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify({
+                    items: [{ quantity: 1, id: giftboxidother }],
+                  }),
+                })
+                  .then((response) => response.json())
+                  .then((data) => console.log(data))
+                  .catch((error) => console.error('Error:', error));
+              });
+            });
+          });
+        </script>
+      </div>
+      <style>
+        .sizechartcustom {
+          max-width: 600px;
+        }
+        .sizechartcustom .table th,
+        .sizechartcustom .table td {
+          padding: 7px;
+        }
+        .sizechartcustom .table tr {
+          border-bottom: 1px solid #dad6d0;
+        }
+        .sizechartcustom .table-striped > tbody > tr:nth-of-type(odd) {
+          background-color: #dedada;
+        }
+        .sizechartcustom .table-wrapper {
+          width: 100%;
+          max-width: 100%;
+          margin-bottom: 20px;
+        }
+        .sizechartcustom .rte table th:first-child {
+          padding-left: 12px;
+        }
+      </style>
+      <drawer-content
+        id="product-template--17624968200243__main-7624135802931-size-chart-drawer"
+        class="sizechartcustom drawer drawer--large hidden-phone"
+      >
+        <span class="drawer__overlay"></span>
+
+        <header class="drawer__header">
+          <p class="drawer__title heading h6">Size Chart</p>
+
+          <button type="button" class="drawer__close-button tap-area" data-action="close" title="Close">
+            <svg focusable="false" width="14" height="14" class="icon icon--close   " viewBox="0 0 14 14">
+              <path d="M13 13L1 1M13 1L1 13" stroke="currentColor" stroke-width="2" fill="none"></path>
+            </svg>
+          </button>
+        </header>
+
+        <div class="drawer__content drawer__content--padded-start">
+          <div class="rte">
+            <div>
+              <img
+                style="margin:0px"
+                src="https://cdn.shopify.com/s/files/1/0088/4031/4931/files/size_chart_NEW-2-1.png?v=1725084789"
+              >
+              <img
+                style="margin:0px"
+                src="https://cdn.shopify.com/s/files/1/0088/4031/4931/files/size_chart_NEW-2-2.png?v=1725084789"
+              >
+            </div>
+          </div>
+        </div></drawer-content
+      ><popover-content
+        id="product-template--17624968200243__main-7624135802931-size-chart-popover"
+        class="popover hidden-lap-and-up"
+      >
+        <span class="popover__overlay"></span>
+
+        <header class="popover__header">
+          <p class="popover__title heading h6">SIZE CHART</p>
+
+          <button
+            type="button"
+            class="popover__close-button tap-area tap-area--large"
+            data-action="close"
+            title="Close"
+          >
+            <svg focusable="false" width="14" height="14" class="icon icon--close   " viewBox="0 0 14 14">
+              <path d="M13 13L1 1M13 1L1 13" stroke="currentColor" stroke-width="2" fill="none"></path>
+            </svg>
+          </button>
+        </header>
+
+        <div class="popover__content">
+          <div class="rte">
+            <div>
+              <img src="https://cdn.shopify.com/s/files/1/0088/4031/4931/files/size_chart_NEW-2-1_64c49d24-3b26-4730-abc5-e3d8640ea661.png?v=1725369426">
+              <img src="https://cdn.shopify.com/s/files/1/0088/4031/4931/files/size_chart_NEW-2-2_3ddd6f0c-ec24-435a-8198-72c3faf0e717.png?v=1725369426">
+            </div>
+          </div>
+        </div>
+      </popover-content>
+      <script>
+        // Select the elements
+        const clickHereButtons = document.querySelectorAll('.Click-here');
+        const customModelMain = document.querySelector('.blispoint_popup');
+        const closeButtons = document.querySelectorAll('.close-btn, .bg-overlay');
+
+        // Add click event listeners to the ".Click-here" elements
+        clickHereButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            customModelMain.classList.add('model-open');
+          });
+        });
+
+        // Add click event listeners to the ".close-btn" and ".bg-overlay" elements
+        closeButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            customModelMain.classList.remove('model-open');
+          });
+        });
+      </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var metaData = JSON.parse(document.getElementById('VariantMetafieldsJSON').textContent);
+          var priceEl = document.querySelector('#variant-price-container');
+
+          function cleanPrice(price) {
+            if (!price) return '';
+            return price
+              .replace(/[^\d]/g, '') // remove everything except numbers
+              .trim();
+          }
+
+          function updateVariantDisplay(variantId) {
+            let variantData = metaData[variantId];
+            if (!variantData) return;
+
+            let price = cleanPrice(variantData.price);
+            let comparePrice = cleanPrice(variantData.compare_at_price);
+
+            if (comparePrice && comparePrice !== price) {
+              priceEl.innerHTML = `
+        <span style="text-decoration:line-through; color:#888; margin-right:8px;">
+          ${comparePrice}
+        </span>
+        <span style="color:#d00;">${price}</span>
+      `;
+            } else {
+              priceEl.innerHTML = `<span>${price}</span>`;
+            }
+          }
+
+          document.addEventListener('variant:change', function (e) {
+            if (e.detail && e.detail.variant && e.detail.variant.id) {
+              updateVariantDisplay(e.detail.variant.id);
+            }
+          });
+
+          var initialVariantInput = document.querySelector('input[name="id"], select[name="id"]');
+          if (initialVariantInput) {
+            updateVariantDisplay(initialVariantInput.value);
+          }
+        });
+      </script>
+    </div></product-rerender
+></quick-buy-popover>

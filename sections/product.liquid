@@ -62,9 +62,11 @@
 
 <div class="product">
   <div class="product-images">
-    {% for image in product.images %}
+    {{ product.images.first | image_url: width: 1000 | image_tag: class: 'product-image' }}
+
+    {% comment %} {% for image in product.images %}
       {{ image | image_url: width: 1000 | image_tag: class: 'product-image' }}
-    {% endfor %}
+    {% endfor %} {% endcomment %}
   </div>
   <div class="product-content">
     <div class="product-info">

@@ -1,4 +1,4 @@
-<div class="pagination">
+<div id="pagination-links" class="pagination">
   {% if paginate.previous %}
     <span class="prev">
       <a href="{{ paginate.previous.url | replace: 'view=ajax', '' }}{{ hash }}" title="{{ 'general.pagination.previous' | t }}" rel="prev">
