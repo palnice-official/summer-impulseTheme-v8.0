@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% comment %}
 by gemini
   ============================================================================
@@ -89,4 +90,97 @@ by gemini
       </div>
     {%- endform -%}
   </div>
+=======
+{% comment %}
+by gemini
+  ============================================================================
+  File: quick-buy-product-form.liquid
+  ----------------------------------------------------------------------------
+  Description:
+  This snippet generates the complete inner HTML for the Quick Buy modal.
+  It is designed to be rendered by the `product.quick-buy-json.liquid`
+  template and expects a `product` object to be available.
+  ============================================================================
+{% endcomment %}
+
+{%- assign form_id = 'product-form-quick-buy--' | append: product.id -%}
+{%- assign first_available_variant = product.selected_or_first_available_variant -%}
+
+<header class="popover__header" id="QuickBuyModalTitle">
+  <div class="quick-buy-product">
+    {%- if product.featured_media -%}
+      <a href="{{ product.url }}"><img src="{{ product.featured_media | image_url: width: 228 }}" alt="{{ product.featured_media.alt | escape }}" class="quick-buy-product__image" width="114" height="{{ 114 | divided_by: product.featured_media.aspect_ratio | round }}"></a>
+    {%- endif -%}
+    <div class="quick-buy-product__info">
+      <product-meta class="product-item-meta">
+        <a href="{{ product.url }}" class="product-item-meta__title">{{ product.title | escape }}</a>
+        <div class="product-item-meta__price-list-container" role="region" aria-live="polite">
+          <div class="price-list">
+            <span class="price"><span class="visually-hidden">{{ 'products.product.sale_price' | t }}</span>{{ product.price | money }}</span>
+            {%- if product.compare_at_price > product.price -%}
+              <span class="price price--compare"><span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>{{ product.compare_at_price | money }}</span>
+            {%- endif -%}
+          </div>
+          <a href="{{ product.url }}" class="link text--subdued">{{ 'products.product.view_details' | t }}</a>
+        </div>
+      </product-meta>
+    </div>
+  </div>
+  <button type="button" class="popover__close-button tap-area tap-area--large" data-action="close-modal" title="Close">
+    <svg focusable="false" width="14" height="14" class="icon icon--close" viewBox="0 0 14 14"><path d="M13 13L1 1M13 1L1 13" stroke="currentColor" stroke-width="2" fill="none"></path></svg>
+  </button>
+</header>
+
+<div class="popover__content popover__content--no-padding">
+  <div class="product-form">
+    {%- if first_available_variant.inventory_management == 'shopify' and first_available_variant.inventory_quantity <= 5 and first_available_variant.inventory_quantity > 0 -%}
+      <div data-block-type="inventory"><product-inventory class="product-form__inventory-wrapper"><span class="inventory inventory--low">{{ 'products.product.inventory_low_stock_html' | t: count: first_available_variant.inventory_quantity }}</span></product-inventory></div>
+    {%- endif -%}
+    
+    {%- form 'product', product, id: form_id, class: 'shopify-product-form', is: 'product-form' -%}
+      {%- unless product.has_only_default_variant -%}
+        <variant-picker handle="{{ product.handle }}" form-id="{{ form_id }}" class="product-form__variants">
+          <script type="application/json" data-variant>{{ product.variants | json }}</script>
+          {%- for option in product.options_with_values -%}
+            <div class="product-form__option-selector" data-selector-type="block">
+              <div class="product-form__option-info">
+                <span class="product-form__option-name">{{ option.name | escape }}:</span>
+                <span class="product-form__option-value">{{ option.selected_value }}</span>
+              </div>
+              <div class="block-swatch-list">
+                {%- for value in option.values -%}
+                  <div class="block-swatch">
+                    <input class="block-swatch__radio visually-hidden" type="radio" id="option-{{ product.id }}-{{ option.position }}-{{ forloop.index }}" name="option{{ option.position }}" value="{{ value | escape }}" {% if option.selected_value == value %}checked="checked"{% endif %}>
+                    <label class="block-swatch__item" for="option-{{ product.id }}-{{ option.position }}-{{ forloop.index }}">{{ value | escape }}</label>
+                  </div>
+                {%- endfor -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        </variant-picker>
+      {%- endunless -%}
+      
+      <input type="hidden" name="id" value="{{ first_available_variant.id }}">
+      
+      <div data-block-type="quantity-selector" class="product-form__quantity">
+        <span class="product-form__quantity-label">{{ 'products.product.quantity.label' | t }}:</span>
+        <quantity-selector class="quantity-selector">
+          <button type="button" class="quantity-selector__button"><span class="visually-hidden">{{ 'products.product.quantity.decrease' | t }}</span><svg focusable="false" width="10" height="2" class="icon icon--minus-big" viewBox="0 0 10 2"><path fill="currentColor" d="M0 0h10v2H0z"></path></svg></button>
+          <input type="number" is="input-number" class="quantity-selector__input" inputmode="numeric" name="quantity" value="1" step="1" min="1" aria-label="{{ 'products.product.quantity.label' | t }}">
+          <button type="button" class="quantity-selector__button"><span class="visually-hidden">{{ 'products.product.quantity.increase' | t }}</span><svg focusable="false" width="10" height="10" class="icon icon--plus-big" viewBox="0 0 10 10"><path fill-rule="evenodd" clip-rule="evenodd" d="M4 6v4h2V6h4V4H6V0H4v4H0v2h4z" fill="currentColor"></path></svg></button>
+        </quantity-selector>
+      </div>
+
+      <div data-block-type="buy-buttons" class="product-form__buy-buttons">
+        <product-payment-container class="product-form__payment-container">
+          <button type="submit" is="loader-button" class="product-form__add-button button button--secondary button--full" {% unless first_available_variant.available %}disabled{% endunless %}>
+            <span class="loader-button__text">{%- if first_available_variant.available -%}{{ 'products.product.add_to_cart' | t }}{%- else -%}{{ 'products.product.sold_out' | t }}{%- endif -%}</span>
+            <span class="loader-button__loader" hidden=""><div class="spinner"><svg focusable="false" width="24" height="24" class="icon icon--spinner" viewBox="25 25 50 50"><circle cx="50" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="5"></circle></svg></div></span>
+          </button>
+          {{ form | payment_button }}
+        </product-payment-container>
+      </div>
+    {%- endform -%}
+  </div>
+>>>>>>> 251783cb1fe7b981fae3ef21b6d02defa119bec4
 </div>

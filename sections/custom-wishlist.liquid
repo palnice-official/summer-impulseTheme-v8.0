@@ -1,3 +1,7 @@
+{{ 'wishlist.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'wishlist-core.js' | asset_url }}" defer></script>
+<script src="{{ 'wishlist-ui.js' | asset_url }}" defer></script>
+
 <section id="wishlist-section" class="page-width">
   <h1>My Wishlist</h1>
   <div id="wishlist-grid"></div>
@@ -6,33 +10,37 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
+    console.log('Wishlist page script loaded');
     const perpage = 6;
     let currentPage = 1;
     const container = document.getElementById('wishlist-grid');
     const paginator = document.getElementById('wishlist-pagination');
-
+    console.log('container >>', container);
     function renderPage(page = 1) {
       const items = Wishlist.getItems();
       const totalPages = Math.ceil(items.length / perpage);
       const start = (page - 1) * perpage;
       const paginated = items.slice(start, start + perpage);
+      console.log(' >>', items);
       container.innerHTML = '';
       paginated.forEach((item) => {
         const price = (item.price / 100).toFixed(2);
         container.innerHTML += `
                 <div class="wishlist-item">
-                    <img src="${item.image}" alt="${item.title}" />
+                    <img src="/cdn/shop${item.image}" alt="${item.title}" />
                     <a href="/product/${item.handle}">${item.title}</a>
                     <p>$${price}</p>
                     <button onclick="Wishlist.removeItem(${item.variant_id}); location.reload();">Remove</button>
                     <button onclick="window.location.href='/cart/add?id=${item.variant_id}'">Add to Cart</button>
                 </div>`;
       });
+
       paginator.innerHTML = '';
       for (let i = 1; i <= totalPages; i++) {
         paginator.innerHTML += `<button ${i === page ? 'disabled' : ''} onclick="renderPage(${i})">${i}</button>`;
       }
     }
+    renderPage();
   });
 </script>
 

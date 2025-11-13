@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class QuickView extends HTMLElement {
   constructor() {
     super();
@@ -45,4 +46,53 @@ class QuickView extends HTMLElement {
   }
 }
 
+=======
+class QuickView extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.content = this.querySelector(".quick-view__content");
+    this.openButtons = this.parentElement.querySelectorAll("[data-quick-view]");
+    this.closeButton = this.querySelector("[data-close]");
+    this.handleClick = this.handleClick.bind(this);
+    this.closeDrawer = this.closeDrawer.bind(this);
+
+    this.openButtons.forEach((button) => {
+      button.addEventListener("click", this.handleClick);
+    });
+    this.closeButton.addEventListener("click", this.closeDrawer);
+  }
+
+  disconnectedCallback() {
+    this.openButtons.forEach((button) => {
+      button.removeEventListener("click", this.handleClick);
+    });
+    this.closeButton.removeEventListener("click", this.closeDrawer);
+  }
+
+  handleClick(event) {
+    const button = event.currentTarget;
+    const productHandle = button.dataset.productHandle;
+    fetch(
+      // `${window.Shopify.routes.root}products/${productHandle}?section_id=product-quickview`
+      `${window.Shopify.routes.root}products/${productHandle}?section_id=quick-buy-product-form`
+    )
+      .then((response) => response.text())
+      .then((data) => {
+        this.content.innerHTML = data;
+        this.openDrawer();
+      });
+  }
+  openDrawer() {
+    this.setAttribute("open", "");
+  }
+
+  closeDrawer() {
+    this.removeAttribute("open");
+  }
+}
+
+>>>>>>> 251783cb1fe7b981fae3ef21b6d02defa119bec4
 customElements.define("quick-view", QuickView);

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% comment %}
 by gemini
   ============================================================================
@@ -152,4 +153,160 @@ by gemini
   if (typeof QuickBuyModal !== 'undefined') {
     new QuickBuyModal();
   }
+=======
+{% comment %}
+by gemini
+  ============================================================================
+  File: quick-buy-modal.liquid
+  ----------------------------------------------------------------------------
+  Description:
+  This snippet creates the main modal container and the JavaScript controller
+  to power the Quick View functionality. It should be included ONCE on any
+  template where you want Quick View to be available (e.g., collection.liquid).
+
+  It works by:
+  1. Creating a hidden, empty modal shell.
+  2. Listening for clicks on trigger buttons (`.quick-buy-trigger`).
+  3. When a trigger is clicked, it fetches the corresponding product's data
+     using a special JSON template (`product.quick-buy-json.liquid`).
+  4. It injects the fetched HTML into the modal and displays it.
+  ============================================================================
+{% endcomment %}
+
+{% comment %}
+  Basic CSS for modal functionality.
+  For better performance, move this to your theme's main CSS file.
+{% endcomment %}
+<style>
+  .quick-buy-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001; /* High z-index to appear over everything */
+    display: none;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  .quick-buy-modal.is-opening {
+    display: block;
+  }
+  .quick-buy-modal.is-open {
+    display: block;
+    opacity: 1;
+  }
+  .quick-buy-modal__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  .quick-buy-modal__content-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  .quick-buy-modal.is-open .quick-buy-modal__content-wrapper {
+    transform: translateY(0);
+  }
+  .quick-buy-modal__loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    padding: 20px;
+  }
+  .quick-buy-trigger {
+    cursor: pointer;
+  }
+</style>
+
+{% comment %} The Modal's HTML Shell {% endcomment %}
+<div id="QuickBuyModal" class="quick-buy-modal">
+  <div class="quick-buy-modal__overlay" data-action="close-modal"></div>
+  <div class="quick-buy-modal__content-wrapper" role="dialog" aria-modal="true" aria-labelledby="QuickBuyModalTitle">
+    <div id="QuickBuyModalContent">
+      <div class="quick-buy-modal__loader">
+        <div class="spinner"><svg focusable="false" width="48" height="48" class="icon icon--spinner" viewBox="25 25 50 50"><circle cx="50" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="5"></circle></svg></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  class QuickBuyModal {
+    console.log('quick buy modal script loaded');
+    constructor() {
+      this.modal = document.getElementById('QuickBuyModal');
+      this.modalContent = document.getElementById('QuickBuyModalContent');
+      this.loaderHTML = this.modalContent.innerHTML;
+      this.initEventListeners();
+    }
+
+    initEventListeners() {
+      // Use event delegation for triggers to support pagination and dynamic content
+      document.body.addEventListener('click', (event) => {
+        const trigger = event.target.closest('.quick-buy-trigger');
+        if (trigger) {
+          event.preventDefault();
+          this.open(trigger.dataset.productHandle);
+        }
+        if (event.target.closest('[data-action="close-modal"]')) {
+          event.preventDefault();
+          this.close();
+        }
+      });
+    }
+
+    open(productHandle) {
+      this.modal.classList.add('is-opening');
+      setTimeout(() => this.modal.classList.add('is-open'), 10); // For CSS transition
+      document.body.style.overflow = 'hidden';
+
+      // Fetch product data using the JSON view
+    //   fetch(`/products/${productHandle}?view=quick-buy-json`)
+      fetch(`${window.Shopify.routes.root}products/${productHandle}?section_id=quick-buy-product-form`)
+        .then(response => {
+          if (!response.ok) throw new Error('Network response was not ok');
+          return response.text();
+        })
+        .then(data => {
+            console.log('Quick Buy Fetch Data:', data);
+          this.modalContent.innerHTML = data;
+          // Re-initialize any theme scripts for dynamic payment buttons
+          if (window.Shopify && Shopify.PaymentButton) {
+            Shopify.PaymentButton.init();
+          }
+        })
+        .catch(error => {
+          console.error('Quick Buy Fetch Error:', error);
+          this.close(); // Close modal on error
+        });
+    }
+
+    close() {
+      this.modal.classList.remove('is-open');
+      setTimeout(() => {
+        this.modal.classList.remove('is-opening');
+        this.modalContent.innerHTML = this.loaderHTML; // Reset to loader for next open
+      }, 300); // Match CSS transition duration
+      document.body.style.overflow = '';
+    }
+  }
+
+  // Initialize the modal logic once the DOM is ready
+  if (typeof QuickBuyModal !== 'undefined') {
+    new QuickBuyModal();
+  }
+>>>>>>> 251783cb1fe7b981fae3ef21b6d02defa119bec4
 </script>

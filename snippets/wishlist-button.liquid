@@ -1,4 +1,8 @@
-<button
+{{'wishlist.css' | asset_url | stylesheet_tag}}
+<script src="{{ 'wishlist-core.js' | asset_url }}" defer></script>
+<script src="{{ 'wishlist-ui.js' | asset_url }}" defer></script>
+
+{% comment %} <button
 class = "wishlist-button"
 data-variant-id = "{{product.selected_or_first_available_variant.id}}"
 data-product-json="{
@@ -12,4 +16,20 @@ data-product-json="{
 }"
 >
     <span class="wishlist-heart">❤️</span>
+</button> {% endcomment %}
+
+<button 
+  class="wishlist-button" 
+  data-variant-id="{{ product.selected_or_first_available_variant.id }}" 
+  data-product-json='{
+    "id":"{{ product.id }}",
+    "handle":"{{ product.handle }}",
+    "title":"{{ product.title | escape }}",
+    "variant_id":"{{ product.selected_or_first_available_variant.id }}",
+    "price":{{ product.price |  default: '0' }},
+    "compare_at_price":{{ product.compare_at_price |  default: 'null'}},
+    "image":"{{ product.featured_image | image_url: width: 450}}"
+  }'>
+  ❤️
+  {% comment %} <span class="wishlist-heart">❤️</span> {% endcomment %}
 </button>
