@@ -1,0 +1,37 @@
+test is running
+
+<script>
+    console.log("Test script running");
+    
+    function createCounter() {
+        let count = [];
+
+        for (var i = 1; i <= 3; i++) {
+            count.push( function() {
+                console.log(i);
+            });
+        }
+
+        return count;
+    }
+
+    const fun = createCounter();
+    console.log(fun); // What is logged?
+    console.log(fun[1]()); // What is logged?
+    console.log(fun[2]()); // What is logged?
+    console.log(fun[3]()); // What is logged?
+</script>
+
+{% schema %}
+{
+    "name": "For test",
+    "settings": [
+        
+        ],
+        "presets": [
+            {
+                "name": "For Test"
+            }
+        ]
+}
+{% endschema %}

@@ -120,7 +120,8 @@
   
   {%- assign current_product_tags = product.tags -%}
   {%- assign current_product_id = product.id -%}
-  
+  {{current_product_tags | json}}--current_product_tags
+  {%- comment -%} We will first collect ALL matching products, then randomize and limit them {%- endcomment -%}
   {%- comment -%} First, collect ALL matching products (not limited) {%- endcomment -%}
   {%- assign all_related_handles = '' -%}
   {%- assign all_related_count = 0 -%}
@@ -130,7 +131,7 @@
   {%- assign current_date = 'now' | date: '%s' | plus: 0 -%}
   {%- assign two_years_ago = current_date | minus: seconds_in_2_years -%}
   
-  {%- for candidate_product in collections.similar.products limit: 500 -%}
+  {%- for candidate_product in collections.similar.products limit: 100 -%}
     
     {%- unless candidate_product.id == current_product_id -%}
       
@@ -159,9 +160,19 @@
       
     {%- endunless -%}
   {%- endfor -%}
-  
+
+  {% comment %} <pre>
+    {{product.tags |  json}}
+  {% for tag in product.tags %}
+    {% if tag contains 'sale' %}
+      {{ tag }}--sale_tag_found
+    {% endif %}
+  {% endfor %}
+  </pre> {% endcomment %}
   {%- assign all_handles_array = all_related_handles | split: ',' -%}
   
+  
+  {%- comment -%} Now we have an array "all_handles_array" with ALL matching products {%- endcomment -%}
   {%- if all_handles_array.size > 0 -%}
     
     {%- comment -%} Now apply randomization using timestamp {%- endcomment -%}
@@ -169,15 +180,16 @@
     
     {%- comment -%} Create random starting point based on timestamp {%- endcomment -%}
     {%- assign random_start = timestamp | modulo: all_handles_array.size -%}
-    
+    xx-{{random_start | json}}--random_start
     {%- comment -%} Build array of random products {%- endcomment -%}
     {%- assign random_handles = '' -%}
     {%- assign selected_count = 0 -%}
     
     {%- comment -%} First pass: start from random index to end {%- endcomment -%}
     {%- for i in (0..all_handles_array.size) -%}
+      {% comment %} >>> {{i | json}}--i_value {% endcomment %}
       {%- assign current_index = random_start | plus: i | modulo: all_handles_array.size -%}
-      
+      --xx-{{current_index | json}}--current_index
       {%- comment -%} Get handle at current index {%- endcomment -%}
       {%- assign counter = 0 -%}
       {%- for handle in all_handles_array -%}
@@ -192,12 +204,14 @@
         {%- endif -%}
         {%- assign counter = counter | plus: 1 -%}
       {%- endfor -%}
-      
+      --xx-{{random_handles | json}}--random_handles_so_far
+
       {%- if selected_count >= product_limit -%}
         {%- break -%}
       {%- endif -%}
     {%- endfor -%}
     
+
     {%- assign final_handles = random_handles | split: ',' -%}
     
     {%- comment -%} Display the section {%- endcomment -%}
@@ -334,7 +348,7 @@
     {
       "name": "Related Products by Tags",
       "settings": {
-        "title": "You May Also Like",
+        "title": "Related Products by Tags",
         "per_row": 5,
         "product_limit": 5,
         "min_shared_tags": 2

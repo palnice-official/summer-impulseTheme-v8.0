@@ -5,11 +5,21 @@
 
   <div class="button">
     <i class="fas fa-home">
-      <a href="https://www.lovesummer.in/">
+      <a href="{{ routes.root_url }}">
         {% render 'home-icon' %}
       </a>
     </i>
     <!-- <div class="text">New</div> -->
+  </div>
+
+  <div class="button">
+    <i class="fas fa-home event">
+      <a href="{{ routes.root_url }}pages/upcoming-events">
+      {% comment %} <img class="event" src="{{ 'event_gif.gif' |  asset_url }}" alt="event_gif"> {% endcomment %}
+      {% comment %} <img class="event" src="{{ 'new.png' |  asset_url }}" alt="event_gif"> {% endcomment %}
+       {%  render 'event' %}
+      </a>
+    </i>
   </div>
 
   <div class="button">
@@ -83,6 +93,31 @@
     .text {
         font-size: 10px;
     }
+  }
+  }
+  .event{
+    display: inline;
+    animation: event_bounce 1.6s ease-in-out infinite;
+  }
+
+  @keyframes event_bounce{
+    0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-4px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  55% {
+    transform: translateY(-4px);
+  }
+  70% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
   }
   }
 {% endstyle %}

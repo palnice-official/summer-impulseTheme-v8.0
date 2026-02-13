@@ -1,0 +1,395 @@
+{% comment %}
+  <pre>
+  {% assign matched_collection = '' %}
+  {% assign product_tags_array = product.tags %}
+
+  {% for colletion in collections limit: 50 %}
+    {% comment %} {{- colletion.metafields.custom.collection_tags.value |  json -}} {% endcomment %}
+    {% if colletion.metafields.custom.collection_tags.value != null %}
+      {% assign match_count = 0 %}
+      {% assign collection_values = colletion.metafields.custom.collection_tags.value  %}
+      {% for meta_value in collection_values %}
+        {% if product_tags_array contains meta_value %}
+          {% assign match_count = match_count |  plus: 1 %}
+        {% endif %}
+      {% endfor %}
+
+      {% if match_count >=2 %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  </pre>
+{% endcomment %}
+{% comment %} --------------------------------------------------------------------------------------------------------------------------------- {% endcomment %}
+
+{% comment %}
+  Display 2 collections on product page where at least 2 collection metafield values match product tags
+  Metafield: collection.metafields.custom.tag_list (list of single-line text)
+{% endcomment %}
+
+{% style %}
+@media only screen and (min-width: 769px){
+.grid--uniform {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+  .medium-up--one-half {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 768px){
+    .medium-up--one-half {
+    width: 50%;
+  }
+}
+{% endstyle %}
+
+{% comment %} {%- liquid
+  # Initialize variables
+  assign matched_collections = blank
+  assign matched_collections_count = 0
+  assign product_tags_downcase = product.tags | join: ',' | downcase | split: ','
+
+  # Set display limit
+  assign max_collections_to_show = 5
+-%}
+
+{% comment %} Loop through all collections to find matches {% endcomment %}
+{%- for collection in collections -%}
+  {%- if matched_collections_count >= max_collections_to_show -%}
+    {%- break -%}
+  {%- endif -%}
+
+  {%- liquid
+    # Skip if collection doesn't have the metafield
+    if collection.metafields.custom.collection_tags == blank
+      continue
+    endif
+
+    # Get metafield values and initialize match counter
+    assign collection_metafield_values = collection.metafields.custom.collection_tags.value
+    assign match_count = 0
+    assign already_matched_tags = blank
+  -%}
+
+  {% comment %} Count matches between metafield values and product tags {% endcomment %}
+  {%- for meta_value in collection_metafield_values -%}
+    {%- assign meta_value_downcase = meta_value | downcase | strip -%}
+
+    {%- for product_tag in product_tags_downcase -%}
+      {%- assign product_tag_stripped = product_tag | strip -%}
+
+      {%- if meta_value_downcase == product_tag_stripped -%}
+        {% comment %} Check if this tag was already counted {% endcomment %}
+        {%- assign tag_check = already_matched_tags | split: ',' -%}
+        {%- unless tag_check contains product_tag_stripped -%}
+          {%- assign match_count = match_count | plus: 1 -%}
+          {%- if already_matched_tags == blank -%}
+            {%- assign already_matched_tags = product_tag_stripped -%}
+          {%- else -%}
+            {%- assign already_matched_tags = already_matched_tags | append: ',' | append: product_tag_stripped -%}
+          {%- endif -%}
+        {%- endunless -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+
+  {% comment %} Add collection to matched list if it has 2 or more matches {% endcomment %}
+  {%- if match_count >= 2 -%}
+    {%- if matched_collections == blank -%}
+      {%- assign matched_collections = collection.handle -%}
+    {%- else -%}
+      {%- assign matched_collections = matched_collections | append: ',' | append: collection.handle -%}
+    {%- endif -%}
+    {%- assign matched_collections_count = matched_collections_count | plus: 1 -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{% comment %} Display the matched collections {% endcomment %}
+{%- if matched_collections != blank -%}
+  <div class="page-width">
+    <div class="grid grid--uniform{% unless section.settings.enable_gutter %} grid--no-gutters{% endunless %}">
+      {%- if section.settings.title != blank -%}
+        <div class="section-header">
+          <h2 class="section-header__title">{{ section.settings.title }}</h2>
+        </div>
+      {%- endif -%}
+      {%- assign collection_handles = matched_collections | split: ',' | uniq -%}
+      
+      {%- for collection_handle in collection_handles limit: max_collections_to_show -%}
+        {%- assign collection = collections[collection_handle] -%}
+
+        {%- if collection != blank -%}
+            {%- render 'collection-grid-item',
+              collection: collection,
+              block: null,
+              gridView: 'medium-up--one-half',
+              background_position: 'center',
+              per_row: section.settings.per_row,
+              sizeVariable: gridView,
+              fallback: 'variable'
+            -%}
+        
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    {% comment %} </div> {% endcomment %}
+  </div>
+{%- endif -%} {% endcomment %}
+
+{% comment %} ---------------------------------------------------------------------------------------------------------- {% endcomment %}
+
+{%- liquid
+  # Initialize array to store collections with scores
+  assign score_10_collections = ''
+  assign score_9_collections = ''
+  assign score_8_collections = ''
+  assign score_7_collections = ''
+  assign score_6_collections = ''
+  assign score_5_collections = ''
+  assign score_4_collections = ''
+  assign score_3_collections = ''
+  assign score_2_collections = ''
+  
+  assign product_tags_downcase = product.tags | join: ',' | downcase | split: ','
+  assign max_collections_to_show = 5
+-%}
+
+{% comment %} Loop through all collections to find matches {% endcomment %}
+{%- for collection in collections -%}
+  {%- liquid
+    if collection.metafields.custom.collection_tags == blank
+      continue
+    endif
+
+    assign collection_metafield_values = collection.metafields.custom.collection_tags.value
+    assign match_count = 0
+    assign already_matched_tags = blank
+  -%}
+  {% comment %} Count matches {% endcomment %}
+  {%- for meta_value in collection_metafield_values -%}
+    {%- assign meta_value_downcase = meta_value | downcase | strip -%}
+    
+    {%- for product_tag in product_tags_downcase -%}
+      {%- assign product_tag_stripped = product_tag | strip -%}
+      
+      {%- if meta_value_downcase == product_tag_stripped -%}
+        {%- assign tag_check = already_matched_tags | split: ',' -%}
+        {%- unless tag_check contains product_tag_stripped -%}
+          {%- assign match_count = match_count | plus: 1 -%}
+          {%- if already_matched_tags == blank -%}
+            {%- assign already_matched_tags = product_tag_stripped -%}
+          {%- else -%}
+            {%- assign already_matched_tags = already_matched_tags | append: ',' | append: product_tag_stripped -%}
+          {%- endif -%}
+        {%- endunless -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+  {% comment %} Categorize collections by score {% endcomment %}
+  {%- if match_count >= 2 -%}
+    {%- case match_count -%}
+      {%- when 10 -%}
+        {%- if score_10_collections == '' -%}
+          {%- assign score_10_collections = collection.handle -%}
+        {%- else -%}
+          {%- assign score_10_collections = score_10_collections | append: ',' | append: collection.handle -%}
+        {%- endif -%}
+      {%- when 9 -%}
+        {%- if score_9_collections == '' -%}
+          {%- assign score_9_collections = collection.handle -%}
+        {%- else -%}
+          {%- assign score_9_collections = score_9_collections | append: ',' | append: collection.handle -%}
+        {%- endif -%}
+      {%- when 8 -%}
+        {%- if score_8_collections == '' -%}
+          {%- assign score_8_collections = collection.handle -%}
+        {%- else -%}
+          {%- assign score_8_collections = score_8_collections | append: ',' | append: collection.handle -%}
+        {%- endif -%}
+      {%- when 7 -%}
+        {%- if score_7_collections == '' -%}
+          {%- assign score_7_collections = collection.handle -%}
+        {%- else -%}
+          {%- assign score_7_collections = score_7_collections | append: ',' | append: collection.handle -%}
+        {%- endif -%}
+      {%- when 6 -%}
+        {%- if score_6_collections == '' -%}
+          {%- assign score_6_collections = collection.handle -%}
+        {%- else -%}
+          {%- assign score_6_collections = score_6_collections | append: ',' | append: collection.handle -%}
+        {%- endif -%}
+      {%- when 5 -%}
+        {%- if score_5_collections == '' -%}
+          {%- assign score_5_collections = collection.handle -%}
+        {%- else -%}
+          {%- assign score_5_collections = score_5_collections | append: ',' | append: collection.handle -%}
+        {%- endif -%}
+      {%- when 4 -%}
+        {%- if score_4_collections == '' -%}
+          {%- assign score_4_collections = collection.handle -%}
+        {%- else -%}
+          {%- assign score_4_collections = score_4_collections | append: ',' | append: collection.handle -%}
+        {%- endif -%}
+      {%- when 3 -%}
+        {%- if score_3_collections == '' -%}
+          {%- assign score_3_collections = collection.handle -%}
+        {%- else -%}
+          {%- assign score_3_collections = score_3_collections | append: ',' | append: collection.handle -%}
+        {%- endif -%}
+      {%- when 2 -%}
+        {%- if score_2_collections == '' -%}
+          {%- assign score_2_collections = collection.handle -%}
+        {%- else -%}
+          {%- assign score_2_collections = score_2_collections | append: ',' | append: collection.handle -%}
+        {%- endif -%}
+    {%- endcase -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{% comment %} Combine collections in descending order {% endcomment %}
+{%- assign sorted_collections = '' -%}
+{%- if score_10_collections != '' -%}
+  {%- assign sorted_collections = score_10_collections -%}
+{%- endif -%}
+{%- if score_9_collections != '' -%}
+  {%- if sorted_collections == '' -%}
+    {%- assign sorted_collections = score_9_collections -%}
+  {%- else -%}
+    {%- assign sorted_collections = sorted_collections | append: ',' | append: score_9_collections -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if score_8_collections != '' -%}
+  {%- if sorted_collections == '' -%}
+    {%- assign sorted_collections = score_8_collections -%}
+  {%- else -%}
+    {%- assign sorted_collections = sorted_collections | append: ',' | append: score_8_collections -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if score_7_collections != '' -%}
+  {%- if sorted_collections == '' -%}
+    {%- assign sorted_collections = score_7_collections -%}
+  {%- else -%}
+    {%- assign sorted_collections = sorted_collections | append: ',' | append: score_7_collections -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if score_6_collections != '' -%}
+  {%- if sorted_collections == '' -%}
+    {%- assign sorted_collections = score_6_collections -%}
+  {%- else -%}
+    {%- assign sorted_collections = sorted_collections | append: ',' | append: score_6_collections -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if score_5_collections != '' -%}
+  {%- if sorted_collections == '' -%}
+    {%- assign sorted_collections = score_5_collections -%}
+  {%- else -%}
+    {%- assign sorted_collections = sorted_collections | append: ',' | append: score_5_collections -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if score_4_collections != '' -%}
+  {%- if sorted_collections == '' -%}
+    {%- assign sorted_collections = score_4_collections -%}
+  {%- else -%}
+    {%- assign sorted_collections = sorted_collections | append: ',' | append: score_4_collections -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if score_3_collections != '' -%}
+  {%- if sorted_collections == '' -%}
+    {%- assign sorted_collections = score_3_collections -%}
+  {%- else -%}
+    {%- assign sorted_collections = sorted_collections | append: ',' | append: score_3_collections -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if score_2_collections != '' -%}
+  {%- if sorted_collections == '' -%}
+    {%- assign sorted_collections = score_2_collections -%}
+  {%- else -%}
+    {%- assign sorted_collections = sorted_collections | append: ',' | append: score_2_collections -%}
+  {%- endif -%}
+{%- endif -%}
+
+{% comment %} Display the matched collections {% endcomment %}
+{%- if sorted_collections != blank -%}
+  <div class="page-width">
+    <div class="grid grid--uniform{% unless section.settings.enable_gutter %} grid--no-gutters{% endunless %}">
+      {%- if section.settings.title != blank -%}
+        <div class="section-header">
+          <h3 class="section-header__title">{{ section.settings.title }}</h3>
+        </div>
+      {%- endif -%}
+      {%- assign collection_handles = sorted_collections | split: ',' | uniq -%}
+      {%- for collection_handle in collection_handles limit: max_collections_to_show -%}
+        {%- assign collection = collections[collection_handle] -%}
+
+        {%- if collection != blank -%}
+            {%- render 'collection-grid-item',
+              collection: collection,
+              block: null,
+              gridView: 'medium-up--one-half',
+              background_position: 'center',
+              per_row: section.settings.per_row,
+              sizeVariable: 'medium-up--one-half',
+              fallback: 'variable'
+            -%}
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+{%- endif -%}
+
+{% comment %} Optional: Display message if no matching collections found {% endcomment %}
+{%- if collection_handles == blank -%}
+  <div class="no-related-collections" style="display: none;">
+    <!-- No collections match the criteria -->
+  </div>
+{%- endif -%}
+
+
+
+{% schema %}
+{
+  "name": "featured-collection-tags",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "collection-tagwise",
+      "default": "Featured Collections tagwise"
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "t:sections.featured-collections.settings.divider.label",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "per_row",
+      "label": "t:sections.featured-collections.settings.per_row.label",
+      "default": 4,
+      "min": 2,
+      "max": 5,
+      "step": 1
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_gutter",
+      "label": "t:sections.featured-collections.settings.enable_gutter.label",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "featured-collection-tags"
+    }
+  ]
+}
+{% endschema %}

@@ -17,6 +17,7 @@
   }*/
 {% endstyle %}
 
+
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
 <div class="page-width">
@@ -43,6 +44,9 @@
 
       {%- assign first_index = timestamp | modulo: metafield_collections.size -%}
       {%- assign second_index = first_index | plus: 1 | modulo: metafield_collections.size -%}
+
+ 
+
 
       {%- assign random_collections = '' -%}
       {% comment %} {%- assign i = 0 -%} {% endcomment %}

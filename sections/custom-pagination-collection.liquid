@@ -146,23 +146,6 @@
                       {%- if paginate.pages > 1 -%}
                         <pagination-component data-section-id="{{ section.id }}" data-target=".collection">
                           {%- render 'pagination', paginate: paginate -%}
-                          {% comment %} <div id="pagination-links" class="collection-products__pagination">
-                            {%- if paginate.previous -%}
-                              <a href="{{ paginate.previous.url }}" class="pagination__prev">Previous</a>
-                            {%- endif -%}
-
-                            {%- for part in paginate.parts -%}
-                              {%- if part.is_link -%}
-                                <a href="{{ part.url }}" class="pagination__page">{{ part.title }}</a>
-                              {%- else -%}
-                                <span class="pagination__page pagination__page--current">{{ part.title }}</span>
-                              {%- endif -%}
-                            {%- endfor -%}
-
-                            {%- if paginate.next -%}
-                              <a href="{{ paginate.next.url }}" class="pagination__next">Next</a>
-                            {%- endif -%}
-                          </div> {% endcomment %}
                         </pagination-component>
                       {%- endif -%}
                     </div>

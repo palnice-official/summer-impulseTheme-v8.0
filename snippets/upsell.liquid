@@ -1,0 +1,21 @@
+{% style %}
+  .upsell-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background: #fdf9f9;
+  }
+{% endstyle %}
+<div class="upsell-wrapper">
+  <h4 style="margin: 0; font-weight: bold;">You may also like these:</h4>
+  test-{{cart |  map: items | json}}
+  <div class="cart_upsells" style="display: flex; gap: 20px; overflow: scroll;">
+
+    {% for item in cart.items %}
+      {% for upsell in item.product.metafields.custom.upsells.value %}
+        {%- render 'product-grid-item', product: upsell, per_row: 1, quick_shop_enable: true -%}
+      {% endfor %}
+    {% endfor %}
+  </div>
+</div>

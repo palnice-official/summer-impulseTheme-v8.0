@@ -263,6 +263,8 @@
         </image-element>
       </div>
     </template>
+    {% comment %} {{ 'snowfall.js' | asset_url | script_tag }} {% endcomment %}
+
   </body>
 </html>
 =======
@@ -344,8 +346,24 @@
         themeVersion: "8.0.0"
       };
     </script>
+      {{ content_for_header }}
 
-    {{ content_for_header }}
+      <script>
+        // Run after DOM is Ready
+        if (document.readyState === 'loading') {
+          document.addEventListener("DOMContentLoaded", deferShopifyCSS)
+        } else {
+          deferShopifyCSS();
+        }
+
+        function deferShopifyCSS(){
+          // Target only problomatic css
+
+          const styleSheet = document.querySelector('link[href*="accelerated-checkout-backwards-compat.css"]');
+          
+
+        }
+      </script>
 
     <script src="{{ 'vendor-scripts-v11.js' | asset_url | split: '?' | first }}" defer="defer"></script>
     <script src="{{ 'flickity.js' | asset_url }}" defer="defer"></script>
@@ -530,6 +548,22 @@
         </image-element>
       </div>
     </template>
+
+    <script>
+      window.addEventListener("load", function(){
+        const styles = [
+          "https://cdn.shopify.com/extensions/019b5a94-a328-79ac-9b0a-d9abe0913c8c/bitbybit-google-signin-136/assets/app.css"
+        ];
+
+        styles.forEach(url => {
+          const link = document.createElement("link");
+          link.classList = "test"
+          link.rel = "stylesheet";
+          link.href = url;
+          document.head.appendChild(link);
+        });
+      });
+    </script>
   </body>
 </html>
 >>>>>>> 251783cb1fe7b981fae3ef21b6d02defa119bec4

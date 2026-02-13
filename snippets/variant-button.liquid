@@ -1,16 +1,256 @@
-{% style  %} 
+{% style %}
   .size_size_chart_wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+  }
 {% endstyle %}
+
+{% comment %}
+  {%- assign swatch_file_extension = 'png' -%}
+
+  {%- capture size_chart_title -%}
+    {{ 'products.general.size_chart' | t }}
+    {% comment %} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-size-chart" viewBox="0 0 64 64"><path d="M22.39 33.53c-7.46 0-13.5-3.9-13.5-8.72s6-8.72 13.5-8.72 13.5 3.9 13.5 8.72a12 12 0 0 1-.22 1.73"/><ellipse cx="22.39" cy="24.81" rx="3.28" ry="2.12"/><path d="M8.89 24.81V38.5c0 7.9 6.4 9.41 14.3 9.41h31.92V33.53H22.39m24.39 0v7.44m-8.13-7.44v7.44m-8.13-7.44v7.44m-8.13-7.44v7.44"/></svg> {% endcomment %}
+  {% comment %} {%- endcapture -%} {% endcomment %}
+
+{% assign sale_variant = nil %}
+
+{% for variant in product.variants %}
+  {% if variant.available and variant.compare_at_price > variant.price %}
+    {% assign sale_variant = variant %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+
+
+  {%- liquid
+    assign is_size = false
+    assign size_trigger = 'products.general.size_trigger' | t | downcase
+    assign downcased_option = option.name | downcase
+
+    if downcased_option contains size_trigger
+      assign is_size = true
+    endif
+  -%}
+
+  <div class="variant-wrapper js" data-type="button">
+    
+    <label
+      class="variant__label{% if option.name == 'Default' or option.name == 'Title' %} hidden-label{% endif %}{% unless variant_labels %} hidden-label{% endunless %}"
+      for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ forloop.index0 }}"
+    >
+    <div class="size_size_chart_wrapper">
+    <div class="size_wrapper">
+      {{ option.name }}
+      </div>
+      {%- if connect_to_sizechart and is_size -%}
+        <div class="size_chart_wraper">
+        <span class="variant__label-info">
+          {%- render 'tool-tip-trigger',
+            title: size_chart_title,
+            content: section.blocks[sizechart_index].settings.size_chart.content,
+            context: 'size-chart'
+          -%}
+        </span>
+        </div>
+      {%- endif -%}
+      </div>
+      {%- if is_color -%}
+        <span class="variant__label-info">
+          &mdash;
+          <span
+            data-variant-color-label
+            data-index="{{ forloop.index0 }}"
+            data-option-index="{{ color_option_index }}"
+          >
+            {{ option.selected_value }}
+          </span>
+        </span>
+      {%- endif -%}
+    </label>
+    {%- assign option_index = forloop.index -%}
+    <fieldset
+      class="variant-input-wrap"
+      name="{{ option.name }}"
+      data-index="option{{ option_index }}"
+      data-handle="{{ option.name | handleize }}"
+      id="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ forloop.index0 }}"
+    >
+      <legend class="hide">{{ option.name }}</legend>
+
+      {%- for value in option.values -%}
+        {%- liquid
+          assign product_available = true
+          assign variant_for_value = null
+
+          if product.options.size == 1
+            assign product_available = product.variants[forloop.index0].available
+            assign variant_for_value = product.variants[forloop.index0]
+            assign variant_quantity = product.variants[forloop.index0].inventory_quantity
+            comment
+              else
+              # For products with multiple options, find the matching variant
+              for variant in product.variants
+                assign option_value = variant.options[forloop.index0]
+                if option_value == value and is_size
+                  assign variant_for_value = variant
+                  assign product_available = variant.available
+                  break
+                endif
+              endfor
+            endcomment
+          endif
+        -%}
+  {% comment %} <pre>{{product.variants[0] |  json}}</pre> {% endcomment %}
+        {% assign full_url = request.host | append: request.path %}
+        {% assign current_collection = '' %}
+        {% if full_url contains 'ready-to-ship' %}
+          {% assign current_collection = 'ready-to-ship' %}
+        {% endif %}
+
+        {% if current_collection == 'ready-to-ship-1' or product.tags contains 'limited-edition' %}
+          <!-- <div class="quantity-padding"> -->
+          <div
+            class="variant-input"
+            data-index="option{{ option_index }}"
+            data-value="{{ value | escape }}"
+          >
+            {% comment %}
+              {% if variant_quantity > 0 %}
+            <span class="variant_quantity">{{ variant_quantity }} Left</span>
+              {% endif %}
+            {% endcomment %}
+
+            <input
+              type="radio"
+              form="{{ form_id }}"
+              {% if option.selected_value == value %}
+                checked="checked"
+              {% endif %}
+              value="{{ value | escape }}"
+              data-index="option{{ option_index }}"
+              name="{{ option.name }}"
+              data-variant-input
+              class="{% unless product_available %} disabled{% endunless %}{% if is_color %} variant__input--color-swatch{% endif %}"
+              {% if is_color %}
+                data-color-name="{{ value | escape }}"
+              {% endif %}
+              {% if is_color %}
+                data-color-index="{{ color_option_index }}"
+              {% endif %}
+              id="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"
+            >
+            {% if variant_quantity > 0 %}
+
+              {%- if is_color -%}
+                {%- liquid
+                  assign color_file_name = value | handle | append: '.' | append: swatch_file_extension
+                  assign color_image = color_file_name | file_img_url: '50x50' | prepend: 'https:' | split: '?' | first
+                  assign color_swatch_fallback = value | split: ' ' | last | handle
+                -%}
+
+                <label
+                  for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"
+                  class="variant__button-label color-swatch color-swatch--{{ value | handle }}{% unless product_available %} disabled{% endunless %}"
+                  style="background-color: {{ color_swatch_fallback }};{% if images[color_file_name] != blank %}  background-image: url({{ color_image }});{% endif %}"
+                >
+                  {{ value | escape }}-test
+
+                </label>
+              {%- else -%}
+
+                <label
+                  for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"
+                  class="variant__button-label{% unless product_available %} disabled{% endunless %}"
+                >
+                  {{ value | escape }}-test
+                  {% comment %} ------------------------{% endcomment %}
+                  {% if variant_quantity > 0 %}
+                    <div class="blot">{% render 'bolt' %}</div>
+test
+                  {% endif %}
+                  {% comment %} ------------------------{% endcomment %}
+                </label>
+
+              {% endif %}
+            {%- endif -%}
+          </div>
+
+        {% else %}
+          <div
+            class="variant-input"
+            data-index="option{{ option_index }}"
+            data-value="{{ value | escape }}"
+          >
+            {% comment %}
+            {% if variant_quantity > 0 %}
+            <span class="variant_quantity">{{ variant_quantity }} Left</span>
+              {% endif %}
+            {% endcomment %}
+            <input
+              type="radio"
+              form="{{ form_id }}"
+              {% if option.selected_value == value %}
+                checked="checked"
+              {% endif %}
+              value="{{ value | escape }}"
+              data-index="option{{ option_index }}"
+              name="{{ option.name }}"
+              data-variant-input
+              class="{% unless product_available %} disabled{% endunless %}{% if is_color %} variant__input--color-swatch{% endif %}"
+              {% if is_color %}
+                data-color-name="{{ value | escape }}"
+              {% endif %}
+              {% if is_color %}
+                data-color-index="{{ color_option_index }}"
+              {% endif %}
+              id="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"
+            >
+
+            {%- if is_color -%}
+              {%- liquid
+                assign color_file_name = value | handle | append: '.' | append: swatch_file_extension
+                assign color_image = color_file_name | file_img_url: '50x50' | prepend: 'https:' | split: '?' | first
+                assign color_swatch_fallback = value | split: ' ' | last | handle
+              -%}
+              <label
+                for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"
+                class="variant__button-label color-swatch color-swatch--{{ value | handle }}{% unless product_available %} disabled{% endunless %}"
+                style="background-color: {{ color_swatch_fallback }};{% if images[color_file_name] != blank %}  background-image: url({{ color_image }});{% endif %}"
+              >
+                {{ value | escape }}-test
+              </label>
+            {%- else -%}
+              <label
+                for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"
+                class="variant__button-label{% unless product_available %} disabled{% endunless %}"
+              >
+                {{ value | escape }}-test
+                {% comment %} ------------------------{% endcomment %}
+
+                {% if variant_quantity > 0 %}
+                  <div class="blot">{% render 'bolt' %}</div>
+                  <span class="variant_quantity">{{ variant_quantity }}</span>
+                  test-{{sale_variant}}
+                {% endif %}
+                {% comment %} ------------------------{% endcomment %}
+              </label>
+            {% endif %}
+          </div>
+        {% endif %}
+      {%- endfor -%}
+    </fieldset>
+  </div>
+{% endcomment %}
+
+{% comment %} ------------------------------------------------------------------------- {% endcomment %}
 
 {%- assign swatch_file_extension = 'png' -%}
 
 {%- capture size_chart_title -%}
   {{ 'products.general.size_chart' | t }} 
-  {% comment %} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-size-chart" viewBox="0 0 64 64"><path d="M22.39 33.53c-7.46 0-13.5-3.9-13.5-8.72s6-8.72 13.5-8.72 13.5 3.9 13.5 8.72a12 12 0 0 1-.22 1.73"/><ellipse cx="22.39" cy="24.81" rx="3.28" ry="2.12"/><path d="M8.89 24.81V38.5c0 7.9 6.4 9.41 14.3 9.41h31.92V33.53H22.39m24.39 0v7.44m-8.13-7.44v7.44m-8.13-7.44v7.44m-8.13-7.44v7.44"/></svg> {% endcomment %}
 {%- endcapture -%}
 
 {%- liquid
@@ -27,22 +267,23 @@
   <label
     class="variant__label{% if option.name == 'Default' or option.name == 'Title' %} hidden-label{% endif %}{% unless variant_labels %} hidden-label{% endunless %}"
     for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ forloop.index0 }}"
+    data-variant-label-name="{{ section_id }}-{{ product.id }}-{{option.name |  handleize}}"
   >
-  <div class="size_size_chart_wrapper">
-  <div class="size_wrapper">
-    {{ option.name }}
-    </div>
-    {%- if connect_to_sizechart and is_size -%}
-      <div class="size_chart_wraper">
-      <span class="variant__label-info">
-        {%- render 'tool-tip-trigger',
-          title: size_chart_title,
-          content: section.blocks[sizechart_index].settings.size_chart.content,
-          context: 'size-chart'
-        -%}
-      </span>
+    <div class="size_size_chart_wrapper">
+      <div class="size_wrapper">
+        {{ option.name }}
       </div>
-    {%- endif -%}
+      {%- if connect_to_sizechart and is_size -%}
+        <div class="size_chart_wraper">
+          <span class="variant__label-info">
+            {%- render 'tool-tip-trigger',
+              title: size_chart_title,
+              content: section.blocks[sizechart_index].settings.size_chart.content,
+              context: 'size-chart'
+            -%}
+          </span>
+        </div>
+      {%- endif -%}
     </div>
     {%- if is_color -%}
       <span class="variant__label-info">
@@ -57,7 +298,10 @@
       </span>
     {%- endif -%}
   </label>
+
   {%- assign option_index = forloop.index -%}
+  {%- assign option_position = forloop.index0 -%}
+
   <fieldset
     class="variant-input-wrap"
     name="{{ option.name }}"
@@ -69,25 +313,35 @@
 
     {%- for value in option.values -%}
       {%- liquid
-        assign product_available = true
-        assign variant_for_value = null
+        assign product_available = false
+        assign variant_quantity = 0
+        assign has_inventory = false
 
+        # For single option products
         if product.options.size == 1
-          assign product_available = product.variants[forloop.index0].available
-          assign variant_for_value = product.variants[forloop.index0]
-          assign variant_quantity = product.variants[forloop.index0].inventory_quantity
-          comment
-            else
-            # For products with multiple options, find the matching variant
-            for variant in product.variants
-              assign option_value = variant.options[forloop.index0]
-              if option_value == value and is_size
-                assign variant_for_value = variant
-                assign product_available = variant.available
-                break
+          if product.variants[forloop.index0].available
+            assign product_available = true
+            assign variant_quantity = product.variants[forloop.index0].inventory_quantity
+            if variant_quantity > 0
+              assign has_inventory = true
+            endif
+          endif
+        else
+          # For multi-option products - check all variants with this option value
+          for variant in product.variants
+            # Check if this variant has the current option value at the correct position
+            if variant.options[option_position] == value
+              if variant.available
+                assign product_available = true
+                # Add up inventory for all variants with this option value
+                if variant.inventory_quantity > 0
+                  assign has_inventory = true
+                  assign temp_qty = variant.inventory_quantity
+                  assign variant_quantity = variant_quantity | plus: temp_qty
+                endif
               endif
-            endfor
-          endcomment
+            endif
+          endfor
         endif
       -%}
 
@@ -98,24 +352,26 @@
       {% endif %}
 
       {% if current_collection == 'ready-to-ship-1' or product.tags contains 'limited-edition' %}
-        <!-- <div class="quantity-padding"> -->
         <div
           class="variant-input"
           data-index="option{{ option_index }}"
           data-value="{{ value | escape }}"
         >
-          {% comment %}
-            {% if variant_quantity > 0 %}
-          <span class="variant_quantity">{{ variant_quantity }} Left</span>
-            {% endif %}
-          {% endcomment %}
-          
           <input
             type="radio"
             form="{{ form_id }}"
-            {% if option.selected_value == value %}
-              checked="checked"
+            {% comment %}
+              {% if option.selected_value == value %}
+                checked="checked"
+              {% endif %}
+            {% endcomment %}
+
+            {% if sale_variant %}
+              {% if sale_variant.options[option_position] == value %}
+                checked="checked"
+              {% endif %}
             {% endif %}
+
             value="{{ value | escape }}"
             data-index="option{{ option_index }}"
             name="{{ option.name }}"
@@ -123,65 +379,68 @@
             class="{% unless product_available %} disabled{% endunless %}{% if is_color %} variant__input--color-swatch{% endif %}"
             {% if is_color %}
               data-color-name="{{ value | escape }}"
-            {% endif %}
-            {% if is_color %}
               data-color-index="{{ color_option_index }}"
             {% endif %}
             id="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"
+            data-variant-btn-label-nice="{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}"
           >
-          {% if variant_quantity > 0 %}
-         
-            {%- if is_color -%}
-              {%- liquid
-                assign color_file_name = value | handle | append: '.' | append: swatch_file_extension
-                assign color_image = color_file_name | file_img_url: '50x50' | prepend: 'https:' | split: '?' | first
-                assign color_swatch_fallback = value | split: ' ' | last | handle
-              -%}
-             
-              <label
-                for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"
-                class="variant__button-label color-swatch color-swatch--{{ value | handle }}{% unless product_available %} disabled{% endunless %}"
-                style="background-color: {{ color_swatch_fallback }};{% if images[color_file_name] != blank %}  background-image: url({{ color_image }});{% endif %}"
-              >
-                {{ value | escape }}
-                
-              </label>
-            {%- else -%}
-            
-              <label
-                for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"
-                class="variant__button-label{% unless product_available %} disabled{% endunless %}"
-              >
-                {{ value | escape }}
-                {% comment %} ------------------------{% endcomment %}
-                {% if variant_quantity > 0 %}
-                  <div class="blot">{% render 'bolt' %}</div>
-                 
-                {% endif %}
-                {% comment %} ------------------------{% endcomment %}
-              </label>
-          
-            {% endif %}
+
+          {%- if is_color -%}
+            {%- liquid
+              assign color_file_name = value | handle | append: '.' | append: swatch_file_extension
+              assign color_image = color_file_name | file_img_url: '50x50' | prepend: 'https:' | split: '?' | first
+              assign color_swatch_fallback = value | split: ' ' | last | handle
+            -%}
+
+            <label
+              for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"
+              class="variant__button-label color-swatch color-swatch--{{ value | handle }}{% unless product_available %} disabled{% endunless %}"
+              style="background-color: {{ color_swatch_fallback }};{% if images[color_file_name] != blank %}  background-image: url({{ color_image }});{% endif %}"
+              data-variant-btn-label-nice="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}"
+            >
+              {{ value | escape }}-test
+              {% if has_inventory %}
+                <div class="blot">{% render 'bolt' %}</div>
+              {% endif %}
+            </label>
+          {%- else -%}
+            <label
+              for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"
+              class="variant__button-label{% unless product_available %} disabled{% endunless %}"
+              data-variant-btn-label-nice=""
+            >
+              {{ value | escape }}
+              {% if has_inventory %}
+                <div class="blot">{% render 'bolt' %}</div>
+              {% endif %}
+            </label>
           {%- endif -%}
         </div>
-          
+
       {% else %}
         <div
           class="variant-input"
           data-index="option{{ option_index }}"
           data-value="{{ value | escape }}"
         >
-          {% comment %}     
-          {% if variant_quantity > 0 %}
-          <span class="variant_quantity">{{ variant_quantity }} Left</span>
-            {% endif %}
-          {% endcomment %}
           <input
             type="radio"
             form="{{ form_id }}"
-            {% if option.selected_value == value %}
-              checked="checked"
+            {% comment %}
+              {% if option.selected_value == value %}
+                checked="checked"
+              {% endif %}
+            {% endcomment %}
+            {% if sale_variant %}
+              {% if sale_variant.options[option_position] == value %}
+                checked="checked"
+              {% endif %}
+            {% else %}
+              {% if option.selected_value == value %}
+                checked="checked"
+              {% endif %}
             {% endif %}
+
             value="{{ value | escape }}"
             data-index="option{{ option_index }}"
             name="{{ option.name }}"
@@ -189,11 +448,10 @@
             class="{% unless product_available %} disabled{% endunless %}{% if is_color %} variant__input--color-swatch{% endif %}"
             {% if is_color %}
               data-color-name="{{ value | escape }}"
-            {% endif %}
-            {% if is_color %}
               data-color-index="{{ color_option_index }}"
             {% endif %}
             id="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"
+            data-variant-btn-label-nice="{{ section_id }}-{{ product.id }}-option-{{ value | handleize }}"
           >
 
           {%- if is_color -%}
@@ -208,6 +466,10 @@
               style="background-color: {{ color_swatch_fallback }};{% if images[color_file_name] != blank %}  background-image: url({{ color_image }});{% endif %}"
             >
               {{ value | escape }}
+              {% if has_inventory %}
+                <div class="blot">{% render 'bolt' %}</div>
+                <span class="variant_quantity">{{ variant_quantity }}</span>
+              {% endif %}
             </label>
           {%- else -%}
             <label
@@ -215,40 +477,81 @@
               class="variant__button-label{% unless product_available %} disabled{% endunless %}"
             >
               {{ value | escape }}
-              {% comment %} ------------------------{% endcomment %}
-
-              {% if variant_quantity > 0 %}
-                <div class="blot">{% render 'bolt' %}</div>
+              {% if has_inventory %}
+                <div class="blot bolt-{{ value | escape }}">{% render 'bolt' %}</div>
                 <span class="variant_quantity">{{ variant_quantity }}</span>
               {% endif %}
-              {% comment %} ------------------------{% endcomment %}
             </label>
-          {% endif %}
+          {%- endif -%}
         </div>
       {% endif %}
     {%- endfor -%}
   </fieldset>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const withoutPantsInput = document.querySelector(
+      '[data-variant-btn-label-nice="{{ section_id }}-{{ product.id }}-option-without-pants"]'
+    );
+    console.log('withoutPantsInput >>', withoutPantsInput);
+    const withPantsInput = document.querySelector(
+      '[data-variant-btn-label-nice="{{ section_id }}-{{ product.id }}-option-with-pants"]'
+    );
+    console.log('withPantsInput >>', withPantsInput);
+    // const bottomSizeSection = document.querySelector(
+    //   '#ProductSelect-template--21080540578028__main-9074430738668-option-2'
+    // ).closest('.variant-wrapper');
+
+    const bottomSizeSection = document
+      .querySelector('[data-variant-label-name="{{ section_id }}-{{ product.id }}-bottom-size"]')
+      .closest('.variant-wrapper');
+    console.log(bottomSizeSection);
+
+    // {{ section_id }}-{{ product.id }}-{{option.name}}
+
+    //  document.querySelector(
+    //   '#ProductSelect-template--21080540578028__main-9074430738668-option-2'
+    // ).closest('.blot').style.display = "none";
+
+    if (!withoutPantsInput || !withPantsInput || !bottomSizeSection) return;
+
+    function toggleBottomSize() {
+      if (withoutPantsInput.checked) {
+        bottomSizeSection.style.display = 'none';
+      } else {
+        bottomSizeSection.style.display = 'block';
+      }
+    }
+
+    // Run on load
+    toggleBottomSize();
+
+    // Add event listeners
+    withoutPantsInput.addEventListener('change', toggleBottomSize);
+    withPantsInput.addEventListener('change', toggleBottomSize);
+  });
+</script>
+
 {% style %}
-  .blot{
-    width:15px;
+  .blot {
+    width: 15px;
     position: absolute;
     top: 9px;
     left: -1px;
   }
- .variant_quantity {
+  .variant_quantity {
     position: relative;
     top: -2.8rem;
     left: 3.8rem;
     z-index: 25;
     font-size: xx-small;
-   color: #6cc197;
-   background-color:white
-}
+    color: #6cc197;
+    background-color: white;
+  }
   /* .variant-input{
     {
     left: -15px;
     position: relative;
 } */
-
 {% endstyle %}

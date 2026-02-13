@@ -1,0 +1,52 @@
+<div class="footer__item-padding">
+    test
+  {%- if section.settings.title-%}
+    <h2 class="h4 footer__title small--hide">{{ section.settings.title }}</h2>
+    <button
+      type="button"
+      class="h4 footer__title collapsible-trigger collapsible-trigger-btn medium-up--hide"
+      aria-controls="Footer-{{ section.id }}"
+    >
+      {{ section.settings.title }}
+      {%- render 'collapsible-icons' -%}
+    </button>
+  {%- endif -%}
+  <div
+    {% comment %} {% if block.settings.show_footer_title %} {% endcomment %}
+      id="Footer-{{ section.id }}" class="collapsible-content collapsible-content--small"
+    {% comment %} {% endif %} {% endcomment %}
+  >
+    <div class="collapsible-content__inner">
+      <div class="footer__collapsible{% unless block.settings.show_footer_title %} footer_collapsible--disabled{% endunless %}">
+
+        {{ section.settings.text }}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "custom collapsable",
+  "settings": [
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Custom Collapsable"
+    },
+    {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Add your custom text here.</p>"
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "custom collapsable"
+    }
+  ]
+}
+{% endschema %}

@@ -253,7 +253,7 @@
             {%- endif -%}
             {%- if product.price_varies -%}
               {%- assign price = product.price_min | money -%}
-              {{ 'products.general.from_text_html' | t: price: price }}
+              {{ 'products.general.from_text_html' | t: price: price }}=test
             {%- else -%}
               {% if product.tags contains 'Summer Archives' %}
                 <span class="price-on-request">Price on Request</span>
