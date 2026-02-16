@@ -116,6 +116,7 @@
             class="variant-input"
             data-index="option{{ option_index }}"
             data-value="{{ value | escape }}"
+            data-inventory="{{ product.variants[forloop.index0].inventory_quantity }}"
           >
             {% comment %}
               {% if variant_quantity > 0 %}
@@ -183,6 +184,9 @@ test
             class="variant-input"
             data-index="option{{ option_index }}"
             data-value="{{ value | escape }}"
+            data-inventory="{{ product.variants[forloop.index0].inventory_quantity }}"
+            
+
           >
             {% comment %}
             {% if variant_quantity > 0 %}
@@ -232,7 +236,7 @@ test
 
                 {% if variant_quantity > 0 %}
                   <div class="blot">{% render 'bolt' %}</div>
-                  <span class="variant_quantity">{{ variant_quantity }}</span>
+                  <span class="variant_quantity" id="">{{ variant_quantity }}</span>
                   test-{{sale_variant}}
                 {% endif %}
                 {% comment %} ------------------------{% endcomment %}
@@ -356,6 +360,8 @@ test
           class="variant-input"
           data-index="option{{ option_index }}"
           data-value="{{ value | escape }}"
+            data-inventory="{{ product.variants[forloop.index0].inventory_quantity }}"
+
         >
           <input
             type="radio"
@@ -422,6 +428,8 @@ test
           class="variant-input"
           data-index="option{{ option_index }}"
           data-value="{{ value | escape }}"
+          data-inventory="{{ product.variants[forloop.index0].inventory_quantity }}"
+          data-variantid = "{{ product.variants[forloop.index0].id }}"
         >
           <input
             type="radio"
