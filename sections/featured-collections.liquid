@@ -30,6 +30,8 @@
         endcapture
       -%}
 
+      {% comment %} test--{{ block.settings.collection_image | json }} {% endcomment %}
+
       {%- render 'collection-grid-item',
         collection: collection,
         block: block,
@@ -126,6 +128,12 @@
           "id": "title",
           "label": "t:sections.featured-collections.blocks.collection.settings.title.label"
         },
+       {
+  "type": "image_picker",
+  "id": "collection_image",
+  "label": "Collection Image"
+}
+,
         {
           "type": "select",
           "id": "focal_point",

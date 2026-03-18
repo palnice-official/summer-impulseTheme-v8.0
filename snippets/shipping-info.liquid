@@ -1,10 +1,10 @@
-{% assign has_inventory = false %}
+{% comment %} {% assign has_inventory = false %}
 {% for variant in product.variants %}
   {% if variant.inventory_quantity > 0 %}
     {% assign has_inventory = true %}
     {% break %}
   {% endif %}
-{% endfor %}
+{% endfor %} {% endcomment %}
 {% assign base_date = 'now' | date: '%s' %}
 {% assign two_days_in_seconds = 2 | times: 24 | times: 60 | times: 60 %}
 {% assign thirty_days_in_seconds = 28 | times: 24 | times: 60 | times: 60 %}
@@ -23,7 +23,9 @@
 >
   {% comment %} Loader {% endcomment %}
 
-  <div id="shipping_loader" class="shiping_loader" hidden></div>
+  <div id="shipping_loader" class="shiping_loader" hidden>
+    <div class="spinner"></div>
+  </div>
 
   {% comment %} Message {% endcomment %}
    <div id ="shipping_text"></div>
@@ -58,7 +60,7 @@
 {% endcomment %}
 
 
-<style>
+{% comment %} <style>
   .shipping_info {
     margin-top: 10px;
     font-weight: 600;
@@ -86,4 +88,39 @@
       opacity: 0.3;
     }
   }
+</style> {% endcomment %}
+
+<style>
+  .shipping-info {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  min-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Loader wrapper */
+.shipping-loader {
+  display: flex;
+  align-items: center;
+}
+
+/* Circular spinner */
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #e5e5e5;
+  border-top: 2px solid #000;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+/* Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 </style>

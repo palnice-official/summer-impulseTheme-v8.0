@@ -113,6 +113,132 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   {% endstyle %} {% endcomment %}
 
+<script>
+  window.productData = {
+    variants: [
+      {% for variant in product.variants %}
+        {
+          id: {{ variant.id }},
+          option1: {{ variant.option1 | json }},
+          option2: {{ variant.option2 | json }},
+          option3: {{ variant.option3 | json }},
+          inventory_quantity: {{ variant.inventory_quantity | default: 0 }},
+          inventory_management: {{ variant.inventory_management | json }},
+          inventory_policy: {{ variant.inventory_policy | json }}
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  };
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  if (!window.productData) return;
+
+  const container = document.getElementById('shipping_info');
+  if (!container) return;
+
+  const textEl = document.getElementById('shipping_text');
+  const loaderEl = document.getElementById('shipping_loader');
+
+  const ship3 = container.dataset.ship2;
+  const ship30 = container.dataset.ship30;
+
+  let lastVariantId = null;
+
+  function showLoader() {
+    container.style.display = 'block';
+    loaderEl.hidden = false;
+    textEl.innerHTML = '';
+  }
+
+  function showMessage(message) {
+    loaderEl.hidden = true;
+    textEl.innerHTML = message;
+  }
+
+  function hideShipping() {
+    container.style.display = 'none';
+  }
+
+  function getSelectedOptions() {
+    const selected = {};
+    document.querySelectorAll('.variant-input-wrap').forEach(group => {
+      const checked = group.querySelector('input[type="radio"]:checked');
+      if (checked) {
+        selected[group.dataset.index] = checked.value;
+      }
+    });
+    return selected;
+  }
+
+  function findMatchingVariant() {
+    const selectedOptions = getSelectedOptions();
+
+    return window.productData.variants.find(variant => {
+      return (
+        (!selectedOptions.option1 || variant.option1 === selectedOptions.option1) &&
+        (!selectedOptions.option2 || variant.option2 === selectedOptions.option2) &&
+        (!selectedOptions.option3 || variant.option3 === selectedOptions.option3)
+      );
+    });
+  }
+
+  function updateShipping() {
+
+    const variant = findMatchingVariant();
+    if (!variant) {
+      hideShipping();
+      return;
+    }
+
+    if (variant.id === lastVariantId) return;
+    lastVariantId = variant.id;
+
+    showLoader();
+
+    setTimeout(() => {
+
+      container.style.display = 'block';
+
+      console.log("variant.inventory_quantity >> ", variant.inventory_quantity)
+
+      // Continue selling enabled → inventory_quantity still real
+      if (variant.inventory_management === "shopify" && variant.inventory_quantity > 0) {
+        showMessage(`{% render 'bolt' %} Ready to Ship: Product will be shipped by ${ship3}`);
+      } else {
+        showMessage(`Product will be shipped by ${ship30}`);
+      }
+
+    }, 200);
+  }
+
+  // Initial load
+  updateShipping();
+
+  // Listen for any variant radio change
+  document.addEventListener('change', function(e) {
+    if (e.target.matches('.variant-input input[type="radio"]')) {
+      updateShipping();
+    }
+  });
+
+});
+</script>
+
+{% style %}
+    #shipping_text{
+      display: block;
+    }
+    #shipping_text svg{
+          width: 21px;
+      position: relative;
+      top: 6px;
+      left: 3px;
+    }
+  {% endstyle %}
 
 {% schema %}
 {

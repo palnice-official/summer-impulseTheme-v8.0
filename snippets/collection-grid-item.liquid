@@ -1,14 +1,21 @@
+{% comment %} if settings.collection_grid_image == 'collection' and collection.image
+    assign collection_image = {{nice_image | default: collection.image }} 
+  else
+    assign collection_image = collection.image
+  else
+    assign collection_image = collection.products.first.featured_media.preview_image
+  endif {% endcomment %}
+
 {%- liquid
 
   unless background_position
     assign background_position = 'center center'
   endunless
 
-  if settings.collection_grid_image == 'collection' and collection.image
-    assign collection_image = collection.image
-  else
-    assign collection_image = collection.products.first.featured_media.preview_image
-  endif
+  assign collection_image = collection.image
+
+  
+  
 
   if block.settings.title != blank
     assign title_output = block.settings.title
@@ -22,6 +29,8 @@
     endif
   endif
 -%}
+
+{% comment %} {{collection.image |  json}}>>{{ nice_image | json }} {% endcomment %}
 
 <div class="grid__item {{ gridView }}" {{ block.shopify_attributes }}>
   <a href="{{ collection.url }}" class="collection-item collection-item--{{ settings.collection_grid_style }}" data-aos="row-of-{{ per_row }}">

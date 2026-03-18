@@ -1,0 +1,586 @@
+
+{%- liquid
+  assign events_metaobject_type = 'event'
+  assign raw_events = shop.metaobjects[events_metaobject_type].values
+  assign sorted_handles = ''
+  assign remaining_handles = ''
+
+  for ev in raw_events
+    assign remaining_handles = remaining_handles | append: ev.system.handle | append: ','
+  endfor
+  assign total_events = raw_events.size
+  for i in (1..100)
+    if i > total_events
+      break
+    endif
+
+    assign pool = remaining_handles | split: ','
+    assign earliest_ts = nil
+    assign earliest_handle = nil
+    for h in pool
+      if h == blank
+        continue
+      endif
+      assign ev = shop.metaobjects[events_metaobject_type][h]
+      assign ev_ts = ev.data.value | date: '%s'
+      if earliest_ts == nil or ev_ts < earliest_ts
+        assign earliest_ts = ev_ts
+        assign earliest_handle = h
+      endif
+    endfor
+
+    if earliest_handle == blank
+      break
+    endif
+
+    assign sorted_handles = sorted_handles | append: earliest_handle | append: '|'
+    assign next_pool = ''
+    for h in pool
+      if h == blank or h == earliest_handle
+        continue
+      endif
+      assign next_pool = next_pool | append: h | append: ','
+    endfor
+    assign remaining_handles = next_pool
+
+  endfor
+  assign sorted_handle_list = sorted_handles | split: '|'
+  assign per_page = section.settings.number_of_events
+-%}
+<section
+  class="ue-section"
+  id="upcoming-events-{{ section.id }}"
+  style="--ue-accent: {{ section.settings.accent_color }}; --ue-bg: {{ section.settings.bg_color }}; --ue-btn: {{ section.settings.button_color }}; --ue-btn-text: {{ section.settings.button_text_color }};"
+>
+  <div class="ue-inner">
+
+    <div class="ue-header">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="ue-heading">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+      <div class="ue-divider"></div>
+      {%- if section.settings.subheading != blank -%}
+        <p class="ue-subheading">{{ section.settings.subheading }}</p>
+      {%- endif -%}
+    </div>
+    {%- if sorted_handle_list.size > 0 -%}
+      <div class="ue-list" id="ueList-{{ section.id }}">
+        {%- for handle in sorted_handle_list -%}
+          {%- if handle == blank -%}{%- continue -%}{%- endif -%}
+          {%- liquid
+            assign event = shop.metaobjects[events_metaobject_type][handle]
+            assign card_index = forloop.index0 | modulo: 5 | plus: 1
+            assign is_hidden = false
+            if forloop.index > per_page
+              assign is_hidden = true
+            endif
+            assign event_date = event.data.value
+            assign event_month = event_date | date: '%b'
+            assign event_day   = event_date | date: '%-d'
+            assign time_start  = event.time_start.value | default: ''
+            assign time_end    = event.time_end.value   | default: ''
+            assign event_type  = event.event_type.value | default: ''
+            assign event_link  = event.link.value       | default: ''
+            assign anim_delay  = forloop.index0 | times: 0.06
+          -%}
+          <div
+            class="ue-card ue-card--{{ card_index }}{% if is_hidden %} ue-card--hidden{% endif %}"
+            style="animation-delay: {{ anim_delay }}s"
+            role="article"
+            aria-label="{{ event.title.value }}"
+          >
+            {%- if event_link != blank -%}
+              <a href="{{ event_link }}" class="ue-card-link" aria-label="View {{ event.title.value }}"></a>
+            {%- endif -%}
+
+            <div class="ue-date">
+              <span class="ue-date__day">{{ event_day }}</span>
+              <span class="ue-date__month">{{ event_month }}</span>
+            </div>
+
+            <div class="ue-sep" aria-hidden="true"></div>
+
+            <div class="ue-info">
+              {%- if time_start != blank -%}
+                <div class="ue-time">
+                  {{ time_start }}
+                  {%- if time_end != blank %} – {{ time_end }}{%- endif -%}
+                </div>
+              {%- endif -%}
+
+              <div class="ue-title">{{ event.title.value }}</div>
+
+              {%- if event_type != blank -%}
+                <span class="ue-tag">{{ event_type }}</span>
+              {%- endif -%}
+            </div>
+          </div>
+
+        {%- endfor -%}
+      </div>
+
+      {%- assign total_events = sorted_handle_list | join: '' | split: '|' | size -%}
+      {%- if raw_events.size > per_page -%}
+        <div class="ue-footer">
+          <button
+            class="ue-btn-more"
+            id="ueBtnMore-{{ section.id }}"
+            data-section="{{ section.id }}"
+            data-per-page="{{ per_page }}"
+            data-shown="{{ per_page }}"
+            data-total="{{ raw_events.size }}"
+            aria-label="Load more events"
+          >
+            {{ section.settings.button_label | default: 'View More Events' }}
+            <span class="ue-btn-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </span>
+          </button>
+
+          <p class="ue-count" id="ueCount-{{ section.id }}">
+            {{- 'Events Showing'| append: " " | append: per_page | append: " of " | append: raw_events.size | append: " events" -}}
+          </p>
+
+          <p class="ue-all-loaded" id="ueAllLoaded-{{ section.id }}" hidden>
+            ✦ {{ section.settings.all_loaded_label | default: "You've seen all upcoming events" }}
+          </p>
+        </div>
+      {%- endif -%}
+
+    {%- else -%}
+      <p class="ue-empty">{{ section.settings.empty_message | default: 'No upcoming events at the moment. Check back soon!' }}</p>
+    {%- endif -%}
+
+  </div>
+</section>
+
+<style>
+
+  #upcoming-events-{{ section.id }} {
+    --ue-bg-default:   #f5f0eb;
+    --ue-accent-def:   #7a6e5f;
+    --ue-btn-def:      #1a1814;
+    --ue-btn-t-def:    #f5f0eb;
+
+    --ue-c1: #f0ebe4;
+    --ue-c2: #e8eaf0;
+    --ue-c3: #e8ede8;
+    --ue-c4: #edeae2;
+    --ue-c5: #f0e8e3;
+
+    --ue-text-dark:  #1a1814;
+    --ue-text-mid:   #5a5650;
+    --ue-text-light: #9a9590;
+    --ue-radius:     20px;
+    --ue-transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    background: var(--ue-bg, var(--ue-bg-default));
+    padding: {{ section.settings.section_padding_top }}px 20px {{ section.settings.section_padding_bottom }}px;
+    font-family: var(--font-body-family, sans-serif);
+  }
+
+  #upcoming-events-{{ section.id }} .ue-inner {
+    max-width: {{ section.settings.max_width }}px;
+    margin: 0 auto;
+  }
+
+  /* Header */
+  #upcoming-events-{{ section.id }} .ue-header {
+    margin-bottom: 36px;
+  }
+
+  #upcoming-events-{{ section.id }} .ue-heading {
+    font-family: var(--font-heading-family, serif);
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--ue-text-dark);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+
+  #upcoming-events-{{ section.id }} .ue-divider {
+    width: 48px;
+    height: 2px;
+    background: var(--ue-accent, var(--ue-accent-def));
+    margin: 14px 0 0;
+    border-radius: 2px;
+  }
+
+  #upcoming-events-{{ section.id }} .ue-subheading {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    color: var(--ue-text-light);
+    font-weight: 300;
+  }
+
+  /* List */
+  #upcoming-events-{{ section.id }} .ue-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  /* Card */
+  #upcoming-events-{{ section.id }} .ue-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 22px 26px;
+    border-radius: var(--ue-radius);
+    transition: transform var(--ue-transition), box-shadow var(--ue-transition);
+    animation: ueSlideIn 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    cursor: default;
+    overflow: hidden;
+  }
+
+  #upcoming-events-{{ section.id }} .ue-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity var(--ue-transition);
+    background: linear-gradient(135deg, rgba(255,255,255,0.18) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  #upcoming-events-{{ section.id }} .ue-card:hover { transform: translateY(-3px); box-shadow: 0 12px 36px rgba(0,0,0,0.08); }
+  #upcoming-events-{{ section.id }} .ue-card:hover::before { opacity: 1; }
+
+  #upcoming-events-{{ section.id }} .ue-card--1 { background: var(--ue-c1); }
+  #upcoming-events-{{ section.id }} .ue-card--2 { background: var(--ue-c2); }
+  #upcoming-events-{{ section.id }} .ue-card--3 { background: var(--ue-c3); }
+  #upcoming-events-{{ section.id }} .ue-card--4 { background: var(--ue-c4); }
+  #upcoming-events-{{ section.id }} .ue-card--5 { background: var(--ue-c5); }
+
+  #upcoming-events-{{ section.id }} .ue-card--hidden {
+    display: none !important;
+  }
+
+  /* Card link overlay */
+  #upcoming-events-{{ section.id }} .ue-card-link {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    border-radius: inherit;
+  }
+
+  /* Date */
+  #upcoming-events-{{ section.id }} .ue-date {
+    min-width: 60px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  #upcoming-events-{{ section.id }} .ue-date__day {
+    display: block;
+    font-family: var(--font-heading-family, serif);
+    font-size: 2.5rem;
+    line-height: 1;
+    color: var(--ue-text-dark);
+  }
+  #upcoming-events-{{ section.id }} .ue-date__month {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--ue-text-mid);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-top: 3px;
+  }
+
+  /* Separator */
+  #upcoming-events-{{ section.id }} .ue-sep {
+    width: 1px;
+    height: 48px;
+    background: rgba(0,0,0,0.12);
+    flex-shrink: 0;
+    border-radius: 1px;
+  }
+
+  /* Info */
+  #upcoming-events-{{ section.id }} .ue-info { flex: 1; min-width: 0; }
+  #upcoming-events-{{ section.id }} .ue-time {
+    font-size: 0.78rem;
+    color: var(--ue-text-light);
+    letter-spacing: 0.04em;
+    margin-bottom: 5px;
+  }
+  #upcoming-events-{{ section.id }} .ue-title {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--ue-text-dark);
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+  }
+  #upcoming-events-{{ section.id }} .ue-tag {
+    display: inline-block;
+    margin-top: 7px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ue-accent, var(--ue-accent-def));
+    background: rgba(122,110,95,0.1);
+    padding: 3px 9px;
+    border-radius: 50px;
+  }
+
+  /* Arrow */
+  #upcoming-events-{{ section.id }} .ue-arrow {
+    flex-shrink: 0;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(0,0,0,0.14);
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.25s ease;
+    color: var(--ue-text-mid);
+  }
+  /* #upcoming-events-{{ section.id }} .ue-arrow svg { width: 14px; height: 14px; } */
+  #upcoming-events-{{ section.id }} .ue-card:hover .ue-arrow {
+    background: var(--ue-text-dark);
+    border-color: var(--ue-text-dark);
+    color: #fff;
+    transform: translateX(3px);
+  }
+
+  /* Footer */
+  #upcoming-events-{{ section.id }} .ue-footer {
+    margin-top: 28px;
+    text-align: center;
+  }
+
+  #upcoming-events-{{ section.id }} .ue-btn-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--ue-btn, var(--ue-btn-def));
+    color: var(--ue-btn-text, var(--ue-btn-t-def));
+    border: none;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 0.92rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: background 0.25s, transform 0.2s, box-shadow 0.25s;
+  }
+  #upcoming-events-{{ section.id }} .ue-btn-more:hover {
+    opacity: 0.88;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+  }
+  #upcoming-events-{{ section.id }} .ue-btn-more:active { transform: translateY(0); }
+  #upcoming-events-{{ section.id }} .ue-btn-icon {
+    display: flex;
+    transition: transform 0.25s;
+  }
+  #upcoming-events-{{ section.id }} .ue-btn-more:hover .ue-btn-icon { transform: translateY(2px); }
+  #upcoming-events-{{ section.id }} .ue-btn-icon svg { width: 16px; height: 16px; }
+
+  #upcoming-events-{{ section.id }} .ue-count {
+    margin-top: 14px;
+    font-size: 0.8rem;
+    color: var(--ue-text-light);
+  }
+  #upcoming-events-{{ section.id }} .ue-all-loaded {
+    margin-top: 24px;
+    font-size: 0.88rem;
+    color: var(--ue-text-mid);
+    font-style: italic;
+  }
+  #upcoming-events-{{ section.id }} .ue-empty {
+    text-align: center;
+    color: var(--ue-text-light);
+    font-size: 1rem;
+    padding: 40px 0;
+  }
+
+  @keyframes ueSlideIn {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Reveal animation for newly shown cards */
+  #upcoming-events-{{ section.id }} .ue-card.ue-reveal {
+    animation: ueSlideIn 0.42s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @media (max-width: 480px) {
+    #upcoming-events-{{ section.id }} .ue-card {
+      gap: 16px;
+      padding: 18px 18px;
+    }
+    #upcoming-events-{{ section.id }} .ue-date__day { font-size: 2rem; }
+  }
+</style>
+
+<script>
+(function() {
+  const btn = document.getElementById('ueBtnMore-{{ section.id }}');
+  if (!btn) return;
+
+  btn.addEventListener('click', function() {
+    const sectionId = btn.dataset.section;
+    const perPage   = parseInt(btn.dataset.perPage, 10);
+    const total     = parseInt(btn.dataset.total, 10);
+
+    const list      = document.getElementById('ueList-' + sectionId);
+    const countEl   = document.getElementById('ueCount-' + sectionId);
+    const allLoaded = document.getElementById('ueAllLoaded-' + sectionId);
+
+    const hiddenCards = list.querySelectorAll('.ue-card--hidden');
+    const toShow = Math.min(perPage, hiddenCards.length);
+
+    for (let i = 0; i < toShow; i++) {
+      const card = hiddenCards[i];
+      card.classList.remove('ue-card--hidden');
+      card.classList.remove('ue-reveal');
+      card.style.animationDelay = (i * 0.07) + 's';
+      void card.offsetWidth;
+      card.classList.add('ue-reveal');
+    }
+
+    // read shown AFTER updating dataset
+    btn.dataset.shown = parseInt(btn.dataset.shown, 10) + toShow;
+    const shown = parseInt(btn.dataset.shown, 10);
+
+    if (countEl) {
+      countEl.textContent = 'Showing ' + shown + ' of ' + total + ' events';
+    }
+
+    // check remaining hidden cards — if none left, hide button
+    const remaining = list.querySelectorAll('.ue-card--hidden').length;
+
+    if (remaining === 0) {
+      btn.hidden = true;
+      btn.style.display = "none"
+      if (countEl) {
+        countEl.hidden = true;
+        countEl.style.display = "none"
+      };
+      if (allLoaded) {
+        // allLoaded.hidden = false;
+        allLoaded.removeAttribute('hidden');
+        allLoaded.style.display = "block"
+      }
+    }
+  });
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Upcoming Events",
+  "tag": "section",
+  "class": "upcoming-events-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Upcoming Events"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Join us for exclusive online sessions, workshops & webinars."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "View More Events"
+    },
+    {
+      "type": "text",
+      "id": "all_loaded_label",
+      "label": "All events loaded message",
+      "default": "You've seen all upcoming events"
+    },
+    {
+      "type": "text",
+      "id": "empty_message",
+      "label": "Empty state message",
+      "default": "No upcoming events at the moment. Check back soon!"
+    },
+    {
+      "type": "number",
+      "id": "number_of_events",
+      "label": "put number of events you want",
+      "default": 5
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Section background",
+      "default": "#f5f0eb"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color",
+      "default": "#7a6e5f"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button background",
+      "default": "#1a1814"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#f5f0eb"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "label": "Max content width (px)",
+      "min": 480,
+      "max": 1200,
+      "step": 20,
+      "default": 680
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Top padding (px)",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Bottom padding (px)",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "default": 80
+    }
+  ],
+  "presets": [
+    {
+      "name": "Upcoming Events"
+    }
+  ]
+}
+{% endschema %}
