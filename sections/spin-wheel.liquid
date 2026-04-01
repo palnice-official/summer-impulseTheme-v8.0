@@ -1,0 +1,680 @@
+{% comment %}
+  ============================================================
+  SPIN THE WHEEL SECTION
+  File: sections/spin-wheel.liquid
+  
+  Features:
+  - Fully customizable wheel segments via Schema settings
+  - Smooth CSS + JS spin animation with random landing
+  - Pastel / light minimal aesthetic
+  - Discount code display with one-click copy
+  - "One spin per session" guard via sessionStorage
+  - Schema settings for merchants to edit offers + codes
+  ============================================================
+{% endcomment %}
+
+{%- liquid
+  assign heading      = section.settings.heading
+  assign subheading   = section.settings.subheading
+  assign spin_label   = section.settings.spin_label
+  assign play_once    = section.settings.play_once
+-%}
+
+{% comment %} Build the segments array from blocks {% endcomment %}
+<script>
+  window.SpinWheelSegments = [
+    {% for block in section.blocks %}
+      {
+        label:  {{ block.settings.label | json }},
+        code:   {{ block.settings.code  | json }},
+        color:  {{ block.settings.color | json }}
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+  window.SpinWheelPlayOnce = {{ play_once | json }};
+  window.SpinWheelSectionId = {{ section.id | json }};
+</script>
+
+<section
+  class="spin-section"
+  id="spin-section-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+>
+  <!-- Decorative blobs for pastel atmosphere -->
+  <div class="spin-blob spin-blob--tl" aria-hidden="true"></div>
+  <div class="spin-blob spin-blob--br" aria-hidden="true"></div>
+
+  <div class="spin-inner">
+
+    <!-- ── Text column ── -->
+    <div class="spin-text">
+      {%- if heading != blank -%}
+        <h2 class="spin-heading">{{ heading }}</h2>
+      {%- endif -%}
+      {%- if subheading != blank -%}
+        <p class="spin-sub">{{ subheading }}</p>
+      {%- endif -%}
+
+      <!-- Result card (hidden until wheel stops) -->
+      <div class="spin-result" id="spinResult-{{ section.id }}" aria-live="polite" hidden>
+        <p class="spin-result__congrats">🎉 You won!</p>
+        <p class="spin-result__prize" id="spinPrize-{{ section.id }}"></p>
+        <div class="spin-result__code-wrap">
+          <span class="spin-result__code" id="spinCode-{{ section.id }}"></span>
+          <button
+            class="spin-result__copy"
+            id="spinCopyBtn-{{ section.id }}"
+            aria-label="Copy discount code"
+            type="button"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span id="spinCopyLabel-{{ section.id }}">Copy</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Spin button -->
+      <button
+        class="spin-trigger"
+        id="spinBtn-{{ section.id }}"
+        type="button"
+      >
+        {{ spin_label | default: 'Spin & Win!' }}
+      </button>
+
+      <p class="spin-note" id="spinNote-{{ section.id }}">Try your luck — spin the wheel!</p>
+    </div>
+
+    <!-- ── Wheel column ── -->
+    <div class="spin-wheel-wrap" aria-hidden="true">
+      <!-- Pointer / arrow -->
+      <div class="spin-pointer"></div>
+      <!-- Canvas is drawn by JS -->
+      <canvas
+        class="spin-canvas"
+        id="spinCanvas-{{ section.id }}"
+        width="400"
+        height="400"
+      ></canvas>
+      <!-- Centre cap -->
+      <div class="spin-cap">
+        <svg viewBox="0 0 40 40" width="40" height="40">
+          <circle cx="20" cy="20" r="18" fill="#fff" stroke="#e2d9f3" stroke-width="2"/>
+          <text x="20" y="25" text-anchor="middle" font-size="18">✦</text>
+        </svg>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     STYLES
+════════════════════════════════════════════ -->
+<style>
+  /* ── Tokens ── */
+  #spin-section-{{ section.id }} {
+    --sw-bg:          #faf9f7;
+    --sw-accent:      #c9b8f0;   /* soft lavender */
+    --sw-accent2:     #f9c8d4;   /* blush pink    */
+    --sw-text:        #1a1523;
+    --sw-sub:         #6b6578;
+    --sw-radius:      20px;
+    --sw-shadow:      0 8px 48px rgba(180,160,220,.18);
+    --sw-font-head:   'DM Serif Display', Georgia, serif;
+    --sw-font-body:   'DM Sans', system-ui, sans-serif;
+    --sw-transition:  .25s ease;
+  }
+
+  /* ── Google Fonts ── */
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap');
+
+  /* ── Section shell ── */
+  #spin-section-{{ section.id }} {
+    position:       relative;
+    overflow:       hidden;
+    background:     var(--sw-bg);
+    padding:        80px 24px;
+    font-family:    var(--sw-font-body);
+    color:          var(--sw-text);
+  }
+
+  /* ── Decorative blobs ── */
+  #spin-section-{{ section.id }} .spin-blob {
+    position:   absolute;
+    border-radius: 50%;
+    filter:     blur(80px);
+    opacity:    .35;
+    pointer-events: none;
+  }
+  #spin-section-{{ section.id }} .spin-blob--tl {
+    width:  420px; height: 420px;
+    background: var(--sw-accent);
+    top: -140px; left: -140px;
+  }
+  #spin-section-{{ section.id }} .spin-blob--br {
+    width:  360px; height: 360px;
+    background: var(--sw-accent2);
+    bottom: -120px; right: -100px;
+  }
+
+  /* ── Inner layout ── */
+  #spin-section-{{ section.id }} .spin-inner {
+    position:        relative;
+    z-index:         1;
+    max-width:       1080px;
+    margin:          0 auto;
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    gap:             64px;
+    flex-wrap:       wrap;
+  }
+
+  /* ── Text column ── */
+  #spin-section-{{ section.id }} .spin-text {
+    flex:       1 1 320px;
+    max-width:  420px;
+  }
+  #spin-section-{{ section.id }} .spin-heading {
+    font-family: var(--sw-font-head);
+    font-size:   clamp(2rem, 4vw, 2.8rem);
+    line-height: 1.15;
+    margin:      0 0 12px;
+    letter-spacing: -.01em;
+  }
+  #spin-section-{{ section.id }} .spin-sub {
+    color:       var(--sw-sub);
+    font-size:   1.05rem;
+    line-height: 1.6;
+    margin:      0 0 32px;
+  }
+
+  /* ── Spin button ── */
+  #spin-section-{{ section.id }} .spin-trigger {
+    display:         inline-flex;
+    align-items:     center;
+    gap:             8px;
+    background:      var(--sw-text);
+    color:           #fff;
+    border:          none;
+    border-radius:   50px;
+    padding:         14px 36px;
+    font-family:     var(--sw-font-body);
+    font-size:       1rem;
+    font-weight:     600;
+    cursor:          pointer;
+    letter-spacing:  .02em;
+    transition:      transform var(--sw-transition),
+                     box-shadow var(--sw-transition),
+                     background var(--sw-transition);
+    box-shadow:      0 4px 20px rgba(26,21,35,.2);
+    margin-bottom:   16px;
+  }
+  #spin-section-{{ section.id }} .spin-trigger:hover:not(:disabled) {
+    background:  #3b2f6e;
+    transform:   translateY(-2px);
+    box-shadow:  0 8px 28px rgba(26,21,35,.28);
+  }
+  #spin-section-{{ section.id }} .spin-trigger:disabled {
+    opacity: .5;
+    cursor:  not-allowed;
+  }
+
+  /* ── Note text ── */
+  #spin-section-{{ section.id }} .spin-note {
+    font-size:  .85rem;
+    color:      var(--sw-sub);
+    margin:     0;
+  }
+
+  /* ── Result card ── */
+  #spin-section-{{ section.id }} .spin-result {
+    background:    #fff;
+    border:        1.5px solid #ede8f8;
+    border-radius: var(--sw-radius);
+    padding:       24px 28px;
+    margin-bottom: 24px;
+    box-shadow:    var(--sw-shadow);
+    animation:     swFadeUp .4s ease both;
+  }
+  @keyframes swFadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  #spin-section-{{ section.id }} .spin-result__congrats {
+    font-size:   .9rem;
+    color:       var(--sw-sub);
+    margin:      0 0 4px;
+  }
+  #spin-section-{{ section.id }} .spin-result__prize {
+    font-family: var(--sw-font-head);
+    font-size:   1.5rem;
+    margin:      0 0 16px;
+    color:       var(--sw-text);
+  }
+  #spin-section-{{ section.id }} .spin-result__code-wrap {
+    display:     flex;
+    align-items: center;
+    gap:         10px;
+    background:  #f5f1ff;
+    border:      1.5px dashed var(--sw-accent);
+    border-radius: 10px;
+    padding:     12px 16px;
+  }
+  #spin-section-{{ section.id }} .spin-result__code {
+    font-family:  'Courier New', monospace;
+    font-size:    1.15rem;
+    font-weight:  700;
+    letter-spacing: .1em;
+    color:        #4b35a8;
+    flex:         1;
+  }
+  #spin-section-{{ section.id }} .spin-result__copy {
+    display:     inline-flex;
+    align-items: center;
+    gap:         6px;
+    background:  var(--sw-text);
+    color:       #fff;
+    border:      none;
+    border-radius: 8px;
+    padding:     8px 14px;
+    font-family: var(--sw-font-body);
+    font-size:   .8rem;
+    font-weight: 600;
+    cursor:      pointer;
+    transition:  background var(--sw-transition), transform var(--sw-transition);
+    white-space: nowrap;
+  }
+  #spin-section-{{ section.id }} .spin-result__copy:hover {
+    background: #3b2f6e;
+    transform:  scale(1.04);
+  }
+  #spin-section-{{ section.id }} .spin-result__copy.copied {
+    background: #2d9e5f;
+  }
+
+  /* ── Wheel wrap ── */
+  #spin-section-{{ section.id }} .spin-wheel-wrap {
+    position:  relative;
+    flex:      0 0 auto;
+    width:     min(400px, 90vw);
+    height:    min(400px, 90vw);
+  }
+  #spin-section-{{ section.id }} .spin-canvas {
+    width:         100%;
+    height:        100%;
+    border-radius: 50%;
+    box-shadow:    0 12px 48px rgba(180,160,220,.3),
+                   0 0 0 8px #fff,
+                   0 0 0 10px #ede8f8;
+    display:       block;
+    transition:    transform 0s;   /* overridden by JS */
+  }
+
+  /* ── Pointer ── */
+  #spin-section-{{ section.id }} .spin-pointer {
+    position:   absolute;
+    top:        -18px;
+    left:       50%;
+    transform:  translateX(-50%);
+    z-index:    10;
+    width:      0;
+    height:     0;
+    border-left:  14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top:   28px solid #4b35a8;
+    filter:     drop-shadow(0 4px 6px rgba(75,53,168,.35));
+  }
+
+  /* ── Centre cap ── */
+  #spin-section-{{ section.id }} .spin-cap {
+    position:    absolute;
+    top:         50%;
+    left:        50%;
+    transform:   translate(-50%, -50%);
+    z-index:     10;
+    pointer-events: none;
+  }
+
+  /* ── Spinning animation class ── */
+  #spin-section-{{ section.id }} .spin-canvas.spinning {
+    /* transform set inline via JS for exact degree control */
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 720px) {
+    #spin-section-{{ section.id }} .spin-inner {
+      flex-direction: column-reverse;
+      gap: 40px;
+    }
+    #spin-section-{{ section.id }} .spin-text {
+      text-align: center;
+    }
+    #spin-section-{{ section.id }} .spin-result__code-wrap {
+      flex-direction: column;
+      align-items: stretch;
+      text-align: center;
+    }
+  }
+</style>
+
+<!-- ════════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════════ -->
+<script>
+(function () {
+  'use strict';
+
+  /* ── Wait for DOM ── */
+  document.addEventListener('DOMContentLoaded', init);
+
+  function init () {
+    var sectionId = window.SpinWheelSectionId;
+    var segments  = window.SpinWheelSegments;
+    var playOnce  = window.SpinWheelPlayOnce;
+
+    /* ── Guard: need at least 2 segments ── */
+    if (!segments || segments.length < 2) return;
+
+    var storageKey = 'spinWheel_played_' + sectionId;
+
+    /* ── DOM refs ── */
+    var canvas    = document.getElementById('spinCanvas-'    + sectionId);
+    var btn       = document.getElementById('spinBtn-'       + sectionId);
+    var resultBox = document.getElementById('spinResult-'    + sectionId);
+    var prizeEl   = document.getElementById('spinPrize-'     + sectionId);
+    var codeEl    = document.getElementById('spinCode-'      + sectionId);
+    var copyBtn   = document.getElementById('spinCopyBtn-'   + sectionId);
+    var copyLabel = document.getElementById('spinCopyLabel-' + sectionId);
+    var noteEl    = document.getElementById('spinNote-'      + sectionId);
+
+    if (!canvas) return;
+
+    var ctx        = canvas.getContext('2d');
+    var numSeg     = segments.length;
+    var arc        = (2 * Math.PI) / numSeg;   /* angle of each slice */
+    var currentRot = 0;                         /* tracks total rotation in radians */
+    var spinning   = false;
+
+    /* ── Draw the wheel ── */
+    function drawWheel (rotation) {
+      var size = canvas.width;
+      var cx   = size / 2;
+      var cy   = size / 2;
+      var r    = cx - 4;   /* tiny inset so strokes don't clip */
+
+      ctx.clearRect(0, 0, size, size);
+
+      for (var i = 0; i < numSeg; i++) {
+        var startAngle = rotation + i * arc;
+        var endAngle   = startAngle + arc;
+        var seg        = segments[i];
+
+        /* ── Slice fill ── */
+        ctx.beginPath();
+        ctx.moveTo(cx, cy);
+        ctx.arc(cx, cy, r, startAngle, endAngle);
+        ctx.closePath();
+        ctx.fillStyle = seg.color || defaultColor(i);
+        ctx.fill();
+
+        /* ── Slice border ── */
+        ctx.strokeStyle = 'rgba(255,255,255,0.55)';
+        ctx.lineWidth   = 2;
+        ctx.stroke();
+
+        /* ── Label ── */
+        ctx.save();
+        ctx.translate(cx, cy);
+        ctx.rotate(startAngle + arc / 2);
+        ctx.textAlign    = 'right';
+        ctx.fillStyle    = labelColor(seg.color || defaultColor(i));
+        ctx.font         = 'bold ' + labelFontSize(seg.label, numSeg) + 'px "DM Sans", sans-serif';
+        ctx.shadowColor  = 'rgba(0,0,0,.12)';
+        ctx.shadowBlur   = 3;
+        /* Position text so it sits nicely inside the slice */
+        ctx.fillText(trimLabel(seg.label, numSeg), r - 18, 5);
+        ctx.restore();
+      }
+    }
+
+    /* ── Helpers ── */
+    function defaultColor (i) {
+      /* Pastel palette that cycles */
+      var palette = [
+        '#e8d5f5', '#fcd5ce', '#d4f1f4', '#fde8c8',
+        '#d0f0c0', '#fce4ec', '#dceefb', '#f9f0cc'
+      ];
+      return palette[i % palette.length];
+    }
+
+    function labelColor (bg) {
+      /* Parse hex to determine luminance and return dark or mid-dark text */
+      var hex = bg.replace('#', '');
+      var r   = parseInt(hex.substring(0,2), 16);
+      var g   = parseInt(hex.substring(2,4), 16);
+      var b   = parseInt(hex.substring(4,6), 16);
+      var lum = (0.299*r + 0.587*g + 0.114*b) / 255;
+      return lum > 0.65 ? '#2a1f4a' : '#ffffff';
+    }
+
+    function labelFontSize (text, count) {
+      /* Shrink font for many segments or long text */
+      var base = count <= 6 ? 14 : count <= 8 ? 12 : 10;
+      if (text && text.length > 12) base = Math.max(base - 2, 9);
+      return base;
+    }
+
+    function trimLabel (text, count) {
+      /* Truncate very long labels on small slices */
+      var max = count > 8 ? 10 : 16;
+      return text && text.length > max ? text.substring(0, max - 1) + '…' : text;
+    }
+
+    /* ── Easing: ease-out cubic ── */
+    function easeOut (t) {
+      return 1 - Math.pow(1 - t, 3);
+    }
+
+    /* ── Spin logic ── */
+    function spin () {
+      if (spinning) return;
+
+      /* One-spin guard */
+      if (playOnce && sessionStorage.getItem(storageKey)) {
+        noteEl.textContent = "You've already used your spin this session!";
+        return;
+      }
+
+      /* Pick a random winning segment */
+      var winIndex = Math.floor(Math.random() * numSeg);
+
+      /* 
+        Calculate how many full rotations + the exact landing angle.
+        The pointer sits at the top (270° = -π/2 from 3 o'clock 0°).
+        We want segment `winIndex` to land under the pointer.
+        
+        Center of winning segment in wheel coordinates:
+          (winIndex + 0.5) * arc
+        We need that center to align with -π/2 (top).
+        Extra offset to land in the MIDDLE of the slice for visual clarity.
+      */
+      var targetAngle  = -Math.PI / 2 - (winIndex + 0.5) * arc;
+      var extraSpins   = (5 + Math.floor(Math.random() * 4)) * 2 * Math.PI; /* 5–8 full spins */
+      var totalRot     = extraSpins + (targetAngle - currentRot % (2 * Math.PI));
+
+      /* Normalise so we always spin forward */
+      if (totalRot < extraSpins) totalRot += 2 * Math.PI;
+
+      var finalRot  = currentRot + totalRot;
+      var duration  = 4500 + Math.random() * 1000; /* 4.5–5.5 s */
+      var startTime = null;
+      var startRot  = currentRot;
+
+      spinning = true;
+      btn.disabled = true;
+      resultBox.hidden = true;
+      noteEl.textContent = 'Spinning…';
+
+      function animate (timestamp) {
+        if (!startTime) startTime = timestamp;
+        var elapsed  = timestamp - startTime;
+        var progress = Math.min(elapsed / duration, 1);
+        var easedProg = easeOut(progress);
+
+        currentRot = startRot + totalRot * easedProg;
+        drawWheel(currentRot);
+
+        if (progress < 1) {
+          requestAnimationFrame(animate);
+        } else {
+          /* ── Landed ── */
+          currentRot = finalRot;
+          drawWheel(currentRot);
+          spinning = false;
+
+          /* Mark as played */
+          if (playOnce) sessionStorage.setItem(storageKey, '1');
+
+          /* Show result */
+          var winner = segments[winIndex];
+          prizeEl.textContent = winner.label;
+          codeEl.textContent  = winner.code;
+          resultBox.hidden    = false;
+          noteEl.textContent  = playOnce ? "You've had your spin — good luck!" : 'Spin again!';
+
+          /* Re-enable btn only if play-once is off */
+          if (!playOnce) btn.disabled = false;
+        }
+      }
+
+      requestAnimationFrame(animate);
+    }
+
+    /* ── Copy handler ── */
+    function copyCode () {
+      var code = codeEl.textContent.trim();
+      if (!code) return;
+
+      /* Modern clipboard API with fallback */
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(code).then(showCopied).catch(fallbackCopy);
+      } else {
+        fallbackCopy();
+      }
+
+      function fallbackCopy () {
+        var ta = document.createElement('textarea');
+        ta.value = code;
+        ta.style.position = 'absolute';
+        ta.style.left = '-9999px';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); showCopied(); } catch(e) {}
+        document.body.removeChild(ta);
+      }
+
+      function showCopied () {
+        copyLabel.textContent = 'Copied!';
+        copyBtn.classList.add('copied');
+        setTimeout(function () {
+          copyLabel.textContent = 'Copy';
+          copyBtn.classList.remove('copied');
+        }, 2200);
+      }
+    }
+
+    /* ── Event listeners ── */
+    btn.addEventListener('click', spin);
+    copyBtn.addEventListener('click', copyCode);
+
+    /* ── Initial draw ── */
+    drawWheel(currentRot);
+
+    /* ── If already played this session, disable ── */
+    if (playOnce && sessionStorage.getItem(storageKey)) {
+      btn.disabled = true;
+      noteEl.textContent = "You've already used your spin this session!";
+    }
+  }
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Spin the Wheel",
+  "tag": "section",
+  "class": "spin-wheel-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Spin to Win a Discount"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Give the wheel a spin and unlock an exclusive discount for your order!"
+    },
+    {
+      "type": "text",
+      "id": "spin_label",
+      "label": "Spin Button Label",
+      "default": "Spin & Win!"
+    },
+    {
+      "type": "checkbox",
+      "id": "play_once",
+      "label": "Allow only one spin per session",
+      "default": true,
+      "info": "When enabled, each browser session gets one spin. Uses sessionStorage."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "segment",
+      "name": "Wheel Segment",
+      "limit": 12,
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Segment Label (shown on wheel)",
+          "default": "10% OFF"
+        },
+        {
+          "type": "text",
+          "id": "code",
+          "label": "Discount Code",
+          "default": "SAVE10",
+          "info": "This exact code will be shown to the customer when they land on this segment."
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Segment Color",
+          "default": "#e8d5f5"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Spin the Wheel",
+      "blocks": [
+        { "type": "segment", "settings": { "label": "10% OFF",    "code": "SPIN10",   "color": "#e8d5f5" } },
+        { "type": "segment", "settings": { "label": "Free Ship",  "code": "FREESHIP", "color": "#fcd5ce" } },
+        { "type": "segment", "settings": { "label": "15% OFF",    "code": "SPIN15",   "color": "#d4f1f4" } },
+        { "type": "segment", "settings": { "label": "Try Again",  "code": "NOLUCK",   "color": "#fde8c8" } },
+        { "type": "segment", "settings": { "label": "20% OFF",    "code": "SPIN20",   "color": "#d0f0c0" } },
+        { "type": "segment", "settings": { "label": "5% OFF",     "code": "SPIN5",    "color": "#fce4ec" } },
+        { "type": "segment", "settings": { "label": "Gift Wrap",  "code": "GIFTWRAP", "color": "#dceefb" } },
+        { "type": "segment", "settings": { "label": "Lucky Dip",  "code": "LUCKY",    "color": "#f9f0cc" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
