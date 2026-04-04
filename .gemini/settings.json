@@ -5,7 +5,8 @@
       "args": [
         "-y",
         "@shopify/dev-mcp@latest"
-      ]
+      ],
+      "trust": true
     }
   }
 }

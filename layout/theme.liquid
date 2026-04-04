@@ -263,6 +263,7 @@
       </div>
     </template>
     {% comment %} {{ 'snowfall.js' | asset_url | script_tag }} {% endcomment %}
-    {% render 'spin-wheel-floating' %}
+    {% comment %} {% render 'spin-wheel-floating' %} {% endcomment %}
+     {% render 'spin-to-win-popup' %}
   </body>
 </html>

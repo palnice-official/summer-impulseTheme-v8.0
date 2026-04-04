@@ -1,0 +1,510 @@
+<style>
+  spin-to-win-popup {
+    position: relative;
+    z-index: 9999;
+  }
+
+  .stw-popup {
+    --stw-overlay: rgba(64, 48, 55, 0.32);
+    --stw-card-width: min(370px, calc(100vw - 24px));
+    --stw-card-radius: 22px;
+    --stw-button-bg: #f7d9df;
+    --stw-button-text: #221919;
+    --stw-close-bg: #221919;
+    --stw-close-text: #ffffff;
+    --stw-copy-bg: rgba(255, 255, 255, 0.82);
+  }
+
+  .stw-popup__overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background: var(--stw-overlay);
+    backdrop-filter: blur(2px);
+  }
+
+  .stw-popup.is-open .stw-popup__overlay {
+    display: flex;
+  }
+
+  .stw-popup__dialog {
+    position: relative;
+    width: var(--stw-card-width);
+    min-height: 500px;
+    padding: 128px 16px 18px;
+    border-radius: var(--stw-card-radius);
+    overflow: hidden;
+    background:
+      linear-gradient(rgba(255, 255, 255, 0.38), rgba(255, 255, 255, 0.38)),
+      url({{ 'spin-popup-floral-bg.png' | asset_url }}) center/cover no-repeat;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
+    text-align: center;
+  }
+
+  .stw-popup__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 999px;
+    background: var(--stw-close-bg);
+    color: var(--stw-close-text);
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  .stw-popup__wheel-shell {
+    position: absolute;
+    top: -88px;
+    left: 50%;
+    z-index: 2;
+    width: 262px;
+    height: 262px;
+    transform: translateX(-50%);
+  }
+
+  .stw-popup__wheel {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 999px;
+    box-shadow: 0 0 0 5px #fff;
+  }
+
+  .stw-popup__pointer {
+   position: absolute;
+    right: 23px;
+    top: 92%;
+    width: 42px;
+    height: 41px;
+    transform: translateY(-50%) rotate(71deg);
+    transform-origin: center;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.18));
+  }
+
+  .stw-popup__body {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 25vh;
+    gap: 14px;
+    top: 91px;
+  }
+
+  .stw-popup__title {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    line-height: 1.1;
+    color: #191212;
+  }
+
+  .stw-popup__subtitle {
+    max-width: 285px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #4f4343;
+  }
+
+  .stw-popup__button {
+    width: 100%;
+    min-height: 36px;
+    margin-top: auto;
+    border: 0;
+    border-radius: 0;
+    background: var(--stw-button-bg);
+    color: var(--stw-button-text);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .stw-popup__button[disabled] {
+    opacity: 0.65;
+    cursor: wait;
+  }
+
+  .stw-popup__result {
+    width: 100%;
+    display: none;
+    gap: 10px;
+    margin-top: 2px;
+  }
+
+  .stw-popup__result.is-visible {
+    display: grid;
+  }
+
+  .stw-popup__result-text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.45;
+    color: #201616;
+  }
+
+  .stw-popup__coupon {
+    display: none;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    border: 1px dashed rgba(34, 25, 25, 0.22);
+    background: var(--stw-copy-bg);
+  }
+
+  .stw-popup__coupon.is-visible {
+    display: grid;
+  }
+
+  .stw-popup__coupon-code,
+  .stw-popup__coupon-copy {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .stw-popup__coupon-code {
+    text-align: left;
+    letter-spacing: 0.14em;
+    font-weight: 600;
+  }
+
+  .stw-popup__coupon-copy {
+    border: 0;
+    border-left: 1px dashed rgba(34, 25, 25, 0.22);
+    background: transparent;
+    cursor: pointer;
+  }
+
+  @media (max-width: 480px) {
+    .stw-popup__dialog {
+      min-height: 470px;
+      padding-top: 118px;
+    }
+
+    .stw-popup__wheel-shell {
+      width: 246px;
+      height: 246px;
+      top: -82px;
+    }
+
+    .stw-popup__body {
+      /* min-height: 230px; */
+      /* top: 91px; */
+    }
+
+    .stw-popup__title {
+      font-size: 26px;
+    }
+  }
+</style>
+
+<spin-to-win-popup class="stw-popup" data-delay="3000">
+  <div class="stw-popup__overlay" role="dialog" aria-modal="true" aria-label="Spin to win">
+    <div class="stw-popup__dialog">
+      <button class="stw-popup__close" type="button" aria-label="Close popup">&times;</button>
+
+      <div class="stw-popup__wheel-shell" aria-hidden="true">
+        <canvas class="stw-popup__wheel" width="262" height="262"></canvas>
+        <svg class="stw-popup__pointer" viewBox="0 0 101 100" xmlns="http://www.w3.org/2000/svg">
+          <path fill="none" d="M0 0h100.77v99.1H0z"></path>
+          <path d="M86.2 21.13c11.77 11.78 10.86 31.8-2.03 44.7-19.9 19.89-65.7 23.05-65.7 23.05s3.15-45.81 23.05-65.71c12.89-12.9 32.91-13.8 44.68-2.04Z" fill="#262652" fill-opacity=".2"></path>
+          <path d="M74.17 13.77c11.77 11.77 10.86 31.8-2.04 44.68-19.9 19.9-65.7 23.06-65.7 23.06S9.57 35.7 29.47 15.8C42.38 2.9 62.39 2 74.17 13.77Z" fill="#262652"></path>
+          <path d="M75.33 12.6C62.95.22 41.87 1.07 28.31 14.63c-8.14 8.14-13.58 20.5-17.13 32.42a178.6 178.6 0 0 0-6.4 34.34 1.66 1.66 0 0 0 1.76 1.77S23.2 82 40.88 76.75C52.8 73.2 65.16 67.76 73.3 59.62 86.87 46.06 87.72 25 75.33 12.6ZM73 14.94c11.15 11.15 10.18 30.13-2.03 42.35-7.79 7.78-19.63 12.9-31.03 16.3a177.01 177.01 0 0 1-31.7 6.1c.46-4.8 2.02-17.94 6.11-31.7 3.4-11.4 8.52-23.24 16.3-31.02C42.87 4.75 61.85 3.78 73 14.94Z" fill="#ffffff"></path>
+          <circle cx="129" cy="28" r="2" fill="#bfbfbf" transform="scale(3.30344) rotate(45 94.2 -117.68)"></circle>
+        </svg>
+      </div>
+
+      <div class="stw-popup__body">
+        <h2 class="stw-popup__title">Spin to win</h2>
+        <p class="stw-popup__subtitle">One spin per visitor. Land on a prize to reveal your code.</p>
+
+        <div class="stw-popup__result" aria-live="polite">
+          <p class="stw-popup__result-text"></p>
+          <div class="stw-popup__coupon">
+            <span class="stw-popup__coupon-code"></span>
+            <button class="stw-popup__coupon-copy" type="button">Copy</button>
+          </div>
+        </div>
+
+        <button class="stw-popup__button" type="button">Let's spin!</button>
+      </div>
+    </div>
+  </div>
+</spin-to-win-popup>
+
+<script>
+  (function () {
+    if (customElements.get('spin-to-win-popup')) return;
+
+    class SpinToWinPopup extends HTMLElement {
+      constructor() {
+        super();
+
+        /*
+          Full wheel options stay visible on the wheel.
+          Only options with canWin: true are eligible to be selected.
+          - priority: lower number = higher selection priority
+          - weight: higher number = higher chance to win
+        */
+        this.segments = [
+          { label: 'Free Potli', coupon: 'POUTIFREE', color: '#d7eef6', canWin: false, weight: 0, priority: 99 },
+          { label: 'Mom Hoop', coupon: 'MOMHOOP', color: '#d8f0e4', canWin: true, weight: 50, priority: 1 },
+          { label: '10% off', coupon: 'SAVE10', color: '#f6dce2', canWin: true, weight: 20, priority: 3 },
+          { label: 'You lose', coupon: '', color: '#dce9f7', canWin: false, weight: 0, priority: 99 },
+          { label: '15% OFF', coupon: 'SAVE15', color: '#d8f0e4', canWin: true, weight: 30, priority: 2 },
+          { label: 'You lose', coupon: '', color: '#dce9f7', canWin: false, weight: 0, priority: 99 },
+          { label: 'Free Potli', coupon: 'POUTIFREE', color: '#d8f0e4', canWin: false, weight: 0, priority: 99 },
+          { label: 'Free Potli', coupon: 'POUTIFREE', color: '#f6dce2', canWin: false, weight: 0, priority: 99 }
+        ];
+        this.storageKey = 'stw-popup-dismissed-v2';
+        this.spinDuration = 4800;
+        this.spinRotations = 5;
+        this.currentAngle = 0;
+        this.isSpinning = false;
+      }
+
+      connectedCallback() {
+        this.overlay = this.querySelector('.stw-popup__overlay');
+        this.canvas = this.querySelector('.stw-popup__wheel');
+        this.closeButton = this.querySelector('.stw-popup__close');
+        this.spinButton = this.querySelector('.stw-popup__button');
+        this.result = this.querySelector('.stw-popup__result');
+        this.resultText = this.querySelector('.stw-popup__result-text');
+        this.couponWrap = this.querySelector('.stw-popup__coupon');
+        this.couponCode = this.querySelector('.stw-popup__coupon-code');
+        this.copyButton = this.querySelector('.stw-popup__coupon-copy');
+        this.ctx = this.canvas ? this.canvas.getContext('2d') : null;
+
+        if (!this.ctx) return;
+
+        this.drawWheel(0);
+        this.bindEvents();
+
+        if (!localStorage.getItem(this.storageKey)) {
+          const delay = Number(this.dataset.delay || 3000);
+          window.setTimeout(() => this.open(), delay);
+        }
+      }
+
+      bindEvents() {
+        this.closeButton.addEventListener('click', () => this.dismiss());
+        this.spinButton.addEventListener('click', () => this.spin());
+        this.copyButton.addEventListener('click', () => this.copyCoupon());
+        this.overlay.addEventListener('click', (event) => {
+          if (event.target === this.overlay) this.dismiss();
+        });
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape' && this.classList.contains('is-open')) {
+            this.dismiss();
+          }
+        });
+      }
+
+      open() {
+        this.classList.add('is-open');
+      }
+
+      dismiss() {
+        this.classList.remove('is-open');
+        localStorage.setItem(this.storageKey, '1');
+      }
+
+      drawWheel(rotation) {
+        const size = this.canvas.width;
+        const center = size / 2;
+        const radius = center - 5;
+        const arc = (Math.PI * 2) / this.segments.length;
+
+        this.ctx.clearRect(0, 0, size, size);
+
+        this.segments.forEach((segment, index) => {
+          const start = rotation + index * arc;
+          const end = start + arc;
+
+          this.ctx.beginPath();
+          this.ctx.moveTo(center, center);
+          this.ctx.arc(center, center, radius, start, end);
+          this.ctx.closePath();
+          this.ctx.fillStyle = segment.color;
+          this.ctx.fill();
+
+          this.ctx.strokeStyle = '#ffffff';
+        //   this.ctx.strokeStyle = '#000';
+          this.ctx.lineWidth = 2;
+          this.ctx.stroke();
+
+          this.ctx.save();
+          this.ctx.translate(center, center);
+          this.ctx.rotate(start + arc / 2);
+          this.ctx.textAlign = 'right';
+          this.ctx.fillStyle = '#221919';  // change text color of spinning wheel
+          // this.ctx.fillStyle = '#ffffff';
+
+          this.ctx.font = '600 11px Arial';
+
+          const lines = segment.label.split('\n');
+          const startY = -((lines.length - 1) * 13) / 2;
+          lines.forEach((line, lineIndex) => {
+            this.ctx.fillText(line, radius - 20, startY + lineIndex * 13);
+          });
+          this.ctx.restore();
+        });
+
+        this.ctx.beginPath();
+        this.ctx.arc(center, center, 18, 0, Math.PI * 2);
+        // this.ctx.fillStyle = '#000';
+        this.ctx.fillStyle = '#ffffff';
+        this.ctx.fill();
+        this.ctx.strokeStyle = '#d7d7d7';
+        this.ctx.lineWidth = 2;
+        this.ctx.stroke();
+
+        this.drawStar(center, center, 5, 12, 6);
+      }
+
+      drawStar(centerX, centerY, spikes, outerRadius, innerRadius) {
+        let rotation = Math.PI / 2 * 3;
+        const step = Math.PI / spikes;
+
+        this.ctx.beginPath();
+        this.ctx.moveTo(centerX, centerY - outerRadius);
+
+        for (let i = 0; i < spikes; i += 1) {
+          this.ctx.lineTo(
+            centerX + Math.cos(rotation) * outerRadius,
+            centerY + Math.sin(rotation) * outerRadius
+          );
+          rotation += step;
+          this.ctx.lineTo(
+            centerX + Math.cos(rotation) * innerRadius,
+            centerY + Math.sin(rotation) * innerRadius
+          );
+          rotation += step;
+        }
+
+        this.ctx.closePath();
+        this.ctx.fillStyle = '#f0f0f0';
+        this.ctx.fill();
+        this.ctx.strokeStyle = '#cdcdcd';
+        this.ctx.lineWidth = 1;
+        this.ctx.stroke();
+      }
+
+      pickWinningSegment() {
+        const eligibleSegments = this.segments
+          .map((segment, index) => ({ segment, index }))
+          .filter(({ segment }) => segment.canWin && segment.weight > 0);
+        const totalWeight = eligibleSegments.reduce((sum, entry) => sum + entry.segment.weight, 0);
+
+        if (!eligibleSegments.length || totalWeight <= 0) {
+          return this.segments.findIndex((segment) => segment.canWin);
+        }
+
+        let randomPoint = Math.random() * totalWeight;
+        const orderedEligibleSegments = eligibleSegments.sort((left, right) => {
+          if (left.segment.priority !== right.segment.priority) {
+            return left.segment.priority - right.segment.priority;
+          }
+
+          return right.segment.weight - left.segment.weight;
+        });
+
+        for (let index = 0; index < orderedEligibleSegments.length; index += 1) {
+          const eligibleSegment = orderedEligibleSegments[index];
+          randomPoint -= eligibleSegment.segment.weight;
+          if (randomPoint <= 0) {
+            return eligibleSegment.index;
+          }
+        }
+
+        return orderedEligibleSegments[0].index;
+      }
+
+      spin() {
+        if (this.isSpinning) return;
+
+        this.isSpinning = true;
+        this.spinButton.disabled = true;
+        this.spinButton.textContent = 'Spinning...';
+
+        const arc = (Math.PI * 2) / this.segments.length;
+        const winnerIndex = this.pickWinningSegment();
+        const winnerCenter = winnerIndex * arc + arc / 2;
+        const fullSpins = this.spinRotations * Math.PI * 2;
+        const targetAngle = fullSpins - winnerCenter;
+        const startAngle = this.currentAngle % (Math.PI * 2);
+        const totalDelta = targetAngle + (Math.PI * 2 - startAngle);
+        let startTime = null;
+
+        const easeOut = (value) => 1 - Math.pow(1 - value, 4);
+
+        const animate = (timestamp) => {
+          if (!startTime) startTime = timestamp;
+
+          const progress = Math.min((timestamp - startTime) / this.spinDuration, 1);
+          this.currentAngle = startAngle + totalDelta * easeOut(progress);
+          this.drawWheel(this.currentAngle);
+
+          if (progress < 1) {
+            window.requestAnimationFrame(animate);
+            return;
+          }
+
+          this.isSpinning = false;
+          this.showResult(winnerIndex);
+        };
+
+        window.requestAnimationFrame(animate);
+      }
+
+      showResult(index) {
+        const segment = this.segments[index];
+
+        this.result.classList.add('is-visible');
+        this.spinButton.style.display = 'none';
+        this.resultText.textContent = 'You won ' + segment.label.replace('\n', ' ') + '.';
+        this.couponWrap.classList.add('is-visible');
+        this.couponCode.textContent = segment.coupon;
+
+        localStorage.setItem(this.storageKey, '1');
+      }
+
+      copyCoupon() {
+        const coupon = this.couponCode.textContent.trim();
+        if (!coupon) return;
+
+        const onCopied = () => {
+          this.copyButton.textContent = 'Copied';
+          window.setTimeout(() => {
+            this.copyButton.textContent = 'Copy';
+          }, 1800);
+        };
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(coupon).then(onCopied);
+          return;
+        }
+
+        const input = document.createElement('textarea');
+        input.value = coupon;
+        input.style.position = 'fixed';
+        input.style.left = '-9999px';
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand('copy');
+        document.body.removeChild(input);
+        onCopied();
+      }
+    }
+
+    customElements.define('spin-to-win-popup', SpinToWinPopup);
+  })();
+</script>
