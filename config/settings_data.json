@@ -258,6 +258,11 @@
         "type": "shopify://apps/tt-breadcrumbs-seo-schema/blocks/ttSchema/dda6b26d-4f1a-43c6-a94b-6443ed0f750b",
         "disabled": false,
         "settings": {}
+      },
+      "3557650678667880288": {
+        "type": "shopify://apps/razorpay-cod-magic-checkout/blocks/magicx-script/c13c688d-5c45-4054-b95f-1edd63faa705",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
