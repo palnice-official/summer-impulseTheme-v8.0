@@ -18,6 +18,24 @@
     {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
   {%- endif -%}
 
+  {%- liquid
+    assign product_title_downcase = product.title | downcase
+    assign product_handle_downcase = product.handle | downcase
+    assign show_mom_hoop_discount = false
+    assign mom_hoop_reward_variant_id = 47475009159404
+
+    if product_title_downcase contains 'mom hoop' or product_handle_downcase contains 'mom-hoop' or product_title_downcase contains 'best mom hoop' or product_handle_downcase contains 'hoop'
+      assign show_mom_hoop_discount = true
+    else
+      for variant in product.variants
+        if variant.id == mom_hoop_reward_variant_id
+          assign show_mom_hoop_discount = true
+          break
+        endif
+      endfor
+    endif
+  -%}
+
   {%- if enable_dynamic_buttons -%}
     <div class="payment-buttons">
   {%- endif -%}
@@ -33,6 +51,64 @@
         assign button_text = 'products.product.sold_out' | t
       endunless
     -%}
+
+    {%- if show_mom_hoop_discount -%}
+      <div class="product-form__discount-note" data-mom-hoop-discount>
+        <p class="product-form__discount-text">Use code at checkout to get it free.</p>
+        <div class="product-form__discount-code-wrap">
+          <span class="product-form__discount-code" data-mom-hoop-code>MOMHOOP</span>
+          <button type="button" class="product-form__discount-copy" data-mom-hoop-copy>Copy</button>
+        </div>
+      </div>
+      <script>
+        (function() {
+          var containers = document.querySelectorAll('[data-mom-hoop-discount]');
+          containers.forEach(function(container) {
+            if (container.dataset.copyBound === 'true') return;
+            container.dataset.copyBound = 'true';
+
+            var codeEl = container.querySelector('[data-mom-hoop-code]');
+            var button = container.querySelector('[data-mom-hoop-copy]');
+            if (!codeEl || !button) return;
+
+            var copyText = function(text) {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                return navigator.clipboard.writeText(text);
+              }
+
+              return new Promise(function(resolve, reject) {
+                var input = document.createElement('textarea');
+                input.value = text;
+                input.style.position = 'fixed';
+                input.style.left = '-9999px';
+                document.body.appendChild(input);
+                input.select();
+
+                try {
+                  document.execCommand('copy');
+                  resolve();
+                } catch (error) {
+                  reject(error);
+                }
+
+                document.body.removeChild(input);
+              });
+            };
+
+            button.addEventListener('click', function() {
+              var originalText = button.textContent;
+
+              copyText(codeEl.textContent.trim()).then(function() {
+                button.textContent = 'Copied';
+                window.setTimeout(function() {
+                  button.textContent = originalText;
+                }, 1800);
+              });
+            });
+          });
+        })();
+      </script>
+    {%- endif -%}
 
     <button
       {% if product.empty? %}type="button"{% else %}type="submit"{% endif %}

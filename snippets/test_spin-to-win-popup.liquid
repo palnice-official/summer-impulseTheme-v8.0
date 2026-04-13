@@ -1,0 +1,92 @@
+<script>
+  (function () {
+    if (customElements.get('spin-to-win-popup')) return;
+    class SpinToWinPopup extends HTMLElement {
+      constructor() {
+        super();
+        this.segments = [
+          { label: 'Free Potli', coupon: '', color: '#d7eef6', canWin: false, weight: 0, priority: 99 },
+          { label: 'Mom Hoop', coupon: 'Best Mom Hoop', color: '#d8f0e4', canWin: true, weight: 15, priority: 3 },
+          { label: '10% off', coupon: 'SAVE10', color: '#f6dce2', canWin: true, weight: 20, priority: 1 },
+          { label: 'You lose', coupon: '', color: '#dce9f7', canWin: false, weight: 0, priority: 99 },
+          { label: '15% OFF', coupon: 'SAVE15', color: '#d8f0e4', canWin: true, weight: 50, priority: 2 },
+          { label: 'You lose', coupon: '', color: '#dce9f7', canWin: false, weight: 0, priority: 99 },
+          { label: 'Free Potli', coupon: '', color: '#d8f0e4', canWin: false, weight: 0, priority: 99 },
+          { label: 'You lose', coupon: '', color: '#f6dce2', canWin: false, weight: 0, priority: 99 },
+        ];
+        this.storagekey = 'stw-popup-dismissed-v2';
+        this.spinDuration = 4800;
+        this.spinRotations = 5;
+        this.currentAngle = 0;
+        this.isSpinning = false;
+        this.hoopRewardVariantId = 47475009159404;
+        this.hoopRewardQuantity = 1;
+        this.hoopRewardPropertyKey = 'Reward';
+        this.hoopRewardPropertyValue = 'Spinning Wheel';
+      }
+
+      connectedCallback() {
+        this.overlay = this.querySelector('.stw-popup__overlay');
+        this.canvas = this.querySelector('.stw-popup__wheel');
+        this.closeButton = this.querySelector('.stw-popup__close');
+        this.spinButton = this.querySelector('.stw-popup__button');
+        this.result = this.querySelector('.stw-popup__result');
+        this.resultText = this.querySelector('.stw-popup__result-text');
+        this.couponWrap = this.querySelector('.stw-popup__coupon');
+        this.couponCode = this.querySelector('.stw-popup__coupon-code');
+        this.copyButton = this.querySelector('.stw-popup__coupon-copy');
+        this.rewardActionButton = this.querySelector('.stw-popup__reward-action');
+        this.ctx = this.canvas ? this.canvas.getContext('2d') : null;
+
+        if(!this.ctx) return;
+
+        this.setupCanvas();
+        this.drawWheel();
+        this.bindEvents();
+        this.handleResize = () => {
+            this.setupCanvas();
+            this.drawWheel(this.currentAngle)
+        }
+
+        window.addEventListener('resize', this.handleResize);
+        if (!localStorage.getItem(this.storagekey)){
+            const delay = Number(this.dataset.delay || 3000)
+        }
+
+      }
+
+      disconnectedCallback(){
+        if (this.handleResize) {
+            window.removeEventListener('resize', this.handleResize)
+        }
+      }
+
+      bindEvents(){
+        this.closeButton.addEventListener('click', () => this.dismiss())
+        this.spinButton.addEventListener('click', () => this.spin())
+      }
+      
+      dismiss(){
+        this.classList.remove('is-open');
+        localStorage.setItem(this.storagekey, '1')
+      }
+
+      pickWinningSegment(){
+        const eligibleSegments = this.segments.map((segment, index)).filter(({segment}) => segment.canWin && segment.weight > 0);
+        const totalWeight = eligibleSegments.reduce((sum, entry) => sum + entry.segment.weight, 0);
+        
+      }
+
+      spin(){
+        if (this.isSpinning) return;
+
+        this.isSpinning = true;
+        this.spinButton.disabled = true;
+        this.spinButton.textContent = "Spinning...";
+
+        const arc = (Math.PI *2) / this.segments.length;
+        const winnerIndex = this.pickWinningSegment()
+      }
+    }
+  })();
+</script>
