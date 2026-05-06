@@ -30,7 +30,7 @@
       "disabled": true,
       "settings": {
         "title": "Ready To Ship",
-        "home_featured_products": "ready-to-ship",
+        "home_featured_products": "ready-to-ship-filter-v-m-custom-size_avalable-1",
         "per_row": 4,
         "rows": 1,
         "mobile_scrollable": true,
